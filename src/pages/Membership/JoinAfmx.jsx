@@ -6,6 +6,7 @@ const JoinAfmx = () => {
   return (
     <>
       <div className="container slider-body">
+        <h1 className="membership_heading">Membership Plans</h1>
         <div className="membership_container">
           <input
             type="radio"

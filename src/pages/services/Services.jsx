@@ -15,7 +15,7 @@ function Services() {
             <LeftMenu
               type="Services we offer"
               data={serviceData}
-              url="/service"
+              url=""
             />
           </div>
           <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">
@@ -27,7 +27,7 @@ function Services() {
                     {serviceData?.map((item) => (
                       <div className="col-lg-4 mb-1 p-0 image-gallery" key={item.id}>
                         <div className="mx-1 ">
-                        <Link to={`/service/${item.id}`}>
+                        {/* <Link to={`/${item.id}`}> */}
                           <img
                             src={item?.serviceImage}
                             alt={data?.id}
@@ -36,11 +36,10 @@ function Services() {
                           <div className="service-name">
                             <h3>{item.name}</h3>
                           </div>
-                          </Link>
+                          {/* </Link> */}
                         </div>
                       </div>
                     ))}
-                  
                   </div>
                 </div>
               </div>

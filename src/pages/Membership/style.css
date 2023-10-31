@@ -2,26 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  flex-direction: column;
+  /* height: 90vh; */
+}
+.slider-body .membership_heading {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  border-bottom: 4px solid #b63f3f;
+  font-weight: 600;
 }
 .membership_container {
-  width: 100%;
-  height: 100%;
-  max-width: 600px;
-  max-height: 600px;
-  display: flex;
-  transform-style: preserve-3d;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 50px;
+
   margin-left: 200px;
 }
 .membership_cards {
-  /* padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; */
   position: relative;
   height: 500px;
   width: 430px;
@@ -35,7 +30,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 0.55s ease;
   border-radius: 10px;
 }
@@ -44,21 +39,8 @@
 }
 
 .membership_cards .card {
-  /* display: grid;
-  place-items: center;
-  height: 450px;
-  width: 320px;
-  background-color: #202a4a;
-  margin: 20px 5px;
-  border-radius: 20px;
-  padding: 0 25px;
-  flex: 1; */
-
   display: grid;
   place-items: center;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   position: relative;
   height: 100%;
   background-color: #202a4a;
@@ -66,6 +48,8 @@
   padding: 30px 35px;
   height: 500px;
   width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .membership_cards .card .plan_img {
   height: 70px;
@@ -94,17 +78,16 @@
   color: white;
   text-transform: uppercase;
   width: 130px;
-  background-color: #599f36;
+  border: 1px solid rgb(122, 122, 122);
   position: relative;
   font-weight: 600;
+  cursor: pointer;
 }
 .membership_cards .card .subscriptionName .white_circle {
   border-radius: 50%;
   background-color: white;
   height: 19px;
   width: 19px;
-  position: absolute;
-  right: 3px;
 }
 .membership_cards .card h2 {
   color: white;
@@ -181,4 +164,29 @@
 #s4:checked ~ .membership_cards #slide1 {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
   transform: translate3d(100%, 0, -120px);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .membership_container {
+    margin-left: 0;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .membership_container {
+    margin-left: 200px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .membership_container {
+    margin-left: 200px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

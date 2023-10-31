@@ -1,8 +1,16 @@
+import { useState } from "react";
 import "./style.css";
 
 const MembershipCard = (props) => {
   const SingleCard = ({ data }) => {
-    // console.log(data.membershipBenefit.filter((e) => e.id > 6));
+    const [isToggled, setIsToggled] = useState(false);
+
+    const handleClick = (id) => {
+      setIsToggled((prevState) => ({
+        ...prevState,
+        [id]: !prevState[id],
+      }));
+    };
     return data.map((item) => {
       return (
         <>
@@ -12,13 +20,30 @@ const MembershipCard = (props) => {
                 <img src={item.planImage} alt={item.planName} />
               </div>
               <h1>{item.planName}</h1>
-              <div className="subscriptionName">
-                {item.subscriptionName}
-                <div className="white_circle"></div>
+              <div
+                className="subscriptionName"
+                onClick={() => handleClick(item.id)}
+                style={{
+                  backgroundColor: isToggled[item.id] ? "#257616" : "#37ab21",
+                }}
+              >
+                {isToggled[item.id] ? "Monthly" : item.subscriptionName}
+
+                <div
+                  className="white_circle"
+                  onClick={() => handleClick(item.id)}
+                  style={{
+                    position: "absolute",
+                    right: isToggled[item.id] ? "107px" : "5px",
+                    transition: "right 0.3s ease-in-out",
+                  }}
+                ></div>
               </div>
               <h2>
                 <span>$</span>
-                {item.planValue}&nbsp;<span>00</span>
+                {isToggled[item.id] ? item.planValue : item.planValue - 3}
+                &nbsp;
+                <span>00</span>
               </h2>
               <h4>USD Per Month</h4>
               <div className="benefit_list">

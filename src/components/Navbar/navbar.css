@@ -389,7 +389,7 @@ header#header .container {
 */
 .mobile-nav-toggle {
   color: #f7f4f4;
-  font-size: 28px;
+  font-size: 40px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -545,8 +545,8 @@ header#header .container {
     color: white;
     display: block;
     position: absolute;
-    top: -72px;
-    right: -188px;
+    top: -80px;
+    right: -191px;
   }
 
   .contactus {

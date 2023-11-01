@@ -1,7 +1,23 @@
 [
     {
-        "name": "American Humane",
+        "name": "Made X Hardeship Cleaning",
+        "id": "12",
+        "logo": "./images/helpingHand/logos/americanHumane.webp",
+        "image": "./images/helpingHand/american-human.jpg",
+        "image2": "./images/helpingHand/american-human2.jpg",
+        "text": "For more than a hundred years American Humane has been first in promoting the welfare and safety of animals and strengthening the bond between animals and people.​We are first to serve, wherever animals are in need of rescue, shelter, protection or security. Through our innovative leadership initiatives – from our “No Animals Were Harmed®” program in Hollywood to broad-based farm and conservation animal welfare certifications, to rapid response rescue and care across the country – American Humane sets the gold standard as the most visionary and effective animal welfare organization in the nation."
+    },
+    {
+        "name": "American Humane Society",
         "id": "1",
+        "logo": "./images/helpingHand/logos/americanHumane.webp",
+        "image": "./images/helpingHand/american-human.jpg",
+        "image2": "./images/helpingHand/american-human2.jpg",
+        "text": "For more than a hundred years American Humane has been first in promoting the welfare and safety of animals and strengthening the bond between animals and people.​We are first to serve, wherever animals are in need of rescue, shelter, protection or security. Through our innovative leadership initiatives – from our “No Animals Were Harmed®” program in Hollywood to broad-based farm and conservation animal welfare certifications, to rapid response rescue and care across the country – American Humane sets the gold standard as the most visionary and effective animal welfare organization in the nation."
+    },
+    {
+        "name": "Cancer Research Institute",
+        "id": "13",
         "logo": "./images/helpingHand/logos/americanHumane.webp",
         "image": "./images/helpingHand/american-human.jpg",
         "image2": "./images/helpingHand/american-human2.jpg",
@@ -16,7 +32,7 @@
         "text": "St. Jude Children’s Research Hospital​ The mission of St. Jude Children’s Research Hospital is to advance cures, and means of prevention, for pediatric catastrophic diseases through research and treatment. Consistent with the vision of our founder Danny Thomas, no child is denied treatment based on race, religion or a family's ability to pay."
     },
     {
-        "name": "​Boys & Girls Clubs of America.​",
+        "name": "​Boys & Girls Clubs of America",
         "id": "3",
         "logo": "./images/helpingHand/logos/boys&GirlsClubs.webp",
         "image": "./images/helpingHand/club-of-america.png",
@@ -46,21 +62,21 @@
         "text": "For more than 60 years, WWF has been protecting the future of nature. WWF works in nearly 100 countries and is supported by 1.3 million members in the United States and more than 5 million members globally. Your donation provides general support and makes you a member. 83% of spending is directed to worldwide conservation activities."
     },
     {
-        "name": "Marine Toys for Tots​​",
+        "name": "Marine Toys for Tots Foundation",
         "id": "7",
         "logo": "./images/helpingHand/logos/marineToysForTots.webp",
         "image": "./images/helpingHand/marineToysForTots1.webp",
         "text": "The mission of the Marine Toys for Tots Foundation is to assist the U. S. Marine Corps in providing a tangible sign of hope to economically disadvantaged children at Christmas. This assistance includes providing day-to-day leadership and oversight of the Program, raising funds to provide toys to supplement the collections of local Toys for Tots Campaigns, to provide promotional and support material and defray the costs of conducting annual Toys for Tots Campaigns. Other Foundation support includes providing administrative, advisory, financial, logistic and promotional support to local Toys for Tots Coordinators; managing funds raised and monies donated based on the use of Toys for Tots name or logo; providing other support the Marine Corps, as a federal agency, cannot provide; and conducting public education and information programs about Toys for Tots that call the general public to action in support of this patriotic community action program.​"
     },
     {
-        "name": "​​The Special Olympics",
+        "name": "Special Olympics",
         "id": "8",
         "logo": "./images/helpingHand/logos/specialOlympics.webp",
         "image": "./images/helpingHand/specialOlympics1.webp",
         "text": "The mission of Special Olympics is to provide year-round sports training and athletic competition in a variety of Olympic-type sports for children and adults with intellectual disabilities, giving them continuing opportunities to develop physical fitness, demonstrate courage, experience joy and participate in a sharing of gifts, skills and friendship with their families, other Special Olympics athletes and the community.​"
     },
     {
-        "name": "​​The Humane Society ​",
+        "name": "Humane Society of The United States",
         "id": "9",
         "logo": "./images/helpingHand/logos/theHumaneSociety.webp",
         "image": "./images/helpingHand/theHumaneSociety1.webp",

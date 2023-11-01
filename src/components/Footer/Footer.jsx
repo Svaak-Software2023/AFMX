@@ -83,7 +83,7 @@ function Footer() {
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Inernational Clients and Accounts</a>
+                <a href="#/new">International Clients and Accounts</a>
               </li>
             </ul>
           </div>
@@ -117,7 +117,7 @@ function Footer() {
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Sponsore Our Leauge</a>
+                <a href="#/new">Sponsor Our Leauge</a>
               </li>
               <li>
                 <i className="bx bx-chevron-right" />

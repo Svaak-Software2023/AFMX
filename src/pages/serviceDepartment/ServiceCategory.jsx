@@ -6,6 +6,7 @@ import "./serviceCategory.css";
 const ServiceCategory = () => {
   const { id } = useParams();
   const data = serviceData.find((item) => item.id === id);
+  console.log(data);
   const mapData = data.data.filter((item) => item.id == 1)
   console.log(mapData);
   return (
@@ -14,8 +15,8 @@ const ServiceCategory = () => {
         <div className="row m-0 p-0 ">
           <div className="col-lg-3 col-md-3 col-0 p-0 service_menu">
             <LeftMenu
-              type="Service Department"
-              data={serviceData}
+              type={data.name}
+              data={data.submenu}
               url="/service"
             />
           </div>

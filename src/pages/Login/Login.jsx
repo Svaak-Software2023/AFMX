@@ -53,7 +53,7 @@ function Login({ loginType }) {
                                     />
                                     <div className="forget-login">
 
-                                    <Link to="/forget-password">Forget password</Link>
+                                    <Link to="/forget-password">Forgot password</Link>
                                     </div>
                                     <div className="loginButton">
                                         <button type="submit">Login</button>

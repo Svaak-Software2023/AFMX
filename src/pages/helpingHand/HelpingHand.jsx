@@ -15,7 +15,7 @@ function HelpingHand() {
       <div className="container p-0 my-3">
         <div className="row m-0 p-0 ">
           <div className="col-lg-3 col-md-3 col-0 p-0">
-            <LeftMenue type="Helping Hand" data={helpingHand} url="/helping-hand"/>
+            <LeftMenue type="Helping Hand And Donations" data={helpingHand} url="/helping-hand"/>
           </div>
           <div className="col-lg-9 col-md-9 col-12 bg-white">
                 <h3 className="my-3 helping-hand-heading">{data.name}</h3>

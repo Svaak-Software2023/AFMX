@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "EPA Approved Chemicals",
+    "name": "EPA Approved",
     "data": [
       {
         "Pro_id": "1",
@@ -43,7 +43,7 @@
   },
   {
     "id": "2",
-    "name": "Hypoallergenmic",
+    "name": "Hypoallergic",
     "data": [
       {
         "Pro_id": "7",

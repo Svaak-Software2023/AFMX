@@ -44,7 +44,7 @@ function Forget() {
 
                         <div className="loginMain py-lg-5">
                             <div className='loginForm'>
-                                <h3 className="userType">Forget Password</h3>
+                                <h3 className="userType">Forgot Password</h3>
                                 <form className="form" onSubmit={submithandler}>
                                     <label htmlFor="email" className="label">Email</label>
                                     <input id='email'

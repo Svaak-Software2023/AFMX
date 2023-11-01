@@ -7,6 +7,33 @@
         "id": "1",
         "img": "./images/serviceDepartments/questionMark.jpeg"
       }
+    ],
+    "submenu":[
+      {
+      "id":1,
+     "name":"Assembly Service",
+     "image":""
+    },
+    {
+      "id":2,
+      "name":"Attic Installation and Repair",
+      "image":""
+     },
+     {
+      "id":3,
+      "name":"Carpentry Installation and Repair",
+      "image":""
+     },
+     {
+      "id":4,
+      "name":"Handyman Services",
+      "image":""
+     },
+     {
+      "id":5,
+      "name":"Remodeling Services",
+      "image":""
+     }
     ]
   },
   {

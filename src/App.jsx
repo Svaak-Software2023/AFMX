@@ -21,6 +21,9 @@ import ServiceItem from "./pages/services/ServiceItem"
 import CareersAndEmployment from "./pages/CareersAndEmployment/CareersAndEmployment"
 import ApplyJob from "./pages/CareersAndEmployment/ApplyJob"
 import IndustriesWeServe from "./pages/IndustriesWeServe/IndustriesWeServe"
+import IndustryItem from "./pages/IndustriesWeServe/IndustryItem"
+import ChemicalRegulation from "./pages/categories/chemicalRegulation/ChemicalRegulation"
+import AboutTheCompany from "./pages/categories/aboutCompany/AboutTheCompany"
 
 
 function App() {
@@ -80,6 +83,13 @@ function App() {
             <Route path="/careers-employment" element={<CareersAndEmployment/>} />
             <Route path="/apply-job" element={<ApplyJob/>} />
             <Route path="/industrirs-list" element={<IndustriesWeServe/>} />
+            <Route path="/industrirs-list/:id" element={<IndustryItem/>} />
+
+
+            {/* important links  category */}
+            <Route path="/chemical-regulation" element={<ChemicalRegulation/>} />
+            <Route path="/about-the-company" element={<AboutTheCompany/>} />
+
 
 
 

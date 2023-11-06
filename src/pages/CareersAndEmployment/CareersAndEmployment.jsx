@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom"
 import "./Career.css"
+import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
 
 function CareersAndEmployment() {
     return (
         <>
+        <div className="container p-0 my-3">
+        <div className="row m-0 p-0 ">
+          <div className="col-lg-3 col-md-3 col-0 p-0 service_menu">
+           <ImportantLinks/>
+          </div>
+          <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">
             <div className="container bg-white my-2">
                 <div className="row m-0 py-2">
                     <div className="col-lg-5 col-12 overFlow">
@@ -68,6 +75,9 @@ function CareersAndEmployment() {
                         </div>
                     </div>
                 </div>
+            </div>
+            </div>
+            </div>
             </div>
         </>
     )

@@ -1,6 +1,6 @@
 import LeftMenu from "../../components/leftmenu/LeftMenu";
 import industryData from "../../assets/data/industriesWeServeData.json";
-import { Link, useParams } from "react-router-dom";
+import {  Link, useParams } from "react-router-dom";
 
 function IndustriesWeServe() {
   const { id } = useParams();
@@ -26,7 +26,7 @@ function IndustriesWeServe() {
                     {industryData?.map((item) => (
                       <div className="col-lg-4 mb-1 p-0 image-gallery" key={item.id}>
                         <div className="mx-1 ">
-                        {/* <Link to={`/${item.id}`}> */}
+                        <Link to={`/industrirs-list/${item.id}`}>
                           <img
                             src={item?.industryImage}
                             title={item?.name}
@@ -36,7 +36,7 @@ function IndustriesWeServe() {
                           <div className="service-name">
                             <h3>{item.name.toUpperCase()}</h3>
                           </div>
-                          {/* </Link> */}
+                          </Link>
                         </div>
                       </div>
                     ))}

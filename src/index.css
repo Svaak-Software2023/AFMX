@@ -21,6 +21,12 @@
     background-color: rgb(246, 2, 2);
 }
 
+.heading{
+  font-size: 1.2em;
+  font-weight: 600;
+  border-bottom: 2px solid #eaeaea;
+  padding: 0px 20px 5px 0px;
+}
 
 body {
  font-family: 'Lato', sans-serif;

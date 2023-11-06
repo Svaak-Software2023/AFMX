@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./navbar.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
-import { Tooltip } from "@mui/material";
 import { HiSpeakerphone } from "react-icons/hi";
 import { ImLocation } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
@@ -65,18 +64,6 @@ function Navbar() {
             <div className="col-lg-6 col-10">
               <div className="contactus">
                 <ul>
-                  <Tooltip
-                    title="Register Your Complain"
-                    componentsProps={{
-                      tooltip: {
-                        sx: {
-                          fontSize: "0.7rem",
-                          background: "var(--tooltipColor)",
-                          color: "#3a5776",
-                        },
-                      },
-                    }}
-                  >
                     <li className="m-0 p-0 py-2">
                       <button>
                         <Link to="/" className="complaint_btn">
@@ -84,56 +71,27 @@ function Navbar() {
                         </Link>
                       </button>
                     </li>
-                  </Tooltip>
                   <li>
                     {showInputSearch && (
                       <input type="text" placeholder="Search" />
                     )}
-                    <Tooltip
-                      title="Search"
-                      componentsProps={{
-                        tooltip: {
-                          sx: {
-                            fontSize: "0.7rem",
-                            background: "lightgrey",
-                            color: "#3a5776",
-                          },
-                        },
-                      }}
-                    >
                       <button onClick={handleShowSearch}>
                         <FaSearch
                           className="search_icon"
                           onClick={handleShowSearch}
                         />
                       </button>
-
-                     
-                    </Tooltip>
                   </li>
                   {/* {/ location /} */}
                   <li>
                     {showInputLocation && (
                       <input type="text" placeholder="Search Location" />
                     )}
-                    <Tooltip
-                      title="Search Location"
-                      componentsProps={{
-                        tooltip: {
-                          sx: {
-                            fontSize: "0.7rem",
-                            background: "lightgrey",
-                            color: "#3a5776",
-                          },
-                        },
-                      }}
-                    >
                       <button onClick={handleShowLocation}>
                         <Link to="/location">
                           <ImLocation className="search_location" />
                         </Link>
                       </button>
-                    </Tooltip>
                     {/* {/ <img src="assets/img/searc.svg" onClick={searchBox} /> /} */}
                   </li>
                 </ul>
@@ -150,18 +108,6 @@ function Navbar() {
           <nav id="navbar" className={navbar}>
             <ul>
               <li>
-                <Tooltip
-                  title="Price Calculator"
-                  componentsProps={{
-                    tooltip: {
-                      sx: {
-                        fontSize: "0.7rem",
-                        background: "var(--tooltipColor)",
-                        color: "#3a5776",
-                      },
-                    },
-                  }}
-                >
                   <Link
                     to="/new"
                     className="nav-link "
@@ -170,7 +116,6 @@ function Navbar() {
                   >
                     Price Calculator
                   </Link>
-                </Tooltip>
               </li>
               <li className="dropdown" onClick={membershipdropdown}>
                 <a href="#">
@@ -197,112 +142,34 @@ function Navbar() {
                 )}
               </li>
               <li>
-                <Tooltip
-                  title="Services we provide"
-                  componentsProps={{
-                    tooltip: {
-                      sx: {
-                        fontSize: "0.7rem",
-                        background: "var(--tooltipColor)",
-                        color: "#3a5776",
-                      },
-                    },
-                  }}
-                >
                   <Link to="/service-list" className="nav-link ">
                     Services
                   </Link>
-                </Tooltip>
               </li>
               <li>
-                <Tooltip
-                  title="Industries We Serve"
-                  componentsProps={{
-                    tooltip: {
-                      sx: {
-                        fontSize: "0.7rem",
-                        background: "var(--tooltipColor)",
-                        color: "#3a5776",
-                      },
-                    },
-                  }}
-                >
                   <Link to="/industrirs-list" className="nav-link ">
                     Industries We Serve
                   </Link>
-                </Tooltip>
               </li>
               <li>
-                <Tooltip
-                  title="Advanced Technology & Robotic Cleaning"
-                  componentsProps={{
-                    tooltip: {
-                      sx: {
-                        fontSize: "0.7rem",
-                        background: "var(--tooltipColor)",
-                        color: "#3a5776",
-                      },
-                    },
-                  }}
-                >
                   <Link to="/new" className="nav-link ">
                     Robotic Cleaning
                   </Link>
-                </Tooltip>
               </li>
               <li>
-                <Tooltip
-                  title="Media"
-                  componentsProps={{
-                    tooltip: {
-                      sx: {
-                        fontSize: "0.7rem",
-                        background: "var(--tooltipColor)",
-                        color: "#3a5776",
-                      },
-                    },
-                  }}
-                >
                   <Link to="/new" className="nav-link ">
                     Media
                   </Link>
-                </Tooltip>
               </li>
               <li>
-                <Tooltip
-                  title="Marketing Department"
-                  componentsProps={{
-                    tooltip: {
-                      sx: {
-                        fontSize: "0.7rem",
-                        background: "var(--tooltipColor)",
-                        color: "#3a5776",
-                      },
-                    },
-                  }}
-                >
                   <Link to="/new" className="nav-link ">
                     Marketing Department
                   </Link>
-                </Tooltip>
               </li>
               <li>
-                <Tooltip
-                  title="Careers & Employment"
-                  componentsProps={{
-                    tooltip: {
-                      sx: {
-                        fontSize: "0.7rem",
-                        background: "var(--tooltipColor)",
-                        color: "#3a5776",
-                      },
-                    },
-                  }}
-                >
                   <Link to="/careers-employment" className="nav-link ">
                     Careers & Employment
                   </Link>
-                </Tooltip>
               </li>
 
               <li className="dropdown" onClick={logindropdown}>

@@ -37,7 +37,7 @@ function Footer() {
             <ul>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">About Us</a>
+                <Link to="/about-the-company">About Us</Link>
               </li>
               <li>
                 <i className="bx bx-chevron-right" />

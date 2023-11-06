@@ -23,7 +23,13 @@ import ApplyJob from "./pages/CareersAndEmployment/ApplyJob"
 import IndustriesWeServe from "./pages/IndustriesWeServe/IndustriesWeServe"
 import IndustryItem from "./pages/IndustriesWeServe/IndustryItem"
 import ChemicalRegulation from "./pages/categories/chemicalRegulation/ChemicalRegulation"
-import AboutTheCompany from "./pages/categories/aboutCompany/AboutTheCompany"
+import AboutTheCompany from "./pages/AFMXCompany/aboutCompany/AboutTheCompany"
+import BeforeAndAfter from "./pages/artAndGallery/BeforeAndAfter"
+import Vision from "./pages/AFMXCompany/Vision/Vision"
+import Mission from "./pages/AFMXCompany/Mission/Mission"
+import Statment from "./pages/AFMXCompany/Statment/Statment"
+import Legal from "./pages/AFMXCompany/Legal/Legal"
+import CoreValue from "./pages/AFMXCompany/Corevalue/CoreValue"
 
 
 function App() {
@@ -89,9 +95,23 @@ function App() {
             {/* important links  category */}
             <Route path="/chemical-regulation" element={<ChemicalRegulation/>} />
             <Route path="/about-the-company" element={<AboutTheCompany/>} />
+            <Route path="/about-the-company" element={<AboutTheCompany/>} />
+
+            {/* AFMX Company  */}
+            <Route path="/mission" element={<Mission/>} />
+            <Route path="/statment" element={<Statment/>} />
+            <Route path="/vision" element={<Vision/>} />
+            <Route path="/core-value" element={<CoreValue/>} />
+            <Route path="/legal" element={<Legal/>} />
 
 
 
+
+
+
+            {/* art and gallery */}
+
+            <Route path="/before-after" element={<BeforeAndAfter/>}/>
 
 
           </Routes>

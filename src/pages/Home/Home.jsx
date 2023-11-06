@@ -87,7 +87,7 @@ function Home() {
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/new"} className="Links">
+                      <Link to={"/before-after"} className="Links">
                         Before & After
                       </Link>
                     </li>

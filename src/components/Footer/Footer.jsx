@@ -41,23 +41,23 @@ function Footer() {
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Mission</a>
+                <Link to="/mission">Mission</Link>
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Statment</a>
+                <Link to="/statment">Statment</Link>
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Vision</a>
+                <Link to="/vision">Vision</Link>
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Our Core Values</a>
+                <Link to="/core-value">Our Core Values</Link>
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Legal</a>
+                <Link to="/legal">Legal</Link>
               </li>
             </ul>
           </div>

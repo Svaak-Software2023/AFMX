@@ -19,6 +19,7 @@
     "axios": "^1.5.1",
     "react": "^18.2.0",
     "react-circular-menu": "2.3.3",
+    "react-compare-slider": "^3.0.1",
     "react-dom": "^18.2.0",
     "react-flagkit": "2.0.4",
     "react-geolocated": "^4.1.2",

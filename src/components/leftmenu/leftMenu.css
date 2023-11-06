@@ -29,14 +29,20 @@
 .left-menue-list  li a{
     text-decoration: none;
     color: var(--textColor);
-    font-size: .85rem;
+    font-size: .9rem;
     font-weight: 500;
 }
-.left-menue-list  li a:hover{
-    color:var(--blue)
-    }
+.left-menue-list  li :hover{
+    color:rgb(255, 0, 8);
+}
 @media screen and (max-width:768px) {
     .left-menue-main {
-        display: none;
+        margin-right: 0px;
+        background-color: white;
+    }
+    .service-menue {
+        /* display: none; */
+        display: flex;
+        justify-content: center;
     }
 }

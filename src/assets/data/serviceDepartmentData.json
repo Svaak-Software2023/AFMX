@@ -2,711 +2,1460 @@
   {
     "id": "1",
     "name": "Handyman solutions department",
-    "data": [
+    "submenu": [
       {
-        "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "id": 1,
+        "name": "Assembly Service",
+        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Attic Installation and Repair",
+        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Carpentry Installation and Repair",
+        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Handyman Services",
+        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Remodeling Services",
+        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
       }
-    ],
-    "submenu":[
-      {
-      "id":1,
-     "name":"Assembly Service",
-     "image":""
-    },
-    {
-      "id":2,
-      "name":"Attic Installation and Repair",
-      "image":""
-     },
-     {
-      "id":3,
-      "name":"Carpentry Installation and Repair",
-      "image":""
-     },
-     {
-      "id":4,
-      "name":"Handyman Services",
-      "image":""
-     },
-     {
-      "id":5,
-      "name":"Remodeling Services",
-      "image":""
-     }
     ]
   },
   {
     "id": "2",
     "name": "Assembly department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+        "name": "Cabinet Assembly",
+        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/assemblyDepartment/2.jpg"
+        "name": "Fence Assembly",
+        "image": "./images/serviceDepartments/assemblyDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/assemblyDepartment/3.jpg"
+        "name": "Furniture Assembly",
+        "image": "./images/serviceDepartments/assemblyDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/assemblyDepartment/4.jpg"
+        "name": "Grill Assembly",
+        "image": "./images/serviceDepartments/assemblyDepartment/4.jpg"
       }
     ]
   },
   {
     "id": "3",
     "name": "Attic installation and repair department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/atticInstallationAndRepairDepartment/1.jpg"
+        "name": "Attic Door Installation",
+        "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/atticInstallationAndRepairDepartment/2.jpg"
+        "name": "Attic Fan Installation and repair",
+        "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/atticInstallationAndRepairDepartment/3.jpg"
+        "name": "Attic Insulation",
+        "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/atticInstallationAndRepairDepartment/4.jpg"
+        "name": "Attic Stairs installation",
+        "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/4.jpg"
       },
       {
         "id": "5",
-        "img": "./images/serviceDepartments/atticInstallationAndRepairDepartment/5.jpg"
+        "name": "Mold Prevention",
+        "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/5.jpg"
       },
       {
         "id": "6",
-        "img": "./images/serviceDepartments/atticInstallationAndRepairDepartment/6.jpg"
+        "name": "Structural Integrity",
+        "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/6.jpg"
       }
     ]
   },
   {
     "id": "4",
     "name": "Carpentry installation and repair department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/1.png"
+        "name": "Carpentry construction and Installation",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/1.png"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/2.png"
+        "name": "Carpentry Remodeling and Repair",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/2.png"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/3.png"
+        "name": "Crown Molding Installation and repair",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/3.png"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/4.png"
+        "name": "Custom bookcases",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/4.png"
       },
       {
         "id": "5",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/5.png"
+        "name": "Custom Mantels",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/5.png"
       },
       {
         "id": "6",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/6.png"
+        "name": "Custom Shelving",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/6.png"
       },
       {
         "id": "7",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/7.png"
+        "name": "Deck and Patio Repair and service",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/7.png"
       },
       {
         "id": "8",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/8.png"
+        "name": "Fence installation and repair",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/8.png"
       },
       {
         "id": "9",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/9.png"
+        "name": "Handrail and stairs installation",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/9.png"
       },
       {
         "id": "10",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/10.png"
+        "name": "Siding Installation and Repair",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/10.png"
       },
       {
         "id": "11",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/11.png"
+        "name": "Wainscoting Installation and repair",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/11.png"
       },
       {
         "id": "12",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/12.png"
+        "name": "Wall Installation and repair",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/12.png"
       },
       {
         "id": "13",
-        "img": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/13.png "
+        "name": "Mantel Installation",
+        "image": "./images/serviceDepartments/carpentryInstallationAndRepairDepartment/13.png "
       }
     ]
   },
   {
     "id": "5",
     "name": "Floor installation and repair department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
-      }      
+        "name": "Floor Tile Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Laminate Floor Installation and repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Linoleum Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Vinyl Flooring Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Wood Floor Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      }
     ]
   },
   {
     "id": "6",
     "name": "Remodeling department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Acoustic Ceiling Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Attic Remodeling and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Basement Remodeling and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Bathroom Remodeling and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Bathtub Repair and Replacement",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "6",
+        "name": "Bedroom Remodeling and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "7",
+        "name": "Cabinet Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "8",
+        "name": "Ceiling Repair and Replacement",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "9",
+        "name": "Ceiling Repair and Service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "10",
+        "name": "Ceiling Texture Service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "11",
+        "name": "Countertop Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "12",
+        "name": "Custom Kitchen Island Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "13",
+        "name": "Custom Kitchen Island Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "14",
+        "name": "Dining Room Remodeling and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "15",
+        "name": "Drywall Finishing",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "16",
+        "name": "Drywall Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "17",
+        "name": "Kitchen Backsplash Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "18",
+        "name": "Kitchen Remodeling and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "19",
+        "name": "Living Room Remodeling and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "20",
+        "name": "Masonry and Concrete Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "21",
+        "name": "Popcorn Ceiling Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "22",
+        "name": "Safety and Mobility Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "23",
+        "name": "Shower Tile Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "24",
+        "name": "Tub Enclosure Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "25",
+        "name": "Vanity and Bathroom Mirror Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "26",
+        "name": "Walk In Tub Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "27",
+        "name": "Wall Finishing",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "7",
     "name": "Handyman department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Bathroom Caulking",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Ceiling Fan Installation and Replacement",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Child Proofing",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Closet Shelving",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Curtains and Drapes Installation and Replacement",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "6",
+        "name": "Debris Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "7",
+        "name": "Exhaust Fan Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "8",
+        "name": "Furniture Painting and Staining",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "9",
+        "name": "Garage Shelving",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "10",
+        "name": "Painting Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "11",
+        "name": "Garage Storage and Organization",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "12",
+        "name": "Gutter Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "13",
+        "name": "Hanging Blinds Installation and Replacement",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "14",
+        "name": "Picture Hanging",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "15",
+        "name": "Shelving Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "16",
+        "name": "TV Wall Mount Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "17",
+        "name": "Window and Door Weatherproofing",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "18",
+        "name": "Window Frame Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "8",
     "name": "Junk removal and hauling department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Debris Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Junk Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Construction Debris Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Furniture Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Hot Tub Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "6",
+        "name": "Office  Furniture",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "7",
+        "name": "Storage Unit Clean Out",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "8",
+        "name": "Shed Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "9",
+        "name": "Warehouse Clean Out",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "10",
+        "name": "Estate Clean Out",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "11",
+        "name": "Foreclosure Clean out",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "12",
+        "name": "Hoarder Clean Out",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "13",
+        "name": "Appliance  Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "14",
+        "name": "Carpet Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "15",
+        "name": "Condo Cleanout",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "16",
+        "name": "Mattress Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "17",
+        "name": "Storage Unit cleanout",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "18",
+        "name": "Yard waste pick up and removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "19",
+        "name": "Apartment Clean outs",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "9",
     "name": "Lawn maintenance department",
-    "data": [
+    "submenu": [
       {
-        "id": "",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "id": "1",
+        "name": "Flower and Garden bed maintenance",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Landscape design and Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Lawn and grounds maintenance",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Parking lot Cleaning",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Vallet Trash Pickup",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "6",
+        "name": "Tree and Shrub Maintenance",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "7",
+        "name": "Fertilization, Weed and pest services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "10",
     "name": "Flower and garden bed maintenance department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Flower bed Edge Redefining",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Flower Bed weed control service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Flower Maintenance",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Interior Landscaping",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Mulch Installation and cultivation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "11",
     "name": "Landscape design and installation",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Hardscape Design",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Hardscape Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Landscape Design",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Landscape Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Landscape lighting  installation and service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Seasonal Landscape display Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "12",
     "name": "Grounds maintenance department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Aquatic and Pond Management",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Drainage Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Irrigation System Installation and Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Lawn Aeration",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Sod Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "13",
     "name": "Lawn care department",
-    "data": [
+    "submenu": [
       {
-        "id": "",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "id": "1",
+        "name": "Lawn Aeration",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Lawn Dethatching",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Lawn Mowing and Edging",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Lawn Seed Service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Lawn Top Dressing",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "6",
+        "name": "Seasonal Clean Up Service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "7",
+        "name": "Stump Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "14",
     "name": "Tree and shrub maintenance department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Ornamental Pruning",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Tree and Shrub Fertilization Service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Tree and Shrub Pest Control Service",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Tree Trimming and Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "15",
     "name": "Fertilization, weed and pest department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Fertilization Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Pest Control Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "1",
+        "name": "Weed Control Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "1",
+        "name": "Lawn Fertilization, Weed and Pest Control Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "16",
     "name": "Porter and matron department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Restroom Upkeep",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Floor care",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Furniture Moving",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Light Maintenance",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },{
+        "id": "5",
+        "name": "Entryway upkeep",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "17",
     "name": "Janitorial department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/1.jpg"
+        "name": "Apartment/Tenant Turnover",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/2.jpg"
+        "name": "Professional Office cleaning",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/3.jpg"
+        "name": "Sanitary Facilities and Hygiene Maintenance Commercial cleaning",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/4.jpg"
+        "name": "Business Janitor Services",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/4.jpg"
       },
       {
         "id": "5",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/5.jpg"
+        "name": "College Dorms Cleaning",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/5.jpg"
       },
       {
         "id": "6",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/6.jpg"
+        "name": "Hospital Janitorial Cleaning",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/6.jpg"
       },
       {
         "id": "7",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/7.jpg"
+        "name": "Medical Office / Space Cleaning",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/7.jpg"
       },
       {
         "id": "8",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/8.jpg"
+        "name": "Office Building Janitorial Services",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/8.jpg"
       },
       {
         "id": "9",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/9.jpg"
+        "name": "One-Time Cleanings",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/9.jpg"
       },
       {
         "id": "10",
-        "img": "./images/serviceDepartments/janitorialServiceDepartment/10.jpg"
+        "name": "Waiting Room Cleaning",
+        "image": "./images/serviceDepartments/janitorialServiceDepartment/10.jpg"
       }
     ]
   },
   {
     "id": "18",
     "name": "Window cleaning department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/windowCleaningDepartment/1.jpg"
+        "name": "Commercial Drone Cleaning",
+        "image": "./images/serviceDepartments/windowCleaningDepartment/2.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/windowCleaningDepartment/2.jpg"
+        "name": "Solar Panel Cleaning",
+        "image": "./images/serviceDepartments/windowCleaningDepartment/3.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/windowCleaningDepartment/3.jpg"
+        "name": "Gutter Cleaning",
+        "image": "./images/serviceDepartments/windowCleaningDepartment/4.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/windowCleaningDepartment/4.jpg"
-      },
-      {
-        "id": "5",
-        "img": "./images/serviceDepartments/windowCleaningDepartment/5.jpg"
-      },
-      {
-        "id": "6",
-        "img": "./images/serviceDepartments/windowCleaningDepartment/6.jpg"
+        "name": "Window Cleaning",
+        "image": "./images/serviceDepartments/windowCleaningDepartment/6.jpg"
       }
     ]
   },
   {
     "id": "19",
     "name": "Pressure washing department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/1.jpg"
+        "name": "Tile roof washing and cleaning",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/2.jpg"
+        "name": "Shingle roof cleaning and washing",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/3.jpg"
+        "name": "Exterior building washing",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/4.jpg"
+        "name": "Pool Decks and Enclosures",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/4.jpg"
       },
       {
         "id": "5",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/5.jpg"
+        "name": "Residential and Commercial",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/5.jpg"
       },
       {
         "id": "6",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/6.jpg"
+        "name": "Deck and Fence cleaning",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/6.jpg"
       },
       {
         "id": "7",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/7.jpg"
+        "name": "Concrete Driveways and walls",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/7.jpg"
       },
       {
         "id": "8",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/8.jpg"
+        "name": "Sulfur  rust stain removal",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/8.jpg"
       },
       {
         "id": "9",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/9.jpg"
-      },
-      {
-        "id": "10",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/10.jpg"
-      },
-      {
-        "id": "11",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/11.jpg"
-      },
-      {
-        "id": "12",
-        "img": "./images/serviceDepartments/pressureWashingDepartment/12.jpg"
+        "name": "Driveways and sidewalks",
+        "image": "./images/serviceDepartments/pressureWashingDepartment/9.jpg"
       }
     ]
   },
   {
     "id": "20",
     "name": "Specialty cleaning department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/specialtyCleaningDepartment/1.jpg"
+        "name": "Pre and Post Party Cleaning",
+        "image": "./images/serviceDepartments/specialtyCleaningDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/specialtyCleaningDepartment/2.jpg"
+        "name": "Special Event Cleanings",
+        "image": "./images/serviceDepartments/specialtyCleaningDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/specialtyCleaningDepartment/3.jpg"
+        "name": "Emergency Cleaning",
+        "image": "./images/serviceDepartments/specialtyCleaningDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/specialtyCleaningDepartment/4.jpg"
-      },
-      {
-        "id": "5",
-        "img": "./images/serviceDepartments/specialtyCleaningDepartment/5.jpg"
+        "name": "Foreclosure Cleaning",
+        "image": "./images/serviceDepartments/specialtyCleaningDepartment/4.jpg"
       }
     ]
   },
   {
     "id": "21",
     "name": "Steel and polishing department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/1.jpg"
+        "name": "Water fountain polishing",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/2.jpg"
+        "name": "Garbage /Trash can polishing",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/3.jpg"
+        "name": "Sink polishing",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/4.jpg"
+        "name": "Silver Bar stool chair polishing",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/4.jpg"
       },
       {
         "id": "5",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/5.jpg"
+        "name": "Paper tower dispenser polishing",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/5.jpg"
       },
       {
         "id": "6",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/6.jpg"
+        "name": "Elevator polishing",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/6.jpg"
       },
       {
         "id": "7",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/7.jpg"
+        "name": "Door Kick plate",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/7.jpg"
       },
       {
         "id": "8",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/8.jpg"
+        "name": "Restroom steel hand dryer",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/8.jpg"
       },
       {
         "id": "9",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/9.jpg"
-      },
-      {
-        "id": "10",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/10.jpg"
-      },
-      {
-        "id": "11",
-        "img": "./images/serviceDepartments/steelAndPolishingDepartment/11.jpg"
+        "name": "Commercial Silver soap dispenser",
+        "image": "./images/serviceDepartments/steelAndPolishingDepartment/9.jpg"
       }
     ]
   },
   {
     "id": "22",
     "name": "Garbage/trash can cleaning",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "23",
     "name": "Exclusive services department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "24",
     "name": "Infectious disease cleaning department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/1.jpg"
+        "name": "Flu and Covid 19 Season Cleaning",
+        "image": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/3.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/2.jpg"
+        "name": "Nano Septic Pro Services",
+        "image": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/5.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/3.jpg"
+        "name": "Electrostatic Disinfection Services",
+        "image": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/2.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/4.jpg"
-      },
-      {
-        "id": "5",
-        "img": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/5.jpg"
+        "name": "Keyboard cleaning",
+        "image": "./images/serviceDepartments/infectiousDiseaseCleaningDepartment/4.jpg"
       }
     ]
   },
   {
     "id": "25",
     "name": "Florida disaster recovery department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/1.jpg"
+        "name": "Fire And Smoke Damage",
+        "image": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/2.jpg"
+        "name": "Mold Remediation",
+        "image": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/3.jpg"
+        "name": "Storm Recovery",
+        "image": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/4.jpg"
-      },
-      {
-        "id": "5",
-        "img": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/5.jpg"
+        "name": "Water and Flood damage",
+        "image": "./images/serviceDepartments/floridaDisasterRecoveryDepartment/5.jpg"
       }
     ]
   },
   {
     "id": "26",
     "name": "Valet trash pickup department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "27",
     "name": "Parking lot cleaning department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/parkingLotCleaningDepartment/1.jpg"
-      },
-      {
-        "id": "2",
-        "img": "./images/serviceDepartments/parkingLotCleaningDepartment/2.jpg"
-      },
-      {
-        "id": "3",
-        "img": "./images/serviceDepartments/parkingLotCleaningDepartment/3.jpg"
-      },
-      {
-        "id": "4",
-        "img": "./images/serviceDepartments/parkingLotCleaningDepartment/4.jpg"
+        "name": "",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "28",
     "name": "Floor service department",
-    "data": [
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/floorServiceDepartment/1.jpg"
+        "name": "Vinyl Flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/1.jpg"
       },
       {
         "id": "2",
-        "img": "./images/serviceDepartments/floorServiceDepartment/2.jpg"
+        "name": "Concrete Floor",
+        "image": "./images/serviceDepartments/floorServiceDepartment/2.jpg"
       },
       {
         "id": "3",
-        "img": "./images/serviceDepartments/floorServiceDepartment/3.jpg"
+        "name": "Laminate Flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/3.jpg"
       },
       {
         "id": "4",
-        "img": "./images/serviceDepartments/floorServiceDepartment/4.jpg"
+        "name": "Title Flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/4.jpg"
       },
       {
         "id": "5",
-        "img": "./images/serviceDepartments/floorServiceDepartment/5.jpg"
+        "name": "Sheet Vinyl Flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/5.jpg"
       },
       {
         "id": "6",
-        "img": "./images/serviceDepartments/floorServiceDepartment/6.jpg"
+        "name": "Wood Flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/6.jpg"
       },
       {
         "id": "7",
-        "img": "./images/serviceDepartments/floorServiceDepartment/7.jpg"
+        "name": "Carpet",
+        "image": "./images/serviceDepartments/floorServiceDepartment/7.jpg"
       },
       {
         "id": "8",
-        "img": "./images/serviceDepartments/floorServiceDepartment/8.jpg"
+        "name": "Wood",
+        "image": "./images/serviceDepartments/floorServiceDepartment/8.jpg"
       },
       {
         "id": "9",
-        "img": "./images/serviceDepartments/floorServiceDepartment/9.jpg"
+        "name": "Wood",
+        "image": "./images/serviceDepartments/floorServiceDepartment/9.jpg"
       },
       {
         "id": "10",
-        "img": "./images/serviceDepartments/floorServiceDepartment/10.jpg"
+        "name": "Hardwood Flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/10.jpg"
       },
       {
         "id": "11",
-        "img": "./images/serviceDepartments/floorServiceDepartment/11.jpg"
+        "name": "Hardwood",
+        "image": "./images/serviceDepartments/floorServiceDepartment/11.jpg"
       },
       {
         "id": "12",
-        "img": "./images/serviceDepartments/floorServiceDepartment/12.jpg"
+        "name": "Epoxy",
+        "image": "./images/serviceDepartments/floorServiceDepartment/12.jpg"
       },
       {
         "id": "13",
-        "img": "./images/serviceDepartments/floorServiceDepartment/13.jpg"
+        "name": "Ceramic tile",
+        "image": "./images/serviceDepartments/floorServiceDepartment/13.jpg"
       },
       {
         "id": "14",
-        "img": "./images/serviceDepartments/floorServiceDepartment/14.jpg"
+        "name": "Linoleum",
+        "image": "./images/serviceDepartments/floorServiceDepartment/14.jpg"
       },
       {
         "id": "15",
-        "img": "./images/serviceDepartments/floorServiceDepartment/15.jpg"
+        "name": "Vinyl composition tile (VCT)",
+        "image": "./images/serviceDepartments/floorServiceDepartment/15.jpg"
       },
       {
         "id": "16",
-        "img": "./images/serviceDepartments/floorServiceDepartment/16.jpg"
+        "name": "Stone",
+        "image": "./images/serviceDepartments/floorServiceDepartment/16.jpg"
       },
       {
         "id": "17",
-        "img": "./images/serviceDepartments/floorServiceDepartment/17.jpg"
+        "name": "Terrazzo",
+        "image": "./images/serviceDepartments/floorServiceDepartment/17.jpg"
       },
       {
         "id": "18",
-        "img": "./images/serviceDepartments/floorServiceDepartment/18.jpg"
+        "name": "Engineered wood",
+        "image": "./images/serviceDepartments/floorServiceDepartment/18.jpg"
       },
       {
         "id": "19",
-        "img": "./images/serviceDepartments/floorServiceDepartment/19.jpg"
+        "name": "Resilient flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/19.jpg"
       },
       {
         "id": "20",
-        "img": "./images/serviceDepartments/floorServiceDepartment/20.jpg"
+        "name": "Bamboo floor",
+        "image": "./images/serviceDepartments/floorServiceDepartment/20.jpg"
       },
       {
         "id": "21",
-        "img": "./images/serviceDepartments/floorServiceDepartment/21.jpg"
+        "name": "Marble",
+        "image": "./images/serviceDepartments/floorServiceDepartment/21.jpg"
       },
       {
         "id": "22",
-        "img": "./images/serviceDepartments/floorServiceDepartment/22.jpg"
+        "name": "Luxury vinyl tile (LVT)",
+        "image": "./images/serviceDepartments/floorServiceDepartment/22.jpg"
       },
       {
         "id": "23",
-        "img": "./images/serviceDepartments/floorServiceDepartment/23.jpg"
+        "name": "Epoxy flooring systems",
+        "image": "./images/serviceDepartments/floorServiceDepartment/23.jpg"
       },
       {
         "id": "24",
-        "img": "./images/serviceDepartments/floorServiceDepartment/24.jpg"
+        "name": "Vinyl Tile flooring",
+        "image": "./images/serviceDepartments/floorServiceDepartment/24.jpg"
       },
       {
         "id": "25",
-        "img": "./images/serviceDepartments/floorServiceDepartment/25.jpg"
+        "name": "Strip and wax services",
+        "image": "./images/serviceDepartments/floorServiceDepartment/25.jpg"
       },
       {
         "id": "26",
-        "img": "./images/serviceDepartments/floorServiceDepartment/26.jpg"
+        "name": "Carpet cleaning",
+        "image": "./images/serviceDepartments/floorServiceDepartment/26.jpg"
       },
       {
         "id": "27",
-        "img": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+        "name": "Grout services",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "28",
+        "name": "Vinyl tile Stripping and Waxing",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "29",
+        "name": "Carpet and upholstery cleaning",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "30",
+        "name": "Grout services",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "31",
+        "name": "Travertine Restoration",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "32",
+        "name": "Terrazzo Restoration",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "33",
+        "name": "Wood floor cleaning",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "34",
+        "name": "Tile and grout cleaning",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "35",
+        "name": "Limestone cleaning and restoration",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
+      },
+      {
+        "id": "36",
+        "name": "Slate cleaning restoration and sealing",
+        "image": "./images/serviceDepartments/floorServiceDepartment/27.jpg"
       }
     ]
   },
   {
     "id": "29",
-    "name": "Exterior painting department",
-    "data": [
+    "name": "Interior painting department",
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Cabinet Painting and Refinishing",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Crown Molding and Trim Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Door Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Garage Floor Coating and Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Interior Painting Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "6",
+        "name": "Room Painting 1 Room or Less",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "7",
+        "name": "Room Painting 2 Rooms or More",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   },
   {
     "id": "30",
-    "name": "Wallpaper department",
-    "data": [
+    "name": "Exterior painting department",
+    "submenu": [
       {
         "id": "1",
-        "img": "./images/serviceDepartments/questionMark.jpeg"
+        "name": "Interior / Exterior Custom Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Plaster & Drywall Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Stucco Repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Minor concrete plaster repair",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "Rotted wood replacement",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "6",
+        "name": "Full preparation prior to painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "7",
+        "name": "Rust preparation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "8",
+        "name": "Caulking & Patching",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "9",
+        "name": "Painting popcorn ceilings (no removal)",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "10",
+        "name": "Brick Painting and Treatments",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "11",
+        "name": "Concrete Sealing and Staining",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "12",
+        "name": "Deck Painting and Staining",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "13",
+        "name": "Exterior Painting Services",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "14",
+        "name": "Exterior Staining",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "15",
+        "name": "Fence Painting and Staining",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "16",
+        "name": "Garage Door Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "17",
+        "name": "Painting Vinyl Siding",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "18",
+        "name": "Pool Decks",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "19",
+        "name": "Shed Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "20",
+        "name": "Trim Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "21",
+        "name": "Window Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "22",
+        "name": "Wood Siding Painting",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "name": "Wallpaper department",
+    "submenu": [
+      {
+        "id": "1",
+        "name": "Wallpaper Installation",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Wallpaper Removal",
+        "image": "./images/serviceDepartments/questionMark.jpeg"
       }
     ]
   }

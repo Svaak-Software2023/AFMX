@@ -227,7 +227,7 @@ function Navbar() {
                     },
                   }}
                 >
-                  <Link to="/industry/1" className="nav-link ">
+                  <Link to="/industrirs-list" className="nav-link ">
                     Industries We Serve
                   </Link>
                 </Tooltip>
@@ -299,7 +299,7 @@ function Navbar() {
                     },
                   }}
                 >
-                  <Link to="/create-account" className="nav-link ">
+                  <Link to="/careers-employment" className="nav-link ">
                     Careers & Employment
                   </Link>
                 </Tooltip>

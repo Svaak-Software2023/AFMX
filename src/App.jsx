@@ -10,13 +10,17 @@ import CreateAccount from "./pages/CreateAccount/CreateAccount"
 import { ToastContainer } from 'react-toastify';
 import HelpingHand from "./pages/helpingHand/HelpingHand"
 import ProductCategory from "./pages/productCategory/ProductCategory"
-import Industry from "./pages/Industry/Industry"
-import ServiceCategory from "./pages/serviceDepartment/ServiceCategory"
 import Forget from "./pages/Login/Forget"
 import ResetPassword from "./pages/Login/ResetPassword"
 import TermsConditions from "./pages/terms&conditions/TermsConditions"
 import Services from "./pages/services/Services"
 import JoinAfmx from "./pages/Membership/JoinAfmx"
+import ServiceDepartment from "./pages/serviceDepartment/ServiceDepartment"
+import ServiceDepartmentItem from "./pages/serviceDepartment/ServiceDepartmentItem"
+import ServiceItem from "./pages/services/ServiceItem"
+import CareersAndEmployment from "./pages/CareersAndEmployment/CareersAndEmployment"
+import ApplyJob from "./pages/CareersAndEmployment/ApplyJob"
+import IndustriesWeServe from "./pages/IndustriesWeServe/IndustriesWeServe"
 
 
 function App() {
@@ -64,14 +68,20 @@ function App() {
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="/helping-hand/:id" element={<HelpingHand />} />
             <Route path="/product/:id" element={<ProductCategory />} />
-            <Route path="/industry/:id" element={<Industry />} />
-            <Route path="/service/:id" element={<ServiceCategory/>}/>
+            <Route path="/service-department/:id" element={<ServiceDepartment/>}/>
+            <Route path="/service-department-item/:parentId/:ItemId" element={<ServiceDepartmentItem/>}/>
             <Route path="/forget-password" element={<Forget />} />
             <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/terms-condition/:id" element={<TermsConditions />} />
             <Route path="/services/:id" element={<Services/>} />
             <Route path="/join-AFMX" element={<JoinAfmx/>} />
             <Route path="/service-list" element={<Services/>} />
+            <Route path="/service-list-item/:id" element={<ServiceItem/>} />
+            <Route path="/careers-employment" element={<CareersAndEmployment/>} />
+            <Route path="/apply-job" element={<ApplyJob/>} />
+            <Route path="/industrirs-list" element={<IndustriesWeServe/>} />
+
+
 
 
           </Routes>

@@ -1,0 +1,354 @@
+[
+  {
+    "id": "1",
+    "name": "University Cleaning",
+    "industryImage": "./images/industry/universityCleaning.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Event Cleaning",
+    "industryImage": "./images/industry/eventCleaning.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Construction Sites",
+    "industryImage": "./images/industry/constructionSites.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Homeowner and Condominium Associations",
+    "industryImage": "./images/industry/homeownerAndCondominiumAssociations.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Laboratories",
+    "industryImage": "./images/industry/laboratories.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Manufacturing Plants",
+    "industryImage": "./images/industry/manufacturingPlants.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Shopping Centers",
+    "industryImage": "./images/industry/shoppingCenters.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Warehouses",
+    "industryImage": "./images/industry/warehouses.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Fitness",
+    "industryImage": "./images/industry/fitness.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Entertainment Venues",
+    "industryImage": "./images/industry/entertainmentVenues.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Apartment Owners",
+    "industryImage": "./images/industry/apartmentOwners.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Facility Managers",
+    "industryImage": "./images/industry/facilityManagers.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Commercial General Contractors",
+    "industryImage": "./images/industry/commercialGeneralContractors.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Hotels",
+    "industryImage": "./images/industry/hotels.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Resorts",
+    "industryImage": "./images/industry/resorts.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Restaurants",
+    "industryImage": "./images/industry/restaurants.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Corporate Offices",
+    "industryImage": "./images/industry/corporateOffices.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Grocery Stores",
+    "industryImage": "./images/industry/groceryStores.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Car Dealerships",
+    "industryImage": "./images/industry/carDealerships.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Stadiums",
+    "industryImage": "./images/industry/stadiums.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Hospitals",
+    "industryImage": "./images/industry/hospitals.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Airports",
+    "industryImage": "./images/industry/airports.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Airlines",
+    "industryImage": "./images/industry/airlines.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Convention Centers",
+    "industryImage": "./images/industry/conventionCenters.webp",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Museums",
+    "industryImage": "./images/industry/museums.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Banking and Financial Intuitions",
+    "industryImage": "./images/industry/bankingAndFinancialIntuitions.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Commercial Real Estate",
+    "industryImage": "./images/industry/commercialRealEstate.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Retail Stores",
+    "industryImage": "./images/industry/retailStores.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Federal and Local Government",
+    "industryImage": "./images/industry/federalAndLocalGovernment.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Arenas",
+    "industryImage": "./images/industry/arenas.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "name": "Senior Living",
+    "industryImage": "./images/industry/seniorLiving.jpeg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Medical Offices",
+    "industryImage": "./images/industry/medicalOffices.jpg",
+
+    "data": [
+      {
+        "details": ""
+      }
+    ]
+  }
+]

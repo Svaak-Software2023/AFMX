@@ -1,0 +1,37 @@
+
+.apply-job-list li{
+    /* list-style: none; */
+}
+.apply-job-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.apply-job-button button{
+    background-color: #1155a0;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 600;
+    width: 180px;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 4px;
+    transition: all ease .2s;
+}
+.apply-job-button button:hover{
+    background-color: #f20000;;
+}
+.apply-job-button button:active{
+    background-color: #be00f2;;
+}
+
+
+
+
+.applyjob-heading{
+    text-transform: capitalize;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}

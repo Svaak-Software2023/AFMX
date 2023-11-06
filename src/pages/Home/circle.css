@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #ffffff;
 }
 
 .circle-main {
@@ -428,97 +428,189 @@
 
 
 @media screen and (max-width:761px) {
-
-
-    .circle {
-        display: none !important;
-    }
-
-    .circle-mobile-menu {
-        display: block;
-    }
-
-
-    /* 
+ 
 .jgULa-d {
-    transform: translateY(-50%) rotate(-90deg) translate(7rem) ;
+    transform: translateY(-50%) rotate(-90deg) translate(5rem) ;
 }
 
 .circle-image-box12 {
-    transform: translateY(-50%) rotate(-60deg) translate(7rem) ;
+    transform: translateY(-50%) rotate(-60deg) translate(5rem) ;
 }
 
 .circle-image-box1 {
-    transform: translateY(-50%) rotate(-30deg) translate(7rem) ;
+    transform: translateY(-50%) rotate(-30deg) translate(5rem) ;
 }
 
 .circle-image-box2 {
-    transform: translateY(-50%) rotate(0deg) translate(7rem) ;
+    transform: translateY(-50%) rotate(0deg) translate(5rem) ;
 }
 
 .circle-image-box3 {
-    transform: translateY(-50%) rotate(30deg) translate(7rem);
+    transform: translateY(-50%) rotate(30deg) translate(5rem);
 }
 
 .circle-image-box4 {
-    transform: translateY(-50%) rotate(60deg) translate(7rem);
+    transform: translateY(-50%) rotate(60deg) translate(5rem);
 }
 
 .circle-image-box5 {
-    transform: translateY(-50%) rotate(90deg) translate(7rem);
+    transform: translateY(-50%) rotate(90deg) translate(5rem);
 }
 
 .circle-image-box6 {
-    transform: translateY(-50%) rotate(120deg) translate(7rem);
+    transform: translateY(-50%) rotate(120deg) translate(5rem);
 }
 
 .circle-image-box7 {
-    transform: translateY(-50%) rotate(150deg) translate(7rem);
+    transform: translateY(-50%) rotate(150deg) translate(5rem);
 }
 
 .circle-image-box8 {
-    transform: translateY(-50%) rotate(180deg) translate(7rem);
+    transform: translateY(-50%) rotate(180deg) translate(5rem);
 }
 
 .circle-image-box9 {
-    transform: translateY(-50%) rotate(210deg) translate(7rem);
+    transform: translateY(-50%) rotate(210deg) translate(5rem);
 }
 
 .circle-image-box10 {
-    transform: translateY(-50%) rotate(240deg) translate(7rem);
+    transform: translateY(-50%) rotate(240deg) translate(5rem)rotate(185deg);
 }
 
 .circle-image-box11 {
-    transform: translateY(-50%) rotate(270deg) translate(7rem);
+    transform: translateY(-50%) rotate(270deg) translate(5rem);
 }
 
+.inner-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    overflow: clip;
+}
 
 .circle-image .circle-inner-img {
     position: absolute;
-    width: 180px;
+    width: 130px;
 }
 
 .circle-star {
     position: absolute;
-    width: 180px;
+    width: 108px;
 }
 
 .circle-arrow {
     position: absolute;
-    height: 250px;
+    height: 151px;
 }
-
+.circle-item-img {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: unset;
+    transition: all 0.5s;
+    outline: none;
+    border: none;
+    width: 4.8rem;
+    height: 4.5rem;
+    /* overflow: hidden; */
+}
 .inner-circle2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 135px;
+    width: 135px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
 
-} */
+}
+
+
+
+.circle-item-text {
+    position: absolute;
+    z-index: 102;
+    text-wrap: nowrap;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.circle-item1 {
+    transform: translateY(-50%) rotate(-90deg) translate(9.5rem) rotate(-270deg);
+    color: #ff9933;
+}
+
+.circle-item2 {
+
+    transform: translateY(-50%) rotate(-47deg) translate(11.5rem) rotate(47deg);
+    color: #ff0000;
+
+}
+
+.circle-item3 {
+    transform: translateY(-50%) rotate(-32deg) translate(10.7rem) rotate(32deg);
+    color: #52cdf8;
+}
+
+.circle-item4 {
+    transform: translateY(-50%) rotate(-15deg) translate(8.7rem) rotate(15deg);
+    color: #c00000;
+}
+
+.circle-item5 {
+    transform: translateY(-50%) rotate(7deg) translate(8.7rem) rotate(-6deg);
+    color: #336600;
+}
+
+.circle-item6 {
+    transform: translateY(-50%) rotate(31deg) translate(8.5rem) rotate(-31deg);
+    color: #3333ff;
+  
+}
+
+.circle-item7 {
+    transform:translateY(-50%) rotate(90deg) translate(6rem) rotate(-90deg);
+    color: #259b93;
+    /* width: 150px;
+    text-wrap: wrap; */
+}
+
+.circle-item8 {
+    transform: translateY(-50%) rotate(147deg) translate(8rem) rotate(-148deg);
+    color: #0070c4;
+}
+
+.circle-item9 {
+    transform: translateY(-50%) rotate(167deg) translate(9rem) rotate(-168deg);
+    color: #7f6000;
+}
+
+.circle-item10 {
+    transform: translateY(-53%) rotate(186deg) translate(9.3rem) rotate(-187deg);
+    color: #9799ff;
+}
+
+.circle-circle-image-box10 {
+    transform: translateY(-50%) rotate(208deg) translate(10.3rem)rotate(151deg);
+    color: #00b050;
+}
+
+.circle-circle-image-box11 {
+    transform: translateY(-50%) rotate(230deg) translate(11rem) rotate(130deg);
+    color: #cc9900;
+}
+
+.circle-main {
+
+    height: 300px;
+}
 }

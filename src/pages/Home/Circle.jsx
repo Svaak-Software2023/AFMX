@@ -1,9 +1,7 @@
 import { useState } from "react";
 import "./circle.css";
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
 const Circle = () => {
-  const navigate = useNavigate()
   const [angle, setAngle] = useState(null);
   const calculateAngle = (num) => {
     setAngle(num);
@@ -20,25 +18,25 @@ const Circle = () => {
   return (
     <>
        <div className="row m-0 mb-3 p-0 circle">
-        <div className="col-lg-12 col-md-12 col-12">
-          <div className="containerx container bg-white  overFlow">
+        <div className="col-lg-12 col-md-12 col-12 m-0 p-0">
+          <div className="containerx container-lg bg-white">
             <div className=" py-3">
               <div className="circle-main">
                 <div className="inner-circle" >
                   <ul className="sc-fsYfxw fAFqhE circle-menu-image">
                     <li className=" circle-item  circle-image-box12">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(29)} onMouseLeave={resetAngle} onClick={() => navigate("/service/17")}><img src="images/2.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(29)} onMouseLeave={resetAngle} ><img src="images/2.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box1">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(50)} onMouseLeave={resetAngle} onClick={() => navigate("/join-AFMX")}><img src="images/3.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(50)} onMouseLeave={resetAngle} ><img src="images/3.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box2">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(80)} onMouseLeave={resetAngle} onClick={() => navigate("/client-login")}><img src="images/7.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(80)} onMouseLeave={resetAngle} ><img src="images/7.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box3">
@@ -68,7 +66,7 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item  circle-image-box8">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(270)} onMouseLeave={resetAngle} ><img src="images/9.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(270)} onMouseLeave={resetAngle} ><img src="images/1.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box9">
@@ -78,7 +76,7 @@ const Circle = () => {
                     </li>
                     <li className=" circle-image-box10">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(325)} onMouseLeave={resetAngle} onClick={() => navigate("/service/1")}><img src="images/1.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(325)} onMouseLeave={resetAngle} ><img src="images/9.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-image-box11">
@@ -107,18 +105,18 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item-text circle-item2">
                       <div className="inner-circle-item">
-                        <span onClick={() => navigate("/service/17")}>Janitorial Service</span>
+                        <span >Janitorial Service</span>
                       </div>
                     </li>
                     <li className=" circle-item-text circle-item3 ">
                       <div className="inner-circle-item">
-                        <span onClick={() => navigate("/join-AFMX")}>Membership</span>
+                        <span>Membership</span>
 
                       </div>
                     </li>
                     <li className=" circle-item-text circle-item4 ">
                       <div className="inner-circle-item">
-                        <span onClick={() => navigate("/client-login")}>Login</span>
+                        <span >Login</span>
                       </div>
                     </li>
                     <li className=" circle-item-text circle-item5 ">
@@ -149,7 +147,7 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item-text circle-item10  ">
                       <div className="inner-circle-item">
-                        <span>Advertisement</span>
+                        <span>Handyman</span>
                       </div>
                     </li>
                     <li className=" circle-item-text circle-circle-image-box10">
@@ -159,7 +157,7 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item-text circle-circle-image-box11">
                       <div className="inner-circle-item">
-                        <span onClick={() => navigate("/service/1")}>Handyman</span>
+                        <span>Advertisement</span>
                       </div>
                     </li>
                   </ul>
@@ -170,7 +168,7 @@ const Circle = () => {
         </div>
       </div>
 
-      <div className="circle-mobile-menu">
+      {/* <div className="circle-mobile-menu">
 
         <div className="main">
           <div className="services-memebership">
@@ -201,7 +199,7 @@ const Circle = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
     </>

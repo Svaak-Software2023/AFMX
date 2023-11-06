@@ -1,0 +1,196 @@
+.slider-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slider-body .membership_heading {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  border-bottom: 4px solid #b63f3f;
+  font-weight: 600;
+}
+.membership_container {
+  margin-top: 50px;
+}
+.membership_cards {
+  margin-bottom: 20px;
+}
+.membership_cards .cards {
+  align-items: center;
+  display: flex;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  margin: 0 auto;
+}
+.membership_cards .cards .card {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  padding: 30px 35px;
+  height: 480px;
+  width: 311px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 20px 5px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+}
+.membership_cards .card:hover {
+  transform: scale(1.05);
+  z-index: 1000;
+}
+
+.membership_cards .cards .card:nth-child(1) {
+  background-color: #4d4c7d;
+}
+.membership_cards .cards .card:nth-child(2) {
+  background-color: #ce5a67;
+}
+.membership_cards .cards .card:nth-child(3) {
+  background-color: #4f6f52;
+}
+.membership_cards .cards .card:nth-child(4) {
+  background-color: #899351;
+}
+
+.membership_cards .cards .card .plan_img {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: -42px;
+}
+.membership_cards .cards .card .plan_img img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+}
+.membership_cards .cards .card h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 35px;
+}
+.membership_cards .cards .card .subscriptionName {
+  font-size: 0.8rem;
+  padding: 3px 0px;
+  border-radius: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  width: 130px;
+  border: 1px solid rgb(122, 122, 122);
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+.membership_cards .cards .card .subscriptionName .white_circle {
+  border-radius: 50%;
+  background-color: white;
+  height: 19px;
+  width: 19px;
+}
+.membership_cards .cards .card h2 {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.membership_cards .cards .card h2 span {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.membership_cards .cards .card h4 {
+  color: white;
+  font-size: 0.9rem;
+  margin-top: -20px;
+  font-weight: 600;
+}
+.membership_cards .card .benefit_list {
+  text-align: center;
+}
+.membership_cards .cards .card .benefit_list p {
+  color: #d2d2d2;
+  font-size: 0.8rem;
+  /* border-bottom: 1.5px solid #5e5f61; */
+  margin: 0;
+}
+
+.membership_cards .cards .card:nth-child(1) .benefit_list p {
+  border-bottom: 1px solid #a00118;
+}
+.membership_cards .cards .card:nth-child(2) .benefit_list p {
+  border-bottom: 1px solid #5e5f61;
+}
+.membership_cards .cards .card:nth-child(3) .benefit_list p {
+  border-bottom: 1px solid #d29f22;
+}
+.membership_cards .cards .card:nth-child(4) .benefit_list p {
+  border-bottom: 1px solid #5982cb;
+}
+
+.membership_cards .card button {
+  border: none;
+  padding: 7px 15px;
+  color: rgb(223, 227, 228);
+  /* background: #090d39; */
+  background: #001524;
+  border-radius: 5px;
+}
+
+.swiper_container {
+  /* height: 52rem; */
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 22rem !important;
+  /* height: 42rem; */
+  position: relative;
+}
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+  .membership_cards .card:hover {
+    transform: none;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+

@@ -246,14 +246,14 @@ function Home() {
                     <ul className>
                       {serviceData1.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/service/${item.id}`}>{item.name}</Link>
+                          <Link to={`/service-department/${item.id}`}>{item.name}</Link>
                         </li>
                       ))}
                     </ul>
                     <ul className>
                       {serviceData2.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/service/${item.id}`}>{item.name}</Link>
+                          <Link to={`/service-department/${item.id}`}>{item.name}</Link>
                         </li>
                       ))}
                     </ul>

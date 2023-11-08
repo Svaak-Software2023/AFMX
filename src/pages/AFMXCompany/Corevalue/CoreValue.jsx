@@ -17,7 +17,7 @@ function CoreValue() {
                 <p>America&#39;s Finest Maintenance Company, LLC provides the advantages of a locally owned and operated company backed by a national network. Our highly trained, fully dedicated professionals take pride in delivering the highest standards of cleanliness and will treat your office or facility as if it were their own. We are proud to offer our proprietary Capture and Removal Cleaning system, which outperforms traditional cleaning processes by up to 55%. When it comes to running your business, we understand how important it is to choose a dependable, trustworthy service provider. And when it comes to cleaning, you want trusted professionals who will treat your facility like their own and deliver exceptional results.</p>
                 <p>America&#39;s Finest Maintenance Company, LLC provides the advantages of a locally owned and operated company backed by a national network. Our highly trained, fully dedicated professionals take pride in delivering the highest standards of cleanliness and will treat your office or facility as if it were their own. We are proud to offer our proprietary Capture and Removal Cleaning system, which outperforms traditional cleaning processes by up to 55%. When it comes to running your business, we understand how important it is to choose a dependable, trustworthy service provider. And when it comes to cleaning, you want trusted professionals who will treat your facility like their own and deliver exceptional results.</p>
             </div>
-
+ 
         </div>
     </div>
 </div>

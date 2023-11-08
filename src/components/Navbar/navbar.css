@@ -67,16 +67,23 @@
 
 .ad {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .ad a {
   position: relative;
+  height: 80px;
+  width: 800px;
 }
+
 
 .ad img {
   /* / filter: blur(3px); / */
-  width: auto;
+  width: 100%;
+  height: 100%;
   padding-bottom: 0px;
+  object-fit: fill;
 }
 
 .ad p {
@@ -114,7 +121,7 @@
 }
 
 .logo img {
-  width: 130px;
+  width: 120px;
 }
 
 #topbar {
@@ -203,7 +210,7 @@
 
 #header {
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 10;
   height: auto;
 }
 
@@ -212,7 +219,7 @@ header#header .container {
 }
 
 #header.fixed-top {
-  z-index: 99999;
+  z-index: 10;
   height: 60px;
   background-color: white;
 }
@@ -319,7 +326,7 @@ header#header .container {
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
-  z-index: 99;
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   background: #fff;
@@ -371,6 +378,11 @@ header#header .container {
 }
 
 @media (max-width: 1366px) {
+  .ad a {
+    position: relative;
+    height: 80px;
+    width: 600px;
+  }
   .logo img {
     width: 120px;
   }
@@ -402,6 +414,11 @@ header#header .container {
 }
 
 @media (max-width: 991px) {
+  .ad a {
+    position: relative;
+    height: 80px;
+    width: 500px;
+  }
   .mobile-nav-toggle {
     display: block;
   }
@@ -424,7 +441,7 @@ header#header .container {
   bottom: 0;
   background: rgba(9, 9, 9, 0.9);
   transition: 0.3s;
-  z-index: 999;
+  z-index: 10;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -479,7 +496,7 @@ header#header .container {
   display: none;
   margin: 10px 20px;
   padding: 10px 0;
-  z-index: 99;
+  z-index: 10;
   opacity: 1;
   visibility: visible;
   background: #fff;
@@ -545,8 +562,8 @@ header#header .container {
     color: white;
     display: block;
     position: absolute;
-    top: -80px;
-    right: -191px;
+    top: 13px;
+    right: 0px;
   }
 
   .contactus {
@@ -643,4 +660,12 @@ header#header .container {
   box-sizing: border-box;
   fill: white;
   font-size: 1.4em;
+}
+
+
+.nav-close-btn{
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  z-index: 999;
 }

@@ -13,13 +13,13 @@ function ImportantLinks() {
                     <li><Link to="/service-list" className="Links">Services we offer</Link></li>
                     <li><Link to="/industrirs-list" className="Links">Industries we serve</Link></li>
                     <li><Link to="/join-AFMX" className="Links">Membership</Link></li>
-                    <li><Link to="" className="Links">Media</Link></li>
+                    <li><Link to="/media/1" className="Links">Media</Link></li>
                     <li><Link to="" className="Links">Advanced technology & Robotic Cleaning</Link></li>
                     <li><Link to="" className="Links">Employee Self Services</Link></li>
                     <li><Link to="" className="Links">Art and Gallery</Link></li>
                     <li><Link to="" className="Links">Make A Payment</Link></li>
                     <li><Link to="" className="Links">Donations</Link></li>
-                    <li><Link to="" className="Links">AFMX learning Center/Education Portal</Link></li>
+                    <li><Link to="/afmx-learning/2" className="Links">AFMX learning Center/Education Portal</Link></li>
                     <li><Link to="" className="Links">Complaint Portal</Link></li>
                     <li><Link to="" className="Links">Partner With Us</Link></li>
                     <li><Link to="/about-the-company" className="Links">About The Company</Link></li>

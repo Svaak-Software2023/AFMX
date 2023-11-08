@@ -11,9 +11,9 @@ function LeftMenue({ type, data, url }) {
             <div className="left-menue-list">
                 <ul>
                     {
-                        menuItem?.map((item) => (
+                      menuItem&&  menuItem?.map((item) => (
                             <li key={item?.id}>
-                                <Link to={`${url}/${item?.id}`} className="Links">{item?.name}</Link>
+                                <Link to={`${url}/${url&&item?.id}`} className="Links">{item?.name}</Link>
                             </li>
                         )
                         )

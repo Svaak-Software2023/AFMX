@@ -5,6 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 import { HiSpeakerphone } from "react-icons/hi";
 import { ImLocation } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
+import { AiOutlineClose} from "react-icons/ai";
+
 
 function Navbar() {
   const [navbar, setNavbar] = useState("navbar");
@@ -34,20 +36,35 @@ function Navbar() {
 
   return (
     <>
-      {/* {/ topbar  /} */}
+      
       <section id="topbar" className="align-items-center">
         <div className="containe p-0">
           <div className="row align-items-center p-0 m-0">
             <div className="col-lg-12">
-            <div className="logo">
+              <div className="logo">
                 <Link to="/">
                   <img src="images/logo-red.png" />
                 </Link>
               </div>
+              <div className="mobile-nav-toggle">
+                <i
+                  className={`bi bi-list `}
+                  onClick={() =>
+                    navbar === "navbar"
+                      ? setNavbar("navbar-mobile")
+                      : setNavbar("navbar")
+                  }
+                ></i>
+                
+                 {navbar === "navbar-mobile"?<AiOutlineClose
+                  className="nav-close-btn"
+                  onClick={() =>setNavbar("navbar")}
+                />:""}
+              </div>
               <div className="ad">
-              
+
                 <a href="">
-                  <img src="assets/img/Ad/ad.jpg" />
+                  <img src="./images/helpingHand/wildlife-fund.png" />
                   <div className="advertise_banner"></div>
 
                   <p>
@@ -64,34 +81,34 @@ function Navbar() {
             <div className="col-lg-6 col-10">
               <div className="contactus">
                 <ul>
-                    <li className="m-0 p-0 py-2">
-                      <button>
-                        <Link to="/" className="complaint_btn">
-                          Complaint Portal
-                        </Link>
-                      </button>
-                    </li>
+                  <li className="m-0 p-0 py-2">
+                    <button>
+                      <Link to="/" className="complaint_btn">
+                        Complaint Portal
+                      </Link>
+                    </button>
+                  </li>
                   <li>
                     {showInputSearch && (
                       <input type="text" placeholder="Search" />
                     )}
-                      <button onClick={handleShowSearch}>
-                        <FaSearch
-                          className="search_icon"
-                          onClick={handleShowSearch}
-                        />
-                      </button>
+                    <button onClick={handleShowSearch}>
+                      <FaSearch
+                        className="search_icon"
+                        onClick={handleShowSearch}
+                      />
+                    </button>
                   </li>
                   {/* {/ location /} */}
                   <li>
                     {showInputLocation && (
                       <input type="text" placeholder="Search Location" />
                     )}
-                      <button onClick={handleShowLocation}>
-                        <Link to="/location">
-                          <ImLocation className="search_location" />
-                        </Link>
-                      </button>
+                    <button onClick={handleShowLocation}>
+                      <Link to="/location">
+                        <ImLocation className="search_location" />
+                      </Link>
+                    </button>
                     {/* {/ <img src="assets/img/searc.svg" onClick={searchBox} /> /} */}
                   </li>
                 </ul>
@@ -108,14 +125,13 @@ function Navbar() {
           <nav id="navbar" className={navbar}>
             <ul>
               <li>
-                  <Link
-                    to="/new"
-                    className="nav-link "
-                    aria-current="page"
-                    href="#"
-                  >
-                    Price Calculator
-                  </Link>
+                <Link
+                  to="/price-calculator"
+                  className="nav-link "
+                  aria-current="page"
+                >
+                  Price Calculator
+                </Link>
               </li>
               <li className="dropdown" onClick={membershipdropdown}>
                 <a href="#">
@@ -142,34 +158,34 @@ function Navbar() {
                 )}
               </li>
               <li>
-                  <Link to="/service-list" className="nav-link ">
-                    Services
-                  </Link>
+                <Link to="/service-list" className="nav-link ">
+                  Services
+                </Link>
               </li>
               <li>
-                  <Link to="/industrirs-list" className="nav-link ">
-                    Industries We Serve
-                  </Link>
+                <Link to="/industrirs-list" className="nav-link ">
+                  Industries We Serve
+                </Link>
               </li>
               <li>
-                  <Link to="/new" className="nav-link ">
-                    Robotic Cleaning
-                  </Link>
+                <Link to="/new" className="nav-link ">
+                  Robotic Cleaning
+                </Link>
               </li>
               <li>
-                  <Link to="/new" className="nav-link ">
-                    Media
-                  </Link>
+                <Link to="/media/1" className="nav-link ">
+                  Media
+                </Link>
               </li>
               <li>
-                  <Link to="/new" className="nav-link ">
-                    Marketing Department
-                  </Link>
+                <Link to="/new" className="nav-link ">
+                  Marketing Department
+                </Link>
               </li>
               <li>
-                  <Link to="/careers-employment" className="nav-link ">
-                    Careers & Employment
-                  </Link>
+                <Link to="/careers-employment" className="nav-link ">
+                  Careers & Employment
+                </Link>
               </li>
 
               <li className="dropdown" onClick={logindropdown}>
@@ -186,7 +202,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link to="/federal-govrment-login">
-                      Federal Government Login
+                        Federal Government Login
                       </Link>
                     </li>
                     <li>
@@ -197,14 +213,6 @@ function Navbar() {
               </li>
             </ul>
 
-            <i
-              className={`bi bi-list mobile-nav-toggle`}
-              onClick={() =>
-                navbar === "navbar"
-                  ? setNavbar("navbar-mobile")
-                  : setNavbar("navbar")
-              }
-            ></i>
           </nav>
         </div>
       </header>

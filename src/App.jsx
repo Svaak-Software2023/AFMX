@@ -30,6 +30,9 @@ import Mission from "./pages/AFMXCompany/Mission/Mission"
 import Statment from "./pages/AFMXCompany/Statment/Statment"
 import Legal from "./pages/AFMXCompany/Legal/Legal"
 import CoreValue from "./pages/AFMXCompany/Corevalue/CoreValue"
+import AFMXLearning from "./pages/AFMXLearning/AFMXLearning"
+import Media from "./pages/Media/Media"
+import PriceCalculator from "./components/priceCalculator/priceCalculator"
 
 
 function App() {
@@ -90,12 +93,22 @@ function App() {
             <Route path="/apply-job" element={<ApplyJob/>} />
             <Route path="/industrirs-list" element={<IndustriesWeServe/>} />
             <Route path="/industrirs-list/:id" element={<IndustryItem/>} />
+            <Route path="/price-calculator" element={<PriceCalculator/>} />
+
 
 
             {/* important links  category */}
             <Route path="/chemical-regulation" element={<ChemicalRegulation/>} />
             <Route path="/about-the-company" element={<AboutTheCompany/>} />
             <Route path="/about-the-company" element={<AboutTheCompany/>} />
+            <Route path="/afmx-learning/:id" element={<AFMXLearning/>} />
+
+            {/* media  */}
+
+            <Route path="/media/:id" element={<Media/>} />
+
+
+
 
             {/* AFMX Company  */}
             <Route path="/mission" element={<Mission/>} />

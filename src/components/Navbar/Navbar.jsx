@@ -83,7 +83,7 @@ function Navbar() {
                 <ul>
                   <li className="m-0 p-0 py-2">
                     <button>
-                      <Link to="/" className="complaint_btn">
+                      <Link to="/complain-portal" className="complaint_btn">
                         Complaint Portal
                       </Link>
                     </button>
@@ -134,10 +134,10 @@ function Navbar() {
                 </Link>
               </li>
               <li className="dropdown" onClick={membershipdropdown}>
-                <a href="#">
+                <Link>
                   <span>Membership</span>
                   <i className="bi bi-chevron-down"></i>
-                </a>
+                </Link>
                 {membershipdrop && (
                   <ul className="dropdown-active">
                     <li>

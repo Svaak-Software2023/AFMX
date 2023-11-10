@@ -5,12 +5,14 @@ const Slider = () => {
   const [user, setUser] = useState("");
 
   useEffect(() => {
-    const userDetails = JSON.parse(localStorage.getItem("user"));
-    if (userDetails) {
-      setUser(userDetails);
+    if(localStorage.getItem("user")){
+    const {signUpService} = JSON.parse(localStorage.getItem("user"));
+    if (signUpService) {
+      setUser(signUpService);
     }
+  }
   }, []);
-  // console.log(user.oldUser.firstname.charAt(0).toUpperCase());
+  console.log(user,"User details");
   const handleSignOut = () => {
     localStorage.clear();
     setUser("");
@@ -69,9 +71,9 @@ const Slider = () => {
               {user ? (
                 <div className="login-button">
                   <div className="profile_pic">
-                    {user.oldUser.firstname.charAt(0).toUpperCase()}
+                    {user?.clientFirstName.charAt(0).toUpperCase()}
                   </div>
-                  <h3 className="profile_name">Welcome, {user.oldUser.firstname}!</h3>
+                  <h3 className="profile_name">Welcome, {user?.clientFirstName}!</h3>
                   <Link to="/">View Profile</Link>
                   <button className="signout_btn" onClick={handleSignOut}>
                     Sign Out

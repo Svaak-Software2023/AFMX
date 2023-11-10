@@ -6,6 +6,7 @@ import helpingHand from "../../assets/data/helpingHand.json";
 import productData from "../../assets/data/Productdata.json";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import WatchWhether from "./WatchWhether";
+import Contact from "../../components/Contact/Contact";
 function Home() {
   const productData1 = productData.filter((item) => item.id < 8);
   const productData2 = productData.filter((item) => item.id > 7);
@@ -276,7 +277,7 @@ function Home() {
                   <div className="membership-lis-image">
                     {/* <img src="assets/img/service/map.jpg" />
                     <img src="assets/img/service/calender.jpg" /> */}
-                    <WatchWhether/>
+                    <WatchWhether />
                   </div>
                 </div>
               </div>
@@ -326,6 +327,7 @@ function Home() {
             </div>
           </div>
         </div>
+           
 
         {/* partner With us  */}
 
@@ -492,6 +494,15 @@ function Home() {
                   </ul>
                 </div>
               </div>
+            </div>
+
+          </div>
+        </div>
+ {/* contact  */}
+ <div className="services-memebership">
+          <div className="container p-0">
+            <div className="my-3">
+              <Contact />
             </div>
           </div>
         </div>

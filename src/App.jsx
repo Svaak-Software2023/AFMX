@@ -33,6 +33,7 @@ import CoreValue from "./pages/AFMXCompany/Corevalue/CoreValue"
 import AFMXLearning from "./pages/AFMXLearning/AFMXLearning"
 import Media from "./pages/Media/Media"
 import PriceCalculator from "./components/priceCalculator/priceCalculator"
+import ComplainPortal from "./pages/complainPortal/ComplainPortal"
 
 
 function App() {
@@ -94,6 +95,7 @@ function App() {
             <Route path="/industrirs-list" element={<IndustriesWeServe/>} />
             <Route path="/industrirs-list/:id" element={<IndustryItem/>} />
             <Route path="/price-calculator" element={<PriceCalculator/>} />
+            <Route path="/complain-portal" element={<ComplainPortal/>}/>
 
 
 

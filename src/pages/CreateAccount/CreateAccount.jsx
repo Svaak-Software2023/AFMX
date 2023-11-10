@@ -1,47 +1,37 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import axios from 'axios'
 import "./create_acoount.css"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { signup } from "../../redux/featurs/authSlice";
+import { useDispatch } from "react-redux";
 
 function CreateAccount() {
     const navigate = useNavigate()
-    const [data, setData] = useState({
-        prifix: "",
-        firstname: "",
-        middlename: "",
-        lastname: "",
-        postfix: "",
-        email: "",
-        phone: "",
-        password: "",
-        ssn: "",
-        address: "",
-        postal_code: "",
-        city: "",
-        state: "",
-        country: ""
+    const [formData, setFormData] = useState({
+        clientPrifix: "",
+        clientFirstName: "",
+        clientMiddleName: "",
+        clientLastName: "",
+        clientSuffix: "",
+        clientEmail: "",
+        clientPhone: "",
+        clientPassword: "",
+        clientSSN: "",
+        clientAddress1: "",
     });
+
+    const dispatch=useDispatch();
+
     const changehandller = (e) => {
         const name = e.target.name;
-        setData({ ...data, [name]: e.target.value })
-
+        setFormData({ ...formData, [name]: e.target.value })
     }
     const submithandler = async (e) => {
         e.preventDefault()
-        try {
-            const response = await axios.post('http://localhost:5000/auth/signup', data)
-                .then((response) => {
-                    toast.success(response.data.message);
-                    navigate("/")
-                })
-
-
-            console.log(response)
-        } catch (err) {
-            return toast.error(err.response?.data?.message);
-        }
+        dispatch(signup({formData,navigate,toast}))
+        console.log(formData);
+       
     }
     return (
 
@@ -59,15 +49,21 @@ function CreateAccount() {
                                 <h3 className="userType">Create Account</h3>
                                 <form onSubmit={submithandler}>
                                     <div className="row">
-
-
                                         <div className="col-lg-12">
-                                            <label htmlFor="firstName" className="label">Username <span>*</span></label>
+                                            <label htmlFor="firstName" className="label">First Name<span>*</span></label>
                                             <input id='name'
                                                 type="text"
 
                                                 className='form-control mb-3 '
-                                                name='firstname'
+                                                name='clientFirstName'
+                                                onChange={changehandller}
+                                            />
+                                            <label htmlFor="firstName" className="label">Last Name</label>
+                                            <input id='name'
+                                                type="text"
+
+                                                className='form-control mb-3 '
+                                                name='clientLastName'
                                                 onChange={changehandller}
                                             />
 
@@ -75,14 +71,14 @@ function CreateAccount() {
                                             <input id='emailId'
                                                 type="email"
                                                 className='form-control mb-3'
-                                                name='email'
+                                                name='clientEmail'
                                                 onChange={changehandller}
                                             />
                                             <label htmlFor="password" className="label">Password <span>*</span></label>
                                             <input id='password'
                                                 type="password"
                                                 className='form-control mb-3'
-                                                name='password'
+                                                name='clientPassword'
                                                 onChange={changehandller}
                                             />
 
@@ -97,22 +93,21 @@ function CreateAccount() {
                                             <input id='ssn'
                                                 type="text"
                                                 className='form-control mb-3'
-                                                name='ssn'
+                                                name='clientSSN'
                                                 onChange={changehandller}
                                             />
-                                            <label htmlFor="ein-number" className="label">EIN Number <span>*</span></label>
+                                            <label htmlFor="ein-number" className="label">EIN Number</label>
                                             <input id='ein-number'
                                                 type="text"
                                                 className='form-control mb-3'
                                                 name='ein-number'
                                                 onChange={changehandller}
                                             />
-                                            <label htmlFor="bradstreet-number" className="label">Duns & Bradstreet No <span>*</span></label>
+                                            <label htmlFor="bradstreet-number" className="label">Address<span>*</span></label>
                                             <input id='bradstreet-number'
                                                 type="text"
-
                                                 className='form-control mb-3 '
-                                                name='bradstreet-number'
+                                                name='clientAddress1'
                                                 onChange={changehandller}
                                             />
                                            

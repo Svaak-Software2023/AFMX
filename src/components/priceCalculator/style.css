@@ -20,8 +20,6 @@
     font-weight: 600;
     display: flex;
     align-items: center;
-    
-    
 }
 .label-text svg{
     color:#3f63b9;
@@ -39,7 +37,7 @@
 
 .cost-calculator h3 {
     text-align: end;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .cost-calculator h3 span {
@@ -84,4 +82,31 @@
 .per-sq div input {
     width: 50px;
 
+}
+
+
+.janitorial-labor-cost{
+    display: flex;
+    justify-content: space-between;
+}
+.janitorial-labor-cost h3{
+font-size: .96rem;
+font-weight: 600;
+line-height: 10px;
+}
+
+.janitorial-labor-cost-text{
+    display: block;
+    width: 100%;
+   font-size: .79rem;
+}
+.additional-expense{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 190, 190);
+}
+.additional-expense h3{
+    font-size: .75rem;
+    font-weight: 600;
+    padding: 10px;
 }

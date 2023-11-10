@@ -4,10 +4,10 @@ import { toast } from 'react-toastify';
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { login } from "../../redux/featurs/authSlice";
+import { signin } from "../../redux/featurs/authSlice";
 
 function Login({ loginType }) {
-    const [formData, setFormData] = useState({ email: "", password: "" });
+    const [formData, setFormData] = useState({ clientEmail: "", clientPassword: "" });
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -18,8 +18,7 @@ function Login({ loginType }) {
     }
     const submithandler = async (e) => {
         e.preventDefault();
-        console.log(formData, "ksandknk");
-        dispatch(login({ formData, navigate, toast }))
+        dispatch(signin({ formData, navigate, toast }))
     }
     return (
         <>
@@ -40,7 +39,7 @@ function Login({ loginType }) {
                                         type="email"
                                         className='form-control mb-3 '
                                         required
-                                        name='email'
+                                        name='clientEmail'
                                         onChange={changehandler}
                                     />
                                     <label htmlFor="password" className="label">Password</label>
@@ -48,7 +47,7 @@ function Login({ loginType }) {
                                         type="password"
                                         className='form-control mb-3'
                                         required
-                                        name='password'
+                                        name='clientPassword'
                                         onChange={changehandler}
                                     />
                                     <div className="forget-login">

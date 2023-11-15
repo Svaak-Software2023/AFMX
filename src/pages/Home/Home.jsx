@@ -327,7 +327,7 @@ function Home() {
             </div>
           </div>
         </div>
-           
+
 
         {/* partner With us  */}
 
@@ -498,14 +498,7 @@ function Home() {
 
           </div>
         </div>
- {/* contact  */}
- <div className="services-memebership">
-          <div className="container p-0">
-            <div className="my-3">
-              <Contact />
-            </div>
-          </div>
-        </div>
+      
       </div>
     </>
   );

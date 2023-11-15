@@ -37,7 +37,7 @@ function PriceCalculator() {
         const name = e.target.name;
         setExpensesForm({ ...expensesForm, [name]: e.target.value });
     }
-        // additional expenses Array creation 
+    // additional expenses Array creation 
     function expensesSubmithandler(e) {
         e.preventDefault();
         setExpenses([...expenses, expensesForm]);
@@ -55,7 +55,7 @@ function PriceCalculator() {
         setSubTotal(formData.staff * formData.rate * formData.hour * formData.freq);
 
         // set per clean cost 
-        let value=Number(subTotal)/2
+        let value = Number(subTotal) / 2
         setPerClean(value);
         // find sum of all additional expenses  
         let sum = 0;
@@ -85,8 +85,7 @@ function PriceCalculator() {
                                                 <MdGroups className="fs-4" /> Labor
                                             </p>
                                             <Select
-                                                labelId="demo-simple-select-standard-label"
-                                                id="demo-simple-select-standard"
+                                                className="m-0 p-0"
                                                 sx={{ m: 1, minWidth: 120 }}
                                                 variant="standard"
                                                 name="labor"
@@ -158,8 +157,7 @@ function PriceCalculator() {
                                                 <LuTimerReset className="fs-4" /> Freq
                                             </p>
                                             <Select
-                                                labelId="demo-simple-select-standard-label"
-                                                id="demo-simple-select-standard"
+                                                className="m-0 p-0"
                                                 variant="standard"
                                                 sx={{ m: 1, minWidth: 120 }}
                                                 name="freq"
@@ -176,6 +174,28 @@ function PriceCalculator() {
                                                 <MenuItem value={8}>8</MenuItem>
                                                 <MenuItem value={9}>9</MenuItem>
                                                 <MenuItem value={10}>10</MenuItem>
+                                                <MenuItem value={11}>11</MenuItem>
+                                                <MenuItem value={12}>12</MenuItem>
+                                                <MenuItem value={13}>13</MenuItem>
+                                                <MenuItem value={14}>14</MenuItem>
+                                                <MenuItem value={15}>15</MenuItem>
+                                                <MenuItem value={16}>16</MenuItem>
+                                                <MenuItem value={17}>17</MenuItem>
+                                                <MenuItem value={18}>18</MenuItem>
+                                                <MenuItem value={19}>19</MenuItem>
+                                                <MenuItem value={20}>20</MenuItem>
+                                                <MenuItem value={21}>21</MenuItem>
+                                                <MenuItem value={22}>22</MenuItem>
+                                                <MenuItem value={23}>23</MenuItem>
+                                                <MenuItem value={24}>24</MenuItem>
+                                                <MenuItem value={25}>25</MenuItem>
+                                                <MenuItem value={26}>26</MenuItem>
+                                                <MenuItem value={27}>27</MenuItem>
+                                                <MenuItem value={28}>28</MenuItem>
+                                                <MenuItem value={29}>29</MenuItem>
+                                                <MenuItem value={30}>30</MenuItem>
+                                                <MenuItem valu={31}>31</MenuItem>
+
                                             </Select>
                                         </div>
                                     </div>
@@ -186,8 +206,7 @@ function PriceCalculator() {
                                             </p>
 
                                             <Select
-                                                labelId="demo-simple-select-standard-label"
-                                                id="demo-simple-select-standard"
+                                                className="m-0 p-0"
                                                 sx={{ m: 1, minWidth: 120 }}
                                                 variant="standard"
                                                 name="per"
@@ -268,7 +287,7 @@ function PriceCalculator() {
                                                     <div className="row">
                                                         <div className="col-lg-4 col-12 mb-3">
                                                             <TextField
-                                                            className="w-100"
+                                                                className="w-100"
                                                                 variant="standard"
                                                                 placeholder="Expenses Name"
                                                                 value={expensesForm.expensesName}
@@ -295,7 +314,7 @@ function PriceCalculator() {
                                                             />
                                                         </div>
                                                         {/* hide button when input empty  */}
-                                                       {expensesForm.expensesName&&expensesForm.expensesAmount&& <div className="col-lg-4 col-12 mb-3">
+                                                        {expensesForm.expensesName && expensesForm.expensesAmount && <div className="col-lg-4 col-12 mb-3">
                                                             <Button variant="contained" type="submit">
                                                                 Add
                                                             </Button>

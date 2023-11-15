@@ -96,7 +96,7 @@ function Footer() {
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
-                <a href="#/new">Contact Us</a>
+                <Link to="/contact">Contact Us</Link>
               </li>
               <li>
                 <i className="bx bx-chevron-right" />
@@ -170,16 +170,16 @@ function Footer() {
         <div className="col-lg-8 col-12">
           <div className="footer-social-media ">
             <ul>
-              <li className="youtube"><a href=""> <i className="fab fa-youtube"></i></a></li>
+              <li className="youtube"><Link to="https://www.youtube.com/@americasfinestmaintenancec9082/featured" target="_blank"> <i className="fab fa-youtube"></i></Link></li>
               <li className="discord"><a href=""> <i className="fab fa-discord"></i></a></li>
               <li className="tiktok"><a href=""> <i className="fab fa-tiktok"></i></a></li>
               <li className="snapchat"><a href=""> <i className="fab fa-snapchat"></i></a></li>
-              <li className="skype"><a href=""> <i className="fab fa-skype"></i></a></li>
-              <li className="pinterest"><a href=""> <i className="fab fa-pinterest"></i></a></li>
-              <li className="instagram"><a href=""> <i className="fab fa-instagram"></i></a></li>
-              <li className="facebook"><a href=""> <i className="fab fa-facebook"></i></a></li>
-              <li className="twitter"><a href=""><RiTwitterXLine /></a></li>
-              <li className="linkedin"><a href=""> <i className="fab fa-linkedin"></i></a></li>
+              <li className="skype"><Link to="https://join.skype.com/invite/RcbCHVpVamrJ" target="_blank"> <i className="fab fa-skype"></i></Link></li>
+              <li className="pinterest"><Link to="https://id.pinterest.com/americafinest/" target="_blank"> <i className="fab fa-pinterest"></i></Link></li>
+              <li className="instagram"><Link to="https://www.instagram.com/afmcompanyllc/" target="_blank"> <i className="fab fa-instagram"></i></Link></li>
+              <li className="facebook"><Link to="https://www.facebook.com/atamericasfinest" target="_blank"> <i className="fab fa-facebook"></i></Link></li>
+              <li className="twitter"><Link to="https://www.instagram.com/afmcompanyllc/" target="_blank"> <RiTwitterXLine /></Link></li>
+              <li className="linkedin"><Link  to="https://www.linkedin.com/in/americasfinestmaintenancecompanyllc/" target="_blank"> <i className="fab fa-linkedin"></i></Link></li>
             </ul>
           </div>
         </div>

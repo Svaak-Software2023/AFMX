@@ -96,7 +96,17 @@ color: #fff;
     color: white;
     font-size: 20px;
     font-weight: bold;
+	
 }
+.contact-info-heading{
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact-info-text{
+	font-size: 12px;
+    font-weight: 600;
+}
+
 
 #success{
 	width: 100%;

@@ -27,7 +27,7 @@ const JoinAFMX = () => {
              { (width>768)
              ?
               <Swiper
-              pagination={{ clickable: true }}
+              // pagination={{ clickable: true }}
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}

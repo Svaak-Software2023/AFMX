@@ -1,8 +1,7 @@
 import "./membership.css";
 import MembershipPlan from "../../assets/data/membership/membershipPlan.json";
 import MembershipCard from "./MembershipCard";
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';

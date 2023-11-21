@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import LeftMenu from "../../components/leftMenu/LeftMenu";
+import LeftMenue from "../../components/leftmenu/LeftMenu";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import "./serviceDepartment.css";
 //import { loadConfigFromFile } from "vite";
@@ -12,7 +12,7 @@ const ServiceDepartment = () => {
       <div className="container p-0 my-3">
         <div className="row m-0 p-0 ">
           <div className="col-lg-3 col-md-3 col-0 p-0 service_menu">
-            <LeftMenu
+            <LeftMenue
               type={data?.name}
               data={data?.submenu}
               url={`/service-department-item/${data?.id}`}
@@ -27,10 +27,12 @@ const ServiceDepartment = () => {
 
                     <div className="piramid-top-img row mx-1">
                       <Link to={`/service-department-item/${data?.id}/${data?.submenu[0]?.id}`}>
+                        <div className="position-relative">
 
-                        <img src={data?.submenu[0]?.image} alt="" />
-                        <div className="service-name">
-                          <h3>{data?.submenu[0]?.name}</h3>
+                          <img src={data?.submenu[0]?.image} alt="" />
+                          <div className="service-name">
+                            <h3>{data?.submenu[0]?.name}</h3>
+                          </div>
                         </div>
                       </Link>
                     </div>
@@ -41,16 +43,19 @@ const ServiceDepartment = () => {
                         {data?.submenu?.slice(1)?.map((item) => (
                           <div className="col-lg-4 mb-1 p-0 " key={item.id}>
                             <div className="mx-1 image-gallery">
-                              <Link to={`/service-department-item/${data?.id}/${item.id}`}>
-                                <img
-                                  src={item?.image}
-                                  alt={data?.id}
-                                  className="img-fluid "
-                                />
-                                <div className="service-name">
-                                  <h3>{item?.name}</h3>
-                                </div>
-                              </Link>
+                              <div>
+
+                                <Link to={`/service-department-item/${data?.id}/${item.id}`}>
+                                  <img
+                                    src={item?.image}
+                                    alt={data?.id}
+                                    className="img-fluid "
+                                  />
+                                  <div className="service-name">
+                                    <h3>{item?.name}</h3>
+                                  </div>
+                                </Link>
+                              </div>
                             </div>
                           </div>
                         ))}

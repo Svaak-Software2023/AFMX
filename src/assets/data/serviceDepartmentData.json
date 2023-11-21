@@ -5,28 +5,28 @@
     "submenu": [
       {
         "id": 1,
-        "name": "Assembly Service",
-        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+        "name": "Carpentry Installation and Repair Service",
+        "image": "./images/serviceDepartments/HandymanSolutionsDepartment/carpentryInstallationandRepairService.jpg"
       },
       {
         "id": 2,
-        "name": "Attic Installation and Repair",
-        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+        "name": "Attic Installation and Repair Service",
+        "image": "./images/serviceDepartments/HandymanSolutionsDepartment/atticInstallationandRepairService.jpg"
       },
       {
         "id": 3,
-        "name": "Carpentry Installation and Repair",
-        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+        "name": "Fence Assembly Service",
+        "image": "./images/serviceDepartments/HandymanSolutionsDepartment/fenceAssemblyService.jpg"
       },
       {
         "id": 4,
         "name": "Handyman Services",
-        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+        "image": "./images/serviceDepartments/HandymanSolutionsDepartment/handiymanService.jpg"
       },
       {
         "id": 5,
         "name": "Remodeling Services",
-        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg"
+        "image": "./images/serviceDepartments/HandymanSolutionsDepartment/remodelingService.jpg"
       }
     ]
   },

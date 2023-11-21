@@ -7,7 +7,7 @@ export const signin=createAsyncThunk("api/sigin", async({formData,navigate,toast
         const response=await api.signin(formData)
         toast.success(response.data.message)
         navigate("/")
-        return response.data.signInService
+        return response.data.signInResponse
     }catch(err){
         return toast.error(err.response.data.error)
     }

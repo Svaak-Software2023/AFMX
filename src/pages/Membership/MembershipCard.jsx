@@ -50,7 +50,6 @@ const MembershipCard = (props) => {
           <h4>USD Per Month</h4>
           <div className="benefit_list">
             {data.membershipBenefit
-              .filter((e) => e.benefitId < 8)
               .map((i) => (
                 <>
                   <p key={i.benefitId}>{i.benefitName}</p>

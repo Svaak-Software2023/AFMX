@@ -350,5 +350,10 @@
         "details": ""
       }
     ]
+  },
+  {
+    "id": "32",
+    "name": "Community College",
+    "industryImage": "./images/industry/medicalOffices.jpg"
   }
 ]

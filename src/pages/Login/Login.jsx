@@ -3,8 +3,10 @@ import "./login.css"
 import { toast } from 'react-toastify';
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { signin } from "../../redux/featurs/authSlice";
+import Loader from "../../components/Loader/Loader";
+import { useEffect } from "react";
 
 function Login({ loginType }) {
     const [formData, setFormData] = useState({ clientEmail: "", clientPassword: "" });
@@ -20,10 +22,18 @@ function Login({ loginType }) {
         e.preventDefault();
         dispatch(signin({ formData, navigate, toast }))
     }
+
+    const[loading,setLoading]=useState(false)
+    const load=useSelector((state)=>state.auth.loading)
+    useEffect(()=>{
+        console.log(load);
+        setLoading(load)
+    },[loading])
     return (
         <>
-
-            <div className="container p-0 bg-white my-3">
+        {loading?
+        <Loader/>
+            :<div className="container p-0 bg-white my-3">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
                         <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="" className="img-fluid" />
@@ -67,7 +77,7 @@ function Login({ loginType }) {
                     </div>
                 </div>
             </div>
-        </>
+        }</>
     )
 }
 

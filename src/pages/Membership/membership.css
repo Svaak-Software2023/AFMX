@@ -39,8 +39,8 @@ display: flex;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content: start;
   position: relative;
   border-radius: 10px;
   padding: 20px 0px;
@@ -116,6 +116,9 @@ display: flex;
   margin-top: -20px;
   font-weight: 600;
 }
+.benefit_list{
+  width: 100%;
+}
 .membership_cards .card .benefit_list p{
   text-align: center;
 }
@@ -126,17 +129,20 @@ display: flex;
   margin: 0;
 }
 
-.cards .card:nth-child(1) .benefit_list p {
+.card1 .benefit_list p {
   padding: 4px;
   border-bottom: 1px solid #a00118;
 }
-.cards .card:nth-child(2) .benefit_list p {
+.card2 .benefit_list p {
+  padding: 4px;
   border-bottom: 1px solid #5e5f61;
 }
-.cards .card:nth-child(3) .benefit_list p {
+.card3 .benefit_list p {
+  padding: 4px;
   border-bottom: 1px solid #d29f22;
 }
-.cards .card:nth-child(4) .benefit_list p {
+.card4 .benefit_list p {
+  padding: 4px;
   border-bottom: 1px solid #5982cb;
 }
 

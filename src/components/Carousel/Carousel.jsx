@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
 import "./Carousel.css";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 const Slider = () => {
   const [user, setUser] = useState("");
+  const data=useSelector((state)=>state.auth.user)
+ 
 
   useEffect(() => {
-    if(localStorage.getItem("user")){
-    const {signUpService} = JSON.parse(localStorage.getItem("user"));
-    if (signUpService) {
-      setUser(signUpService);
+    if(data){
+    if (data) {
+      setUser(data);
     }
   }
   }, []);
-  console.log(user,"User details");
   const handleSignOut = () => {
     localStorage.clear();
     setUser("");

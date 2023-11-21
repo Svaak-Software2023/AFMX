@@ -42,6 +42,7 @@ import PriceCalculator from "./components/priceCalculator/priceCalculator"
 import ComplainPortal from "./pages/complainPortal/ComplainPortal"
 import Contact from "./components/Contact/Contact";
 import Loader from "./components/Loader/Loader";
+import MapLocation from "./pages/mapLocation/MapLocation";
 
 
 function App() {
@@ -105,7 +106,7 @@ function App() {
           <Route path="/price-calculator" element={<PriceCalculator />} />
           <Route path="/complain-portal" element={<Loader/>} />
           <Route path="/contact" element={<Contact/>}/>
-
+          <Route path="/location" element={<MapLocation/>}/>
 
 
           {/* important links  category */}

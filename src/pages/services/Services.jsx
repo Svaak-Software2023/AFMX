@@ -22,7 +22,7 @@ function Services() {
                   <div className="row m-0 p-0  p-lg-3 py-3 ">
                     {serviceData?.map((item) => (
                       <div className="col-lg-4 mb-1 p-0 image-gallery" key={item.id}>
-                        <div className="mx-1 ">
+                        <div className="mx-1 position-relative">
                         <Link to={`/service-list-item/${item.id}`}>
                           <img
                             src={item?.serviceImage}

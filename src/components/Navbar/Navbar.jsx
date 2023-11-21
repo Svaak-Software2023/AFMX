@@ -7,13 +7,14 @@ import { ImLocation } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineClose} from "react-icons/ai";
 
-
 function Navbar() {
   const [navbar, setNavbar] = useState("navbar");
   const [logindrop, setlogindrop] = useState(false);
   const [membershipdrop, setmembershipdrop] = useState(false);
   const [showInputLocation, setShowInputLocation] = useState(false);
   const [showInputSearch, setShowInputSearch] = useState(false);
+
+  const data=localStorage.getItem('user')
 
   const handleShowSearch = () => {
     setShowInputSearch(!showInputSearch);
@@ -36,13 +37,12 @@ function Navbar() {
 
   return (
     <>
-      
       <section id="topbar" className="align-items-center">
         <div className="containe p-0">
           <div className="row align-items-center p-0 m-0">
             <div className="col-lg-12">
               <div className="logo">
-                <Link to="/">
+                <Link  to="/">
                   <img src="images/logo-red.png" />
                 </Link>
               </div>
@@ -83,7 +83,7 @@ function Navbar() {
                 <ul>
                   <li className="m-0 p-0 py-2">
                     <button>
-                      <Link to="/complain-portal" className="complaint_btn">
+                      <Link target="_blank" to="/complain-portal" className="complaint_btn">
                         Complaint Portal
                       </Link>
                     </button>
@@ -105,7 +105,7 @@ function Navbar() {
                       <input type="text" placeholder="Search Location" />
                     )}
                     <button onClick={handleShowLocation}>
-                      <Link to="/location">
+                      <Link target="_blank" to="/location">
                         <ImLocation className="search_location" />
                       </Link>
                     </button>
@@ -119,13 +119,12 @@ function Navbar() {
       </section>
 
       {/* {/ header  /} */}
-
       <header id="header" className="d-flex align-items-center">
         <div className="container d-flex align-items-center justify-content-center">
           <nav id="navbar" className={navbar}>
             <ul>
               <li>
-                <Link
+                <Link target="_blank"
                   to="/price-calculator"
                   className="nav-link "
                   aria-current="page"
@@ -141,16 +140,16 @@ function Navbar() {
                 {membershipdrop && (
                   <ul className="dropdown-active">
                     <li>
-                      <Link to="/join-AFMX">Join AFMX</Link>
+                      <Link target="_blank" to="/join-AFMX">Join AFMX</Link>
                     </li>
                     <li>
-                      <Link to="/new">Renew your Membership</Link>
+                      <Link target="_blank" to="/new">Renew your Membership</Link>
                     </li>
                     <li>
-                      <Link to="/new">Membership Levels</Link>
+                      <Link target="_blank" to="/new">Membership Levels</Link>
                     </li>
                     <li>
-                      <Link to="/new">
+                      <Link target="_blank" to="/new">
                         Membership Benefits <RiArrowDropDownLine />
                       </Link>
                     </li>
@@ -158,36 +157,43 @@ function Navbar() {
                 )}
               </li>
               <li>
-                <Link to="/service-list" className="nav-link ">
+                <Link target="_blank" to="/service-list" className="nav-link ">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/industrirs-list" className="nav-link ">
+                <Link target="_blank" to="/industrirs-list" className="nav-link ">
                   Industries We Serve
                 </Link>
               </li>
               <li>
-                <Link to="/new" className="nav-link ">
+                <Link target="_blank" to="/new" className="nav-link ">
                   Robotic Cleaning
                 </Link>
               </li>
               <li>
-                <Link to="/media/1" className="nav-link ">
+                <Link target="_blank" to="/media/1" className="nav-link ">
                   Media
                 </Link>
               </li>
               <li>
-                <Link to="/new" className="nav-link ">
+                <Link target="_blank" to="/new" className="nav-link ">
                   Marketing Department
                 </Link>
               </li>
               <li>
-                <Link to="/careers-employment" className="nav-link ">
+                <Link target="_blank" to="/careers-employment" className="nav-link ">
                   Careers & Employment
                 </Link>
               </li>
 
+              {data? 
+                <li>
+                <Link target="_blank" to="/" className="nav-link " onClick={()=>localStorage.clear()}>
+                  Logout
+                </Link>
+              </li>
+              :
               <li className="dropdown" onClick={logindropdown}>
                 <a>
                   <span>Login</span> <i className="bi bi-chevron-down"></i>
@@ -195,24 +201,23 @@ function Navbar() {
                 {logindrop && (
                   <ul className="dropdown-active">
                     <li>
-                      <Link to="/employee-login">Employee Login</Link>
+                      <Link target="_blank" to="/employee-login">Employee Login</Link>
                     </li>
                     <li>
-                      <Link to="/client-login">Client Login</Link>
+                      <Link target="_blank" to="/client-login">Client Login</Link>
                     </li>
                     <li>
-                      <Link to="/federal-govrment-login">
+                      <Link target="_blank" to="/federal-govrment-login">
                         Federal Government Login
                       </Link>
                     </li>
                     <li>
-                      <Link to="/admin-login">Admin Login</Link>
+                      <Link target="_blank" to="/admin-login">Admin Login</Link>
                     </li>
                   </ul>
                 )}
-              </li>
+              </li>}
             </ul>
-
           </nav>
         </div>
       </header>

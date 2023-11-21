@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import "./footer.css"
 import data from "../../assets/data/terms&Conditions.json"
 import { RiTwitterXLine } from "react-icons/ri";
+import { FaTwitch } from "react-icons/fa";
 
 function Footer() {
   const termsAndCData1 = data.filter((item) => item.id <= data.length / 2 + 2);
@@ -171,14 +172,16 @@ function Footer() {
           <div className="footer-social-media ">
             <ul>
               <li className="youtube"><Link to="https://www.youtube.com/@americasfinestmaintenancec9082/featured" target="_blank"> <i className="fab fa-youtube"></i></Link></li>
-              <li className="discord"><a href=""> <i className="fab fa-discord"></i></a></li>
-              <li className="tiktok"><a href=""> <i className="fab fa-tiktok"></i></a></li>
-              <li className="snapchat"><a href=""> <i className="fab fa-snapchat"></i></a></li>
+              <li className="discord"><Link to="https://discord.com/invite/6nZgapN8" target="_blank"> <i className="fab fa-discord"></i></Link></li>
+              <li className="tiktok"><Link to="https://www.tiktok.com/@afmx15?_t=8hPKDJEYrZj&_r=1" target="_blank"> <i className="fab fa-tiktok"></i></Link></li>
+              <li className="snapchat"><Link to="https://www.snapchat.com/add/afmxcompany?share_id=ibeA0dmCmcU&locale=en-US" target="_blank"> <i className="fab fa-snapchat"></i></Link></li>
               <li className="skype"><Link to="https://join.skype.com/invite/RcbCHVpVamrJ" target="_blank"> <i className="fab fa-skype"></i></Link></li>
               <li className="pinterest"><Link to="https://id.pinterest.com/americafinest/" target="_blank"> <i className="fab fa-pinterest"></i></Link></li>
               <li className="instagram"><Link to="https://www.instagram.com/afmcompanyllc/" target="_blank"> <i className="fab fa-instagram"></i></Link></li>
               <li className="facebook"><Link to="https://www.facebook.com/atamericasfinest" target="_blank"> <i className="fab fa-facebook"></i></Link></li>
-              <li className="twitter"><Link to="https://www.instagram.com/afmcompanyllc/" target="_blank"> <RiTwitterXLine /></Link></li>
+              <li className="twitter"><Link to="https://twitter.com/Americafinest99" target="_blank"> <RiTwitterXLine /></Link></li>
+              <li className="twitter"><Link to="https://www.twitch.tv/afmxcompanyllc?sr=a" target="_blank"> <FaTwitch /></Link></li>
+
               <li className="linkedin"><Link  to="https://www.linkedin.com/in/americasfinestmaintenancecompanyllc/" target="_blank"> <i className="fab fa-linkedin"></i></Link></li>
             </ul>
           </div>

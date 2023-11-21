@@ -3,7 +3,7 @@
     "id": "1",
     "name": "University Cleaning",
     "industryImage": "./images/industry/universityCleaning.jpg",
-
+    "url": "/industrirs-list/1",
     "data": [
       {
         "details": ""
@@ -14,7 +14,7 @@
     "id": "2",
     "name": "Event Cleaning",
     "industryImage": "./images/industry/eventCleaning.jpg",
-
+    "url": "/industrirs-list/2",
     "data": [
       {
         "details": ""
@@ -25,7 +25,7 @@
     "id": "3",
     "name": "Construction Sites",
     "industryImage": "./images/industry/constructionSites.jpg",
-
+    "url": "/industrirs-list/3",
     "data": [
       {
         "details": ""
@@ -36,7 +36,7 @@
     "id": "4",
     "name": "Homeowner and Condominium Associations",
     "industryImage": "./images/industry/homeownerAndCondominiumAssociations.jpg",
-
+    "url": "/industrirs-list/4",
     "data": [
       {
         "details": ""
@@ -47,7 +47,7 @@
     "id": "5",
     "name": "Laboratories",
     "industryImage": "./images/industry/laboratories.jpg",
-
+    "url": "/industrirs-list/5",
     "data": [
       {
         "details": ""
@@ -58,7 +58,7 @@
     "id": "6",
     "name": "Manufacturing Plants",
     "industryImage": "./images/industry/manufacturingPlants.jpg",
-
+    "url": "/industrirs-list/6",
     "data": [
       {
         "details": ""
@@ -69,7 +69,7 @@
     "id": "7",
     "name": "Shopping Centers",
     "industryImage": "./images/industry/shoppingCenters.jpg",
-
+    "url": "/industrirs-list/7",
     "data": [
       {
         "details": ""
@@ -80,7 +80,7 @@
     "id": "8",
     "name": "Warehouses",
     "industryImage": "./images/industry/warehouses.jpg",
-
+    "url": "/industrirs-list/8",
     "data": [
       {
         "details": ""
@@ -91,7 +91,7 @@
     "id": "9",
     "name": "Fitness",
     "industryImage": "./images/industry/fitness.jpg",
-
+    "url": "/industrirs-list/9",
     "data": [
       {
         "details": ""
@@ -102,7 +102,7 @@
     "id": "10",
     "name": "Entertainment Venues",
     "industryImage": "./images/industry/entertainmentVenues.jpg",
-
+    "url": "/industrirs-list/10",
     "data": [
       {
         "details": ""
@@ -113,7 +113,7 @@
     "id": "11",
     "name": "Apartment Owners",
     "industryImage": "./images/industry/apartmentOwners.jpg",
-
+    "url": "/industrirs-list/11",
     "data": [
       {
         "details": ""
@@ -124,7 +124,7 @@
     "id": "12",
     "name": "Facility Managers",
     "industryImage": "./images/industry/facilityManagers.jpg",
-
+    "url": "/industrirs-list/12",
     "data": [
       {
         "details": ""
@@ -135,7 +135,7 @@
     "id": "13",
     "name": "Commercial General Contractors",
     "industryImage": "./images/industry/commercialGeneralContractors.jpg",
-
+    "url": "/industrirs-list/13",
     "data": [
       {
         "details": ""
@@ -146,7 +146,7 @@
     "id": "14",
     "name": "Hotels",
     "industryImage": "./images/industry/hotels.jpg",
-
+    "url": "/industrirs-list/14",
     "data": [
       {
         "details": ""
@@ -157,7 +157,7 @@
     "id": "15",
     "name": "Resorts",
     "industryImage": "./images/industry/resorts.jpg",
-
+    "url": "/industrirs-list/15",
     "data": [
       {
         "details": ""
@@ -168,7 +168,7 @@
     "id": "16",
     "name": "Restaurants",
     "industryImage": "./images/industry/restaurants.jpg",
-
+    "url": "/industrirs-list/16",
     "data": [
       {
         "details": ""
@@ -179,7 +179,7 @@
     "id": "17",
     "name": "Corporate Offices",
     "industryImage": "./images/industry/corporateOffices.jpg",
-
+    "url": "/industrirs-list/17",
     "data": [
       {
         "details": ""
@@ -190,7 +190,7 @@
     "id": "18",
     "name": "Grocery Stores",
     "industryImage": "./images/industry/groceryStores.jpg",
-
+    "url": "/industrirs-list/18",
     "data": [
       {
         "details": ""
@@ -201,7 +201,7 @@
     "id": "19",
     "name": "Car Dealerships",
     "industryImage": "./images/industry/carDealerships.jpg",
-
+    "url": "/industrirs-list/19",
     "data": [
       {
         "details": ""
@@ -212,7 +212,7 @@
     "id": "20",
     "name": "Stadiums",
     "industryImage": "./images/industry/stadiums.jpg",
-
+    "url": "/industrirs-list/20",
     "data": [
       {
         "details": ""
@@ -223,7 +223,7 @@
     "id": "21",
     "name": "Hospitals",
     "industryImage": "./images/industry/hospitals.jpg",
-
+    "url": "/industrirs-list/21",
     "data": [
       {
         "details": ""
@@ -234,7 +234,7 @@
     "id": "22",
     "name": "Airports",
     "industryImage": "./images/industry/airports.jpg",
-
+    "url": "/industrirs-list/22",
     "data": [
       {
         "details": ""
@@ -245,7 +245,7 @@
     "id": "23",
     "name": "Airlines",
     "industryImage": "./images/industry/airlines.jpg",
-
+    "url": "/industrirs-list/23",
     "data": [
       {
         "details": ""
@@ -256,7 +256,7 @@
     "id": "24",
     "name": "Convention Centers",
     "industryImage": "./images/industry/conventionCenters.webp",
-
+    "url": "/industrirs-list/24",
     "data": [
       {
         "details": ""
@@ -267,7 +267,7 @@
     "id": "25",
     "name": "Museums",
     "industryImage": "./images/industry/museums.jpg",
-
+    "url": "/industrirs-list/25",
     "data": [
       {
         "details": ""
@@ -278,7 +278,7 @@
     "id": "26",
     "name": "Banking and Financial Intuitions",
     "industryImage": "./images/industry/bankingAndFinancialIntuitions.jpg",
-
+    "url": "/industrirs-list/26",
     "data": [
       {
         "details": ""
@@ -289,7 +289,7 @@
     "id": "27",
     "name": "Commercial Real Estate",
     "industryImage": "./images/industry/commercialRealEstate.jpg",
-
+    "url": "/industrirs-list/27",
     "data": [
       {
         "details": ""
@@ -300,7 +300,7 @@
     "id": "28",
     "name": "Retail Stores",
     "industryImage": "./images/industry/retailStores.jpg",
-
+    "url": "/industrirs-list/28",
     "data": [
       {
         "details": ""
@@ -311,7 +311,7 @@
     "id": "29",
     "name": "Federal and Local Government",
     "industryImage": "./images/industry/federalAndLocalGovernment.jpg",
-
+    "url": "/industrirs-list/29",
     "data": [
       {
         "details": ""
@@ -322,7 +322,7 @@
     "id": "30",
     "name": "Arenas",
     "industryImage": "./images/industry/arenas.jpg",
-
+    "url": "/industrirs-list/30",
     "data": [
       {
         "details": ""
@@ -333,7 +333,7 @@
     "id": "31",
     "name": "Senior Living",
     "industryImage": "./images/industry/seniorLiving.jpeg",
-
+    "url": "/industrirs-list/31",
     "data": [
       {
         "details": ""
@@ -344,7 +344,7 @@
     "id": "32",
     "name": "Medical Offices",
     "industryImage": "./images/industry/medicalOffices.jpg",
-
+    "url": "/industrirs-list/32",
     "data": [
       {
         "details": ""
@@ -354,181 +354,304 @@
   {
     "id": "33",
     "name": "Community College",
-    "industryImage": "./images/industry/medicalOffices.jpg"
+    "industryImage": "./images/industry/CommunityCollege/CommunityCollege1.png",
+    "url": "/community-college"
   },
   {
     "id": "34",
     "name": "Liberal Arts College",
-    "industryImage": "./images/industry/medicalOffices.jpg"
+    "industryImage": "./images/industry/LiberalArtsCollege/LiberalArtsCollege1.png",
+    "url": "/liberal-arts-college"
   },
   {
     "id": "35",
     "name": "Ivy League University",
-    "industryImage": "./images/industry/medicalOffices.jpg"
+    "industryImage": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity1.png",
+    "url": "/ivy-league-university"
   },
   {
     "id": "36",
     "name": "Nonprofit College",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/NonprofitCollege/NonprofitCollege1.png",
+    "url": "/nonprofit-college"
+  },
+  {
     "id": "37",
     "name": "Technical School",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+    "url": "/technical-school"
+  },
+  {
     "id": "38",
     "name": "Religious Universities",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/38"
+
+  },
+  {
     "id": "39",
     "name": "Apartment Owners",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/39"
+
+  },
+  {
     "id": "40",
     "name": "Facility Managers",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/40"
+
+  },
+  {
     "id": "41",
     "name": "Commercial General Contractors",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/41"
+
+  },
+  {
     "id": "42",
     "name": "Residential General Contractors",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/42"
+
+  },
+  {
     "id": "43",
     "name": "Bed and breakfast",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/43"
+
+  },
+  {
     "id": "44",
     "name": "Hostel",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/44"
+
+  },
+  {
     "id": "45",
     "name": "Motel",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/45"
+
+  },
+  {
     "id": "46",
     "name": "Boutique Hotel",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/46"
+
+  },
+  {
     "id": "47",
     "name": "Guest House",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/47"
+
+  },
+  {
     "id": "48",
     "name": "Inn",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/48"
+
+  },
+  {
     "id": "49",
     "name": "Apartment Hotel",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/49"
+
+  },
+  {
     "id": "50",
     "name": "Casino Hotel",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/50"
+
+  },
+  {
     "id": "51",
     "name": "Beach Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/51"
+
+  },
+  {
     "id": "52",
     "name": "All-Inclusive resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/52"
+
+  },
+  {
     "id": "53",
     "name": "Spa Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/53"
+
+  },
+  {
     "id": "54",
     "name": "Historic Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-    },{
-      "id": "55",
-      "name": "Amusement Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/54"
+
+  },
+  {
+    "id": "55",
+    "name": "Amusement Resort",
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/55"
+
+  },
+  {
     "id": "56",
     "name": "Adult Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/56"
+
+  },
+  {
     "id": "57",
     "name": "Family Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/57"
+
+  },
+  {
     "id": "58",
     "name": "Golf Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/58"
+
+  },
+  {
     "id": "59",
     "name": "Island Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/59"
+
+  },
+  {
     "id": "60",
     "name": "Pet Friendly Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/60"
+
+  },
+  {
     "id": "61",
     "name": "Restaurants",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/61"
+
+  },
+  {
     "id": "62",
     "name": "Corporate Offices",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/62"
+
+  },
+  {
     "id": "63",
     "name": "Grocery Stores",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/63"
+
+  },
+  {
     "id": "64",
     "name": "Car Dealerships",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/64"
+
+  },
+  {
     "id": "65",
     "name": "Casinos",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/65"
+
+  },
+  {
     "id": "66",
     "name": "Internal Corporate Event",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/66"
+
+  },
+  {
     "id": "67",
     "name": "Festivals",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/67"
+
+  },
+  {
     "id": "68",
     "name": "Exhibitions",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/68"
+
+  },
+  {
     "id": "69",
     "name": "Appreciation Event",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/69"
+
+  },
+  {
     "id": "70",
     "name": "Fashion Shown",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/70"
+
+  },
+  {
     "id": "71",
     "name": "Food Events",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/71"
+
+  },
+  {
     "id": "72",
     "name": "Federal And local Government",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/72"
+
+  },
+  {
     "id": "73",
     "name": "Independent Living",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/73"
+
+  },
+  {
     "id": "74",
     "name": "Adult Homes",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/74"
+
+  },
+  {
     "id": "75",
     "name": "Yacht /Yacht Club",
-    "industryImage": "./images/industry/medicalOffices.jpg"
-  },{
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/75"
+
+  },
+  {
     "id": "76",
     "name": "Cruise Ship",
-    "industryImage": "./images/industry/medicalOffices.jpg"
+    "industryImage": "./images/industry/medicalOffices.jpg",
+    "url":"/industrirs-list/76"
+
   }
 ]

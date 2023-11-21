@@ -43,6 +43,7 @@ import ComplainPortal from "./pages/complainPortal/ComplainPortal"
 import Contact from "./components/Contact/Contact";
 import Loader from "./components/Loader/Loader";
 import MapLocation from "./pages/mapLocation/MapLocation";
+import IndustriesRoute from "./pages/IndustriesWeServe/IndustriesRoute";
 
 
 function App() {
@@ -101,6 +102,7 @@ function App() {
           <Route path="/service-list-item/:id" element={<ServiceItem />} />
           <Route path="/careers-employment" element={<CareersAndEmployment />} />
           <Route path="/apply-job" element={<ApplyJob />} />
+
           <Route path="/industrirs-list" element={<IndustriesWeServe />} />
           <Route path="/industrirs-list/:id" element={<IndustryItem />} />
           <Route path="/price-calculator" element={<PriceCalculator />} />
@@ -140,6 +142,7 @@ function App() {
 
 
         </Routes>
+          <IndustriesRoute/>
       </div>
       <Footer />
       {showButton && (

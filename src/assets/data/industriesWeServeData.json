@@ -352,8 +352,183 @@
     ]
   },
   {
-    "id": "32",
+    "id": "33",
     "name": "Community College",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },
+  {
+    "id": "34",
+    "name": "Liberal Arts College",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },
+  {
+    "id": "35",
+    "name": "Ivy League University",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },
+  {
+    "id": "36",
+    "name": "Nonprofit College",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "37",
+    "name": "Technical School",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "38",
+    "name": "Religious Universities",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "39",
+    "name": "Apartment Owners",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "40",
+    "name": "Facility Managers",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "41",
+    "name": "Commercial General Contractors",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "42",
+    "name": "Residential General Contractors",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "43",
+    "name": "Bed and breakfast",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "44",
+    "name": "Hostel",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "45",
+    "name": "Motel",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "46",
+    "name": "Boutique Hotel",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "47",
+    "name": "Guest House",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "48",
+    "name": "Inn",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "49",
+    "name": "Apartment Hotel",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "50",
+    "name": "Casino Hotel",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "51",
+    "name": "Beach Resort",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "52",
+    "name": "All-Inclusive resorts",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "53",
+    "name": "Spa Resorts",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "54",
+    "name": "Historic Resorts",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+    },{
+      "id": "55",
+      "name": "Amusement Resort",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "56",
+    "name": "Adult Resorts",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "57",
+    "name": "Family Resorts",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "58",
+    "name": "Golf Resort",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "59",
+    "name": "Island Resort",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "60",
+    "name": "Pet Friendly Resort",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "61",
+    "name": "Restaurants",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "62",
+    "name": "Corporate Offices",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "63",
+    "name": "Grocery Stores",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "64",
+    "name": "Car Dealerships",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "65",
+    "name": "Casinos",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "66",
+    "name": "Internal Corporate Event",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "67",
+    "name": "Festivals",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "68",
+    "name": "Exhibitions",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "69",
+    "name": "Appreciation Event",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "70",
+    "name": "Fashion Shown",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "71",
+    "name": "Food Events",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "72",
+    "name": "Federal And local Government",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "73",
+    "name": "Independent Living",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "74",
+    "name": "Adult Homes",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "75",
+    "name": "Yacht /Yacht Club",
+    "industryImage": "./images/industry/medicalOffices.jpg"
+  },{
+    "id": "76",
+    "name": "Cruise Ship",
     "industryImage": "./images/industry/medicalOffices.jpg"
   }
 ]

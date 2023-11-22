@@ -1,12 +1,11 @@
-
-.comminityCollegeList li{
+.corporateOfficesList li{
     font-size: .95em;
     padding: 0px 20px 5px 0px;
     margin: 10px 0px;
     text-align: justify;
 }
 
-.comminityCollegeList li h3{
+.corporateOfficesList li h3{
     font-size: 1em;
     font-weight: 600;
     padding: 0px 20px 5px 0px;

@@ -11,7 +11,7 @@ export default function IvyLeagueUniversity() {
             <LeftMenue
               type="Industries We Serve"
               data={industryData}
-              url={`/industrirs-list`}
+              url={`/industries-list`}
             />
           </div>
           <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">
@@ -59,6 +59,7 @@ export default function IvyLeagueUniversity() {
                     <li>Exclusive Discounts for Ivy League Universities: Because brilliance deserves a sparkling reward! Enjoy special rates as our esteemed Ivy League clientele.</li>
                     <li>Hassle-Free Scheduling: Your time is precious. AfmX offers flexible scheduling options to fit seamlessly into your busy academic calendar.</li>
                     <li>Trust the Experts: With a proven track record of delivering exceptional cleaning services, AfmX is the trusted choice for Ivy League universities.</li>
+
                   </ul>
                 </div>
               </div>

@@ -112,8 +112,8 @@
   {
     "id": "11",
     "name": "Apartment Owners",
-    "industryImage": "./images/industry/apartmentOwners.jpg",
-    "url": "/industrirs-list/11",
+    "industryImage": "./images/industry/ApartmentOwners/ApartmentOwners1.png",
+    "url": "/apartment-owners",
     "data": [
       {
         "details": ""
@@ -123,8 +123,8 @@
   {
     "id": "12",
     "name": "Facility Managers",
-    "industryImage": "./images/industry/facilityManagers.jpg",
-    "url": "/industrirs-list/12",
+    "industryImage": "./images/industry/FacilityManagers/FacilityManagers1.png",
+    "url": "/facility-managers",
     "data": [
       {
         "details": ""
@@ -179,12 +179,7 @@
     "id": "17",
     "name": "Corporate Offices",
     "industryImage": "./images/industry/corporateOffices.jpg",
-    "url": "/industrirs-list/17",
-    "data": [
-      {
-        "details": ""
-      }
-    ]
+    "url": "/corporate-offices"
   },
   {
     "id": "18",
@@ -200,8 +195,8 @@
   {
     "id": "19",
     "name": "Car Dealerships",
-    "industryImage": "./images/industry/carDealerships.jpg",
-    "url": "/industrirs-list/19",
+    "industryImage": "./images/industry/CarDealerships/CarDealerships1.png",
+    "url": "/car-dealerships",
     "data": [
       {
         "details": ""
@@ -384,8 +379,8 @@
   {
     "id": "38",
     "name": "Religious Universities",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/38"
+    "industryImage": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png",
+    "url":"/religious-universities"
 
   },
   {
@@ -412,8 +407,8 @@
   {
     "id": "42",
     "name": "Residential General Contractors",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/42"
+    "industryImage": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors1.png",
+    "url":"/residential-general-contractors"
   },
   {
     "id": "43",
@@ -437,15 +432,15 @@
   {
     "id": "46",
     "name": "Boutique Hotel",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/46"
+    "industryImage": "./images/industry/BoutiqueHotel/BoutiqueHotel1.png",
+    "url":"/boutique-hotel"
 
   },
   {
     "id": "47",
     "name": "Guest House",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/47"
+    "industryImage": "./images/industry/GuestHouse/GuestHouse1.png",
+    "url":"/guest-house"
 
   },
   {
@@ -535,8 +530,8 @@
   {
     "id": "60",
     "name": "Pet Friendly Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/60"
+    "industryImage": "./images/industry/PetFriendlyResort/PetFriendlyResort1.png",
+    "url":"/pet-friendly-resort"
 
   },
   {
@@ -570,15 +565,15 @@
   {
     "id": "65",
     "name": "Casinos",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/65"
+    "industryImage": "./images/industry/Casinos/Casinos1.png",
+    "url":"/casinos"
 
   },
   {
     "id": "66",
     "name": "Internal Corporate Event",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/66"
+    "industryImage": "./images/industry/InternalCorporateEvent/InternalCorporateEvent1.png",
+    "url":"/internal-corporate-event"
 
   },
   {
@@ -626,8 +621,8 @@
   {
     "id": "73",
     "name": "Independent Living",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/73"
+    "industryImage": "./images/industry/IndependentLiving/IndependentLiving1.png",
+    "url":"/independent-living"
 
   },
   {
@@ -640,15 +635,15 @@
   {
     "id": "75",
     "name": "Yacht /Yacht Club",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/75"
+    "industryImage": "./images/industry/YachtClub/YachtClub1.png",
+    "url":"/yacht-club"
 
   },
   {
     "id": "76",
     "name": "Cruise Ship",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/76"
+    "industryImage": "./images/industry/CruiseShip/CruiseShip1.png",
+    "url":"/cruise-ship"
 
   }
 ]

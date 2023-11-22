@@ -27,7 +27,7 @@ function LeftMenue({ type, data, url }) {
                                 {
                                     menuItem && menuItem?.map((item) => (
                                         <li key={item?.id}>
-                                            <Link to={`${url}/${url && item?.id}`} className="Links">{item?.name}</Link>
+                                            <Link to={item.url} className="Links">{item?.name}</Link>
                                         </li>
                                     )
                                     )
@@ -46,7 +46,7 @@ function LeftMenue({ type, data, url }) {
                         {
                             menuItem && menuItem?.map((item) => (
                                 <li key={item?.id}>
-                                    <Link to={`${url}/${url && item?.id}`} className="Links">{item?.name}</Link>
+                                    <Link to={item.url} className="Links">{item?.name}</Link>
                                 </li>
                             )
                             )

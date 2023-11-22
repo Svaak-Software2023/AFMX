@@ -1,7 +1,7 @@
 import "./style.css";
 import LeftMenue from "../../../../components/leftmenu/LeftMenu";
 import industryData from "../../../../assets/data/industriesWeServeData.json";
-function NonprofitCollege() {
+function CarDealerships() {
   return (
     <>
       <div className="container p-0 my-3">
@@ -23,14 +23,14 @@ function NonprofitCollege() {
                         <div className="w-50">
                           <div className="w-100 m-1 mt-0">
                             <img
-                              src="./images/industry/NonprofitCollege/NonprofitCollege1.png"
+                              src="./images/industry/CarDealerships/CarDealerships1.png"
                               alt=""
                               className="img-fluid"
                             />
                           </div>
                           <div className="w-100 mt-1 ">
                             <img
-                              src="./images/industry/NonprofitCollege/NonprofitCollege2.png"
+                              src="./images/industry/CarDealerships/CarDealerships2.png"
                               alt=""
                               className="img-fluid"
                             />
@@ -40,14 +40,14 @@ function NonprofitCollege() {
                         <div className="w-50">
                           <div className="w-100 m-2 mt-0">
                             <img
-                              src="./images/industry\NonprofitCollege/NonprofitCollege3.png"
+                              src="./images/industry/CarDealerships/CarDealerships3.png"
                               alt=""
                               className="img-fluid"
                             />
                           </div>
                           <div className="w-100 mt-1 mx-2 mb-3">
                             <img
-                              src="./images/industry\NonprofitCollege/NonprofitCollege4.png"
+                              src="./images/industry/CarDealerships/CarDealerships4.png"
                               alt=""
                               className="img-fluid"
                             />
@@ -57,53 +57,54 @@ function NonprofitCollege() {
                     </div>
                     <div className="col-lg-6">
                       <div className="mb-3">
-                        <h3 className="heading">Nonprofit College</h3>
+                        <h3 className="heading">Car Dealerships</h3>
                       </div>
-                      <ul className="liberalArtsCollegeList">
+                      <ul className="carDealershipsList">
                         <li>
-                          Transform your campus environment with AfmX - where
-                          cleanliness meets innovation!
+                          We understand the importance of maintaining a pristine
+                          and well-functioning environment in your dealership.
+                          That's why we at AfmX are here to offer tailored
+                          janitorial cleaning and handyman services to elevate
+                          the standards of your facility.
                         </li>
                         <li>
-                          Unleash the Power of AfmX: Experience a revolutionary
-                          cleaning solution tailored for Nonprofit Colleges.
+                          Our skilled janitorial team specializes in providing
+                          meticulous cleaning services, ensuring every corner of
+                          your dealership is spotless. From showroom floors to
+                          customer waiting areas, our professionals are
+                          committed to creating a clean and welcoming atmosphere
+                          for your clients.
                         </li>
                         <li>
-                          AfmX combines cutting-edge technology with
-                          eco-friendly practices, ensuring a spotless campus
-                          that reflects your commitment to excellence.
+                          Additionally, our experienced handyman services cover
+                          a wide range of maintenance tasks, addressing any
+                          issues promptly to keep your facility running
+                          smoothly. Whether it's repairing fixtures, handling
+                          minor electrical or plumbing concerns, or general
+                          maintenance tasks, AfmX is your reliable partner.
                         </li>
                         <li>
-                          Green Cleaning, Smart Living: Choose AfmX for a
-                          sustainable future. Our advanced cleaning products
-                          prioritize the environment without compromising
-                          effectiveness. Lead the way in eco-conscious campus
-                          management.
+                          <b>Why choose AfmX?</b>
                         </li>
                         <li>
-                          Seamless Integration: AfmX seamlessly integrates into
-                          your daily operations, providing hassle-free cleaning
-                          solutions that allow your staff to focus on what truly
-                          matters - nurturing academic growth and community
-                          spirit.
-                        </li>
-                        <li>
-                          Tech-Driven Efficiency: Say goodbye to traditional
-                          cleaning methods. AfmX harnesses the power of
-                          technology to optimize cleaning schedules, resource
-                          allocation, and reporting. Witness unparalleled
-                          efficiency at your fingertips.
+                          <b>Expertise: </b>Our team comprises trained
+                          professionals with extensive experience in janitorial
+                          and handyman services for automotive facilities.
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <ul className="liberalArtsCollegeList">
+                  <ul className="carDealershipsList">
                     <li>
-                      Tailored to Your Needs: We understand that each campus is
-                      unique. AfmX offers customizable cleaning solutions to
-                      meet the specific requirements of your Nonprofit College.
-                      Let us create a cleaning plan as exceptional as your
-                      institution.
+                      <b>Custom Solutions: </b>: We understand that each
+                      dealership is unique. Our services are tailored to meet
+                      the specific needs of your facility, ensuring a
+                      comprehensive solution.
+                    </li>
+                    <li>
+                      <b>Reliability: </b>AfmX is dedicated to delivering
+                      services on time and within budget, allowing you to focus
+                      on your core business operations.
                     </li>
                   </ul>
                 </div>
@@ -116,4 +117,4 @@ function NonprofitCollege() {
   );
 }
 
-export default NonprofitCollege;
+export default CarDealerships;

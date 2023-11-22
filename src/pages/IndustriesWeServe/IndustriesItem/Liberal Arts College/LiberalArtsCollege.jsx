@@ -10,7 +10,7 @@ function LiberalArtsCollege() {
             <LeftMenue
               type="Industries We Serve"
               data={industryData}
-              url={`/industrirs-list`}
+              url={`/industries-list`}
             />
           </div>
           <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">

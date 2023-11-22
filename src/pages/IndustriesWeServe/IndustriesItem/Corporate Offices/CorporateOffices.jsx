@@ -1,7 +1,7 @@
 import "./style.css";
 import LeftMenue from "../../../../components/leftmenu/LeftMenu";
 import industryData from "../../../../assets/data/industriesWeServeData.json";
-function NonprofitCollege() {
+function CorporateOffices() {
   return (
     <>
       <div className="container p-0 my-3">
@@ -23,14 +23,14 @@ function NonprofitCollege() {
                         <div className="w-50">
                           <div className="w-100 m-1 mt-0">
                             <img
-                              src="./images/industry/NonprofitCollege/NonprofitCollege1.png"
+                              src="./images/industry/CorporateOffices/CorporateOffices1.png"
                               alt=""
                               className="img-fluid"
                             />
                           </div>
                           <div className="w-100 mt-1 ">
                             <img
-                              src="./images/industry/NonprofitCollege/NonprofitCollege2.png"
+                              src="./images/industry/CorporateOffices/CorporateOffices3.png"
                               alt=""
                               className="img-fluid"
                             />
@@ -40,14 +40,14 @@ function NonprofitCollege() {
                         <div className="w-50">
                           <div className="w-100 m-2 mt-0">
                             <img
-                              src="./images/industry\NonprofitCollege/NonprofitCollege3.png"
+                              src="./images/industry/CorporateOffices/CorporateOffices2.png"
                               alt=""
                               className="img-fluid"
                             />
                           </div>
                           <div className="w-100 mt-1 mx-2 mb-3">
                             <img
-                              src="./images/industry\NonprofitCollege/NonprofitCollege4.png"
+                              src="./images/industry/CorporateOffices/CorporateOffices4.png"
                               alt=""
                               className="img-fluid"
                             />
@@ -57,55 +57,41 @@ function NonprofitCollege() {
                     </div>
                     <div className="col-lg-6">
                       <div className="mb-3">
-                        <h3 className="heading">Nonprofit College</h3>
+                        <h3 className="heading">Corporate Offices</h3>
                       </div>
-                      <ul className="liberalArtsCollegeList">
+                      AfmX Facilities Management Solutions <br></br>
+                      Dear Corporate Office Managers,
+                      <ul className="corporateOfficesList">
                         <li>
-                          Transform your campus environment with AfmX - where
-                          cleanliness meets innovation!
+                          Are you seeking a reliable partner for comprehensive
+                          janitorial cleaning, handyman services, and more? Look
+                          no further than AfmX Facilities Management Solutions –
+                          your trusted ally in maintaining a pristine and
+                          efficient work environment.
+                        </li>
+                        <li>Our Services Include</li>
+                        <li>
+                          <b>- Janitorial Cleaning: </b>Impeccable cleanliness
+                          tailored to your office needs.
                         </li>
                         <li>
-                          Unleash the Power of AfmX: Experience a revolutionary
-                          cleaning solution tailored for Nonprofit Colleges.
+                          <b>- Handyman Services: </b> Swift and professional
+                          repairs and maintenance.
                         </li>
                         <li>
-                          AfmX combines cutting-edge technology with
-                          eco-friendly practices, ensuring a spotless campus
-                          that reflects your commitment to excellence.
+                          <b>- Facilities Management: </b>A holistic approach
+                          for a seamless workplace.
                         </li>
                         <li>
-                          Green Cleaning, Smart Living: Choose AfmX for a
-                          sustainable future. Our advanced cleaning products
-                          prioritize the environment without compromising
-                          effectiveness. Lead the way in eco-conscious campus
-                          management.
+                          <b>Why Choose AfmX?</b>
                         </li>
                         <li>
-                          Seamless Integration: AfmX seamlessly integrates into
-                          your daily operations, providing hassle-free cleaning
-                          solutions that allow your staff to focus on what truly
-                          matters - nurturing academic growth and community
-                          spirit.
-                        </li>
-                        <li>
-                          Tech-Driven Efficiency: Say goodbye to traditional
-                          cleaning methods. AfmX harnesses the power of
-                          technology to optimize cleaning schedules, resource
-                          allocation, and reporting. Witness unparalleled
-                          efficiency at your fingertips.
+                          <b>- Expertise: </b> Industry-leading professionals
+                          ensuring top-notch
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <ul className="liberalArtsCollegeList">
-                    <li>
-                      Tailored to Your Needs: We understand that each campus is
-                      unique. AfmX offers customizable cleaning solutions to
-                      meet the specific requirements of your Nonprofit College.
-                      Let us create a cleaning plan as exceptional as your
-                      institution.
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -116,4 +102,4 @@ function NonprofitCollege() {
   );
 }
 
-export default NonprofitCollege;
+export default CorporateOffices;

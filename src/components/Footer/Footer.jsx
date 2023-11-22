@@ -16,7 +16,6 @@ function Footer() {
           <div className="footer-links">
             <h4>Terms and Policies</h4>
             <ul>
-
               {termsAndCData1.map((item) => (<li key={item.id}>
                 <i className="bx bx-chevron-right" />
                 <Link to={`/terms-condition/${item.id}`}>{item.name}</Link>
@@ -164,7 +163,7 @@ function Footer() {
         <div className="col-lg-4 col-12">
           <div className="footer-logo">
             <Link to="/">
-              <img src="images/logo-red.png" className="p-0 m-0" />
+              <img src="images/top-logo.png" className="p-0 m-0" />
             </Link>
           </div>
         </div>

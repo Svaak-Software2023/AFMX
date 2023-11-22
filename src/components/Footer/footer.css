@@ -25,7 +25,7 @@
 .footer-logo img {
   margin-bottom: 20px;
   background-color: #839e6c;
-  width: 100px;
+  width: 250px;
 }
 @media screen and (max-width:991px) {
   .footer-social-media{
@@ -36,6 +36,7 @@
   .footer-logo{
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
   }
   
   

@@ -43,7 +43,7 @@ function Navbar() {
             <div className="col-lg-12">
               <div className="logo">
                 <Link  to="/">
-                  <img src="images/logo-red.png" />
+                  <img src="images/top-logo.png" />
                 </Link>
               </div>
               <div className="mobile-nav-toggle">

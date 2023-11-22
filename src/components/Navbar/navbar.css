@@ -108,7 +108,7 @@
 
 .logo {
   position: absolute;
-  top: 0;
+  top: 24px;
   left: 0;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .logo img {
-  width: 120px;
+  width: 251px;
 }
 
 #topbar {
@@ -139,6 +139,7 @@
   margin: 0px;
   float: right;
   display: flex;
+  align-items: center;
   list-style: none;
 }
 
@@ -384,7 +385,7 @@ header#header .container {
     width: 600px;
   }
   .logo img {
-    width: 120px;
+    width: 199px;
   }
 
   .navbar .dropdown .dropdown ul {
@@ -428,7 +429,7 @@ header#header .container {
   }
 
   .logo img {
-    width: 110px;
+    width: 215px;
   }
 }
 
@@ -528,11 +529,11 @@ header#header .container {
 @media screen and (max-width: 768px) {
   .logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 10px;
 }
   .logo img {
-    width: 92px;
+    width: 201px;
   }
 
   .ad img {
@@ -562,7 +563,7 @@ header#header .container {
     color: white;
     display: block;
     position: absolute;
-    top: 13px;
+    top: 23px;
     right: 0px;
   }
 

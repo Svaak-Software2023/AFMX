@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 const Slider = () => {
   const [user, setUser] = useState("");
-  const data=useSelector((state)=>state.auth.user)
- 
+  const data = useSelector((state) => state.auth.user)
+
 
   useEffect(() => {
-    if(data){
     if (data) {
-      setUser(data);
+      if (data) {
+        setUser(data);
+      }
     }
-  }
   }, []);
   const handleSignOut = () => {
     localStorage.clear();
@@ -29,34 +29,39 @@ const Slider = () => {
                 {/* The slideshow/carousel */}
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img src="images/Banner/chemicalShoppingCenterBanner.webp" alt />
+                    <img src="images/Banner/chemicalShoppingCenterBanner.png" alt />
+                  </div>
+                  <div className="carousel-item active">
+                    <div className="carousel-video">
+                      <video src="images/Banner/FloorService.mp4" autoPlay muted loop className="img-fluid"></video>
+                    </div>
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/constructionCleaningBanner.webp" alt />
+                    <img src="images/Banner/constructionCleaningBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/floorCleaningBanner.webp" alt />
+                    <img src="images/Banner/janitorialCleaningServicesBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/geoFencingBanner.webp" alt />
+                    <img src="images/Banner/geoFencingBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/handymanServicesBanner.webp" alt />
+                    <img src="images/Banner/handymanServicesBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/janitorialCleaningServicesBanner.webp" alt />
+                    <img src="images/Banner/janitorialCleaningServicesBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/maidXBanner.webp" alt />
+                    <img src="images/Banner/maidXBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/mebershipBanner.webp" alt />
+                    <img src="images/Banner/membershipBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/priceCalculatorBanner.webp" alt />
+                    <img src="images/Banner/priceCalculatorBanner.png" alt />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/Banner/roboticCleaningBanner.webp" alt />
+                    <img src="images/Banner/roboticCleaningBanner.png" alt />
                   </div>
                 </div>
                 {/* Left and right controls/icons */}

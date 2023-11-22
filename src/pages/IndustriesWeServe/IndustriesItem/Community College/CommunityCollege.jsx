@@ -38,10 +38,10 @@ function CommunityCollege() {
                         <li><h3>Sparkle and Shine with AfmX!</h3></li>
                         <li>Attention Community Colleges! Elevate your campus experience with our top-notch cleaning services tailored just for you. At AfmX, we understand the unique needs of educational institutions, and we're here to make your environment spotless, safe, and inspiring.</li>
                         <li><h3>Why Choose AFMX?</h3></li>
-                        <li> Expertise: Our highly trained cleaning professionals specialize in educational settings, ensuring a thorough and effective cleaning process.</li>
-                        <li> Custom Solutions: We offer personalized cleaning plans to meet the specific requirements of your community college, from classrooms to common areas.</li>
-                        <li> Health and Safety: Creating a clean and healthy learning environment is our priority. Our eco-friendly products and advanced cleaning techniques promote a space where students and faculty can thrive.</li>
-                        <li> Flexible Scheduling: We work around your academic calendar to minimize disruptions. Whether it's after-hours or during breaks, we've got you covered.</li>
+                        <li><b>Expertise:</b> Our highly trained cleaning professionals specialize in educational settings, ensuring a thorough and effective cleaning process.</li>
+                        <li><b>Custom Solutions:</b> We offer personalized cleaning plans to meet the specific requirements of your community college, from classrooms to common areas.</li>
+                        <li><b>Health and Safety:</b> Creating a clean and healthy learning environment is our priority. Our eco-friendly products and advanced cleaning techniques promote a space where students and faculty can thrive.</li>
+                        <li><b>Flexible Scheduling:</b> We work around your academic calendar to minimize disruptions. Whether it's after-hours or during breaks, we've got you covered.</li>
                       </ul>
                     </div>
                   </div>

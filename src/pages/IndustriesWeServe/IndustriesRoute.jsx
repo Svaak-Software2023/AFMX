@@ -42,8 +42,7 @@ function IndustriesRoute() {
       <Route path="/motel" element={<Motel />} />
       <Route path="/inn" element={<Inn />} />
       <Route path="/apartment-hotel" element={<ApartmentHotel />} />
-
-
+      
       <Route path="/residential-general-contractors" element={<ResidentialGeneralContractors />} />
       <Route path="/facility-managers" element={<FacilityManagers />} />
       <Route path="/apartment-owners" element={<ApartmentOwners />} />

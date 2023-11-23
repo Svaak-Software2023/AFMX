@@ -1,11 +1,13 @@
 [
   {
     "name": "Terms & Conditions",
-    "id": "1"
+    "id": "1",
+    "url":"/terms-condition/1"
   },
   {
     "name": "Privacy Policy",
     "id": "2",
+    "url":"/terms-condition/2",
     "text": [
       {
         "id": "1",
@@ -52,6 +54,8 @@
   {
     "name": "Copyright Notice",
     "id": "3",
+    "url":"/terms-condition/3",
+
     "text": [
       {
         "id": "1",
@@ -70,6 +74,7 @@
   {
     "name": "Site Maps",
     "id": "4",
+    "url":"/terms-condition/4",
     "text": [
       {
         "id": 1,
@@ -80,6 +85,7 @@
   {
     "name": "Video Sharing Policy",
     "id": "5",
+    "url":"/terms-condition/5",
     "text": [
       {
         "id": 1,
@@ -90,6 +96,7 @@
   {
     "name": "Terms of Use",
     "id": "6",
+    "url":"/terms-condition/6",
     "text": [
       {
         "id": 1,
@@ -100,6 +107,7 @@
   {
     "name": "Privacy Policy",
     "id": "7",
+    "url":"/terms-condition/7",
     "text": [
       {
         "id": 1,
@@ -110,6 +118,7 @@
   {
     "name": "Cookies Policy",
     "id": "8",
+    "url":"/terms-condition/8",
     "text": [
       {
         "id": 1,
@@ -120,6 +129,7 @@
   {
     "name": "Trust and Safety",
     "id": "9",
+    "url":"/terms-condition/9",
     "text": [
       {
         "id": 1,
@@ -130,6 +140,7 @@
   {
     "name": "Sponsor our League",
     "id": "10",
+    "url":"/terms-condition/10",
     "text": [
       {
         "id": 1,
@@ -140,6 +151,7 @@
   {
     "name": "Dispute Resolution Agreement",
     "id": "11",
+    "url":"/terms-condition/11",
     "text": [
       {
         "id": 1,
@@ -150,6 +162,7 @@
   {
     "name": "Whistle Blower Policy",
     "id": "12",
+    "url":"/terms-condition/12",
     "text": [
       {
         "id": 1,
@@ -160,6 +173,7 @@
   {
     "name": "Governing Laws and Regulations Terms of Sale",
     "id": "13",
+    "url":"/terms-condition/13",
     "text": [
       {
         "id": 1,
@@ -170,6 +184,7 @@
   {
     "name": "Shipping and Returns Policies",
     "id": "14",
+    "url":"/terms-condition/14",
     "text": [
       {
         "id": 1,
@@ -180,6 +195,7 @@
   {
     "name": "Content Licensing and Attribution",
     "id": "15",
+    "url":"/terms-condition/15",
     "text": [
       {
         "id": 1,
@@ -190,6 +206,7 @@
   {
     "name": "Subcontractor and Employee Laws and Policies",
     "id": "16",
+    "url":"/terms-condition/16",
     "text": [
       {
         "id": 1,
@@ -200,6 +217,7 @@
   {
     "name": "Plagiarism and Copyright Laws",
     "id": "17",
+    "url":"/terms-condition/17",
     "text": [
       {
         "id": 1,
@@ -210,6 +228,7 @@
   {
     "name": "The Americans with Disabilities Act (ADA)",
     "id": "18",
+    "url":"/terms-condition/18",
     "text": [
       {
         "id": 1,
@@ -220,6 +239,7 @@
   {
     "name": "Do Not Sell My Personal Information",
     "id": "19",
+    "url":"/terms-condition/19",
     "text": [
       {
         "id": 1,

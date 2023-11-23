@@ -44,6 +44,8 @@ import Contact from "./components/Contact/Contact";
 import Loader from "./components/Loader/Loader";
 import MapLocation from "./pages/mapLocation/MapLocation";
 import IndustriesRoute from "./pages/IndustriesWeServe/IndustriesRoute";
+import SubList from "./pages/IndustriesWeServe/SubList";
+import IndustriesSubItemPage from "./pages/IndustriesWeServe/IndustriesItem/IndustriesSubItemPage";
 
 
 function App() {
@@ -104,7 +106,9 @@ function App() {
           <Route path="/apply-job" element={<ApplyJob />} />
 
           <Route path="/industrirs-list" element={<IndustriesWeServe />} />
-          <Route path="/industrirs-list/:id" element={<IndustryItem />} />
+          <Route path="/industrirs-list/:name" element={<SubList/>} />
+          <Route path="/industrirs-list/:parentName/:name" element={<IndustriesSubItemPage/>} />
+
           <Route path="/price-calculator" element={<PriceCalculator />} />
           <Route path="/complain-portal" element={<Loader/>} />
           <Route path="/contact" element={<Contact/>}/>

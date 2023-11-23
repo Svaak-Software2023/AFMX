@@ -1,0 +1,68 @@
+import React from 'react'
+import LeftMenue from '../../../components/leftmenu/LeftMenu'
+import { Carousel } from 'react-responsive-carousel'
+import industryData from "../../../assets/data/industriesWeServeData.json";
+import { useParams } from 'react-router-dom';
+import "./industriesSubpage.css"
+
+function IndustriesSubItemPage() {
+    const { parentName, name } = useParams()
+    const response = industryData.find((item) => item.name === parentName);
+    const data = response?.data.find((item) => item.name === name);
+    return (
+        <>
+            <div className="container p-0 my-3">
+                <div className="row m-0 p-0 ">
+                    <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
+                        <LeftMenue
+                            type={parentName}
+                            data={response.data}
+                            url={`/industrirs-list/${parentName}`}
+                        />
+                    </div>
+                    <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">
+                        <div className="container p-0 m-0">
+                            <div className="bg-white">
+                                <div className="m-0 p-0">
+                                    <h3 className="heading">{data?.name}</h3>
+                                </div>
+                                <div className="row p-2">
+
+                                    <div className="col-lg-6 m-0 p-0 ">
+                                        <div className="my-2">
+                                            <Carousel showThumbs={false} autoPlay infiniteLoop>
+                                                {
+
+                                                    !!data.imgData && data?.imgData?.map((item, index) => (
+                                                        <div className="industries-slider-item-img" key={index}>
+                                                            <img src={item?.url} className="img-fluid" />
+                                                        </div>
+                                                    ))
+                                                }
+                                            </Carousel>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+
+                                        <ul className="comminityCollegeList m-0">
+                                            {
+                                                !!data.list1 && data?.list1?.map((item, index) => <li key={index}><b>{item?.heading}</b>{item?.text}<h3>{item?.headingh3}</h3></li>)
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul className="comminityCollegeList mx-0 ">
+                                    {
+                                        !!data.list2 && data?.list2?.map((item, index) => <li key={index}><b>{item?.heading}</b>{item.text}</li>)
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default IndustriesSubItemPage

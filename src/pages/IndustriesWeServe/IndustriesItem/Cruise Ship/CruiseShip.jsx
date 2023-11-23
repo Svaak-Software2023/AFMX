@@ -36,11 +36,11 @@ function CruiseShip() {
                       </div>
                       <ul className="cruiseShipList">
                         <li>Ensure an impeccable environment for your guests with AfmX Janitorial Cleaning Services. We specialize in delivering professional and efficient cleaning solutions tailored to meet the unique needs of cruise ships.</li>
-                        <li><h3>Key Features:</h3></li>
-                        <li> Experienced Janitorial Team: Our skilled professionals are trained to maintain high cleanliness standards on cruise ships.</li>
-                        <li> Tailored Solutions: Customized cleaning plans to suit the specific requirements of your vessel.</li>
-                        <li> Cutting-edge Equipment: We use advanced cleaning equipment and eco-friendly products to ensure a pristine and hygienic environment.</li>
-                        <li> Flexible Scheduling: Adaptable cleaning schedules to minimize disruption to your cruise operations.</li>
+                        <li><h3>Key Features</h3></li>
+                        <li><b>Experienced Janitorial Team:</b> Our skilled professionals are trained to maintain high cleanliness standards on cruise ships.</li>
+                        <li><b>Tailored Solutions:</b> Customized cleaning plans to suit the specific requirements of your vessel.</li>
+                        <li><b>Cutting-edge Equipment:</b> We use advanced cleaning equipment and eco-friendly products to ensure a pristine and hygienic environment.</li>
+                        <li><b>Flexible Scheduling:</b> Adaptable cleaning schedules to minimize disruption to your cruise operations.</li>
                         <li> Choose AfmX for a spotless and welcoming cruise ship experience.</li>
                       </ul>
                     </div>

@@ -40,19 +40,19 @@ function TechnicalSchool() {
                                             </div>
                                             <ul className="liberalArtsCollegeList">
                                                 <li>Transform your campus into a haven of efficiency and excellence with AfmX - your one-stop solution for top-notch cleaning, expert maid services, skilled handymen, and much more!</li>
-                                                <li>Tailored Solutions: Our services are custom-crafted to meet the unique needs of technical institutions, ensuring a clean, safe, and vibrant learning environment.</li>
-                                                <li>Experienced Professionals: AfmX boasts a team of skilled maids and handymen who are not just experts in their craft but also understand the specialized requirements of technical school settings.</li>
-                                                <li>Cutting-Edge Technology: We leverage state-of-the-art cleaning equipment and technology to provide efficient and thorough services, leaving your campus sparkling and fully functional.</li>
+                                                <li><b>Tailored Solutions:</b> Our services are custom-crafted to meet the unique needs of technical institutions, ensuring a clean, safe, and vibrant learning environment.</li>
+                                                <li><b>Experienced Professionals:</b> AfmX boasts a team of skilled maids and handymen who are not just experts in their craft but also understand the specialized requirements of technical school settings.</li>
+                                                <li><b>Cutting-Edge Technology:</b> We leverage state-of-the-art cleaning equipment and technology to provide efficient and thorough services, leaving your campus sparkling and fully functional.</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <ul className="liberalArtsCollegeList">
-                                        <li>Services We Offer:</li>
-                                        <li>Comprehensive Services: From janitorial services to technical repairs, we've got it all covered. Elevate your campus experience with AfmX's holistic approach to facility management.</li>
-                                        <li>Cleaning Services: Immaculate spaces foster a conducive learning atmosphere. Let AfmX keep your classrooms, labs, and common areas spotless.</li>
-                                        <li>Maid Services: Our skilled maids ensure that student accommodations and common areas are always welcoming and hygienic.</li>
-                                        <li>Handyman Services: Quick and efficient repairs for technical equipment, classrooms, and facilities, keeping everything in optimal working condition.</li>
-                                        <li>Technology Integration: Explore our smart solutions to enhance security, energy efficiency, and overall campus management</li>
+                                        <li><h3>Services We Offer</h3></li>
+                                        <li><b>Comprehensive Services:</b> From janitorial services to technical repairs, we've got it all covered. Elevate your campus experience with AfmX's holistic approach to facility management.</li>
+                                        <li><b>Cleaning Services:</b> Immaculate spaces foster a conducive learning atmosphere. Let AfmX keep your classrooms, labs, and common areas spotless.</li>
+                                        <li><b>Maid Services:</b> Our skilled maids ensure that student accommodations and common areas are always welcoming and hygienic.</li>
+                                        <li><b>Handyman Services:</b> Quick and efficient repairs for technical equipment, classrooms, and facilities, keeping everything in optimal working condition.</li>
+                                        <li><b>Technology Integration:</b> Explore our smart solutions to enhance security, energy efficiency, and overall campus management</li>
                                     </ul>
                                 </div>
                             </div>

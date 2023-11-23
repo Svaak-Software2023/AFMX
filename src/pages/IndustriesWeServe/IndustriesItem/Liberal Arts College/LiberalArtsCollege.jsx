@@ -46,15 +46,15 @@ function LiberalArtsCollege() {
                       <ul className="liberalArtsCollegeList">
                         <li>Embark on a journey of pristine perfection with AfmX Cleaning Solutions - your gateway to immaculate surroundings and an enhanced learning environment.</li>
                         <li><h3>Why Choose AFMX?</h3></li>
-                        <li>Tailored Cleaning Plans: We understand the unique needs of liberal arts institutions. Our customizable cleaning plans ensure every nook and cranny of your campus radiates cleanliness.</li>
-                        <li>Eco-Friendly Approach: AfmX is committed to sustainability. Our eco-friendly cleaning practices not only preserve the environment but also contribute to a healthier atmosphere for students and faculty.</li>
-                        <li>Cutting-Edge Technology: Say goodbye to old-fashioned cleaning methods! AfmX employs state-of-the-art technology and industry-leading equipment to ensure a thorough and efficient cleaning process.</li>
+                        <li><b>Tailored Cleaning Plans:</b> We understand the unique needs of liberal arts institutions. Our customizable cleaning plans ensure every nook and cranny of your campus radiates cleanliness.</li>
+                        <li><b>Eco-Friendly Approach:</b> AfmX is committed to sustainability. Our eco-friendly cleaning practices not only preserve the environment but also contribute to a healthier atmosphere for students and faculty.</li>
+                        <li><b>Cutting-Edge Technology:</b> Say goodbye to old-fashioned cleaning methods! AfmX employs state-of-the-art technology and industry-leading equipment to ensure a thorough and efficient cleaning process.</li>
                       </ul>
                     </div>
                   </div>
                   <ul className="liberalArtsCollegeList">
-                    <li>Expert Team: Our highly trained and dedicated cleaning professionals are passionate about maintaining the highest standards of cleanliness. Trust us to keep your campus sparkling clean.</li>
-                    <li>Specialized Services: Beyond routine cleaning, AfmX offers specialized services tailored to meet the unique requirements of liberal arts colleges, creating a conducive environment for creativity and learning.</li>
+                    <li><b>Expert Team:</b> Our highly trained and dedicated cleaning professionals are passionate about maintaining the highest standards of cleanliness. Trust us to keep your campus sparkling clean.</li>
+                    <li><b>Specialized Services:</b> Beyond routine cleaning, AfmX offers specialized services tailored to meet the unique requirements of liberal arts colleges, creating a conducive environment for creativity and learning.</li>
 
                   </ul>
                 </div>

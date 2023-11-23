@@ -26,7 +26,9 @@ import Casinos from "./IndustriesItem/Casinos/Casinos"
 import CarDealerships from "./IndustriesItem/Car Dealerships/CarDealerships"
 import CorporateOffices from "./IndustriesItem/Corporate Offices/CorporateOffices"
 import PetFriendlyResort from "./IndustriesItem/Pet Friendly Resort/PetFriendlyResort"
-
+import NewPage from "./NewPage"
+import ListItemWithImage from "../../components/list of item with image/ListItemWithImage"
+import industryweserveData from "../../assets/data/industriesWeServeData.json"
 
 function IndustriesRoute() {
   return (
@@ -42,6 +44,10 @@ function IndustriesRoute() {
       <Route path="/motel" element={<Motel />} />
       <Route path="/inn" element={<Inn />} />
       <Route path="/apartment-hotel" element={<ApartmentHotel />} />
+      <Route path="/univercity-list" element={<ListItemWithImage propData={industryweserveData[0].data}/>} />
+
+
+
       
       <Route path="/residential-general-contractors" element={<ResidentialGeneralContractors />} />
       <Route path="/facility-managers" element={<FacilityManagers />} />
@@ -57,6 +63,8 @@ function IndustriesRoute() {
       <Route path="/corporate-offices" element={<CorporateOffices />} />
       <Route path="/pet-friendly-resort" element={<PetFriendlyResort />} />
       <Route path="/cruise-ship" element={<CruiseShip />} />
+      <Route path="/ritesh" element={<NewPage/>} />
+
     </Routes>
   )
 }

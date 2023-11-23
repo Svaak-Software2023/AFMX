@@ -1,7 +1,7 @@
 
 .comminityCollegeList li{
     font-size: .95em;
-    padding: 0px 20px 5px 0px;
+    padding: 0px 0px 5px 0px;
     margin: 10px 0px;
     text-align: justify;
 }
@@ -9,6 +9,5 @@
 .comminityCollegeList li h3{
     font-size: 1em;
     font-weight: 600;
-    padding: 0px 20px 5px 0px;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }

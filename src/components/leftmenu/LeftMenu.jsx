@@ -4,7 +4,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import { IoIosArrowDropdown } from "react-icons/io";
-function LeftMenue({ type, data, url }) {
+function LeftMenue({ type, data,url }) {
     const menuItem = data;
     return (
         <>
@@ -27,7 +27,7 @@ function LeftMenue({ type, data, url }) {
                                 {
                                     menuItem && menuItem?.map((item) => (
                                         <li key={item?.id}>
-                                            <Link to={item.url} className="Links">{item?.name}</Link>
+                                            <Link to={`${url}/${item.name}`} className="Links">{item?.name}</Link>
                                         </li>
                                     )
                                     )
@@ -46,7 +46,7 @@ function LeftMenue({ type, data, url }) {
                         {
                             menuItem && menuItem?.map((item) => (
                                 <li key={item?.id}>
-                                    <Link to={item.url} className="Links">{item?.name}</Link>
+                                    <Link to={`${url}/${item.name}`} className="Links">{item?.name}</Link>
                                 </li>
                             )
                             )

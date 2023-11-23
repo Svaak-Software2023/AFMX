@@ -3,10 +3,316 @@
     "id": "1",
     "name": "University Cleaning",
     "industryImage": "./images/industry/universityCleaning.jpg",
-    "url": "/industrirs-list/1",
+    "url": "/univercity-list",
     "data": [
       {
-        "details": ""
+        "id": "33",
+        "name": "Community College",
+        "industryImage": "./images/industry/CommunityCollege/CommunityCollege1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/CommunityCollege/CommunityCollege1.png"
+          },
+          {
+            "url": "./images/industry/CommunityCollege/CommunityCollege2.png"
+          },
+          {
+            "url": "./images/industry/CommunityCollege/CommunityCollege3.png"
+          }
+        ],
+        "list1": [
+          {
+            "headingh3": "Sparkle and Shine with AfmX!"
+          },
+          {
+            "text": "Attention Community Colleges! Elevate your campus experience with our top-notch cleaning services tailored just for you. At AfmX, we understand the unique needs of educational institutions, and we're here to make your environment spotless, safe, and inspiring."
+          },
+          {
+            "headingh3": "Why Choose AFMX?"
+          },
+          {
+            "heading": "Expertise: ",
+            "text": "Our highly trained cleaning professionals specialize in educational settings, ensuring a thorough and effective cleaning process."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Custom Solutions: ",
+            "text": "We offer personalized cleaning plans to meet the specific requirements of your community college, from classrooms to common areas."
+          },
+          {
+            "heading": "Health and Safety: ",
+            "text": "Creating a clean and healthy learning environment is our priority. Our eco-friendly products and advanced cleaning techniques promote a space where students and faculty can thrive."
+          },
+          {
+            "heading": "Flexible Scheduling: ",
+            "text": " We work around your academic calendar to minimize disruptions. Whether it's after-hours or during breaks, we've got you covered."
+          }
+        ],
+        "url": "/community-college"
+      },
+      {
+        "id": "34",
+        "name": "Liberal Arts College",
+        "industryImage": "./images/industry/LiberalArtsCollege/LiberalArtsCollege1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege1.png"
+          },
+          {
+            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege2.png"
+          },
+          {
+            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege3.png"
+          },
+          {
+            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Embark on a journey of pristine perfection with AfmX Cleaning Solutions - your gateway to immaculate surroundings and an enhanced learning environment."
+          },
+          {
+            "headingh3": "Why Choose AFMX?"
+          },
+          {
+            "heading": "Tailored Cleaning Plans: ",
+            "text": "We understand the unique needs of liberal arts institutions. Our customizable cleaning plans ensure every nook and cranny of your campus radiates cleanliness."
+          },
+          {
+            "heading": "Eco-Friendly Approach:",
+            "text": "AfmX is committed to sustainability. Our eco-friendly cleaning practices not only preserve the environment but also contribute to a healthier atmosphere for students and faculty."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Cutting-Edge Technology: ",
+            "text": "Say goodbye to old-fashioned cleaning methods! AfmX employs state-of-the-art technology and industry-leading equipment to ensure a thorough and efficient cleaning process."
+          },
+          {
+            "heading": "Expert Team: ",
+            "text": "Our highly trained and dedicated cleaning professionals are passionate about maintaining the highest standards of cleanliness. Trust us to keep your campus sparkling clean."
+          },
+          {
+            "heading": "Specialized Services: ",
+            "text": "Beyond routine cleaning, AfmX offers specialized services tailored to meet the unique requirements of liberal arts colleges, creating a conducive environment for creativity and learning."
+          }
+        ],
+        "url": "/liberal-arts-college"
+      },
+      {
+        "id": "35",
+        "name": "Ivy League University",
+        "industryImage": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity1.png"
+          },
+          {
+            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity2.png"
+          },
+          {
+            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity3.png"
+          },
+          {
+            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Embark on a journey of pristine excellence with AfmX - where brilliance meets cleanliness!"
+          },
+          {
+            "headingh3": "Why AFMX?"
+          },
+          {
+            "text": "Tailored for Ivy League Perfection: We understand the standards of excellence at Ivy League institutions and deliver cleaning services that match your academic prowess."
+          },
+          {
+            "text": "Customized Cleaning Solutions: From state-of-the-art lecture halls to your exclusive study sanctuaries, AfmX ensures a tailor-made cleaning experience tailored to your unique needs."
+          }
+        ],
+        "list2": [
+          {
+            "text": "Seamless Service, No Disruptions: Focus on your studies while AfmX takes care of the rest. Our discreet and efficient cleaning teams operate like academic ninjas, leaving no trace behind."
+          },
+          {
+            "headingh3": "Experience AfmX Excellence Today!"
+          },
+          {
+            "heading": "Green and Clean: ",
+            "text": "We prioritize sustainability! AfmX utilizes eco-friendly products and practices to keep your campus green and your mind focused on conquering academic heights."
+          },
+          {
+            "heading": "Exclusive Discounts for Ivy League Universities: ",
+            "text": "Because brilliance deserves a sparkling reward! Enjoy special rates as our esteemed Ivy League clientele."
+          },
+          {
+            "heading": "Hassle-Free Scheduling: ",
+            "text": "Your time is precious. AfmX offers flexible scheduling options to fit seamlessly into your busy academic calendar."
+          },
+          {
+            "heading": "Trust the Experts: ",
+            "text": "With a proven track record of delivering exceptional cleaning services, AfmX is the trusted choice for Ivy League universities."
+          }
+        ],
+        "url": "/ivy-league-university"
+      },
+      {
+        "id": "36",
+        "name": "Nonprofit College",
+        "industryImage": "./images/industry/NonprofitCollege/NonprofitCollege1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/NonprofitCollege/NonprofitCollege1.png"
+          },
+          {
+            "url": "./images/industry/NonprofitCollege/NonprofitCollege2.png"
+          },
+          {
+            "url": "./images/industry/NonprofitCollege/NonprofitCollege3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your campus environment with AfmX - where cleanliness meets innovation!"
+          },
+          {
+            "text": "Unleash the Power of AfmX: Experience a revolutionary cleaning solution tailored for Nonprofit Colleges."
+          },
+          {
+            "text": "AfmX combines cutting-edge technology with eco-friendly practices, ensuring a spotless campus that reflects your commitment to excellence."
+          },
+          {
+            "heading": "Green Cleaning, Smart Living: ",
+            "text": "Choose AfmX for a sustainable future. Our advanced cleaning products prioritize the environment without compromising effectiveness. Lead the way in eco-conscious campus management."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Seamless Integration: ",
+            "text": "AfmX seamlessly integrates into your daily operations, providing hassle-free cleaning solutions that allow your staff to focus on what truly matters - nurturing academic growth and community spirit."
+          },
+          {
+            "heading": "Tech-Driven Efficiency: ",
+            "text": "Say goodbye to traditional cleaning methods. AfmX harnesses the power of technology to optimize cleaning schedules, resource allocation, and reporting. Witness unparalleled efficiency at your fingertips."
+          },
+          {
+            "heading": "Tailored to Your Needs: ",
+            "text": "We understand that each campus is unique. AfmX offers customizable cleaning solutions to meet the specific requirements of your Nonprofit College. Let us create a cleaning plan as exceptional as your institution."
+          }
+        ],
+        "url": "/nonprofit-college"
+      },
+      {
+        "id": "37",
+        "name": "Technical School",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/TechnicalSchool/TechnicalSchool1.png"
+          },
+          {
+            "url": "./images/industry/TechnicalSchool/TechnicalSchool2.png"
+          },
+          {
+            "url": "./images/industry/TechnicalSchool/TechnicalSchool3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your campus into a haven of efficiency and excellence with AfmX - your one-stop solution for top-notch cleaning, expert maid services, skilled handymen, and much more!"
+          },
+          {
+            "heading": "Tailored Solutions: ",
+            "text": "Our services are custom-crafted to meet the unique needs of technical institutions, ensuring a clean, safe, and vibrant learning environment."
+          },
+          {
+            "heading": "Experienced Professionals: ",
+            "text": "AfmX boasts a team of skilled maids and handymen who are not just experts in their craft but also understand the specialized requirements of technical school settings."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Cutting-Edge Technology: ",
+            "text": "We leverage state-of-the-art cleaning equipment and technology to provide efficient and thorough services, leaving your campus sparkling and fully functional."
+          },
+          {
+            "headingh3": "Services We Offer"
+          },
+          {
+            "heading": "Comprehensive Services: ",
+            "text": "From janitorial services to technical repairs, we've got it all covered. Elevate your campus experience with AfmX's holistic approach to facility management."
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Immaculate spaces foster a conducive learning atmosphere. Let AfmX keep your classrooms, labs, and common areas spotless."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Our skilled maids ensure that student accommodations and common areas are always welcoming and hygienic."
+          },
+          {
+            "heading": "Handyman Services: ",
+            "text": "Quick and efficient repairs for technical equipment, classrooms, and facilities, keeping everything in optimal working condition."
+          },
+          {
+            "heading": "Technology Integration: ",
+            "text": "Explore our smart solutions to enhance security, energy efficiency, and overall campus management"
+          }
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "38",
+        "name": "Religious Universities",
+        "industryImage": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png"
+          },
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities2.png"
+          },
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities3.png"
+          },
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AfmX, we understand the sanctity and uniqueness of religious institutions, and we are committed to providing unparalleled cleaning, maid, handyman, and more services tailored to meet the distinctive needs of your university."
+          },
+          {
+            "heading": "Respect for Religious Practices: ",
+            "text": " Our team deeply values the religious practices and traditions of your institution. We operate with utmost sensitivity, ensuring that our services align seamlessly with your sacred spaces and cultural norms."
+          },
+          {
+            "heading": "Adaptable to Restrictions: ",
+            "text": "AfmX takes pride in its flexibility. We recognize the importance of adhering to any restrictions or guidelines set by your university, ensuring a harmonious coexistence with your religious principles."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Customized Solutions: ",
+            "text": "Our services are not one-size-fits-all. We work closely with decision makers like you to understand the unique requirements of your campus. Whether it's specific cleaning schedules, maid services, or handyman tasks, we tailor our offerings to suit your individual needs."
+          },
+          {
+            "heading": "Professional Excellence: ",
+            "text": "AfmX boasts a team of skilled professionals dedicated to maintaining the highest standards of cleanliness and service. Our staff is trained to respect the sacred nature of your campus while delivering exceptional results."
+          },
+          {
+            "heading": "Transparent Communication: ",
+            "text": "We believe in open and transparent communication. Our dedicated account managers ensure a seamless flow of information, keeping decision makers informed and in control every step of the way."
+          },
+          {
+            "text": "Transform your university environment with AfmX. Let us be your trusted partner in upholding the sanctity and cleanliness of your religious institution."
+          }
+        ],
+        "url": "/religious-universities"
       }
     ]
   },
@@ -347,303 +653,231 @@
     ]
   },
   {
-    "id": "33",
-    "name": "Community College",
-    "industryImage": "./images/industry/CommunityCollege/CommunityCollege1.png",
-    "url": "/community-college"
-  },
-  {
-    "id": "34",
-    "name": "Liberal Arts College",
-    "industryImage": "./images/industry/LiberalArtsCollege/LiberalArtsCollege1.png",
-    "url": "/liberal-arts-college"
-  },
-  {
-    "id": "35",
-    "name": "Ivy League University",
-    "industryImage": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity1.png",
-    "url": "/ivy-league-university"
-  },
-  {
-    "id": "36",
-    "name": "Nonprofit College",
-    "industryImage": "./images/industry/NonprofitCollege/NonprofitCollege1.png",
-    "url": "/nonprofit-college"
-  },
-  {
-    "id": "37",
-    "name": "Technical School",
-    "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-    "url": "/technical-school"
-  },
-  {
-    "id": "38",
-    "name": "Religious Universities",
-    "industryImage": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png",
-    "url":"/religious-universities"
-
-  },
-  {
     "id": "39",
     "name": "Apartment Owners",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/39"
-
+    "url": "/industrirs-list/39"
   },
   {
     "id": "40",
     "name": "Facility Managers",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/40"
-
+    "url": "/industrirs-list/40"
   },
   {
     "id": "41",
     "name": "Commercial General Contractors",
     "industryImage": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors1.png",
-    "url":"/commercial-general-contractors"
-
+    "url": "/commercial-general-contractors"
   },
   {
     "id": "42",
     "name": "Residential General Contractors",
     "industryImage": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors1.png",
-    "url":"/residential-general-contractors"
+    "url": "/residential-general-contractors"
   },
   {
     "id": "43",
     "name": "Bed and breakfast",
     "industryImage": "./images/industry/BedAndBreakfast/BedAndBreakfast1.png",
-    "url":"/bed-and-breakfast"
+    "url": "/bed-and-breakfast"
   },
   {
     "id": "44",
     "name": "Hostel",
     "industryImage": "./images/industry/Hostel/Hostel1.png",
-    "url":"/hostel"
+    "url": "/hostel"
   },
   {
     "id": "45",
     "name": "Motel",
     "industryImage": "./images/industry/Motel/Motel1.png",
-    "url":"/motel"
-
+    "url": "/motel"
   },
   {
     "id": "46",
     "name": "Boutique Hotel",
     "industryImage": "./images/industry/BoutiqueHotel/BoutiqueHotel1.png",
-    "url":"/boutique-hotel"
-
+    "url": "/boutique-hotel"
   },
   {
     "id": "47",
     "name": "Guest House",
     "industryImage": "./images/industry/GuestHouse/GuestHouse1.png",
-    "url":"/guest-house"
-
+    "url": "/guest-house"
   },
   {
     "id": "48",
     "name": "Inn",
     "industryImage": "./images/industry/Inn/Inn1.png",
-    "url":"/inn"
-
+    "url": "/inn"
   },
   {
     "id": "49",
     "name": "Apartment Hotel",
     "industryImage": "./images/industry/ApartmentHotel/ApartmentHotel1.png",
-    "url":"/apartment-hotel"
-
+    "url": "/apartment-hotel"
   },
   {
     "id": "50",
     "name": "Casino Hotel",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/50"
-
+    "url": "/industrirs-list/50"
   },
   {
     "id": "51",
     "name": "Beach Resort",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/51"
-
+    "url": "/industrirs-list/51"
   },
   {
     "id": "52",
     "name": "All-Inclusive resorts",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/52"
-
+    "url": "/industrirs-list/52"
   },
   {
     "id": "53",
     "name": "Spa Resorts",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/53"
-
+    "url": "/industrirs-list/53"
   },
   {
     "id": "54",
     "name": "Historic Resorts",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/54"
-
+    "url": "/industrirs-list/54"
   },
   {
     "id": "55",
     "name": "Amusement Resort",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/55"
-
+    "url": "/industrirs-list/55"
   },
   {
     "id": "56",
     "name": "Adult Resorts",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/56"
-
+    "url": "/industrirs-list/56"
   },
   {
     "id": "57",
     "name": "Family Resorts",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/57"
-
+    "url": "/industrirs-list/57"
   },
   {
     "id": "58",
     "name": "Golf Resort",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/58"
-
+    "url": "/industrirs-list/58"
   },
   {
     "id": "59",
     "name": "Island Resort",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/59"
-
+    "url": "/industrirs-list/59"
   },
   {
     "id": "60",
     "name": "Pet Friendly Resort",
     "industryImage": "./images/industry/PetFriendlyResort/PetFriendlyResort1.png",
-    "url":"/pet-friendly-resort"
-
+    "url": "/pet-friendly-resort"
   },
   {
     "id": "61",
     "name": "Restaurants",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/61"
-
+    "url": "/industrirs-list/61"
   },
   {
     "id": "62",
     "name": "Corporate Offices",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/62"
-
+    "url": "/industrirs-list/62"
   },
   {
     "id": "63",
     "name": "Grocery Stores",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/63"
-
+    "url": "/industrirs-list/63"
   },
   {
     "id": "64",
     "name": "Car Dealerships",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/64"
-
+    "url": "/industrirs-list/64"
   },
   {
     "id": "65",
     "name": "Casinos",
     "industryImage": "./images/industry/Casinos/Casinos1.png",
-    "url":"/casinos"
-
+    "url": "/casinos"
   },
   {
     "id": "66",
     "name": "Internal Corporate Event",
     "industryImage": "./images/industry/InternalCorporateEvent/InternalCorporateEvent1.png",
-    "url":"/internal-corporate-event"
-
+    "url": "/internal-corporate-event"
   },
   {
     "id": "67",
     "name": "Festivals",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/67"
-
+    "url": "/industrirs-list/67"
   },
   {
     "id": "68",
     "name": "Exhibitions",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/68"
-
+    "url": "/industrirs-list/68"
   },
   {
     "id": "69",
     "name": "Appreciation Event",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/69"
-
+    "url": "/industrirs-list/69"
   },
   {
     "id": "70",
     "name": "Fashion Shown",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/70"
-
+    "url": "/industrirs-list/70"
   },
   {
     "id": "71",
     "name": "Food Events",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/71"
-
+    "url": "/industrirs-list/71"
   },
   {
     "id": "72",
     "name": "Federal And local Government",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/72"
-
+    "url": "/industrirs-list/72"
   },
   {
     "id": "73",
     "name": "Independent Living",
     "industryImage": "./images/industry/IndependentLiving/IndependentLiving1.png",
-    "url":"/independent-living"
-
+    "url": "/independent-living"
   },
   {
     "id": "74",
     "name": "Adult Homes",
     "industryImage": "./images/industry/medicalOffices.jpg",
-    "url":"/industrirs-list/74"
-
+    "url": "/industrirs-list/74"
   },
   {
     "id": "75",
     "name": "Yacht /Yacht Club",
     "industryImage": "./images/industry/YachtClub/YachtClub1.png",
-    "url":"/yacht-club"
-
+    "url": "/yacht-club"
   },
   {
     "id": "76",
     "name": "Cruise Ship",
     "industryImage": "./images/industry/CruiseShip/CruiseShip1.png",
-    "url":"/cruise-ship"
-
+    "url": "/cruise-ship"
   }
 ]

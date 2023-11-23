@@ -63,12 +63,12 @@ function Casinos() {
                         <li>
                           Are you seeking unparalleled excellence in janitorial
                           cleaning, handyman services, and more for your
-                          esteemed establishment? Look no further than AfmX –
+                          esteemed establishment? Look no further than AfmX -
                           your premier choice for comprehensive facility
                           management.
                         </li>
                         <li>
-                          <b>Our Commitment:</b>
+                          <h3>Our Commitment:</h3>
                         </li>
                         <li>
                           <b>Immaculate Janitorial Cleaning: </b>Elevate the
@@ -92,13 +92,13 @@ function Casinos() {
                           experience.
                         </li>
 
-                        <li>
-                          <b>Why Choose AfmX?</b>
-                        </li>
                       </ul>
                     </div>
                   </div>
-                  <ul>
+                  <ul className="casinosList">
+                        <li>
+                          <h3>Why Choose AfmX?</h3>
+                        </li>
                     <li>
                       <b>Reliability: </b>Count on us for consistent, reliable,
                       and high-quality services. Our team is dedicated to

@@ -64,11 +64,11 @@ function InternalCorporateEvent() {
                           Are you seeking unparalleled janitorial cleaning,
                           handyman, and more for your upcoming internal
                           corporate event? Look no further than AfmX Corporate
-                          Services – your trusted partner in maintaining
+                          Services - your trusted partner in maintaining
                           pristine and professional workspaces.
                         </li>
                         <li>
-                          <b>Our Comprehensive Services Include: </b>
+                          <h3>Our Comprehensive Services Include</h3>
                         </li>
                         <li>
                           <b>Janitorial Excellence: </b>Impeccable cleanliness
@@ -83,7 +83,7 @@ function InternalCorporateEvent() {
                         <li>
                           <b>Event Setup and Breakdown: </b>Our team ensures a
                           smooth transition from preparation to cleanup, so you
-                          can focus on what matters most – your event.
+                          can focus on what matters most - your event.
                         </li>
                         <li>
                           <b>Customized Solutions: </b>Tailoring our services to
@@ -91,13 +91,13 @@ function InternalCorporateEvent() {
                           personalized approach to elevate your corporate
                           setting.
                         </li>
-                        <li>
-                          <b>Why AfmX? </b>
-                        </li>
                       </ul>
                     </div>
                   </div>
-                  <ul>
+                  <ul className="internalCorporateEventList">
+                        <li>
+                          <h3>Why AfmX? </h3>
+                        </li>
                     <li>
                       <b>✓ Professionalism: </b>Our team is dedicated to
                       upholding the highest standards of professionalism in

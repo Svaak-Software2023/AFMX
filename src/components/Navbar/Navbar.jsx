@@ -37,6 +37,8 @@ function Navbar() {
 
   return (
     <>
+    <div className="top-navbar-section">
+    
       <section id="topbar" className="align-items-center">
         <div className="containe p-0">
           <div className="row align-items-center p-0 m-0">
@@ -221,6 +223,7 @@ function Navbar() {
           </nav>
         </div>
       </header>
+      </div>
     </>
   );
 }

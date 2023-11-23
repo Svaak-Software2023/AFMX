@@ -86,13 +86,13 @@ function PetFriendlyResort() {
                           prompt and effective response to keep your property in
                           impeccable condition.
                         </li>
-                        <li>
-                          <b>Why Opt for AfmX? </b>
-                        </li>
                       </ul>
                     </div>
                   </div>
                   <ul className="petFriendlyResortList">
+                        <li>
+                          <b>Why Opt for AfmX? </b>
+                        </li>
                     <li>
                       <b>Pet-Centric Approach: </b> We comprehend the
                       significance of catering to pet enthusiasts. Our services

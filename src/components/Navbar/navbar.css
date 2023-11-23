@@ -1,3 +1,8 @@
+.top-navbar-section {
+position: relative;
+
+}
+
 .container-icon {
   position: relative;
   --size-button: 40px;
@@ -108,7 +113,7 @@
 
 .logo {
   position: absolute;
-  top: 24px;
+  bottom: 45px;
   left: 8px;
 }
 
@@ -166,8 +171,9 @@
 
 .contactus ul li .complaint_btn {
   margin-left: 10px;
-  padding: 5px 10px;
-  background-color: #4b5320;
+  padding: 2px 10px;
+  background-color: var(--blue);
+  font-weight: 600;
   color: white;
 }
 
@@ -384,6 +390,7 @@ header#header .container {
     height: 80px;
     width: 600px;
   }
+
   .logo img {
     width: 199px;
   }
@@ -420,6 +427,7 @@ header#header .container {
     height: 80px;
     width: 500px;
   }
+
   .mobile-nav-toggle {
     display: block;
   }
@@ -531,7 +539,8 @@ header#header .container {
     position: absolute;
     top: 0px;
     left: 10px;
-}
+  }
+
   .logo img {
     width: 201px;
   }
@@ -664,7 +673,7 @@ header#header .container {
 }
 
 
-.nav-close-btn{
+.nav-close-btn {
   position: fixed;
   top: 5px;
   right: 15px;

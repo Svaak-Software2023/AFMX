@@ -41,13 +41,15 @@ function GuestHouse() {
                         <li> <b>Maid Services: </b>From daily upkeep to special requests, our trained maids handle all aspects of housekeeping with precision and care.</li>
                         <li> <b>Handyman Services: </b>Timely maintenance is crucial for a smooth guest experience. Our skilled handymen are ready to address any repairs or improvements needed, ensuring your property remains in top condition.</li>
                         <li> <b>And More: </b>Beyond the essentials, AfmX offers a range of additional services to cater to your unique requirements. From landscaping to concierge services, we've got you covered.</li>
-                        <li> <b>Why Choose AfmX?</b></li>
-                        <li> <b>Professionalism: </b>Our team is committed to delivering professional, reliable services to meet the highest standards.</li>
-                        <li> <b>Customization: </b>Tailor our services to fit the specific needs and preferences of your guest house.</li>
-                        <li> <b>Peace of Mind: </b>With AfmX, you can focus on providing an exceptional guest experience while we take care of the behind-the-scenes tasks</li>
                       </ul>
                     </div>
                   </div>
+                  <ul className="guestHouseList">
+                    <li> <b>Why Choose AfmX?</b></li>
+                    <li> <b>Professionalism: </b>Our team is committed to delivering professional, reliable services to meet the highest standards.</li>
+                    <li> <b>Customization: </b>Tailor our services to fit the specific needs and preferences of your guest house.</li>
+                    <li> <b>Peace of Mind: </b>With AfmX, you can focus on providing an exceptional guest experience while we take care of the behind-the-scenes tasks</li>
+                  </ul>
 
                 </div>
               </div>

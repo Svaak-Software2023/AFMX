@@ -55,10 +55,10 @@ export default function IvyLeagueUniversity() {
                   </div>
 
                   <ul className="liberalArtsCollegeList">
-                    <li>Green and Clean: We prioritize sustainability! AfmX utilizes eco-friendly products and practices to keep your campus green and your mind focused on conquering academic heights.</li>
-                    <li>Exclusive Discounts for Ivy League Universities: Because brilliance deserves a sparkling reward! Enjoy special rates as our esteemed Ivy League clientele.</li>
-                    <li>Hassle-Free Scheduling: Your time is precious. AfmX offers flexible scheduling options to fit seamlessly into your busy academic calendar.</li>
-                    <li>Trust the Experts: With a proven track record of delivering exceptional cleaning services, AfmX is the trusted choice for Ivy League universities.</li>
+                    <li><b>Green and Clean:</b> We prioritize sustainability! AfmX utilizes eco-friendly products and practices to keep your campus green and your mind focused on conquering academic heights.</li>
+                    <li><b>Exclusive Discounts for Ivy League Universities:</b> Because brilliance deserves a sparkling reward! Enjoy special rates as our esteemed Ivy League clientele.</li>
+                    <li><b>Hassle-Free Scheduling:</b> Your time is precious. AfmX offers flexible scheduling options to fit seamlessly into your busy academic calendar.</li>
+                    <li><b>Trust the Experts:</b> With a proven track record of delivering exceptional cleaning services, AfmX is the trusted choice for Ivy League universities.</li>
 
                   </ul>
                 </div>

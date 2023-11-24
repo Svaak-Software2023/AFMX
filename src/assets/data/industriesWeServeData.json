@@ -404,7 +404,311 @@
     "url": "/industrirs-list/2",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Internal Corporate Event",
+        "industryImage": "./images/industry/InternalCorporateEvent/InternalCorporateEvent1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent1.png"
+          },
+          {
+            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent2.png"
+          },
+          {
+            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent3.png"
+          },
+          {
+            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you seeking unparalleled janitorial cleaning, handyman, and more for your upcoming internal corporate event? Look no further than AfmX Corporate Services – your trusted partner in maintaining pristine and professional workspaces."
+          },
+          {
+            "heading": "Our Comprehensive Services Include:"
+          },
+          {
+            "heading": "Janitorial Excellence: ",
+            "text": "Impeccable cleanliness tailored to your event needs, ensuring a welcoming and hygienic environment."
+          },
+          {
+            "heading": "Handyman Expertise: ",
+            "text": "Swift and efficient repairs and maintenance to address any unforeseen issues, allowing your event to run seamlessly."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Event Setup and Breakdown: ",
+            "text": "Our Event Setup and Breakdown: Our team ensures a smooth transition from preparation to cleanup, so you can focus on what matters most – your event."
+          },
+          {
+            "heading": "Customized Solutions: ",
+            "text": "Tailoring our services to meet your specific requirements, we guarantee a personalized approach to elevate your corporate setting."
+          },
+          {
+            "heading": "Why AfmX?"
+          },
+          {
+            "heading": "Professionalism: ",
+            "text": "Our team is dedicated to upholding the highest standards of professionalism in every aspect of our service."
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "Count on AfmX to deliver punctual and dependable services, allowing you to focus on the success of your corporate event."
+          },
+          {
+            "heading": "Excellence in Execution: ",
+            "text": "From meticulous cleaning to efficient repairs, AfmX is committed to excellence in every task we undertake."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Festivals",
+        "industryImage": "./images/industry/Festivals/Festivals1.png",
+        "imgData": [
+          { "url": "./images/industry/Festivals/Festivals1.png" },
+          { "url": "./images/industry/Festivals/Festivals2.png" },
+          { "url": "./images/industry/Festivals/Festivals3.png" }
+        ],
+        "list1": [
+          {
+            "text": "Are you hosting a festival and in need of reliable event cleaning and handyman services? Look no further than AfmX – your trusted partner in event maintenance."
+          },
+          {
+            "heading": "Services Offered:"
+          },
+          {
+            "heading": "anitorial Cleaning: ",
+            "text": "JOur dedicated team ensures a spotless environment throughout your event. From pre-event setup to post-event clean-up, we handle it all with precision."
+          },
+          {
+            "heading": "Handyman Services: ",
+            "text": "AfmX provides skilled handymen for on-site repairs, installations, and maintenance. From minor fixes to technical support, our team is equipped to handle diverse requirements."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Setup and Dismantle: ",
+            "text": "Streamline your event logistics with our efficient setup and dismantle services. We manage the entire process seamlessly, allowing you to focus on the success of your event."
+          },
+          {
+            "heading": "Why Choose AfmX:"
+          },
+          {
+            "heading": "Professional Expertise: ",
+            "text": "Benefit from our experienced and trained professionals dedicated to maintaining the highest standards of cleanliness and functionality."
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "Count on AfmX for punctual and dependable services. We understand the importance of timelines in the success of your event."
+          },
+          {
+            "heading": "Custom Solutions: ",
+            "text": "Tailored packages to suit your event's specific needs. Whether it's a one-day festival or a week-long celebration, AfmX adapts to your requirements."
+          },
+          {
+            "heading": "Quality Assurance: ",
+            "text": "We prioritize quality in every aspect of our service, ensuring a pristine and well-maintained environment for your guests."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Exhibitions",
+        "industryImage": "./images/industry/Exhibitions/Exhibitions1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/Exhibitions/Exhibitions1.png"
+          },
+          {
+            "url": "./images/industry/Exhibitions/Exhibitions2.png"
+          },
+          {
+            "url": "./images/industry/Exhibitions/Exhibitions3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Attention Exhibition Owners,"
+          },
+          {
+            "text": "Ensure the success of your events with our unparalleled janitorial cleaning services tailored for exhibitions. We understand the significance of maintaining a pristine and professional environment, and we're here to exceed your expectations."
+          },
+          {
+            "heading": "Key Features:"
+          },
+          {
+            "heading": "Comprehensive Cleaning: ",
+            "text": "Our skilled janitorial team is equipped to handle every aspect of exhibition space, from booth areas to common areas, ensuring a spotless venue for your guests."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Customized Solutions: ",
+            "text": "We work closely with exhibition organizers to create personalized cleaning plans that align with your specific needs and schedule, guaranteeing a seamless and efficient cleaning process."
+          },
+          {
+            "heading": "Experienced Professionals: ",
+            "text": "Our dedicated cleaning staff is highly trained, experienced, and committed to delivering excellence. Trust us to maintain the cleanliness and hygiene standards expected in your exhibition space."
+          },
+          {
+            "heading": "Cutting-Edge Equipment: ",
+            "text": "We invest in state-of-the-art cleaning equipment and eco-friendly cleaning agents to achieve superior results while minimizing environmental impact."
+          },
+          {
+            "heading": "Flexible Scheduling: ",
+            "text": "We understand the dynamic nature of exhibition setups. Our flexible scheduling options allow us to adapt to your timeline, ensuring a clean and inviting space before, during, and after your event."
+          },
+          {
+            "heading": "Why Choose Us?"
+          },
+          {
+            "heading": "Proven Track Record: ",
+            "text": "With a solid track record of providing exceptional cleaning services for exhibitions, we have garnered the trust of exhibition organizers across diverse industries."
+          },
+          {
+            "heading": "Nationwide Reach: ",
+            "text": "Our services are available nationwide, making us your go-to partner for exhibitions held in various locations."
+          },
+          {
+            "heading": "Professionalism at Its Core: ",
+            "text": "We prioritize professionalism, efficiency, and attention to detail to create an atmosphere that reflects positively on your exhibition and its participants."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Appreciation Event",
+        "industryImage": "./images/industry/AppreciationEvent/AppreciationEvent1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/AppreciationEvent/AppreciationEvent1.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Attention Appreciation Event Owners,"
+          },
+          {
+            "text": "We understand the importance of creating a pristine and welcoming atmosphere for your esteemed gatherings. Ensure the success of your events by entrusting the cleanliness to our professional janitorial cleaning services."
+          },
+          {
+            "heading": "Why Choose Us?"
+          },
+          {
+            "heading": "Immaculate Cleanliness: ",
+            "text": "Our dedicated team is committed to delivering spotless results, leaving your event space flawlessly clean and ready for any occasion."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Attention to Detail: ",
+            "text": "Attention to Detail: We pride ourselves on our meticulous attention to detail. From floors to ceilings, no corner is left untouched, ensuring a polished and professional ambiance."
+          },
+          {
+            "heading": "Experienced Professionals: ",
+            "text": "Our skilled janitorial staff is highly trained and experienced in handling events of all sizes. You can rely on us to maintain the highest standards of cleanliness."
+          },
+          {
+            "heading": "Flexible Solutions: ",
+            "text": "Tailored to meet your specific needs, our flexible cleaning solutions can accommodate any schedule or event requirements. We work seamlessly to enhance the overall experience for you and your guests."
+          },
+          {
+            "heading": "Time-Efficient: ",
+            "text": "We understand the importance of efficiency in event planning. Our team works swiftly and diligently to complete the cleaning process without disrupting your event timeline"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Fashion Shown",
+        "industryImage": "./images/industry/FashionShown/FashionShown1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/FashionShown/FashionShown1.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Ensure your event shines as bright as your runway! Our top-notch janitorial cleaning services are tailored to meet the unique needs of fashion show venues. Trust us to create an atmosphere of pristine elegance, leaving your attendees with a lasting impression."
+          },
+          {
+            "heading": "Why Choose Us?"
+          },
+          {
+            "heading": "Expertise: ",
+            "text": "Our dedicated team understands the sophistication required for a successful fashion show, delivering unparalleled cleanliness. "
+          },
+          {
+            "heading": "Precision: ",
+            "text": "We pay attention to every detail, from backstage areas to front-of-house spaces, ensuring a flawless and polished environment. "
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Flexibility: ",
+            "text": "We work around your schedule, providing pre-event, during-event, and post-event cleaning to accommodate your specific requirements."
+          },
+          {
+            "heading": "Quality Assurance: ",
+            "text": "Our commitment to excellence guarantees a spotless venue, allowing your fashion creations to take center stage."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Food Events",
+        "industryImage": "./images/industry/FoodEvents/FoodEvents1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/FoodEvents/FoodEvents1.png"
+          },
+          {
+            "url": "./images/industry/FoodEvents/FoodEvents2.png"
+          },
+          {
+            "url": "./images/industry/FoodEvents/FoodEvents3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Ensure a pristine and inviting atmosphere at your next food event with our top-tier janitorial cleaning services. We specialize in creating a sanitary environment that not only meets but exceeds industry standards. Our dedicated team of professional cleaners is committed to delivering exceptional results, allowing you to focus on what matters most – the success of your event."
+          },
+          {
+            "heading": "Key Features: "
+          },
+          {
+            "heading": "Thorough Cleaning: ",
+            "text": "Our meticulous approach guarantees a spotless venue, from kitchen to dining areas."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Customized Solutions: ",
+            "text": "Tailored cleaning packages to suit the unique requirements of your food event. "
+          },
+          {
+            "heading": "Timely Execution: ",
+            "text": "Punctual and efficient services to meet your event timeline seamlessly. "
+          },
+          {
+            "heading": "Professional Team: ",
+            "text": "Trust our experienced and trained cleaning staff to handle the cleanliness of your event with the utmost professionalism."
+          },
+          {
+            "heading": "Why Choose Us?"
+          },
+          {
+            "heading": "Reputation for Excellence: ",
+            "text": "We have a proven track record of providing exceptional janitorial cleaning services. "
+          },
+          {
+            "heading": "Client-Centric Approach: ",
+            "text": "Your satisfaction is our priority, and we are committed to meeting and exceeding your expectations. Eco-Friendly Practices: Our commitment to sustainability ensures that your event remains environmentally conscious."
+          }
+        ]
       }
     ]
   },
@@ -739,7 +1043,600 @@
     "url": "/industrirs-list/14",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Bed and breakfast",
+        "industryImage": "./images/industry/BedAndBreakfast/BedAndBreakfast1.png",
+        "imgData": [
+          {
+            "url": "/images/industry/BedAndBreakfast/BedAndBreakfast1.png"
+          },
+          {
+            "url": "/images/industry/BedAndBreakfast/BedAndBreakfast2.png"
+          },
+          {
+            "url": "/images/industry/BedAndBreakfast/BedAndBreakfast3.png"
+          },
+          {
+            "url": "/images/industry/BedAndBreakfast/BedAndBreakfast4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your Bed and Breakfast into a haven of luxury and relaxation with AfmX – your one-stop solution for cleaning, maid services, handyman assistance, and more! "
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": " Let AfmX elevate the cleanliness of your B&B to new heights. Our expert cleaners ensure every nook and cranny is spotless, leaving your guests with an unforgettable, pristine experience."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Impress your guests with impeccable service! AfmX maids are dedicated to providing a seamless and personalized experience, attending to every detail to make your B&B feel like a home away from home."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Assistance: ",
+            "text": "From minor repairs to major renovations, AfmX has your back. Our skilled handymen are ready to tackle any task, ensuring your Bed and Breakfast is always in top-notch condition. "
+          },
+          {
+            "heading": "More Services: ",
+            "text": "Elevate the uniqueness of your B&B with our additional services! From interior design consultations to personalized guest experiences, AfmX goes above and beyond to make your Bed and Breakfast stand out."
+          },
+          {
+            "heading": "Why Choose AFMX?"
+          },
+          {
+            "text": "Tailored solutions to meet your specific needs."
+          },
+          {
+            "text": "Trained professionals dedicated to excellence."
+          },
+          {
+            "text": "Unmatched attention to detail for a truly unique experience."
+          },
+          {
+            "text": "Reliable and timely service to keep your B&B running smoothly."
+          },
+          {
+            "text": "Book AfmX Today and Redefine Hospitality Excellence! "
+          },
+          {
+            "text": "Let AfmX be the secret ingredient that sets your Bed and Breakfast apart. Elevate your guest experience with our comprehensive services"
+          }
+        ]
+      },
+
+      {
+        "id": "2",
+        "name": "Hostel",
+        "industryImage": "images/industry/Hostel/Hostel1.png",
+
+        "imgData": [
+          {
+            "url": "/images/industry/Hostel/Hostel1.png"
+          },
+          {
+            "url": "/images/industry/Hostel/Hostel2.png"
+          },
+          {
+            "url": "/images/industry/Hostel/Hostel3.png"
+          },
+          {
+            "url": "/images/industry/Hostel/Hostel4.png"
+          },
+          {
+            "url": "/images/industry/Hostel/Hostel5.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you seeking reliable and professional property maintenance services for your hostel? Look no further than AfmX – your trusted partner in ensuring a clean, safe, and well-maintained environment for your guests."
+          },
+          {
+            "heading": "Our Services:"
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Ensure pristine cleanliness with our thorough and efficient cleaning services. Our experienced team pays meticulous attention to detail, leaving your hostel spotless and inviting."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Elevate the guest experience with our trained and courteous maids. From daily room upkeep to laundry services, we take care of the finer details to enhance overall guest satisfaction."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Services: ",
+            "text": "Address maintenance issues promptly with our skilled handyman team. Whether it's plumbing, electrical, or general repairs, we've got you covered to keep your property in optimal condition."
+          },
+          {
+            "heading": "And More: ",
+            "text": "And More: Explore our range of additional services tailored to meet the unique needs of hostel owners. From landscaping to security solutions, AfmX is your one-stop destination for comprehensive property care."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "Count on us for timely and dependable services."
+          },
+          {
+            "heading": "Professionalism: ",
+            "text": "Our trained staff upholds the highest standards of professionalism"
+          },
+          {
+            "heading": "Custom Solutions: ",
+            "text": "Tailored packages to suit your hostel's specific requirements."
+          },
+          {
+            "heading": "Quality Assurance: ",
+            "text": "We prioritize quality in every service we deliver."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Motel",
+        "industryImage": "images/industry/Motel/Motel1.png",
+
+        "imgData": [
+          {
+            "url": "images/industry/Motel/Motel1.png"
+          },
+          {
+            "url": "images/industry/Motel/Motel2.png"
+          },
+          {
+            "url": "images/industry/Motel/Motel3.png"
+          },
+          {
+            "url": "images/industry/Motel/Motel4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Enhance the appeal and functionality of your establishment with AfmX, your trusted partner in professional cleaning, maid services, handyman solutions, and more."
+          },
+          {
+            "heading": "Our Services:​"
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Impeccable cleanliness is our commitment. Our professional cleaning staff ensures that every corner of your motel is spotless, creating a welcoming atmosphere for your guests."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Elevate guest satisfaction with our reliable and discreet maid services. From room preparation to daily upkeep, our experienced maids prioritize guest comfort and satisfaction."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Solutions: ",
+            "text": "Handyman Solutions: Maintain your motel's infrastructure seamlessly with our skilled handyman services. From routine maintenance to urgent repairs, AfmX ensures that your property is in top-notch condition."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "Count on AfmX for punctual and dependable services, tailored to meet the unique needs of your motel."
+          },
+          {
+            "heading": "Professionalism: ",
+            "text": "Our highly trained staff adheres to the highest standards of professionalism, ensuring a positive and seamless experience for both you and your guests."
+          },
+          {
+            "heading": "Customized Packages: ",
+            "text": "We offer flexible service packages, allowing you to choose the services that best suit your motel's requirements and budget."
+          },
+          {
+            "text": "Partner with AfmX today and elevate your motel's reputation for cleanliness, efficiency, and guest satisfaction.​"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Boutique Hotel",
+        "industryImage": "images/industry/BoutiqueHotel/BoutiqueHotel1.png",
+
+        "imgData": [
+          {
+            "url": "images/industry/BoutiqueHotel/BoutiqueHotel1.png"
+          },
+          {
+            "url": "images/industry/BoutiqueHotel/BoutiqueHotel2.png"
+          },
+          {
+            "url": "images/industry/BoutiqueHotel/BoutiqueHotel3.png"
+          },
+          {
+            "url": "images/industry/BoutiqueHotel/BoutiqueHotel4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Elevate the standards of your establishment with AfmX, your one-stop solution for premium cleaning, maid, handyman, and more services. Our commitment is to provide unmatched excellence, ensuring your boutique hotel maintains an impeccable reputation."
+          },
+          {
+            "text": "Services Offered:"
+          },
+          {
+            "text": "Cleaning Services:"
+          },
+          {
+            "text": "Thorough and systematic cleaning to meet the highest hygiene standards."
+          },
+          {
+            "text": "Daily, weekly, or customized cleaning schedules to suit your hotel's unique needs."
+          }
+        ],
+        "list2": [
+          {
+            "text": "Maid Services:"
+          },
+          {
+            "text": "Professionally trained maids to ensure your guests experience a seamless and comfortable stay."
+          },
+          {
+            "text": "Attention to detail in every aspect, from room preparation to personalized guest services."
+          },
+          {
+            "text": "Handyman Services:"
+          },
+          {
+            "text": "Prompt and reliable maintenance solutions for a well-functioning and aesthetically pleasing environment."
+          },
+          {
+            "text": "Skilled technicians available around the clock to address any unforeseen issues."
+          },
+          {
+            "text": "More Services:"
+          },
+          {
+            "text": "Tailored packages to meet specific requirements of boutique hotels."
+          },
+          {
+            "text": "Dedicated account manager for personalized and efficient communication."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+
+          {
+            "heading": "Expertise: ",
+            "text": "Years of experience in serving the hospitality industry."
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "Trustworthy professionals ensuring consistency in service delivery."
+          },
+          {
+            "heading": "Customization: ",
+            "text": "Flexible packages to align with your boutique hotel's unique needs."
+          },
+          {
+            "heading": "Efficiency: ",
+            "text": "Streamlined processes for prompt and hassle-free services."
+          },
+          {
+            "heading": "Quality Assurance: ",
+            "text": "Uncompromising commitment to maintaining the highest standards."
+          },
+          {
+            "text": "Partner with AfmX to enhance the overall guest experience, leaving a lasting impression on your discerning clientele. Elevate your boutique hotel to new heights of excellence with AfmX by your side."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Guest House",
+        "industryImage": "images/industry/GuestHouse/GuestHouse1.png",
+
+        "imgData": [
+          {
+            "url": "images/industry/GuestHouse/GuestHouse1.png"
+          },
+          {
+            "url": "images/industry/GuestHouse/GuestHouse2.png"
+          },
+          {
+            "url": "images/industry/GuestHouse/GuestHouse3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you a Guest House Owner looking to enhance the experience for your guests? AfmX is here to provide tailored solutions for your property management needs."
+          },
+          {
+            "heading": "Our Services Include: "
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Impeccable cleanliness is our priority. Our professional cleaners ensure that every corner of your guest house is spotless, creating a welcoming environment for your guests."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Maid Services: ",
+            "text": "From daily upkeep to special requests, our trained maids handle all aspects of housekeeping with precision and care."
+          },
+          {
+            "heading": "Handyman Services: ",
+            "text": "Timely maintenance is crucial for a smooth guest experience. Our skilled handymen are ready to address any repairs or improvements needed, ensuring your property remains in top condition."
+          },
+          {
+            "heading": "And More: ",
+            "text": "Beyond the essentials, AfmX offers a range of additional services to cater to your unique requirements. From landscaping to concierge services, we've got you covered."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Professionalism: ",
+            "text": "Our team is committed to delivering professional, reliable services to meet the highest standards."
+          },
+          {
+            "heading": "Customization: ",
+            "text": "Tailor our services to fit the specific needs and preferences of your guest house."
+          },
+          {
+            "heading": "Peace of Mind: ",
+            "text": "Peace of Mind: With AfmX, you can focus on providing an exceptional guest experience while we take care of the behind-the-scenes tasks"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Inn",
+        "industryImage": "images/industry/Inn/Inn1.png",
+
+        "imgData": [
+          {
+            "url": "images/industry/Inn/Inn1.png"
+          },
+          {
+            "url": "images/industry/Inn/Inn1.png"
+          },
+          {
+            "url": "images/industry/Inn/Inn1.png"
+          },
+          {
+            "url": "images/industry/Inn/Inn1.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you searching for top-notch cleaning, maid, handyman, and more services to elevate the standards of your inn? Look no further than AfmX!"
+          },
+          {
+            "heading": "Immaculate Cleaning Services: ",
+            "text": "Our highly trained cleaning professionals ensure a pristine environment for your guests. From rooms to common areas, we leave no corner untouched."
+          },
+          {
+            "heading": "Efficient Maid Services: ",
+            "text": "Experience the epitome of hospitality with our dedicated maid services. Our meticulous staff ensures every guest's comfort and satisfaction."
+          },
+          {
+            "heading": "Skillful Handyman Solutions: ",
+            "text": "Address maintenance concerns promptly with our skilled handyman team. We specialize in timely and efficient repairs, ensuring your property is always in top condition."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Professional Excellence: ",
+            "text": "Our team comprises trained and vetted professionals committed to delivering exceptional service."
+          },
+          {
+            "heading": "Timely Solutions: ",
+            "text": "We understand the importance of efficiency in the hospitality industry. Expect prompt and reliable services tailored to your schedule."
+          },
+          {
+            "heading": "Customized Packages: ",
+            "text": "Choose from our flexible service packages to meet the unique needs of your inn. We offer bespoke solutions for every property."
+          },
+          {
+            "heading": "Comprehensive Service Range: ",
+            "text": "Beyond cleaning, maid, and handyman services, AfmX provides a range of property-related solutions to streamline your operations."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Apartment Hotel",
+        "industryImage": "images/industry/ApartmentHotel/ApartmentHotel1.png",
+
+        "imgData": [
+          {
+            "url": "images/industry/ApartmentHotel/ApartmentHotel1.png"
+          },
+          {
+            "url": "images/industry/ApartmentHotel/ApartmentHotel2.png"
+          },
+          {
+            "url": "images/industry/ApartmentHotel/ApartmentHotel3.png"
+          },
+          {
+            "url": "images/industry/ApartmentHotel/ApartmentHotel4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Dear Apartment Hotel Owners,"
+          },
+          {
+            "text": "Elevate the standards of your establishment with AfmX - Your one-stop solution for top-notch cleaning, maid, handyman, and other services tailored to meet the unique needs of apartment hotels."
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Maintain the impeccable cleanliness of your premises with our professional cleaning services. Our dedicated team ensures a pristine environment that leaves a lasting impression on your guests."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Provide an unparalleled guest experience by availing our meticulous maid services. From room refreshes to personalized guest assistance, our trained maids are committed to delivering excellence."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Services: ",
+            "text": "Address maintenance issues promptly and efficiently with AfmX. Our skilled handymen are equipped to handle a diverse range of repairs, ensuring that your property remains in optimal condition at all times."
+          },
+          {
+            "heading": "Why Choose AfmX? "
+          },
+          {
+            "heading": "Experienced and Trained Staff: ",
+            "text": "Our professionals are skilled, reliable, and committed to delivering exceptional service. "
+          },
+          {
+            "heading": "Customized Solutions: ",
+            "text": "Tailored packages to meet the specific needs of apartment hotels, ensuring a seamless and efficient operation."
+          },
+          {
+            "heading": "24/7 Availability: ",
+            "text": "Count on us for round-the-clock support, ensuring that your property is always at its best."
+          },
+          {
+            "text": "Ready to enhance the guest experience and streamline your operations? Contact AfmX today for a consultation."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Casino Hotel​",
+        "industryImage": "images/industry/CasinoHotel/CasinoHotel1.png",
+
+        "imgData": [
+          {
+            "url": "images/industry/CasinoHotel/CasinoHotel1.png"
+          },
+          {
+            "url": "images/industry/CasinoHotel/CasinoHotel2.png"
+          },
+          {
+            "url": "images/industry/CasinoHotel/CasinoHotel3.png"
+          },
+          {
+            "url": "images/industry/CasinoHotel/CasinoHotel4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AfmX, we understand the unique demands of maintaining a prestigious Casino Hotel. Our tailored hospitality services are designed to enhance the guest experience while ensuring the seamless operation of your establishment."
+          },
+          {
+            "heading": "Our Services:"
+          },
+          {
+            "text": "Cleaning Services:"
+          },
+          {
+            "text": "Immaculate cleaning solutions for all areas, including gaming floors, hotel rooms, and common spaces."
+          },
+          {
+            "text": "Trained and professional staff ensuring the highest standards of cleanliness."
+          }
+        ],
+        "list2": [
+          {
+            "text": "Maid Services:"
+          },
+          {
+            "text": "Attentive and discreet housekeeping services for guest rooms."
+          },
+          {
+            "text": "Personalized care to meet the expectations of even the most discerning guests"
+          },
+          {
+            "text": "Handyman Services"
+          },
+          {
+            "text": "Prompt and reliable maintenance solutions to address any facility issues."
+          },
+          {
+            "text": "Skilled technicians available 24/7 to minimize downtime."
+          },
+          {
+            "text": "More Services:"
+          },
+          {
+            "text": "Customizable packages to meet your specific needs."
+          },
+          {
+            "text": "Additional services, such as event support, landscaping, and more."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "text": "Expertise: Years of experience catering to the unique requirements of high-end hospitality establishments."
+          },
+          {
+            "text": "Professionalism: Our staff is trained to maintain the utmost professionalism, ensuring a positive and discreet guest experience."
+          },
+          {
+            "text": "Reliability: We understand the importance of consistency in the hospitality industry; our services are reliable and punctual."
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Casinos",
+        "industryImage": "images/industry/Casinos/Casinos1.png",
+
+        "imgData": [
+          {
+            "url": "images/industry/Casinos/Casinos1.png"
+          },
+          {
+            "url": "images/industry/Casinos/Casinos2.png"
+          },
+          {
+            "url": "images/industry/Casinos/Casinos3.png"
+          },
+          {
+            "url": "images/industry/Casinos/Casinos4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you seeking unparalleled excellence in janitorial cleaning, handyman services, and more for your esteemed establishment? Look no further than AfmX – your premier choice for comprehensive facility management."
+          },
+          {
+            "heading": "Our Commitment:"
+          },
+          {
+            "heading": "Immaculate Janitorial Cleaning: ",
+            "text": "Elevate the cleanliness standards of your casino with our meticulous janitorial services. We understand the importance of maintaining a pristine environment for your guests."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Skilled Handyman Services: ",
+            "text": "Experience prompt and efficient repairs and maintenance with our team of skilled handymen. From minor fixes to major overhauls, AfmX ensures seamless operations within your facility."
+          },
+          {
+            "heading": "More Than Just Maintenance: ",
+            "text": "More Than Just Maintenance: Beyond janitorial and handyman services, AfmX offers a suite of facility management solutions tailored to meet the unique needs of casinos. Trust us to handle the details, allowing you to focus on providing an exceptional gaming experience."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "Count on us for consistent, reliable, and high-quality services. Our team is dedicated to meeting and exceeding your expectations."
+          },
+          {
+            "heading": "Comprehensive Solutions: ",
+            "text": "AfmX is your one-stop-shop for all facility management needs, offering a diverse range of services designed to enhance the functionality and aesthetics of your casino."
+          },
+          {
+            "heading": "Professionalism at its Core: ",
+            "text": "Our team is composed of experienced professionals who prioritize efficiency, professionalism, and confidentiality. Your satisfaction is our top priority."
+          }
+        ]
       }
     ]
   },
@@ -1906,17 +2803,6 @@
     "name": "Retail Stores",
     "industryImage": "./images/industry/retailStores.jpg",
     "url": "/industrirs-list/28",
-    "data": [
-      {
-        "details": ""
-      }
-    ]
-  },
-  {
-    "id": "29",
-    "name": "Federal and Local Government",
-    "industryImage": "./images/industry/federalAndLocalGovernment.jpg",
-    "url": "/industrirs-list/29",
     "data": [
       {
         "details": ""

@@ -358,24 +358,43 @@
         "list1": [],
         "list2": [],
         "url": "/technical-school"
-      },{
-        "id": "10",
+      },
+      {
+        "id": "12",
         "name": "State",
         "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
         "imgData": [],
         "list1": [],
         "list2": [],
         "url": "/technical-school"
-      },{
-        "id": "10",
-        "name": "Statutory college",
+      },
+      {
+        "id": "13",
+        "name": "Secondary",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "14",
+        "name": "Primary",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "15",
+        "name": "Montessori",
         "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
         "imgData": [],
         "list1": [],
         "list2": [],
         "url": "/technical-school"
       }
-      
     ]
   },
   {
@@ -484,7 +503,66 @@
     "url": "/apartment-owners",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Apartment Owners",
+        "industryImage": "./images/industry/ApartmentOwners/ApartmentOwners1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/ApartmentOwners/ApartmentOwners1.png"
+          },
+          {
+            "url": "./images/industry/ApartmentOwners/ApartmentOwners2.png"
+          },
+          {
+            "url": "./images/industry/ApartmentOwners/ApartmentOwners3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Attention Apartment Complex Owners,"
+          },
+          {
+            "text": "Transform your residents' living spaces into havens of comfort and convenience with AfmX - Your One-Stop Solution for Cleaning, Maid, Handyman, and More!"
+          },
+          {
+            "heading": "Immaculate Cleaning Services: ",
+            "text": "Experience the epitome of cleanliness with our top-notch cleaning services. From sparkling floors to pristine surfaces, we ensure a spotless environment for your residents to call home."
+          },
+          {
+            "heading": "Meticulous Maid Services: ",
+            "text": "Our skilled and trustworthy maids go beyond the basics. Let AfmX bring a touch of luxury to your residents' lives with personalized maid services that cater to their unique needs."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Expert Handyman Solutions: ",
+            "text": "Say goodbye to maintenance headaches! AfmX's expert handymen are ready to tackle any repair or improvement project. From leaky faucets to intricate installations, we've got it covered."
+          },
+          {
+            "heading": "And More...: ",
+            "text": "Discover the diverse range of services AfmX offers to enhance your apartment complex. Whether it's landscaping, pest control, or special requests - we're here to make your residents' lives easier."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Tailored Services: ",
+            "text": "Customize packages to suit your apartment complex's specific requirements."
+          },
+          {
+            "heading": "Trained Professionals: ",
+            "text": " Our staff is skilled, reliable, and committed to excellence."
+          },
+          {
+            "heading": "Cutting-Edge Technology: ",
+            "text": "We leverage the latest tools and techniques for optimal efficiency."
+          },
+          {
+            "heading": "Seamless Communication: ",
+            "text": " Experience hassle-free coordination through our user-friendly platform."
+          }
+        ],
+        "url": "/technical-school"
       }
     ]
   },
@@ -495,7 +573,54 @@
     "url": "/facility-managers",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Facility Managers",
+        "industryImage": "./images/industry/FacilityManagers/FacilityManagers1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/FacilityManagers/FacilityManagers1.png"
+          },
+          {
+            "url": "./images/industry/FacilityManagers/FacilityManagers2.png"
+          },
+          {
+            "url": "./images/industry/FacilityManagers/FacilityManagers3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you tired of juggling multiple service providers for cleaning, maintenance, and handyman services? AfmX is your one-stop solution for seamless facility management!"
+          },
+          {
+            "headingh3": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Effortless Cleaning: ",
+            "text": "Our skilled and reliable cleaning professionals ensure spotless spaces that leave a lasting impression. From offices to common areas, AfmX takes cleanliness to the next level."
+          },
+          {
+            "heading": "Handyman Expertise: ",
+            "text": "Say goodbye to maintenance headaches! AfmX's experienced handymen are ready to tackle repairs, installations, and upgrades with precision and efficiency. We've got the tools and skills to keep your facility in top shape."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Total Facility Care: ",
+            "text": "We go beyond the basics! AfmX offers a comprehensive suite of services, including janitorial work, landscaping, and more. Your facility will thrive under our expert care."
+          },
+          {
+            "heading": "Cutting-Edge Technology: ",
+            "text": "AfmX leverages innovative solutions to streamline communication and service delivery. Monitor progress, submit requests, and receive real-time updates—all at your fingertips."
+          },
+          {
+            "heading": "Tailored Packages: ",
+            "text": "No two facilities are alike, and neither are our solutions. AfmX customizes packages to suit your unique needs and budget, ensuring you get exactly what you need without breaking the bank."
+          },
+          {
+            "heading": "Trusted Professionals: ",
+            "text": "Our team comprises skilled, background-checked professionals dedicated to exceeding your expectations. Rest easy knowing AfmX has your facility's best interests at heart."
+          }
+        ]
       }
     ]
   },
@@ -506,7 +631,104 @@
     "url": "/industrirs-list/13",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Commercial General Contractors",
+        "industryImage": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors1.png"
+          },
+          {
+            "url": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors2.png"
+          },
+          {
+            "url": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Ready to transform your construction sites into pristine showcases of excellence? Look no further than AfmX - Your Partner in Unmatched Construction Cleaning!"
+          },
+          {
+            "headingh3": "Why AfmX?"
+          },
+          {
+            "heading": "Specialized Expertise: ",
+            "text": " Our dedicated team understands the unique needs of commercial construction sites, delivering tailored cleaning solutions."
+          },
+          {
+            "heading": "Cutting-Edge Technology: ",
+            "text": "AfmX utilizes state-of-the-art cleaning equipment and eco-friendly products for superior results without compromising the environment."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Time-Efficient Services: ",
+            "text": "We know time is money. AfmX ensures swift and efficient cleaning processes, allowing your team to focus on what they do best - construction!"
+          },
+          {
+            "heading": "Customized Packages:  ",
+            "text": " No two construction sites are the same. AfmX offers flexible cleaning packages to fit your project's specific requirements and budget."
+          },
+          {
+            "heading": "Impeccable Safety Record: ",
+            "text": "Safety is our priority. AfmX adheres to the highest safety standards, ensuring a secure working environment for everyone on-site."
+          },
+          {
+            "text": "Experience the AfmX Difference Today!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "589",
+    "name": "Residential General Contractors",
+    "industryImage": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors1.png",
+    "url": "/industrirs-list/14",
+    "data": [
+      {
+        "id": 1,
+        "name": "Residential General Contractors",
+        "industryImage": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors1.png"
+          },
+          {
+            "url": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors2.png"
+          },
+          {
+            "url": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Elevate your projects with AfmX, where excellence meets cleanliness. Our construction cleaning services are tailored for those who appreciate precision and demand a pristine finish.  Why AfmX?"
+          },
+          {
+            "heading": "Unparalleled Expertise: ",
+            "text": "Our skilled team understands the unique needs of residential construction sites, ensuring every nook and cranny is spotless."
+          },
+          {
+            "heading": "Efficiency Redefined: ",
+            "text": "AfmX doesn't just clean; we optimize. Streamlined processes mean quicker turnaround times, getting your projects ready for the spotlight faster."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Green Clean: ",
+            "text": "Join us in our commitment to sustainability. AfmX employs eco-friendly practices and products, making your construction site cleaner and greener."
+          },
+          {
+            "heading": "Custom Solutions: ",
+            "text": "No two projects are the same, and neither are our cleaning solutions. AfmX adapts to your specific needs, providing a bespoke cleaning experience."
+          },
+          {
+            "heading": "Seamless Collaboration: ",
+            "text": "We integrate seamlessly into your workflow, minimizing disruption while maximizing results. Your success is our priority."
+          }
+        ]
       }
     ]
   },
@@ -524,11 +746,683 @@
   {
     "id": "15",
     "name": "Resorts",
-    "industryImage": "./images/industry/resorts.jpg",
+    "industryImage": "./images/industry/BeachResort/BeachResort1.png",
     "url": "/industrirs-list/15",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Beach Resorts",
+        "industryImage": "./images/industry/BeachResort/BeachResort1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/BeachResort/BeachResort1.png"
+          },
+          {
+            "url": "./images/industry/BeachResort/BeachResort2.png"
+          },
+          {
+            "url": "./images/industry/BeachResort/BeachResort3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "We understand the importance of maintaining the pristine allure of your esteemed beach resort. At AfmX, we specialize in providing tailored cleaning, maid, handyman, and a range of other essential services to elevate the operational excellence of your establishment."
+          },
+          {
+            "text": "Our Services Include:"
+          },
+          {
+            "heading": "Cleaning Services:"
+          },
+          {
+            "text": "Thorough cleaning of rooms, common areas, and outdoor spaces."
+          },
+          {
+            "text": "High-standard sanitation protocols to ensure guest well-being."
+          }
+
+          
+        ],
+        "list2": [
+          {
+            "text": "Timely and efficient execution to maintain the resort's impeccable standards."
+          },
+          {
+            "heading": "Maid Services:"
+          },
+          {
+            "text": "Trained and professional maids for personalized guest services."
+          },
+          {
+            "text": "Attention to detail in room preparation, ensuring a seamless guest experience."
+          },
+          {
+            "text": "Flexible scheduling to accommodate your resort's unique requirements."
+          },
+          {
+            "heading": "Handyman Services:"
+          },
+          {
+            "text": "Prompt response to maintenance needs, minimizing downtime."
+          },
+          {
+            "text": "Skilled technicians for repairs, installations, and preventive maintenance."
+          },
+          {
+            "text": "Proactive approach to address issues before they impact guest satisfaction."
+          },
+          {
+            "heading": "Additional Services:"
+          },
+          {
+            "text": "Landscaping and outdoor maintenance for an inviting ambiance."
+          },
+          {
+            "text": "Specialized services customizable to your resort's specific needs."
+          },
+          {
+            "text": "A dedicated team committed to enhancing the overall guest experience."
+          },
+
+          {
+            "text": "By choosing AfmX, you are opting for a professional partner dedicated to the success of your beach resort. Our commitment to excellence ensures that your guests enjoy a memorable stay in a pristine and well-maintained environment."
+          }
+
+          
+
+
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "2",
+        "name": "All-Inclusive resorts",
+        "industryImage": "./images/industry/AllInclusiveResorts/AllInclusiveResorts1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts1.png"
+          },
+          {
+            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts2.png"
+          },
+          {
+            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts3.png"
+          },
+          {
+            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Elevate your guests' experience to unparalleled heights with AfmX – your premier partner in comprehensive resort services. Our team of dedicated professionals is committed to delivering excellence in cleaning, maid services, handyman solutions, and more."
+          },
+          {
+            "text": "Why choose AfmX?"
+          },
+          {
+            "heading": "1️⃣ Impeccable Cleaning Services: ",
+            "text": "Ensure a pristine and inviting environment for your guests with our top-notch cleaning services. We specialize in maintaining the highest standards of cleanliness throughout your resort."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "2️⃣ Efficient Maid Services: ",
+            "text": "Let our skilled and reliable maids take care of every detail, ensuring your guests enjoy a seamless and comfortable stay. From room upkeep to personalized guest requests, we've got it covered."
+          },
+          {
+            "heading": "3️⃣ Skilled Handyman Solutions: ",
+            "text": "Address maintenance issues promptly with our team of experienced handymen. From fixing minor repairs to executing major projects, AfmX ensures the structural integrity of your resort is always maintained."
+          },
+          {
+            "heading": "4️⃣ And More: ",
+            "text": "Beyond cleaning, maids, and handymen, AfmX offers a range of additional services tailored to meet the unique needs of all-inclusive resorts. Elevate your guest experience with our comprehensive solutions."
+          },
+          {
+            "text": "Partnering with AfmX means embracing a new standard of excellence. Our professional team is dedicated to exceeding expectations, ensuring your resort stands out in a competitive market."
+          }          
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "3",
+        "name": "Spa Resorts",
+        "industryImage": "./images/industry/SpaResorts/SpaResorts1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/SpaResorts/SpaResorts1.png"
+          },
+          {
+            "url": "./images/industry/SpaResorts/SpaResorts2.png"
+          },
+          {
+            "url": "./images/industry/SpaResorts/SpaResorts3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you seeking reliable and professional facility management services to enhance the operational efficiency of your spa resort? Look no further than AfmX."
+          },
+          {
+            "text": "Our expert team at AfmX specializes in providing top-notch cleaning, maid, handyman, and more services tailored to meet the unique needs of spa resorts. We understand the importance of maintaining a pristine and inviting environment for your guests, and we are committed to delivering excellence in every aspect of facility management."
+          },
+          {
+            "text": "What sets AfmX apart?"
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Our meticulous cleaning services ensure that every corner of your spa resort is spotless. From guest rooms to common areas, we guarantee a clean and welcoming atmosphere."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Our professional maids are trained to deliver personalized and discreet services, ensuring that your guests experience the utmost comfort and satisfaction during their stay."
+          },
+          {
+            "heading": "Handyman Services: ",
+            "text": "AfmX provides reliable and efficient handyman services to address any maintenance or repair needs promptly, minimizing downtime and ensuring a seamless guest experience."
+          },          
+          {
+            "heading": "Comprehensive Solutions: ",
+            "text": "Beyond cleaning, maid, and handyman services, AfmX offers a range of additional services to cater to the diverse requirements of spa resorts, contributing to an overall well-maintained and harmonious environment."
+          },          
+          {
+            "text": "Partnering with AfmX means entrusting your facility management needs to a team dedicated to excellence. Our professional approach and commitment to quality make us the preferred choice for spa resorts aiming to provide an exceptional guest experience."
+          }       
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "4",
+        "name": "Historic Resorts",
+        "industryImage": "./images/industry/HistoricResorts/HistoricResorts1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/HistoricResorts/HistoricResorts1.png"
+          },
+          {
+            "url": "./images/industry/HistoricResorts/HistoricResorts2.png"
+          },
+          {
+            "url": "./images/industry/HistoricResorts/HistoricResorts3.png"
+          },
+          {
+            "url": "./images/industry/HistoricResorts/HistoricResorts4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "We trust this message finds you well. As specialists in hospitality support services, AfmX is pleased to extend our professional offerings to esteemed Historic Resorts like yours."
+          },
+          {
+            "text": "Our tailored solutions encompass a range of services, including:"
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Immaculate cleanliness is paramount in preserving the charm of historic settings. Our dedicated cleaning teams ensure the highest standards are maintained throughout your property."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Our skilled and discreet maids are committed to providing seamless and unobtrusive support, ensuring guests experience the utmost comfort and satisfaction during their stay."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Services: ",
+            "text": "Preserve the integrity of your historic resort with our adept handyman services. From routine maintenance to specialized repairs, our professionals are equipped to address diverse needs."
+          },
+          {
+            "heading": "Additional Services: ",
+            "text": "Explore our supplementary offerings, such as landscaping, pest control, and more, designed to enhance the overall guest experience."
+          },
+          {
+            "heading": "Partnering with AfmX guarantees:"
+          },
+          {
+            "text": "Exceptional attention to detail"
+          },
+          {
+            "text": "Trained and courteous staff"
+          },
+          {
+            "text": "Adherence to historical preservation standards"
+          },
+          {
+            "text": "Customizable service packages to suit your unique requirements"
+          },
+          {
+            "text": "Elevate the guest experience at your historic resort with AfmX's reliable and professional support services."
+          }       
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "5",
+        "name": "Amusement Resort",
+        "industryImage": "./images/industry/AmusementResort/AmusementResort1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/AmusementResort/AmusementResort1.png"
+          },
+          {
+            "url": "./images/industry/AmusementResort/AmusementResort2.png"
+          },
+          {
+            "url": "./images/industry/AmusementResort/AmusementResort3.png"
+          },
+          {
+            "url": "./images/industry/AmusementResort/AmusementResort4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AfmX, we understand the unique challenges that come with managing an Amusement Resort. Our team specializes in providing top-notch facility management services tailored to meet the specific needs of your industry."
+          },
+          {
+            "text": "Our Services Include: "
+          },
+          {
+            "heading": "Cleaning Services: "
+          },
+          {
+            "text": "Thorough and efficient cleaning to maintain the highest hygiene standards."
+          },           
+          {
+            "text": "Daily, weekly, or customized cleaning schedules based on your operational requirements."
+          }
+
+        ],
+        "list2": [
+          {
+            "heading": "Maid Services: "
+          },
+          {
+            "text": "Professional and trained maids for personalized and discreet assistance."
+          },
+          {
+            "text": "Attention to detail in maintaining guest accommodations and public areas."
+          },  
+          {
+            "heading": "Handyman Services:"
+          },
+          {
+            "text": "Prompt and reliable maintenance and repair services."
+          },
+          {
+            "text": "Proactive inspections to identify and address potential issues before they escalate."
+          },
+          {
+            "heading": "Additional Services: "
+          },
+          {
+            "text": "Groundskeeping and landscaping to enhance the visual appeal of your resort."
+          },
+          {
+            "text": "Waste management solutions to ensure a clean and sustainable environment."
+          },
+          {
+            "text": "Specialized services tailored to the unique needs of Amusement Resorts."
+          },
+          {
+            "text": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Experience: ",
+            "text": "With years of experience in facility management, we understand the intricacies of the Amusement Resort industry."
+          },
+          {
+            "heading": "Professional Team: ",
+            "text": "Our dedicated and skilled team is committed to delivering excellence in every aspect of our services."
+          },
+          {
+            "heading": "Customized Solutions: ",
+            "text": "We work closely with our clients to develop tailored solutions that align with the specific requirements of their resort."
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "Count on AfmX to maintain the highest standards of cleanliness, safety, and operational efficiency."
+          },
+          {
+            "text": "If you are looking for a reliable partner to manage your resort's facilities seamlessly, AfmX is here for you. Schedule a consultation with us to discuss how our services can enhance the overall experience for your guests and contribute to the success of your Amusement Resort."
+          }       
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "6",
+        "name": "Family Resort",
+        "industryImage": "./images/industry/FamilyResorts/FamilyResorts1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/FamilyResorts/FamilyResorts1.png"
+          },
+          {
+            "url": "./images/industry/FamilyResorts/FamilyResorts2.png"
+          },
+          {
+            "url": "./images/industry/FamilyResorts/FamilyResorts3.png"
+          },
+          {
+            "url": "./images/industry/FamilyResorts/FamilyResorts4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Dear Family Resort Managers,"
+          },
+          {
+            "text": "Elevate your guest experience with AfmX, your premier partner in comprehensive hospitality support services. Our dedicated team specializes in delivering top-notch cleaning, maid, handyman, and more services tailored to meet the unique needs of family-oriented resorts."
+          },
+          {
+            "heading": "Our Services Include: "
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Immaculate cleanliness is our commitment. Our professional cleaning staff ensures every corner of your resort reflects the highest standards of hygiene."
+          }
+
+        ],
+        "list2": [
+          {
+            "heading": "Maid Services: ",
+            "text": "Our skilled maids are trained to provide discreet and efficient room service, ensuring a seamless and comfortable stay for your guests."
+          },
+          {
+            "heading": "Handyman Services: ",
+            "text": "From routine maintenance to urgent repairs, our experienced handymen are equipped to handle a wide range of tasks, ensuring the uninterrupted functionality of your facilities."
+          },           
+          {
+            "heading": "Additional Services: ",
+            "text": "Customize your package with additional services such as landscaping, pool maintenance, and event support to enhance the overall appeal of your resort."
+          },           
+          {
+            "heading": "Why Choose AfmX? "            
+          },                                
+          {
+            "heading": "Professional Excellence: ",
+            "text": "Our team comprises highly trained professionals dedicated to delivering exceptional service."
+          },                                
+          {
+            "heading": "Customized Solutions: ",
+            "text": "Tailor our services to match the unique requirements and ambiance of your family resort."
+          },                                
+          {
+            "heading": "Reliability: ",
+            "text": "Count on AfmX for timely, efficient, and reliable support, allowing you to focus on providing an outstanding guest experience."
+          }
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "7",
+        "name": "Adult Resorts",
+        "industryImage": "./images/industry/AdultResorts/AdultResorts1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/AdultResorts/AdultResorts1.png"
+          },
+          {
+            "url": "./images/industry/AdultResorts/AdultResorts2.png"
+          },
+          {
+            "url": "./images/industry/AdultResorts/AdultResorts3.png"
+          },
+          {
+            "url": "./images/industry/AdultResorts/AdultResorts4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AfmX, we understand the importance of maintaining a pristine and welcoming environment for your esteemed adult resort. Our professional team specializes in providing top-notch cleaning, maid, handyman, and more services tailored to meet the unique needs of the hospitality industry."
+          },
+          {
+            "heading": "Services Offered:"
+          },
+          {
+            "heading": "Cleaning Services: ",
+            "text": "Our trained staff ensures impeccable cleanliness, maintaining the highest standards of hygiene across all areas of your resort."
+          }
+
+        ],
+        "list2": [
+          {
+            "heading": "Maid Services: ",
+            "text": "Experience a seamless guest experience with our discreet and attentive maid services, attending to every detail with precision."
+          },
+          {
+            "heading": "Handyman Services: ",
+            "text": "From routine maintenance to unexpected repairs, our skilled handymen are ready to handle any task efficiently, ensuring the uninterrupted operation of your resort."
+          },           
+          {
+            "heading": "Additional Services: ",
+            "text": "Explore our comprehensive range of additional services designed to enhance the overall guest experience and streamline resort operations."
+          },           
+          {
+            "heading": "Why Choose AfmX? "            
+          },                                
+          {
+            "heading": "Professionalism: ",
+            "text": "Our team is dedicated to upholding the highest standards of professionalism in every service we provide."
+          },                                
+          {
+            "heading": "Reliability: ",
+            "text": "Count on us for timely and reliable services, allowing you to focus on providing an exceptional experience for your guests."
+          },                                
+          {
+            "heading": "Custom Solutions: ",
+            "text": "Tailored packages to meet the specific requirements of your resort, ensuring a personalized and effective approach."
+          },                                
+          {
+            "text": "Partner with AfmX to elevate the cleanliness and functionality of your adult resort. "
+          }
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "8",
+        "name": "Golf Resorts",
+        "industryImage": "./images/industry/GolfResort/GolfResort1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/GolfResort/GolfResort1.png"
+          },
+          {
+            "url": "./images/industry/GolfResort/GolfResort2.png"
+          },
+          {
+            "url": "./images/industry/GolfResort/GolfResort3.png"
+          },
+          {
+            "url": "./images/industry/GolfResort/GolfResort4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you seeking reliable and professional solutions to elevate the maintenance and service standards at your esteemed golf resort? Look no further."
+          },
+          {
+            "text": "Introducing AfmX, your trusted partner in comprehensive hospitality services. Our tailored offerings include:"
+          },
+          {
+            "heading": "Cleaning Services: "
+          },
+          {
+            "text": "Impeccable housekeeping to ensure pristine guest accommodations."
+          },
+          {
+            "text": "Thorough common area cleaning for a welcoming environment."
+          }
+
+        ],
+        "list2": [
+          {
+            "text": "Specialized cleaning protocols for high-traffic spaces."
+          },
+          {
+            "heading": "Maid Services: "
+          },
+          {
+            "text": "Trained and courteous maids for personalized guest experiences."
+          },           
+          {
+            "text": "Attention to detail in room preparation and turndown services."
+          },           
+          {
+            "heading": "Handyman Services: "            
+          },                                
+          {
+            "text": "Prompt and efficient maintenance to address any property issues."
+          },                                
+          {
+            "text": "Skilled technicians for on-demand repairs and improvements."
+          },                                
+          {
+            "heading": "And More: "
+          },                                
+          {
+            "text": "Customizable service packages to meet specific resort needs."
+          },                                
+          {
+            "text": "24/7 support and quick response to emergencies."
+          },                                
+          {
+            "text": "Transparent pricing with no hidden costs."
+          },                                
+          {
+            "text": "At AfmX, we understand the unique requirements of golf resorts and are committed to enhancing the overall guest experience. Elevate your resort's reputation with our top-notch services."
+          }
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "9",
+        "name": "Island Resort",
+        "industryImage": "./images/industry/IslandResort/IslandResort1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/IslandResort/IslandResort1.png"
+          },
+          {
+            "url": "./images/industry/IslandResort/IslandResort2.png"
+          },
+          {
+            "url": "./images/industry/IslandResort/IslandResort3.png"
+          },
+          {
+            "url": "./images/industry/IslandResort/IslandResort4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Enhance the allure of your paradise with AfmX—the premier service provider for comprehensive cleaning, expert maid services, and skilled handyman solutions. Our commitment to excellence ensures that your resort maintains the highest standards of hygiene, aesthetics, and functionality."
+          },
+          {
+            "heading": "Cleaning Services:"
+          },
+          {
+            "text": "Impeccable cleanliness is the hallmark of a world-class resort. AfmX offers tailored cleaning solutions that go beyond the surface, ensuring every corner of your property exudes pristine brilliance. Our dedicated team employs industry-leading practices, environmentally friendly products, and attention to detail that sets us apart."
+          }
+
+        ],
+        "list2": [
+          {
+            "heading": "Maid Services: "
+          },
+          {
+            "text": "Elevate guest experiences with our professional maid services. Trained to anticipate and fulfill guest needs, our maids provide discreet and efficient room upkeep. From daily tidying to special requests, AfmX ensures your guests enjoy a seamless and luxurious stay. "
+          },           
+          {
+            "heading": "Handyman Solutions: "            
+          },                                
+          {
+            "text": "Maintain the structural integrity of your resort with AfmX's skilled handyman services. From routine maintenance to emergency repairs, our experts handle it all. Our proactive approach prevents potential issues, minimizing downtime and ensuring a smooth operation for your resort."
+          },  
+          {
+            "heading": "Security Services:"
+          },                                
+          {
+            "text": "Safeguard your guests and property with our top-notch security services. AfmX provides trained personnel, state-of-the-art surveillance, and a comprehensive security strategy tailored to your resort's unique needs."
+          },                                
+          {
+            "text": "Why AfmX? "
+          },                                
+          {
+            "heading": "Professionalism: ",
+            "text": "Our team is dedicated to delivering services with the utmost professionalism."
+          },                                
+          {
+            "heading": "Customization: ",
+            "text": "Tailored solutions to meet the specific needs of your resort."
+          },                                                                
+          {
+            "heading": "Reliability: ",
+            "text": "Count on AfmX for timely and efficient service delivery."
+          },                                                                
+          {
+            "heading": "Quality Assurance: ",
+            "text": "We adhere to the highest standards to ensure your resort always shines."
+          }
+        ],
+        "url": "/technical-school"
+      },
+      {
+        "id": "10",
+        "name": "Pet Friendly Resort",
+        "industryImage": "./images/industry/PetFriendlyResort/PetFriendlyResort1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort1.png"
+          },
+          {
+            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort2.png"
+          },
+          {
+            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort3.png"
+          },
+          {
+            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform the appeal of your pet-friendly resort with AfmX, your trusted service provider for superior cleaning, maid, handyman, and more!"
+          },
+          {
+            "heading": "Our Offerings:"
+          },
+          {
+            "text": "Premium Cleaning Services: Exemplary cleanliness is our pledge. Our proficient team ensures that your resort emanates cleanliness and coziness for your guests and their beloved pets."
+          },
+          {
+            "heading": "Maid Services: ",
+            "text": "Enhance the guest experience with our skilled maid services. From thorough room transformations to personalized care, our maids leave no detail overlooked."
+          }
+
+        ],
+        "list2": [
+
+          
+          {
+            "heading": "Handyman Proficiency: ",
+            "text": "Safeguard the integrity of your resort with our handyman services. From routine maintenance to urgent repairs, AfmX promises a prompt and effective response to keep your property in impeccable condition."
+          },                                      
+          {
+            "text": "Why opt for AfmX?"
+          },                                
+          {
+            "heading": "Pet-Centric Approach: ",
+            "text": "We comprehend the significance of catering to pet enthusiasts. Our services are crafted to establish a warm and inviting atmosphere for guests with pets, ensuring a seamless and delightful stay. "
+          },                                
+          {
+            "heading": "Proven Mastery: ",
+            "text": "With years of experience in the industry, AfmX has earned a reputation for delivering excellence. Our adept professionals are committed to upholding the highest standards in every service we provide."
+          },                                
+          {
+            "heading": "Dependability: ",
+            "text": "Count on AfmX to be your steadfast partner in preserving the beauty and functionality of your resort. Our dedication to timeliness and precision sets us apart in the industry."
+          }
+        ],
+        "url": "/technical-school"
       }
     ]
   },
@@ -539,7 +1433,62 @@
     "url": "/industrirs-list/16",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Restaurants",
+        "industryImage": "./images/industry/Restaurants/Restaurants1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/Restaurants/Restaurants1.png"
+          },
+          {
+            "url": "./images/industry/Restaurants/Restaurants2.png"
+          },
+          {
+            "url": "./images/industry/Restaurants/Restaurants3.png"
+          },
+          {
+            "url": "./images/industry/Restaurants/Restaurants4.png"
+          },
+          {
+            "url": "./images/industry/Restaurants/Restaurants5.png"
+          }
+        ],
+        "list1": [
+          {
+            "heading": " ",
+            "text": "Enhance your establishment with AfmX, the trusted ally for comprehensive cleaning, maid, handyman, and more services exclusively designed for restaurant proprietors."
+          },
+          {
+            "heading": "Cleaning Excellence:",
+            "text": "Sustain impeccable hygiene standards through our exceptional cleaning services. Our adept professionals guarantee a spotless ambiance, providing daily upkeep and deep cleaning for an inviting atmosphere for your patrons."
+          },
+          {
+            "heading": "Maid Support: ",
+            "text": "Streamline your operations with our dependable maid services. Our trained staff attends to all your housekeeping needs, enabling you to concentrate on delivering outstanding dining experiences."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Solutions: ",
+            "text": "Swiftly address maintenance concerns with AfmX. Our skilled handymen offer efficient and cost-effective solutions, minimizing downtime and optimizing the durability of your facilities."
+          },
+          {
+            "heading": "And Beyond: ",
+            "text": "Explore a variety of additional services tailored to fulfill the distinctive requirements of restaurant owners. From pest control to specialized cleaning, AfmX has you covered."
+          },
+          {
+            "heading": "Why Opt for AfmX?"
+          },
+          {
+            "text": "✓ Proven Proficiency: Industry-leading professionals devoted to ensuring the success of your establishment."
+          },
+          {
+            "text": "✓ Tailored Packages: Custom solutions designed to suit your specific requirements and budget."
+          },
+          {
+            "text": "✓ Punctual Service: Swift and reliable execution to mitigate disruptions to your business."
+          }
+        ]
       }
     ]
   },
@@ -547,16 +1496,128 @@
     "id": "17",
     "name": "Corporate Offices",
     "industryImage": "./images/industry/corporateOffices.jpg",
-    "url": "/corporate-offices"
+    "url": "/corporate-offices",
+    "data": [
+      {
+        "id": "1",
+        "name": "Corporate Offices",
+        "industryImage": "./images/industry/CorporateOffices/CorporateOffices1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/CorporateOffices/CorporateOffices1.png"
+          },
+          {
+            "url": "./images/industry/CorporateOffices/CorporateOffices2.png"
+          },
+          {
+            "url": "./images/industry/CorporateOffices/CorporateOffices3.png"
+          },
+          {
+            "url": "./images/industry/CorporateOffices/CorporateOffices4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "AfmX Facilities Management Solutions"
+          },
+          {
+            "text": "Dear Corporate Office Managers,"
+          },
+          {
+            "text": "Are you seeking a reliable partner for comprehensive janitorial cleaning, handyman services, and more? Look no further than AfmX Facilities Management Solutions – your trusted ally in maintaining a pristine and efficient work environment."
+          },
+          {
+            "text": "Our Services Include:"
+          },
+          {
+            "heading": "Janitorial Cleaning: ",
+            "text": "Impeccable cleanliness tailored to your office needs."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Services: ",
+            "text": "Swift and professional repairs and maintenance."
+          },
+          {
+            "heading": "Facilities Management: ",
+            "text": "A holistic approach for a seamless workplace."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Expertise: ",
+            "text": "Industry-leading professionals ensuring top-notch"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "18",
     "name": "Grocery Stores",
-    "industryImage": "./images/industry/groceryStores.jpg",
+    "industryImage": "./images/industry/GroceryStores/GroceryStores1.png",
     "url": "/industrirs-list/18",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Grocery Stores",
+        "industryImage": "./images/industry/GroceryStores/GroceryStores1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/GroceryStores/GroceryStores1.png"
+          },
+          {
+            "url": "./images/industry/GroceryStores/GroceryStores2.png"
+          },
+          {
+            "url": "./images/industry/GroceryStores/GroceryStores3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Are you in need of a dependable partner for comprehensive facility management solutions designed to meet the unique needs of your grocery store? Look no further."
+          },
+          {
+            "text": "Introducing AfmX, your reliable source for janitorial cleaning, handyman services, and more. Our team is committed to ensuring the cleanliness, safety, and functionality of your store, allowing you to concentrate on delivering an exceptional shopping experience to your customers."
+          },
+          {
+            "text": "Our Range of Services:"
+          },
+          {
+            "heading": "Janitorial Cleaning: ",
+            "text": "We provide impeccable cleaning services to maintain a pristine shopping environment, enhancing the overall customer experience."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Handyman Services: ",
+            "text": "Our skilled technicians are ready to address any maintenance or repair needs promptly, ensuring the seamless operation of your facilities."
+          },
+          {
+            "heading": " Facility Maintenance: ",
+            "text": "We offer proactive and preventative maintenance programs to minimize downtime and extend the lifespan of your equipment and infrastructure."
+          },
+          {
+            "heading": "Groundskeeping: ",
+            "text": "Our exterior maintenance services create an inviting and well-maintained storefront, leaving a positive impression on your customers."
+          },
+          {
+            "headingh3": "Why Choose AfmX?"
+          },
+          {
+            "heading": "Tailored Solutions: ",
+            "text": "Our services are customized to meet the specific requirements of grocery stores, ensuring a clean, safe, and efficiently run environment."
+          },
+          {
+            "heading": "Experienced Team: ",
+            "text": "Our highly trained and professional team is dedicated to delivering quality services with attention to detail."
+          },
+          {
+            "text": "Partner with AfmX for a seamless facility management experience. Let us handle the details so you can focus on what matters most – providing an exceptional shopping experience for your customers."
+          }
+        ]
       }
     ]
   },
@@ -567,7 +1628,188 @@
     "url": "/car-dealerships",
     "data": [
       {
-        "details": ""
+        "id": 1,
+        "name": "Car Dealerships",
+        "industryImage": "./images/industry/CarDealerships/CarDealerships1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/CarDealerships/CarDealerships1.png"
+          },
+          {
+            "url": "./images/industry/CarDealerships/CarDealerships2.png"
+          },
+          {
+            "url": "./images/industry/CarDealerships/CarDealerships3.png"
+          },
+          {
+            "url": "./images/industry/CarDealerships/CarDealerships4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "We understand the importance of maintaining a pristine and well-functioning environment in your dealership. That's why we at AfmX are here to offer tailored janitorial cleaning and handyman services to elevate the standards of your facility."
+          },
+          {
+            "text": "Our skilled janitorial team specializes in providing meticulous cleaning services, ensuring every corner of your dealership is spotless. From showroom floors to customer waiting areas, our professionals are committed to creating a clean and welcoming atmosphere for your clients."
+          },
+          {
+            "text": "Additionally, our experienced handyman services cover a wide range of maintenance tasks, addressing any issues promptly to keep your facility running smoothly. Whether it's repairing fixtures, handling minor electrical or plumbing concerns, or general maintenance tasks, AfmX is your reliable partner."
+          }
+        ],
+        "list2": [
+          {
+            "headingh3": "Why choose AfmX?"
+          },
+          {
+            "heading": "Expertise: ",
+            "text": "Our team comprises trained professionals with extensive experience in janitorial and handyman services for automotive facilities."
+          },
+          {
+            "heading": "Custom Solutions: ",
+            "text": "We understand that each dealership is unique. Our services are tailored to meet the specific needs of your facility, ensuring a comprehensive solution."
+          },
+          {
+            "heading": "Reliability: ",
+            "text": "AfmX is dedicated to delivering services on time and within budget, allowing you to focus on your core business operations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2563",
+    "name": "Federal And local Government",
+    "industryImage": "./images/industry/FederalAndlocalGovernment/FederalAndlocalGovernment1.png",
+    "url": "/industrirs-list/20",
+    "data": [
+      {
+        "id": "1",
+        "name": "Federal And local Government",
+        "industryImage": "./images/industry/FederalAndlocalGovernment/FederalAndlocalGovernment1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/FederalAndlocalGovernment/FederalAndlocalGovernment1.png"
+          },
+          {
+            "url": "./images/industry/FederalAndlocalGovernment/FederalAndlocalGovernment2.png"
+          },
+          {
+            "url": "./images/industry/FederalAndlocalGovernment/FederalAndlocalGovernment3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "AfmX specializes in comprehensive janitorial services tailored for government facilities. Our proven track record in maintaining pristine environments aligns seamlessly with the high standards set by federal and local government managers."
+          },
+          {
+            "heading": "Why Choose AfmX?"
+          },
+          {
+            "text": "Expertise in government facility cleaning"
+          },
+          {
+            "text": "Proven reliability in maintaining cleanliness"
+          },
+          {
+            "text": "Tailored solutions to meet specific requirements"
+          },
+          {
+            "text": "Owners, elevate your property's standards with AfmX. Partner with us for unparalleled janitorial excellence. "
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2569875",
+    "name": "Homeowners",
+    "industryImage": "./images/industry/IndependentLiving/IndependentLiving2.png",
+    "url": "/industrirs-list/20",
+    "data": [
+      {
+        "id": "1",
+        "name": "Independent Living",
+        "industryImage": "./images/industry/IndependentLiving/IndependentLiving2.png",
+        "imgData": [
+          {
+            "url": "./images/industry/IndependentLiving/IndependentLiving1.png"
+          },
+          {
+            "url": "./images/industry/IndependentLiving/IndependentLiving2.png"
+          },
+          {
+            "url": "./images/industry/IndependentLiving/IndependentLiving3.png"
+          },
+          {
+            "url": "./images/industry/IndependentLiving/IndependentLiving4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Introducing AfmX - Elevate Your Independent Living Facility"
+          },
+          {
+            "text": "AfmX delivers unparalleled janitorial cleaning services tailored for Independent Living managers and owners. Elevate your facility with our professional touch. Impeccable cleanliness, attention to detail, and a commitment to excellence define our services. Partner with AfmX for a pristine environment that mirrors the standards of your establishment."
+          },
+          {
+            "heading": "Experience the AfmX Advantage"
+          },
+          {
+            "text": "Customized Janitorial Solutions"
+          },
+          {
+            "text": "Exceptional Attention to Cleanliness"
+          }
+        ],
+        "list2": [
+          {
+            "text": "Professionalism Beyond Compare"
+          },
+          {
+            "text": "Elevate your Independent Living facility with AfmX."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Adult Homes",
+        "industryImage": "./images/industry/AdultHomes/AdultHomes2.png",
+        "imgData": [
+          {
+            "url": "./images/industry/AdultHomes/AdultHomes1.png"
+          },
+          {
+            "url": "./images/industry/AdultHomes/AdultHomes2.png"
+          },
+          {
+            "url": "./images/industry/AdultHomes/AdultHomes3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Elevate the standard of cleanliness at your adult homes with AfmX Janitorial Services. We specialize in delivering professional and thorough cleaning solutions tailored to meet the unique needs of adult care facilities."
+          },
+          {
+            "heading": "Why AfmX?"
+          },
+          {
+            "heading": "Experienced Janitorial Team: ",
+            "text": "Our skilled and trained professionals ensure a spotless and sanitized environment."
+          },
+          {
+            "heading": "Customized Cleaning Plans: ",
+            "text": "We understand the specific requirements of adult homes and provide tailored cleaning solutions."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Quality Assurance: ",
+            "text": "AfmX is committed to maintaining the highest standards of cleanliness to enhance the well-being of your residents."
+          },
+          {
+            "text": "Secure the well-being and comfort of your residents with AfmX."
+          }
+        ]
       }
     ]
   },
@@ -715,231 +1957,108 @@
     ]
   },
   {
-    "id": "39",
-    "name": "Apartment Owners",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/39"
+    "id": "2569875",
+    "name": "Yacht Club",
+    "industryImage": "./images/industry/YachtYachtClub/YachtYachtClub1.png",
+    "url": "/industrirs-list/20",
+    "data": [
+      {
+        "id": "1",
+        "name": "Yacht Club",
+        "industryImage": "./images/industry/YachtYachtClub/YachtYachtClub1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/YachtYachtClub/YachtYachtClub2.png"
+          },
+          {
+            "url": "./images/industry/YachtYachtClub/YachtYachtClub1.png"
+          },
+          {
+            "url": "./images/industry/YachtYachtClub/YachtYachtClub3.png"
+          },
+          {
+            "url": "./images/industry/YachtYachtClub/YachtYachtClub4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Elevate the standard of cleanliness at your adult homes with AfmX Janitorial Services. We specialize in delivering professional and thorough cleaning solutions tailored to meet the unique needs of adult care facilities."
+          },
+          {
+            "heading": "Why AfmX?"
+          },
+          {
+            "heading": "Experienced Janitorial Team: ",
+            "text": "Our skilled and trained professionals ensure a spotless and sanitized environment."
+          },
+          {
+            "heading": "Customized Cleaning Plans: ",
+            "text": "We understand the specific requirements of adult homes and provide tailored cleaning solutions."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Quality Assurance: ",
+            "text": "AfmX is committed to maintaining the highest standards of cleanliness to enhance the well-being of your residents."
+          },
+          {
+            "text": "Secure the well-being and comfort of your residents with AfmX."
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": "40",
-    "name": "Facility Managers",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/40"
-  },
-  {
-    "id": "41",
-    "name": "Commercial General Contractors",
-    "industryImage": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors1.png",
-    "url": "/commercial-general-contractors"
-  },
-  {
-    "id": "42",
-    "name": "Residential General Contractors",
-    "industryImage": "./images/industry/ResidentialGeneralContractors/ResidentialGeneralContractors1.png",
-    "url": "/residential-general-contractors"
-  },
-  {
-    "id": "43",
-    "name": "Bed and breakfast",
-    "industryImage": "./images/industry/BedAndBreakfast/BedAndBreakfast1.png",
-    "url": "/bed-and-breakfast"
-  },
-  {
-    "id": "44",
-    "name": "Hostel",
-    "industryImage": "./images/industry/Hostel/Hostel1.png",
-    "url": "/hostel"
-  },
-  {
-    "id": "45",
-    "name": "Motel",
-    "industryImage": "./images/industry/Motel/Motel1.png",
-    "url": "/motel"
-  },
-  {
-    "id": "46",
-    "name": "Boutique Hotel",
-    "industryImage": "./images/industry/BoutiqueHotel/BoutiqueHotel1.png",
-    "url": "/boutique-hotel"
-  },
-  {
-    "id": "47",
-    "name": "Guest House",
-    "industryImage": "./images/industry/GuestHouse/GuestHouse1.png",
-    "url": "/guest-house"
-  },
-  {
-    "id": "48",
-    "name": "Inn",
-    "industryImage": "./images/industry/Inn/Inn1.png",
-    "url": "/inn"
-  },
-  {
-    "id": "49",
-    "name": "Apartment Hotel",
-    "industryImage": "./images/industry/ApartmentHotel/ApartmentHotel1.png",
-    "url": "/apartment-hotel"
-  },
-  {
-    "id": "50",
-    "name": "Casino Hotel",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/50"
-  },
-  {
-    "id": "51",
-    "name": "Beach Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/51"
-  },
-  {
-    "id": "52",
-    "name": "All-Inclusive resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/52"
-  },
-  {
-    "id": "53",
-    "name": "Spa Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/53"
-  },
-  {
-    "id": "54",
-    "name": "Historic Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/54"
-  },
-  {
-    "id": "55",
-    "name": "Amusement Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/55"
-  },
-  {
-    "id": "56",
-    "name": "Adult Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/56"
-  },
-  {
-    "id": "57",
-    "name": "Family Resorts",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/57"
-  },
-  {
-    "id": "58",
-    "name": "Golf Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/58"
-  },
-  {
-    "id": "59",
-    "name": "Island Resort",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/59"
-  },
-  {
-    "id": "60",
-    "name": "Pet Friendly Resort",
-    "industryImage": "./images/industry/PetFriendlyResort/PetFriendlyResort1.png",
-    "url": "/pet-friendly-resort"
-  },
-  {
-    "id": "61",
-    "name": "Restaurants",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/61"
-  },
-  {
-    "id": "62",
-    "name": "Corporate Offices",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/62"
-  },
-  {
-    "id": "63",
-    "name": "Grocery Stores",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/63"
-  },
-  {
-    "id": "64",
-    "name": "Car Dealerships",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/64"
-  },
-  {
-    "id": "65",
-    "name": "Casinos",
-    "industryImage": "./images/industry/Casinos/Casinos1.png",
-    "url": "/casinos"
-  },
-  {
-    "id": "66",
-    "name": "Internal Corporate Event",
-    "industryImage": "./images/industry/InternalCorporateEvent/InternalCorporateEvent1.png",
-    "url": "/internal-corporate-event"
-  },
-  {
-    "id": "67",
-    "name": "Festivals",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/67"
-  },
-  {
-    "id": "68",
-    "name": "Exhibitions",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/68"
-  },
-  {
-    "id": "69",
-    "name": "Appreciation Event",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/69"
-  },
-  {
-    "id": "70",
-    "name": "Fashion Shown",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/70"
-  },
-  {
-    "id": "71",
-    "name": "Food Events",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/71"
-  },
-  {
-    "id": "72",
-    "name": "Federal And local Government",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/72"
-  },
-  {
-    "id": "73",
-    "name": "Independent Living",
-    "industryImage": "./images/industry/IndependentLiving/IndependentLiving1.png",
-    "url": "/independent-living"
-  },
-  {
-    "id": "74",
-    "name": "Adult Homes",
-    "industryImage": "./images/industry/medicalOffices.jpg",
-    "url": "/industrirs-list/74"
-  },
-  {
-    "id": "75",
-    "name": "Yacht /Yacht Club",
-    "industryImage": "./images/industry/YachtClub/YachtClub1.png",
-    "url": "/yacht-club"
-  },
-  {
-    "id": "76",
+    "id": "8697655",
     "name": "Cruise Ship",
     "industryImage": "./images/industry/CruiseShip/CruiseShip1.png",
-    "url": "/cruise-ship"
+    "url": "/industrirs-list/20",
+    "data": [
+      {
+        "id": "1",
+        "name": "Cruise Ship",
+        "industryImage": "./images/industry/CruiseShip/CruiseShip1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/CruiseShip1.png"
+          },
+          {
+            "url": "./images/industry/CruiseShip/CruiseShip2.png"
+          },
+          {
+            "url": "./images/industry/CruiseShip/CruiseShip3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Ensure an impeccable environment for your guests with AfmX Janitorial Cleaning Services. We specialize in delivering professional and efficient cleaning solutions tailored to meet the unique needs of cruise ships."
+          },
+          {
+            "heading": "Key Features: "
+          },
+          {
+            "heading":"Experienced Janitorial Team: ",
+            "text": "Our skilled professionals are trained to maintain high cleanliness standards on cruise ships."
+          },
+          {
+            "heading": "Tailored Solutions: ",
+            "text": "Customized cleaning plans to suit the specific requirements of your vessel."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Cutting-edge Equipment: ",
+            "text": "We use advanced cleaning equipment and eco-friendly products to ensure a pristine and hygienic environment."
+          },
+          {
+            "heading":"Flexible Scheduling: ",
+            "text": "Adaptable cleaning schedules to minimize disruption to your cruise operations."
+          },
+          {
+            "text":"Choose AfmX for a spotless and welcoming cruise ship experience."
+          }
+        ]
+      }
+    ]
   }
 ]

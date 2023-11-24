@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel'
 import industryData from "../../../assets/data/industriesWeServeData.json";
 import { useParams } from 'react-router-dom';
 import "./industriesSubpage.css"
+import CommingSoon from '../../CommingSoon';
 
 function IndustriesSubItemPage() {
     const { parentName, name } = useParams()
@@ -11,7 +12,7 @@ function IndustriesSubItemPage() {
     const data = response?.data.find((item) => item.name === name);
     return (
         <>
-            <div className="container p-0 my-3">
+           {data.imgData.length>0? <div className="container p-0 my-3">
                 <div className="row m-0 p-0 ">
                     <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
                         <LeftMenue
@@ -53,7 +54,7 @@ function IndustriesSubItemPage() {
                                 </div>
                                 <ul className="comminityCollegeList mx-0 ">
                                     {
-                                        !!data.list2 && data?.list2?.map((item, index) => <li key={index}><b>{item?.heading}</b>{item.text}</li>)
+                                        !!data.list2 && data?.list2?.map((item, index) => <li key={index}><b>{item?.heading}</b>{item.text} <h3>{item.headingh3}</h3></li>)
                                     }
                                 </ul>
                             </div>
@@ -61,6 +62,8 @@ function IndustriesSubItemPage() {
                     </div>
                 </div>
             </div>
+            :
+            <CommingSoon/>}
         </>
     )
 }

@@ -22,10 +22,11 @@
 }
 
 .heading{
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 600;
   border-bottom: 2px solid #eaeaea;
   padding: 0px 20px 5px 0px;
+  
 }
 
 body {

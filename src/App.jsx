@@ -124,27 +124,14 @@ function App() {
           {/* media  */}
 
           <Route path="/media/:id" element={<Media />} />
-
-
-
-
           {/* AFMX Company  */}
           <Route path="/mission" element={<Mission />} />
           <Route path="/statment" element={<Statment />} />
           <Route path="/vision" element={<Vision />} />
           <Route path="/core-value" element={<CoreValue />} />
           <Route path="/legal" element={<Legal />} />
-
-
-
-
-
-
           {/* art and gallery */}
-
           <Route path="/before-after" element={<BeforeAndAfter />} />
-
-
         </Routes>
           <IndustriesRoute/>
       </div>

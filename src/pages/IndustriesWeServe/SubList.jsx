@@ -6,6 +6,7 @@ import ListItemWithImage from '../../components/list of item with image/ListItem
 function SubList() {
   const { name } = useParams()
   const data = industryData.find((item) => item.name === name);
+  console.log();
   return (
     <>
       {

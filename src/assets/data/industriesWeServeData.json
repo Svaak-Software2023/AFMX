@@ -6,7 +6,7 @@
     "url": "/univercity-list",
     "data": [
       {
-        "id": "33",
+        "id": "1",
         "name": "Community College",
         "industryImage": "./images/industry/CommunityCollege/CommunityCollege1.png",
         "imgData": [
@@ -52,7 +52,7 @@
         "url": "/community-college"
       },
       {
-        "id": "34",
+        "id": "2",
         "name": "Liberal Arts College",
         "industryImage": "./images/industry/LiberalArtsCollege/LiberalArtsCollege1.png",
         "imgData": [
@@ -102,7 +102,7 @@
         "url": "/liberal-arts-college"
       },
       {
-        "id": "35",
+        "id": "3",
         "name": "Ivy League University",
         "industryImage": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity1.png",
         "imgData": [
@@ -160,7 +160,7 @@
         "url": "/ivy-league-university"
       },
       {
-        "id": "36",
+        "id": "4",
         "name": "Nonprofit College",
         "industryImage": "./images/industry/NonprofitCollege/NonprofitCollege1.png",
         "imgData": [
@@ -206,7 +206,7 @@
         "url": "/nonprofit-college"
       },
       {
-        "id": "37",
+        "id": "5",
         "name": "Technical School",
         "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
         "imgData": [
@@ -265,7 +265,7 @@
         "url": "/technical-school"
       },
       {
-        "id": "38",
+        "id": "6",
         "name": "Religious Universities",
         "industryImage": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png",
         "imgData": [
@@ -313,7 +313,69 @@
           }
         ],
         "url": "/religious-universities"
+      },
+      {
+        "id": "7",
+        "name": "Specialist University",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "8",
+        "name": "Private University",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "9",
+        "name": "Arts college",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "10",
+        "name": "Statutory college",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "11",
+        "name": "Private",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },{
+        "id": "10",
+        "name": "State",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
+      },{
+        "id": "10",
+        "name": "Statutory college",
+        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "imgData": [],
+        "list1": [],
+        "list2": [],
+        "url": "/technical-school"
       }
+      
     ]
   },
   {

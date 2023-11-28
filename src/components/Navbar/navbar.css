@@ -1,8 +1,12 @@
-.top-navbar-section {
-position: relative;
-
+.navbar-container-wraper {
+  height: 170px;
 }
-
+.top-navbar-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000;
+}
 .container-icon {
   position: relative;
   --size-button: 40px;
@@ -385,6 +389,7 @@ header#header .container {
 }
 
 @media (max-width: 1366px) {
+
   .ad a {
     position: relative;
     height: 80px;
@@ -535,6 +540,9 @@ header#header .container {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-container-wraper {
+    height: 87px;
+}
   .logo {
     position: absolute;
     top: 0px;

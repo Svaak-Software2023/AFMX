@@ -318,9 +318,32 @@
         "id": "7",
         "name": "Specialist University",
         "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
-        "list1": [],
-        "list2": [],
+        "imgData": [
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png"
+          },
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities2.png"
+          },
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities3.png"
+          },
+          {
+            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities4.png"
+          }
+        ],
+        "paira": [
+          {
+            "text":"Dear Deans of Statutory Colleges,"
+          },
+          {
+            "text":" We are excited to introduce AfmX's cutting-edge cleaning and disinfection services tailored specifically for Statutory Colleges. In light of the ongoing global health challenges, maintaining a clean and sanitized environment is paramount to ensuring the well-being of students, faculty, and staff."
+          },
+          {
+            "text":"AfmX offers a comprehensive solution, utilizing state-of-the-art technology and environmentally friendly disinfectants to create a safe and healthy space conducive to learning and collaboration. Our experienced team is committed to providing thorough and efficient services, addressing all high-touch surfaces and communal areas."
+          }
+        ],
+        "list1": [ ],
         "url": "/technical-school"
       },
       {

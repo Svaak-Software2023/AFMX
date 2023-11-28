@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom"
 import React, { lazy, Suspense } from 'react';
+import { FaArrowUp } from "react-icons/fa";
 
 // Import the component lazily
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -43,7 +44,6 @@ import ComplainPortal from "./pages/complainPortal/ComplainPortal"
 import Contact from "./components/Contact/Contact";
 import Loader from "./components/Loader/Loader";
 import MapLocation from "./pages/mapLocation/MapLocation";
-import IndustriesRoute from "./pages/IndustriesWeServe/IndustriesRoute";
 import SubList from "./pages/IndustriesWeServe/SubList";
 import IndustriesSubItemPage from "./pages/IndustriesWeServe/IndustriesItem/IndustriesSubItemPage";
 
@@ -133,7 +133,7 @@ function App() {
           {/* art and gallery */}
           <Route path="/before-after" element={<BeforeAndAfter />} />
         </Routes>
-          <IndustriesRoute/>
+          
       </div>
       <Footer />
       {showButton && (
@@ -141,7 +141,7 @@ function App() {
           className="back-to-top d-flex align-items-center justify-content-center active"
           onClick={scrollToTop}
         >
-          <i className="bi bi-arrow-up-short"></i>
+          <FaArrowUp className="text-white"/>
         </div>
       )}
     </>

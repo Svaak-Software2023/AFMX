@@ -5,7 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 import { HiSpeakerphone } from "react-icons/hi";
 import { ImLocation } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose,AiOutlineMenu } from "react-icons/ai";
+
 
 function Navbar() {
   const [navbar, setNavbar] = useState("navbar");
@@ -49,14 +50,14 @@ function Navbar() {
                     </Link>
                   </div>
                   <div className="mobile-nav-toggle">
-                    <i
-                      className={`bi bi-list `}
+                    <AiOutlineMenu
+                      style={{fontSize:"2.2rem"}}
                       onClick={() =>
                         navbar === "navbar"
                           ? setNavbar("navbar-mobile")
                           : setNavbar("navbar")
                       }
-                    ></i>
+                    />
 
                     {navbar === "navbar-mobile" ? <AiOutlineClose
                       className="nav-close-btn"
@@ -80,7 +81,7 @@ function Navbar() {
                 <div className="col-lg-6 col-2">
                 </div>
 
-                <div className="col-lg-6 col-10">
+                <div className="col-lg-6 col-12">
                   <div className="contactus">
                     <ul>
                       <li className="m-0 p-0 py-2">
@@ -90,6 +91,7 @@ function Navbar() {
                           </Link>
                         </button>
                       </li>
+                     
                       <li>
                         {showInputSearch && (
                           <input type="text" placeholder="Search" />
@@ -100,19 +102,14 @@ function Navbar() {
                             onClick={handleShowSearch}
                           />
                         </button>
-                      </li>
+                      </li> 
+                      
                       {/* {/ location /} */}
-                      <li>
-                        {showInputLocation && (
-                          <input type="text" placeholder="Search Location" />
-                        )}
-                        <button onClick={handleShowLocation}>
+                      <li>               
                           <Link target="_blank" to="/location">
                             <ImLocation className="search_location" />
                           </Link>
-                        </button>
-                        {/* {/ <img src="assets/img/searc.svg" onClick={searchBox} /> /} */}
-                      </li>
+                        </li>
                     </ul>
                   </div>
                 </div>

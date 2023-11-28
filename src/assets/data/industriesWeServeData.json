@@ -8,16 +8,16 @@
       {
         "id": "1",
         "name": "Community College",
-        "industryImage": "./images/industry/CommunityCollege/CommunityCollege1.png",
+        "industryImage": "./images/industry/UniversityCleaning/CommunityCollege/CommunityCollege1.png",
         "imgData": [
           {
-            "url": "./images/industry/CommunityCollege/CommunityCollege1.png"
+            "url": "./images/industry/UniversityCleaning/CommunityCollege/CommunityCollege1.png"
           },
           {
-            "url": "./images/industry/CommunityCollege/CommunityCollege2.png"
+            "url": "./images/industry/UniversityCleaning/CommunityCollege/CommunityCollege2.png"
           },
           {
-            "url": "./images/industry/CommunityCollege/CommunityCollege3.png"
+            "url": "./images/industry/UniversityCleaning/CommunityCollege/CommunityCollege3.png"
           }
         ],
         "list1": [
@@ -54,19 +54,19 @@
       {
         "id": "2",
         "name": "Liberal Arts College",
-        "industryImage": "./images/industry/LiberalArtsCollege/LiberalArtsCollege1.png",
+        "industryImage": "./images/industry/UniversityCleaning/LiberalArtsCollege/LiberalArtsCollege1.png",
         "imgData": [
           {
-            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege1.png"
+            "url": "./images/industry/UniversityCleaning/LiberalArtsCollege/LiberalArtsCollege1.png"
           },
           {
-            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege2.png"
+            "url": "./images/industry/UniversityCleaning/LiberalArtsCollege/LiberalArtsCollege2.png"
           },
           {
-            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege3.png"
+            "url": "./images/industry/UniversityCleaning/LiberalArtsCollege/LiberalArtsCollege3.png"
           },
           {
-            "url": "./images/industry/LiberalArtsCollege/LiberalArtsCollege4.png"
+            "url": "./images/industry/UniversityCleaning/LiberalArtsCollege/LiberalArtsCollege4.png"
           }
         ],
         "list1": [
@@ -104,19 +104,19 @@
       {
         "id": "3",
         "name": "Ivy League University",
-        "industryImage": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity1.png",
+        "industryImage": "./images/industry/UniversityCleaning/IvyLeagueUniversity/IvyLeagueUniversity1.png",
         "imgData": [
           {
-            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity1.png"
+            "url": "./images/industry/UniversityCleaning/IvyLeagueUniversity/IvyLeagueUniversity1.png"
           },
           {
-            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity2.png"
+            "url": "./images/industry/UniversityCleaning/IvyLeagueUniversity/IvyLeagueUniversity2.png"
           },
           {
-            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity3.png"
+            "url": "./images/industry/UniversityCleaning/IvyLeagueUniversity/IvyLeagueUniversity3.png"
           },
           {
-            "url": "./images/industry/IvyLeagueUniversity/IvyLeagueUniversity4.png"
+            "url": "./images/industry/UniversityCleaning/IvyLeagueUniversity/IvyLeagueUniversity4.png"
           }
         ],
         "list1": [
@@ -162,16 +162,16 @@
       {
         "id": "4",
         "name": "Nonprofit College",
-        "industryImage": "./images/industry/NonprofitCollege/NonprofitCollege1.png",
+        "industryImage": "./images/industry/UniversityCleaning/NonprofitCollege/NonprofitCollege1.png",
         "imgData": [
           {
-            "url": "./images/industry/NonprofitCollege/NonprofitCollege1.png"
+            "url": "./images/industry/UniversityCleaning/NonprofitCollege/NonprofitCollege1.png"
           },
           {
-            "url": "./images/industry/NonprofitCollege/NonprofitCollege2.png"
+            "url": "./images/industry/UniversityCleaning/NonprofitCollege/NonprofitCollege2.png"
           },
           {
-            "url": "./images/industry/NonprofitCollege/NonprofitCollege3.png"
+            "url": "./images/industry/UniversityCleaning/NonprofitCollege/NonprofitCollege3.png"
           }
         ],
         "list1": [
@@ -208,16 +208,16 @@
       {
         "id": "5",
         "name": "Technical School",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "industryImage": "./images/industry/UniversityCleaning/TechnicalSchool/TechnicalSchool1.png",
         "imgData": [
           {
-            "url": "./images/industry/TechnicalSchool/TechnicalSchool1.png"
+            "url": "./images/industry/UniversityCleaning/TechnicalSchool/TechnicalSchool1.png"
           },
           {
-            "url": "./images/industry/TechnicalSchool/TechnicalSchool2.png"
+            "url": "./images/industry/UniversityCleaning/TechnicalSchool/TechnicalSchool2.png"
           },
           {
-            "url": "./images/industry/TechnicalSchool/TechnicalSchool3.png"
+            "url": "./images/industry/UniversityCleaning/TechnicalSchool/TechnicalSchool3.png"
           }
         ],
         "list1": [
@@ -267,19 +267,19 @@
       {
         "id": "6",
         "name": "Religious Universities",
-        "industryImage": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png",
+        "industryImage": "./images/industry/UniversityCleaning/ReligiousUniversities/ReligiousUniversities1.png",
         "imgData": [
           {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png"
+            "url": "./images/industry/UniversityCleaning/ReligiousUniversities/ReligiousUniversities1.png"
           },
           {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities2.png"
+            "url": "./images/industry/UniversityCleaning/ReligiousUniversities/ReligiousUniversities2.png"
           },
           {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities3.png"
+            "url": "./images/industry/UniversityCleaning/ReligiousUniversities/ReligiousUniversities3.png"
           },
           {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities4.png"
+            "url": "./images/industry/UniversityCleaning/ReligiousUniversities/ReligiousUniversities4.png"
           }
         ],
         "list1": [
@@ -317,104 +317,518 @@
       {
         "id": "7",
         "name": "Specialist University",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
+        "industryImage": "./images/industry/UniversityCleaning/SpecialistUniversity/SpecialistUniversity3.png",
         "imgData": [
           {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities1.png"
+            "url": "./images/industry/UniversityCleaning/SpecialistUniversity/SpecialistUniversity1.png"
           },
           {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities2.png"
+            "url": "./images/industry/UniversityCleaning/SpecialistUniversity/SpecialistUniversity2.png"
           },
           {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities3.png"
-          },
-          {
-            "url": "./images/industry/ReligiousUniversities/ReligiousUniversities4.png"
+            "url": "./images/industry/UniversityCleaning/SpecialistUniversity/SpecialistUniversity3.png"
           }
         ],
         "paira": [
           {
-            "text":"Dear Deans of Statutory Colleges,"
+            "text": "Dear Esteemed Deans,"
           },
           {
-            "text":" We are excited to introduce AfmX's cutting-edge cleaning and disinfection services tailored specifically for Statutory Colleges. In light of the ongoing global health challenges, maintaining a clean and sanitized environment is paramount to ensuring the well-being of students, faculty, and staff."
-          },
-          {
-            "text":"AfmX offers a comprehensive solution, utilizing state-of-the-art technology and environmentally friendly disinfectants to create a safe and healthy space conducive to learning and collaboration. Our experienced team is committed to providing thorough and efficient services, addressing all high-touch surfaces and communal areas."
+            "text": "In the pursuit of maintaining an impeccable academic environment at Specialist University, we are thrilled to introduce AfmX, a cutting-edge solution for cleaning and disinfection services. Elevate your campus hygiene with AfmX's state-of-the-art technology, ensuring a pristine and safe learning environment for both students and faculty."
           }
         ],
-        "list1": [ ],
+        "paira2": [],
+        "list1": [
+          {
+            "text": "Experience the future of cleanliness as AfmX combines efficiency and effectiveness, utilizing advanced disinfection methods to eradicate germs and viruses. Our services not only prioritize cleanliness but also promote a healthier campus atmosphere, fostering a conducive setting for academic excellence."
+          }
+        ],
+        "list2": [
+          {
+            "text": "With AfmX, rest assured that your campus will be at the forefront of hygiene innovation. Embrace a new standard of cleanliness, setting a benchmark for educational institutions nationwide. Together, let's create a campus environment that not only meets but exceeds the expectations of excellence."
+          }
+        ],
         "url": "/technical-school"
       },
       {
         "id": "8",
-        "name": "Private University",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
+        "name": "Statutory College",
+        "industryImage": "./images/industry/UniversityCleaning/StatutoryCollege/StatutoryCollege3.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/StatutoryCollege/StatutoryCollege1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/StatutoryCollege/StatutoryCollege2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/StatutoryCollege/StatutoryCollege3.png"
+          }
+        ],
+        "paira": [
+          {
+            "text": "Dear Deans of Statutory Colleges,"
+          },
+          {
+            "text": "We are excited to introduce AfmX's cutting-edge cleaning and disinfection services tailored specifically for Statutory Colleges. In light of the ongoing global health challenges, maintaining a clean and sanitized environment is paramount to ensuring the well-being of students, faculty, and staff."
+          },
+          {
+            "text": "AfmX offers a comprehensive solution, utilizing state-of-theart technology and environmentally friendly disinfectants to create a safe and healthy space conducive to learning and collaboration. Our experienced team is committed to providing thorough and efficient services, addressing all high-touch surfaces and communal areas."
+          }
+        ],
+        "paira2": [
+          {
+            "text": "By partnering with AfmX, you not only prioritize the health and safety of your academic community but also benefit from a seamless and customizable cleaning program designed to meet the unique needs of Statutory Colleges. Let AfmX be your trusted partner in creating a hygienic and secure educational environment."
+          }
+        ],
         "list1": [],
         "list2": [],
         "url": "/technical-school"
       },
       {
         "id": "9",
-        "name": "Arts college",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
+        "name": "Private University",
+        "industryImage": "./images/industry/UniversityCleaning/PrivateUniversity/PrivateUniversity3.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/PrivateUniversity/PrivateUniversity1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/PrivateUniversity/PrivateUniversity2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/PrivateUniversity/PrivateUniversity3.png"
+          }
+        ],
+        "paira": [
+          {
+            "text": "Dear Esteemed Deans,"
+          },
+          {
+            "text": "As the academic heartbeat of our prestigious Private University, ensuring a safe and healthy environment for both students and faculty is paramount. AfmX is proud to offer comprehensive Cleaning and Disinfection Services tailored to meet the unique needs of our esteemed institution."
+          },
+          {
+            "text": "Our dedicated team understands the importance of maintaining a pristine campus, fostering an atmosphere conducive to learning and innovation. Beyond the meticulous cleaning protocols, AfmX goes above and beyond, offering a suite of services designed to elevate your university experience. From eco-friendly practices to innovative hygiene solutions, we are committed to excellence in every facet of campus care. "
+          }
+        ],
+        "paira2": [
+          {
+            "text": "Embrace a new standard of cleanliness with AfmX, where expertise meets innovation, creating a haven for academic excellence. Let us partner in cultivating an environment where knowledge flourishes amidst pristine surroundings."
+          }
+        ],
         "list1": [],
         "list2": [],
         "url": "/technical-school"
       },
       {
         "id": "10",
-        "name": "Statutory college",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
+        "name": "Art College",
+        "industryImage": "./images/industry/UniversityCleaning/ArtCollege/ArtCollege3.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/ArtCollege/ArtCollege1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/ArtCollege/ArtCollege2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/ArtCollege/ArtCollege3.png"
+          }
+        ],
+        "paira": [
+          {
+            "text": "Dear Esteemed Deans of Art College,"
+          },
+          {
+            "text": "Embark on a journey of pristine creativity with AfmX, your trusted partner in cleaning and disinfection services. Our commitment to excellence extends beyond the canvas, ensuring your artistic haven is not only a hub of inspiration but also a sanctuary of cleanliness. Picture a campus where every stroke of art is complemented by the purity of a spotless environment. "
+          },
+          {
+            "text": "At AfmX, we don't just clean; we curate an atmosphere conducive to unleashing the boundless potential of artistic minds. Our services go beyond the conventional, offering a palette of comprehensive solutions to elevate your institution. Experience a campus where creativity thrives in a meticulously sanitized space, courtesy of AfmX - where hygiene meets artistry."
+          },
+          {
+            "text": "Transform your Art College into a haven of inspiration with AfmX's unrivaled cleaning and disinfection services – because true masterpieces deserve a canvas as immaculate as the visions that birth them."
+          }
+        ],
         "list1": [],
         "list2": [],
         "url": "/technical-school"
       },
       {
         "id": "11",
-        "name": "Private",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
+        "name": "State College",
+        "industryImage": "./images/industry/UniversityCleaning/StateCollege/StateCollege1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/StateCollege/StateCollege1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/StateCollege/StateCollege2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/StateCollege/StateCollege3.png"
+          }
+        ],
+        "paira": [
+          {
+            "text": "Dear Esteemed Deans of State College,"
+          },
+          {
+            "text": "At AfmX, we understand that maintaining a pristine and hygienic campus environment is crucial for fostering a healthy and thriving academic community. That's why we're thrilled to introduce our comprehensive cleaning and disinfection services tailored to meet the unique needs of State College. "
+          },
+          {
+            "text": "Picture this: Immaculate lecture halls, spotless common areas, and sanitized facilities – that's the AfmX promise. Our dedicated team goes beyond traditional cleaning, ensuring a thorough and efficient approach to create a safe and inviting space for students and faculty alike. But we don't stop there! AfmX is committed to delivering a holistic solution, offering a range of services that go hand-in-hand with our cleaning expertise. "
+          }
+        ],
+        "paira2": [
+          {
+            "text": "From eco-friendly practices to cutting-edge sanitation technologies, we've got it all covered. Elevate your college's standards with AfmX - because a clean campus is a vibrant campus. Let us partner in creating an environment that promotes well-being and academic excellence. "
+          },
+          {
+            "text": "Discover the AfmX difference today and redefine cleanliness on your campus"
+          }
+        ],
         "list1": [],
         "list2": [],
         "url": "/technical-school"
       },
       {
         "id": "12",
-        "name": "State",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
-        "list1": [],
+        "name": "Secondary Schools",
+        "industryImage": "./images/industry/UniversityCleaning/SecondarySchools/SecondarySchools3.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/SecondarySchools/SecondarySchools1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/SecondarySchools/SecondarySchools2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/SecondarySchools/SecondarySchools3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Discover the epitome of cleanliness and hygiene with AfmX's exceptional cleaning and disinfection services tailored for secondary schools. Elevate the well-being of your school community by entrusting us with the maintenance of pristine and sanitized environments. Our dedicated team employs cuttingedge techniques and eco-friendly solutions to ensure a healthy atmosphere conducive to learning. Beyond cleanliness, AfmX offers a spectrum of services designed to meet the unique needs of secondary schools, making us your one-stop solution for a safe and inviting educational space. Experience the AfmX difference - where expertise meets excellence in creating a spotless haven for students to thrive. Let us transform your school into a beacon of cleanliness and care."
+          }
+        ],
         "list2": [],
         "url": "/technical-school"
       },
       {
         "id": "13",
-        "name": "Secondary",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
+        "name": "Primary Schools",
+        "industryImage": "./images/industry/UniversityCleaning/PrimarySchools/PrimarySchools1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/PrimarySchools/PrimarySchools1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/PrimarySchools/PrimarySchools2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/PrimarySchools/PrimarySchools3.png"
+          }
+        ],
+        "paira": [
+          {
+            "text": "Welcome to the heart of education at AfmX Primary Schools, where we prioritize the well-being of your little ones and our dedicated staff."
+          },
+          {
+            "text": "Discover the magic of our Cleaning and Disinfection Services, designed to create a haven of health and happiness for your children. At AfmX, we understand the importance of a safe and pristine environment to nurture the future minds of generations. Our services not only keep the classrooms sparkling but also ensure a stress-free space where the worries of sickness simply melt away."
+          },
+          {
+            "text": "Let us take care of the cleanliness, so you can focus on what truly matters - the bright smiles and boundless potential of our future leaders. "
+          }
+        ],
+        "paira2": [
+          {
+            "text": "Join us in fostering a haven of learning, love, and laughter at AfmX Primary Schools! "
+          }
+        ],
         "list1": [],
         "list2": [],
         "url": "/technical-school"
       },
       {
         "id": "14",
-        "name": "Primary",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
-        "list1": [],
+        "name": "International Schools",
+        "industryImage": "./images/industry/UniversityCleaning/InternationalSchools/InternationalSchools1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/InternationalSchools/InternationalSchools1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/InternationalSchools/InternationalSchools2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/InternationalSchools/InternationalSchools3.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Welcome to AfmX, where we redefine the principles of excellence in cleaning and disinfection services for International Schools! Our commitment extends beyond spotless surfaces; we prioritize the health and well-being of your cherished students and dedicated staff. Picture a learning environment where the stress of sickness melts away, creating a haven for young minds to flourish. At AfmX, we understand the importance of maintaining a safe and hygienic space, ensuring that your institution remains a nurturing ground for the future generations. Trust us to keep your kids and staff safe, allowing the seeds of knowledge to thrive in an environment free from worries. Elevate your educational space with AfmX – where cleanliness meets care."
+          }
+        ],
         "list2": [],
         "url": "/technical-school"
       },
       {
         "id": "15",
         "name": "Montessori",
-        "industryImage": "./images/industry/TechnicalSchool/TechnicalSchool1.png",
-        "imgData": [],
-        "list1": [],
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Discover the AFMx difference in providing top-notch cleaning and disinfection services tailored for Montessori schools. Our commitment to the principles of Montessori education extends beyond maintaining a pristine environment - we respect and accommodate religious practices, ensuring a harmonious atmosphere for both students and staff. As decision-makers, you can trust AFMx to go beyond industry standards, addressing any restrictions with flexibility  and care. By choosing our services, you not only prioritize the safety of children and staff  but also contribute to the nurturing of  future minds. Let the stress of sickness melt away, as AFMx becomes your partner in fostering a healthy and conducive learning space for generations to come."
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "16",
+        "name": "Grammar School",
+        "industryImage": "./images/industry/UniversityCleaning/GrammarSchool/GrammarSchool1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/GrammarSchool1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/GrammarSchool2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/GrammarSchool3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/GrammarSchool4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "17",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "18",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "19",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "20",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "21",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "22",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "23",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
+        "list2": [],
+        "url": "/technical-school"
+      },
+      {
+        "id": "24",
+        "name": "Montessori",
+        "industryImage": "./images/industry/UniversityCleaning/Montessori/Montessori1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori1.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori2.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori3.png"
+          },
+          {
+            "url": "./images/industry/UniversityCleaning/Montessori/Montessori4.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": ""
+          }
+        ],
         "list2": [],
         "url": "/technical-school"
       }
@@ -491,9 +905,15 @@
         "name": "Festivals",
         "industryImage": "./images/industry/Festivals/Festivals1.png",
         "imgData": [
-          { "url": "./images/industry/Festivals/Festivals1.png" },
-          { "url": "./images/industry/Festivals/Festivals2.png" },
-          { "url": "./images/industry/Festivals/Festivals3.png" }
+          {
+            "url": "./images/industry/Festivals/Festivals1.png"
+          },
+          {
+            "url": "./images/industry/Festivals/Festivals2.png"
+          },
+          {
+            "url": "./images/industry/Festivals/Festivals3.png"
+          }
         ],
         "list1": [
           {
@@ -1128,12 +1548,10 @@
           }
         ]
       },
-
       {
         "id": "2",
         "name": "Hostel",
-        "industryImage": "images/industry/Hostel/Hostel1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/Hostel/Hostel1.png",
         "imgData": [
           {
             "url": "/images/industry/Hostel/Hostel1.png"
@@ -1200,8 +1618,7 @@
       {
         "id": "3",
         "name": "Motel",
-        "industryImage": "images/industry/Motel/Motel1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/Motel/Motel1.png",
         "imgData": [
           {
             "url": "images/industry/Motel/Motel1.png"
@@ -1260,8 +1677,7 @@
       {
         "id": "4",
         "name": "Boutique Hotel",
-        "industryImage": "images/industry/BoutiqueHotel/BoutiqueHotel1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/BoutiqueHotel/BoutiqueHotel1.png",
         "imgData": [
           {
             "url": "images/industry/BoutiqueHotel/BoutiqueHotel1.png"
@@ -1324,7 +1740,6 @@
           {
             "heading": "Why Choose AfmX?"
           },
-
           {
             "heading": "Expertise: ",
             "text": "Years of experience in serving the hospitality industry."
@@ -1353,8 +1768,7 @@
       {
         "id": "5",
         "name": "Guest House",
-        "industryImage": "images/industry/GuestHouse/GuestHouse1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/GuestHouse/GuestHouse1.png",
         "imgData": [
           {
             "url": "images/industry/GuestHouse/GuestHouse1.png"
@@ -1411,8 +1825,7 @@
       {
         "id": "6",
         "name": "Inn",
-        "industryImage": "images/industry/Inn/Inn1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/Inn/Inn1.png",
         "imgData": [
           {
             "url": "images/industry/Inn/Inn1.png"
@@ -1469,8 +1882,7 @@
       {
         "id": "7",
         "name": "Apartment Hotel",
-        "industryImage": "images/industry/ApartmentHotel/ApartmentHotel1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/ApartmentHotel/ApartmentHotel1.png",
         "imgData": [
           {
             "url": "images/industry/ApartmentHotel/ApartmentHotel1.png"
@@ -1529,8 +1941,7 @@
       {
         "id": "8",
         "name": "Casino Hotel​",
-        "industryImage": "images/industry/CasinoHotel/CasinoHotel1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/CasinoHotel/CasinoHotel1.png",
         "imgData": [
           {
             "url": "images/industry/CasinoHotel/CasinoHotel1.png"
@@ -1607,8 +2018,7 @@
       {
         "id": "9",
         "name": "Casinos",
-        "industryImage": "images/industry/Casinos/Casinos1.png",
-
+        "industryImage": "images/industry/UniversityCleaning/Casinos/Casinos1.png",
         "imgData": [
           {
             "url": "images/industry/Casinos/Casinos1.png"
@@ -1700,8 +2110,6 @@
           {
             "text": "High-standard sanitation protocols to ensure guest well-being."
           }
-
-          
         ],
         "list2": [
           {
@@ -1743,14 +2151,9 @@
           {
             "text": "A dedicated team committed to enhancing the overall guest experience."
           },
-
           {
             "text": "By choosing AfmX, you are opting for a professional partner dedicated to the success of your beach resort. Our commitment to excellence ensures that your guests enjoy a memorable stay in a pristine and well-maintained environment."
           }
-
-          
-
-
         ],
         "url": "/technical-school"
       },
@@ -1799,7 +2202,7 @@
           },
           {
             "text": "Partnering with AfmX means embracing a new standard of excellence. Our professional team is dedicated to exceeding expectations, ensuring your resort stands out in a competitive market."
-          }          
+          }
         ],
         "url": "/technical-school"
       },
@@ -1841,14 +2244,14 @@
           {
             "heading": "Handyman Services: ",
             "text": "AfmX provides reliable and efficient handyman services to address any maintenance or repair needs promptly, minimizing downtime and ensuring a seamless guest experience."
-          },          
+          },
           {
             "heading": "Comprehensive Solutions: ",
             "text": "Beyond cleaning, maid, and handyman services, AfmX offers a range of additional services to cater to the diverse requirements of spa resorts, contributing to an overall well-maintained and harmonious environment."
-          },          
+          },
           {
             "text": "Partnering with AfmX means entrusting your facility management needs to a team dedicated to excellence. Our professional approach and commitment to quality make us the preferred choice for spa resorts aiming to provide an exceptional guest experience."
-          }       
+          }
         ],
         "url": "/technical-school"
       },
@@ -1912,7 +2315,7 @@
           },
           {
             "text": "Elevate the guest experience at your historic resort with AfmX's reliable and professional support services."
-          }       
+          }
         ],
         "url": "/technical-school"
       },
@@ -1946,11 +2349,10 @@
           },
           {
             "text": "Thorough and efficient cleaning to maintain the highest hygiene standards."
-          },           
+          },
           {
             "text": "Daily, weekly, or customized cleaning schedules based on your operational requirements."
           }
-
         ],
         "list2": [
           {
@@ -1961,7 +2363,7 @@
           },
           {
             "text": "Attention to detail in maintaining guest accommodations and public areas."
-          },  
+          },
           {
             "heading": "Handyman Services:"
           },
@@ -2004,7 +2406,7 @@
           },
           {
             "text": "If you are looking for a reliable partner to manage your resort's facilities seamlessly, AfmX is here for you. Schedule a consultation with us to discuss how our services can enhance the overall experience for your guests and contribute to the success of your Amusement Resort."
-          }       
+          }
         ],
         "url": "/technical-school"
       },
@@ -2040,7 +2442,6 @@
             "heading": "Cleaning Services: ",
             "text": "Immaculate cleanliness is our commitment. Our professional cleaning staff ensures every corner of your resort reflects the highest standards of hygiene."
           }
-
         ],
         "list2": [
           {
@@ -2050,22 +2451,22 @@
           {
             "heading": "Handyman Services: ",
             "text": "From routine maintenance to urgent repairs, our experienced handymen are equipped to handle a wide range of tasks, ensuring the uninterrupted functionality of your facilities."
-          },           
+          },
           {
             "heading": "Additional Services: ",
             "text": "Customize your package with additional services such as landscaping, pool maintenance, and event support to enhance the overall appeal of your resort."
-          },           
+          },
           {
-            "heading": "Why Choose AfmX? "            
-          },                                
+            "heading": "Why Choose AfmX? "
+          },
           {
             "heading": "Professional Excellence: ",
             "text": "Our team comprises highly trained professionals dedicated to delivering exceptional service."
-          },                                
+          },
           {
             "heading": "Customized Solutions: ",
             "text": "Tailor our services to match the unique requirements and ambiance of your family resort."
-          },                                
+          },
           {
             "heading": "Reliability: ",
             "text": "Count on AfmX for timely, efficient, and reliable support, allowing you to focus on providing an outstanding guest experience."
@@ -2102,7 +2503,6 @@
             "heading": "Cleaning Services: ",
             "text": "Our trained staff ensures impeccable cleanliness, maintaining the highest standards of hygiene across all areas of your resort."
           }
-
         ],
         "list2": [
           {
@@ -2112,26 +2512,26 @@
           {
             "heading": "Handyman Services: ",
             "text": "From routine maintenance to unexpected repairs, our skilled handymen are ready to handle any task efficiently, ensuring the uninterrupted operation of your resort."
-          },           
+          },
           {
             "heading": "Additional Services: ",
             "text": "Explore our comprehensive range of additional services designed to enhance the overall guest experience and streamline resort operations."
-          },           
+          },
           {
-            "heading": "Why Choose AfmX? "            
-          },                                
+            "heading": "Why Choose AfmX? "
+          },
           {
             "heading": "Professionalism: ",
             "text": "Our team is dedicated to upholding the highest standards of professionalism in every service we provide."
-          },                                
+          },
           {
             "heading": "Reliability: ",
             "text": "Count on us for timely and reliable services, allowing you to focus on providing an exceptional experience for your guests."
-          },                                
+          },
           {
             "heading": "Custom Solutions: ",
             "text": "Tailored packages to meet the specific requirements of your resort, ensuring a personalized and effective approach."
-          },                                
+          },
           {
             "text": "Partner with AfmX to elevate the cleanliness and functionality of your adult resort. "
           }
@@ -2172,7 +2572,6 @@
           {
             "text": "Thorough common area cleaning for a welcoming environment."
           }
-
         ],
         "list2": [
           {
@@ -2183,31 +2582,31 @@
           },
           {
             "text": "Trained and courteous maids for personalized guest experiences."
-          },           
+          },
           {
             "text": "Attention to detail in room preparation and turndown services."
-          },           
+          },
           {
-            "heading": "Handyman Services: "            
-          },                                
+            "heading": "Handyman Services: "
+          },
           {
             "text": "Prompt and efficient maintenance to address any property issues."
-          },                                
+          },
           {
             "text": "Skilled technicians for on-demand repairs and improvements."
-          },                                
+          },
           {
             "heading": "And More: "
-          },                                
+          },
           {
             "text": "Customizable service packages to meet specific resort needs."
-          },                                
+          },
           {
             "text": "24/7 support and quick response to emergencies."
-          },                                
+          },
           {
             "text": "Transparent pricing with no hidden costs."
-          },                                
+          },
           {
             "text": "At AfmX, we understand the unique requirements of golf resorts and are committed to enhancing the overall guest experience. Elevate your resort's reputation with our top-notch services."
           }
@@ -2242,7 +2641,6 @@
           {
             "text": "Impeccable cleanliness is the hallmark of a world-class resort. AfmX offers tailored cleaning solutions that go beyond the surface, ensuring every corner of your property exudes pristine brilliance. Our dedicated team employs industry-leading practices, environmentally friendly products, and attention to detail that sets us apart."
           }
-
         ],
         "list2": [
           {
@@ -2250,34 +2648,34 @@
           },
           {
             "text": "Elevate guest experiences with our professional maid services. Trained to anticipate and fulfill guest needs, our maids provide discreet and efficient room upkeep. From daily tidying to special requests, AfmX ensures your guests enjoy a seamless and luxurious stay. "
-          },           
+          },
           {
-            "heading": "Handyman Solutions: "            
-          },                                
+            "heading": "Handyman Solutions: "
+          },
           {
             "text": "Maintain the structural integrity of your resort with AfmX's skilled handyman services. From routine maintenance to emergency repairs, our experts handle it all. Our proactive approach prevents potential issues, minimizing downtime and ensuring a smooth operation for your resort."
-          },  
+          },
           {
             "heading": "Security Services:"
-          },                                
+          },
           {
             "text": "Safeguard your guests and property with our top-notch security services. AfmX provides trained personnel, state-of-the-art surveillance, and a comprehensive security strategy tailored to your resort's unique needs."
-          },                                
+          },
           {
             "text": "Why AfmX? "
-          },                                
+          },
           {
             "heading": "Professionalism: ",
             "text": "Our team is dedicated to delivering services with the utmost professionalism."
-          },                                
+          },
           {
             "heading": "Customization: ",
             "text": "Tailored solutions to meet the specific needs of your resort."
-          },                                                                
+          },
           {
             "heading": "Reliability: ",
             "text": "Count on AfmX for timely and efficient service delivery."
-          },                                                                
+          },
           {
             "heading": "Quality Assurance: ",
             "text": "We adhere to the highest standards to ensure your resort always shines."
@@ -2317,26 +2715,23 @@
             "heading": "Maid Services: ",
             "text": "Enhance the guest experience with our skilled maid services. From thorough room transformations to personalized care, our maids leave no detail overlooked."
           }
-
         ],
         "list2": [
-
-          
           {
             "heading": "Handyman Proficiency: ",
             "text": "Safeguard the integrity of your resort with our handyman services. From routine maintenance to urgent repairs, AfmX promises a prompt and effective response to keep your property in impeccable condition."
-          },                                      
+          },
           {
             "text": "Why opt for AfmX?"
-          },                                
+          },
           {
             "heading": "Pet-Centric Approach: ",
             "text": "We comprehend the significance of catering to pet enthusiasts. Our services are crafted to establish a warm and inviting atmosphere for guests with pets, ensuring a seamless and delightful stay. "
-          },                                
+          },
           {
             "heading": "Proven Mastery: ",
             "text": "With years of experience in the industry, AfmX has earned a reputation for delivering excellence. Our adept professionals are committed to upholding the highest standards in every service we provide."
-          },                                
+          },
           {
             "heading": "Dependability: ",
             "text": "Count on AfmX to be your steadfast partner in preserving the beauty and functionality of your resort. Our dedication to timeliness and precision sets us apart in the industry."
@@ -2946,7 +3341,7 @@
             "heading": "Key Features: "
           },
           {
-            "heading":"Experienced Janitorial Team: ",
+            "heading": "Experienced Janitorial Team: ",
             "text": "Our skilled professionals are trained to maintain high cleanliness standards on cruise ships."
           },
           {
@@ -2960,11 +3355,11 @@
             "text": "We use advanced cleaning equipment and eco-friendly products to ensure a pristine and hygienic environment."
           },
           {
-            "heading":"Flexible Scheduling: ",
+            "heading": "Flexible Scheduling: ",
             "text": "Adaptable cleaning schedules to minimize disruption to your cruise operations."
           },
           {
-            "text":"Choose AfmX for a spotless and welcoming cruise ship experience."
+            "text": "Choose AfmX for a spotless and welcoming cruise ship experience."
           }
         ]
       }

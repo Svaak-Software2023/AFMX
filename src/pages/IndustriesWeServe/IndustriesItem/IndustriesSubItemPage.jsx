@@ -5,6 +5,7 @@ import industryData from "../../../assets/data/industriesWeServeData.json";
 import { useParams } from 'react-router-dom';
 import "./industriesSubpage.css"
 import CommingSoon from '../../CommingSoon';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function IndustriesSubItemPage() {
     const { parentName, name } = useParams()
@@ -36,7 +37,7 @@ function IndustriesSubItemPage() {
 
                                                     !!data.imgData && data?.imgData?.map((item, index) => (
                                                         <div className="industries-slider-item-img" key={index}>
-                                                            <img src={item?.url} className="img-fluid" />
+                                                            <LazyLoadImage src={item?.url} className="img-fluid" />
                                                         </div>
                                                     ))
                                                 }

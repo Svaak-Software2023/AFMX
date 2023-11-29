@@ -3,6 +3,7 @@ import serviceData from "../../assets/data/serviceDepartmentData.json";
 import { Carousel } from "react-responsive-carousel";
 import "./serviceDepartmentItem.css"
 import LeftMenue from "../../components/leftmenu/LeftMenu";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function ServiceDepartmentItem() {
     const { ItemId, parentId } = useParams()
     const data = serviceData.find((item) => item.id === parentId);
@@ -30,14 +31,14 @@ function ServiceDepartmentItem() {
                                                     <div className="seervicedepartment-crausel">
                                                         <Carousel showThumbs={false}>
                                                             <div className="service-department-item-img">
-                                                                <img src={itemData?.image} />
+                                                                <LazyLoadImage src={itemData?.image} />
 
                                                             </div>
                                                             <div className="service-department-item-img">
-                                                                <img src={itemData?.image} />
+                                                                <LazyLoadImage src={itemData?.image} />
                                                             </div>
                                                             <div className="service-department-item-img">
-                                                                <img src={itemData?.image} />
+                                                                <LazyLoadImage src={itemData?.image} />
                                                             </div>
                                                         </Carousel>
                                                     </div>

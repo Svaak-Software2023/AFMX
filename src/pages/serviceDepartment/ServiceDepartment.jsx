@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import LeftMenue from "../../components/leftmenu/LeftMenu";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import "./serviceDepartment.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 //import { loadConfigFromFile } from "vite";
 const ServiceDepartment = () => {
   const { id } = useParams();
@@ -29,7 +30,7 @@ const ServiceDepartment = () => {
                       <Link to={`/service-department-item/${data?.id}/${data?.submenu[0]?.id}`}>
                         <div className="position-relative">
 
-                          <img src={data?.submenu[0]?.image} alt="" />
+                          <LazyLoadImage src={data?.submenu[0]?.image} alt="" />
                           <div className="service-name">
                             <h3>{data?.submenu[0]?.name}</h3>
                           </div>
@@ -46,7 +47,7 @@ const ServiceDepartment = () => {
                               <div>
 
                                 <Link to={`/service-department-item/${data?.id}/${item.id}`}>
-                                  <img
+                                  <LazyLoadImage
                                     src={item?.image}
                                     alt={data?.id}
                                     className="img-fluid "

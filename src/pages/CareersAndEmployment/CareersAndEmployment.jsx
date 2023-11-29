@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "./Career.css"
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 function CareersAndEmployment() {
     return (
@@ -14,7 +15,7 @@ function CareersAndEmployment() {
             <div className="container bg-white my-2">
                 <div className="row m-0 py-2">
                     <div className="col-lg-5 col-12 overFlow">
-                        <img src="./images/career.jpg" alt="" className="img-fluid overFlow" />
+                        <LazyLoadImage src="./images/career.jpg" alt="" className="img-fluid overFlow" />
                     </div>
                     <div className="col-lg-7 col-12 ">
                         <div className="">

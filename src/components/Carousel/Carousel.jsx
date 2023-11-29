@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Carousel.css";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 const Slider = () => {
   const [user, setUser] = useState("");
   const data = useSelector((state) => state.auth.user)
@@ -34,7 +35,7 @@ const Slider = () => {
                     </div>
                   </div>
                   <div className="carousel-item" data-bs-interval="2000">
-                    <img src="images/Banner/Image1.png" className="d-block w-100" alt="..." />
+                    <LazyLoadImage src="images/Banner/Image1.png" className="d-block w-100" effect="blur" alt="..." />
                   </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

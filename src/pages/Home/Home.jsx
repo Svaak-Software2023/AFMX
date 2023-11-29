@@ -6,7 +6,8 @@ import helpingHand from "../../assets/data/helpingHand.json";
 import productData from "../../assets/data/Productdata.json";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import WatchWhether from "./WatchWhether";
-import Contact from "../../components/Contact/Contact";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function Home() {
   const productData1 = productData.filter((item) => item.id < 8);
   const productData2 = productData.filter((item) => item.id > 7);
@@ -131,10 +132,10 @@ function Home() {
                   <h2>
                     CHEMICAL SHOPPING CENTER{" "}
                     <a href>
-                      <img src="assets/img/cart.png" />
+                      <LazyLoadImage src="assets/img/cart.png" />
                     </a>{" "}
                     <a href>
-                      <img src="assets/img/bag.png" />
+                      <LazyLoadImage src="assets/img/bag.png" />
                     </a>
                   </h2>
                   <div className="single-row">
@@ -207,7 +208,7 @@ function Home() {
                       </li>
                     </ul>
                     <ul>
-                      <img src="assets/img/shildX.png" className="img-fluid" />
+                      <LazyLoadImage src="assets/img/shildX.png" className="img-fluid" />
                       <li>
                         <b>Luxurious Excellence Awaits:</b>Don&apos;t miss the
                         chance to indulge in the epitome of luxury cleaning
@@ -275,8 +276,8 @@ function Home() {
                 <div className="memebership-list">
                   <h2>MY FLORIDA HURRICANE WATCH WEATHER</h2>
                   <div className="membership-lis-image">
-                    {/* <img src="assets/img/service/map.jpg" />
-                    <img src="assets/img/service/calender.jpg" /> */}
+                    {/* <LazyLoadImage src="assets/img/service/map.jpg" />
+                    <LazyLoadImage src="assets/img/service/calender.jpg" /> */}
                     <WatchWhether />
                   </div>
                 </div>
@@ -361,8 +362,8 @@ function Home() {
                     </li>
                   </ul>
                   <div className="img-box">
-                    <img src="assets/img/partner-w-u1.png" />
-                    <img src="assets/img/partner-w-u2.png" />
+                    <LazyLoadImage src="assets/img/partner-w-u1.png" />
+                    <LazyLoadImage src="assets/img/partner-w-u2.png" />
                   </div>
                 </div>
               </div>
@@ -389,27 +390,27 @@ function Home() {
                     <div className="double-img">
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-1.png" />
+                          <LazyLoadImage src="assets/img/afmx-1.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-2.png" />
+                          <LazyLoadImage src="assets/img/afmx-2.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-3.png" />
+                          <LazyLoadImage src="assets/img/afmx-3.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-4.png" />
+                          <LazyLoadImage src="assets/img/afmx-4.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-5.png" />
+                          <LazyLoadImage src="assets/img/afmx-5.png" />
                         </a>
                       </div>
                     </div>

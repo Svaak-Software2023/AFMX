@@ -1,11 +1,11 @@
 import { Route, Routes, useLocation } from "react-router-dom"
 import React, { lazy, Suspense } from 'react';
 import { FaArrowUp } from "react-icons/fa";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 // Import the component lazily
 const Home = lazy(() => import("./pages/Home/Home"));
-
-
 
 import "./App.css"
 import Navbar from "./components/Navbar/Navbar"

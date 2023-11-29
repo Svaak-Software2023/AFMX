@@ -857,19 +857,19 @@
       {
         "id": "1",
         "name": "Internal Corporate Event",
-        "industryImage": "./images/industry/InternalCorporateEvent/InternalCorporateEvent1.png",
+        "industryImage": "./images/industry/EventCleaning/InternalCorporateEvent/InternalCorporateEvent1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent1.png"
+            "url": "./images/industry/EventCleaning/InternalCorporateEvent/InternalCorporateEvent1.jpg"
           },
           {
-            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent2.png"
+            "url": "./images/industry/EventCleaning/InternalCorporateEvent/InternalCorporateEvent2.jpg"
           },
           {
-            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent3.png"
+            "url": "./images/industry/EventCleaning/InternalCorporateEvent/InternalCorporateEvent3.jpg"
           },
           {
-            "url": "./images/industry/InternalCorporateEvent/InternalCorporateEvent4.png"
+            "url": "./images/industry/EventCleaning/InternalCorporateEvent/InternalCorporateEvent4.jpg"
           }
         ],
         "list1": [
@@ -917,16 +917,16 @@
       {
         "id": "2",
         "name": "Festivals",
-        "industryImage": "./images/industry/Festivals/Festivals1.png",
+        "industryImage": "./images/industry/EventCleaning/Festivals/Festivals1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Festivals/Festivals1.png"
+            "url": "./images/industry/EventCleaning/Festivals/Festivals1.jpg"
           },
           {
-            "url": "./images/industry/Festivals/Festivals2.png"
+            "url": "./images/industry/EventCleaning/Festivals/Festivals2.jpg"
           },
           {
-            "url": "./images/industry/Festivals/Festivals3.png"
+            "url": "./images/industry/EventCleaning/Festivals/Festivals3.jpg"
           }
         ],
         "list1": [
@@ -974,16 +974,16 @@
       {
         "id": "3",
         "name": "Exhibitions",
-        "industryImage": "./images/industry/Exhibitions/Exhibitions1.png",
+        "industryImage": "./images/industry/EventCleaning/Exhibitions/Exhibitions1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Exhibitions/Exhibitions1.png"
+            "url": "./images/industry/EventCleaning/Exhibitions/Exhibitions1.jpg"
           },
           {
-            "url": "./images/industry/Exhibitions/Exhibitions2.png"
+            "url": "./images/industry/EventCleaning/Exhibitions/Exhibitions2.jpg"
           },
           {
-            "url": "./images/industry/Exhibitions/Exhibitions3.png"
+            "url": "./images/industry/EventCleaning/Exhibitions/Exhibitions3.jpg"
           }
         ],
         "list1": [
@@ -1038,10 +1038,10 @@
       {
         "id": "4",
         "name": "Appreciation Event",
-        "industryImage": "./images/industry/AppreciationEvent/AppreciationEvent1.png",
+        "industryImage": "./images/industry/EventCleaning/AppreciationEvent/AppreciationEvent1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/AppreciationEvent/AppreciationEvent1.png"
+            "url": "./images/industry/EventCleaning/AppreciationEvent/AppreciationEvent1.jpg"
           }
         ],
         "list1": [
@@ -1081,10 +1081,13 @@
       {
         "id": "5",
         "name": "Fashion Shown",
-        "industryImage": "./images/industry/FashionShown/FashionShown1.png",
+        "industryImage": "./images/industry/EventCleaning/FashionShown/FashionShown1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/FashionShown/FashionShown1.png"
+            "url": "./images/industry/EventCleaning/FashionShown/FashionShown1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/FashionShown/FashionShown2.jpg"
           }
         ],
         "list1": [
@@ -1117,16 +1120,16 @@
       {
         "id": "6",
         "name": "Food Events",
-        "industryImage": "./images/industry/FoodEvents/FoodEvents1.png",
+        "industryImage": "./images/industry/EventCleaning/FoodEvents/FoodEvents1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/FoodEvents/FoodEvents1.png"
+            "url": "./images/industry/EventCleaning/FoodEvents/FoodEvents1.jpg"
           },
           {
-            "url": "./images/industry/FoodEvents/FoodEvents2.png"
+            "url": "./images/industry/EventCleaning/FoodEvents/FoodEvents2.jpg"
           },
           {
-            "url": "./images/industry/FoodEvents/FoodEvents3.png"
+            "url": "./images/industry/EventCleaning/FoodEvents/FoodEvents3.jpg"
           }
         ],
         "list1": [
@@ -1164,6 +1167,195 @@
           {
             "heading": "Client-Centric Approach: ",
             "text": "Your satisfaction is our priority, and we are committed to meeting and exceeding your expectations. Eco-Friendly Practices: Our commitment to sustainability ensures that your event remains environmentally conscious."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Trade Shows",
+        "industryImage": "./images/industry/EventCleaning/TradeShows/TradeShows1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/TradeShows/TradeShows1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/TradeShows/TradeShows2.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/TradeShows/TradeShows3.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/TradeShows/TradeShows4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Explore a new dimension of efficiency and excellence with AfmX your premier partner for comprehensive event services at trade shows. Elevate the experience for owners and managers by entrusting us with top notch cleaning, handyman, and disinfection solutions. Our dedicated team ensures a seamless event environment, leaving you free to focus on the success of your show. From meticulous cleaning protocols to skilled handyman services, we cover every detail to enhance the overall ambiance. Experience the epitome of service excellence with AfmX, where precision meets professionalism, transforming trade shows into unparalleled showcases of success."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Networking",
+        "industryImage": "./images/industry/EventCleaning/NetworkingEvent/NetworkingEvent1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/NetworkingEvent/NetworkingEvent1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/NetworkingEvent/NetworkingEvent2.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Experience seamless networking events with AFMX, where Cleaning, Handyman, Disinfection, and a myriad of services converge to elevate your event management. Our dedicated team understands the unique needs of owners and managers, ensuring a spotless and well maintained environment for your networking gatherings. From meticulous cleaning to efficient handyman services, we've got it all covered. Trust AFMX to create an atmosphere that not only fosters connections but also prioritizes hygiene and functionality. Elevate your networking experience with our comprehensive range of services tailored to meet the highest standards of excellence. Let AFMX be your partner in orchestrating events that leave a lasting impression."
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Workshops",
+        "industryImage": "./images/industry/EventCleaning/Workshops/Workshops1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/Workshops/Workshops1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/Workshops/Workshops2.jpg"
+          }
+        ],
+        "paira":[
+          {
+            "text": "Discover the ultimate solution for your workshop events with AfmX your one stop destination for premium cleaning, handyman, disinfection, and a myriad of other services. Elevate your event experience by entrusting AfmX with the meticulous care it deserves. Our dedicated team of professionals specializes in delivering top notch services tailored to meet the unique needs of workshops. From thorough cleaning to skilled handyman services, and effective disinfection protocols, AfmX ensures a seamless and hygienic environment for your events. Transform your workshop spaces into pristine havens with AfmX, where excellence meets efficiency. Unleash the full potential of your events with our comprehensive range of services, setting the stage for success and productivity."
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Team Building",
+        "industryImage": "./images/industry/EventCleaning/TeamBuilding/TeamBuilding1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/TeamBuilding/TeamBuilding1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/TeamBuilding/TeamBuilding2.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/TeamBuilding/TeamBuilding3.jpg"
+          }
+        ],
+        "list1" :[
+          {
+            "text": "Discover the ultimate solution for enhancing team synergy and productivity with AfmX's comprehensive services tailored for owners and managers. Elevate your team building events by incorporating our specialized Cleaning, Handyman, and Disinfection services. From fostering a clean and organized workspace to ensuring a safe and hygienic environment, AfmX goes beyond expectations. Our team is dedicated to providing seamless coordination, allowing you to focus on what truly matters building a stronger, more efficient team. Experience the difference with AfmX, where excellence meets service, and watch your team thrive like never before."
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Product Launch",
+        "industryImage": "./images/industry/EventCleaning/ProductLaunch/ProductLaunch1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/ProductLaunch/ProductLaunch1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/ProductLaunch/ProductLaunch2.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/ProductLaunch/ProductLaunch3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Explore unparalleled excellence in product launch support with AfmX an industry leader in cleaning, handyman services, disinfection, and more. Elevate your brand's introduction to the market with our meticulous attention to detail and commitment to quality. Our team of experts is dedicated to ensuring a seamless product launch experience for owners and managers alike. From pristine cleaning services to skilled handyman assistance, and comprehensive disinfection solutions, AfmX is your trusted partner in creating a lasting impression. Discover the difference that precision and expertise can make in propelling your product launch to new heights."
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Seminars",
+        "industryImage": "./images/industry/EventCleaning/Seminars/Seminars1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/Seminars/Seminars1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/Seminars/Seminars2.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/Seminars/Seminars3.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/Seminars/Seminars4.jpg" 
+          }
+        ],
+        "list1":[
+          {
+            "text": "Discover unparalleled excellence in event maintenance services with AfmX. Elevate the standards of cleanliness, organization, and efficiency at your company events with our comprehensive solutions. From top notch cleaning services to skilled handymen, and meticulous disinfection protocols, AfmX ensures every detail is impeccably managed. Our commitment to excellence extends beyond mere service it's an investment in the success of your events. Trust AfmX to transform your event space into a seamlessly managed and immaculate environment, leaving a lasting impression on both clients and attendees. Experience the difference with AfmX where precision meets perfection in event maintenance."
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Company Events",
+        "industryImage": "./images/industry/EventCleaning/CompanyEvents/CompanyEvents1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/CompanyEvents/CompanyEvents1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/CompanyEvents/CompanyEvents2.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Discover unparalleled excellence in event maintenance services with AfmX. Elevate the standards of cleanliness, organization, and efficiency at your company events with our comprehensive solutions. From top notch cleaning services to skilled handymen, and meticulous disinfection protocols, AfmX ensures every detail is impeccably managed. Our commitment to excellence extends beyond mere service it's an investment in the success of your events. Trust AfmX to transform your event space into a seamlessly managed and immaculate environment, leaving a lasting impression on both clients and attendees. Experience the difference with AfmX where precision meets perfection in event maintenance."
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Wedding",
+        "industryImage": "./images/industry/EventCleaning/Wedding/Wedding1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/Wedding/Wedding1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/Wedding/Wedding2.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/Wedding/Wedding3.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/Wedding/Wedding4.jpg" 
+          }
+        ],
+        "list1":[
+          {
+            "text": "At AfmX, we understand the meticulous planning that goes into creating unforgettable wedding events. As owners and managers, you strive for perfection, and so do we. Our comprehensive services go beyond the ordinary, offering specialized solutions tailored for your unique needs. From thorough cleaning to skilled handyman services, and meticulous disinfection protocols, we ensure every detail is taken care of seamlessly. Trust AfmX to elevate your wedding experience by providing a range of services that go above and beyond, leaving you free to focus on the magic of the moment. Your event is special, and our commitment is to make it extraordinary."
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "Red Carpet",
+        "industryImage": "./images/industry/EventCleaning/RedCarpet/RedCarpet1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/EventCleaning/RedCarpet/RedCarpet1.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/RedCarpet/RedCarpet2.jpg"
+          },
+          {
+            "url": "./images/industry/EventCleaning/RedCarpet/RedCarpet3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Discover the epitome of excellence in event maintenance with AFMX, your trusted partner for Red Carpet affairs. Unveil a world of seamless elegance as we bring to you a comprehensive suite of services tailored for the discerning owners and managers of grand events. From meticulous cleaning to adept handyman solutions, we ensure every detail is flawlessly executed, creating an ambiance that resonates with sophistication. Elevate the standard of cleanliness and hygiene with our cutting edge disinfection services, setting the stage for an unparalleled experience. At AFMX, we understand the art of event management, and our services are designed to harmonize seamlessly with your vision, leaving you free to focus on the spotlight moments."
           }
         ]
       }
@@ -1780,11 +1972,203 @@
   {
     "id": "7",
     "name": "Shopping Centers",
-    "industryImage": "./images/industry/shoppingCenters.jpg",
+    "industryImage": "./images/industry/ShoppingCenters/CommunityCenter/CommunityCenter1.jpg",
     "url": "/industrirs-list/7",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Community Center",
+        "industryImage": "./images/industry/ShoppingCenters/CommunityCenter/CommunityCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/CommunityCenter/CommunityCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/CommunityCenter/CommunityCenter2.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/CommunityCenter/CommunityCenter3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "At AfmX, we understand the dynamic responsibilities that come with managing a Community Center. Our comprehensive services cater to the specific needs of community leaders like you, providing expert solutions for cleaning, repairs, remodeling, and volunteer cleaning initiatives. With a commitment to excellence, AfmX goes beyond standard services, offering a diverse range of solutions to enhance the functionality and aesthetic appeal of your space. Our team is dedicated to supporting your vision, ensuring that your Community Center remains a vibrant and welcoming hub for all. Trust AfmX to be your partner in maintaining a clean, safe, and thriving community space."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Power Center",
+        "industryImage": "./images/industry/ShoppingCenters/PowerCenter/PowerCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/PowerCenter/PowerCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/PowerCenter/PowerCenter2.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "At AFMX, we empower power center managers with comprehensive solutions tailored to meet the diverse needs of their facilities. From meticulous cleaning services that ensure a pristine environment to efficient repairs and transformative remodeling, AFMX is your partner in maintaining and enhancing your power center. Our array of services goes beyond the ordinary, addressing every aspect of facility management. With AFMX, you can trust in a seamless experience, allowing you to focus on your core responsibilities while we take care of the details. Explore the difference with AFMX – where excellence meets efficiency for power centers and beyond."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Outlet Center",
+        "industryImage": "./images/industry/ShoppingCenters/OutletCenter/OutletCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/OutletCenter/OutletCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/OutletCenter/OutletCenter2.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Experience excellence in outlet center management with AfmX a trusted partner for cleaning, repairs, remodeling, and a myriad of other services. Elevate the standards of your outlet center with our comprehensive solutions designed specifically for managers like you. From meticulous cleaning protocols to swift and efficient repairs, AfmX ensures that your center maintains its pristine appearance and functionality. Our remodeling expertise adds a touch of innovation, enhancing the overall appeal of your space. Discover the convenience of a one stop solution for all your outlet center needs with AfmX where quality meets efficiency."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Regional Mall",
+        "industryImage": "./images/industry/ShoppingCenters/RegionalMall/RegionalMall1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/RegionalMall/RegionalMall1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/RegionalMall/RegionalMall2.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/RegionalMall/RegionalMall3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "AfmX is your strategic partner in maintaining and enhancing the overall appeal of your regional mall. Our comprehensive suite of services spans cleaning, repairs, remodeling, and beyond, ensuring that your mall remains a vibrant and inviting space for visitors. With a dedicated focus on efficiency and excellence, AfmX brings a wealth of experience to the table, providing tailored solutions to meet the unique needs of regional mall management. Trust us to seamlessly handle a wide range of services, contributing to the sustained success and positive image of your mall. Elevate the standard of care for your property with AfmX as your trusted partner in facility management."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Strip Malls",
+        "industryImage": "./images/industry/ShoppingCenters/StripMalls/StripMalls1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/StripMalls/StripMalls1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/StripMalls/StripMalls2.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/StripMalls/StripMalls3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Maximize the potential of your strip mall with AFMx your one stop solution for comprehensive property care. Our expert team specializes in cleaning, repairs, remodeling, and a wide array of services tailored to meet the unique needs of strip mall managers. From routine maintenance to transformative renovations, we handle it all with precision and efficiency. Elevate the aesthetics and functionality of your property, ensuring it remains a thriving hub for businesses. Discover the convenience of streamlined services and revitalize your strip mall effortlessly. With AFMx, experience a new standard of property management that goes beyond expectations."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Fashion Center",
+        "industryImage": "./images/industry/ShoppingCenters/FashionCenter/FashionCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/FashionCenter/FashionCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/FashionCenter/FashionCenter2.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/FashionCenter/FashionCenter3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "At AFMx, we redefine excellence in fashion center management by providing a comprehensive suite of services tailored to meet the unique needs of managers like you. From meticulous cleaning services that maintain the pristine image of your center to efficient repairs that ensure a seamless operational flow, AFMx is your trusted partner in maintaining the highest standards. Our expertise extends beyond routine maintenance to encompass innovative remodeling solutions, transforming spaces to align with the dynamic trends of the fashion industry. With a commitment to excellence, AFMx goes beyond the expected, offering a range of specialized services designed to elevate your fashion center's functionality and aesthetic appeal. Experience the next level of fashion center management with AFMx where quality meets innovation."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Super regional",
+        "industryImage": "./images/industry/ShoppingCenters/SuperRegional/SuperRegional1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/SuperRegional/SuperRegional1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/SuperRegional/SuperRegional2.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Experience seamless facility management with AfmX, your partner in maintaining the pristine allure of super regional shopping centers. Our comprehensive services encompass cleaning, repairs, remodeling, and beyond, ensuring that your retail haven operates at its absolute best. Trust AfmX to handle the intricacies of facility upkeep, leaving you with the peace of mind to focus on elevating the shopping experience for your patrons. From meticulous cleaning protocols to swift and efficient repairs, AfmX is dedicated to enhancing the functionality and aesthetic appeal of your super regional shopping center. Rely on us for a holistic approach to facility management, where every detail is handled with precision and care."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Big box retail",
+        "industryImage": "./images/industry/ShoppingCenters/BigBoxRetail/BigBoxRetail1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/BigBoxRetail/BigBoxRetail1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/BigBoxRetail/BigBoxRetail2.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Maximize the efficiency of your big box retail space with AFMX's comprehensive suite of services. From meticulous cleaning routines to prompt repairs and transformative remodeling projects, we understand the unique demands of managing a large scale retail environment. Our dedicated team is equipped to handle everything from routine maintenance to major overhauls, ensuring that your store remains a well maintained and inviting space for both employees and customers. With AFMX, you can trust that our experienced professionals will deliver top notch services tailored to the specific needs of big box retail management, allowing you to focus on what matters most driving success in your retail operations."
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Free Standing retail locations",
+        "industryImage": "./images/industry/ShoppingCenters/FreeStandingRetailLocations/FreeStandingRetailLocations1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/FreeStandingRetailLocations/FreeStandingRetailLocations1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/FreeStandingRetailLocations/FreeStandingRetailLocations2.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Transform your retail space with AfmX, your go to partner for comprehensive management of free standing retail locations. From meticulous cleaning to efficient repairs and stunning remodeling, AfmX offers a suite of services tailored for managers like you. Elevate the standards of cleanliness, ensure seamless repairs, and revitalize your retail environment with our expert touch. Experience the difference as AfmX takes care of every detail, allowing you to focus on what matters most the success of your business. Embark on a journey of excellence with AfmX, where your retail space becomes a testament to our commitment to quality and precision."
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Showrooms",
+        "industryImage": "./images/industry/ShoppingCenters/Showrooms/Showrooms1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/Showrooms/Showrooms1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/Showrooms/Showrooms2.jpg"
+          }
+        ],
+        "list1":[
+         {
+          "text": "Maximize the potential of your showroom with AFMX's comprehensive suite of services tailored for managers and owners. Elevate the appeal of your space through our top notch cleaning services, ensuring a pristine environment that leaves a lasting impression on your clientele. Our expert repair and remodeling solutions are designed to seamlessly address any wear and tear, enhancing the aesthetics of your showroom and maintaining its allure."
+         },
+         {
+          "text": "At AFMX, we go beyond the ordinary, offering a range of specialized services that cater to the unique needs of showroom owners. From meticulous cleaning to transformative remodeling, our team is committed to revitalizing your space and elevating its overall functionality. Experience a new standard of excellence with AFMX where"
+         }
+        ]
       }
     ]
   },
@@ -2142,11 +2526,11 @@
       {
         "id": "3",
         "name": "Sports Themed Night Clubs",
-        "industryImage": "./images/industry/EntertainmentVenues/SportsThemed/SportsThemed1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed1.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed2.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed3.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs2.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs3.jpg"}
 
 
         ],
@@ -2177,18 +2561,18 @@
       {
         "id": "5",
         "name": "Dance CLub",
-        "industryImage": "./images/industry/EntertainmentVenues/DanceCLub/DanceCLub1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/DanceClubs/DanceClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/DanceCLub/DanceCLub1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/DanceClubs/DanceClubs1.jpg"}
         ],
         "list1":[{"text":"Elevate the standards of your dance club with AFMX's comprehensive management services. Our dedicated team specializes in ensuring a spotless and inviting atmosphere for your patrons, with meticulous cleaning services tailored to the unique needs of nightlife establishments. Beyond cleanliness, AFMX offers a suite of additional services designed to streamline operations and enhance the overall experience. From efficient waste management to strategic space optimization, we go beyond the basics to revitalize your venue. Trust AFMX to deliver unparalleled support, allowing you to focus on creating memorable nights for your guests. With our expertise, your dance club will not only meet but exceed the expectations of both managers and patrons alike."}]
       },
       {
         "id": "6",
         "name": "Comedy Club",
-        "industryImage": "./images/industry/EntertainmentVenues/ComedyClub/ComedyClub1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/ComedyClubs/ComedyClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/ComedyClub/ComedyClub1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/ComedyClubs/ComedyClubs1.jpg"}
         ],
         "list1":[{"text":"Transform your Comedy Club experience with AFMX's comprehensive services tailored for managers like you. From meticulous cleaning to specialized solutions, AFMX goes beyond the ordinary, ensuring your venue is not just clean but also primed for success. Our dedicated team understands the unique demands of a Comedy Club environment, providing customized services that include janitorial excellence, venue setup, and more. Elevate the overall ambiance of your club, leaving a lasting impression on your patrons. Partner with AFMX to streamline operations and create an atmosphere where laughter takes center stage, while we take care of the rest. Experience the difference with AFMX's commitment to excellence in every detail."
         }]
@@ -2196,9 +2580,9 @@
       {
         "id": "7",
         "name": "Live Music Club",
-        "industryImage": "./images/industry/EntertainmentVenues/LiveMusicClub/LiveMusicClub1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/LiveMusicClubs/LiveMusicClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/LiveMusicClub/LiveMusicClub1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/LiveMusicClubs/LiveMusicClubs1.jpg"}
 
 
         ],
@@ -2229,9 +2613,9 @@
       {
         "id": "10",
         "name": "Karaoke Clubs",
-        "industryImage": "./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs.jpg"}
         ],
         "list1":[{"text":"Unlock the full potential of your Karaoke club with AfmX's comprehensive management services. Our dedicated team specializes in providing top -notch cleaning solutions tailored for the unique needs of entertainment venues. From maintaining a pristine environment to ensuring seamless operations, AfmX goes beyond cleaning, offering a range of services designed to enhance your club's overall efficiency. Our expertise extends to equipment maintenance, staff training, and optimizing customer experiences, making AfmX your trusted partner in elevating your Karaoke club to new heights. Experience excellence in club management with AfmX – where every detail is meticulously handled to ensure your club's success."
         }]
@@ -2253,10 +2637,10 @@
       {
         "id": "12",
         "name": "Bowling Ally",
-        "industryImage": "./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly1.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly2.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley2.jpg"}
         ],
         "list1":[{"text":"Indulge in a seamless managerial experience at our state-of-the-art bowling alley, where precision meets pleasure. AFMX takes pride in offering a comprehensive suite of services tailored specifically for managers like you. From meticulous cleaning routines that ensure a pristine environment for your team-building events to a plethora of additional services that go beyond the lanes, we are committed to enhancing your bowling alley experience. Elevate your managerial responsibilities effortlessly with AFMX, where we take care of the details so you can focus on fostering camaraderie and success within your team. Discover the convenience of our professional services, designed to revitalize your bowling alley and create an ambiance that sparks productivity and enjoyment. Embark on a new era of seamless management with AFMX – where we not only meet but exceed your expectations."
         }]
@@ -2275,10 +2659,10 @@
       {
         "id": "14",
         "name": "Skating Rink",
-        "industryImage": "./images/industry/EntertainmentVenues/SkatingRink/SkatingRink1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/SkateRing/SkateRing1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/SkatingRink/SkatingRink1.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/SkatingRink/SkatingRink2.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/SkateRing/SkateRing1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SkateRing/SkateRing2.jpg"}
         ],
         "list1":[{"text":"Transform your skating rink into a pristine haven with AFMX's comprehensive managerial services. Our expert team specializes in meticulous cleaning routines, ensuring a spotless environment for skaters and patrons alike. Beyond cleanliness, we offer a range of services designed to enhance the overall experience of your skating facility. From maintenance and equipment checks to operational optimizations, we're dedicated to keeping your rink running smoothly. Trust AFMX to elevate the standard of care for your skating rink, providing more than just cleaning – a complete solution for managers seeking excellence."
         }]
@@ -3240,22 +3624,22 @@
   {
     "id": "15",
     "name": "Resorts",
-    "industryImage": "./images/industry/BeachResort/BeachResort1.png",
+    "industryImage": "./images/industry/Resorts/BeachResort/BeachResort1.png",
     "url": "/industrirs-list/15",
     "data": [
       {
         "id": "1",
         "name": "Beach Resorts",
-        "industryImage": "./images/industry/BeachResort/BeachResort1.png",
+        "industryImage": "./images/industry/Resorts/BeachResort/BeachResort1.png",
         "imgData": [
           {
-            "url": "./images/industry/BeachResort/BeachResort1.png"
+            "url": "./images/industry/Resorts/BeachResort/BeachResort1.png"
           },
           {
-            "url": "./images/industry/BeachResort/BeachResort2.png"
+            "url": "./images/industry/Resorts/BeachResort/BeachResort2.png"
           },
           {
-            "url": "./images/industry/BeachResort/BeachResort3.png"
+            "url": "./images/industry/Resorts/BeachResort/BeachResort3.png"
           }
         ],
         "list1": [
@@ -3324,19 +3708,19 @@
       {
         "id": "2",
         "name": "All-Inclusive resorts",
-        "industryImage": "./images/industry/AllInclusiveResorts/AllInclusiveResorts1.png",
+        "industryImage": "./images/industry/Resorts/AllInclusiveResorts/AllInclusiveResorts1.png",
         "imgData": [
           {
-            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts1.png"
+            "url": "./images/industry/Resorts/AllInclusiveResorts/AllInclusiveResorts1.png"
           },
           {
-            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts2.png"
+            "url": "./images/industry/Resorts/AllInclusiveResorts/AllInclusiveResorts2.png"
           },
           {
-            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts3.png"
+            "url": "./images/industry/Resorts/AllInclusiveResorts/AllInclusiveResorts3.png"
           },
           {
-            "url": "./images/industry/AllInclusiveResorts/AllInclusiveResorts4.png"
+            "url": "./images/industry/Resorts/AllInclusiveResorts/AllInclusiveResorts4.png"
           }
         ],
         "list1": [
@@ -3373,16 +3757,16 @@
       {
         "id": "3",
         "name": "Spa Resorts",
-        "industryImage": "./images/industry/SpaResorts/SpaResorts1.png",
+        "industryImage": "./images/industry/Resorts/SpaResorts/SpaResorts1.png",
         "imgData": [
           {
-            "url": "./images/industry/SpaResorts/SpaResorts1.png"
+            "url": "./images/industry/Resorts/SpaResorts/SpaResorts1.png"
           },
           {
-            "url": "./images/industry/SpaResorts/SpaResorts2.png"
+            "url": "./images/industry/Resorts/SpaResorts/SpaResorts2.png"
           },
           {
-            "url": "./images/industry/SpaResorts/SpaResorts3.png"
+            "url": "./images/industry/Resorts/SpaResorts/SpaResorts3.png"
           }
         ],
         "list1": [
@@ -3422,19 +3806,19 @@
       {
         "id": "4",
         "name": "Historic Resorts",
-        "industryImage": "./images/industry/HistoricResorts/HistoricResorts1.png",
+        "industryImage": "./images/industry/Resorts/HistoricResorts/HistoricResorts1.png",
         "imgData": [
           {
-            "url": "./images/industry/HistoricResorts/HistoricResorts1.png"
+            "url": "./images/industry/Resorts/HistoricResorts/HistoricResorts1.png"
           },
           {
-            "url": "./images/industry/HistoricResorts/HistoricResorts2.png"
+            "url": "./images/industry/Resorts/HistoricResorts/HistoricResorts2.png"
           },
           {
-            "url": "./images/industry/HistoricResorts/HistoricResorts3.png"
+            "url": "./images/industry/Resorts/HistoricResorts/HistoricResorts3.png"
           },
           {
-            "url": "./images/industry/HistoricResorts/HistoricResorts4.png"
+            "url": "./images/industry/Resorts/HistoricResorts/HistoricResorts4.png"
           }
         ],
         "list1": [
@@ -3486,19 +3870,19 @@
       {
         "id": "5",
         "name": "Amusement Resort",
-        "industryImage": "./images/industry/AmusementResort/AmusementResort1.png",
+        "industryImage": "./images/industry/Resorts/AmusementResort/AmusementResort1.png",
         "imgData": [
           {
-            "url": "./images/industry/AmusementResort/AmusementResort1.png"
+            "url": "./images/industry/Resorts/AmusementResort/AmusementResort1.png"
           },
           {
-            "url": "./images/industry/AmusementResort/AmusementResort2.png"
+            "url": "./images/industry/Resorts/AmusementResort/AmusementResort2.png"
           },
           {
-            "url": "./images/industry/AmusementResort/AmusementResort3.png"
+            "url": "./images/industry/Resorts/AmusementResort/AmusementResort3.png"
           },
           {
-            "url": "./images/industry/AmusementResort/AmusementResort4.png"
+            "url": "./images/industry/Resorts/AmusementResort/AmusementResort4.png"
           }
         ],
         "list1": [
@@ -3577,19 +3961,19 @@
       {
         "id": "6",
         "name": "Family Resort",
-        "industryImage": "./images/industry/FamilyResorts/FamilyResorts1.png",
+        "industryImage": "./images/industry/Resorts/FamilyResorts/FamilyResorts1.png",
         "imgData": [
           {
-            "url": "./images/industry/FamilyResorts/FamilyResorts1.png"
+            "url": "./images/industry/Resorts/FamilyResorts/FamilyResorts1.png"
           },
           {
-            "url": "./images/industry/FamilyResorts/FamilyResorts2.png"
+            "url": "./images/industry/Resorts/FamilyResorts/FamilyResorts2.png"
           },
           {
-            "url": "./images/industry/FamilyResorts/FamilyResorts3.png"
+            "url": "./images/industry/Resorts/FamilyResorts/FamilyResorts3.png"
           },
           {
-            "url": "./images/industry/FamilyResorts/FamilyResorts4.png"
+            "url": "./images/industry/Resorts/FamilyResorts/FamilyResorts4.png"
           }
         ],
         "list1": [
@@ -3641,19 +4025,19 @@
       {
         "id": "7",
         "name": "Adult Resorts",
-        "industryImage": "./images/industry/AdultResorts/AdultResorts1.png",
+        "industryImage": "./images/industry/Resorts/AdultResorts/AdultResorts1.png",
         "imgData": [
           {
-            "url": "./images/industry/AdultResorts/AdultResorts1.png"
+            "url": "./images/industry/Resorts/AdultResorts/AdultResorts1.png"
           },
           {
-            "url": "./images/industry/AdultResorts/AdultResorts2.png"
+            "url": "./images/industry/Resorts/AdultResorts/AdultResorts2.png"
           },
           {
-            "url": "./images/industry/AdultResorts/AdultResorts3.png"
+            "url": "./images/industry/Resorts/AdultResorts/AdultResorts3.png"
           },
           {
-            "url": "./images/industry/AdultResorts/AdultResorts4.png"
+            "url": "./images/industry/Resorts/AdultResorts/AdultResorts4.png"
           }
         ],
         "list1": [
@@ -3705,19 +4089,19 @@
       {
         "id": "8",
         "name": "Golf Resorts",
-        "industryImage": "./images/industry/GolfResort/GolfResort1.png",
+        "industryImage": "./images/industry/Resorts/GolfResort/GolfResort1.png",
         "imgData": [
           {
-            "url": "./images/industry/GolfResort/GolfResort1.png"
+            "url": "./images/industry/Resorts/GolfResort/GolfResort1.png"
           },
           {
-            "url": "./images/industry/GolfResort/GolfResort2.png"
+            "url": "./images/industry/Resorts/GolfResort/GolfResort2.png"
           },
           {
-            "url": "./images/industry/GolfResort/GolfResort3.png"
+            "url": "./images/industry/Resorts/GolfResort/GolfResort3.png"
           },
           {
-            "url": "./images/industry/GolfResort/GolfResort4.png"
+            "url": "./images/industry/Resorts/GolfResort/GolfResort4.png"
           }
         ],
         "list1": [
@@ -3780,19 +4164,19 @@
       {
         "id": "9",
         "name": "Island Resort",
-        "industryImage": "./images/industry/IslandResort/IslandResort1.png",
+        "industryImage": "./images/industry/Resorts/IslandResort/IslandResort1.png",
         "imgData": [
           {
-            "url": "./images/industry/IslandResort/IslandResort1.png"
+            "url": "./images/industry/Resorts/IslandResort/IslandResort1.png"
           },
           {
-            "url": "./images/industry/IslandResort/IslandResort2.png"
+            "url": "./images/industry/Resorts/IslandResort/IslandResort2.png"
           },
           {
-            "url": "./images/industry/IslandResort/IslandResort3.png"
+            "url": "./images/industry/Resorts/IslandResort/IslandResort3.png"
           },
           {
-            "url": "./images/industry/IslandResort/IslandResort4.png"
+            "url": "./images/industry/Resorts/IslandResort/IslandResort4.png"
           }
         ],
         "list1": [
@@ -3850,19 +4234,19 @@
       {
         "id": "10",
         "name": "Pet Friendly Resort",
-        "industryImage": "./images/industry/PetFriendlyResort/PetFriendlyResort1.png",
+        "industryImage": "./images/industry/Resorts/PetFriendlyResort/PetFriendlyResort1.png",
         "imgData": [
           {
-            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort1.png"
+            "url": "./images/industry/Resorts/PetFriendlyResort/PetFriendlyResort1.png"
           },
           {
-            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort2.png"
+            "url": "./images/industry/Resorts/PetFriendlyResort/PetFriendlyResort2.png"
           },
           {
-            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort3.png"
+            "url": "./images/industry/Resorts/PetFriendlyResort/PetFriendlyResort3.png"
           },
           {
-            "url": "./images/industry/PetFriendlyResort/PetFriendlyResort4.png"
+            "url": "./images/industry/Resorts/PetFriendlyResort/PetFriendlyResort4.png"
           }
         ],
         "list1": [
@@ -3902,6 +4286,101 @@
           }
         ],
         "url": "/technical-school"
+      },
+      {
+        "id": "11",
+        "name": "Lake Resorts",
+        "industryImage": "./images/industry/Resorts/LakeResorts/LakeResorts1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/Resorts/LakeResorts/LakeResorts1.png"
+          },
+          {
+            "url": "./images/industry/Resorts/LakeResorts/LakeResorts2.png"
+          },
+          {
+            "url": "./images/industry/Resorts/LakeResorts/LakeResorts3.png"
+          },
+          {
+            "url": "./images/industry/Resorts/LakeResorts/LakeResorts4.png"
+          },
+          {
+            "url": "./images/industry/Resorts/LakeResorts/LakeResorts5.png"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Welcome to AfmX, your premier partner in enhancing the beauty and functionality of Lake Resorts. As owners and managers, your commitment to providing an exceptional experience is our priority. AfmX specializes in comprehensive services tailored to meet the unique needs of lakefront properties. From meticulous cleaning to skilled handyman services, our dedicated team ensures your resort remains pristine and inviting. Our expertise extends to cutting edge disinfection protocols, guaranteeing a safe and hygienic environment for your guests. Elevate the standards of your Lake Resort with AfmX where excellence meets tranquility."
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Recreation Resort",
+        "industryImage": "./images/industry/Resorts/RecreationResort/RecreationResort1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/Resorts/RecreationResort/RecreationResort1.png"
+          },
+          {
+            "url": "./images/industry/Resorts/RecreationResort/RecreationResort2.png"
+          },
+          {
+            "url": "./images/industry/Resorts/RecreationResort/RecreationResort3.png"
+          },
+          {
+            "url": "./images/industry/Resorts/RecreationResort/RecreationResort4.png"
+          },
+          {
+            "url": "./images/industry/Resorts/RecreationResort/RecreationResort5.png"
+          },
+          {
+            "url": "./images/industry/Resorts/RecreationResort/RecreationResort6.png"
+          }
+        ],
+        "paira":[
+          {
+            "text":"Welcome to AfmX Your Premier Partner in Recreation Resort Maintenance! As owners and managers, we understand the importance of maintaining a pristine and welcoming environment for your guests. AfmX specializes in providing top notch cleaning, handyman, and disinfection services tailored to meet the unique needs of recreation resorts."
+          },
+          {
+            "text": "Our dedicated team is committed to ensuring that every corner of your resort reflects the highest standards of cleanliness and functionality. From thorough cleaning services that leave spaces sparkling, to skilled handymen addressing maintenance needs promptly, AfmX is your one stop solution for a seamless and enjoyable guest experience."
+          }
+        ],
+        "paira2": [
+          {
+            "text": "With a focus on efficiency and excellence, our disinfection services go beyond surface cleaning, utilizing state of the art methods to create a safe and hygienic atmosphere for both guests and staff. Trust AfmX to elevate your recreation resort with our comprehensive suite of services, allowing you to focus on what matters most providing an unforgettable experience for your guests."
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Mountain Resorts",
+        "industryImage": "./images/industry/Resorts/MountainResorts/MountainResorts1.png",
+        "imgData": [
+          {
+            "url": "./images/industry/Resorts/MountainResorts/MountainResorts1.png"
+          },
+          {
+            "url": "./images/industry/Resorts/MountainResorts/MountainResorts2.png"
+          },
+          {
+            "url": "./images/industry/Resorts/MountainResorts/MountainResorts3.png"
+          },
+          {
+            "url": "./images/industry/Resorts/MountainResorts/MountainResorts4.png"
+          },
+          {
+            "url": "./images/industry/Resorts/MountainResorts/MountainResorts5.png"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Welcome to AfmX, your premier partner in elevating the hospitality experience at mountain resorts. As owners and managers, we understand the unique challenges of maintaining a pristine and welcoming environment in such picturesque settings. Our comprehensive suite of services, including cleaning, handyman support, and top tier disinfection, is tailored to meet the distinctive needs of mountain resort properties."
+          },
+          {
+            "text": "At AfmX, we prioritize excellence in every detail, ensuring that your guests enjoy a seamless and memorable stay amidst the breathtaking surroundings. Our dedicated team of professionals is committed to delivering prompt, reliable, and high quality services, allowing you to focus on providing an exceptional guest experience. From routine maintenance to specialized disinfection protocols, AfmX is your trusted partner in preserving the beauty and functionality of your mountain resort. Let us handle the details, so you can concentrate on creating unforgettable moments for your guests. Elevate your mountain resort experience with AfmX today."
+          }
+        ]
       }
     ]
   },
@@ -4341,22 +4820,22 @@
   {
     "id": "18",
     "name": "Grocery Stores",
-    "industryImage": "./images/industry/GroceryStores/GroceryStores1.png",
+    "industryImage": "./images/industry/GroceryStores/GroceryStores/GroceryStores1.jpg",
     "url": "/industrirs-list/18",
     "data": [
       {
         "id": "1",
         "name": "Grocery Stores",
-        "industryImage": "./images/industry/GroceryStores/GroceryStores1.png",
+        "industryImage": "./images/industry/GroceryStores/GroceryStores/GroceryStores1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/GroceryStores/GroceryStores1.png"
+            "url": "./images/industry/GroceryStores/GroceryStores/GroceryStores1.jpg"
           },
           {
-            "url": "./images/industry/GroceryStores/GroceryStores2.png"
+            "url": "./images/industry/GroceryStores/GroceryStores/GroceryStores2.jpg"
           },
           {
-            "url": "./images/industry/GroceryStores/GroceryStores3.png"
+            "url": "./images/industry/GroceryStores/GroceryStores/GroceryStores3.jpg"
           }
         ],
         "list1": [
@@ -4402,31 +4881,121 @@
             "text": "Partner with AfmX for a seamless facility management experience. Let us handle the details so you can focus on what matters most – providing an exceptional shopping experience for your customers."
           }
         ]
+      },
+      {
+        "id": "2",
+        "name": "Convenience",
+        "industryImage": "./images/industry/GroceryStores/Convenience/Convenience1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/GroceryStores/Convenience/Convenience1.jpg"
+          },
+          {
+            "ur1":"./images/industry/GroceryStores/Convenience/Convenience2.jpg"
+          },
+          {
+            "ur1":"./images/industry/GroceryStores/Convenience/Convenience3.jpg"
+          },
+          {
+            "ur1":"./images/industry/GroceryStores/Convenience/Convenience4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Experience unmatched convenience and efficiency with AfmX, your trusted partner in comprehensive store management solutions. Our tailored services go beyond cleaning to ensure your convenience store operates seamlessly. From meticulous maintenance to inventory optimization, AfmX is committed to enhancing your store's functionality. Elevate your operational standards with our dedicated team, offering a range of services designed to revitalize your store environment. Discover the difference AfmX can make in streamlining your convenience store management, so you can focus on what matters most serving your customers and growing your business."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Supermarket",
+        "industryImage": "./images/industry/GroceryStores/Supermarket/Supermarket1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/GroceryStores/Supermarket/Supermarket1.jpg"
+          },
+          {
+            "url": "./images/industry/GroceryStores/Supermarket/Supermarket2.jpg"
+          },
+          {
+            "url": "./images/industry/GroceryStores/Supermarket/Supermarket3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Discover unparalleled service excellence at AfmX, your trusted partner for comprehensive solutions in supermarket management. From top tier cleaning services that ensure spotless aisles to skilled handymen adept at tackling any maintenance challenge, AfmX delivers a seamless experience. Our commitment extends beyond the ordinary we offer a spectrum of services designed to elevate the functionality and aesthetics of your supermarket. Whether it's janitorial expertise, handyman wizardry, or a host of other specialized services, AfmX is your one stop destination for excellence in supermarket facility management. Experience the difference with AfmX, where excellence is not just a goal but a guarantee."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Department",
+        "industryImage": "./images/industry/GroceryStores/Department/Department1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/GroceryStores/Department/Department1.jpg"
+          },
+          {
+            "url": "./images/industry/GroceryStores/Department/Department2.jpg"
+          },
+          {
+            "url": "./images/industry/GroceryStores/Department/Department3.jpg"
+          },
+          {
+            "url": "./images/industry/GroceryStores/Department/Department4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Experience seamless facility management with AfmX your go to solution for top notch cleaning, handyman services, and beyond. Elevate operational efficiency as our skilled professionals meticulously handle every cleaning task, ensuring a pristine and inviting environment for your department store. From adept handyman services to a wide array of specialized offerings, AfmX is committed to providing a comprehensive suite of solutions tailored to meet the unique needs of your retail space. Trust us to go beyond the surface, delivering excellence in every corner and ensuring your store remains a shining example of cleanliness and functionality. With AfmX, your department store is not just managed; it's elevated to new standards of excellence."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Warehouse",
+        "industryImage": "./images/industry/GroceryStores/Warehouse/Warehouse1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/GroceryStores/Warehouse/Warehouse1.jpg"
+          },
+          {
+            "url": "./images/industry/GroceryStores/Warehouse/Warehouse2.jpg"
+          },
+          {
+            "url": "./images/industry/GroceryStores/Warehouse/Warehouse3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Optimize the efficiency of your warehouse operations with AFMX, your go to solution for comprehensive facility management. Our services extend beyond the ordinary, covering essential areas like cleaning and handyman services, ensuring your warehouse is not just operational but thriving. From meticulous cleaning protocols that maintain hygiene standards to skilled handymen ready to tackle any maintenance task, AFMX is your trusted partner for a seamlessly run warehouse. Discover the difference of our holistic approach that goes beyond the basics, offering you a range of services that elevate your warehouse management experience. Choose AFMX for excellence in every detail, because your warehouse deserves nothing less."
+          }
+        ]
       }
     ]
   },
   {
     "id": "19",
     "name": "Car Dealerships",
-    "industryImage": "./images/industry/CarDealerships/CarDealerships1.png",
+    "industryImage": "./images/industry/CarDealerships/CarDealership/CarDealership1.jpg",
     "url": "/car-dealerships",
     "data": [
       {
         "id": 1,
-        "name": "Car Dealerships",
-        "industryImage": "./images/industry/CarDealerships/CarDealerships1.png",
+        "name": "Car Dealership",
+        "industryImage": "./images/industry/CarDealerships/CarDealership/CarDealership1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/CarDealerships/CarDealerships1.png"
+            "url": "./images/industry/CarDealerships/CarDealership/CarDealership1.jpg"
           },
           {
-            "url": "./images/industry/CarDealerships/CarDealerships2.png"
+            "url": "./images/industry/CarDealerships/CarDealership/CarDealership2.jpg"
           },
           {
-            "url": "./images/industry/CarDealerships/CarDealerships3.png"
+            "url": "./images/industry/CarDealerships/CarDealership/CarDealership3.jpg"
           },
           {
-            "url": "./images/industry/CarDealerships/CarDealerships4.png"
+            "url": "./images/industry/CarDealerships/CarDealership/CarDealership4.jpg"
           }
         ],
         "list1": [
@@ -4457,9 +5026,125 @@
             "text": "AfmX is dedicated to delivering services on time and within budget, allowing you to focus on your core business operations."
           }
         ]
+      },
+      {
+        "id": 2,
+        "name": "Independent",
+        "industryImage": "./images/industry/CarDealerships/Independent/IndependentCarDealership1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CarDealerships/Independent/IndependentCarDealership1.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/Independent/IndependentCarDealership2.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/Independent/IndependentCarDealership3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Discover a new era of automotive excellence with AfmX, your trusted partner in elevating independent car dealerships. Our comprehensive cleaning services redefine the standards of presentation, ensuring that your showroom radiates professionalism and captivates potential buyers. Beyond immaculate spaces, AfmX goes the extra mile, offering a suite of additional services tailored for managers like you. From inventory management solutions to streamlined logistics, we understand the unique demands of independent car dealerships. Experience a synergy of cleanliness, efficiency, and professionalism with AfmX where excellence meets innovation in automotive care."
+          }
+        ]
+      },
+      {
+        "id":3,
+        "name": "Franchise",
+        "industryImage": "./images/industry/CarDealerships/Franchise/Franchise1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CarDealerships/Franchise/Franchise1.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/Franchise/Franchise2.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/Franchise/Franchise3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Revolutionize your Franchise Car dealership with AfmX's comprehensive cleaning and beyond services. Elevate the standard of cleanliness at your dealership by choosing AfmX where excellence meets efficiency. Our tailored solutions cater specifically to the needs of car managers, ensuring a pristine and inviting environment for both staff and customers. From deep cleaning to specialized services, AfmX is committed to enhancing the overall appeal of your dealership. Experience a new level of cleanliness and efficiency with AfmX, setting your franchise apart in the automotive industry. Choose AfmX for a spotless and inviting dealership atmosphere that leaves a lasting impression."
+          }
+        ]
+      },
+      {
+        "id":4,
+        "name": "Brand Specific",
+        "industryImage": "./images/industry/CarDealerships/BrandSpecific/BrandSpecific1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CarDealerships/BrandSpecific/BrandSpecific1.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/BrandSpecific/BrandSpecific2.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/BrandSpecific/BrandSpecific3.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/BrandSpecific/BrandSpecific4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "At AfmX, we redefine the standard of excellence in car dealership management by offering an array of specialized services tailored for brand specific needs. Elevate your dealership's image with our premium cleaning services, meticulously designed to enhance the allure of every vehicle on your showroom floor. Discover a comprehensive suite of solutions that go beyond cleaning, including personalized detailing, maintenance packages, and specialized care to revitalize the brand experience for your customers. Our commitment to excellence extends to every corner of your dealership, ensuring that each vehicle reflects the prestige and quality associated with your brand. Trust AfmX to provide a level of service that exceeds expectations, setting your"
+          }
+        ] 
+      },
+      {
+        "id":5,
+        "name": "Chain",
+        "industryImage": "./images/industry/CarDealerships/Chain/Chain1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CarDealerships/Chain/Chain1.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/Chain/Chain2.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/Chain/Chain3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Elevate your chain car dealership's standards cleaning and beyond. Our tailored services go with AfmX, your trusted partner in comprehensive beyond the ordinary, ensuring a pristine and inviting atmosphere for both staff and customers. From meticulous showroom cleaning to expert vehicle detailing, AfmX takes care of every aspect to enhance your dealership's image. Our team of professionals is committed to revitalizing your spaces, delivering an unparalleled level of cleanliness and presentation. Experience the difference with AfmX where excellence meets automotive sophistication."
+          }
+        ]
+      },
+      {
+        "id":6,
+        "name": "Big Used",
+        "industryImage": "./images/industry/CarDealerships/BigUsed/BigUsed1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CarDealerships/BigUsed/BigUsed1.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/BigUsed/BigUsed2.jpg"
+          },
+          {
+            "url": "./images/industry/CarDealerships/BigUsed/BigUsed3.jpg"
+          }
+        ],
+        "list1":[ 
+          {
+            "text": "At AfmX, we understand the dynamic challenges that managers of large used car dealerships face, especially when it comes to maintaining a fleet of vehicles that leave a lasting impression on potential buyers. Our comprehensive cleaning services go beyond the ordinary, ensuring that every vehicle in your inventory sparkles both inside and out. From meticulous interior detailing to high pressure exterior cleaning, our team at AfmX is committed to enhancing the overall presentation of your cars."
+          },
+          {
+            "text": "But we don't stop at cleaning. AfmX offers a suite of additional services tailored to meet the unique needs of big used car dealerships. Whether it's upholstery restoration, odor elimination, or paint touch ups," 
+          }
+        ],
+        "paira2":[
+          {
+            "text": "our experts are equipped with the skills and tools to elevate the condition of every vehicle on your lot. Partner with AfmX to not only maintain but revitalize your inventory, leaving a lasting impression on potential buyers and setting your dealership apart from the rest. We're more than just a cleaning service; we're your trusted partner in showcasing the best of your used car collection."
+          }
+        ]
       }
-    ]
-  },
+    ] 
+  },   
   {
     "id": "2563",
     "name": "Federal And local Government",
@@ -5180,22 +5865,199 @@
   {
     "id": "30",
     "name": "Arenas",
-    "industryImage": "./images/industry/arenas.jpg",
+    "industryImage": "./images/industry/Arenas/HorseArena/HorseArena1.jpg",
     "url": "/industrirs-list/30",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Horse Arena",
+        "industryImage": "./images/industry/Arenas/HorseArena/HorseArena1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Arenas/HorseArena/HorseArena1.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/HorseArena/HorseArena2.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/HorseArena/HorseArena3.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/HorseArena/HorseArena4.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/HorseArena/HorseArena5.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform the management of your horse arena with AfmX a dedicated partner in ensuring cleanliness and beyond. Our specialized cleaning services are tailored for managers like you, offering meticulous attention to detail that goes beyond the surface. From waste management to arena grooming, we take care of the essentials, allowing you to focus on what matters most creating a pristine and safe environment for both riders and their equine companions. Explore the full spectrum of AfmX services, including maintenance, equipment upkeep, and expert consultations. Elevate the standards of your horse arena effortlessly with AfmX by your side."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Sports",
+        "industryImage": "./images/industry/Arenas/Sports/Sports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Arenas/Sports/Sports1.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/Sports/Sports2.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/Sports/Sports3.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/Sports/Sports4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Ensure your Sports Arena is in peak condition with AFMX's comprehensive cleaning and maintenance services tailored for managers like you. Our expert team goes beyond traditional cleaning, addressing every nook and cranny to guarantee a spotless and sanitized environment for both athletes and spectators. From specialized equipment cleaning to restroom hygiene management, we understand the unique needs of sports facilities. Elevate your venue's standards with AFMX's additional services, including waste management, landscaping, and facility maintenance. Trust us to revitalize your Sports Arena, creating an optimal and inviting space for events and competitions."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Music Arena",
+        "industryImage": "./images/industry/Arenas/MusicArena/MusicArena1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Arenas/MusicArena/MusicArena1.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/MusicArena/MusicArena2.jpg"
+          },
+          {
+            "url": "./images/industry/Arenas/MusicArena/MusicArena3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Experience the epitome of cleanliness and beyond with AfmX, your premier partner in music arena management. Our specialized cleaning services go beyond the surface, ensuring a pristine environment that mirrors the precision of your musical arrangements. From backstage sanctuaries to front of house brilliance, AfmX delivers meticulous attention to detail, leaving no note out of tune. Elevate the ambiance of your music arena with our comprehensive suite of services that extend far beyond cleaning. Trust AfmX to harmonize your space, offering tailored solutions that resonate with the unique demands of music arena management. Unleash the full potential of your venue with AfmX where every service hits the right note."
+          }
+        ]
       }
     ]
   },
   {
     "id": "31",
     "name": "Senior Living",
-    "industryImage": "./images/industry/seniorLiving.jpeg",
+    "industryImage": "./images/industry/SeniorLiving/LuxurySeniorLiving/LuxurySeniorLiving1.jpg",
     "url": "/industrirs-list/31",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Luxury Senior Living",
+        "industryImage": "./images/industry/SeniorLiving/LuxurySeniorLiving/LuxurySeniorLiving1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/SeniorLiving/LuxurySeniorLiving/LuxurySeniorLiving1.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/LuxurySeniorLiving/LuxurySeniorLiving2.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/LuxurySeniorLiving/LuxurySeniorLiving3.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/LuxurySeniorLiving/LuxurySeniorLiving4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Experience the epitome of service excellence with AFMX, where luxury senior living meets unparalleled care. Our team of dedicated professionals specializes in providing top tier cleaning, handyman, and disinfection services tailored to meet the unique needs of your esteemed community. Elevate the living experience for your residents with our meticulous attention to detail and commitment to maintaining the highest standards of cleanliness and safety. From immaculate living spaces to efficient maintenance solutions, AFMX ensures a seamless blend of opulence and functionality. Trust us to enhance the well being of your residents and the overall ambiance of your luxury senior living establishment."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Independent Senior Living",
+        "industryImage": "./images/industry/SeniorLiving/IndependentSeniorLiving/IndependentSeniorLiving1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/SeniorLiving/IndependentSeniorLiving/IndependentSeniorLiving1.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/IndependentSeniorLiving/IndependentSeniorLiving2.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/IndependentSeniorLiving/IndependentSeniorLiving3.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/IndependentSeniorLiving/IndependentSeniorLiving4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Discover a new standard of care for Independent Senior Living with AfmX. Our comprehensive services redefine the way owners and managers approach facility maintenance. From meticulous cleaning and expert handyman services to thorough disinfection protocols, AfmX is dedicated to ensuring a safe and comfortable environment for residents. Trust us to go beyond the ordinary, offering a range of specialized services that cater specifically to the unique needs of senior living communities. Elevate your standards with AfmX, where excellence meets dedication in creating spaces that promote well being and peace of mind for both residents and staff."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Retirement Senior Living",
+        "industryImage": "./images/industry/SeniorLiving/RetirementSeniorLiving/RetirementSeniorLiving1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/SeniorLiving/RetirementSeniorLiving/RetirementSeniorLiving1.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/RetirementSeniorLiving/RetirementSeniorLiving2.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/RetirementSeniorLiving/RetirementSeniorLiving3.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "Discover a new standard of care for your Retirement Senior Living community with AFMX's comprehensive services. Our dedicated team specializes in cleaning, handyman solutions, and advanced disinfection services tailored to meet the unique needs of senior living spaces. Elevate the well being of your residents and the efficiency of your facility with our trusted professionals who go beyond the ordinary. From meticulous cleaning routines to skilled handyman repairs, AFMX is committed to creating a safe, comfortable, and welcoming environment for seniors. Embrace a holistic approach to facility management and let AFMX enhance the overall quality of life for both residents and staff. Experience the difference with AFMX's versatile and reliable services designed exclusively for Retirement Senior Living."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Independent Living",
+        "industryImage": "./images/industry/SeniorLiving/IndependentLiving/IndependentLiving1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/SeniorLiving/IndependentLiving/IndependentLiving1.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/IndependentLiving/IndependentLiving2.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/IndependentLiving/IndependentLiving3.jpg"
+          },
+          {
+            "url": "./images/industry/SeniorLiving/IndependentLiving/IndependentLiving4.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text": "introducing AfmX Elevate Your Independent Living Facility"
+          },
+          {
+            "text": "AfmX delivers unparalleled janitorial cleaning services tailored for Independent Living managers and owners. Elevate your facility with our professional touch. Impeccable cleanliness, attention to detail, and a commitment to excellence define our services. Partner with AfmX for a pristine environment that mirrors the standards of your establishment."
+          },
+          {
+            "text": "Experience the AfmX Advantage:"
+          },
+          {
+            "text": "Customized Janitorial Solutions"
+          },
+          {
+            "text": "Exceptional Attention to Cleanliness"
+          },
+          {
+            "text": "Professionalism Beyond Compare"
+          },
+          {
+            "text": "Elevate your Independent Living facility with AfmX."
+          }
+        ]
       }
     ]
   },

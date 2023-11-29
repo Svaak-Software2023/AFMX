@@ -1638,11 +1638,11 @@
       {
         "id": "3",
         "name": "Sports Themed Night Clubs",
-        "industryImage": "./images/industry/EntertainmentVenues/SportsThemed/SportsThemed1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed1.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed2.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed3.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs2.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs3.jpg"}
 
 
         ],
@@ -1673,18 +1673,18 @@
       {
         "id": "5",
         "name": "Dance CLub",
-        "industryImage": "./images/industry/EntertainmentVenues/DanceCLub/DanceCLub1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/DanceClubs/DanceClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/DanceCLub/DanceCLub1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/DanceClubs/DanceClubs1.jpg"}
         ],
         "list1":[{"text":"Elevate the standards of your dance club with AFMX's comprehensive management services. Our dedicated team specializes in ensuring a spotless and inviting atmosphere for your patrons, with meticulous cleaning services tailored to the unique needs of nightlife establishments. Beyond cleanliness, AFMX offers a suite of additional services designed to streamline operations and enhance the overall experience. From efficient waste management to strategic space optimization, we go beyond the basics to revitalize your venue. Trust AFMX to deliver unparalleled support, allowing you to focus on creating memorable nights for your guests. With our expertise, your dance club will not only meet but exceed the expectations of both managers and patrons alike."}]
       },
       {
         "id": "6",
         "name": "Comedy Club",
-        "industryImage": "./images/industry/EntertainmentVenues/ComedyClub/ComedyClub1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/ComedyClubs/ComedyClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/ComedyClub/ComedyClub1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/ComedyClubs/ComedyClubs1.jpg"}
         ],
         "list1":[{"text":"Transform your Comedy Club experience with AFMX's comprehensive services tailored for managers like you. From meticulous cleaning to specialized solutions, AFMX goes beyond the ordinary, ensuring your venue is not just clean but also primed for success. Our dedicated team understands the unique demands of a Comedy Club environment, providing customized services that include janitorial excellence, venue setup, and more. Elevate the overall ambiance of your club, leaving a lasting impression on your patrons. Partner with AFMX to streamline operations and create an atmosphere where laughter takes center stage, while we take care of the rest. Experience the difference with AFMX's commitment to excellence in every detail."
         }]
@@ -1692,9 +1692,9 @@
       {
         "id": "7",
         "name": "Live Music Club",
-        "industryImage": "./images/industry/EntertainmentVenues/LiveMusicClub/LiveMusicClub1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/LiveMusicClubs/LiveMusicClubs1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/LiveMusicClub/LiveMusicClub1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/LiveMusicClubs/LiveMusicClubs1.jpg"}
 
 
         ],
@@ -1725,9 +1725,9 @@
       {
         "id": "10",
         "name": "Karaoke Clubs",
-        "industryImage": "./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs1.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs.jpg"}
         ],
         "list1":[{"text":"Unlock the full potential of your Karaoke club with AfmX's comprehensive management services. Our dedicated team specializes in providing top -notch cleaning solutions tailored for the unique needs of entertainment venues. From maintaining a pristine environment to ensuring seamless operations, AfmX goes beyond cleaning, offering a range of services designed to enhance your club's overall efficiency. Our expertise extends to equipment maintenance, staff training, and optimizing customer experiences, making AfmX your trusted partner in elevating your Karaoke club to new heights. Experience excellence in club management with AfmX – where every detail is meticulously handled to ensure your club's success."
         }]
@@ -1749,10 +1749,10 @@
       {
         "id": "12",
         "name": "Bowling Ally",
-        "industryImage": "./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly1.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly2.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley2.jpg"}
         ],
         "list1":[{"text":"Indulge in a seamless managerial experience at our state-of-the-art bowling alley, where precision meets pleasure. AFMX takes pride in offering a comprehensive suite of services tailored specifically for managers like you. From meticulous cleaning routines that ensure a pristine environment for your team-building events to a plethora of additional services that go beyond the lanes, we are committed to enhancing your bowling alley experience. Elevate your managerial responsibilities effortlessly with AFMX, where we take care of the details so you can focus on fostering camaraderie and success within your team. Discover the convenience of our professional services, designed to revitalize your bowling alley and create an ambiance that sparks productivity and enjoyment. Embark on a new era of seamless management with AFMX – where we not only meet but exceed your expectations."
         }]
@@ -1771,10 +1771,10 @@
       {
         "id": "14",
         "name": "Skating Rink",
-        "industryImage": "./images/industry/EntertainmentVenues/SkatingRink/SkatingRink1.jpg",
+        "industryImage": "./images/industry/EntertainmentVenues/SkateRing/SkateRing1.jpg",
         "imgData":[
-          {"url":"./images/industry/EntertainmentVenues/SkatingRink/SkatingRink1.jpg"},
-          {"url":"./images/industry/EntertainmentVenues/SkatingRink/SkatingRink2.jpg"}
+          {"url":"./images/industry/EntertainmentVenues/SkateRing/SkateRing1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SkateRing/SkateRing2.jpg"}
         ],
         "list1":[{"text":"Transform your skating rink into a pristine haven with AFMX's comprehensive managerial services. Our expert team specializes in meticulous cleaning routines, ensuring a spotless environment for skaters and patrons alike. Beyond cleanliness, we offer a range of services designed to enhance the overall experience of your skating facility. From maintenance and equipment checks to operational optimizations, we're dedicated to keeping your rink running smoothly. Trust AFMX to elevate the standard of care for your skating rink, providing more than just cleaning – a complete solution for managers seeking excellence."
         }]

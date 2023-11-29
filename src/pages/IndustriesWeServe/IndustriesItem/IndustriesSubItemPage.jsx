@@ -13,7 +13,7 @@ function IndustriesSubItemPage() {
     const data = response?.data.find((item) => item.name === name);
     return (
         <>
-           {data.imgData.length>0? <div className="container p-0 my-3">
+           {data?.imgData?.length>0? <div className="container p-0 my-3">
                 <div className="row m-0 p-0 ">
                     <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
                         <LeftMenue

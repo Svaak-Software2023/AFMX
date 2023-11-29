@@ -1176,6 +1176,7 @@
     "url": "/industrirs-list/3",
     "data": [
       {
+<<<<<<< HEAD
         "id": "",
         "name": "Food Events",
         "industryImage": "./images/industry/FoodEvents/FoodEvents1.png",
@@ -1188,10 +1189,25 @@
           },
           {
             "url": "./images/industry/FoodEvents/FoodEvents3.png"
+=======
+        "id": "1",
+        "name": "Engineering Construction",
+        "industryImage": "./images/industry/ConstructionSites/Engineering/Engineering1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ConstructionSites/Engineering/Engineering1.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/Engineering/Engineering2.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/Engineering/Engineering3.jpg"
+>>>>>>> 4a7157e03cd0f53feaa4f0d2b1d35f4388fa47f2
           }
         ],
         "list1": [
           {
+<<<<<<< HEAD
             "text": "Ensure a pristine and inviting atmosphere at your next food event with our top-tier janitorial cleaning services. We specialize in creating a sanitary environment that not only meets but exceeds industry standards. Our dedicated team of professional cleaners is committed to delivering exceptional results, allowing you to focus on what matters most – the success of your event."
           },
           {
@@ -1225,6 +1241,144 @@
           {
             "heading": "Client-Centric Approach: ",
             "text": "Your satisfaction is our priority, and we are committed to meeting and exceeding your expectations. Eco-Friendly Practices: Our commitment to sustainability ensures that your event remains environmentally conscious."
+=======
+            "text": "Explore the next frontier in engineering construction management with AFMX, where precision meets innovation. Our suite of services goes beyond the ordinary, offering tailored solutions for managers seeking excellence in project execution. From meticulous cleaning protocols to cutting-edge technologies, AFMX is your strategic partner in achieving unparalleled efficiency. Seamlessly integrate our services into your construction workflow and experience the enhanced productivity that comes with our commitment to excellence. Elevate your projects to new heights with AFMX – where engineering meets a world of possibilities."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Heavy Timber type IV",
+        "industryImage": "./images/industry/ConstructionSites/HeavyTimberTypeIV/HeavyTimberTypeIV1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ConstructionSites/HeavyTimberTypeIV/HeavyTimberTypeIV1.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/HeavyTimberTypeIV/HeavyTimberTypeIV2.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/HeavyTimberTypeIV/HeavyTimberTypeIV3.jpg"
+          }
+        ],
+        "list": [
+          {
+            "text": "Empower your Heavy Timber Type IV management with AfmX's comprehensive cleaning and maintenance services. Elevate the longevity of your structures with our specialized expertise in Heavy Timber preservation. Discover a seamless blend of advanced cleaning techniques and industry-leading solutions tailored to meet the unique needs of your facility. Revitalize your space with our commitment to sustainability, ensuring a pristine environment that aligns with your ecoconscious goals. Experience the difference as AfmX goes beyond cleaning, offering a suite of services designed to safeguard and enhance your Heavy Timber assets. Embark on a journey of reliability and excellence with AfmX – where cleaning meets precision."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Specialized Industrial Construction",
+        "industryImage": "./images/industry/ConstructionSites/SpecializedIndustrial/SpecializedIndustrial1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ConstructionSites/SpecializedIndustrial/SpecializedIndustrial1.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/SpecializedIndustrial/SpecializedIndustrial2.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/SpecializedIndustrial/SpecializedIndustrial3.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/SpecializedIndustrial/SpecializedIndustrial4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "AfmX specializes in providing cutting-edge solutions for Specialized Industrial Construction Managers seeking unparalleled expertise in cleaning and a myriad of related services. Our commitment to excellence is evident in our innovative approach to industrial hygiene, facility maintenance, and beyond. With a focus on precision and efficiency, AfmX ensures that your industrial spaces not only meet but exceed industry standards for cleanliness and safety. From specialized cleaning protocols to comprehensive facility management, our tailored services are designed to optimize your operational environment. Trust AfmX to deliver the highest quality solutions, allowing you to focus on your core business while we handle the intricacies of industrial maintenance with unmatched proficiency"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Heavy Civil Construction",
+        "industryImage": "./images/industry/ConstructionSites/HeavyCivil/HeavyCivil1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ConstructionSites/HeavyCivil/HeavyCivil1.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/HeavyCivil/HeavyCivil2.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/HeavyCivil/HeavyCivil3.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/HeavyCivil/HeavyCivil4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AfmX, we understand the dynamic challenges that managers in Heavy Civil Construction face daily. Our comprehensive suite of cleaning and other specialized services is tailored to meet the unique demands of your industry. From meticulous site cleaning to advanced maintenance solutions, AfmX is your strategic partner in ensuring operational excellence. We leverage cutting-edge technologies and a highly skilled workforce to deliver results that go beyond conventional standards. Elevate your project efficiency, discover the power of innovation, revitalize your construction sites, and embark on a journey of seamless progress with AfmX as your trusted service provider. Experience the difference in quality and reliability that sets us apart in the Heavy Civil Construction landscape."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Infrastructure Construction",
+        "industryImage": "./images/industry/ConstructionSites/Infrastructure/Infrastructure1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ConstructionSites/Infrastructure/Infrastructure1.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/Infrastructure/Infrastructure2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your infrastructure with AfmX, where excellence meets efficiency in construction management. As seasoned professionals in the field, we specialize in providing comprehensive solutions for infrastructure construction. From meticulous project planning to seamless execution, our team ensures a smooth and timely delivery of your projects. AfmX goes beyond construction, offering a spectrum of services including top-tier cleaning solutions. Experience a holistic approach to facility management with AfmX, where your infrastructure not only stands tall but also thrives in a clean and well-maintained environment. Elevate your construction experience with AfmX – redefining excellence in every detail."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Commercial Construction",
+        "industryImage": "./images/industry/ConstructionSites/Commercial/Commercial1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ConstructionSites/Commercial/Commercial1.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/Commercial/Commercial2.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/Commercial/Commercial3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Maximize efficiency and elevate your commercial construction projects with AfmX. Our comprehensive cleaning and maintenance services are tailored to meet the unique needs of managers in the construction industry. From meticulous post -construction cleaning to ongoing site maintenance, AfmX ensures that your workspace remains pristine, promoting a safe and productive environment. Our experienced team is dedicated to revitalizing your construction sites, offering more than just cleaning – we provide a suite of services to enhance the overall project experience. With AfmX, embark on a journey of seamless operations and superior cleanliness, allowing you to focus on what you do best – managing successful construction projects."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Wood Frame Construction",
+        "industryImage": "./images/industry/ConstructionSites/WoodFrame/WoodFrame1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ConstructionSites/WoodFrame/WoodFrame1.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/WoodFrame/WoodFrame2.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/WoodFrame/WoodFrame3.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/WoodFrame/WoodFrame4.jpg"
+          },
+          {
+            "url": "./images/industry/ConstructionSites/WoodFrame/WoodFrame5.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Experience the pinnacle of convenience with AFMX's suite of specialized services tailored for Wood Frame Construction managers. From meticulous cleaning to comprehensive maintenance, our offerings go beyond the ordinary, ensuring your structures are not just cleaned but rejuvenated. Unleash the power of AFMX's expertise to streamline your operations and enhance the longevity of your wood frame constructions. Dive into a world where precision meets efficiency, and let AFMX redefine the standards of excellence in construction care. Elevate your managerial experience with our comprehensive solutions, delivering much more than just cleaning services."
+>>>>>>> 4a7157e03cd0f53feaa4f0d2b1d35f4388fa47f2
           }
         ]
       }
@@ -1248,7 +1402,139 @@
     "url": "/industrirs-list/5",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Research Lab",
+        "industryImage": "./images/industry/Laboratories/ResearchLab/ResearchLab1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/ResearchLab/ResearchLab1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/ResearchLab/ResearchLab2.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/ResearchLab/ResearchLab3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Empower your research lab with AfmX's comprehensive suite of cleaning and maintenance services. Our tailored solutions ensure a pristine and efficient laboratory environment, allowing your team to focus on groundbreaking research without distraction. From meticulous equipment cleaning to specialized waste management, AfmX is committed to enhancing the functionality and hygiene of your research space. Benefit from our industry expertise and cutting-edge technologies that guarantee optimal cleanliness, compliance, and safety. Elevate your lab's standards with AfmX, where precision meets excellence in research facility maintenance."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Hospitals",
+        "industryImage": "./images/industry/Laboratories/Hospitals/Hospitals1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/Hospitals/Hospitals1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Hospitals/Hospitals2.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Hospitals/Hospitals3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize your hospital's efficiency with AfmX, your trusted partner in comprehensive cleaning and facility management services. Our tailored solutions are designed to meet the unique needs of healthcare environments, ensuring a pristine and safe setting for both patients and staff. From specialized cleaning protocols to waste management and beyond, AfmX is committed to enhancing the overall hygiene and functionality of your hospital. Experience a seamless integration of services that goes beyond cleanliness, promoting a healthier and more productive environment. Elevate your hospital's standards with AfmX, where excellence meets innovation in facility management."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Molecular",
+        "industryImage": "./images/industry/Laboratories/Molecular/Molecular1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/Molecular/Molecular1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Molecular/Molecular2.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Molecular/Molecular3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Empower your molecular lab with AFMX's cutting-edge cleaning and comprehensive services tailored for managers like you. Our specialized solutions go beyond cleanliness, addressing the unique needs of molecular labs, ensuring an environment conducive to precision and accuracy. From meticulous equipment sanitation to maintaining stringent hygiene standards, AFMX is your partner in fostering a sterile and efficient workspace. Elevate your lab's operational efficiency with our dedicated team, providing solutions that resonate with the precision required in molecular research. Trust AFMX to safeguard your lab's integrity, allowing you to focus on groundbreaking discoveries and advancements."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Hematology",
+        "industryImage": "./images/industry/Laboratories/Hematology/Hematology1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/Hematology/Hematology1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Hematology/Hematology2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Maximize the efficiency of your Hematology lab with AfmX's comprehensive cleaning and maintenance services. Our tailored solutions go beyond the basics, ensuring a pristine environment for accurate diagnostics and research. From specialized equipment cleaning to waste management, our team is dedicated to enhancing the overall functionality of your lab. Trust AfmX for thorough, professional services that align with the rigorous standards of Hematology facilities. Elevate your lab's performance with our commitment to excellence in cleanliness and maintenance, allowing you to focus on advancing crucial research and patient care."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Chemistry",
+        "industryImage": "./images/industry/Laboratories/Chemistry/Chemistry1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/Chemistry/Chemistry1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Chemistry/Chemistry2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize your chemistry lab's efficiency with AfmX, your partner in cleanliness and beyond. Our comprehensive cleaning services are tailored to meet the exacting standards of laboratory environments, ensuring a pristine workspace for your team. From specialized equipment sanitization to meticulous waste management, AfmX goes beyond traditional cleaning to elevate the hygiene standards of your lab. Trust us for a seamless integration of cleaning solutions that prioritize safety, compliance, and sustainability. Experience a transformative approach to facility management, where precision meets cleanliness, and your lab operations are streamlined for peak performance. Choose AfmX for a spotless laboratory environment that fuels productivity and innovation."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Cytology",
+        "industryImage": "./images/industry/Laboratories/Cytology/Cytology1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/Cytology/Cytology1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Cytology/Cytology2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize the efficiency of your cytology lab with AFMX's comprehensive cleaning and support services. Our tailored solutions go beyond conventional cleaning, offering a meticulous approach to maintaining a sterile environment. From specialized equipment sanitation to waste management, AFMX ensures the highest standards for your lab's cleanliness. Our dedicated team understands the unique requirements of cytology labs, providing a seamless experience that enhances workflow and supports your commitment to precision. Trust AFMX for a comprehensive suite of services designed to elevate the hygiene standards and operational excellence of your cytology lab."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Histopathology",
+        "industryImage": "./images/industry/Laboratories/Histopathology/Histopathology1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/Histopathology/Histopathology1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Histopathology/Histopathology2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize your Histopathology lab management with AFMX's comprehensive cleaning services. We specialize in delivering meticulous cleaning solutions tailored to the unique needs of histopathology laboratories. From advanced equipment sanitation to maintaining sterile workspaces, our services ensure a hygienic environment conducive to precise diagnostics. Rely on AFMX for the seamless management of waste disposal, fostering compliance with industry regulations. Elevate your lab standards with our expertise in maintaining the highest levels of cleanliness, allowing your team to focus on groundbreaking research and diagnosis. Trust AFMX to go beyond routine cleaning, delivering excellence in every detail for an efficient and safe laboratory environment."
+          }
+        ]
       }
     ]
   },
@@ -1509,8 +1795,84 @@
     "url": "/industrirs-list/8",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Bonded Warehouses",
+        "industryImage": "./images/industry/Warehouses/Bonded/Bonded1.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Bonded/Bonded1.jpg"}
+        ],
+        "list1":[{"text":"Unlock the full potential of your bonded warehouse with AFMX's comprehensive suite of services. Our tailored solutions go beyond cleaning, encompassing a spectrum of offerings designed specifically for managers and owners. From meticulous maintenance to strategic optimization, AFMX is your partner in ensuring operational excellence. Experience the seamless integration of cutting-edge solutions, ranging from inventory management to compliance assurance. Elevate your warehouse efficiency and profitability with AFMX – your trusted ally in navigating the complexities of bonded warehouse management."}]
+      },
+      {
+        "id": "2",
+        "name": "Cooperative",
+        "industryImage": "./images/industry/Warehouses/Cooperative/Cooperative1.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Cooperative/Cooperative1.jpg"}
+        ],
+        "list1":[{"text":"Explore a new realm of efficiency and excellence with AfmX, your trusted partner in cooperative warehouse management. Our comprehensive suite of services goes beyond conventional cleaning, delving into a spectrum of offerings tailored for managers and owners like you. From streamlined inventory solutions to cutting-edge maintenance protocols, AfmX ensures your warehouse operates at peak performance. Elevate your operational standards with our specialized services designed to optimize space utilization, enhance safety protocols, and drive overall productivity. Experience a transformation in warehouse management by choosing AfmX as your strategic partner—where innovation meets reliability. Embark on a journey towards a cleaner, more efficient warehouse environment with AfmX."}]
+      },
+      {
+        "id": "3",
+        "name": "Smart",
+        "industryImage": "./images/industry/Warehouses/Smart/Smart1.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Smart/Smart1.jpg"}
+        ],
+        "list1":[{"text":"Empower your smart warehouse operations with AFMX, your trusted partner in comprehensive facility management services. Our tailored solutions go beyond cleaning, offering a suite of services designed to enhance efficiency and elevate your workspace. From state-of-the-art maintenance programs to advanced waste management, we're committed to optimizing your facility's performance. Our team of experts understands the unique challenges faced by warehouse managers and owners, providing specialized services that ensure a clean, safe, and productive environment. Discover the AFMX advantage and revolutionize your smart warehouse experience with our unparalleled commitment to excellence."}]
+      },
+      {
+        "id": "4",
+        "name": "Chemical",
+        "industryImage": "./images/industry/Warehouses/Chemical/Chemical1.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Chemical/Chemical1.jpg"}
+        ],
+        "list1":[{"text":"Maximize the efficiency and safety of your chemical warehouse with AfmX's comprehensive services. Our team specializes in cleaning solutions tailored to meet the unique needs of chemical storage facilities. From meticulous cleaning protocols to advanced maintenance services, we ensure a pristine environment that adheres to the highest industry standards. Trust AfmX to safeguard your assets and enhance operational excellence. Beyond cleaning, our suite of services extends to regulatory compliance assistance and innovative solutions to optimize your warehouse processes. Elevate your chemical storage management with AfmX, your trusted partner in maintaining a secure and compliant facility."}]
+      },
+      {
+        "id": "5",
+        "name": "Customs",
+        "industryImage": "./images/industry/Warehouses/Customs/Customs1.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Customs/Customs1.jpg"}
+        ],
+        "list1":[{"text":"Optimize the efficiency of your Customs warehouse with AFMX's comprehensive cleaning and maintenance services. Our tailored solutions cater to the unique needs of managers and owners, ensuring a pristine and organized workspace. From thorough cleaning to strategic space utilization, AFMX goes beyond the ordinary, delivering excellence in every service. Trust us to enhance your operational environment, minimize downtime, and maximize productivity. Elevate your warehouse management with AFMX, where meticulous care meets unparalleled expertise."}]
+      },
+      {
+        "id": "6",
+        "name": "Dedicated",
+        "industryImage": "./images/industry/Warehouses/Dedicated/Dedicated1.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Dedicated/Dedicated1.jpg"},
+          {"url":"./images/industry/Warehouses/Dedicated/Dedicated2.jpg"}
+        ],
+        "list1":[{"text":"Unlock the full potential of your dedicated warehouse with AFMx's comprehensive suite of services. Our expert team specializes in warehouse cleaning, ensuring a pristine and organized environment that enhances operational efficiency. Beyond cleanliness, AFMx offers a range of services tailored for managers and owners, including inventory management, space optimization, and advanced security solutions. Streamline your warehouse operations with our cutting-edge technologies and experienced staff, allowing you to focus on core business activities. Partner with AFMx for a customized approach that goes beyond cleaning, creating a seamless and productive environment for your warehouse."}]
+      },
+      {
+        "id": "7",
+        "name": "Private",
+        "industryImage": "./images/industry/Warehouses/Private/Private1.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Private/Private1.jpg"},
+          {"url":"./images/industry/Warehouses/Private/Private2.jpg"}
+
+        ],
+        "list1":[{"text":"Unlock the full potential of your private warehouse with AfmX, your trusted partner for comprehensive cleaning and a myriad of essential services. Our dedicated team understands the unique needs of warehouse management, offering tailored solutions that go beyond cleanliness. From specialized equipment maintenance to efficient inventory organization, AfmX is committed to enhancing the operational efficiency of your facility. Our services extend to pest control, waste management, and safety inspections, ensuring a pristine and secure environment for your valuable assets. Experience the difference with AfmX, where we redefine warehouse management through a holistic approach that prioritizes cleanliness, organization, and operational excellence."}]
+      },
+      {
+        "id": "8",
+        "name": "Warehouse",
+        "industryImage": "./images/industry/Warehouses/Warehousing/Warehousing3.jpg",
+        "imgData":[
+          {"url":"./images/industry/Warehouses/Warehousing/Warehousing1.jpg"},
+          {"url":"./images/industry/Warehouses/Warehousing/Warehousing2.jpg"},
+          {"url":"./images/industry/Warehouses/Warehousing/Warehousing3.jpg"}
+        ],
+        "list1":[{"text":"Optimize the efficiency of your warehouse operations with AFMX, your go-to solution for comprehensive facility management. Our services extend beyond the ordinary, covering essential areas like cleaning and handyman services, ensuring your warehouse is not just operational but thriving. From meticulous cleaning protocols that maintain hygiene standards to skilled handymen ready to tackle any maintenance task, AFMX is your trusted partner for a seamlessly run warehouse. Discover the difference of our holistic approach that goes beyond the basics, offering you a range of services that elevate your warehouse management experience. Choose AFMX for excellence in every detail, because your warehouse deserves nothing less."}]
       }
+
+
     ]
   },
   {
@@ -1756,7 +2118,184 @@
     "url": "/industrirs-list/10",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Night Clubs",
+        "industryImage": "./images/industry/EntertainmentVenues/NightClubs/NightClubs1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/NightClubs/NightClubs1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/NightClubs/NightClubs2.jpg"}
+
+        ],
+        "list1":[{"text":"Transform your night club into a seamless haven with AFMX – your ultimate partner in cleanliness, repairs, remodeling, and beyond. Elevate your establishment's standards with our comprehensive services tailored for managers and owners like you. From meticulous cleaning protocols to swift repairs and innovative remodeling solutions, AFMX is committed to enhancing your venue's allure. Experience a new level of operational efficiency and aesthetic appeal with our dedicated services, ensuring your patrons enjoy a flawless and captivating environment. Trust AFMX to go above and beyond, delivering unparalleled results that keep your night club at the forefront of excellence."}]
+      },
+      {
+        "id": "2",
+        "name": "Sports Bar",
+        "industryImage": "./images/industry/EntertainmentVenues/SportsBar/SportsBar1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/SportsBar/SportsBar1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsBar/SportsBar2.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsBar/SportsBar3.jpg"}
+        ],
+        "list1":[{"text":"Transform your sports bar into a haven of excellence with AFMX's comprehensive suite of services. Our expert team specializes in meticulous cleaning, ensuring every nook and cranny is spotless, creating an inviting atmosphere for patrons. Beyond cleanliness, we excel in repairs and remodeling, breathing new life into your space. From fixing minor wear and tear to executing full-scale renovations, our skilled professionals guarantee top-notch results. Elevate the aesthetics and functionality of your sports bar effortlessly with AFMX. Our commitment goes beyond routine maintenance — we're dedicated to helping you create an unparalleled experience for your customers. Discover the difference with AFMX and let us redefine excellence in sports bar management."}]
+      },
+      {
+        "id": "3",
+        "name": "Sports Themed Night Clubs",
+        "industryImage": "./images/industry/EntertainmentVenues/SportsThemed/SportsThemed1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed2.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SportsThemed/SportsThemed3.jpg"}
+
+
+        ],
+        "list1":[{"text":"Transform your sports-themed night club with AFMX's comprehensive services tailored for managers and owners. Our team specializes in meticulous cleaning, ensuring every corner reflects the pristine image of your establishment. From swift repairs to intricate remodeling, we seamlessly blend functionality with aesthetic appeal, enhancing the overall ambiance. Beyond the basics, AFMX offers a suite of services designed to elevate your club's operational efficiency and customer experience. Trust AFMX to go beyond conventional solutions, providing innovative and customized services that cater specifically to the dynamic needs of sports-themed nightclubs. Your vision, our expertise – let AFMX redefine excellence in club management services."}]
+      },
+      {
+        "id": "4",
+        "name": "Irish Pub",
+        "industryImage": "./images/industry/EntertainmentVenues/IrishPub/IrishPub1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/IrishPub/IrishPub1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/IrishPub/IrishPub2.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/IrishPub/IrishPub3.jpg"}
+
+
+        ],
+        "list1":[{"text":"Transform your Irish pub into a haven of excellence with AFMX's comprehensive suite of services. From meticulous cleaning to prompt repairs and transformative remodeling, AFMX is your trusted partner in maintaining the charm and functionality of your establishment. Our team of skilled professionals understands the unique needs of Irish pubs, ensuring that every detail is attended to with precision and care. Elevate the ambiance, discover new possibilities, and revitalize your space with AFMX's unrivaled expertise. Experience the difference as we embark on a journey to enhance the overall appeal and functionality of your pub, offering so much more than just services – we bring a commitment to excellence that speaks volumes."}]
+      },
+      {
+        "id": "4",
+        "name": "Brewpubs",
+        "industryImage": "./images/industry/EntertainmentVenues/Brewpubs/Brewpubs1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/Brewpubs/Brewpubs1.jpg"}
+        ],
+        "list1":[{"text":"Unlock the full potential of your brewpub with AFMX's comprehensive services tailored for managers. Our specialized cleaning services go beyond the ordinary, ensuring a pristine and sanitized environment for your patrons. From meticulous equipment maintenance to efficient waste management, AFMX takes care of the details, allowing you to focus on delivering an exceptional brewing experience. Elevate the standards of cleanliness and efficiency in your establishment, while our dedicated team seamlessly integrates into your operations. With AFMX, enjoy a seamless blend of professionalism and expertise, enhancing the overall ambiance and functionality of your brewpub. Trust us to handle the intricacies, so you can concentrate on crafting the perfect brews for your discerning customers."}]
+      },
+      {
+        "id": "5",
+        "name": "Dance CLub",
+        "industryImage": "./images/industry/EntertainmentVenues/DanceCLub/DanceCLub1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/DanceCLub/DanceCLub1.jpg"}
+        ],
+        "list1":[{"text":"Elevate the standards of your dance club with AFMX's comprehensive management services. Our dedicated team specializes in ensuring a spotless and inviting atmosphere for your patrons, with meticulous cleaning services tailored to the unique needs of nightlife establishments. Beyond cleanliness, AFMX offers a suite of additional services designed to streamline operations and enhance the overall experience. From efficient waste management to strategic space optimization, we go beyond the basics to revitalize your venue. Trust AFMX to deliver unparalleled support, allowing you to focus on creating memorable nights for your guests. With our expertise, your dance club will not only meet but exceed the expectations of both managers and patrons alike."}]
+      },
+      {
+        "id": "6",
+        "name": "Comedy Club",
+        "industryImage": "./images/industry/EntertainmentVenues/ComedyClub/ComedyClub1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/ComedyClub/ComedyClub1.jpg"}
+        ],
+        "list1":[{"text":"Transform your Comedy Club experience with AFMX's comprehensive services tailored for managers like you. From meticulous cleaning to specialized solutions, AFMX goes beyond the ordinary, ensuring your venue is not just clean but also primed for success. Our dedicated team understands the unique demands of a Comedy Club environment, providing customized services that include janitorial excellence, venue setup, and more. Elevate the overall ambiance of your club, leaving a lasting impression on your patrons. Partner with AFMX to streamline operations and create an atmosphere where laughter takes center stage, while we take care of the rest. Experience the difference with AFMX's commitment to excellence in every detail."
+        }]
+      },
+      {
+        "id": "7",
+        "name": "Live Music Club",
+        "industryImage": "./images/industry/EntertainmentVenues/LiveMusicClub/LiveMusicClub1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/LiveMusicClub/LiveMusicClub1.jpg"}
+
+
+        ],
+        "list1":[{"text":"Elevate your live music events with AFMX's comprehensive services designed for managers who demand excellence. Our team specializes in providing meticulous cleaning solutions to ensure your venue is spotless and ready for unforgettable performances. Beyond cleanliness, AFMX goes above and beyond by offering a myriad of additional services tailored to meet the diverse needs of live music managers. From stage setup and equipment maintenance to crowd control and artist support, we understand the intricate details that contribute to a seamless event execution. Let AFMX be your partner in creating not just events, but memorable experiences for your audience and artists alike."
+        }]
+      },
+      {
+        "id": "8",
+        "name": "Adult Clubs",
+        "industryImage": "./images/industry/EntertainmentVenues/AdultClubs/AdultClubs1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/AdultClubs/AdultClubs1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/AdultClubs/AdultClubs2.jpg"}
+        ],
+        "list1":[{"text":"Elevate your live music events with AFMX's comprehensive services designed for managers who demand excellence. Our team specializes in providing meticulous cleaning solutions to ensure your venue is spotless and ready for unforgettable performances. Beyond cleanliness, AFMX goes above and beyond by offering a myriad of additional services tailored to meet the diverse needs of live music managers. From stage setup and equipment maintenance to crowd control and artist support, we understand the intricate details that contribute to a seamless event execution. Let AFMX be your partner in creating not just events, but memorable experiences for your audience and artists alike."
+        }]
+      },
+      {
+        "id": "9",
+        "name": "Wine Clubs",
+        "industryImage": "./images/industry/EntertainmentVenues/WineClubs/WineClubs1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/WineClubs/WineClubs1.jpg"}
+        ],
+        "list1":[{"text":"Elevate your wine club experience with AFMX, your go-to partner for comprehensive cleaning and more. Our services are tailored to meet the unique needs of wine club managers, ensuring a seamless and pristine environment for your valued members. From meticulous cleaning routines to specialized maintenance, AFMX goes beyond the basics, creating an atmosphere that enhances the enjoyment of fine wines. Trust us to handle the details, allowing you to focus on curating unforgettable experiences for your members. Discover the difference AFMX can make in elevating the standards of cleanliness and service within your wine club."
+        }]
+      },
+      {
+        "id": "10",
+        "name": "Karaoke Clubs",
+        "industryImage": "./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs1.jpg"}
+        ],
+        "list1":[{"text":"Unlock the full potential of your Karaoke club with AfmX's comprehensive management services. Our dedicated team specializes in providing top -notch cleaning solutions tailored for the unique needs of entertainment venues. From maintaining a pristine environment to ensuring seamless operations, AfmX goes beyond cleaning, offering a range of services designed to enhance your club's overall efficiency. Our expertise extends to equipment maintenance, staff training, and optimizing customer experiences, making AfmX your trusted partner in elevating your Karaoke club to new heights. Experience excellence in club management with AfmX – where every detail is meticulously handled to ensure your club's success."
+        }]
+      },
+      {
+        "id": "11",
+        "name": "Amusement Parks",
+        "industryImage": "./images/industry/EntertainmentVenues/AmusementParks/AmusementParks1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/AmusementParks/AmusementParks1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/AmusementParks/AmusementParks2.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/AmusementParks/AmusementParks3.jpg"}
+
+
+        ],
+        "list1":[{"text":"AfmX offers an unparalleled suite of services tailored for amusement park managers seeking excellence in maintenance and cleanliness. Our dedicated team understands the unique challenges of the amusement park industry and delivers comprehensive cleaning solutions to ensure a pristine and inviting environment for guests. From routine janitorial services to specialized cleaning for rides and attractions, AfmX goes beyond the ordinary, providing meticulous attention to every detail. Our commitment extends to safety protocols, ensuring that your park not only shines but also adheres to the highest standards of hygiene. Trust AfmX to elevate the cleanliness standards of your amusement park, allowing you to focus on creating magical experiences for your visitors."
+        }]
+      },
+      {
+        "id": "12",
+        "name": "Bowling Ally",
+        "industryImage": "./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/BowlingAlly/BowlingAlly2.jpg"}
+        ],
+        "list1":[{"text":"Indulge in a seamless managerial experience at our state-of-the-art bowling alley, where precision meets pleasure. AFMX takes pride in offering a comprehensive suite of services tailored specifically for managers like you. From meticulous cleaning routines that ensure a pristine environment for your team-building events to a plethora of additional services that go beyond the lanes, we are committed to enhancing your bowling alley experience. Elevate your managerial responsibilities effortlessly with AFMX, where we take care of the details so you can focus on fostering camaraderie and success within your team. Discover the convenience of our professional services, designed to revitalize your bowling alley and create an ambiance that sparks productivity and enjoyment. Embark on a new era of seamless management with AFMX – where we not only meet but exceed your expectations."
+        }]
+      },
+      {
+        "id": "13",
+        "name": "Skate Park",
+        "industryImage": "./images/industry/EntertainmentVenues/SkatePark/SkatePark1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/SkatePark/SkatePark1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SkatePark/SkatePark2.jpg"}
+        ],
+        "list1":[{"text":"At AFMX, we redefine the standards of skate park management with our comprehensive suite of services. Our dedicated team ensures the cleanliness and maintenance of your skate park, creating a safe and enjoyable environment for enthusiasts of all levels. Beyond cleanliness, AFMX goes above and beyond, offering a range of additional services tailored to meet the unique needs of skate park managers. From equipment upkeep to event coordination, our holistic approach is designed to enhance the overall experience for both skaters and spectators. Choose AFMX for a seamless blend of professional care and passion for the skateboarding community, ensuring your park remains a hub of excitement and innovation."
+        }]
+      },
+      {
+        "id": "14",
+        "name": "Skating Rink",
+        "industryImage": "./images/industry/EntertainmentVenues/SkatingRink/SkatingRink1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/SkatingRink/SkatingRink1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/SkatingRink/SkatingRink2.jpg"}
+        ],
+        "list1":[{"text":"Transform your skating rink into a pristine haven with AFMX's comprehensive managerial services. Our expert team specializes in meticulous cleaning routines, ensuring a spotless environment for skaters and patrons alike. Beyond cleanliness, we offer a range of services designed to enhance the overall experience of your skating facility. From maintenance and equipment checks to operational optimizations, we're dedicated to keeping your rink running smoothly. Trust AFMX to elevate the standard of care for your skating rink, providing more than just cleaning – a complete solution for managers seeking excellence."
+        }]
+      },
+      {
+        "id": "15",
+        "name": "Zoos",
+        "industryImage": "./images/industry/EntertainmentVenues/Zoos/Zoos1.jpg",
+        "imgData":[
+          {"url":"./images/industry/EntertainmentVenues/Zoos/Zoos1.jpg"},
+          {"url":"./images/industry/EntertainmentVenues/Zoos/Zoos2.jpg"}
+        ],
+        "list1":[{"text":"At AfmX, we understand the unique challenges faced by zoo managers and owners in maintaining a clean and efficient environment for both visitors and animals. Our comprehensive suite of services goes beyond traditional cleaning, offering tailored solutions to meet the specific needs of your zoo facility. From specialized animal habitat cleaning to waste management, our team is dedicated to ensuring a hygienic and safe environment."
+        },
+      {
+        "text":"In addition to our cleaning services, AfmX provides a range of support services that contribute to the overall well-being of your zoo. Our team is trained to handle tasks such as landscaping, pest control, and maintenance, allowing you to focus on providing an exceptional experience for your visitors while we take care of the behind-the-scenes details. Partner with AfmX to enhance the overall efficiency and cleanliness of your zoo, creating an environment that promotes the health and happiness of both animals and guests."
+      }]
       }
     ]
   },
@@ -4667,7 +5206,208 @@
     "url": "/industrirs-list/32",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "HealthCenter",
+        "industryImage": "./images/industry/MedicalOffices/HealthCenter/HealthCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/HealthCenter/HealthCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/HealthCenter/HealthCenter2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/HealthCenter/HealthCenter3.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/HealthCenter/HealthCenter4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your Health Center into a pristine and well-maintained space with AFMX's comprehensive facility management services. Our expert team specializes in cleaning, ensuring every corner is spotless and hygienic. From routine maintenance to emergency repairs, our skilled handymen are ready to tackle any task efficiently, keeping your facility in top-notch condition. Embrace a healthier environment with our thorough disinfection services, meticulously designed to safeguard the well-being of your staff and visitors. AFMX goes beyond the basics, offering a range of services tailored to meet the unique needs of Health Center managers, providing you with a one-stop solution for a seamlessly managed facility. Elevate the standards of cleanliness and maintenance with AFMX, your trusted partner in facility management excellence."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Urgent Care",
+        "industryImage": "./images/industry/MedicalOffices/UrgentCare/UrgentCare1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/UrgentCare/UrgentCare1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/UrgentCare/UrgentCare2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/UrgentCare/UrgentCare3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "• Discover unparalleled support for your Urgent Care facility with AFMX's comprehensive services. From top-notch cleaning solutions to skilled handyman services, we ensure a pristine and functional environment. Our disinfection protocols go beyond industry standards, prioritizing the health and safety of your patients and staff. Experience the convenience of a one-stop solution, tailored to meet the unique needs of Urgent Care managers. Elevate the standards of cleanliness and maintenance in your facility with AFMX, your trusted partner in creating a safe and welcoming healthcare environment."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Orthopedics",
+        "industryImage": "./images/industry/MedicalOffices/Orthopedics/Orthopedics1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/Orthopedics/Orthopedics1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Orthopedics/Orthopedics2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Orthopedics/Orthopedics3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Experience seamless facility management with AfmX, your trusted partner in Orthopedics management. Our dedicated team ensures a pristine and organized environment through topnotch cleaning services. From maintaining the highest hygiene standards to handling handyman tasks efficiently, AfmX takes care of all your facility needs. Elevate your Orthopedics practice with our comprehensive suite of services, designed to create a comfortable and professional atmosphere. Trust AfmX to go beyond the basics, offering a range of services that extend far beyond cleaning, ensuring a well-rounded and impeccably managed facility for your Orthopedics practice."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Dialysis Center",
+        "industryImage": "./images/industry/MedicalOffices/DialysisCenter/DialysisCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/DialysisCenter/DialysisCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/DialysisCenter/DialysisCenter2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/DialysisCenter/DialysisCenter3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Discover unparalleled support for your Dialysis Center with AfmX. Our comprehensive services go beyond expectations, ensuring a pristine environment with top-notch cleaning solutions tailored to healthcare standards. From skilled handymen ready to address any facility maintenance needs to a suite of additional services, AfmX is your partner in excellence. Elevate the efficiency of your operations as we seamlessly manage the intricacies of your facility, providing unmatched reliability and quality in every service we offer. Trust AfmX to enhance your Dialysis Center's environment, so you can focus on delivering exceptional patient care."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Birthing Center",
+        "industryImage": "./images/industry/MedicalOffices/BirthingCenter/BirthingCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/BirthingCenter/BirthingCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/BirthingCenter/BirthingCenter2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/BirthingCenter/BirthingCenter3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Experience excellence in facility management with AfmX, your trusted partner in ensuring a pristine and well-maintained environment for your Birthing Center. Our dedicated team of professionals specializes in comprehensive cleaning services, utilizing cutting-edge techniques to uphold the highest standards of hygiene. From meticulous sanitation protocols to prompt and efficient handyman services, AfmX is committed to creating a safe and comfortable space for both staff and patients. Elevate the overall experience at your Birthing Center with our range of services that go beyond the ordinary – because we understand the importance of maintaining a nurturing environment for new beginnings. Explore the difference AfmX can make, ensuring your facility operates seamlessly while prioritizing cleanliness and functionality."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Dermatology",
+        "industryImage": "./images/industry/MedicalOffices/Dermatology/Dermatology1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/Dermatology/Dermatology1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Dermatology/Dermatology2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Dermatology/Dermatology3.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Dermatology/Dermatology4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Discover unparalleled support for dermatology practices with AFMX—a comprehensive solution tailored for managers. Elevate operational efficiency with our specialized cleaning services, ensuring a pristine environment that reflects your commitment to patient care. Our skilled handymen go beyond routine maintenance, providing seamless solutions to keep your facility running smoothly. From equipment upkeep to facility enhancements, AFMX is your trusted partner in maintaining a professional and welcoming dermatology clinic. Explore the so much more in our services, designed to meet the unique needs of dermatology managers who prioritize excellence in every aspect of their practice. Elevate your standards with AFMX's dedicated support for a thriving dermatology environment."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Dental",
+        "industryImage": "./images/industry/MedicalOffices/Dental/Dental1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/Dental/Dental1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Dental/Dental2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Dental/Dental3.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/Dental/Dental4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Discover seamless operational support for dental offices with AFMX! Elevate your practice with our comprehensive services, including expert cleaning solutions to maintain pristine and hygienic environments. Our skilled handymen ensure that your office is in top-notch condition, addressing maintenance needs promptly. AFMX goes beyond, offering a spectrum of services tailored for dental managers – from facility management to equipment maintenance, creating an environment that reflects excellence. Experience the ease of managing your dental office with AFMX, where every service is designed to optimize your workspace efficiently. Elevate your dental practice with AFMX – your partner in operational excellence."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Mental Health",
+        "industryImage": "./images/industry/MedicalOffices/MentalHealth/MentalHealth1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/MentalHealth/MentalHealth1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/MentalHealth/MentalHealth2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/MentalHealth/MentalHealth3.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/MentalHealth/MentalHealth4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your Mental Health office into a haven of tranquility with AfmX's comprehensive services. Our dedicated team of professionals specializes in cleaning, ensuring a pristine and hygienic environment that promotes wellness. From routine maintenance to emergency repairs, our skilled handymen are equipped to address any facility-related concerns promptly. Discover the convenience of a one-stop solution for all your office needs – whether it's organizing spaces for optimal functionality or managing day-to-day maintenance tasks. At AfmX, we go beyond services; we create an atmosphere that fosters a positive and supportive mental health environment for both your staff and clients. Experience the difference of a well-maintained, stress-free workspace with AfmX."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Physical Therapy",
+        "industryImage": "./images/industry/MedicalOffices/PhysicalTherapy/PhysicalTherapy1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/MedicalOffices/PhysicalTherapy/PhysicalTherapy1.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/PhysicalTherapy/PhysicalTherapy2.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/PhysicalTherapy/PhysicalTherapy3.jpg"
+          },
+          {
+            "url": "./images/industry/MedicalOffices/PhysicalTherapy/PhysicalTherapy4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Discover a new standard of excellence in the management of physical therapy offices with AfmX. Our comprehensive services go beyond the ordinary, offering specialized solutions tailored for managers seeking top-tier cleanliness and maintenance. From meticulous cleaning services that ensure a pristine environment for patient care to efficient handyman services addressing every office need, AfmX is your dedicated partner. Experience a seamless blend of professionalism and reliability as we go above and beyond to enhance the functionality and aesthetics of your physical therapy workspace. Trust AfmX for a holistic approach to office management, delivering excellence in every detail."
+          }
+        ]
       }
     ]
   },
@@ -4880,8 +5620,214 @@
   {
     "id": "8697655",
     "name": "Cruise Ship",
-    "industryImage": "./images/industry/CruiseShip/CruiseShip1.png",
+    "industryImage": "./images/industry/CruiseShip/CruiseShip/CruiseShip1.jpg",
     "url": "/industrirs-list/20",
+<<<<<<< HEAD
     "data": []
+=======
+    "data": [
+      {
+        "id": "1",
+        "name": "Cruise Ship",
+        "industryImage": "./images/industry/CruiseShip/CruiseShip/CruiseShip1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/CruiseShip/CruiseShip1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/CruiseShip/CruiseShip2.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/CruiseShip/CruiseShip3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Ensure an impeccable environment for your guests with AfmX Janitorial Cleaning Services. We specialize in delivering professional and efficient cleaning solutions tailored to meet the unique needs of cruise ships."
+          },
+          {
+            "heading": "Key Features: "
+          },
+          {
+            "heading": "Experienced Janitorial Team: ",
+            "text": "Our skilled professionals are trained to maintain high cleanliness standards on cruise ships."
+          },
+          {
+            "heading": "Tailored Solutions: ",
+            "text": "Customized cleaning plans to suit the specific requirements of your vessel."
+          }
+        ],
+        "list2": [
+          {
+            "heading": "Cutting-edge Equipment: ",
+            "text": "We use advanced cleaning equipment and eco-friendly products to ensure a pristine and hygienic environment."
+          },
+          {
+            "heading": "Flexible Scheduling: ",
+            "text": "Adaptable cleaning schedules to minimize disruption to your cruise operations."
+          },
+          {
+            "text": "Choose AfmX for a spotless and welcoming cruise ship experience."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Ocean",
+        "industryImage": "./images/industry/CruiseShip/Ocean/Ocean1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/Ocean/Ocean1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Ocean/Ocean2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Embark on a voyage of pristine excellence with AFMX, where our dedicated team ensures the seamless operation of your ocean cruise. Our managerial services extend beyond mere cleanliness, encompassing a spectrum of specialized solutions designed to enhance the overall experience for both passengers and crew. From rigorous sanitation protocols to waste management strategies, AFMX prioritizes the well-being of your vessel. Elevate the standards of cleanliness and efficiency with our comprehensive suite of services, allowing managers to focus on delivering an unparalleled oceanic journey. Trust AFMX to handle the intricacies of cruise management, leaving you with the peace of mind to navigate the high seas with confidence."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "River",
+        "industryImage": "./images/industry/CruiseShip/River/River1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/River/River1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/River/River2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Embark on a seamless journey with AfmX, your trusted partner in river cruise management. Our specialized cleaning services redefine standards, ensuring pristine vessels that reflect the excellence of your operations. From comprehensive sanitation solutions to meticulous maintenance, we go beyond cleanliness, enhancing the overall appeal and longevity of your fleet. Elevate guest satisfaction with our expert team, dedicated to preserving the charm of your river cruise experience. Explore the advantage of streamlined operations and lasting impressions, as AfmX becomes your go-to solution for unparalleled cleanliness and more."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Single, Solo",
+        "industryImage": "./images/industry/CruiseShip/SingleSolo/SingleSolo1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/SingleSolo/SingleSolo1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/SingleSolo/SingleSolo2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Indulge in a seamless voyage with AFMX, tailored exclusively for solo cruisers. Our unrivaled cleaning and concierge services redefine solo travel, ensuring a pristine and stress-free experience. From meticulous cabin upkeep to personalized assistance, we understand the unique needs of individual travelers. Embrace tranquility as our dedicated team tends to every detail, allowing you to focus solely on the joy of your solo adventure. Elevate your journey with AFMX, where solitude meets unparalleled service, promising a voyage unlike any other."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Family",
+        "industryImage": "./images/industry/CruiseShip/Family/Family1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/Family/Family1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Family/Family2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Indulge in the epitome of convenience with AfmX, where we redefine the cruise for family managers seeking seamless cleaning and beyond. Our comprehensive services cater to the diverse needs of your household, ensuring a pristine and organized living space. From meticulous cleaning routines to a spectrum of additional services, AfmX is your one-stop solution for elevating the quality of your family's daily life. "
+          },
+          {
+            "text": "Embrace a newfound sense of order as our expert team takes charge of the cleaning process, leaving you with more time to focus on what truly matters. Beyond cleaning, AfmX offers a range of personalized services tailored to your specific requirements, making daily tasks a breeze. Experience the ease of managing your family's well-being with AfmX – where excellence meets efficiency, and your home becomes a haven of comfort and tranquility"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Adult only",
+        "industryImage": "./images/industry/CruiseShip/AdultOnly/AdultOnly1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/AdultOnly/AdultOnly1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/AdultOnly/AdultOnly2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Embark on an unparalleled journey with AFMX, where luxury meets discretion. Our adult-only cruise offers an exclusive escape for discerning managers seeking a refined atmosphere. Indulge in a world of sophistication and personalized service as you sail to exotic destinations. Beyond the breathtaking views, AFMX goes the extra mile with top-notch cleaning services to ensure an immaculate environment. Elevate your expectations and discover a realm of tranquility where every detail is meticulously attended to. Immerse yourself in an experience that transcends the ordinary, promising a revitalizing getaway with unparalleled amenities. AFMX - where luxury, discretion, and exceptional service converge for an unforgettable voyage."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Couple",
+        "industryImage": "./images/industry/CruiseShip/Couple/Couple1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/Couple/Couple1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Couple/Couple2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "• Embark on a seamless journey with Couple Cruise Managers and experience a new level of service excellence with AfmX. Our dedicated team ensures a spotless environment through top-notch cleaning services, setting the stage for an unparalleled voyage. From meticulous cabin care to thorough common area maintenance, we go beyond the ordinary to guarantee a pristine and inviting atmosphere. Elevate your cruise experience with our comprehensive suite of services, including but not limited to laundry, room refresh, and more. Let AfmX redefine your expectations of cleanliness, making every moment aboard an unforgettable one for you and your guests."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Luxury",
+        "industryImage": "./images/industry/CruiseShip/Luxury/Luxury1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/Luxury/Luxury1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Luxury/Luxury2.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Luxury/Luxury3.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Luxury/Luxury4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Indulge in the epitome of luxury with AfmX, where meticulous attention to detail meets unparalleled service for cruise managers seeking excellence. Elevate your guests' experience with our comprehensive cleaning solutions that go beyond the ordinary. From immaculate staterooms to pristine public spaces, AfmX ensures a standard of cleanliness that befits the opulence of your luxury cruise. Our bespoke services extend beyond cleaning, offering a suite of solutions designed to exceed expectations. With AfmX, witness a seamless fusion of sophistication and functionality, where every detail is meticulously curated to enhance the overall ambiance of your cruise. Elevate the onboard experience for your discerning clientele with AfmX – the epitome of luxury service."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Adventure",
+        "industryImage": "./images/industry/CruiseShip/Adventure/Adventure1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/Adventure/Adventure1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Adventure/Adventure2.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Adventure/Adventure3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Embark on a seamless journey with AfmX, where our top-notch cleaning services redefine excellence for adventure cruise managers. Our dedicated team ensures every nook and cranny of your vessel is meticulously cleaned, guaranteeing a pristine environment for both crew and passengers. From comprehensive sanitation protocols to specialized cleaning solutions for aquatic environments, AfmX goes beyond the ordinary to meet the unique demands of adventure cruise settings. Trust us to not only maintain impeccable hygiene standards but also enhance the overall onboard experience, allowing you to focus on delivering unparalleled adventures at sea. Explore the difference AfmX can make – where cleanliness meets the high seas."
+          }
+        ]
+      }
+    ]
+>>>>>>> 4a7157e03cd0f53feaa4f0d2b1d35f4388fa47f2
   }
 ]

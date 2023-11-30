@@ -6,7 +6,8 @@ function IndustriesWeServe() {
     <>
       <ListItemWithImage
         name="Industries We Serve"
-        propData={IndustryWeserveData} />
+        propData={IndustryWeserveData}
+       />
     </>
   )
 }

@@ -161,7 +161,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link target="_blank" to="/industrirs-list" className="nav-link ">
+                    <Link target="_blank" to="/industries-list" className="nav-link ">
                       Industries We Serve
                     </Link>
                   </li>

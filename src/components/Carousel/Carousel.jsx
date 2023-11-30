@@ -38,9 +38,43 @@ const Slider = () => {
                   <div className="carousel-item" data-bs-interval="2000">
                     <img  src="images/Banner/NewEraNewTechnology.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
-                  <div className="carousel-item" data-bs-interval="2000">
+                  <div className="carousel-item">
+                    <img  src="images/Banner/HandymanServices.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/RoboticCleaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/GeoFencing.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/ConstructionCleaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/MaidXPro.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/PayAsYouGo.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/Membership.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/ChemicalShop.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/PriceCalculator.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/Membership.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img  src="images/Banner/JanitorialLeaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item">
                     <img  src="images/Banner/IsNowAvailable.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
+                  
                   <div className="carousel-item " >
                     <div className="carousel-video">
                         <video src="images/Banner/AdvertiseWithUs.mp4" autoPlay muted loop className="img-fluid"></video>
@@ -51,8 +85,6 @@ const Slider = () => {
                         <video src="images/Banner/RoboticCleaning.mp4" autoPlay muted loop className="img-fluid"></video>
                     </div>
                   </div>
-
-                 
                   <div className="carousel-item " >
                     <div className="carousel-video">
                         <video src="images/Banner/AFMXDonation.mp4" autoPlay muted loop className="img-fluid"></video>
@@ -61,6 +93,11 @@ const Slider = () => {
                   <div className="carousel-item " >
                       <div className="carousel-video">
                         <video src="images/Banner/PaymentOptions.mp4" autoPlay muted loop className="img-fluid"></video>
+                    </div>
+                  </div>
+                  <div className="carousel-item " >
+                    <div className="carousel-video">
+                        <video src="images/Banner/IntelliChat.mp4" autoPlay muted loop className="img-fluid"></video>
                     </div>
                   </div>
                 </div>

@@ -105,9 +105,9 @@ function App() {
           <Route path="/careers-employment" element={<CareersAndEmployment />} />
           <Route path="/apply-job" element={<ApplyJob />} />
 
-          <Route path="/industrirs-list" element={<IndustriesWeServe />} />
-          <Route path="/industrirs-list/:name" element={<SubList/>} />
-          <Route path="/industrirs-list/:parentName/:name" element={<IndustriesSubItemPage/>} />
+          <Route path="/industries-list" element={<IndustriesWeServe />} />
+          <Route path="/industries-list/:name" element={<SubList/>} />
+          <Route path="/industries-list/:parentName/:name" element={<IndustriesSubItemPage/>} />
 
           <Route path="/price-calculator" element={<PriceCalculator />} />
           <Route path="/complain-portal" element={<Loader/>} />

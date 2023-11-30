@@ -19,7 +19,7 @@ function IndustriesSubItemPage() {
                         <LeftMenue
                             type={parentName}
                             data={response.data}
-                            url={`/industrirs-list/${parentName}`}
+                            url={`/industries-list/${parentName}`}
                         />
                     </div>
                     <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">

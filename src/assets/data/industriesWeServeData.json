@@ -2164,7 +2164,9 @@
         "name": "Bonded Warehouses",
         "industryImage": "./images/industry/Warehouses/Bonded/Bonded1.jpg",
         "imgData": [
-          { "url": "./images/industry/Warehouses/Bonded/Bonded1.jpg" }
+          {
+            "url": "./images/industry/Warehouses/Bonded/Bonded1.jpg"
+          }
         ],
         "list1": [
           {
@@ -2177,7 +2179,9 @@
         "name": "Cooperative",
         "industryImage": "./images/industry/Warehouses/Cooperative/Cooperative1.jpg",
         "imgData": [
-          { "url": "./images/industry/Warehouses/Cooperative/Cooperative1.jpg" }
+          {
+            "url": "./images/industry/Warehouses/Cooperative/Cooperative1.jpg"
+          }
         ],
         "list1": [
           {
@@ -2189,7 +2193,11 @@
         "id": "3",
         "name": "Smart",
         "industryImage": "./images/industry/Warehouses/Smart/Smart1.jpg",
-        "imgData": [{ "url": "./images/industry/Warehouses/Smart/Smart1.jpg" }],
+        "imgData": [
+          {
+            "url": "./images/industry/Warehouses/Smart/Smart1.jpg"
+          }
+        ],
         "list1": [
           {
             "text": "Empower your smart warehouse operations with AFMX, your trusted partner in comprehensive facility management services. Our tailored solutions go beyond cleaning, offering a suite of services designed to enhance efficiency and elevate your workspace. From state-of-the-art maintenance programs to advanced waste management, we're committed to optimizing your facility's performance. Our team of experts understands the unique challenges faced by warehouse managers and owners, providing specialized services that ensure a clean, safe, and productive environment. Discover the AFMX advantage and revolutionize your smart warehouse experience with our unparalleled commitment to excellence."
@@ -2201,7 +2209,9 @@
         "name": "Chemical",
         "industryImage": "./images/industry/Warehouses/Chemical/Chemical1.jpg",
         "imgData": [
-          { "url": "./images/industry/Warehouses/Chemical/Chemical1.jpg" }
+          {
+            "url": "./images/industry/Warehouses/Chemical/Chemical1.jpg"
+          }
         ],
         "list1": [
           {
@@ -2214,7 +2224,9 @@
         "name": "Customs",
         "industryImage": "./images/industry/Warehouses/Customs/Customs1.jpg",
         "imgData": [
-          { "url": "./images/industry/Warehouses/Customs/Customs1.jpg" }
+          {
+            "url": "./images/industry/Warehouses/Customs/Customs1.jpg"
+          }
         ],
         "list1": [
           {
@@ -2227,8 +2239,12 @@
         "name": "Dedicated",
         "industryImage": "./images/industry/Warehouses/Dedicated/Dedicated1.jpg",
         "imgData": [
-          { "url": "./images/industry/Warehouses/Dedicated/Dedicated1.jpg" },
-          { "url": "./images/industry/Warehouses/Dedicated/Dedicated2.jpg" }
+          {
+            "url": "./images/industry/Warehouses/Dedicated/Dedicated1.jpg"
+          },
+          {
+            "url": "./images/industry/Warehouses/Dedicated/Dedicated2.jpg"
+          }
         ],
         "list1": [
           {
@@ -2241,8 +2257,12 @@
         "name": "Private",
         "industryImage": "./images/industry/Warehouses/Private/Private1.jpg",
         "imgData": [
-          { "url": "./images/industry/Warehouses/Private/Private1.jpg" },
-          { "url": "./images/industry/Warehouses/Private/Private2.jpg" }
+          {
+            "url": "./images/industry/Warehouses/Private/Private1.jpg"
+          },
+          {
+            "url": "./images/industry/Warehouses/Private/Private2.jpg"
+          }
         ],
         "list1": [
           {
@@ -2261,7 +2281,9 @@
           {
             "url": "./images/industry/Warehouses/Warehousing/Warehousing2.jpg"
           },
-          { "url": "./images/industry/Warehouses/Warehousing/Warehousing3.jpg" }
+          {
+            "url": "./images/industry/Warehouses/Warehousing/Warehousing3.jpg"
+          }
         ],
         "list1": [
           {
@@ -2557,6 +2579,9 @@
         "name": "Sports Themed Night Clubs",
         "industryImage": "./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs1.jpg",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs1.jpg"
@@ -2567,6 +2592,7 @@
           {
             "url": "./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs3.jpg"
           }
+<<<<<<< Updated upstream
 =======
         "imgData":[
           {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs1.jpg"},
@@ -2574,6 +2600,8 @@
           {"url":"./images/industry/EntertainmentVenues/SportsThemedNightClubs/SportsThemedNightClubs3.jpg"}
 
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "list1": [
@@ -2623,13 +2651,19 @@
         "name": "Dance CLub",
         "industryImage": "./images/industry/EntertainmentVenues/DanceClubs/DanceClubs1.jpg",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/DanceClubs/DanceClubs1.jpg"
           }
+<<<<<<< Updated upstream
 =======
         "imgData":[
           {"url":"./images/industry/EntertainmentVenues/DanceClubs/DanceClubs1.jpg"}
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "list1": [
@@ -2643,13 +2677,19 @@
         "name": "Comedy Club",
         "industryImage": "./images/industry/EntertainmentVenues/ComedyClubs/ComedyClubs1.jpg",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/ComedyClubs/ComedyClubs1.jpg"
           }
+<<<<<<< Updated upstream
 =======
         "imgData":[
           {"url":"./images/industry/EntertainmentVenues/ComedyClubs/ComedyClubs1.jpg"}
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "list1": [
@@ -2663,15 +2703,21 @@
         "name": "Live Music Club",
         "industryImage": "./images/industry/EntertainmentVenues/LiveMusicClubs/LiveMusicClubs1.jpg",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/LiveMusicClubs/LiveMusicClubs1.jpg"
           }
+<<<<<<< Updated upstream
 =======
         "imgData":[
           {"url":"./images/industry/EntertainmentVenues/LiveMusicClubs/LiveMusicClubs1.jpg"}
 
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "list1": [
@@ -2718,13 +2764,19 @@
         "name": "Karaoke Clubs",
         "industryImage": "./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs.jpg",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs.jpg"
           }
+<<<<<<< Updated upstream
 =======
         "imgData":[
           {"url":"./images/industry/EntertainmentVenues/KaraokeClubs/KaraokeClubs.jpg"}
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "list1": [
@@ -2759,6 +2811,9 @@
         "name": "Bowling Ally",
         "industryImage": "./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley1.jpg",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley1.jpg"
@@ -2766,10 +2821,13 @@
           {
             "url": "./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley2.jpg"
           }
+<<<<<<< Updated upstream
 =======
         "imgData":[
           {"url":"./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley1.jpg"},
           {"url":"./images/industry/EntertainmentVenues/BowlingAlley/BowlingAlley2.jpg"}
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "list1": [
@@ -2801,6 +2859,9 @@
         "name": "Skating Rink",
         "industryImage": "./images/industry/EntertainmentVenues/SkateRing/SkateRing1.jpg",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/SkateRing/SkateRing1.jpg"
@@ -2808,10 +2869,13 @@
           {
             "url": "./images/industry/EntertainmentVenues/SkateRing/SkateRing2.jpg"
           }
+<<<<<<< Updated upstream
 =======
         "imgData":[
           {"url":"./images/industry/EntertainmentVenues/SkateRing/SkateRing1.jpg"},
           {"url":"./images/industry/EntertainmentVenues/SkateRing/SkateRing2.jpg"}
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ],
         "list1": [
@@ -2825,8 +2889,12 @@
         "name": "Zoos",
         "industryImage": "./images/industry/EntertainmentVenues/Zoos/Zoos1.jpg",
         "imgData": [
-          { "url": "./images/industry/EntertainmentVenues/Zoos/Zoos1.jpg" },
-          { "url": "./images/industry/EntertainmentVenues/Zoos/Zoos2.jpg" }
+          {
+            "url": "./images/industry/EntertainmentVenues/Zoos/Zoos1.jpg"
+          },
+          {
+            "url": "./images/industry/EntertainmentVenues/Zoos/Zoos2.jpg"
+          }
         ],
         "list1": [
           {
@@ -5603,7 +5671,6 @@
           {
             "url": "./images/industry/PublicLibrary/PublicLibrary3.jpg"
           },
-
           {
             "url": "./images/industry/PublicLibrary/PublicLibrary3.jpg"
           }
@@ -6113,7 +6180,173 @@
     "url": "/industrirs-list/22",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Cargo Service Airports",
+        "industryImage": "./images/industry/Airports/CommercialServiceAirportsPrimary/CommercialServiceAirportsPrimary1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/CommercialServiceAirportsPrimary/CommercialServiceAirportsPrimary1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize operational efficiency at your Commercial Service Airport with AFMX's comprehensive range of services. Our tailored solutions encompass cleaning services and beyond, ensuring a seamless and hygienic environment for passengers and staff. Elevate your airport experience with our expertise in facility management, security, and maintenance. Trust AFMX to revitalize your airport spaces, providing a pristine and welcoming atmosphere. From thorough cleaning protocols to advanced facility maintenance, we embark on a journey to enhance the overall functionality of your airport. Experience the difference with AFMX as your trusted partner in delivering top-notch services for commercial airports."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Commercial service airports(non- primary)",
+        "industryImage": "./images/industry/Airports/CommercialServiceAirportsNonPrimary/CommercialServiceAirportsNonPrimary1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/CommercialServiceAirportsNonPrimary/CommercialServiceAirportsNonPrimary1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize operational efficiency at your Commercial Service Airport with AfmX, your trusted partner in comprehensive services. Elevate cleanliness standards with our top-tier cleaning solutions tailored for non-primary airports. Our dedicated team ensures a pristine environment, safeguarding passenger well-being and satisfaction."
+          },
+          {
+            "text": "Beyond cleaning, AfmX offers a suite of services designed to streamline airport management. From facility maintenance to logistics support, we are committed to enhancing your airport's functionality. Experience the convenience of a single, reliable source for all your operational needs, allowing you to focus on providing a seamless travel experience for passengers."
+          }
+        ],
+        "list2": [
+          {
+            "text": "Revitalize your airport's capabilities with AfmX's versatile services, setting new standards for excellence in non-primary airport management. Discover a partner dedicated to the success of your airport operations. Choose AfmX for unparalleled support and elevate your airport's performance to new heights."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Cargo service airports",
+        "industryImage": "./images/industry/Airports/CargoServiceAirports/CargoServiceAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/CargoServiceAirports/CargoServiceAirports1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Maximize operational efficiency and elevate cargo service standards at your airport with AFMX. Our comprehensive range of services goes beyond cleaning, offering solutions tailored for managers in the cargo industry. From meticulous cleaning protocols to streamlined logistics management, AFMX ensures a seamless experience for cargo operations. Our commitment to excellence extends to safety protocols, ensuring a secure environment for valuable cargo. Trust AFMX to revitalize your cargo services with a suite of solutions designed to meet the unique demands of airport cargo management. Experience a new era of efficiency and reliability with AFMX – your partner in optimizing cargo services."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Reliever airports",
+        "industryImage": "./images/industry/Airports/RelieverAirports/RelieverAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/RelieverAirports/RelieverAirports1/jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Experience unparalleled efficiency and excellence with AFMX, your trusted partner in airport management. Our dedicated team specializes in providing top-notch cleaning services and a wide array of essential facilities management solutions tailored for reliever airports. From maintaining pristine facilities to optimizing operational processes, AFMX is committed to ensuring a seamless and comfortable environment for both passengers and staff. Elevate your airport's standards with our comprehensive services, designed to revitalize and enhance the overall experience. Choose AFMX for a reliable partner that goes beyond expectations, delivering unmatched quality and efficiency for reliever airports."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "General aviation airports",
+        "industryImage": "./images/industry/Airports/GeneralAviationAirports/GeneralAviationAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/GeneralAviationAirports/GeneralAviationAirports1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize your General Aviation Airport with AFMX, your premier partner in comprehensive management solutions. Elevate operational excellence with our specialized cleaning services, ensuring pristine facilities that meet the highest industry standards. Beyond cleaning, AFMX offers a suite of services designed for managers seeking efficiency and effectiveness. Our experienced team is committed to revitalizing your airport environment, providing a seamless and stress-free experience for both staff and visitors. Explore the myriad ways AFMX can enhance your airport's functionality, from meticulous cleaning to a range of additional services tailored to meet the unique needs of General Aviation Airport managers. Choose AFMX for a partnership dedicated to excellence in every aspect of airport management."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": " National Airports",
+        "industryImage": "./images/industry/Airports/NationalAirports/NationalAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/NationalAirports/NationalAirports1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Enhance operational efficiency and elevate the standards of your national airport with AFMX's comprehensive cleaning and services solutions. Our tailored offerings go beyond traditional cleaning, encompassing a wide spectrum of specialized services designed specifically for airport environments. From advanced janitorial services to waste management, AFMX ensures a pristine and secure facility for both passengers and staff."
+          },
+          {
+            "text": "With a keen understanding of the unique challenges faced by national airports, AFMX delivers meticulous cleaning services coupled with cutting-edge technologies. Our commitment to excellence extends to environmental sustainability, incorporating eco-friendly practices to create a healthier and greener airport ecosystem. Trust AFMX to revitalize your airport's infrastructure, creating a welcoming and hygienic environment for travelers and employees alike."
+          }
+        ],
+        "list2": [
+          {
+            "text": "Explore a range of services that extend beyond cleaning, including maintenance, pest control, and hygiene management. AFMX is your strategic partner in maintaining a seamlessly functioning airport, ensuring a positive experience for all stakeholders. Discover the AFMX advantage and embark on a journey towards operational excellence with our specialized airport services."
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Regional Airports",
+        "industryImage": "./images/industry/Airports/RegionalAirports/RegionalAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/RegionalAirports/RegionalAirports1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Empower your regional airport with AFMX's comprehensive suite of services tailored for managers like you. Our specialized cleaning solutions go beyond the ordinary, ensuring a pristine and sanitized environment for passengers and staff alike. From meticulous terminal upkeep to runway maintenance, AFMX takes care of every detail to elevate your airport's operational efficiency. Benefit from our integrated services, covering not just cleaning but a host of other essential aspects. Trust AFMX to enhance the overall experience at your regional airport, contributing to its success and longevity. Discover the advantage of partnering with a team dedicated to the seamless functioning of your facility."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Local Airports",
+        "industryImage": "./images/industry/Airports/LocalAirports/LocalAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/LocalAirports/LocalAirports1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Enhance operational efficiency at your local airport with AFMX's comprehensive services tailored for managers. Our specialized cleaning solutions ensure a pristine environment, exceeding industry standards for hygiene and safety. From terminal areas to runways, our dedicated team ensures a spotless and secure atmosphere for both passengers and staff."
+          },
+          {
+            "text": "But AFMX offers more than just cleaning services – we provide a range of solutions designed to streamline airport management. Our cutting-edge technologies and expert personnel contribute to smoother logistics, reducing downtime and enhancing overall functionality. Partner with AFMX to experience the difference in airport management – where excellence meets innovation, and every detail is handled with precision. Elevate your airport's performance with AFMX's holistic approach to service."
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Basic Airpoarts",
+        "industryImage": "./images/industry/Airports/BasicAirports/BasicAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/BasicAirports/BasicAirports1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Experience seamless airport operations with AfmX, your trusted partner for comprehensive managerial solutions at basic airports. Elevate efficiency with our specialized cleaning services, ensuring pristine and sanitized environments for passengers and staff alike. Discover a range of additional services that go beyond the basics, including waste management, facility maintenance, and more. With AfmX, you can revitalize airport spaces, creating a welcoming atmosphere for travelers. Our experienced team is dedicated to enhancing your airport experience, providing a complete suite of services to embark on a journey of operational excellence. Trust AfmX for reliable, professional, and tailored solutions to meet the unique needs of basic airport management."
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Unclassified Airports",
+        "industryImage": "./images/industry/Airports/UnclassifiedAirports/UnclassifiedAirports1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Airports/UnclassifiedAirports/UnclassifiedAirports1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AFMx, we understand the unique challenges that managers of unclassified airports face in maintaining a clean and efficient environment. Our comprehensive services go beyond cleaning, offering tailored solutions designed to enhance every aspect of airport management. From janitorial services to facility maintenance, we prioritize the seamless operation of your airport, ensuring a safe and comfortable experience for both passengers and staff. Our team is dedicated to addressing the specific needs of unclassified airports, providing specialized support that goes above and beyond standard cleaning services. Trust AFMx to elevate the standards of cleanliness and operational excellence at your unclassified airport, contributing to a positive and welcoming atmosphere for all."
+          }
+        ]
       }
     ]
   },
@@ -6124,7 +6357,49 @@
     "url": "/industrirs-list/23",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Major Airlines",
+        "industryImage": "./images/industry/Major/Major1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Major/Major1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Elevate operational excellence with AFMX, your premier partner in comprehensive services for major airlines. Our tailored solutions go beyond cleaning, encompassing a spectrum of services designed to optimize efficiency and passenger satisfaction. From meticulous aircraft cleaning to advanced disinfection protocols, AFMX ensures a pristine and safe environment for your travelers. Beyond cleanliness, our offerings extend to ground services, waste management, and sustainable practices, aligning seamlessly with your commitment to environmental responsibility. Trust AFMX to deliver an elevated standard of care that enhances the overall travel experience, leaving a lasting impression on your passengers and reinforcing your airline's reputation for excellence."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "National Airlines",
+        "industryImage": "./images/industry/National/National1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/National/National1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Elevate operational excellence with AfmX, your trusted partner in comprehensive cleaning and essential services for national airlines. Our tailored solutions go beyond cleanliness, addressing the unique needs of aviation environments. From meticulous aircraft interior cleaning to specialized maintenance services, AfmX ensures an impeccable and safe travel experience for your passengers. Our commitment to quality extends to a range of offerings, including disinfection protocols, waste management, and facility upkeep. Partner with AfmX to enhance the efficiency and hygiene standards of your national airline, fostering a pristine environment that reflects your commitment to passenger well-being and satisfaction."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Regional Airlines",
+        "industryImage": "./images/industry/Regional/Regional1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Regional/Regional1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Optimize the operational efficiency of your regional airline with AFMX's comprehensive suite of services tailored for managers. From meticulous cleaning solutions to a myriad of additional services, we understand the unique demands of regional aviation. Our commitment to excellence ensures a seamless experience, allowing you to focus on the core aspects of your airline's success. AFMX goes beyond cleaning, offering solutions that enhance the overall environment, including waste management, facility maintenance, and more. Elevate your airline's standards with AFMX and experience a new level of service excellence that contributes to the smooth functioning of your operations."
+          }
+        ]
       }
     ]
   },
@@ -6663,7 +6938,6 @@
           }
         ]
       },
-
       {
         "id": "3",
         "name": "Commercial Real Estate Office",
@@ -7432,25 +7706,25 @@
   {
     "id": "2569875",
     "name": "Yacht Club",
-    "industryImage": "./images/industry/YachtYachtClub/YachtYachtClub1.png",
+    "industryImage": "./images/industry/Yacht/YachtClub/YachtClub1.jpg",
     "url": "/industrirs-list/20",
     "data": [
       {
         "id": "1",
         "name": "Yacht Club",
-        "industryImage": "./images/industry/YachtYachtClub/YachtYachtClub1.png",
+        "industryImage": "./images/industry/Yacht/YachtClub/YachtClub1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/YachtYachtClub/YachtYachtClub2.png"
+            "url": "./images/industry/Yacht/YachtClub/YachtClub2.jpg"
           },
           {
-            "url": "./images/industry/YachtYachtClub/YachtYachtClub1.png"
+            "url": "./images/industry/Yacht/YachtClub/YachtClub1.jpg"
           },
           {
-            "url": "./images/industry/YachtYachtClub/YachtYachtClub3.png"
+            "url": "./images/industry/Yacht/YachtClub/YachtClub3.jpg"
           },
           {
-            "url": "./images/industry/YachtYachtClub/YachtYachtClub4.png"
+            "url": "./images/industry/Yacht/YachtClub/YachtClub4.jpg"
           }
         ],
         "list1": [
@@ -7482,16 +7756,16 @@
       {
         "id": "2",
         "name": "Catamarans",
-        "industryImage": "./images/industry/Catamarans/Catamarans1.jpg",
+        "industryImage": "./images/industry/Yacht/Catamarans/Catamarans1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Catamarans/Catamarans2.jpg"
+            "url": "./images/industry/Yacht/Catamarans/Catamarans2.jpg"
           },
           {
-            "url": "./images/industry/Catamarans/Catamarans1.jpg"
+            "url": "./images/industry/Yacht/Catamarans/Catamarans1.jpg"
           },
           {
-            "url": "./images/industry/Catamarans/Catamarans3.jpg"
+            "url": "./images/industry/Yacht/Catamarans/Catamarans3.jpg"
           }
         ],
         "list1": [
@@ -7503,13 +7777,13 @@
       {
         "id": "3",
         "name": "Canopy",
-        "industryImage": "./images/industry/Canopy/Canopy1.jpg",
+        "industryImage": "./images/industry/Yacht/Canopy/Canopy1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Canopy/Canopy2.jpg"
+            "url": "./images/industry/Yacht/Canopy/Canopy2.jpg"
           },
           {
-            "url": "./images/industry/Canopy/Canopy1.jpg"
+            "url": "./images/industry/Yacht/Canopy/Canopy1.jpg"
           }
         ],
         "list1": [
@@ -7518,17 +7792,16 @@
           }
         ]
       },
-
       {
         "id": "4",
         "name": "Expedition",
-        "industryImage": "./images/industry/Expedition/Expedition1.jpg",
+        "industryImage": "./images/industry/Yacht/Expedition/Expedition1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Expedition/Expedition2.jpg"
+            "url": "./images/industry/Yacht/Expedition/Expedition2.jpg"
           },
           {
-            "url": "./images/industry/Expedition/Expedition1.jpg"
+            "url": "./images/industry/Yacht/Expedition/Expedition1.jpg"
           }
         ],
         "list1": [
@@ -7540,13 +7813,13 @@
       {
         "id": "5",
         "name": "Mega",
-        "industryImage": "./images/industry/Mega/Mega1.jpg",
+        "industryImage": "./images/industry/Yacht/Mega/Mega1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Mega/Mega2.png"
+            "url": "./images/industry/Yacht/Mega/Mega2.png"
           },
           {
-            "url": "./images/industry/Mega/Mega1.jpg"
+            "url": "./images/industry/Yacht/Mega/Mega1.jpg"
           }
         ],
         "list1": [
@@ -7558,19 +7831,19 @@
       {
         "id": "6",
         "name": "Luxury",
-        "industryImage": "./images/industry/Luxury/Luxury1.jpg",
+        "industryImage": "./images/industry/Yacht/Luxury/Luxury1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Luxury/Luxury2.jpg"
+            "url": "./images/industry/Yacht/Luxury/Luxury2.jpg"
           },
           {
-            "url": "./images/industry/Luxury/Luxury1.jpg"
+            "url": "./images/industry/Yacht/Luxury/Luxury1.jpg"
           },
           {
-            "url": "./images/industry/Luxury/Luxury3.jpg"
+            "url": "./images/industry/Yacht/Luxury/Luxury3.jpg"
           },
           {
-            "url": "./images/industry/Luxury/Luxury4.jpg"
+            "url": "./images/industry/Yacht/Luxury/Luxury4.jpg"
           }
         ],
         "list1": [
@@ -7582,13 +7855,13 @@
       {
         "id": "7",
         "name": "Classic",
-        "industryImage": "./images/industry/Classic/Classic1.jpg",
+        "industryImage": "./images/industry/Yacht/Classic/Luxury1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Classic/Classic2.jpg"
+            "url": "./images/industry/Yacht/Classic/Luxury2.jpg"
           },
           {
-            "url": "./images/industry/Classic/Classic1.jpg"
+            "url": "./images/industry/Yacht/Classic/Luxury1.jpg"
           }
         ],
         "list1": [
@@ -7600,13 +7873,13 @@
       {
         "id": "8",
         "name": "Gourmet Yacht Charter",
-        "industryImage": "./images/industry/GourmetYachtCharter/GourmetYachtCharter1.jpg",
+        "industryImage": "./images/industry/Yacht/GourmetYachtCharter/GourmetYachtCharter1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/GourmetYachtCharter/GourmetYachtCharter2.jpg"
+            "url": "./images/industry/Yacht/GourmetYachtCharter/GourmetYachtCharter2.jpg"
           },
           {
-            "url": "./images/industry/GourmetYachtCharter/GourmetYachtCharter1.jpg"
+            "url": "./images/industry/Yacht/GourmetYachtCharter/GourmetYachtCharter1.jpg"
           }
         ],
         "list1": [
@@ -7618,18 +7891,93 @@
       {
         "id": "9",
         "name": "Super",
-        "industryImage": "./images/industry/Super/Super1.jpg",
+        "industryImage": "./images/industry/Yacht/Super/Super1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Super/Super2.jpg"
+            "url": "./images/industry/Yacht/Super/Super2.jpg"
           },
           {
-            "url": "./images/industry/Super/Super1.jpg"
+            "url": "./images/industry/Yacht/Super/Super1.jpg"
           }
         ],
         "list1": [
           {
             "text": "AfmX offers an unparalleled suite of services tailored for discerning Super Yacht managers. Our comprehensive cleaning solutions go beyond the ordinary, ensuring every corner of your vessel gleams with perfection. From meticulous deck detailing to specialized interior cleaning, we understand the unique demands of luxury maritime environments. But AfmX isn't just about cleanliness; we seamlessly integrate additional services such as maintenance, logistics, and crew support, providing a holistic approach to yacht management. Elevate your standards with AfmX, where excellence meets the high seas."
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Combination Dock",
+        "industryImage": "./images/industry/Yacht/CombinationDock/CombinationDock1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Yacht/CombinationDock/CombinationDock2.jpg"
+          },
+          {
+            "url": "./images/industry/Yacht/CombinationDock/CombinationDock1.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Maximize efficiency and elevate your operations with Combination Dock services by AfmX. Our comprehensive cleaning solutions are just the beginning – we offer a suite of services designed to streamline your business processes. From facility maintenance to specialized cleaning, AfmX is your partner in ensuring a pristine and well-functioning workspace. Our experienced team understands the unique needs of managers and owners, delivering tailored solutions that go beyond cleaning. Discover a one-stop solution for all your facility management needs and let AfmX redefine the standards of excellence for your business."
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Enclosed Dock",
+        "industryImage": "./images/industry/Yacht/EnclosedDock/EnclosedDock1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Yacht/EnclosedDock/EnclosedDock1.jpg"
+          },
+          {
+            "url": "./images/industry/Yacht/EnclosedDock/EnclosedDock2.jpg"
+          },
+          {
+            "url": "./images/industry/Yacht/EnclosedDock/EnclosedDock3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your enclosed dock into a pristine oasis with AFMX's comprehensive cleaning and maintenance services. Our dedicated team of professionals specializes in ensuring your facility not only meets but exceeds industry standards. From meticulous cleaning to routine inspections and repairs, we offer a range of services tailored to meet the unique needs of managers and owners. Elevate the longevity of your dock infrastructure with AFMX, where quality and reliability converge to keep your enclosed space in optimal condition. Experience unparalleled excellence in dock maintenance and discover the peace of mind that comes with entrusting your facility to AFMX."
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Fixed Docks",
+        "industryImage": "./images/industry/Yacht/FixedDock/FixedDock1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Yacht/FixedDock/FixedDock1.jpg"
+          },
+          {
+            "url": "./images/industry/Yacht/FixedDock/FixedDock2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AfmX, we understand the pivotal role that fixed docks play in waterfront properties. Our specialized services cater exclusively to managers and owners seeking comprehensive solutions for cleaning and beyond. Experience a new standard of maintenance as AfmX delivers unparalleled care for fixed docks, ensuring longevity and optimal functionality. Our team is equipped with cutting-edge techniques, providing thorough cleaning services that extend the life of your investment. Beyond cleaning, AfmX offers a range of services designed to enhance the overall performance and aesthetics of fixed docks, addressing every aspect of your waterfront infrastructure. Trust AfmX to elevate the standard of care for your fixed docks, offering peace of mind and a pristine waterfront experience."
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Dry Docks",
+        "industryImage": "./images/industry/Yacht/DryDocks/DryDocks1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Yacht/DryDocks/DryDocks1.jpg"
+          },
+          {
+            "url": "./images/industry/Yacht/DryDocks/DryDocks2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Unlock the full potential of your dry dock with AFMX's comprehensive services tailored for managers and owners. Our specialized cleaning solutions ensure a pristine and efficient environment, promoting optimal functionality. Beyond cleaning, AFMX offers a suite of services designed to enhance every aspect of your dry dock operations. From preventive maintenance to environmental compliance, we prioritize the longevity and sustainability of your facility. Trust AFMX to go beyond expectations, delivering excellence in every service we provide, so you can focus on steering your business towards continued success."
           }
         ]
       }
@@ -7793,7 +8141,7 @@
         ],
         "list1": [
           {
-            "text": "• Embark on a seamless journey with Couple Cruise Managers and experience a new level of service excellence with AfmX. Our dedicated team ensures a spotless environment through top-notch cleaning services, setting the stage for an unparalleled voyage. From meticulous cabin care to thorough common area maintenance, we go beyond the ordinary to guarantee a pristine and inviting atmosphere. Elevate your cruise experience with our comprehensive suite of services, including but not limited to laundry, room refresh, and more. Let AfmX redefine your expectations of cleanliness, making every moment aboard an unforgettable one for you and your guests."
+            "text": "Embark on a seamless journey with Couple Cruise Managers and experience a new level of service excellence with AfmX. Our dedicated team ensures a spotless environment through top-notch cleaning services, setting the stage for an unparalleled voyage. From meticulous cabin care to thorough common area maintenance, we go beyond the ordinary to guarantee a pristine and inviting atmosphere. Elevate your cruise experience with our comprehensive suite of services, including but not limited to laundry, room refresh, and more. Let AfmX redefine your expectations of cleanliness, making every moment aboard an unforgettable one for you and your guests."
           }
         ]
       },
@@ -7822,7 +8170,7 @@
         ]
       },
       {
-        "id": "8",
+        "id": "9",
         "name": "Adventure",
         "industryImage": "./images/industry/CruiseShip/Adventure/Adventure1.jpg",
         "imgData": [
@@ -7839,6 +8187,80 @@
         "list1": [
           {
             "text": "Embark on a seamless journey with AfmX, where our top-notch cleaning services redefine excellence for adventure cruise managers. Our dedicated team ensures every nook and cranny of your vessel is meticulously cleaned, guaranteeing a pristine environment for both crew and passengers. From comprehensive sanitation protocols to specialized cleaning solutions for aquatic environments, AfmX goes beyond the ordinary to meet the unique demands of adventure cruise settings. Trust us to not only maintain impeccable hygiene standards but also enhance the overall onboard experience, allowing you to focus on delivering unparalleled adventures at sea. Explore the difference AfmX can make – where cleanliness meets the high seas."
+          }
+        ]
+      }
+      ,
+      {
+        "id": "10",
+        "name": "Loading Docks",
+        "industryImage": "./images/industry/CruiseShip/LoadingDock/LoadingDock1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/LoadingDock/LoadingDock1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/LoadingDock/LoadingDock2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Unlock the full potential of your loading docks with AFMX's comprehensive services tailored for managers and owners. Our specialized cleaning solutions go beyond the surface, ensuring a hygienic and safe environment for your operations. Experience efficiency like never before with our maintenance services designed to optimize the functionality of your loading equipment. From routine inspections to proactive repairs, we've got you covered. Elevate your operational standards with AFMX, where excellence meets reliability. Trust us to handle the details so you can focus on what matters most – the seamless functioning of your loading docks."
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Crib Docks",
+        "industryImage": "./images/industry/CruiseShip/CribDock/CribDock1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/CribDock/CribDock1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/CribDock/CribDock2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Unlock the full potential of your crib docks with AFMX's comprehensive services tailored for managers and owners. Our specialized cleaning solutions go beyond the surface, ensuring a pristine environment that not only meets but exceeds industry standards. Experience a seamless integration of maintenance, restoration, and enhancement services designed to elevate the functionality and aesthetics of your crib docks. Trust AFMX to deliver more than just cleaning – we provide a suite of services that enhance durability, mitigate wear and tear, and extend the lifespan of your investment. Elevate your waterfront property management with AFMX, where excellence meets the water's edge."
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Piling Docks",
+        "industryImage": "./images/industry/CruiseShip/PilingDock/PilingDock1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/PilingDock/PilingDock1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/PilingDock/PilingDock2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "At AFMx, we specialize in comprehensive solutions for managers and owners of piling docks, offering a range of services that go beyond mere cleaning. Our expertise extends to proactive maintenance, ensuring the longevity and structural integrity of your docks. With state-of-the-art equipment and a highly skilled team, we excel in addressing specific challenges unique to piling docks, such as corrosion control and environmental impact mitigation. Beyond maintenance, AFMx provides innovative solutions for dock enhancements, optimizing functionality and aesthetics. Partner with us to elevate the performance and longevity of your piling docks, and experience a seamless blend of efficiency and excellence in every service we offer."
+
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Floating Dock",
+        "industryImage": "./images/industry/CruiseShip/FloatingDock/FloatingDock1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CruiseShip/FloatingDock/FloatingDock1.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/FloatingDock/FloatingDock2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "AfmX offers an unparalleled suite of services designed exclusively for managers and owners of floating docks. Our comprehensive cleaning solutions ensure the longevity and pristine condition of your valuable assets. Beyond cleaning, AfmX goes the extra mile by providing specialized services tailored to meet the unique needs of floating dock facilities. From routine maintenance to environmentally friendly practices, our team is dedicated to enhancing the efficiency and sustainability of your operations. Trust AfmX to be your strategic partner in optimizing the performance of your floating dock, offering a range of services that go beyond the ordinary to deliver exceptional results."
           }
         ]
       }

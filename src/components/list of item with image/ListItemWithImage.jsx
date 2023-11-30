@@ -18,7 +18,7 @@ function ListItemWithImage({ name,url, propData}) {
                                     {propData?.map((item) => (
                                         <div className="col-lg-4 mb-1 p-0 image-gallery" key={item?.id}>
                                             <div className="mx-1 position-relative">
-                                                <Link to={`${item.name}`}>
+                                                <Link to={`${item.name}`} target="_blank">
                                                     <img
                                                         src={item?.industryImage}
                                                         title={item?.name}

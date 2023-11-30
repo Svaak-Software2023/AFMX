@@ -29,13 +29,39 @@ const Slider = () => {
                 <div className="carousel-inner">
                   <div className="carousel-item active" data-bs-interval="10000">
                     <div className="carousel-video">
-                      <div className="carousel-video">
                         <video src="images/Banner/FloorService.mp4" autoPlay muted loop className="img-fluid"></video>
-                      </div>
                     </div>
                   </div>
                   <div className="carousel-item" data-bs-interval="2000">
-                    <LazyLoadImage src="images/Banner/Image1.png" className="d-block w-100" effect="blur" alt="..." />
+                    <img  src="images/Banner/Image1.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item" data-bs-interval="2000">
+                    <img  src="images/Banner/NewEraNewTechnology.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item" data-bs-interval="2000">
+                    <img  src="images/Banner/IsNowAvailable.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                  </div>
+                  <div className="carousel-item " >
+                    <div className="carousel-video">
+                        <video src="images/Banner/AdvertiseWithUs.mp4" autoPlay muted loop className="img-fluid"></video>
+                    </div>
+                  </div>
+                  <div className="carousel-item " >
+                    <div className="carousel-video">
+                        <video src="images/Banner/RoboticCleaning.mp4" autoPlay muted loop className="img-fluid"></video>
+                    </div>
+                  </div>
+
+                 
+                  <div className="carousel-item " >
+                    <div className="carousel-video">
+                        <video src="images/Banner/AFMXDonation.mp4" autoPlay muted loop className="img-fluid"></video>
+                    </div>
+                  </div>
+                  <div className="carousel-item " >
+                      <div className="carousel-video">
+                        <video src="images/Banner/PaymentOptions.mp4" autoPlay muted loop className="img-fluid"></video>
+                    </div>
                   </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

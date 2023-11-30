@@ -187,14 +187,14 @@ function Navbar() {
                   </li>
 
                   {data ?
-                    <li>
+                    <li style={{border:"none"}}>
                       <Link target="_blank" to="/" className="nav-link " onClick={() => localStorage.clear()}>
                         Logout
                       </Link>
                     </li>
                     :
-                    <li className="dropdown" onClick={logindropdown}>
-                      <a>
+                    <li className="dropdown" onClick={logindropdown} style={{border:"none"}}>
+                      <a >
                         <span>Login</span> <i className="bi bi-chevron-down"></i>
                       </a>
                       {logindrop && (

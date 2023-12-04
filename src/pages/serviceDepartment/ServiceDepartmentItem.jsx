@@ -5,9 +5,11 @@ import "./serviceDepartmentItem.css"
 import LeftMenue from "../../components/leftmenu/LeftMenu";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 function ServiceDepartmentItem() {
-    const { ItemId, parentId } = useParams()
-    const data = serviceData.find((item) => item.id === parentId);
-    const itemData = data.submenu.find((item) => Number(item.id) === Number(ItemId));
+    const { parentId,ItemId } = useParams()
+
+    const data = serviceData.find((item) => Number(item.id) === Number(parentId));
+    const itemData = data?.submenu.find((item) =>Number(item.id) == Number(ItemId));
+    console.log(itemData);
     return (
         <div className="container p-0 my-3">
             <div className="row m-0 p-0 ">

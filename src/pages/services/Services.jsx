@@ -3,7 +3,6 @@ import "./services.css";
 import {  Link, useParams } from "react-router-dom";
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 function Services() {
   const { id } = useParams();
   const data = serviceData.find((item) => item.id === id);
@@ -32,7 +31,7 @@ function Services() {
                             className="img-fluid "
                           />
                           <div className="service-name">
-                            <h3>{item.name.toUpperCase()}</h3>
+                            <h3>{item.name}</h3>
                           </div>
                           </Link>
                         </div>

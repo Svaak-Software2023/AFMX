@@ -19,7 +19,7 @@ function Home() {
       <div className="main">
         <Circle />
         {/* service menu  */}
-        <div className="services-memebership">
+        <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-6">
@@ -124,7 +124,7 @@ function Home() {
         </div>
 
         {/* chemical shopping center  */}
-        <div className="services-memebership">
+        <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-12">
@@ -165,7 +165,7 @@ function Home() {
 
         {/* Agent X shield  */}
 
-        <div className="services-memebership">
+        <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-12">
@@ -238,7 +238,7 @@ function Home() {
 
         {/* our Service Department  */}
 
-        <div className="services-memebership">
+        <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-12">
@@ -248,14 +248,14 @@ function Home() {
                     <ul className>
                       {serviceData1.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/service-department/${item.id}`}>{item.name}</Link>
+                          <Link to={item.url}>{item.name}</Link>
                         </li>
                       ))}
                     </ul>
                     <ul className>
                       {serviceData2.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/service-department/${item.id}`}>{item.name}</Link>
+                          <Link to={`/service-department/${item.url}`}>{item.name}</Link>
                         </li>
                       ))}
                     </ul>
@@ -268,8 +268,7 @@ function Home() {
         </div>
 
         {/* Watch  whether  */}
-
-        <div className="services-memebership">
+        <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-6">
@@ -329,10 +328,8 @@ function Home() {
           </div>
         </div>
 
-
         {/* partner With us  */}
-
-        <div className="services-memebership">
+        <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-3">

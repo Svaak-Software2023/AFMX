@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
 import "./navbar.css";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 import { HiSpeakerphone } from "react-icons/hi";
 import { ImLocation } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineClose,AiOutlineMenu } from "react-icons/ai";
-
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Navbar() {
   const [navbar, setNavbar] = useState("navbar");
   const [logindrop, setlogindrop] = useState(false);
+  const [price, setprice] = useState(false);
+
   const [membershipdrop, setmembershipdrop] = useState(false);
   const [showInputLocation, setShowInputLocation] = useState(false);
   const [showInputSearch, setShowInputSearch] = useState(false);
@@ -31,6 +32,9 @@ function Navbar() {
 
   const logindropdown = () => {
     setlogindrop(!logindrop);
+  };
+  const priceCalculator = () => {
+    setprice(!price);
   };
   const membershipdropdown = () => {
     setmembershipdrop(!membershipdrop);
@@ -120,21 +124,33 @@ function Navbar() {
           {/* {/ header  /} */}
           <header id="header" className="d-flex align-items-center">
             <div className="container d-flex align-items-center justify-content-center">
-              <nav id="navbar" className={navbar}>
+              <nav id="navbar" className={navbar.toString()}>
                 <ul>
-                  <li>
-                    <Link target="_blank"
-                      to="/price-calculator"
-                      className="nav-link "
-                      aria-current="page"
-                    >
-                      Price Calculator
-                    </Link>
-                  </li>
+                <li className="dropdown" onClick={priceCalculator} style={{border:"none"}}>
+                      <a >
+                        <span>Price Calculator<RiArrowDropDownLine className="fs-4"/></span>
+                      </a>
+                      {price && (
+                        <ul className="dropdown-active">
+                          <li>
+                            <Link target="_blank" to="/price-calculator">Price Calculator</Link>
+                          </li>
+                          <li>
+                            <Link target="_blank" to="">Budget buddy </Link>
+                          </li>
+                          <li>
+                            <Link target="_blank" to="">Start a project</Link>
+                          </li>
+                          <li>
+                            <Link target="_blank" to="">Pay as you go</Link>
+                          </li>
+                        </ul>
+                      )}
+                    </li>
+                
                   <li className="dropdown" onClick={membershipdropdown}>
                     <Link>
-                      <span>Membership</span>
-                      <i className="bi bi-chevron-down"></i>
+                      <span>Membership<RiArrowDropDownLine className="fs-4"/></span>
                     </Link>
                     {membershipdrop && (
                       <ul className="dropdown-active">
@@ -195,7 +211,7 @@ function Navbar() {
                     :
                     <li className="dropdown" onClick={logindropdown} style={{border:"none"}}>
                       <a >
-                        <span>Login</span> <i className="bi bi-chevron-down"></i>
+                        <span>Login<RiArrowDropDownLine className="fs-4"/></span>
                       </a>
                       {logindrop && (
                         <ul className="dropdown-active">

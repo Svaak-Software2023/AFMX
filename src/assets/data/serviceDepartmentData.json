@@ -2,33 +2,34 @@
   {
     "id": "1",
     "name": "Handyman solutions department",
+    "url":"handyman-solutions-department",
     "submenu": [
       {
-        "id": 1,
+        "id": "1",
         "name": "Carpentry Installation and Repair Service",
         "image": "./images/serviceDepartments/HandymanSolutionsDepartment/carpentryInstallationandRepairService.jpg",
         "url":"/service-department-item/1/1"
       },
       {
-        "id": 2,
+        "id": "2",
         "name": "Attic Installation and Repair Service",
         "image": "./images/serviceDepartments/HandymanSolutionsDepartment/atticInstallationandRepairService.jpg",
         "url":"/service-department-item/1/2"
       },
       {
-        "id": 3,
+        "id": "3",
         "name": "Fence Assembly Service",
         "image": "./images/serviceDepartments/HandymanSolutionsDepartment/fenceAssemblyService.jpg",
         "url":"/service-department-item/1/3"
       },
       {
-        "id": 4,
+        "id": "4",
         "name": "Handyman Services",
         "image": "./images/serviceDepartments/HandymanSolutionsDepartment/handiymanService.jpg",
         "url":"/service-department-item/1/4"
       },
       {
-        "id": 5,
+        "id": "5",
         "name": "Remodeling Services",
         "image": "./images/serviceDepartments/HandymanSolutionsDepartment/remodelingService.jpg",
         "url":"/service-department-item/1/5"
@@ -38,17 +39,18 @@
   {
     "id": "2",
     "name": "Assembly department",
+    "url":"/assembly-department",
     "submenu": [
       {
         "id": "1",
         "name": "Cabinet Assembly",
-        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg",
+        "image": "./images/serviceDepartments/assemblyDepartment/2.jpg",
         "url":"/service-department-item/2/1"
       },
       {
         "id": "2",
         "name": "Fence Assembly",
-        "image": "./images/serviceDepartments/assemblyDepartment/2.jpg",
+        "image": "./images/serviceDepartments/assemblyDepartment/4.jpg",
         "url":"/service-department-item/2/2"
       },
       {
@@ -60,7 +62,7 @@
       {
         "id": "4",
         "name": "Grill Assembly",
-        "image": "./images/serviceDepartments/assemblyDepartment/4.jpg",
+        "image": "./images/serviceDepartments/assemblyDepartment/1.jpg",
         "url":"/service-department-item/2/4"
       }
     ]
@@ -68,48 +70,50 @@
   {
     "id": "3",
     "name": "Attic installation and repair department",
+    "url":"/attic-installation-and-repair-department",
     "submenu": [
       {
         "id": "1",
         "name": "Attic Door Installation",
         "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/1.jpg",
-        "url":"/service-department-item/3/1"
+        "url":"/service-department-item/3/2"
       },
       {
         "id": "2",
         "name": "Attic Fan Installation and repair",
         "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/2.jpg",
-        "url":"/service-department-item/3/2"
+        "url":"/service-department-item/3/4"
       },
       {
         "id": "3",
         "name": "Attic Insulation",
         "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/3.jpg",
-        "url":"/service-department-item/3/3"
+        "url":"/service-department-item/3/6"
       },
       {
         "id": "4",
         "name": "Attic Stairs installation",
         "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/4.jpg",
-        "url":"/service-department-item/3/4"
+        "url":"/service-department-item/3/5"
       },
       {
         "id": "5",
         "name": "Mold Prevention",
         "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/5.jpg",
-        "url":"/service-department-item/3/5"
+        "url":"/service-department-item/3/3"
       },
       {
         "id": "6",
         "name": "Structural Integrity",
         "image": "./images/serviceDepartments/atticInstallationAndRepairDepartment/6.jpg",
-        "url":"/service-department-item/3/6"
+        "url":"/service-department-item/3/1"
       }
     ]
   },
   {
     "id": "4",
     "name": "Carpentry installation and repair department",
+    "url":"/carpentry-installation-and-repair-department",
     "submenu": [
       {
         "id": "1",

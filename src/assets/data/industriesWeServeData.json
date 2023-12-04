@@ -444,13 +444,13 @@
           },
           {
             "text": "At AfmX, we don't just clean; we curate an atmosphere conducive to unleashing the boundless potential of artistic minds. Our services go beyond the conventional, offering a palette of comprehensive solutions to elevate your institution. Experience a campus where creativity thrives in a meticulously sanitized space, courtesy of AfmX - where hygiene meets artistry."
-          },
+          }
+        ],
+        "paira2": [
           {
             "text": "Transform your Art College into a haven of inspiration with AfmX's unrivaled cleaning and disinfection services – because true masterpieces deserve a canvas as immaculate as the visions that birth them."
           }
         ],
-        "list1": [],
-        "list2": [],
         "url": "/technical-school"
       },
       {
@@ -611,9 +611,6 @@
           },
           {
             "url": "./images/industry/UniversityCleaning/GrammarSchool/GrammarSchool3.png"
-          },
-          {
-            "url": "./images/industry/UniversityCleaning/GrammarSchool/GrammarSchool4.png"
           }
         ],
         "list1": [
@@ -644,9 +641,6 @@
           },
           {
             "url": "./images/industry/UniversityCleaning/SpecialEducation/SpecialEducation3.png"
-          },
-          {
-            "url": "./images/industry/UniversityCleaning/SpecialEducation/SpecialEducation4 .png"
           }
         ],
         "paira": [
@@ -1435,7 +1429,7 @@
             "url": "./images/industry/ConstructionSites/HeavyTimberTypeIV/HeavyTimberTypeIV3.jpg"
           }
         ],
-        "list": [
+        "list1": [
           {
             "text": "Empower your Heavy Timber Type IV management with AfmX's comprehensive cleaning and maintenance services. Elevate the longevity of your structures with our specialized expertise in Heavy Timber preservation. Discover a seamless blend of advanced cleaning techniques and industry-leading solutions tailored to meet the unique needs of your facility. Revitalize your space with our commitment to sustainability, ensuring a pristine environment that aligns with your ecoconscious goals. Experience the difference as AfmX goes beyond cleaning, offering a suite of services designed to safeguard and enhance your Heavy Timber assets. Embark on a journey of reliability and excellence with AfmX – where cleaning meets precision."
           }
@@ -2150,6 +2144,42 @@
             "text": "At AFMX, we go beyond the ordinary, offering a range of specialized services that cater to the unique needs of showroom owners. From meticulous cleaning to transformative remodeling, our team is committed to revitalizing your space and elevating its overall functionality. Experience a new standard of excellence with AFMX where"
           }
         ]
+      },
+      {
+        "id": "11",
+        "name": "Market",
+        "industryImage": "./images/industry/ShoppingCenters/Market/Market1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/Market/Market1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/Market/Market2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text":"Transform your market shopping center with AfmX's comprehensive cleaning and beyond services. We specialize in maintaining a pristine environment for your shoppers by offering top-notch cleaning solutions. From thorough floor cleaning to meticulous restroom upkeep, our dedicated team ensures every corner of your shopping center remains inviting and hygienic. Beyond cleaning, AfmX goes the extra mile, providing additional services that contribute to a seamless shopping experience. Elevate the standards of cleanliness at your market shopping center with AfmX's expertise in creating a fresh and welcoming atmosphere for both retailers and shoppers alike."
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Regional Center",
+        "industryImage": "./images/industry/ShoppingCenters/RegionalCenter/RegionalCenter1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/ShoppingCenters/RegionalCenter/RegionalCenter1.jpg"
+          },
+          {
+            "url": "./images/industry/ShoppingCenters/RegionalCenter/RegionalCenter2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text":"At AfmX Regional Center, we redefine excellence in cleaning services and beyond. Our consolidated warehouse solutions offer a seamless and efficient approach to managing your storage needs. From meticulous cleaning protocols to comprehensive warehouse organization, we go beyond the ordinary, ensuring your space is not just clean but optimized for functionality. Explore a range of services that extend beyond traditional cleaning, providing you with a holistic solution for a well-maintained and organized environment. With AfmX, experience a new standard of excellence in regional cleaning services designed to meet and exceed your expectations."
+          }
+        ]
       }
     ]
   },
@@ -2288,6 +2318,24 @@
         "list1": [
           {
             "text": "Optimize the efficiency of your warehouse operations with AFMX, your go-to solution for comprehensive facility management. Our services extend beyond the ordinary, covering essential areas like cleaning and handyman services, ensuring your warehouse is not just operational but thriving. From meticulous cleaning protocols that maintain hygiene standards to skilled handymen ready to tackle any maintenance task, AFMX is your trusted partner for a seamlessly run warehouse. Discover the difference of our holistic approach that goes beyond the basics, offering you a range of services that elevate your warehouse management experience. Choose AFMX for excellence in every detail, because your warehouse deserves nothing less."
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Consolidated",
+        "industryImage": "./images/industry/Warehouses/Consolidated/Consolidated1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Warehouses/Consolidated/Consolidated1.jpg"
+          },
+          {
+            "url": "./images/industry/Warehouses/Consolidated/Consolidated2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your space with AFMX Consolidated Warehouse services. Our dedicated team specializes in a range of offerings, including top-notch cleaning solutions to keep your environment pristine. Beyond cleanliness, we provide a myriad of services that go above and beyond – from meticulous organization to efficient inventory management. Elevate your workspace with our comprehensive solutions, ensuring a seamless and organized environment. Discover the difference AFMX brings to the table, where expertise meets excellence in every service we offer. Revitalize your space with our commitment to efficiency and precision. Experience a new standard of cleanliness and organization as you embark on a journey with AFMX Consolidated Warehouse services."
           }
         ]
       }
@@ -3002,6 +3050,51 @@
           },
           {
             "text": "Experience the AfmX Difference Today!"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Commercial Flooring Contractor",
+        "industryImage": "./images/industry/CommercialGeneralContractors/Flooring/Flooring1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CommercialGeneralContractors/Flooring/Flooring1.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text":"AfmX is your premier partner in commercial flooring solutions, specializing in comprehensive services designed to meet the unique needs of managers. As a trusted commercial flooring contractor, we go beyond the ordinary to deliver top-notch cleaning services and more. Our team is dedicated to ensuring your facility's floors not only look impeccable but also maintain their longevity and functionality. From routine maintenance to specialized cleaning techniques, AfmX brings a wealth of expertise to enhance the aesthetic appeal and safety of your commercial space. Discover a seamless blend of quality craftsmanship and professional care with AfmX for all your commercial flooring needs."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Commercial Industrial Contractor",
+        "industryImage": "./images/industry/CommercialGeneralContractors/Industrial/Industrial1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CommercialGeneralContractors/Industrial/Industrial1.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text":"AfmX, your trusted partner in commercial and industrial contracting, offers a comprehensive suite of services tailored to meet the unique needs of businesses. Specializing in cleaning solutions and beyond, we bring a wealth of expertise to enhance the efficiency and functionality of your facilities. Our dedicated team of professionals is committed to delivering top-notch services that go beyond the ordinary, ensuring your commercial spaces are not only clean but also optimized for peak performance. From meticulous cleaning services to a wide range of industrial solutions, AfmX is your go-to contractor for excellence in every project. Experience the difference of working with a team that understands the intricacies of commercial and industrial environments, providing unparalleled service that stands the test of time. Elevate your standards with AfmX and redefine the possibilities for your business."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Commercial Wood And Door Contractor",
+        "industryImage": "./images/industry/CommercialGeneralContractors/WoodAndDoor/WoodAndDoor1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/CommercialGeneralContractors/WoodAndDoor/WoodAndDoor1.jpg"
+          }
+        ],
+        "list1":[
+          {
+            "text":"AfmX specializes in delivering unparalleled wood and door contracting solutions tailored for commercial spaces. Our team of expert managers ensures seamless execution of projects, from custom woodwork to precision door installations. Beyond our core services, AfmX goes above and beyond by offering comprehensive cleaning services, adding a touch of excellence to every project. With a commitment to quality craftsmanship and attention to detail, we transform commercial spaces into functional, aesthetically pleasing environments. Explore the synergy of innovation and reliability with AfmX, your trusted partner for top-notch wood and door solutions, coupled with a suite of additional services to meet all your commercial needs."
           }
         ]
       }
@@ -5685,6 +5778,9 @@
         "industryImage": "./images/industry/PlannedCommunity/PlannedCommunity1.jpg",
         "imgData": [
           {
+            "url": "./images/industry/PlannedCommunity/PlannedCommunity1.jpg"
+          },
+          {
             "url": "./images/industry/PlannedCommunity/PlannedCommunity2.jpg"
           }
         ],
@@ -6274,10 +6370,10 @@
       {
         "id": "1",
         "name": "Major Airlines",
-        "industryImage": "./images/industry/Major/Major1.jpg",
+        "industryImage": "./images/industry/Airlines/Major/Major1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Major/Major1.jpg"
+            "url": "./images/industry/Airlines/Major/Major1.jpg"
           }
         ],
         "list1": [
@@ -6289,10 +6385,10 @@
       {
         "id": "2",
         "name": "National Airlines",
-        "industryImage": "./images/industry/National/National1.jpg",
+        "industryImage": "./images/industry/Airlines/National/National1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/National/National1.jpg"
+            "url": "./images/industry/Airlines/National/National1.jpg"
           }
         ],
         "list1": [
@@ -6304,10 +6400,10 @@
       {
         "id": "3",
         "name": "Regional Airlines",
-        "industryImage": "./images/industry/Regional/Regional1.jpg",
+        "industryImage": "./images/industry/Airlines/Regional/Regional1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Regional/Regional1.jpg"
+            "url": "./images/industry/Airlines/Regional/Regional1.jpg"
           }
         ],
         "list1": [

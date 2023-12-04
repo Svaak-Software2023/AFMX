@@ -1,23 +1,19 @@
 import { Link, useParams } from "react-router-dom";
-import LeftMenue from "../../components/leftmenu/LeftMenu";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import "./serviceDepartment.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ImportantLinks from "../../components/ImportantLinks/ImportantLinks";
 //import { loadConfigFromFile } from "vite";
 const ServiceDepartment = () => {
-  const { id } = useParams();
-  const data = serviceData.find((item) => item.id === id);
+  const { name } = useParams();
+  const data = serviceData.find((item) => item.name === name);
   console.log(data);
   return (
     <>
       <div className="container p-0 my-3">
         <div className="row m-0 p-0 ">
           <div className="col-lg-3 col-md-3 col-0 p-0 service_menu">
-            <LeftMenue
-              type={data?.name}
-              data={data?.submenu}
-              url={`/service-department-item/${data?.id}`}
-            />
+            <ImportantLinks/>
           </div>
           <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">
             <h3 className="service-category-heading" style={{ textTransform: "capitalize" }}>{data.name}</h3>
@@ -27,7 +23,7 @@ const ServiceDepartment = () => {
                   <div className="d-flex justify-content-center">
 
                     <div className="piramid-top-img row mx-1">
-                      <Link to={`/service-department-item/${data?.id}/${data?.submenu[0]?.id}`}>
+                      <Link to={`${data?.submenu[0]?.name}`}>
                         <div className="position-relative">
 
                           <LazyLoadImage src={data?.submenu[0]?.image} alt="" />
@@ -46,7 +42,7 @@ const ServiceDepartment = () => {
                             <div className="mx-1 image-gallery">
                               <div>
 
-                                <Link to={`/service-department-item/${data?.id}/${item.id}`}>
+                                <Link to={`${item.name}`}>
                                   <LazyLoadImage
                                     src={item?.image}
                                     alt={data?.id}

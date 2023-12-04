@@ -24,7 +24,7 @@ const Circle = () => {
        <div className="row m-0 mb-3 p-0 circle">
         <div className="col-lg-12 col-md-12 col-12 m-0 p-0">
           <div className="containerx container-lg bg-white">
-            <div className=" py-3">
+            <div className="py-3">
               <div className="circle-main">
                 <div className="inner-circle" >
                   <ul className="sc-fsYfxw fAFqhE circle-menu-image">
@@ -171,40 +171,6 @@ const Circle = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="circle-mobile-menu">
-
-        <div className="main">
-          <div className="services-memebership">
-            <div className="container p-0">
-              <div className="row p-0">
-                <div className="col-lg-6">
-                  <div className="memebership-list m-0">
-                    <h2>Important Links</h2>
-                    <ul>
-                      <li> <Link to="" className="Links"> Advanced Technology and Robotic Cleaning</Link></li>
-                      <li> <Link to="" className="Links"> Janitorial Service</Link></li>
-                      <li> <Link to="" className="Links"> Membership</Link></li>
-                      <li> <Link to="/client-login" className="Links"> Login</Link></li>
-                      <li> <Link to="" className="Links"> Complaint</Link></li>
-                      <li> <Link to="" className="Links"> Careers and Employment</Link></li>
-                      <li> <Link to="" className="Links"> My Florida Hurricane Watch</Link></li>
-                      <li> <Link to="" className="Links"> Price Calculator</Link></li>
-                      <li> <Link to="" className="Links"> Art and Gallery</Link></li>
-                      <li> <Link to="" className="Links"> Advertisement</Link></li>
-                      <li> <Link to="" className="Links"> Maid X Pro</Link></li>
-                      <li> <Link to="" className="Links"> Handyman</Link></li>
-                    </ul>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
 
     </>
   );

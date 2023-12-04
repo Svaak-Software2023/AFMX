@@ -3,11 +3,11 @@ import React, { lazy, Suspense } from 'react';
 import { FaArrowUp } from "react-icons/fa";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-
 // Import the component lazily
-const Home = lazy(() => import("./pages/Home/Home"));
+// const Home = lazy(() => import("./pages/Home/Home"));
 
 import "./App.css"
+import Home from "./pages/Home/Home"
 import Navbar from "./components/Navbar/Navbar"
 import CommingSoon from "./pages/CommingSoon"
 import Footer from "./components/Footer/Footer"
@@ -46,6 +46,11 @@ import Loader from "./components/Loader/Loader";
 import MapLocation from "./pages/mapLocation/MapLocation";
 import SubList from "./pages/IndustriesWeServe/SubList";
 import IndustriesSubItemPage from "./pages/IndustriesWeServe/IndustriesItem/IndustriesSubItemPage";
+import HandymanSolutionDepartment from "./pages/serviceDepartment/serviceDepartmentItem/handymanSolutionDepartment/HandymanSolutionDepartment";
+import AtticInstallationAndRepairDepartment from "./pages/serviceDepartment/serviceDepartmentItem/AtticInstallationAndRepairDepartment/AtticInstallationAndRepairDepartment";
+import AssemblyDepartment from "./pages/serviceDepartment/serviceDepartmentItem/AssemblyDepartment/AssemblyDepartment";
+import CarpentryInstallationAndRepairDepartment from "./pages/serviceDepartment/serviceDepartmentItem/CarpentryInstallationAndRepairDepartment/CarpentryInstallationAndRepairDepartment";
+
 
 
 function App() {
@@ -84,17 +89,45 @@ function App() {
       <Navbar />
       <div className="m-0 backgroundPage">
         <Routes>
-          <Route path="/" element={<Suspense fallback={<Loader/>}><Home /></Suspense>} />
+          <Route path="/" element={<Suspense fallback={<Loader />}><Home /></Suspense>} />
           <Route path="/new" element={<CommingSoon />} />
-          <Route path="/employee-login" element={<Login loginType={"Employee Login"}/>} />
+          <Route path="/employee-login" element={<Login loginType={"Employee Login"} />} />
           <Route path="/client-login" element={<Login loginType={"Client Login"} />} />
           <Route path="/federal-govrment-login" element={<Login loginType={"Federal Government Login"} />} />
           <Route path="/admin-login" element={<Login loginType={"Admin Login"} />} />
           <Route path="/create-account" element={<CreateAccount />} />
           <Route path="/helping-hand/:id" element={<HelpingHand />} />
           <Route path="/product/:id" element={<ProductCategory />} />
-          <Route path="/service-department/:id" element={<ServiceDepartment />} />
+
+
+
+
+
+
+
+
+
+
+          <Route path="/service-department/:name" element={<ServiceDepartment />} />
           <Route path="/service-department-item/:parentId/:ItemId" element={<ServiceDepartmentItem />} />
+          <Route path="/handyman-solutions-department" element={<HandymanSolutionDepartment />} />
+          <Route path="/assembly-department" element={<AssemblyDepartment />} />
+          <Route path="/attic-installation-and-repair-department" element={<AtticInstallationAndRepairDepartment />} />
+          <Route path="/carpentry-installation-and-repair-department" element={<CarpentryInstallationAndRepairDepartment />} />
+
+
+
+
+          {/* <DepartmentRoute/> */}
+
+
+
+
+
+
+
+
+
           <Route path="/forget-password" element={<Forget />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/terms-condition/:id" element={<TermsConditions />} />
@@ -106,13 +139,13 @@ function App() {
           <Route path="/apply-job" element={<ApplyJob />} />
 
           <Route path="/industries-list" element={<IndustriesWeServe />} />
-          <Route path="/industries-list/:name" element={<SubList/>} />
-          <Route path="/industries-list/:parentName/:name" element={<IndustriesSubItemPage/>} />
+          <Route path="/industries-list/:name" element={<SubList />} />
+          <Route path="/industries-list/:parentName/:name" element={<IndustriesSubItemPage />} />
 
           <Route path="/price-calculator" element={<PriceCalculator />} />
-          <Route path="/complain-portal" element={<Loader/>} />
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/location" element={<MapLocation/>}/>
+          <Route path="/complain-portal" element={<Loader />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/location" element={<MapLocation />} />
 
 
           {/* important links  category */}
@@ -133,7 +166,7 @@ function App() {
           {/* art and gallery */}
           <Route path="/before-after" element={<BeforeAndAfter />} />
         </Routes>
-          
+
       </div>
       <Footer />
       {showButton && (
@@ -141,7 +174,7 @@ function App() {
           className="back-to-top d-flex align-items-center justify-content-center active"
           onClick={scrollToTop}
         >
-          <FaArrowUp className="text-white"/>
+          <FaArrowUp className="text-white" />
         </div>
       )}
     </>

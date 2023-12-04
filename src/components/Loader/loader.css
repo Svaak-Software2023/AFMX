@@ -14,8 +14,8 @@
 
 .pl {
     display: block;
-    width: 9.375em;
-    height: 9.375em;
+    width: 5.375em;
+    height: 5.375em;
 }
 
 .pl__arrows,
@@ -126,5 +126,13 @@
     14%,
     36% {
         stroke-dashoffset: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pl {
+        display: block;
+        width: 3.375em;
+        height: 3.375em;
     }
 }

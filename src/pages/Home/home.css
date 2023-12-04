@@ -60,18 +60,13 @@
   background-color: var(--blue);
   color: white;
 }
-
-.services-memebership {
-  margin-bottom: 20px;
-}
-
 .single-row {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
 .single-row.txt ul {
-  padding: 20px;
+  padding: 10px;
 }
 
 .single-row.txt ul li {
@@ -172,7 +167,7 @@
 
 @media only screen and (max-width: 991px) {
   .memebership-list {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 
   .memebership-list h2 {
@@ -186,7 +181,7 @@
   .memebership-list img {
     width: 100%;
     margin-left: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .glossary .floww {

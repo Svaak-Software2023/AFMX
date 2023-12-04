@@ -1,0 +1,18 @@
+.carpentry-container{
+    display: flex;
+}
+.box1{
+    background-color: lightblue;
+    height: 200px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 100px 100px 0px;
+    margin-right: 8px;
+}
+.box1 h5{
+    font-size: 14px;
+    color: #ffff;
+    margin-left: 5px;
+}

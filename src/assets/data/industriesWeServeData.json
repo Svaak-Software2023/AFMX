@@ -1702,6 +1702,24 @@
             "text": "Optimize your Histopathology lab management with AFMX's comprehensive cleaning services. We specialize in delivering meticulous cleaning solutions tailored to the unique needs of histopathology laboratories. From advanced equipment sanitation to maintaining sterile workspaces, our services ensure a hygienic environment conducive to precise diagnostics. Rely on AFMX for the seamless management of waste disposal, fostering compliance with industry regulations. Elevate your lab standards with our expertise in maintaining the highest levels of cleanliness, allowing your team to focus on groundbreaking research and diagnosis. Trust AFMX to go beyond routine cleaning, delivering excellence in every detail for an efficient and safe laboratory environment."
           }
         ]
+      },
+      {
+        "id": "1",
+        "name": "Clinical",
+        "industryImage": "./images/industry/Laboratories/Clinical/Clinical1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Laboratories/Clinical/Clinical1.jpg"
+          },
+          {
+            "url": "./images/industry/Laboratories/Clinical/Clinical2.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "AfmX offers comprehensive cleaning services tailored specifically for clinical labs, ensuring a sterile and safe environment for critical research and diagnostics. Our specialized cleaning protocols adhere to the highest industry standards, addressing the unique challenges posed by sensitive laboratory equipment and materials. Beyond cleaning, AfmX provides a range of supplementary services designed to streamline lab operations. From waste management to equipment maintenance, we understand the intricacies of clinical environments and offer solutions that prioritize efficiency and compliance. Partner with AfmX for a trusted and reliable partner in maintaining the cleanliness and functionality of your clinical lab."
+          }
+        ]
       }
     ]
   },
@@ -1713,7 +1731,7 @@
     "data": [
       {
         "id": "1",
-        "name": "Textile Manufacturing plant",
+        "name": "Textile",
         "industryImage": "./images/industry/Textile/Textile1.jpg",
         "imgData": [
           {
@@ -1734,7 +1752,7 @@
       },
       {
         "id": "2",
-        "name": "Job shop",
+        "name": "Job Shop",
         "industryImage": "./images/industry/JobShop/JobShop1.jpg",
         "imgData": [
           {
@@ -1752,7 +1770,7 @@
       },
       {
         "id": "3",
-        "name": "Heavy Manufacturing Plant",
+        "name": "Heavy",
         "industryImage": "./images/industry/Heavy/Heavy1.jpg",
         "imgData": [
           {
@@ -1773,7 +1791,7 @@
       },
       {
         "id": "4",
-        "name": "Production System Manufacturing Plant",
+        "name": "Production System",
         "industryImage": "./images/industry/ProductionSystem/ProductionSystem1.jpg",
         "imgData": [
           {
@@ -1791,7 +1809,7 @@
       },
       {
         "id": "5",
-        "name": "Transportation Manufacturing Plant",
+        "name": "Transportation",
         "industryImage": "./images/industry/Transportation/Transportation1.jpg",
         "imgData": [
           {
@@ -1812,7 +1830,7 @@
       },
       {
         "id": "6",
-        "name": "Electronics Manufacturing Plant",
+        "name": "Electronics",
         "industryImage": "./images/industry/Electronics/Electronics1.jpg",
         "imgData": [
           {
@@ -1833,7 +1851,7 @@
       },
       {
         "id": "7",
-        "name": "Discrete Manufacturing Plant",
+        "name": "Discrete",
         "industryImage": "./images/industry/Discrete/Discrete1.jpg",
         "imgData": [
           {
@@ -1851,7 +1869,7 @@
       },
       {
         "id": "8",
-        "name": " Metal Manufacturing Plant",
+        "name": " Metal",
         "industryImage": "./images/industry/Metal/Metal1.jpg",
         "imgData": [
           {
@@ -1869,7 +1887,7 @@
       },
       {
         "id": "9",
-        "name": "3d printing Manufacturing Plant",
+        "name": "3d Printing",
         "industryImage": "./images/industry/3DPrinting/3DPrinting1.jpg",
         "imgData": [
           {
@@ -1890,7 +1908,7 @@
       },
       {
         "id": "10",
-        "name": "fertilizers Manufacturing Plant",
+        "name": "Fertilizers",
         "industryImage": "./images/industry/Fertilizers/Fertilizers1.jpg",
         "imgData": [
           {
@@ -1908,7 +1926,7 @@
       },
       {
         "id": "11",
-        "name": "Repetitive Manufacturing Plant",
+        "name": "Repetitive",
         "industryImage": "./images/industry/Repetitive/Repetitive1.jpg",
         "imgData": [
           {
@@ -1929,11 +1947,14 @@
       },
       {
         "id": "12",
-        "name": "Apparel Manufacturing Plant",
+        "name": "Apparel",
         "industryImage": "./images/industry/Apparel/Apparel2.jpg",
         "imgData": [
           {
             "url": "./images/industry/Apparel/Apparel2.jpg"
+          },
+          {
+            "url": "./images/industry/Apparel/Apparel1.jpg"
           }
         ],
         "list1": [
@@ -2072,7 +2093,7 @@
       },
       {
         "id": "7",
-        "name": "Super regional",
+        "name": "Super Regional",
         "industryImage": "./images/industry/ShoppingCenters/SuperRegional/SuperRegional1.jpg",
         "imgData": [
           {
@@ -2090,7 +2111,7 @@
       },
       {
         "id": "8",
-        "name": "Big box retail",
+        "name": "Big Box Retail",
         "industryImage": "./images/industry/ShoppingCenters/BigBoxRetail/BigBoxRetail1.jpg",
         "imgData": [
           {
@@ -2108,7 +2129,7 @@
       },
       {
         "id": "9",
-        "name": "Free Standing retail locations",
+        "name": "Free Standing Retail Locations",
         "industryImage": "./images/industry/ShoppingCenters/FreeStandingRetailLocations/FreeStandingRetailLocations1.jpg",
         "imgData": [
           {
@@ -2818,9 +2839,6 @@
         "imgData": [
           {
             "url": "./images/industry/EntertainmentVenues/SkatePark/SkatePark1.jpg"
-          },
-          {
-            "url": "./images/industry/EntertainmentVenues/SkatePark/SkatePark2.jpg"
           }
         ],
         "list1": [
@@ -2943,22 +2961,22 @@
   {
     "id": "12",
     "name": "Facility Managers",
-    "industryImage": "./images/industry/FacilityManagers/FacilityManagers1.png",
+    "industryImage": "./images/industry/FacilityManagers/FacilityManagers/FacilityManagers1.png",
     "url": "/facility-managers",
     "data": [
       {
         "id": "1",
         "name": "Facility Managers",
-        "industryImage": "./images/industry/FacilityManagers/FacilityManagers1.png",
+        "industryImage": "./images/industry/FacilityManagers/FacilityManagers/FacilityManagers1.png",
         "imgData": [
           {
-            "url": "./images/industry/FacilityManagers/FacilityManagers1.png"
+            "url": "./images/industry/FacilityManagers/FacilityManagers/FacilityManagers1.png"
           },
           {
-            "url": "./images/industry/FacilityManagers/FacilityManagers2.png"
+            "url": "./images/industry/FacilityManagers/FacilityManagers/FacilityManagers2.png"
           },
           {
-            "url": "./images/industry/FacilityManagers/FacilityManagers3.png"
+            "url": "./images/industry/FacilityManagers/FacilityManagers/FacilityManagers3.png"
           }
         ],
         "list1": [
@@ -2995,7 +3013,31 @@
             "text": "Our team comprises skilled, background-checked professionals dedicated to exceeding your expectations. Rest easy knowing AfmX has your facility's best interests at heart."
           }
         ]
-      }
+      },
+      {
+        "id": "2",
+        "name": "Property Management",
+        "industryImage": "./images/industry/FacilityManagers/PropertyManagement/PropertyManagement1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/FacilityManagers/PropertyManagement/PropertyManagement1.jpg"
+          },
+          {
+            "url": "./images/industry/FacilityManagers/PropertyManagement/PropertyManagement2.jpg"
+          },
+          {
+            "url": "./images/industry/FacilityManagers/PropertyManagement/PropertyManagement3.jpg"
+          },
+          {
+            "url": "./images/industry/FacilityManagers/PropertyManagement/PropertyManagement4.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Transform your property with AfmX's comprehensive Property Management services. Our expert team goes beyond traditional property management, offering top-notch cleaning services and a wide range of additional solutions to enhance your property's value and appeal. From routine maintenance to specialized cleaning programs, we tailor our services to meet your property's unique needs. AfmX is your trusted partner in maximizing property efficiency, ensuring a pristine and welcoming environment for residents and guests. Experience excellence in property management with AfmX - where quality meets innovation."
+          }
+        ]
+        }
     ]
   },
   {
@@ -6192,7 +6234,7 @@
     "data": [
       {
         "id": "1",
-        "name": "Cargo Service Airports",
+        "name": "Commercial Service Airports (Primary)",
         "industryImage": "./images/industry/Airports/CommercialServiceAirportsPrimary/CommercialServiceAirportsPrimary1.jpg",
         "imgData": [
           {
@@ -6249,7 +6291,7 @@
         "industryImage": "./images/industry/Airports/RelieverAirports/RelieverAirports1.jpg",
         "imgData": [
           {
-            "url": "./images/industry/Airports/RelieverAirports/RelieverAirports1/jpg"
+            "url": "./images/industry/Airports/RelieverAirports/RelieverAirports1.jpg"
           }
         ],
         "list1": [
@@ -6879,58 +6921,10 @@
     "industryImage": "./images/industry/commercialRealEstate.jpg",
     "url": "/industrirs-list/27",
     "data": [
-      {
-        "id": "1",
-        "name": "Commercial General Contractors",
-        "industryImage": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors1.png",
-        "imgData": [
-          {
-            "url": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors1.png"
-          },
-          {
-            "url": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors2.png"
-          },
-          {
-            "url": "./images/industry/CommercialGeneralContractors/CommercialGeneralContractors3.png"
-          }
-        ],
-        "list1": [
-          {
-            "text": "Ready to transform your construction sites into pristine showcases of excellence? Look no further than AfmX - Your Partner in Unmatched Construction Cleaning!"
-          },
-          {
-            "heading": "Why AfmX?"
-          },
-          {
-            "heading": "Specialized Expertise: ",
-            "text": "Our dedicated team understands the unique needs of commercial construction sites, delivering tailored cleaning solutions."
-          },
-          {
-            "heading": "Cutting-Edge Technology: ",
-            "text": "AfmX utilizes state-of-the-art cleaning equipment and eco-friendly products for superior results without compromising the environment."
-          }
-        ],
-        "list2": [
-          {
-            "heading": "Time-Efficient Services:",
-            "text": "We know time is money. AfmX ensures swift and efficient cleaning processes, allowing your team to focus on what they do best – construction!"
-          },
-          {
-            "heading": "Customized Packages: ",
-            "text": "No two construction sites are the same. AfmX offers flexible cleaning packages to fit your project's specific requirements and budget."
-          },
-          {
-            "heading": "Impeccable Safety Record: ",
-            "text": "Safety is our priority. AfmX adheres to the highest safety standards, ensuring a secure working environment for everyone on-site."
-          },
-          {
-            "text": "Experience the AfmX Difference Today!"
-          }
-        ]
-      },
+      
       {
         "id": "2",
-        "name": "Commercial Real Estate Multi Family",
+        "name": "Multi Family",
         "industryImage": "./images/industry/MultiFamily/MultiFamily1.png",
         "imgData": [
           {
@@ -6938,9 +6932,6 @@
           },
           {
             "url": "./images/industry/MultiFamily/MultiFamily2.png"
-          },
-          {
-            "url": "./images/industry/MultiFamily/CMultiFamily3.png"
           }
         ],
         "list1": [
@@ -6951,7 +6942,7 @@
       },
       {
         "id": "3",
-        "name": "Commercial Real Estate Office",
+        "name": "Office",
         "industryImage": "./images/industry/Office/Office1.png",
         "imgData": [
           {
@@ -6972,7 +6963,7 @@
       },
       {
         "id": "4",
-        "name": "Commercial Real Estate Industrial",
+        "name": "Industrial",
         "industryImage": "./images/industry/Industrial/Industrial1.png",
         "imgData": [
           {
@@ -6999,7 +6990,7 @@
       },
       {
         "id": "5",
-        "name": "Commercial Real Estate Hotels Hospitality",
+        "name": "Hotels Hospitality",
         "industryImage": "./images/industry/HotelsHospitality/HotelsHospitality1.png",
         "imgData": [
           {
@@ -7026,7 +7017,7 @@
       },
       {
         "id": "6",
-        "name": "Commercial Real Estate Mixed Use",
+        "name": "Mixed Use",
         "industryImage": "./images/industry/MixedUse/MixedUse1.png",
         "imgData": [
           {
@@ -7061,7 +7052,7 @@
       },
       {
         "id": "7",
-        "name": "Commercial Real Estate Land",
+        "name": "Land",
         "industryImage": "./images/industry/Land/Land1.png",
         "imgData": [
           {
@@ -7085,7 +7076,7 @@
       },
       {
         "id": "8",
-        "name": "Commercial Real Estate Retail",
+        "name": "Retail",
         "industryImage": "./images/industry/Retail/Retail1.png",
         "imgData": [
           {
@@ -7106,7 +7097,7 @@
       },
       {
         "id": "9",
-        "name": "Commercial Real Estate Special Purpose",
+        "name": "Special Purpose",
         "industryImage": "./images/industry/SpecialPurpose/SpecialPurpose1.png",
         "imgData": [
           {

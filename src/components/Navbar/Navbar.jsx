@@ -132,9 +132,9 @@ function Navbar() {
                       </a>
                       {price && (
                         <ul className="dropdown-active">
-                          <li>
+                          {/* <li>
                             <Link target="_blank" to="/price-calculator">Price Calculator</Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link target="_blank" to="">Budget buddy </Link>
                           </li>

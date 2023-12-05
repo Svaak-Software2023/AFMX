@@ -165,6 +165,8 @@ function App() {
           <Route path="/legal" element={<Legal />} />
           {/* art and gallery */}
           <Route path="/before-after" element={<BeforeAndAfter />} />
+
+          <Route path="*" element={<p>There's nothing here: 404!</p>} />
         </Routes>
 
       </div>

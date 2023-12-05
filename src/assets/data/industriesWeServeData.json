@@ -1553,12 +1553,30 @@
   },
   {
     "id": "4",
-    "name": "Condominium Associations",
+    "name": "Condominium",
     "industryImage": "./images/industry/homeownerAndCondominiumAssociations.jpg",
     "url": "/industrirs-list/4",
     "data": [
       {
-        "details": ""
+        "id": "1",
+        "name": "Condominium",
+        "industryImage": "./images/industry/Condominium/Condominium1.jpg",
+        "imgData": [
+          {
+            "url": "./images/industry/Condominium/Condominium1.jpg"
+          },
+          {
+            "url": "./images/industry/Condominium/Condominium2.jpg"
+          },
+          {
+            "url": "./images/industry/Condominium/Condominium3.jpg"
+          }
+        ],
+        "list1": [
+          {
+            "text": "Discover a tailored suite of services designed exclusively for condominium owners and managers at AfmX. Our comprehensive offerings include top-notch cleaning services, ensuring your spaces remain pristine and inviting. Experience the convenience of our skilled handymen who are ready to tackle any repair or maintenance task, promptly and efficiently. Elevate the well-being of your community with our specialized disinfection services, providing a safe and hygienic environment for all residents. At AfmX, we go beyond the ordinary, offering a range of services that cater specifically to the unique needs of condominiums. Trust us to enhance the overall quality of living in your community with our dedicated and professional solutions."
+          }
+        ]
       }
     ]
   },
@@ -2180,7 +2198,7 @@
         ],
         "list1": [
           {
-            "text":"Transform your market shopping center with AfmX's comprehensive cleaning and beyond services. We specialize in maintaining a pristine environment for your shoppers by offering top-notch cleaning solutions. From thorough floor cleaning to meticulous restroom upkeep, our dedicated team ensures every corner of your shopping center remains inviting and hygienic. Beyond cleaning, AfmX goes the extra mile, providing additional services that contribute to a seamless shopping experience. Elevate the standards of cleanliness at your market shopping center with AfmX's expertise in creating a fresh and welcoming atmosphere for both retailers and shoppers alike."
+            "text": "Transform your market shopping center with AfmX's comprehensive cleaning and beyond services. We specialize in maintaining a pristine environment for your shoppers by offering top-notch cleaning solutions. From thorough floor cleaning to meticulous restroom upkeep, our dedicated team ensures every corner of your shopping center remains inviting and hygienic. Beyond cleaning, AfmX goes the extra mile, providing additional services that contribute to a seamless shopping experience. Elevate the standards of cleanliness at your market shopping center with AfmX's expertise in creating a fresh and welcoming atmosphere for both retailers and shoppers alike."
           }
         ]
       },
@@ -2198,7 +2216,7 @@
         ],
         "list1": [
           {
-            "text":"At AfmX Regional Center, we redefine excellence in cleaning services and beyond. Our consolidated warehouse solutions offer a seamless and efficient approach to managing your storage needs. From meticulous cleaning protocols to comprehensive warehouse organization, we go beyond the ordinary, ensuring your space is not just clean but optimized for functionality. Explore a range of services that extend beyond traditional cleaning, providing you with a holistic solution for a well-maintained and organized environment. With AfmX, experience a new standard of excellence in regional cleaning services designed to meet and exceed your expectations."
+            "text": "At AfmX Regional Center, we redefine excellence in cleaning services and beyond. Our consolidated warehouse solutions offer a seamless and efficient approach to managing your storage needs. From meticulous cleaning protocols to comprehensive warehouse organization, we go beyond the ordinary, ensuring your space is not just clean but optimized for functionality. Explore a range of services that extend beyond traditional cleaning, providing you with a holistic solution for a well-maintained and organized environment. With AfmX, experience a new standard of excellence in regional cleaning services designed to meet and exceed your expectations."
           }
         ]
       }
@@ -3037,7 +3055,7 @@
             "text": "Transform your property with AfmX's comprehensive Property Management services. Our expert team goes beyond traditional property management, offering top-notch cleaning services and a wide range of additional solutions to enhance your property's value and appeal. From routine maintenance to specialized cleaning programs, we tailor our services to meet your property's unique needs. AfmX is your trusted partner in maximizing property efficiency, ensuring a pristine and welcoming environment for residents and guests. Experience excellence in property management with AfmX - where quality meets innovation."
           }
         ]
-        }
+      }
     ]
   },
   {
@@ -3104,9 +3122,9 @@
             "url": "./images/industry/CommercialGeneralContractors/Flooring/Flooring1.jpg"
           }
         ],
-        "list1":[
+        "list1": [
           {
-            "text":"AfmX is your premier partner in commercial flooring solutions, specializing in comprehensive services designed to meet the unique needs of managers. As a trusted commercial flooring contractor, we go beyond the ordinary to deliver top-notch cleaning services and more. Our team is dedicated to ensuring your facility's floors not only look impeccable but also maintain their longevity and functionality. From routine maintenance to specialized cleaning techniques, AfmX brings a wealth of expertise to enhance the aesthetic appeal and safety of your commercial space. Discover a seamless blend of quality craftsmanship and professional care with AfmX for all your commercial flooring needs."
+            "text": "AfmX is your premier partner in commercial flooring solutions, specializing in comprehensive services designed to meet the unique needs of managers. As a trusted commercial flooring contractor, we go beyond the ordinary to deliver top-notch cleaning services and more. Our team is dedicated to ensuring your facility's floors not only look impeccable but also maintain their longevity and functionality. From routine maintenance to specialized cleaning techniques, AfmX brings a wealth of expertise to enhance the aesthetic appeal and safety of your commercial space. Discover a seamless blend of quality craftsmanship and professional care with AfmX for all your commercial flooring needs."
           }
         ]
       },
@@ -3119,9 +3137,9 @@
             "url": "./images/industry/CommercialGeneralContractors/Industrial/Industrial1.jpg"
           }
         ],
-        "list1":[
+        "list1": [
           {
-            "text":"AfmX, your trusted partner in commercial and industrial contracting, offers a comprehensive suite of services tailored to meet the unique needs of businesses. Specializing in cleaning solutions and beyond, we bring a wealth of expertise to enhance the efficiency and functionality of your facilities. Our dedicated team of professionals is committed to delivering top-notch services that go beyond the ordinary, ensuring your commercial spaces are not only clean but also optimized for peak performance. From meticulous cleaning services to a wide range of industrial solutions, AfmX is your go-to contractor for excellence in every project. Experience the difference of working with a team that understands the intricacies of commercial and industrial environments, providing unparalleled service that stands the test of time. Elevate your standards with AfmX and redefine the possibilities for your business."
+            "text": "AfmX, your trusted partner in commercial and industrial contracting, offers a comprehensive suite of services tailored to meet the unique needs of businesses. Specializing in cleaning solutions and beyond, we bring a wealth of expertise to enhance the efficiency and functionality of your facilities. Our dedicated team of professionals is committed to delivering top-notch services that go beyond the ordinary, ensuring your commercial spaces are not only clean but also optimized for peak performance. From meticulous cleaning services to a wide range of industrial solutions, AfmX is your go-to contractor for excellence in every project. Experience the difference of working with a team that understands the intricacies of commercial and industrial environments, providing unparalleled service that stands the test of time. Elevate your standards with AfmX and redefine the possibilities for your business."
           }
         ]
       },
@@ -3134,9 +3152,9 @@
             "url": "./images/industry/CommercialGeneralContractors/WoodAndDoor/WoodAndDoor1.jpg"
           }
         ],
-        "list1":[
+        "list1": [
           {
-            "text":"AfmX specializes in delivering unparalleled wood and door contracting solutions tailored for commercial spaces. Our team of expert managers ensures seamless execution of projects, from custom woodwork to precision door installations. Beyond our core services, AfmX goes above and beyond by offering comprehensive cleaning services, adding a touch of excellence to every project. With a commitment to quality craftsmanship and attention to detail, we transform commercial spaces into functional, aesthetically pleasing environments. Explore the synergy of innovation and reliability with AfmX, your trusted partner for top-notch wood and door solutions, coupled with a suite of additional services to meet all your commercial needs."
+            "text": "AfmX specializes in delivering unparalleled wood and door contracting solutions tailored for commercial spaces. Our team of expert managers ensures seamless execution of projects, from custom woodwork to precision door installations. Beyond our core services, AfmX goes above and beyond by offering comprehensive cleaning services, adding a touch of excellence to every project. With a commitment to quality craftsmanship and attention to detail, we transform commercial spaces into functional, aesthetically pleasing environments. Explore the synergy of innovation and reliability with AfmX, your trusted partner for top-notch wood and door solutions, coupled with a suite of additional services to meet all your commercial needs."
           }
         ]
       }
@@ -6921,7 +6939,6 @@
     "industryImage": "./images/industry/commercialRealEstate.jpg",
     "url": "/industrirs-list/27",
     "data": [
-      
       {
         "id": "2",
         "name": "Multi Family",

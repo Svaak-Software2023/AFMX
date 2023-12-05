@@ -239,8 +239,7 @@
   text-decoration: none;
 }
 
-
-#footer .c#007cfbits {
+#footer .c {
   float: right;
   text-align: center;
   font-size: 13px;
@@ -264,7 +263,7 @@
     padding: 0px;
   }
   #footer .copyright,
-  #footer .c#007cfbits {
+  #footer .c {
     float: none;
     text-align: center;
     padding: 2px 0;

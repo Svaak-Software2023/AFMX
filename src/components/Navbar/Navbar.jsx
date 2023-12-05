@@ -136,13 +136,13 @@ function Navbar() {
                             <Link target="_blank" to="/price-calculator">Price Calculator</Link>
                           </li> */}
                           <li>
-                            <Link target="_blank" to="">Budget buddy </Link>
+                            <Link target="_blank" to="">Budget Buddy </Link>
                           </li>
                           <li>
-                            <Link target="_blank" to="">Start a project</Link>
+                            <Link target="_blank" to="">Start A Project</Link>
                           </li>
                           <li>
-                            <Link target="_blank" to="">Pay as you go</Link>
+                            <Link target="_blank" to="">Pay As You Go</Link>
                           </li>
                         </ul>
                       )}

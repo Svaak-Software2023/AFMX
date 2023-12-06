@@ -2,10 +2,8 @@ import { Route, Routes, useLocation } from "react-router-dom"
 import React, { lazy, Suspense } from 'react';
 import { FaArrowUp } from "react-icons/fa";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
 // Import the component lazily
 // const Home = lazy(() => import("./pages/Home/Home"));
-
 import "./App.css"
 import Home from "./pages/Home/Home"
 import Navbar from "./components/Navbar/Navbar"
@@ -51,11 +49,9 @@ import AtticInstallationAndRepairDepartment from "./pages/serviceDepartment/serv
 import AssemblyDepartment from "./pages/serviceDepartment/serviceDepartmentItem/AssemblyDepartment/AssemblyDepartment";
 import CarpentryInstallationAndRepairDepartment from "./pages/serviceDepartment/serviceDepartmentItem/CarpentryInstallationAndRepairDepartment/CarpentryInstallationAndRepairDepartment";
 
-
-
 function App() {
-  const [showButton, setShowButton] = useState(false);
 
+  const [showButton, setShowButton] = useState(false);
   const { pathname } = useLocation()
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -71,7 +67,6 @@ function App() {
       }
     };
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -100,32 +95,12 @@ function App() {
           <Route path="/product/:id" element={<ProductCategory />} />
 
 
-
-
-
-
-
-
-
-
           <Route path="/service-department/:name" element={<ServiceDepartment />} />
           <Route path="/service-department-item/:parentId/:ItemId" element={<ServiceDepartmentItem />} />
           <Route path="/handyman-solutions-department" element={<HandymanSolutionDepartment />} />
           <Route path="/assembly-department" element={<AssemblyDepartment />} />
           <Route path="/attic-installation-and-repair-department" element={<AtticInstallationAndRepairDepartment />} />
           <Route path="/carpentry-installation-and-repair-department" element={<CarpentryInstallationAndRepairDepartment />} />
-
-
-
-
-          {/* <DepartmentRoute/> */}
-
-
-
-
-
-
-
 
 
           <Route path="/forget-password" element={<Forget />} />
@@ -143,32 +118,29 @@ function App() {
           <Route path="/industries-list/:parentName/:name" element={<IndustriesSubItemPage />} />
 
           <Route path="/price-calculator" element={<PriceCalculator />} />
-          <Route path="/complain-portal" element={<Loader />} />
+          <Route path="/complain-portal" element={<ComplainPortal />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/location" element={<MapLocation />} />
 
 
-          {/* important links  category */}
           <Route path="/chemical-regulation" element={<ChemicalRegulation />} />
           <Route path="/about-the-company" element={<AboutTheCompany />} />
           <Route path="/about-the-company" element={<AboutTheCompany />} />
           <Route path="/afmx-learning/:id" element={<AFMXLearning />} />
 
-          {/* media  */}
-
           <Route path="/media/:id" element={<Media />} />
+
           {/* AFMX Company  */}
           <Route path="/mission" element={<Mission />} />
           <Route path="/statment" element={<Statment />} />
           <Route path="/vision" element={<Vision />} />
           <Route path="/core-value" element={<CoreValue />} />
           <Route path="/legal" element={<Legal />} />
+
           {/* art and gallery */}
           <Route path="/before-after" element={<BeforeAndAfter />} />
-
           <Route path="*" element={<p>There's nothing here: 404!</p>} />
         </Routes>
-
       </div>
       <Footer />
       {showButton && (

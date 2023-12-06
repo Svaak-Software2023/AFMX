@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "University Cleaning",
+    "name": "Educational Establishment",
     "industryImage": "./images/industry/universityCleaning.jpg",
     "url": "/univercity-list",
     "data": [
@@ -1905,7 +1905,7 @@
       },
       {
         "id": "9",
-        "name": "3d Printing",
+        "name": "3D Printing",
         "industryImage": "./images/industry/3DPrinting/3DPrinting1.jpg",
         "imgData": [
           {
@@ -3060,7 +3060,7 @@
   },
   {
     "id": "13",
-    "name": "Commercial General Contractors",
+    "name": "Commercial Contractors",
     "industryImage": "./images/industry/commercialGeneralContractors.jpg",
     "url": "/industrirs-list/13",
     "data": [
@@ -4793,7 +4793,7 @@
       },
       {
         "id": "4",
-        "name": "Bistro Café",
+        "name": "Bistro Cafe",
         "industryImage": "./images/industry/BistroCafe/BistroCafe1.png",
         "imgData": [
           {
@@ -5124,7 +5124,7 @@
       },
       {
         "id": "3",
-        "name": "Corporate contiguous office",
+        "name": "Corporate Contiguous Office",
         "industryImage": "./images/industry/Contiguous/Contiguous1.jpg",
         "imgData": [
           {
@@ -5157,7 +5157,7 @@
       },
       {
         "id": "5",
-        "name": "Corporate traditional office ",
+        "name": "Corporate Traditional Office ",
         "industryImage": "./images/industry/Traditional/Traditional1.jpg",
         "imgData": [
           {
@@ -5172,7 +5172,7 @@
       },
       {
         "id": "6",
-        "name": "Corporate executive office",
+        "name": "Corporate Executive Office",
         "industryImage": "./images/industry/Executive/Executive1.jpg",
         "imgData": [
           {
@@ -5250,7 +5250,7 @@
       },
       {
         "id": "11",
-        "name": "Corporate small office ",
+        "name": "Corporate small office",
         "industryImage": "./images/industry/SmallOffice/SmallOffice1.jpg",
         "imgData": [
           {
@@ -5661,7 +5661,7 @@
       },
       {
         "id": "3",
-        "name": "CourtHouse",
+        "name": "Court House",
         "industryImage": "./images/industry/CourtHouses/CourtHouses1.jpg",
         "imgData": [
           {
@@ -7684,9 +7684,6 @@
             "url": "./images/industry/MedicalOffices/MentalHealth/MentalHealth2.jpg"
           },
           {
-            "url": "./images/industry/MedicalOffices/MentalHealth/MentalHealth3.jpg"
-          },
-          {
             "url": "./images/industry/MedicalOffices/MentalHealth/MentalHealth4.jpg"
           }
         ],
@@ -7709,9 +7706,6 @@
           },
           {
             "url": "./images/industry/MedicalOffices/PhysicalTherapy/PhysicalTherapy3.jpg"
-          },
-          {
-            "url": "./images/industry/MedicalOffices/PhysicalTherapy/PhysicalTherapy4.jpg"
           }
         ],
         "list1": [
@@ -8099,6 +8093,9 @@
           },
           {
             "url": "./images/industry/CruiseShip/SingleSolo/SingleSolo2.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/SingleSolo/SingleSolo3.jpg"
           }
         ],
         "list1": [
@@ -8117,6 +8114,9 @@
           },
           {
             "url": "./images/industry/CruiseShip/Family/Family2.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Family/Family3.jpg"
           }
         ],
         "list1": [
@@ -8138,6 +8138,9 @@
           },
           {
             "url": "./images/industry/CruiseShip/AdultOnly/AdultOnly2.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/AdultOnly/AdultOnly3.jpg"
           }
         ],
         "list1": [
@@ -8156,6 +8159,9 @@
           },
           {
             "url": "./images/industry/CruiseShip/Couple/Couple2.jpg"
+          },
+          {
+            "url": "./images/industry/CruiseShip/Couple/Couple3.jpg"
           }
         ],
         "list1": [

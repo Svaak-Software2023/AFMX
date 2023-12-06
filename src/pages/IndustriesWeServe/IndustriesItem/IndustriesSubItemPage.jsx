@@ -9,8 +9,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function IndustriesSubItemPage() {
     const { parentName, name } = useParams()
+    console.log(parentName, name);
     const response = industryData.find((item) => item.name === parentName);
     const data = response?.data.find((item) => item.name === name);
+    console.log(data);
     return (
         <>
            {data?.imgData?.length>0? <div className="container p-0 my-3">

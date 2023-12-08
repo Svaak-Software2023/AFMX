@@ -48,7 +48,7 @@ function IndustriesSubItemPage() {
                                     </div>
                                     <div className="col-lg-6">
 
-                                  {data?.paira&& data?.paira?.map((item,index)=><p className='mb-2' key={index}>{item.text}</p>)}
+                                  {data?.para&& data?.para?.map((item,index)=><p className='mb-2' key={index}><b>{item.heading}</b> {item.text}</p>)}
 
                                         <ul className="comminityCollegeList m-0">
                                             {
@@ -64,7 +64,7 @@ function IndustriesSubItemPage() {
                                         !!data.list2 && data?.list2?.map((item, index) => <li key={index}><b>{item?.heading}</b>{item.text} <h3>{item.headingh3}</h3></li>)
                                     }
                                 </ul>
-                                {data?.paira2&& data?.paira2?.map((item,index)=><p key={index}>{item.text}</p>)}
+                                {data?.para2&& data?.para2?.map((item,index)=><p key={index}><b>{item.heading}</b> {item.text}</p>)}
 
                             </div>
                         </div>

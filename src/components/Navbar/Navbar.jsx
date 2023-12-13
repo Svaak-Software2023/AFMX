@@ -203,13 +203,13 @@ function Navbar() {
                   </li>
 
                   {data ?
-                    <li style={{border:"none"}}>
+                    <li style={{border:"none !important"}}>
                       <Link target="_blank" to="/" className="nav-link " onClick={() => localStorage.clear()}>
                         Logout
                       </Link>
                     </li>
                     :
-                    <li className="dropdown" onClick={logindropdown} style={{border:"none"}}>
+                    <li className="dropdown" onClick={logindropdown} style={{border:"none !important"}}>
                       <a >
                         <span>Login<RiArrowDropDownLine className="fs-4"/></span>
                       </a>

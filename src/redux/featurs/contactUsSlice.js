@@ -21,7 +21,7 @@ const contactUs=createSlice({
     },
     reducers:{
         setMessage:(state,action)=>{
-            state.user=action.payload
+            state.message=action.payload
         },
         extraReducers:{
             [contactForm.pending]:(state)=>{

@@ -48,6 +48,8 @@ import HandymanSolutionDepartment from "./pages/serviceDepartment/serviceDepartm
 import AtticInstallationAndRepairDepartment from "./pages/serviceDepartment/serviceDepartmentItem/AtticInstallationAndRepairDepartment/AtticInstallationAndRepairDepartment";
 import AssemblyDepartment from "./pages/serviceDepartment/serviceDepartmentItem/AssemblyDepartment/AssemblyDepartment";
 import CarpentryInstallationAndRepairDepartment from "./pages/serviceDepartment/serviceDepartmentItem/CarpentryInstallationAndRepairDepartment/CarpentryInstallationAndRepairDepartment";
+import UserDashboard from "./pages/userDashboard/UserDashboard";
+import ExistingClients from "./pages/complainPortal/ExistingClients";
 
 function App() {
 
@@ -93,6 +95,8 @@ function App() {
           <Route path="/create-account" element={<CreateAccount />} />
           <Route path="/helping-hand/:id" element={<HelpingHand />} />
           <Route path="/product/:id" element={<ProductCategory />} />
+          <Route path="/user-dashboard/:type" element={<UserDashboard/>} />
+          <Route path="/user-complain" element={<ExistingClients/>} />
 
 
           <Route path="/service-department/:name" element={<ServiceDepartment />} />
@@ -101,7 +105,6 @@ function App() {
           <Route path="/assembly-department" element={<AssemblyDepartment />} />
           <Route path="/attic-installation-and-repair-department" element={<AtticInstallationAndRepairDepartment />} />
           <Route path="/carpentry-installation-and-repair-department" element={<CarpentryInstallationAndRepairDepartment />} />
-
 
           <Route path="/forget-password" element={<Forget />} />
           <Route path="/reset-password" element={<ResetPassword />} />
@@ -122,12 +125,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/location" element={<MapLocation />} />
 
-
           <Route path="/chemical-regulation" element={<ChemicalRegulation />} />
           <Route path="/about-the-company" element={<AboutTheCompany />} />
           <Route path="/about-the-company" element={<AboutTheCompany />} />
           <Route path="/afmx-learning/:id" element={<AFMXLearning />} />
-
           <Route path="/media/:id" element={<Media />} />
 
           {/* AFMX Company  */}

@@ -7,9 +7,11 @@ export const signin=createAsyncThunk("api/sigin", async({formData,navigate,toast
         const response=await api.signin(formData)
         toast.success(response.data.message)
         navigate("/")
+        console.log(response,"this is responce");
         return response.data.signInResponse
     }catch(err){
-        return toast.error(err.response.data.error)
+        console.log(err);
+        return err.response.data
     }
 })
 
@@ -22,7 +24,7 @@ export const signup=createAsyncThunk("api/signup", async({formData,navigate,toas
         return response.data
         }
     }catch(err){
-        return toast.error(err.response.data.error)
+        return toast.error(err.response.data)
     }
 })
 
@@ -36,7 +38,8 @@ const authSlice =createSlice({
     reducers:{
         setUser:(state,action)=>{
             state.user=action.payload
-        }
+        },
+
     },
 
     extraReducers:{
@@ -47,6 +50,7 @@ const authSlice =createSlice({
             state.loading=false;
             localStorage.setItem('user',JSON.stringify(action.payload))
             state.user=action.payload;
+            state.error=action.payload.error;
         },
         [signin.rejected]:(state,action)=>{
             state.loading=false;

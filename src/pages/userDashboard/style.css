@@ -1,0 +1,29 @@
+.user-dashboard-left {
+    display: flex;
+
+}
+
+.user-complain {
+    width: 100%;
+    height: 180px;
+    color: #fff;
+    background-color: var(--blue);
+    margin: 10px 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.user-complain h3 {
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+}
+
+.user-complain-icon {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    font-size: 150px;
+    opacity: .5;
+}

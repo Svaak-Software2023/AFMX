@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.complain-radio input{
+cursor: pointer;
+}
+
 .complain-radio label {
     font-size: 14px;
     font-weight: 600;
@@ -76,6 +80,9 @@ background-color: #3A5776;
 }
 .complain-icon{
     background-color: #312D4B;
+}
+.service-icon{
+    background-color: #3F63B9;
 }
 
 .complain-button {

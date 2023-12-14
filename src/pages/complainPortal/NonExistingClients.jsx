@@ -49,14 +49,14 @@ function NonExistingClients() {
                   <div className="row mb-3">
 
                     <div className="col-lg-6 col-12">
-                      <div className="complain-radio  m-lg-3 mb-0 ">
+                      <div className="complain-radio  mb-3 ">
                         <input type="radio" id="radio1" name="complain_type" value="Complaint of Fleet" {...register("radio", { required: true })} />
                         <label htmlFor="radio1">Complaint of Fleet</label>
                       </div>
                     </div>
 
                     <div className="col-lg-6 col-12">
-                      <div className="complain-radio m-lg-3 mb-0">
+                      <div className="complain-radio mb-3">
                         <input type="radio" id="radio2" name="complain_type" value="Complaint of Driver" {...register("radio", { required: true })} />
                         <label htmlFor="radio2">Complaint of Driver</label>
                       </div>
@@ -133,7 +133,7 @@ function NonExistingClients() {
                           </div>
 
                           <div className="col-lg-6 col-12">
-                            <h3 className="complain-input-lebel"><AiFillMessage  className='other-icon' /> Other</h3>
+                            <h3 className="complain-input-lebel"><AiFillMessage className='other-icon' /> Other</h3>
                             <div className="mb-3 complain-input-div">
                               <input type="text" className="form-control shadow-none complain-input" {...register('other')} placeholder="Other then above info..." />
                             </div>
@@ -202,7 +202,7 @@ function NonExistingClients() {
                           </div>
 
                           <div className="col-lg-6 col-12">
-                            <h3 className="complain-input-lebel"><AiFillMessage  className='other-icon' /> Other</h3>
+                            <h3 className="complain-input-lebel"><AiFillMessage className='other-icon' /> Other</h3>
                             <div className="mb-3 complain-input-div">
                               <input type="text" className="form-control shadow-none complain-input" {...register('other')} placeholder="Other then above info..." />
                             </div>
@@ -243,6 +243,14 @@ function NonExistingClients() {
                       </div>
                     </div>
 
+                    <div className="col-lg-12 col-12">
+                      <h3 className="complain-input-lebel"><FaExclamationCircle className='complain-icon' />Complaint Detail</h3>
+                      <div className="mb-3 complain-input-div">
+                        <textarea type="text" className="form-control shadow-none complain-input" {...register('complaintMessage', { required: true })} rows="6" cols="50" placeholder="Write your message..."></textarea>
+                        {errors.complaintMessage && <span className='error-message'>Complaint detail is required</span>}
+                      </div>
+                    </div>
+
                     <div className="col-lg-6 col-12">
                       <h3 className="complain-input-lebel"><FaCamera className='phone-icon' /> Evidence Picture</h3>
                       <div className="mb-3 complain-video">
@@ -277,11 +285,6 @@ function NonExistingClients() {
                     </div>
                   </div>
 
-                  <h3 className="complain-input-lebel"><FaExclamationCircle className='complain-icon' />Complaint Detail</h3>
-                  <div className="mb-3 complain-input-div">
-                    <textarea type="text" className="form-control shadow-none complain-input" {...register('complaintMessage', { required: true })} rows="6" cols="50" placeholder="Write your message..."></textarea>
-                    {errors.complaintMessage && <span className='error-message'>Complaint detail is required</span>}
-                  </div>
                   <div className="complain-button">
                     <button type="submit">Submit</button>
                   </div>

@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const API=axios.create({baseURL:" https://4bda-122-161-51-192.ngrok-free.app"});
+const API=axios.create({baseURL:"https://1b4d-122-161-52-3.ngrok-free.app/"});
 
 export const signin=(formData)=>API.post("/api/signin",formData);
 export const signup=(formData)=>API.post("/api/signup",formData);
 
 export const contactUs=(formData)=>API.post("/api/contact-page",formData);
-
+ 
 
 // complain API
 

@@ -7,6 +7,7 @@ const Slider = () => {
   const [user, setUser] = useState("");
   const data = useSelector((state) => state.auth.user)
 
+  const isLogin = localStorage.getItem('user')
 
   useEffect(() => {
     if (data) {
@@ -113,10 +114,10 @@ const Slider = () => {
             </div>
 
             <div className="col-lg-3">
-              {user ? (
+              {isLogin ? (
                 <div className="login-button">
                   <div className="profile_pic">
-                    {user?.clientFirstName.charAt(0).toUpperCase()}
+                    {user?.clientFirstName?.charAt(0).toUpperCase()}
                   </div>
                   <h3 className="profile_name">Welcome, {user?.clientFirstName}!</h3>
                   <Link to="/user-dashboard/${loginType}">View Profile</Link>
@@ -143,8 +144,6 @@ const Slider = () => {
           </div>
         </div>
       </div>
-
-
     </>
   );
 };

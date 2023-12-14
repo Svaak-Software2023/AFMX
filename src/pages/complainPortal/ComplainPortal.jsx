@@ -6,7 +6,7 @@ function ComplainPortal() {
   const [data,setData]=useState(false)
   
   return (
-    <>
+    <> 
       {
         data
           ?

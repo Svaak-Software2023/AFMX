@@ -23,7 +23,7 @@ export const complainCreate = createAsyncThunk("complain/create", async({ data, 
 const complainSlice = createSlice({
     name: "complainSlice",
     initialState: {
-        message: "",
+        message: "", 
         error: "",
         loading: false
     },

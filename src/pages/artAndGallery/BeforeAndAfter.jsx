@@ -9,7 +9,7 @@ function BeforeAndAfter() {
                 <div className="row m-0 p-0 ">
                     <div className="col-lg-3 col-md-3 col-0 p-0 service_menu">
                         <ImportantLinks />
-                    </div>
+                    </div> 
                     <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">
                         <div>
                             <h3 className="heading">See the Difference! Before and After</h3>

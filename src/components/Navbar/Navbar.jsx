@@ -216,18 +216,18 @@ function Navbar() {
                       {logindrop && (
                         <ul className="dropdown-active">
                           <li>
-                            <Link target="_blank" to="/employee-login">Employee Login</Link>
+                            <Link target="_blank" to="/login">Employee Login</Link>
                           </li>
                           <li>
-                            <Link target="_blank" to="/client-login">Client Login</Link>
+                            <Link target="_blank" to="/login">Client Login</Link>
                           </li>
                           <li>
-                            <Link target="_blank" to="/federal-govrment-login">
+                            <Link target="_blank" to="/login">
                               Federal Government Login
                             </Link>
                           </li>
                           <li>
-                            <Link target="_blank" to="/admin-login">Admin Login</Link>
+                            <Link target="_blank" to="/login">Admin Login</Link>
                           </li>
                         </ul>
                       )}

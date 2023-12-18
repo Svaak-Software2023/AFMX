@@ -10,16 +10,14 @@ import { useState } from "react";
 import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
-import { complainCreate } from '../../redux/featurs/complainSlice';
 import { useNavigate } from 'react-router-dom';
+import { existingComplainCreate } from '../../redux/api';
 
 
 function ExistingClients() {
     const [file, setFile] = useState("")
     const [video, setVideo] = useState("")
     const [complainType, setComplainType] = useState("")
-    // const initialValue = { name: "", phone: "", category: "", service: "", description: "" }
-    // const user = useSelector((state) => state.auth.user)
     const user = JSON.parse(localStorage.getItem('user'))
     const {
         register,
@@ -30,36 +28,19 @@ function ExistingClients() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    const onSubmit = async (data) => {
-        // data.loggedInIds=user.clientId;
-        // data.complaintImage=file
+    const onSubmit = (data) => {
+        console.log(user.clientId);
         const newData = new FormData();
         newData.append('loggedInIds', Number(user.clientId))
-        newData.append('complaintImage', file);
+        newData.append('evidencePicture', file);
+        newData.append('evidenceVideo', video);
         Object.entries(data).forEach(([key, value]) => {
             newData.append(key, value);
         });
-        // dispatch(complainCreate({ newData, navigate, toast }))
-
-        try {
-            const response = await fetch('https://85f8-122-161-49-135.ngrok-free.app/api/create-complaint', {
-                method: 'POST',
-                body: newData,
-            });
-
-            if (response.ok) {
-                // File and form data sent successfully
-                console.log('File and form data sent successfully', response);
-            } else {
-                console.error('Error sending file and form data');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-        }
-
-        for (const [key, value] of newData.entries()) {
-            console.log(`${key}: ${value}`);
-        }
+        Object.entries(data).forEach(([key, value]) => {
+            console.log(key, value);
+        });
+        dispatch(existingComplainCreate({ newData, navigate, toast }))
     }
 
 
@@ -85,7 +66,7 @@ function ExistingClients() {
                                         <div className="col-lg-6">
                                             <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Customer Name</h3>
                                             <div className="mb-3 complain-input-div">
-                                                <input type="text" className="form-control shadow-none complain-input" {...register("complaineeName", { required: true, maxLength: 40 })} placeholder="Comlainee Name..." />
+                                                <input type="text" className="form-control shadow-none complain-input" {...register("customerName", { required: true, maxLength: 40 })} placeholder="Complainer Name..." />
                                                 {errors.complaineeName && <span className='error-message'>Customer name is required</span>}
                                             </div>
                                         </div>
@@ -93,7 +74,7 @@ function ExistingClients() {
                                         <div className="col-lg-6">
                                             <h3 className="complain-input-lebel"><FaPhoneAlt className='phone-icon' /> Phone No</h3>
                                             <div className="mb-3 complain-input-div">
-                                                <input type="text" className="form-control shadow-none complain-input" {...register('complaineePhone', { required: true })} placeholder="Your Phone No..." />
+                                                <input type="text" className="form-control shadow-none complain-input" {...register('customerPhone', { required: true })} placeholder="Your Phone No..." />
                                                 {errors.complaineePhone && <span className='error-message'>Phone number is required</span>}
                                             </div>
                                         </div>
@@ -103,7 +84,7 @@ function ExistingClients() {
                                         <div className="col-lg-6 col-12">
                                             <h3 className="complain-input-lebel"><IoMail className='email-icon' /> Email</h3>
                                             <div className="mb-3 complain-input-div">
-                                                <input type="email" className="form-control shadow-none complain-input" {...register('complaineeEmail', { required: true })} placeholder="Enter valid Email Address..." />
+                                                <input type="email" className="form-control shadow-none complain-input" {...register('customerEmail', { required: true })} placeholder="Enter valid Email Address..." />
                                                 {errors.complaineeEmail && <span className='error-message'>Email Id is required</span>}
                                             </div>
                                         </div>
@@ -113,8 +94,8 @@ function ExistingClients() {
                                             <div className="mb-3 complain-input-div">
                                                 <select type="text" className="form-control shadow-none complain-select" {...register('complaintServiceName', { required: true })}>
                                                     <option value="" >Select Service</option>
-                                                    <option value="Service 1" >Service 1</option>
-                                                    <option value="Service 2" >Service 2</option>
+                                                    <option value="Cabinet Assembly" >Cabinet Assembly</option>
+                                                    <option value="5" >Service 2</option>
                                                     <option value="Service 3" >Service 3</option>
                                                     <option value="Service 4" >Service 4</option>
                                                     <option value="Service 5" >Service 5</option>
@@ -124,16 +105,16 @@ function ExistingClients() {
                                         </div>
 
                                         <div className="col-lg-12 col-12">
-                                            <h3 className="complain-input-lebel "><FaCircleExclamation className='complain-type-icon' /> Complain Type</h3>
+                                            <h3 className="complain-input-lebel "><FaCircleExclamation className='complain-type-icon' /> Complaint Type</h3>
                                             <div className="mb-3 complain-input-div">
-                                                <select type="text" className="form-control shadow-none complain-select" {...register('complainType', { required: true })} onChange={(e) => setComplainType(e.target.value)} >
+                                                <select type="text" className="form-control shadow-none complain-select" {...register('complaintType', { required: true })} onChange={(e) => setComplainType(e.target.value)} >
                                                     <option value="" >Select Complain Type</option>
-                                                    <option value="Driver/Fleet Vehicle Complain" >Driver/Fleet Vehicle Complain</option>
-                                                    <option value="Employee Complain" >Employee Complain</option>
+                                                    <option value="Driver/Fleet Vehicle Complain" >Driver/Fleet Vehicle Complaint</option>
+                                                    <option value="Employee Complain" >Employee Complaint</option>
                                                     <option value="Billing Help" >Billing Help</option>
                                                     <option value="Other">Other</option>
                                                 </select>
-                                                {errors.complainType && <span className='error-message'>Complain type is required</span>}
+                                                {errors.complainType && <span className='error-message'>Complaint type is required</span>}
                                             </div>
                                         </div>
 
@@ -236,15 +217,15 @@ function ExistingClients() {
                                         <div className="col-lg-6 col-12">
                                             <h3 className="complain-input-lebel"><MdAddLocationAlt className='address-icon' /> Address</h3>
                                             <div className="mb-3 complain-input-div">
-                                                <input type="text" className="form-control shadow-none complain-input" {...register('address', { required: true })} placeholder="Enter Address of Incedent..." />
+                                                <input type="text" className="form-control shadow-none complain-input" {...register('complaintAddress', { required: true })} placeholder="Enter Address of Incedent..." />
                                                 {errors.address && <span className='error-message'>Address is required</span>}
                                             </div>
                                         </div>
 
                                         <div className="col-lg-6 col-12">
-                                            <h3 className="complain-input-lebel"><MdDateRange className='date-icon' /> Enter the Date of Incedent</h3>
+                                            <h3 className="complain-input-lebel"><MdDateRange className='date-icon' /> Enter the Date of Incident</h3>
                                             <div className="mb-3 complain-input-div">
-                                                <input type="date" className="form-control shadow-none complain-input" {...register('date', { required: true })} placeholder='Select Date' />
+                                                <input type="date" className="form-control shadow-none complain-input" {...register('dateOfIncedent', { required: true })} placeholder='Select Date' />
                                                 {errors.date && <span className='error-message'>Date is required</span>}
                                             </div>
                                         </div>
@@ -260,13 +241,13 @@ function ExistingClients() {
                                         <div className="col-lg-6 col-12">
                                             <h3 className="complain-input-lebel"><IoLogOut className='phone-icon' /> Desired Outcome</h3>
                                             <div className="mb-3 complain-input-div">
-                                                <input type="text" className="form-control shadow-none complain-input" {...register('desiredOutcome', { required: true })} placeholder="What you think about this complaint..." />
+                                                <input type="text" className="form-control shadow-none complain-input" {...register('desireOutcome', { required: true })} placeholder="What you think about this complaint..." />
                                                 {errors.desiredOutcome && <span className='error-message'>Desired outcome is required</span>}
                                             </div>
                                         </div>
 
                                         <div className="col-lg-12 col-12">
-                                            <h3 className="complain-input-lebel"><FaExclamationCircle className='complain-icon' />Complaint Detail</h3>
+                                            <h3 className="complain-input-lebel"><FaExclamationCircle className='complain-icon' />Complaint Message</h3>
                                             <div className="mb-3 complain-input-div">
                                                 <textarea type="text" className="form-control shadow-none complain-input" {...register('complaintMessage', { required: true })} rows="6" cols="50" placeholder="Write your message..."></textarea>
                                                 {errors.complaintMessage && <span className='error-message'>Complaint detail is required</span>}
@@ -283,13 +264,12 @@ function ExistingClients() {
                                                         <div className='d-flex justify-content-center'>
                                                             <input type="file" className="form-control shadow-none complain-input file-input" accept="image/png, image/gif, image/jpeg" onChange={e => setFile(e.target.files[0])} name="complaintImage" placeholder="Select File" />
                                                         </div>
+                                                        {file&& <span>{file.name}</span>}
                                                         {!file && <span className='error-message'>Picture is required</span>}
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
-
                                         <div className="col-lg-6 col-12">
                                             <h3 className="complain-input-lebel"><MdOutlineSlowMotionVideo className='video-icon' /> Evidence Video</h3>
                                             <div className="mb-3 complain-video">
@@ -300,6 +280,8 @@ function ExistingClients() {
                                                         <div className='d-flex justify-content-center'>
                                                             <input type="file" className="form-control shadow-none complain-input file-input" accept="video/mp4,video/x-m4v,video/*" onChange={e => setVideo(e.target.files[0])} name="complaintImage" placeholder="Select Video" />
                                                         </div>
+                                                        {video&& <span>{video.name}</span>}
+
                                                         {!video && <span className='error-message'>Video is required</span>}
                                                     </div>
                                                 </div>

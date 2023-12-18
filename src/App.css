@@ -17,3 +17,27 @@
     color: #fff;
     line-height: 0;
 }
+
+input {
+    box-shadow: none !important;
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 8px 8px !important;
+    background-color: #f1f1f1a8 ;
+}
+
+input:focus {
+    border: 1px solid var(--blue) !important;
+}
+
+textarea {
+    box-shadow: none !important;
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 8px 8px !important;
+    background-color: #f1f1f1a8 ;
+}
+
+textarea:focus {
+    border: 1px solid var(--blue) !important;
+}

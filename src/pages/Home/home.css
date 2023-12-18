@@ -1,3 +1,7 @@
+.partner-with-us{
+  background-color: #3f64b915 !important;
+  height: 100%;
+}
 .memebership-list {
   padding: 0px;
   background-color: white;
@@ -15,7 +19,7 @@
   background-color: var(--blue);
   padding: 15px 20px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 

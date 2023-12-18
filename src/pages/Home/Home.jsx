@@ -123,6 +123,37 @@ function Home() {
           </div>
         </div>
 
+        {/* our Service Department  */}
+
+        <div className="services-memebership mb-3">
+          <div className="container p-0">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="memebership-list">
+                  <h2>Our Service Department</h2>
+                  <div className="single-row">
+                    <ul className>
+                      {serviceData1.map((item) => (
+                        <li key={item.id}>
+                          <Link to={item.url}>{item.name}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className>
+                      {serviceData2.map((item) => (
+                        <li key={item.id}>
+                          <Link to={`/service-department/${item.url}`}>{item.name}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {/* <div className="load-more"><Link to="/new" >Load More</Link></div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* chemical shopping center  */}
         <div className="services-memebership mb-3">
           <div className="container p-0">
@@ -163,8 +194,165 @@ function Home() {
           </div>
         </div>
 
-        {/* Agent X shield  */}
+        {/* AFMX learning center  */}
+        <div className="services-memebership mb-3">
+          <div className="container p-0">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="memebership-list">
+                  <h2>Employee & Subcontractor Self Service</h2>
+                  <ul>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Employee Self Kiosk
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Employee Work Life
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Cleaning Science Academy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Employee Handbook
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        OSHA Training
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Cleaning Schedule and Duties to Perform on the Job
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Worker's Compensation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Federal Wage
+                      </Link>
+                    </li> <li>
+                      <Link to={"/new"} className="Links">
+                        W9, W2 Direct Deposit, Tax Documentation
+                      </Link>
+                    </li> <li>
+                      <Link to={"/new"} className="Links">
+                        Insurance
+                      </Link>
+                    </li> <li>
+                      <Link to={"/new"} className="Links">
+                        Employee Training
+                      </Link>
+                    </li> <li>
+                      <Link to={"/new"} className="Links">
+                        Work Form
+                      </Link>
+                    </li> <li>
+                      <Link to={"/new"} className="Links">
+                        Badges and Ids
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Dress Code
+                      </Link>
+                    </li><li>
+                      <Link to={"/new"} className="Links">
+                        Subcontractor Portal
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="memebership-list">
+                  <h2>AFMX Learning Center and Education</h2>
+                  <ul>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Viruses And Research
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        GPS Powered Geo Fencing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        ATP Testing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/before-after"} className="Links">
+                        Badges
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Uniform
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Hi Tech Equipment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        JaniCam
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Work Tracking
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Front Line Supervision
+                      </Link>
+                    </li><li>
+                      <Link to={"/new"} className="Links">
+                        Work Loading
+                      </Link>
+                    </li><li>
+                      <Link to={"/new"} className="Links">
+                        Work Directing
+                      </Link>
+                    </li><li>
+                      <Link to={"/new"} className="Links">
+                        Background Check
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Timesheet
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/new"} className="Links">
+                        Clock in System
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        {/* Agent X shield  */}
         <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
@@ -236,37 +424,6 @@ function Home() {
           </div>
         </div>
 
-        {/* our Service Department  */}
-
-        <div className="services-memebership mb-3">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="memebership-list">
-                  <h2>Our Service Department</h2>
-                  <div className="single-row">
-                    <ul className>
-                      {serviceData1.map((item) => (
-                        <li key={item.id}>
-                          <Link to={item.url}>{item.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <ul className>
-                      {serviceData2.map((item) => (
-                        <li key={item.id}>
-                          <Link to={`/service-department/${item.url}`}>{item.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  {/* <div className="load-more"><Link to="/new" >Load More</Link></div> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Watch  whether  */}
         <div className="services-memebership mb-3">
           <div className="container p-0">
@@ -277,7 +434,7 @@ function Home() {
                   <div className="membership-lis-image">
                     {/* <LazyLoadImage src="assets/img/service/map.jpg" />
                     <LazyLoadImage src="assets/img/service/calender.jpg" /> */}
-                    <WatchWhether />
+                    {/* <WatchWhether /> */}
                   </div>
                 </div>
               </div>
@@ -333,7 +490,7 @@ function Home() {
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-3">
-                <div className="memebership-list">
+                <div className="memebership-list partner-with-us">
                   <h2>PARTNER WITH US</h2>
                   <ul className>
                     <li>
@@ -365,7 +522,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="memebership-list">
+                <div className="memebership-list partner-with-us">
                   <h2>AFMX STUDIOS</h2>
                   <ul className>
                     <li>
@@ -415,7 +572,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="memebership-list">
+                <div className="memebership-list partner-with-us">
                   <h2>CAREERS AND EMPLOYMENT</h2>
                   <ul className>
                     <li>
@@ -476,7 +633,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-lg-3">
-                <div className="memebership-list">
+                <div className="memebership-list partner-with-us">
                   <h2>AFM HELPING HAND AND DONATIONS</h2>
                   <ul className>
                     {helpingHand.map((item) => (
@@ -496,7 +653,7 @@ function Home() {
 
           </div>
         </div>
-      
+
       </div>
     </>
   );

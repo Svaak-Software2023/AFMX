@@ -5,14 +5,12 @@ import { useSelector } from "react-redux";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 const Slider = () => {
   const [user, setUser] = useState("");
-  const data = useSelector((state) => state.auth.user)
-
-  const isLogin = localStorage.getItem('user')
-
+  const isLogin =JSON.parse(localStorage.getItem('user'))
+  
   useEffect(() => {
-    if (data) {
-      if (data) {
-        setUser(data);
+    if (isLogin) {
+      if (isLogin) {
+        setUser(isLogin);
       }
     }
   }, []);
@@ -114,10 +112,10 @@ const Slider = () => {
             </div>
 
             <div className="col-lg-3">
-              {isLogin ? (
+              {user&&user.token ? (
                 <div className="login-button">
                   <div className="profile_pic">
-                    {user?.clientFirstName?.charAt(0).toUpperCase()}
+                    {user&&user?.clientFirstName?.charAt(0).toUpperCase()}
                   </div>
                   <h3 className="profile_name">Welcome, {user?.clientFirstName}!</h3>
                   <Link to="/user-dashboard/${loginType}">View Profile</Link>
@@ -127,7 +125,7 @@ const Slider = () => {
                 </div>
               ) : (
                 <div className="login-button">
-                  <Link to="/client-login">Login</Link>
+                  <Link to="/login">Login</Link>
                   <Link to="/forget-password">Forgot Password</Link>
                   <Link to="/create-account">Create Account</Link>
                 </div>

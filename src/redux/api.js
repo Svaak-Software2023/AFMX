@@ -1,17 +1,13 @@
 import axios from "axios";
 
-const API=axios.create({baseURL:"https://1b4d-122-161-52-3.ngrok-free.app/"});
+const API = axios.create({ baseURL: "http://localhost:5000" });
 
-export const signin=(formData)=>API.post("/api/signin",formData);
-export const signup=(formData)=>API.post("/api/signup",formData);
+export const signin = (formData) => API.post("/api/signin", formData);
+export const signup = (formData) => API.post("/api/signup", formData);
 
-export const contactUs=(formData)=>API.post("/api/contact-page",formData);
- 
+export const contactUs = (formData) => API.post("/api/contact-page", formData);
 
 // complain API
+export const existingComplainCreate = (formData) => API.post('/api/create-exist-complaint',formData);
+export const nonExistingComplainCreate = (formData) => API.post('/api/create-nonExist-complaint',formData);
 
-export const createComplain=(formData)=>API.post("/api/create-complaint",formData, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });

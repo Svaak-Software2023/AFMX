@@ -8,7 +8,7 @@ import Loader from "../../components/Loader/Loader";
 import { useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function Login({ loginType }) {
+function Login() {
     const [formData, setFormData] = useState({ clientEmail: "", clientPassword: "" });
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -43,7 +43,7 @@ function Login({ loginType }) {
 
                             <div className="loginMain py-lg-5">
                                 <div className='loginForm'>
-                                    <h3 className="userType">{loginType}</h3>
+                                    <h3 className="userType">Login</h3>
                                     <form className="form" onSubmit={submithandler}>
                                         <label htmlFor="email" className="label">Email</label>
                                         <input id='email'

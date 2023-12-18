@@ -20,7 +20,10 @@
     color: #ffff;
     background-color: rgb(246, 2, 2);
 }
-
+/* tost message  */
+.toast-container {
+  z-index: 10000; /* Set the desired z-index value */
+}
 .heading{
   font-size: 1.4em;
   font-weight: 600;
@@ -55,9 +58,8 @@ h6 {
   font-family: 'Lato', sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/* # Preloader */
+
 #preloader {
   position: fixed;
   top: 0;

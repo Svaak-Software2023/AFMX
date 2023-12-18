@@ -1,50 +1,48 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import * as api from "../api"
+import * as api from "../api";
 
-export const complainCreate = createAsyncThunk("complain/create", async({ data, navigate, toast }) => {
+export const existingComplainCreate = createAsyncThunk(
+  "complain/create",
+  async ({ newData, navigate, toast }) => {
     try {
-        const response =await api.createComplain(data)
-            .then(() => {
-                toast.success("Complain has been created");
-                navigate("/")
-            })
-            .catch((data) => {
-                console.log("this is the response message", data.response)
-                toast.error(response.data.message, {
-                    position: toast.POSITION.BOTTOM_LEFT
-                })
+      const response = await api.existingComplainCreate(newData);
+      toast.success(response.data.message);
+      navigate("/");
+      return response.data;
+    } catch (err) {
+      toast.error(err.response.data.message);
+      throw err;
+    }
+  }
+);
 
-            })
-    }
-    catch (err) {
-        console.log(err);
-    }
-})
 const complainSlice = createSlice({
-    name: "complainSlice",
-    initialState: {
-        message: "", 
-        error: "",
-        loading: false
+  name: "complainSlice",
+  initialState: {
+    message: "",
+    error: "",
+    loading: false,
+  },
+  reducers: {
+    setMessage: (state, action) => {
+      state.message = action.payload;
     },
-    reducers: {
-        setMessage: (state, payload) => {
-            state.message = action.payload
-        }
-    },
-    extraReducers: {
-        [complainCreate.pending]: (state) => {
-            state.loading = true
-        },
-        [complainCreate.fulfilled]: (state, action) => {
-            state.loading = false,
-                console.log(action, "this is createsd");
-            state.message = action.payload
-        },
-        [complainCreate.rejected]: (state) => {
-            state.loading = false
-        }
-    }
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(existingComplainCreate.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(existingComplainCreate.fulfilled, (state, action) => {
+        state.loading = false;
+        console.log("this is create", action.payload);
+        state.message = action.payload;
+      })
+      .addCase(existingComplainCreate.rejected, (state) => {
+        state.loading = false;
+      });
+  },
 });
-export const { setMessage } = complainSlice.actions
+
+export const { setMessage } = complainSlice.actions;
 export default complainSlice.reducer;

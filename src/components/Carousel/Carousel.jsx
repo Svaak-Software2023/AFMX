@@ -118,7 +118,7 @@ const Slider = () => {
                     {user&&user?.clientFirstName?.charAt(0).toUpperCase()}
                   </div>
                   <h3 className="profile_name">Welcome, {user?.clientFirstName}!</h3>
-                  <Link to="/user-dashboard/${loginType}">View Profile</Link>
+                  <Link to="/user-dashboard">View Profile</Link>
                   <button className="signout_btn" onClick={handleSignOut}>
                     Sign Out
                   </button>

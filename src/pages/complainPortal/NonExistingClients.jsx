@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { nonExistingComplainCreate } from '../../redux/api';
+import { nonExistingComplainCreate } from '../../redux/featurs/complainSlice';
 
 function NonExistingClients() {
   const [file, setFile] = useState("")
@@ -61,14 +61,14 @@ function NonExistingClients() {
 
                     <div className="col-lg-6 col-12">
                       <div className="complain-radio  mb-3 ">
-                        <input type="radio" id="radio1" name="complain_type" value="Complaint of Fleet" {...register("radio", { required: true })} />
+                        <input type="radio" id="radio1" name="complain_type" value="F" {...register("radioInputType", { required: true })} />
                         <label htmlFor="radio1">Complaint of Fleet</label>
                       </div>
                     </div>
 
                     <div className="col-lg-6 col-12">
                       <div className="complain-radio mb-3">
-                        <input type="radio" id="radio2" name="complain_type" value="Complaint of Driver" {...register("radio", { required: true })} />
+                        <input type="radio" id="radio2" name="complain_type" value="D" {...register("radioInputType", { required: true })} />
                         <label htmlFor="radio2">Complaint of Driver</label>
                       </div>
                     </div>
@@ -103,13 +103,13 @@ function NonExistingClients() {
                     </div>
 
                     <div className="col-lg-6 col-12">
-                      <h3 className="complain-input-lebel "><FaCircleExclamation className='complain-type-icon' /> Complain Type</h3>
+                      <h3 className="complain-input-lebel "><FaCircleExclamation className='complain-type-icon' /> Complaint Type</h3>
                       <div className="mb-3 complain-input-div">
                         <select type="text" className="form-control shadow-none complain-select" {...register('complaintType', { required: true })} onChange={(e) => setComplaintType(e.target.value)} >
                           <option value="" >Select Complain Type</option>
-                          <option value="Driver/Fleet Vehicle Complain" >Driver/Fleet Vehicle Complain</option>
-                          <option value="Employee Complain" >Employee Complain</option>
-                          <option value="Motor/Automobile  Accident" >Motor/Automobile  Accident</option>
+                          <option value="Driver/Fleet Vehicle Complaint" >Driver/Fleet Vehicle Complaint</option>
+                          <option value="Employee Complaint" >Employee Complaint</option>
+                          <option value="Motor/Automobile Accident" >Motor/Automobile Accident</option>
                           <option value="Suggestions How We Can Improve" >Suggestions How We Can Improve</option>
                         </select>
                         {errors.complaintType && <span className='error-message'>Complain type is required</span>}
@@ -117,7 +117,7 @@ function NonExistingClients() {
                     </div>
 
                     {
-                      complaintType == "Driver/Fleet Vehicle Complain" ?
+                      complaintType == "Driver/Fleet Vehicle Complaint" ?
                         <>
                           <div className="col-lg-6 col-12">
                             <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Driver Name</h3>
@@ -130,7 +130,7 @@ function NonExistingClients() {
                           <div className="col-lg-6 col-12">
                             <h3 className="complain-input-lebel"><FaIdCardAlt className='badge-icon' /> Badge No</h3>
                             <div className="mb-3 complain-input-div">
-                              <input type="text" className="form-control shadow-none complain-input" {...register('badgeNumber', { required: true })} placeholder="Driver Badge No..." />
+                              <input type="text" className="form-control shadow-none complain-input" {...register('badgeNo', { required: true })} placeholder="Driver Badge No..." />
                               {errors.badgeNumber && <span className='error-message'>Badge number is required</span>}
                             </div>
                           </div>
@@ -138,7 +138,7 @@ function NonExistingClients() {
                           <div className="col-lg-6 col-12">
                             <h3 className="complain-input-lebel"><IoDocumentText className='licence-icon' />Licensee Plate Number</h3>
                             <div className="mb-3 complain-input-div">
-                              <input type="text" className="form-control shadow-none complain-input" {...register('fleetAndLicenseePlateNumber', { required: true })} placeholder="Enter Vehicle Plat No..." />
+                              <input type="text" className="form-control shadow-none complain-input" {...register('licensePlateNo', { required: true })} placeholder="Enter Vehicle Plat No..." />
                               {errors.fleetAndLicenseePlateNumber && <span className='error-message'>Fleet and licensee plate number is required</span>}
                             </div>
                           </div>
@@ -154,7 +154,7 @@ function NonExistingClients() {
                     }
 
                     {
-                      complaintType == "Employee Complain" ?
+                      complaintType == "Employee Complaint" ?
                         <>
                           <div className="col-lg-6 col-12">
                             <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Employee Name</h3>
@@ -167,7 +167,7 @@ function NonExistingClients() {
                           <div className="col-lg-6 col-12">
                             <h3 className="complain-input-lebel"><MdBadge className='badge-icon' /> Badge No</h3>
                             <div className="mb-3 complain-input-div">
-                              <input type="text" className="form-control shadow-none complain-input" {...register('badgeNumber', { required: true })} placeholder="Employee Badge No..." />
+                              <input type="text" className="form-control shadow-none complain-input" {...register('badgeNo', { required: true })} placeholder="Employee Badge No..." />
                               {errors.badgeNumber && <span className='error-message'>Badge number is required</span>}
                             </div>
                           </div>
@@ -182,12 +182,12 @@ function NonExistingClients() {
                     }
 
                     {
-                      complaintType == "Motor/Automobile  Accident" ?
+                      complaintType == "Motor/Automobile Accident" ?
                         <>
                           <div className="col-lg-6 col-12">
                             <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Details</h3>
                             <div className="mb-3 complain-input-div">
-                              <input type="text" className="form-control shadow-none complain-input" {...register('details', { required: true })} placeholder="Enter Accident Detail ..." />
+                              <input type="text" className="form-control shadow-none complain-input" {...register('Details', { required: true })} placeholder="Enter Accident Detail ..." />
                               {errors.details && <span className='error-message'>Details is required</span>}
                             </div>
                           </div>
@@ -207,7 +207,7 @@ function NonExistingClients() {
                           <div className="col-lg-6 col-12">
                             <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Suggestions</h3>
                             <div className="mb-3 complain-input-div">
-                              <input type="text" className="form-control shadow-none complain-input" {...register('suggestions', { required: true })} placeholder="Enter Your Suggestions ..." />
+                              <input type="text" className="form-control shadow-none complain-input" {...register('Suggestions', { required: true })} placeholder="Enter Your Suggestions ..." />
                               {errors.suggestions && <span className='error-message'>Details is required</span>}
                             </div>
                           </div>
@@ -233,7 +233,7 @@ function NonExistingClients() {
                     <div className="col-lg-6 col-12">
                       <h3 className="complain-input-lebel"><MdDateRange className='date-icon' /> Enter the Date of Incident</h3>
                       <div className="mb-3 complain-input-div">
-                        <input type="date" className="form-control shadow-none complain-input"  {...register('createdDate', { required: true })} placeholder='Select Date' />
+                        <input type="date" className="form-control shadow-none complain-input"  {...register('dateOfIncedent', { required: true })} placeholder='Select Date' />
                         {errors.createdDate && <span className='error-message'>Date is required</span>}
                       </div>
                     </div>
@@ -272,7 +272,7 @@ function NonExistingClients() {
                               <input type="file" className="form-control shadow-none complain-input file-input" accept="image/png, image/gif, image/jpeg" onChange={e => setFile(e.target.files[0])} name="complaintImage" placeholder="Select File" />
                             </div>
                             {file && <span>{file.name}</span>}
-                            {!file && <span className='error-message'>Picture is required</span>}
+                            {!file && <span className='error-message mt-2'>Picture is required</span>}
                           </div>
                         </div>
                       </div>
@@ -289,7 +289,7 @@ function NonExistingClients() {
                             </div>
                             {video && <span>{video.name}</span>}
 
-                            {!video && <span className='error-message'>Video is required</span>}
+                            {!video && <span className='error-message mt-2'>Video is required</span>}
                           </div>
                         </div>
                       </div>

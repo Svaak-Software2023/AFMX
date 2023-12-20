@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import ExistingClients from "./ExistingClients";
 import NonExistingClients from "./NonExistingClients";
 import "./complain.css";

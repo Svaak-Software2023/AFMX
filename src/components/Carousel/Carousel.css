@@ -12,7 +12,6 @@
 .banner-ad video{
   width: 100%;
   margin-top: 20px;
-
 }
 
 .banner{
@@ -88,6 +87,7 @@ color: white;
   font-size: 0.9rem;
   font-weight: 600;
   color: #3a5776;
+  margin-top: 6px;
 }
 .login-button .signout_btn {
   border: none;

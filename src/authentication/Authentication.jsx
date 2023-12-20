@@ -1,10 +1,10 @@
 import React from 'react'
 import Login from '../pages/Login/Login';
 
-function Authentication() {
-    const user= localStorage.getItem('user');
+function Authentication({children}) {
+    const user= JSON.parse(localStorage.getItem('user'));
   return (
-    user.token?children:<Login/>
+    user&&user.token?children:<Login/>
   )
 }
 

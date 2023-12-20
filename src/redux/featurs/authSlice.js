@@ -6,7 +6,7 @@ export const signin=createAsyncThunk("api/sigin", async({formData,navigate,toast
     try{
         const response=await api.signin(formData)
         toast.success(response.data.message)
-        navigate("/")
+        navigate("/user-dashboard")
         console.log(response,"this is responce");
         return response.data.signInResponse
     }catch(err){

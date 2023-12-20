@@ -6,16 +6,38 @@ export const existingComplainCreate = createAsyncThunk(
   async ({ newData, navigate, toast }) => {
     try {
       const response = await api.existingComplainCreate(newData);
+      
       toast.success(response.data.message);
-      navigate("/");
+      response&&navigate("/");
       return response.data;
     } catch (err) {
+      if(!err.response)
+      toast.error("Somthing Internal Server Error");
+
       toast.error(err.response.data.message);
       throw err;
     }
   }
 );
 
+export const nonExistingComplainCreate = createAsyncThunk(
+  "complain/create",
+  async ({ newData, navigate, toast }) => {
+    try {
+      const response = await api.nonExistingComplainCreate(newData);
+      toast.success(response.data.message);
+      console.log("This is the existingComplain slice", newData);
+      response&&navigate("/");
+      return response.data;
+    } catch (err) {
+      if(!err.response)
+      toast.error("Somthing Internal Server Error");
+    
+      toast.error(err.response.data.message);
+      throw err;
+    }
+  }
+);
 const complainSlice = createSlice({
   name: "complainSlice",
   initialState: {
@@ -28,19 +50,31 @@ const complainSlice = createSlice({
       state.message = action.payload;
     },
   },
-  extraReducers: (builder) => {
-    builder
-      .addCase(existingComplainCreate.pending, (state) => {
-        state.loading = true;
-      })
-      .addCase(existingComplainCreate.fulfilled, (state, action) => {
-        state.loading = false;
-        console.log("this is create", action.payload);
-        state.message = action.payload;
-      })
-      .addCase(existingComplainCreate.rejected, (state) => {
-        state.loading = false;
-      });
+  extraReducers: {
+    [existingComplainCreate.pending]: (state, action) => {
+      state.loading = true
+    },
+    [existingComplainCreate.fulfilled]: (state, action) => {
+      state.loading = false;
+      console.log("this is create", action.payload);
+      state.message = action.payload;
+    },
+    [existingComplainCreate.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    },
+    [nonExistingComplainCreate.pending]: (state, action) => {
+      state.loading = true
+    },
+    [nonExistingComplainCreate.fulfilled]: (state, action) => {
+      state.loading = false;
+      console.log("this is create", action.payload);
+      state.message = action.payload;
+    },
+    [nonExistingComplainCreate.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    },
   },
 });
 

@@ -47,7 +47,7 @@ export const navigation = [
     { path: "/create-account", name: "Create Account", element: <CreateAccount />, isPrivate: false },
     { path: "/helping-hand/:id", name: "Helping Hand", element: <HelpingHand />, isPrivate: false },
     { path: "/product/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
-    { path: "/user-dashboard/:type", name: "User Dashboard", element: <UserDashboard />, isPrivate: false },
+    { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard />, isPrivate: true },
     { path: "/service-department/:name", name: "Service Department", element: <ServiceDepartment />, isPrivate: false },
     { path: "/service-department-item/:parentId/:ItemId", name: "Service Department Item", element: <ServiceDepartmentItem />, isPrivate: false },
     { path: "/handyman-solutions-department", name: "Handyman Solution Department", element: <HandymanSolutionDepartment />, isPrivate: false },

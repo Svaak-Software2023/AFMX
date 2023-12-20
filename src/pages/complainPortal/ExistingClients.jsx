@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { existingComplainCreate } from '../../redux/api';
+import { existingComplainCreate } from '../../redux/featurs/complainSlice';
 
 
 function ExistingClients() {
@@ -37,12 +37,8 @@ function ExistingClients() {
         Object.entries(data).forEach(([key, value]) => {
             newData.append(key, value);
         });
-        Object.entries(data).forEach(([key, value]) => {
-            console.log(key, value);
-        });
         dispatch(existingComplainCreate({ newData, navigate, toast }))
     }
-
 
     return (
         <>
@@ -61,7 +57,7 @@ function ExistingClients() {
                             <h3 className="heading fs-6 mb-4">Add Complaint</h3>
                             <div className="row mt-3 px-lg-3">
                                 <form onSubmit={handleSubmit(onSubmit)}>
-
+                                
                                     <div className="row">
                                         <div className="col-lg-6">
                                             <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Customer Name</h3>
@@ -264,8 +260,8 @@ function ExistingClients() {
                                                         <div className='d-flex justify-content-center'>
                                                             <input type="file" className="form-control shadow-none complain-input file-input" accept="image/png, image/gif, image/jpeg" onChange={e => setFile(e.target.files[0])} name="complaintImage" placeholder="Select File" />
                                                         </div>
-                                                        {file&& <span>{file.name}</span>}
-                                                        {!file && <span className='error-message'>Picture is required</span>}
+                                                        {file && <span>{file.name}</span>}
+                                                        {!file && <span className='error-message mt-2'>Picture is required</span>}
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,9 +276,9 @@ function ExistingClients() {
                                                         <div className='d-flex justify-content-center'>
                                                             <input type="file" className="form-control shadow-none complain-input file-input" accept="video/mp4,video/x-m4v,video/*" onChange={e => setVideo(e.target.files[0])} name="complaintImage" placeholder="Select Video" />
                                                         </div>
-                                                        {video&& <span>{video.name}</span>}
+                                                        {video && <span>{video.name}</span>}
 
-                                                        {!video && <span className='error-message'>Video is required</span>}
+                                                        {!video && <span className='error-message mt-2'>Video is required</span>}
                                                     </div>
                                                 </div>
                                             </div>

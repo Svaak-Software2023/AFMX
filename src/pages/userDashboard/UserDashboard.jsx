@@ -14,6 +14,35 @@ function UserDashboard() {
                 <div className="row m-0 p-0 ">
                     <div className=" col-lg-12 col-md-12 col-12 complain-main service_content">
                         <div className="row m-0 p-0">
+
+                        <div className="col-lg-6 col-md-6 col-12">
+                                <div className="row m-0 p-0">
+                                    <div className="col-lg-12 col-12">
+                                        <Link to="">
+                                            <div className="user-dashboard-details">
+                                                <h3>Welcome {user.clientFirstName} {user.clientLastName}</h3>
+                                                <p>Company/Member ID : 123456</p>
+                                                <h3>Member Status : Non Member</h3>
+                                                {/* <FaUser className='user-complain-icon' /> */}
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className="col-lg-12 col-12">
+                                        <div className="user-dashboard-details-img ">
+                                            {/* <h3>Benifits</h3>
+                                            <GiProfit className='user-complain-icon' /> */}
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-12 col-12">
+                                        <div className="user-dashboard-details-img2">
+                                            {/* <h3>Benifits</h3> */}
+                                            {/* <GiProfit className='user-complain-icon' /> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         <div className="col-lg-6 col-md-6 col-12">
                                 <div className="row m-0 p-0">
                                     <div className="col-lg-6 col-12">
@@ -53,42 +82,15 @@ function UserDashboard() {
                                     </div>
 
                                     <div className="col-lg-6 col-12">
+                                    <Link to="/user-complaint-list">
                                         <div className="user-complain">
-                                            <h3>News & Media</h3>
+                                            <h3>My Complaints</h3>
                                             <FiMonitor className='user-complain-icon' />
                                         </div>
+                                    </Link>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6 col-12">
-                                <div className="row m-0 p-0">
-                                    <div className="col-lg-12 col-12">
-                                        <Link to="">
-                                            <div className="user-dashboard-details">
-                                                <h3>Welcome {user.clientFirstName} {user.clientLastName}</h3>
-                                                <p>Company/Member ID : 123456</p>
-                                                <h3>Member Status : Non Member</h3>
-                                                {/* <FaUser className='user-complain-icon' /> */}
-                                            </div>
-                                        </Link>
-                                    </div>
-                                    <div className="col-lg-12 col-12">
-                                        <div className="user-dashboard-details-img ">
-                                            {/* <h3>Benifits</h3>
-                                            <GiProfit className='user-complain-icon' /> */}
-                                        </div>
-                                    </div>
-
-                                    <div className="col-lg-12 col-12">
-                                        <div className="user-dashboard-details-img2">
-                                            {/* <h3>Benifits</h3> */}
-                                            {/* <GiProfit className='user-complain-icon' /> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                            </div>                           
                         </div>
                     </div>
                 </div>

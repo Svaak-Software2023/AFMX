@@ -20,6 +20,7 @@
     "react": "^18.2.0",
     "react-chatbot-kit": "^2.1.2",
     "react-compare-slider": "^3.0.1",
+    "react-data-table-component": "^7.5.4",
     "react-dom": "^18.2.0",
     "react-drag-drop-files": "^2.3.10",
     "react-hook-form": "^7.49.0",
@@ -44,5 +45,4 @@
     "vite": "^4.4.5"
   },
   "proxy": "https://f4d4-122-161-51-91.ngrok-free.app"
-
 }

@@ -10,4 +10,6 @@ export const contactUs = (formData) => API.post("/api/contact-page", formData);
 // complain API
 export const existingComplainCreate = (formData) => API.post('/api/create-exist-complaint',formData);
 export const nonExistingComplainCreate = (formData) => API.post('/api/create-nonExist-complaint',formData);
+export const getComplaint = (id) => API.get(`/api/all-complaint-portal/${id}`);
+
 

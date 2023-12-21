@@ -39,6 +39,7 @@ import AssemblyDepartment from "../pages/serviceDepartment/serviceDepartmentItem
 import CarpentryInstallationAndRepairDepartment from "../pages/serviceDepartment/serviceDepartmentItem/CarpentryInstallationAndRepairDepartment/CarpentryInstallationAndRepairDepartment";
 import UserDashboard from "../pages/userDashboard/UserDashboard";
 import ExistingClients from "../pages/complainPortal/ExistingClients";
+import ComplaintList from "../pages/userDashboard/complaintList/ComplaintList";
 
 export const navigation = [
     { path: "*", name: "Default", element: <p>There's nothing here: 404!</p>, isPrivate: false },
@@ -47,7 +48,10 @@ export const navigation = [
     { path: "/create-account", name: "Create Account", element: <CreateAccount />, isPrivate: false },
     { path: "/helping-hand/:id", name: "Helping Hand", element: <HelpingHand />, isPrivate: false },
     { path: "/product/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
+
     { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard />, isPrivate: true },
+    { path: "/user-complaint-list", name: "User Compalint List", element: <ComplaintList/>, isPrivate: true },
+    
     { path: "/service-department/:name", name: "Service Department", element: <ServiceDepartment />, isPrivate: false },
     { path: "/service-department-item/:parentId/:ItemId", name: "Service Department Item", element: <ServiceDepartmentItem />, isPrivate: false },
     { path: "/handyman-solutions-department", name: "Handyman Solution Department", element: <HandymanSolutionDepartment />, isPrivate: false },

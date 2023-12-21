@@ -1,46 +1,71 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import * as api from "../api";
 
-export const existingComplainCreate = createAsyncThunk(
-  "complain/create",
+// ... (imports)
+
+export const createExistingComplain = createAsyncThunk(
+  "complain/create-existing",
   async ({ newData, navigate, toast }) => {
     try {
       const response = await api.existingComplainCreate(newData);
-      
       toast.success(response.data.message);
-      response&&navigate("/");
+      response && navigate("/");
       return response.data;
     } catch (err) {
-      if(!err.response)
-      toast.error("Somthing Internal Server Error");
-
-      toast.error(err.response.data.message);
+      if (!err.response) {
+        toast.error("Something Internal Server Error");
+      } else {
+        toast.error(err.response.data.message);
+      }
       throw err;
     }
   }
 );
 
-export const nonExistingComplainCreate = createAsyncThunk(
-  "complain/create",
+export const createNonExistingComplain = createAsyncThunk(
+  "complain/create-nonexisting",
   async ({ newData, navigate, toast }) => {
     try {
       const response = await api.nonExistingComplainCreate(newData);
       toast.success(response.data.message);
       console.log("This is the existingComplain slice", newData);
-      response&&navigate("/");
+      response && navigate("/");
       return response.data;
     } catch (err) {
-      if(!err.response)
-      toast.error("Somthing Internal Server Error");
-    
-      toast.error(err.response.data.message);
+      if (!err.response) {
+        toast.error("Something Internal Server Error");
+      } else {
+        toast.error(err.response.data.message);
+      }
       throw err;
     }
   }
 );
+
+// ... (rest of the code)
+
+
+export const getComplaint = createAsyncThunk(
+  "complain/get",
+  async (id) => {
+    try {
+      console.log("This is the user ID", id)
+      const response = await api.getComplaint(id);
+      return response.data;
+    } catch (err) {
+      if (!err.response)
+        toast.error("Somthing Internal Server Error");
+      toast.error(err.response.data.message);
+      return err.response.data;
+    }
+  }
+);
+
+
 const complainSlice = createSlice({
   name: "complainSlice",
   initialState: {
+    complaints: [],
     message: "",
     error: "",
     loading: false,
@@ -51,27 +76,37 @@ const complainSlice = createSlice({
     },
   },
   extraReducers: {
-    [existingComplainCreate.pending]: (state, action) => {
+    [createNonExistingComplain.pending]: (state, action) => {
       state.loading = true
     },
-    [existingComplainCreate.fulfilled]: (state, action) => {
+    [createNonExistingComplain.fulfilled]: (state, action) => {
       state.loading = false;
-      console.log("this is create", action.payload);
       state.message = action.payload;
     },
-    [existingComplainCreate.rejected]: (state, action) => {
+    [createNonExistingComplain.rejected]: (state, action) => {
       state.loading = false;
       state.error = action.payload;
     },
-    [nonExistingComplainCreate.pending]: (state, action) => {
+    [createNonExistingComplain.pending]: (state, action) => {
       state.loading = true
     },
-    [nonExistingComplainCreate.fulfilled]: (state, action) => {
+    [createNonExistingComplain.fulfilled]: (state, action) => {
       state.loading = false;
-      console.log("this is create", action.payload);
       state.message = action.payload;
     },
-    [nonExistingComplainCreate.rejected]: (state, action) => {
+    [createNonExistingComplain.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.error;
+    },
+    [getComplaint.pending]: (state, action) => {
+      state.loading = true
+    },
+    [getComplaint.fulfilled]: (state, action) => {
+      state.loading = false;
+      state.complaints = action.payload.getResponse;
+      state.message = action.payload.message;
+    },
+    [getComplaint.rejected]: (state, action) => {
       state.loading = false;
       state.error = action.payload;
     },

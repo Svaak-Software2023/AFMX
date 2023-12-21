@@ -1,0 +1,9 @@
+.ReactTable tr:hover {
+    background-color: #f0f0f0; /* Change to your desired background color */
+  }
+  
+  /* Hover effect for table cells */
+  .ReactTable td:hover {
+    background-color: #f0f0f0; /* Change to your desired background color */
+    color: #333; /* Change to your desired text color */
+  }

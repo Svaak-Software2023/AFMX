@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { nonExistingComplainCreate } from '../../redux/featurs/complainSlice';
+import { createNonExistingComplain } from '../../redux/featurs/complainSlice';
 
 function NonExistingClients() {
   const [file, setFile] = useState("")
@@ -37,7 +37,7 @@ function NonExistingClients() {
       const [key, value] = entry;
       console.log(`${key}: ${value}`);
     }
-    dispatch(nonExistingComplainCreate({ newData, navigate, toast }))
+    dispatch(createNonExistingComplain({ newData, navigate, toast }))
   }
 
   return (

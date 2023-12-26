@@ -25,8 +25,8 @@ function LeftMenue({ type, data,url }) {
                         <div className="left-menue-list">
                             <ul>
                                 {
-                                    menuItem && menuItem?.map((item) => (
-                                        <li key={item?.id}>
+                                    menuItem && menuItem?.map((item,index) => (
+                                        <li key={index}>
                                             <Link to={`${url}/${item.name}`} className="Links">{item?.name}</Link>
                                         </li>
                                     )
@@ -44,8 +44,8 @@ function LeftMenue({ type, data,url }) {
                 <div className="left-menue-list">
                     <ul>
                         {
-                            menuItem && menuItem?.map((item) => (
-                                <li key={item?.id}>
+                            menuItem && menuItem?.map((item,index) => (
+                                <li key={index}>
                                     <Link to={`${url}/${item.name}`} className="Links">{item?.name}</Link>
                                 </li>
                             )

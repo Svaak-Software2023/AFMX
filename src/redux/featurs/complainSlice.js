@@ -17,7 +17,7 @@ export const createExistingComplain = createAsyncThunk(
       } else {
         toast.error(err.response.data.message);
       }
-      throw err;
+      return err.response.data;
     }
   }
 );
@@ -61,6 +61,16 @@ export const getComplaint = createAsyncThunk(
   }
 );
 
+export const createRemarks=createAsyncThunk("compalin/createRemarks",async({formData,complaintId})=>{
+
+try{
+ const response=await api.createRemarks({formData,complaintId})
+ return response.data
+}
+catch(err){
+  return err.response.data
+}
+})
 
 const complainSlice = createSlice({
   name: "complainSlice",
@@ -76,14 +86,14 @@ const complainSlice = createSlice({
     },
   },
   extraReducers: {
-    [createNonExistingComplain.pending]: (state, action) => {
+    [createExistingComplain.pending]: (state, action) => {
       state.loading = true
     },
-    [createNonExistingComplain.fulfilled]: (state, action) => {
+    [createExistingComplain.fulfilled]: (state, action) => {
       state.loading = false;
       state.message = action.payload;
     },
-    [createNonExistingComplain.rejected]: (state, action) => {
+    [createExistingComplain.rejected]: (state, action) => {
       state.loading = false;
       state.error = action.payload;
     },
@@ -107,6 +117,17 @@ const complainSlice = createSlice({
       state.message = action.payload.message;
     },
     [getComplaint.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    },
+    [createRemarks.pending]: (state, action) => {
+      state.loading = true
+    },
+    [createRemarks.fulfilled]: (state, action) => {
+      state.loading = false;
+      state.message = action.payload.message;
+    },
+    [createRemarks.rejected]: (state, action) => {
       state.loading = false;
       state.error = action.payload;
     },

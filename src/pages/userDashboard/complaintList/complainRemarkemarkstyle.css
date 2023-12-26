@@ -1,0 +1,94 @@
+.remark-box {
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+    background-color: #e9ecef;
+    position: relative !important;
+    margin: 0;
+    padding: 0;
+}
+
+.reciver-message {
+    margin: 10px 0px;
+}
+
+.reciver-message h3 {
+    width: 50%;
+    background-color: #202c33;
+    color: #ffff;
+    font-size: 14px;
+    padding: 27px 15px 19px;
+    border-radius: 15px;
+    margin: 5px 5px;
+    position: relative;
+}
+
+.sender-message {
+    display: flex;
+    justify-content: end;
+    margin: 5px 0px;
+}
+
+.sender-message h3 {
+    width: 50%;
+    background-color: #025144;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 15px 19px;
+    margin: 5px 5px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.remark-date-time {
+    position: absolute;
+    right: 13px;
+    bottom: 3px;
+    font-size: 9px;
+    color: #ffffff7b;
+}
+.sender-name{
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff7b;
+}
+
+.remark-input {
+    position: sticky;
+    bottom:-9px;
+    left: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #e9ecef;
+    padding: 10px 10px;
+}
+
+.remark-input svg {
+    margin-left: 8px;
+    color: #25d366;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.remark-input input {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px !important;
+}
+
+.remark-input input:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .remark-input input {
+        width: 80%;
+    }
+}

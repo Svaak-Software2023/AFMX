@@ -1,9 +1,23 @@
-.ReactTable tr:hover {
-    background-color: #f0f0f0; /* Change to your desired background color */
+.picture-video-name p{
+  color: rgb(19, 18, 18);
+  padding: 10px;
+  cursor: pointer;
+  background-color: #e9ecef;
+  height: auto !important;
+}
+.complain-list-button-status{
+display: flex;
+justify-content: space-between;
+}
+.complain-list-button{
+  display: flex;
+  align-items: end;
+}
+.complain-list-button button{
+width: 120px;
+}
+@media screen and (max-width : 768px) {
+  .picture-video-name h3{
+    width: 100%;
   }
-  
-  /* Hover effect for table cells */
-  .ReactTable td:hover {
-    background-color: #f0f0f0; /* Change to your desired background color */
-    color: #333; /* Change to your desired text color */
-  }
+}

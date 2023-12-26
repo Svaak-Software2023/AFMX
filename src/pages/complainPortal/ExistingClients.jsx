@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { createNonExistingComplain } from '../../redux/featurs/complainSlice';
+import { createExistingComplain } from '../../redux/featurs/complainSlice';
 
 
 function ExistingClients() {
@@ -37,7 +37,7 @@ function ExistingClients() {
         Object.entries(data).forEach(([key, value]) => {
             newData.append(key, value);
         });
-        dispatch(createNonExistingComplain({ newData, navigate, toast }))
+        dispatch(createExistingComplain({ newData, navigate, toast }))
     }
 
     return (
@@ -105,8 +105,8 @@ function ExistingClients() {
                                             <div className="mb-3 complain-input-div">
                                                 <select type="text" className="form-control shadow-none complain-select" {...register('complaintType', { required: true })} onChange={(e) => setComplainType(e.target.value)} >
                                                     <option value="" >Select Complain Type</option>
-                                                    <option value="Driver/Fleet Vehicle Complain" >Driver/Fleet Vehicle Complaint</option>
-                                                    <option value="Employee Complain" >Employee Complaint</option>
+                                                    <option value="Driver/Fleet Vehicle Complaint" >Driver/Fleet Vehicle Complaint</option>
+                                                    <option value="Employee Complaint" >Employee Complaint</option>
                                                     <option value="Billing Help" >Billing Help</option>
                                                     <option value="Other">Other</option>
                                                 </select>
@@ -115,7 +115,7 @@ function ExistingClients() {
                                         </div>
 
                                         {
-                                            complainType == "Driver/Fleet Vehicle Complain" ?
+                                            complainType == "Driver/Fleet Vehicle Complaint" ?
                                                 <>
                                                     <div className="col-lg-6 col-12">
                                                         <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Driver Name</h3>
@@ -128,7 +128,7 @@ function ExistingClients() {
                                                     <div className="col-lg-6 col-12">
                                                         <h3 className="complain-input-lebel"><FaIdCardAlt className='badge-icon' /> Badge No</h3>
                                                         <div className="mb-3 complain-input-div">
-                                                            <input type="text" className="form-control shadow-none complain-input" {...register('badgeNumber', { required: true })} placeholder="Driver Badge No..." />
+                                                            <input type="text" className="form-control shadow-none complain-input" {...register('badgeNo', { required: true })} placeholder="Driver Badge No..." />
                                                             {errors.badgeNumber && <span className='error-message'>Badge number is required</span>}
                                                         </div>
                                                     </div>
@@ -136,7 +136,7 @@ function ExistingClients() {
                                                     <div className="col-lg-6 col-12">
                                                         <h3 className="complain-input-lebel"><IoDocumentText className='licence-icon' />Licensee Plate Number</h3>
                                                         <div className="mb-3 complain-input-div">
-                                                            <input type="text" className="form-control shadow-none complain-input" {...register('fleetAndLicenseePlateNumber', { required: true })} placeholder="Enter Vehicle Plat No..." />
+                                                            <input type="text" className="form-control shadow-none complain-input" {...register('licensePlateNo', { required: true })} placeholder="Enter Vehicle Plat No..." />
                                                             {errors.fleetAndLicenseePlateNumber && <span className='error-message'>Fleet and licensee plate number is required</span>}
                                                         </div>
                                                     </div>
@@ -152,7 +152,7 @@ function ExistingClients() {
                                         }
 
                                         {
-                                            complainType == "Employee Complain" ?
+                                            complainType == "Employee Complaint" ?
                                                 <>
                                                     <div className="col-lg-6 col-12">
                                                         <h3 className="complain-input-lebel"><IoPerson className='name-icon' /> Employee Name</h3>
@@ -165,7 +165,7 @@ function ExistingClients() {
                                                     <div className="col-lg-6 col-12">
                                                         <h3 className="complain-input-lebel"><MdBadge className='badge-icon' /> Badge No</h3>
                                                         <div className="mb-3 complain-input-div">
-                                                            <input type="text" className="form-control shadow-none complain-input" {...register('badgeNumber', { required: true })} placeholder="Employee Badge No..." />
+                                                            <input type="text" className="form-control shadow-none complain-input" {...register('badgeNo', { required: true })} placeholder="Employee Badge No..." />
                                                             {errors.badgeNumber && <span className='error-message'>Badge number is required</span>}
                                                         </div>
                                                     </div>

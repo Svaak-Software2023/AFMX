@@ -1,4 +1,4 @@
-rgb(123,2,82).creative {
+.creative {
     transform: perspective(2000px) rotateX(-20deg) rotateY(-20deg);
     transition: transform 0.5s ease;
   }

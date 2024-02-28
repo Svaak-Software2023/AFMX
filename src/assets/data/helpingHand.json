@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Made X Hardeship Cleaning",
+        "id": "12",
+        "logo": "./images/helpingHand/logos/americanHumane.webp",
+        "image": "./images/helpingHand/american-human.jpg",
+        "image2": "./images/helpingHand/american-human2.jpg",
+        "text": "For more than a hundred years American Humane has been first in promoting the welfare and safety of animals and strengthening the bond between animals and people.​We are first to serve, wherever animals are in need of rescue, shelter, protection or security. Through our innovative leadership initiatives – from our “No Animals Were Harmed®” program in Hollywood to broad-based farm and conservation animal welfare certifications, to rapid response rescue and care across the country – American Humane sets the gold standard as the most visionary and effective animal welfare organization in the nation.",
+        "url":"/helping-hand/12"
+    },
+    {
+        "name": "American Humane Society",
+        "id": "1",
+        "logo": "./images/helpingHand/logos/americanHumane.webp",
+        "image": "./images/helpingHand/american-human.jpg",
+        "image2": "./images/helpingHand/american-human2.jpg",
+        "text": "For more than a hundred years American Humane has been first in promoting the welfare and safety of animals and strengthening the bond between animals and people.​We are first to serve, wherever animals are in need of rescue, shelter, protection or security. Through our innovative leadership initiatives – from our “No Animals Were Harmed®” program in Hollywood to broad-based farm and conservation animal welfare certifications, to rapid response rescue and care across the country – American Humane sets the gold standard as the most visionary and effective animal welfare organization in the nation.",
+        "url":"/helping-hand/1"
+    },
+    {
+        "name": "Cancer Research Institute",
+        "id": "13",
+        "logo": "./images/helpingHand/logos/americanHumane.webp",
+        "image": "./images/helpingHand/american-human.jpg",
+        "image2": "./images/helpingHand/american-human2.jpg",
+        "text": "For more than a hundred years American Humane has been first in promoting the welfare and safety of animals and strengthening the bond between animals and people.​We are first to serve, wherever animals are in need of rescue, shelter, protection or security. Through our innovative leadership initiatives – from our “No Animals Were Harmed®” program in Hollywood to broad-based farm and conservation animal welfare certifications, to rapid response rescue and care across the country – American Humane sets the gold standard as the most visionary and effective animal welfare organization in the nation.",
+        "url":"/helping-hand/13"
+    },
+    {
+        "name": "​​St. Jude Children’s Research Hospital",
+        "id": "2",
+        "logo": "./images/helpingHand/logos/stJudeChildrenResearchHospital.webp",
+        "image": "./images/helpingHand/research-hospital.jpg",
+        "image2": "./images/helpingHand/research-hospital2.png",
+        "text": "St. Jude Children’s Research Hospital​ The mission of St. Jude Children’s Research Hospital is to advance cures, and means of prevention, for pediatric catastrophic diseases through research and treatment. Consistent with the vision of our founder Danny Thomas, no child is denied treatment based on race, religion or a family's ability to pay.",
+        "url":"/helping-hand/2"
+    },
+    {
+        "name": "​Boys & Girls Clubs of America",
+        "id": "3",
+        "logo": "./images/helpingHand/logos/boys&GirlsClubs.webp",
+        "image": "./images/helpingHand/club-of-america.png",
+        "image2": "./images/helpingHand/club-of-america2.png",
+        "text": " Boys & Girls Clubs of America.​We never take a single approach to help kids succeed. It takes caring mentors, such as our trained Club staff. It takes a safe place, like our Clubs that are consistently there for the kids they serve. It takes innovative, quality programs designed to empower youth to excel in school and lead healthy, productive lives. We do whatever it takes to ensure all kids have a great future.",
+        "url":"/helping-hand/3"
+    },
+    {
+        "name": "​Feed the Children​",
+        "id": "4",
+        "logo": "./images/helpingHand/logos/feedChildren.webp",
+        "image": "./images/helpingHand/feed-the-children.png",
+        "text": "Since 1979, Feed the Children has been dedicated to helping children and families. With the support of our donors and corporate partners, we deliver food and household essentials, offer nutrition training and clean water programs, provide school supplies, and assist in times of disaster.​We believe in helping families and communities with their immediate needs while also providing the tools needed to achieve a bright future.",
+        "url":"/helping-hand/4"
+    },
+    {
+        "name": "​Wounded Warrior Project​​",
+        "id": "5",
+        "logo": "./images/helpingHand/logos/wonderWarrior.webp",
+        "image": "./images/helpingHand/wonderWarrior1.webp",
+        "text": "Every warrior has a next mission. We know that the transition to civilian life is a journey. And for every warrior, family member, and caregiver, that journey looks different.",
+        "url":"/helping-hand/5"
+    },
+    {
+        "name": "​​World Wildlife Fund​​",
+        "id": "6",
+        "logo": "./images/helpingHand/logos/wwf.webp",
+        "image": "./images/helpingHand/wwf1.webp",
+        "image2": "./images/helpingHand/wwf2.webp",        
+        "text": "For more than 60 years, WWF has been protecting the future of nature. WWF works in nearly 100 countries and is supported by 1.3 million members in the United States and more than 5 million members globally. Your donation provides general support and makes you a member. 83% of spending is directed to worldwide conservation activities.",
+        "url":"/helping-hand/6"
+    },
+    {
+        "name": "Marine Toys for Tots Foundation",
+        "id": "7",
+        "logo": "./images/helpingHand/logos/marineToysForTots.webp",
+        "image": "./images/helpingHand/marineToysForTots1.webp",
+        "text": "The mission of the Marine Toys for Tots Foundation is to assist the U. S. Marine Corps in providing a tangible sign of hope to economically disadvantaged children at Christmas. This assistance includes providing day-to-day leadership and oversight of the Program, raising funds to provide toys to supplement the collections of local Toys for Tots Campaigns, to provide promotional and support material and defray the costs of conducting annual Toys for Tots Campaigns. Other Foundation support includes providing administrative, advisory, financial, logistic and promotional support to local Toys for Tots Coordinators; managing funds raised and monies donated based on the use of Toys for Tots name or logo; providing other support the Marine Corps, as a federal agency, cannot provide; and conducting public education and information programs about Toys for Tots that call the general public to action in support of this patriotic community action program.​",
+        "url":"/helping-hand/7"
+    },
+    {
+        "name": "Special Olympics",
+        "id": "8",
+        "logo": "./images/helpingHand/logos/specialOlympics.webp",
+        "image": "./images/helpingHand/specialOlympics1.webp",
+        "text": "The mission of Special Olympics is to provide year-round sports training and athletic competition in a variety of Olympic-type sports for children and adults with intellectual disabilities, giving them continuing opportunities to develop physical fitness, demonstrate courage, experience joy and participate in a sharing of gifts, skills and friendship with their families, other Special Olympics athletes and the community.​",
+        "url":"/helping-hand/8"
+    },
+    {
+        "name": "Humane Society of The United States",
+        "id": "9",
+        "logo": "./images/helpingHand/logos/theHumaneSociety.webp",
+        "image": "./images/helpingHand/theHumaneSociety1.webp",
+        "text": "We fight the big fights to end suffering for all animals.​Together with millions of supporters, the Humane Society of the United States takes on puppy mills, factory farms, the fur trade, trophy hunting, animal cosmetics testing and other cruel industries. Through our rescue, response and sanctuary work, as well as other hands-on animal care services, we help thousands of animals every year. We fight all forms of animal cruelty to achieve the vision behind our name: a humane society.​",
+        "url":"/helping-hand/9"
+    },
+    {
+        "name": "​​American Cancer Society​",
+        "id": "10",
+        "logo": "./images/helpingHand/logos/americanCancerSociety.webp",
+        "image": "./images/helpingHand/americanCancerSociety1.webp",
+        "text": "While most people know us for our research, we do so much more. We work to end cancer as we know it, for everyone. We advocate for lifesaving policy changes. We promote healthy lifestyles to help you prevent cancer. We research cancer and its causes to find more answers and better treatments. We provide information, answers, and support to people in every community who have been touched by cancer. And we do it all 24 hours a day, 7 days a week.​",
+        "url":"/helping-hand/10"
+    },
+    {
+        "name": "Shriners Hospitals for Children​",
+        "id": "11",
+        "logo": "./images/helpingHand/logos/shrinersChildren.webp",
+        "image": "./images/helpingHand/shrinersChildren1.webp",
+        "text": "For most of its history, our health care system has been known as Shriners Hospitals for Children. As we adapt to current nationwide trends in health care, especially the emphasis on outpatient care, and some locations become clinics or outpatient centers, we have introduced the phrase “Shriners Children’s.” It is shorter and more definitive – clearly stating who we are and what we care about. We are Shriners and our commitment is to Children. In today’s fast-paced world, this short phrase helps to succinctly and clearly define us.​Since opening our first hospital in 1922, we have been devoted to providing high-quality specialty medical care to the children and families who come to us, regardless of their ability to pay or insurance status. A century later, our commitment hasn’t changed — only expanded.​Our three-part mission has one goal: to change and improve lives. We do this by caring for our patients, conducting research to gain knowledge and develop new treatments, and providing educational opportunities for physicians and other healthcare professionals.​",
+        "url":"/helping-hand/11"
+    }
+]

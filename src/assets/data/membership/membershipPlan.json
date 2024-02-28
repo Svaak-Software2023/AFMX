@@ -1,0 +1,343 @@
+[
+  {
+    "id": "1",
+    "planName": "Basic ",
+    "planImage": "./images/membershipPlan-image/basicPlan.png",
+    "planValue": "19",
+    "subscriptionName": "Yearly",
+
+    "membershipBenefit": [
+      {
+        "benefitId": "1 ",
+        "benefitName": "1 User Access to Schedule Tracking"
+      },
+
+      {
+        "benefitId": "2",
+        "benefitName": "Dedicated Account Manager"
+      },
+      {
+        "benefitId": "3",
+        "benefitName": "Assigned Supervisor"
+      },
+      {
+        "benefitId": "4",
+        "benefitName": "Quarterly Service Discounts"
+      },
+      {
+        "benefitId": "5",
+        "benefitName": "Discounts at the Chemical Shopping "
+      },
+      {
+        "benefitId": "6",
+        "benefitName": "Complimentary One-time Cleaning"
+      },
+      {
+        "benefitId": "7",
+        "benefitName": "Receive Alerts for My Florida Hurricane"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Watch and Upcoming Cleanings"
+      },
+      {
+        "benefitId": "9",
+        "benefitName": "Live support"
+      }
+    ],
+    "isActive": true
+  },
+  
+  {
+    "id": "2",
+    "planName": "Plus ",
+    "planImage": "./images/membershipPlan-image/plusMembership.png",
+    "planValue": "49",
+    "subscriptionName": "Yearly",
+
+    "membershipBenefit": [
+      {
+        "benefitId": "1",
+        "benefitName": "2 user access"
+      },
+      {
+        "benefitId": "2",
+        "benefitName": "Property Monitoring"
+      },
+      {
+        "benefitId": "3",
+        "benefitName": "Schedule Tracking Access"
+      },
+      {
+        "benefitId": "4",
+        "benefitName": "Discounts at the Chemical Shopping "
+      },
+      {
+        "benefitId": "5",
+        "benefitName": "Complimentary One-time Cleaning*"
+      },
+      {
+        "benefitId": "6",
+        "benefitName": "Dedicated Account Manager"
+      },
+      {
+        "benefitId": "7",
+        "benefitName": "Assigned Supervisor"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Quarterly Service Discounts"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Receive Alerts for My Florida Hurricane Watch and Upcoming Cleanings"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Live support"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Quarterly ClearBlue Services"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "planName": "Elite ",
+    "planImage": "./images/membershipPlan-image/eliteMembership.png",
+    "planValue": "149",
+    "subscriptionName": "Yearly",
+
+    "membershipBenefit": [
+      {
+        "benefitId": "1",
+        "benefitName": "3 user"
+      },
+      {
+        "benefitId": "2",
+        "benefitName": "Property Monitoring"
+      },
+      {
+        "benefitId": "3",
+        "benefitName": "Schedule Tracking Access"
+      },
+      {
+        "benefitId": "4",
+        "benefitName": "Discounts at the Chemical Shopping "
+      },
+      {
+        "benefitId": "5",
+        "benefitName": "Complimentary One-time Cleaning*"
+      },
+      {
+        "benefitId": "6",
+        "benefitName": "Early Access to Media"
+      },
+      {
+        "benefitId": "7",
+        "benefitName": "Dedicated Account Manager"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Assigned Supervisor"
+      },
+      {
+        "benefitId": "9",
+        "benefitName": "Quarterly Service Discounts"
+      },
+      {
+        "benefitId": "10",
+        "benefitName": "Receive Alerts for My Florida Hurricane Watch and Upcoming Cleanings"
+      },
+      {
+        "benefitId": "11",
+        "benefitName": "Live Support"
+      },
+      {
+        "benefitId": "12",
+        "benefitName": "Quarterly ClearBleu Services"
+      },
+      {
+        "benefitId": "13",
+        "benefitName": "Who's working(online/offline)"
+      },
+      {
+        "benefitId": "14",
+        "benefitName": "Unlimited Discounts"
+      },
+      {
+        "benefitId": "15",
+        "benefitName": "Customize Duties/Responsibilities"
+      },
+      {
+        "benefitId": "16",
+        "benefitName": "Choice of preferred products"
+      },
+      {
+        "benefitId": "17",
+        "benefitName": "Unlimited access to Media"
+      },
+      {
+        "benefitId": "18",
+        "benefitName": "24-hour expert support"
+      },
+      {
+        "benefitId": "19",
+        "benefitName": "Priority cleaning"
+      },
+      {
+        "benefitId": "20",
+        "benefitName": "Access to agent X*"
+      },
+      {
+        "benefitId": "21",
+        "benefitName": "Preferred cleaner"
+      },
+      {
+        "benefitId": "22",
+        "benefitName": "Offline viewing"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "planName": "Ultimate ",
+    "planImage": "./images/membershipPlan-image/ultimateMembership.png",
+    "planValue": "239",
+    "subscriptionName": "Yearly",
+
+    "membershipBenefit": [
+      {
+        "benefitId": "1",
+        "benefitName": "Unlimited Users"
+      },
+      {
+        "benefitId": "2",
+        "benefitName": "Assigned Supervisor"
+      },
+      {
+        "benefitId": "3",
+        "benefitName": "Property Monitoring"
+      },
+      {
+        "benefitId": "4",
+        "benefitName": "Dedicated Account Manager"
+      },
+      {
+        "benefitId": "5",
+        "benefitName": "Annual Free Service"
+      },
+      {
+        "benefitId": "6",
+        "benefitName": "Nanotech Protection"
+      },
+      {
+        "benefitId": "7",
+        "benefitName": "Customizable Duties and Responsibilities"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Choice of Preferred Cleaning Products"
+      },
+      {
+        "benefitId": "9",
+        "benefitName": "Real-time Workforce Monitoring (Online/Offline Status)"
+      },
+      {
+        "benefitId": "10",
+        "benefitName": "Unlimited Discounts at the Chemical Shopping "
+      },
+      {
+        "benefitId": "11",
+        "benefitName": "24-Hour Customer Complaint Service"
+      },
+      {
+        "benefitId": "12",
+        "benefitName": "24-Hour Emergency Services"
+      },
+      {
+        "benefitId": "13",
+        "benefitName": "After-Hours Support"
+      },
+      {
+        "benefitId": "14",
+        "benefitName": "Buy Now, Pay Later Plans"
+      },
+      {
+        "benefitId": "15",
+        "benefitName": "Installment Payment Options"
+      },
+      {
+        "benefitId": "16",
+        "benefitName": "Weekly Voucher"
+      },
+      {
+        "benefitId": "17",
+        "benefitName": "ATP Testing"
+      }
+    ],
+    "membershipBenefitAdditional": [
+      {
+        "benefitId": "1",
+        "benefitName": "Real-time Property Monitoring"
+      },
+      {
+        "benefitId": "2",
+        "benefitName": "Access to Schedule Tracking"
+      },
+      {
+        "benefitId": "3",
+        "benefitName": "Complimentary One-time Cleaning"
+      },
+      {
+        "benefitId": "4",
+        "benefitName": "Early Access to All Podcasts, TV Shows, Newspapers, and More"
+      },
+      {
+        "benefitId": "5",
+        "benefitName": "Live Support"
+      },
+      {
+        "benefitId": "6",
+        "benefitName": "Quarterly ClearBleu Services"
+      },
+      {
+        "benefitId": "7",
+        "benefitName": "Real-time Employee Status (Online/Offline)"
+      },
+      {
+        "benefitId": "8",
+        "benefitName": "Customizable Responsibilities"
+      },
+      {
+        "benefitId": "9",
+        "benefitName": "Preferred Product Selection"
+      },
+      {
+        "benefitId": "10",
+        "benefitName": "Unlimited Access to Media"
+      },
+      {
+        "benefitId": "11",
+        "benefitName": "24-Hour Expert Support"
+      },
+      {
+        "benefitId": "12",
+        "benefitName": "Priority Cleaning"
+      },
+      {
+        "benefitId": "13",
+        "benefitName": "Access to Agent X"
+      },
+      {
+        "benefitId": "14",
+        "benefitName": "Choice of Preferred Cleaner"
+      },
+      {
+        "benefitId": "15",
+        "benefitName": "Offline Viewing"
+      }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+#contact {
+	padding: 120px 0 60px 0;
+	background: #F6F6F6;
+}
+#contact form {
+	padding: 30px 0;
+}
+#contact h3 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+	color: #555;
+}
+#contact .text-danger {
+	color: #cc0033;
+	text-align: left;
+}
+label {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+}
+#contact .form-control {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #444;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ddd;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+#contact .form-control:focus {
+	border-color: #999;
+	outline: 0;
+	-webkit-box-shadow: transparent;
+	box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+color: #777;
+}
+.form-control:-moz-placeholder {
+color: #777;
+}
+.form-control::-moz-placeholder {
+color: #777;
+}
+.form-control:-ms-input-placeholder {
+color: #777;
+}
+#contact .contact-item {
+	margin: 20px 0 40px 0;
+}
+#contact .contact-item span {
+	font-weight: 400;
+	color: #aaa;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+	display: inline-block;
+}
+#contact .contact-item p {
+	font-size: 16px;
+}
+
+.btn-custom {
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px var(--blue);
+    background-color: var(--blue);
+    border: 0;
+    padding: 14px 20px;
+    margin: 0;
+    font-size: 17px;
+    border-radius: 12px 0 12px 0;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.btn-custom:hover{
+    /* background-image: linear-gradient(var(--blue),rgb(249, 72, 72)); */
+background-color: var(--blue);
+color: #fff;
+}
+
+.section-title h2{
+    text-transform: uppercase;
+    background-color: var(--blue);
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+	
+}
+.contact-info-heading{
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact-info-text{
+	font-size: 12px;
+    font-weight: 600;
+}
+
+
+#success{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 991px)
+{
+    .section-title h2{
+        font-size: 14px;
+    }
+}

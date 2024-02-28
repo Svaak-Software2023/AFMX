@@ -1,0 +1,69 @@
+[
+    {
+        "id":"1",
+        "name": "Universities",
+        "logo": "./images/industry/logo-color.png",
+        "contact_with": {
+            "name":"Rob, CEO",
+            "contact":"9123456789"
+        },
+        "type": "Education",
+        "website-url": "https://wwww.google.com",
+        "address": "A-140 A Block Noida Uttar Pradesh",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto nemo, culpa quo possimus numquam? Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam!",
+        "image": "./images/industry/UniversityCleaning.png",
+        "video": "link",
+        "containt": [
+            {    "id":"1",
+                "heading": "Heading 1",
+                "text": "Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam!"
+            },
+            {    "id":"2",
+                "heading": "Heading 2",
+                "text": "Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam!"
+            }
+        ]
+    },
+    {
+        "id":"2",
+        "name": "Events",
+        "logo": "./images/industry/logo-black.png",
+        "contact_with": {
+            "name":"Rob, CEO",
+            "contact":"9123456789"
+        },
+        "type": "Event Management",
+        "website-url": "https://wwww.google.com",
+        "address": "D-101 D Block Noida Uttar Pradesh",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto nemo, culpa quo possimus numquam? Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam!",
+        "image": "./images/industry/EventCleaning.png",
+        "video": "link",
+        "containt": [
+            {
+                "heading": "Heading",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto nemo, culpa quo possimus numquam? Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto nemo, culpa quo possimus numquam? Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam!"
+            }
+        ]
+    },
+    {
+        "id":"3",
+        "name": "Construction Cleaning",
+        "logo": "./images/industry/logo-white.png",
+        "contact_with": {
+            "name":"Rob, CEO/CEO",
+            "contact":"9123456789"
+        },
+        "type": "Construction",
+        "website-url": "https://wwww.google.com",
+        "address": "A-141 A Block Noida Uttar Pradesh ",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto nemo, culpa quo possimus numquam? Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam!",
+        "image": "./images/industry/ConstrutionCleaning.png",
+        "video": "link",
+        "containt": [
+            {
+                "heading": "Heading",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto nemo, culpa quo possimus numquam? Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto nemo, culpa quo possimus numquam? Nostrum tenetur omnis libero repellendus reprehenderit eos fuga consequatur quia enim alias ullam modi optio corrupti accusamus, nobis accusantium inventore incidunt voluptatibus totam. Ducimus fuga fugiat porro, neque asperiores distinctio facilis iure incidunt nemo quibusdam!"
+            }
+        ]
+    }
+]

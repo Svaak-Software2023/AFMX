@@ -1,0 +1,63 @@
+.carpentry-container{
+    display: flex;
+}
+.box1{
+    background-color: lightblue;
+    height: 200px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 100px 100px 0px;
+    margin-right: 8px;
+}
+.box1 h5{
+    width: fit-content;
+    font-size: .9rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 900;
+    color: #ffff;
+    margin-left: 5px;
+}
+
+#tdcd-div{
+    width: 75px;
+    height: 320px;
+    background-color: rgb(0,134,49);
+    position: relative;
+    display: flex;
+    font-size: .65rem;
+    font-weight: 700;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    transform: perspective(2500px) rotateY(10deg);
+    transition: transform 0.5s ease;
+  }
+  #tdcd-div:hover{
+    background-color: rgb(31,211,85);
+  }
+ 
+  #tdcd-div::after{
+    content: '';
+    width: 40px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 50px solid rgb(0,134,49);
+    border-right: 75px solid lightgray;
+  }
+
+  #tdcd-div::before{
+    content: '';
+    width: 40px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 49px solid rgb(0,134,49);
+    border-right: 75px solid white;
+  }

@@ -1,0 +1,59 @@
+.tree-shrub-content {
+  display: flex;
+  height: 100%;
+  margin-top: 5rem;
+}
+.tree-shrub-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tree-shrub-2main {
+  display: flex;
+  position: relative;
+  margin-top: 1.75rem;
+  height: 7rem;
+  justify-content: center;
+  width: 300px;
+}
+.tree-shrub-img {
+  position: absolute;
+  border-width: 4px;
+  border-radius: 2px;
+  width: 5rem;
+  transform: translate3d(-15px, -15px, 0);
+}
+
+.tree-shrub-text {
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-width: 2px;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+}
+.tree-shrub-text h5 {
+  padding-left: 3rem;
+}
+
+.tree-shrub-main a:nth-child(1) .tree-shrub-text {
+  color: white;
+  background: #321635;
+}
+.tree-shrub-main a:nth-child(2) .tree-shrub-text {
+  color: black;
+  background: #6bcece;
+}
+.tree-shrub-main a:nth-child(3) .tree-shrub-text {
+  color: white;
+  background: #ba0cce;
+}
+.tree-shrub-main a:nth-child(4) .tree-shrub-text {
+  color: white;
+  background: #b7b925;
+}

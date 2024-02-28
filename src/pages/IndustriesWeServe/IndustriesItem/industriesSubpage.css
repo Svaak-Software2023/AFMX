@@ -1,0 +1,21 @@
+.industries-slider-item-img {
+    width: 100%;
+    height: 300px;
+}
+
+.industries-slider-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .slide img {
+    width: 100%;
+    vertical-align: top;
+    border: 0;
+    object-fit: fill;
+}
+@media screen and (max-width: 768px) {
+    .industries-slider-item-img {
+        height: 250px;
+    }
+}

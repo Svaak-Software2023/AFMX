@@ -1,0 +1,23 @@
+.picture-video-name p{
+  color: rgb(19, 18, 18);
+  padding: 10px;
+  cursor: pointer;
+  background-color: #e9ecef;
+  height: auto !important;
+}
+.complain-list-button-status{
+display: flex;
+justify-content: space-between;
+}
+.complain-list-button{
+  display: flex;
+  align-items: end;
+}
+.complain-list-button button{
+width: 120px;
+}
+@media screen and (max-width : 768px) {
+  .picture-video-name h3{
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.tnc .text_head {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.tnc p {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #545454;
+}

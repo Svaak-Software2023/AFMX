@@ -1,0 +1,190 @@
+.radio-Selection {
+    display: flex;
+    justify-content: center;
+}
+
+.complain-radio {
+    display: flex;
+    align-items: center;
+}
+
+.complain-radio input{
+cursor: pointer;
+}
+
+.complain-radio label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--textColor);
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+
+.complain-input-lebel {
+    font-size: 14px;
+    color: var(--textColor);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.complain-input-lebel svg{
+margin-right: 5px;
+color: white ;
+padding: 4px;
+border-radius: 5px;
+font-size: 20px !important;
+}
+
+/* icons color  */
+
+
+.name-icon{
+    background-color: #3F63B9;
+}
+
+.phone-icon{
+    background-color: #208B06;
+}
+
+.email-icon{
+    background-color: #208B06;
+}
+
+.complain-type-icon{
+    background-color: #FF5656;
+}
+
+.badge-icon{
+    background-color: #342F55;
+}
+
+.licence-icon{
+    background-color: #FA9E1C;
+}
+
+.other-icon{
+    background-color: #767474;
+}
+
+.address-icon{
+background-color: #3A5776;
+}
+
+.date-icon{
+    background-color: #FF5656;
+}
+.video-icon{
+    background-color: #D78006;
+}
+.complain-icon{
+    background-color: #312D4B;
+}
+.service-icon{
+    background-color: #3F63B9;
+}
+
+.complain-button {
+    display: flex;
+    justify-content: end;
+}
+
+.complain-select {
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 8px 8px;
+    background-color: #f1f1f1a8;
+}
+.complain-input {
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 8px 8px;
+    background-color: #f1f1f1a8;
+}
+
+.complain-input:focus {
+    border: 1px solid var(--blue);
+}
+
+.complain-select:focus {
+    border: 1px solid var(--blue);
+}
+
+.complain-button button {
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    background-color: var(--blue);
+}
+
+
+.complain-video{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #cbcaca;
+    background-color: #f1f1f1a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.file-upload-icon{
+   text-align: center;
+}
+.file-upload-icon svg{
+    font-size: 5rem;
+}
+.image-file-icon{
+    color: #7693D9;
+}
+.video-file-icon{
+     color: rgba(49, 229, 4, 0.74);
+ }
+
+ .file-upload-icon h3{
+   font-size: .9rem;
+ }
+.file-input{
+    /* border: none; */
+    padding: 3px 10px;
+    border: 1px solid black;
+    width: 100px;
+}
+.error-message{
+    display: block !important;
+    color: red;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+@media screen and (max-width : 768px) {
+    
+    .complain-radio {
+  justify-content: start !important;
+    }
+    .complain-input {
+        display: block;
+    }
+
+    .complain-input-lebel {
+        margin-left: 5px;
+    }
+
+    .complain-button {
+        justify-content: center;
+    }
+
+    .complain-video{
+        height: 180px;
+    }
+
+    .file-upload-icon svg{
+        font-size: 3.5rem;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+rgb(123,2,82).creative {
+    transform: perspective(2000px) rotateX(-20deg) rotateY(-20deg);
+    transition: transform 0.5s ease;
+  }
+  
+  .creative:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  }
+  @media screen and (max-width:400px) {
+    .creative {
+      transform: perspective(3000px) rotateX(-20deg) rotateY(-20deg);
+      transition: transform 0.5s ease;
+    }
+  }
+  
+  .epd-height-indicator{
+    box-shadow: 8px -6px 0px  rgb(246,3,163);
+    
+  }
+  .epd-height-indicator:hover {
+    box-shadow: 8px -6px 0px rgb(172,2,114);
+  }
+.epd-heading1{
+  color: rgb(123,2,82);
+  font-weight: 800;
+  justify-content: left;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: .2rem solid gray;
+}
+.epd-ulCss{
+  width: 6.5rem;
+  height: 4rem;
+  font-weight: 600;
+  color: white;
+  font-size: .6rem;
+  background-color: rgb(123,2,82);
+}

@@ -1,0 +1,16 @@
+.beforeafter-img div{
+    height: 450px;
+    width: 100%;
+}
+.beforeafter-img div img{
+    height: 100%;
+    width: 100%;
+object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+    .beforeafter-img div{
+        height: 100%;
+        width: 100%;
+    }
+}

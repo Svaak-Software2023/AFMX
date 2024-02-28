@@ -1,0 +1,30 @@
+.boxRotate{
+    display: flex;
+}
+.containerRectangle {
+    width: 80px;
+    height: 50px;
+    perspective: 500px;
+  }
+  
+  .rectangleDiv {
+    width: 80px;
+    height: 30px;
+    background-color: #3498db;
+    transform:rotateX(-50deg) rotateY(-143deg) rotateZ(-36deg);
+    transform-style: preserve-3d;
+    box-shadow: 9px 10px 4px #888888;
+}
+
+.rotationMain{
+    transform:rotateX(0deg) rotateY(3deg) rotateZ(6deg);
+}
+.rotateMain{
+    display: flex;
+    gap: 10px;
+}
+.rotateBox{
+    width: 60px;
+    height: 35px;
+    background-color: red;
+}

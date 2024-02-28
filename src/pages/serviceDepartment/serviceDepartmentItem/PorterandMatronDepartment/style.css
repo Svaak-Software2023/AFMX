@@ -1,0 +1,64 @@
+.carpentry-container{
+    display: flex;
+}
+.box1{
+    background-color: lightblue;
+    height: 200px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 100px 100px 0px;
+    margin-right: 8px;
+}
+.box1 h5{
+    width: fit-content;
+    font-size: .9rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 900;
+    color: #ffff;
+    margin-left: 5px;
+}
+
+#octa-div{
+    width: 75px;
+    height: 320px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    font-size: .65rem;
+    font-weight: 700;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    transform: perspective(2500px) rotateY(10deg);
+    transition: transform 0.5s ease;
+  }
+  #octa-div:hover{
+    background-color: rgb(141, 61, 61);
+  }
+ 
+  #octa-div::after{
+    content: '';
+    width: 40px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 50px solid red;
+    border-right: 75px solid white;
+  }
+
+  #octa-div::before{
+    content: '';
+    width: 40px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 49px solid red;
+    border-right: 75px solid white;
+  }
+

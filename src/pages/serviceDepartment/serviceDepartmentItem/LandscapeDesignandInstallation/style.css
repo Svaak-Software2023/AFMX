@@ -1,0 +1,36 @@
+.list-image-gallery .image-container {
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba( 0.863);
+  }
+  
+  .list-image-gallery .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid transparent; /* 1px border */
+    /* transform: translateX(-10px) translateY(-10px); */
+    z-index: -1; 
+  }
+  .image-container{
+    position: relative;
+  }
+  .borderdiv{
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    width: 100%;
+    height: 110%;
+    border: 1px solid blue;
+    box-shadow: 0 0 10px 1px ;
+  }
+  .borderdiv p{
+    font-size: 0.7rem;
+    padding: 5px;
+    bottom: -20px;
+    color: black;
+    font-weight: 700;
+    position: inherit;
+  }

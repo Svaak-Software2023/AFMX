@@ -1,0 +1,12 @@
+.item-name{
+    font-size: 15px;
+    /* background-color: rgba(82, 78, 78, 0.226); */
+    padding: 17px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.image-cont{
+    width: 250px;
+    height: 200px;
+}

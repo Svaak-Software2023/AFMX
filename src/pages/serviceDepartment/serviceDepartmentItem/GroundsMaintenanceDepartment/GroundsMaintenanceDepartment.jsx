@@ -24,15 +24,15 @@ const Ground2 = () => {
         <div className="col-lg-9 col-md-9 col-12 bg-white p-3 list_content">
           <h3 className="list-category-heading">{TreeDept.name}</h3>
           <div className="w-100 h-100">
-            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign1.png" alt="Aquatic and Pond Management" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
+            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign1.jpg" alt="Aquatic and Pond Management" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
 
-            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign2.png" alt="Drainage Installation and Repair" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
+            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign2.jpg" alt="Drainage Installation and Repair" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
             
-            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign3.png" alt="Irrigation System Installation and Repair" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
+            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign3.jpg" alt="Irrigation System Installation and Repair" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
 
-            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign4.png" alt="Lawn Aeration" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
+            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign4.jpg" alt="Lawn Aeration" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
 
-            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign5.png" alt="Sod Installation" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
+            <img src="/images/serviceDepartments/groundsMaintenanceDepartment/Grounds/GroundDesign5.jpg" alt="Sod Installation" style={{height:"90px", width:"100%", cursor: "pointer"}} onClick={(e)=> openService(e)}/>
           </div>
           </div>
 

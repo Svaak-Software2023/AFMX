@@ -3678,11 +3678,14 @@
           },
           {
             "text": "Our team of skilled professionals specializes in dining room remodeling and repair, offering a wide range of services to meet your specific needs. From minor repairs to full-scale renovations, we can transform your dining room into a space that reflects your personal style and accommodates your lifestyle."
+          },
+          {
+            "text": "One common issue with dining rooms is worn-out or damaged flooring. Our experts can repair or replace any type of flooring, including hardwood, laminate, vinyl, or tile.  We will ensure that "
           }
         ],
         "paira2": [
           {
-            "text": "One common issue with dining rooms is worn-out or damaged flooring. Our experts can repair or replace any type of flooring, including hardwood, laminate, vinyl, or tile. We will ensure that your dining room floors are not only visually appealing but also durable and easy to maintain."
+            "text": "your dining room floors are not only visually appealing but also durable and easy to maintain."
           },
           {
             "text": "Another significant aspect of dining room remodeling is the lighting. Proper lighting can create an inviting atmosphere and set the mood for any meal. Whether you prefer pendant lights, chandeliers, or recessed lighting, our team will help you choose and install the perfect fixtures to enhance the overall aesthetics and functionality of your dining space."
@@ -4359,9 +4362,7 @@
           },
           {
             "text": "What is Bathroom Caulking? Caulk seals gaps in surfaces, acting as a waterproof barrier against water, moisture, and mold. It enhances the bathroom's aesthetic, providing a seamless finish."
-          }
-        ],
-        "paira2": [
+          },
           {
             "heading": "Benefits of Proper Bathroom Caulking:"
           },
@@ -4371,7 +4372,12 @@
           },
           {
             "heading": "2. Minimizes mold and mildew: ",
-            "text": "Proper caulking reduces moisture, minimizing the chances of mold and ensuring a cleaner environment."
+            "text": "Proper caulking reduces moisture, "
+          }
+        ],
+        "paira2": [
+          {
+            "text": "minimizing the chances of mold and ensuring a cleaner environment."
           },
           {
             "heading": "3. Maintains hygiene: ",
@@ -5730,7 +5736,7 @@
         ],
         "paira": [
           {
-            "text": "At AfmX company , we understand that cleaning out a storage unit can be a daunting task. Whether you are moving, downsizing, or simply decluttering your life, our professional storage unit clean-out services offer a hassle-free solution to help you reclaim your space."
+            "text": "At AfmX company, we understand that cleaning out a storage unit can be a daunting task. Whether you are moving, downsizing, or simply decluttering your life, our professional storage unit clean-out services offer a hassle-free solution to help you reclaim your space."
           },
           {
             "text": " team of trained professionals is experienced in handling storage unit clean-outs of all sizes. We are equipped with the necessary tools and knowledge to efficiently and effectively remove any unwanted items from your storage unit, leaving it empty and ready for your next use."
@@ -6271,72 +6277,6 @@
         "url": "/service-department-item/8/16"
       },
       {
-        "id": "17",
-        "name": "Storage Unit cleanout",
-        "image": "./images/serviceDepartments/junkRemovalandHaulingDepartment/storageUnitCleanOut1.jpg",
-        "imgData": [
-          {
-            "url": "./images/serviceDepartments/junkRemovalandHaulingDepartment/storageUnitCleanOut1.jpg"
-          },
-          {
-            "url": "./images/serviceDepartments/junkRemovalandHaulingDepartment/storageUnitCleanOut2.jpg"
-          },
-          {
-            "url": "./images/serviceDepartments/junkRemovalandHaulingDepartment/storageUnitCleanOut3.jpg"
-          },
-          {
-            "url": "./images/serviceDepartments/junkRemovalandHaulingDepartment/storageUnitCleanOut4.jpg"
-          }
-        ],
-        "paira": [
-          {
-            "text": "At AfmX company , we understand that cleaning out a storage unit can be a daunting task. Whether you are moving, downsizing, or simply decluttering your life, our professional storage unit clean-out services offer a hassle-free solution to help you reclaim your space."
-          },
-          {
-            "text": "Our team of trained professionals is experienced in handling storage unit clean-outs of all sizes. We are equipped with the necessary tools and knowledge to efficiently and effectively remove any unwanted items from your storage unit, leaving it empty and ready for your next use."
-          },
-          {
-            "text": "Here's how our storage unit clean-out process works:"
-          },
-          {
-            "heading": "1. Initial consultation: ",
-            "text": "We begin by understanding your unique "
-          }
-        ],
-        "paira2": [
-          {
-            "text": "requirements and assessing the scope of the project. Our team will discuss your needs, timeline, and any specific instructions you may have."
-          },
-          {
-            "heading": "2. Packing and organization:  ",
-            "text": "Our experts carefully inspect and sort through the items in your storage unit. We categorize them into different groups - items to be removed, items to be kept, and items to be donated or discarded."
-          },
-          {
-            "heading": "3. Removal and loading: ",
-            "text": "Once the items have been sorted, our team efficiently removes and loads them onto our trucks. We handle everything with care to minimize any potential damage."
-          },
-          {
-            "heading": "4. Responsible disposal: ",
-            "text": "We are committed to eco-friendly practices. Any items that are to be discarded will be properly disposed of, following local regulations and sustainability practices. We also work closely with local charities and organizations to donate any items that can be repurposed and benefit others."
-          },
-          {
-            "heading": "5. Cleaning and sanitization: ",
-            "text": "After all the items are removed, we take the extra step to ensure your storage unit is left in a clean and sanitized condition. This includes dusting, sweeping, and disinfecting any surfaces as needed."
-          },
-          {
-            "heading": "6. Final inspection: ",
-            "text": "Before leaving the premises, our team conducts a final inspection to ensure that all your specific requirements have been met. We guarantee your satisfaction with our work."
-          },
-          {
-            "text": "By hiring AfmX for your storage unit clean-out needs, you can save your time and energy for other important tasks. We take the stress out of the process and provide you with a clean, clutter-free storage space to meet your needs."
-          },
-          {
-            "text": "Contact us today to schedule a consultation and get a quote for your storage unit clean-out. Let us handle the hard work while you sit back and enjoy the benefits of a freshly cleaned and organized storage space."
-          }
-        ],
-        "url": "/service-department-item/8/17"
-      },
-      {
         "id": "18",
         "name": "Yard waste pick up and removal",
         "image": "./images/serviceDepartments/junkRemovalandHaulingDepartment/yardWastePickUpandRemoval1.jpg",
@@ -6810,12 +6750,15 @@
           },
           {
             "text": "We are pleased to offer our comprehensive fertilization, weed, and pest control services to ensure the health and beauty of your lawn, garden, or commercial property. Our team of expert technicians is dedicated to providing top-notch services that will leave your outdoor spaces thriving and pest-free. Whether you are a homeowner, property manager, or business owner, we have tailored solutions to meet your specific needs."
+          },
+          {
+            "heading": "Fertilization Services:",
+            "text": "At AFMX COMPANY LLC, we understand the importance of proper nutrition for plant growth and overall landscape health. Our fertilization services aim to nourish your plants, enabling them to thrive and withstand stressors such as "
           }
         ],
         "paira2": [
           {
-            "heading": "Fertilization Services:",
-            "text": "At AFMX COMPANY LLC, we understand the importance of proper nutrition for plant growth and overall landscape health. Our fertilization services aim to nourish your plants, enabling them to thrive and withstand stressors such as extreme weather conditions, pests, and diseases. We employ industry-leading techniques and utilize environmentally-friendly fertilizers to promote lush, green lawns and vibrant, flourishing gardens."
+            "text": "extreme weather conditions, pests, and diseases. We employ industry-leading techniques and utilize environmentally-friendly fertilizers to promote lush, green lawns and vibrant, flourishing gardens."
           },
           {
             "heading": "Our team of fertilization experts will assess your landscape's specific requirements and implement a customized fertilization program, which includes:"
@@ -7346,11 +7289,14 @@
           {
             "heading": "Why choose professional landscape installation? ",
             "text": "Well, landscaping is not just about planting a few flowers or trees. It entails meticulous planning, careful consideration of the site's unique characteristics, and expert knowledge of plants, materials, and techniques. With our team of skilled professionals, you can rest assured that every aspect of your landscape project will be executed with precision and excellence."
+          },
+          {
+            "text": "Our landscape installation process begins with a thorough consultation to understand your vision, preferences, and needs. "
           }
         ],
         "paira2": [
           {
-            "text": "Our landscape installation process begins with a thorough consultation to understand your vision, preferences, and needs. Whether you desire a tranquil oasis, a vibrant garden, or a functional outdoor living area, we will create a tailored solution to meet your specific requirements. Our team will work closely with you to design a landscape layout that maximizes the potential of your space while reflecting your personal style."
+            "text": "Whether you desire a tranquil oasis, a vibrant garden, or a functional outdoor living area, we will create a tailored solution to meet your specific requirements. Our team will work closely with you to design a landscape layout that maximizes the potential of your space while reflecting your personal style."
           },
           {
             "text": "Once the design is finalized, our experienced crew will commence the installation phase. We take pride in our attention to detail, ensuring that every plant is positioned correctly, every stone is laid perfectly, and every element blends seamlessly into the overall design. Our installation process combines artistry and expertise, resulting in a landscape that not only looks beautiful but also thrives and flourishes for years to come."
@@ -7928,11 +7874,14 @@
           },
           {
             "text": "One of the key advantages of lawn top dressing is that it helps to level your lawn by filling in low spots and evening out uneven areas. This is particularly useful if your lawn has become bumpy over time due to foot traffic, lawn mowing, or other factors. By adding a thin layer of organic material, you can create a smoother and more appealing lawn surface."
+          },
+          {
+            "text": "Furthermore, lawn top dressing enhances the overall soil quality and fertility of your lawn. The organic matter in the top-dressing "
           }
         ],
         "paira2": [
           {
-            "text": "Furthermore, lawn top dressing enhances the overall soil quality and fertility of your lawn. The organic matter in the top-dressing material feeds beneficial microbes, earthworms, and other soil organisms that, in turn, break down nutrients and aerate the soil. This natural process improves the soil structure, aids in water retention, and encourages healthy root growth. As a result, your lawn becomes more resilient to drought, pests, and diseases."
+            "text": "material feeds beneficial microbes, earthworms, and other soil organisms that, in turn, break down nutrients and aerate the soil. This natural process improves the soil structure, aids in water retention, and encourages healthy root growth. As a result, your lawn becomes more resilient to drought, pests, and diseases."
           },
           {
             "text": "Another benefit of top dressing is its ability to improve the appearance of your lawn. The thin layer of organic material helps to replenish nutrients that may have been lost over time, revitalizing the grass and promoting lush growth. It can also help to prevent thatch buildup, as the top-dressing material encourages the decomposition of dead grass and allows for better air circulation to the grass roots."

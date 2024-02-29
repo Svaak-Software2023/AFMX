@@ -69,7 +69,11 @@
 }
 
 
+
 @media screen and (max-device-width: 768px) {
+    .career-main-container{
+        margin: 0px !important;
+    }
     .job-post .job li > span:last-of-type {
         text-align: left;
     }

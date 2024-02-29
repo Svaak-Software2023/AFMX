@@ -6,79 +6,153 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 function CareersAndEmployment() {
     return (
         <>
-        <div className="container p-0 my-3">
-        <div className="row m-0 p-0 ">
-          <div className="col-lg-3 col-md-3 col-0 p-0 service_menu">
+            <div className="container p-0  my-3 career-main-container">
+                <div className="row m-0 p-0">
+                    {/* <div className="col-lg-3 col-md-3 col-0 p-0 service_menu">
            <ImportantLinks/>
-          </div>
-          <div className=" col-lg-9 col-md-9 col-12 bg-white p-3 service_content">
-            <div className="container bg-white my-2">
-                <div className="row m-0 py-2">
-                    <div className="col-lg-5 col-12 overFlow">
-                        <LazyLoadImage src="./images/career.jpg" alt="" className="img-fluid overFlow" />
-                    </div>
-                    <div className="col-lg-7 col-12 ">
-                        <div className="">
-                            <h3 className="career-heading">We are looking for top talent!</h3>
-                            <p className="career-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere perferendis commodi, tempore sunt ad! Commodi unde, aliquam, quidem amet labore nulla itaque sunt voluptatem accusantium repellendus est similique consequatur? Aut optio illum adipisci dignissimos modi, mollitia nihil quod ut, vitae, perspiciatis accusantium facilis? Hic numquam nisi quis atque impedit ad culpa, quam eius voluptatum fugit, ab pariatur libero omnis maxime rerum rem, ratione dolores. Quod non error quis quas? Facilis doloremque expedita, amet ab possimus delectus aliquid sapiente molestiae.</p>
+          </div> */}
+                    <div className=" col-lg-12 col-md-12 col-12 bg-white p-0 p-lg-3 m-0 service_content">
+                        <div className="container bg-white my-2 m-0">
+                            <div className="row m-0 py-2">
+                                <div className="col-lg-12 col-12 overFlow m-0 p-0">
+                                    <LazyLoadImage src="./images/career/career.png" alt="" className="img-fluid overFlow m-0 p-0 mb-3" />
+                                </div>
+                                <div className="col-lg-12 col-12 ">
+                                    <div className="">
+                                        <h3 className="career-heading">Welcome to AFMX Company!</h3>
+                                        <p className="career-text mb-3">At AFMX Company, we hold a unique perspective on what our roles mean to us. To put it simply, we believe our jobs go beyond merely offering services – they're about making a difference in people's lives.</p>
+                                        <p className="career-text mb-3">When you become a part of AFMX Company, we want you to know that you are valued. Your voice matters, and your role is pivotal to our company's success. We can't wait to get to know you, appreciate your talents, and
+                                            share in your achievements as you journey with us. Join us on this exciting adventure!</p>
+                                        <p className="career-text mb-3">What Makes Working at AFMX Company Special</p>
+                                        <ol className="mb-3">
+                                            <li> Thrive in a dynamic, fast-paced environment akin to a thriving startup.</li>
+                                            <li> Collaborate closely with our company's president, fostering valuable connections.</li>
+                                            <li> Witness the direct impact of your work on our company's growth and success.</li>
+                                            <li> Forge positive relationships within our robust company culture.</li>
+                                            <li> Embrace the camaraderie of working with an exceptional team.</li>
+                                        </ol>
+
+                                        <p className="career-text mb-3">Our dedicated team is the heartbeat of our exceptional work culture, and we're constantly on the lookout for exceptional individuals who can help us nurture this environment we're so proud of. If you believe you're the right
+                                            fit, we eagerly look forward to hearing from you</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-12 col-12 overFlow m-0 p-0 mb-3">
+                                    <LazyLoadImage src="./images/career/employmentAtAfmx.png" alt="" className="img-fluid overFlow" />
+                                </div>
+                                <p className="career-text mb-3">Afmx Company stands at the forefront of the building maintenance industry, setting the standard
+                                    for excellence in management services. Our extensive offerings encompass a wide spectrum of
+                                    services, including janitorial, maintenance, handyman, residential, pressure washing, and window
+                                    cleaning, catering to the diverse needs of our clients. However, our commitment extends beyond
+                                    mere service provision; we take immense pride in our role as a dedicated partner, actively aiding
+                                    our clients in time-saving and problem-solving endeavors.</p>
+                            </div>
+                            <div className="career-filter row m-0 p-0">
+                                <div className="creer-filter-input w-100 mb-3 ">
+                                    <input className="w-100 px-3 rounded" type="text" placeholder="🔍 Search..." />
+                                </div>
+                                <div className="col-lg-3 clo-12">
+                                    <div className="creer-filter-input w-100 mb-3 ">
+                                    <select className=" p-2 w-100 rounded">
+                                            <option value="">Workplace type</option>
+                                            <option value="">Workplace type 1</option>
+                                            <option value="">Workplace type 2</option>
+                                            <option value="">Workplace type 3</option>
+
+                                        </select>
+                                        </div>
+                                </div>
+
+                                <div className="col-lg-3 clo-12">
+                                    <div className="creer-filter-input w-100 mb-3 ">
+                                    <select className=" p-2 w-100 rounded">
+                                            <option value="">Location </option>
+                                            <option value="">Location 1</option>
+                                            <option value="">Location 2</option>
+                                            <option value="">Location 3</option>
+
+                                        </select>
+                                        </div>
+                                </div>
+
+                                <div className="col-lg-3 clo-12">
+                                    <div className="creer-filter-input w-100 mb-3 ">
+                                        <select className=" p-2 w-100 rounded">
+                                            <option value="">Department</option>
+                                            <option value="">Department 1</option>
+                                            <option value="">Department 2</option>
+                                            <option value="">Department 3</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-3 clo-12">
+                                    <div className="creer-filter-input w-100 mb-3 ">
+                                        <select className=" p-2 w-100 rounded">
+                                            <option value="">Work type</option>
+                                            <option value="">Work type 1</option>
+                                            <option value="">Work type 2</option>
+                                            <option value="">Work type 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="job-post">
+                                <div className="row">
+                                    <div className="col-md-12">
+                                        <ul className="job">
+                                            <li>
+                                                <div>
+                                                    <Link to="/apply-job">
+                                                        <h2 className="styles--3TJHk"><span>Night Manager</span></h2>
+                                                        <small className="small">Posted 1 day ago</small>
+                                                    </Link>
+                                                </div>
+                                                <span className="child">Burnsville, Minnesota, United States</span>
+                                                <span className>Locations</span>
+                                                <span>Full time</span>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <Link to="/apply-job">
+                                                        <h2 className="styles--3TJHk"><span>Service Technician</span></h2>
+                                                        <small className="small">Posted 1 day ago</small>
+                                                    </Link>
+                                                </div>
+                                                <span className="child">Burnsville, Minnesota, United States</span>
+                                                <span className>Locations</span>
+                                                <span>Full time</span>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <Link to="/apply-job">
+                                                        <h2 className="styles--3TJHk"><span>Commercial Compliance Manager</span></h2>
+                                                        <small className="small">Posted 1 day ago</small>
+                                                    </Link>
+                                                </div>
+                                                <span className="child">Burnsville, Minnesota, United States</span>
+                                                <span className>Locations</span>
+                                                <span>Full time</span>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <Link to="/apply-job">
+                                                        <h2 className="styles--3TJHk"><span>Facilities Account Manager</span></h2>
+                                                        <small className="small">Posted 1 day ago</small>
+                                                    </Link>
+                                                </div>
+                                                <span className="child">Burnsville, Minnesota, United States</span>
+                                                <span className>Locations</span>
+                                                <span>Full time</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="job-post">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="job">
-                                <li>
-                                    <div>
-                                        <Link to="/apply-job">
-                                            <h2 className="styles--3TJHk"><span>Night Manager</span></h2>
-                                            <small className="small">Posted 1 day ago</small>
-                                        </Link>
-                                    </div>
-                                    <span className="child">Burnsville, Minnesota, United States</span>
-                                    <span className>Locations</span>
-                                    <span>Full time</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <Link to="/apply-job">
-                                            <h2 className="styles--3TJHk"><span>Service Technician</span></h2>
-                                            <small className="small">Posted 1 day ago</small>
-                                        </Link>
-                                    </div>
-                                    <span className="child">Burnsville, Minnesota, United States</span>
-                                    <span className>Locations</span>
-                                    <span>Full time</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <Link to="/apply-job">
-                                            <h2 className="styles--3TJHk"><span>Commercial Compliance Manager</span></h2>
-                                            <small className="small">Posted 1 day ago</small>
-                                        </Link>
-                                    </div>
-                                    <span className="child">Burnsville, Minnesota, United States</span>
-                                    <span className>Locations</span>
-                                    <span>Full time</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <Link to="/apply-job">
-                                            <h2 className="styles--3TJHk"><span>Facilities Account Manager</span></h2>
-                                            <small className="small">Posted 1 day ago</small>
-                                        </Link>
-                                    </div>
-                                    <span className="child">Burnsville, Minnesota, United States</span>
-                                    <span className>Locations</span>
-                                    <span>Full time</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
             </div>
         </>
     )

@@ -26,12 +26,37 @@
     background-color: #be00f2;;
 }
 
+.job-tongler{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
+.job-tongler h5{
+    margin: 10px 10px;
+    cursor: pointer;
+    padding: 7px 10px;
+}
 
+.job-tongler-active{
+border-bottom: 4px solid var(--blue) !important;
+}
 
+.career-label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
 
 .applyjob-heading{
     text-transform: capitalize;
     padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.career-add-btn{
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2px 8px;
 }

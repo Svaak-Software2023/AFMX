@@ -14,7 +14,7 @@ function CareersAndEmployment() {
                     <div className=" col-lg-12 col-md-12 col-12 bg-white p-0 p-lg-3 m-0 service_content">
                         <div className="container bg-white my-2 m-0">
                             <div className="row m-0 py-2">
-                                <div className="col-lg-12 col-12 overFlow m-0 p-0">
+                                <div className="col-lg-12 col-12 overFlow m-0 p-0 career-employement-img">
                                     <LazyLoadImage src="./images/career/career.png" alt="" className="img-fluid overFlow m-0 p-0 mb-3" />
                                 </div>
                                 <div className="col-lg-12 col-12 ">
@@ -37,7 +37,7 @@ function CareersAndEmployment() {
                                     </div>
                                 </div>
                                 <div className="col-lg-12 col-12 overFlow m-0 p-0 mb-3">
-                                    <LazyLoadImage src="./images/career/employmentAtAfmx.png" alt="" className="img-fluid overFlow" />
+                                    <LazyLoadImage src="./images/career/employmentAtAfmx.png" alt="" className="img-fluid overFlow career-employement-img" />
                                 </div>
                                 <p className="career-text mb-3">Afmx Company stands at the forefront of the building maintenance industry, setting the standard
                                     for excellence in management services. Our extensive offerings encompass a wide spectrum of

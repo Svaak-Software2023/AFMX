@@ -56,6 +56,7 @@ import AssamblyDepartmentItem from "../pages/serviceDepartment/serviceDepartment
 import RestroomClinicRXDepartment from "../pages/serviceDepartment/serviceDepartmentItem/RestroomClinicRXDepartment/RestroomClinicRXDepartment";
 import HvacRepairAndServicesDepartment from "../pages/serviceDepartment/serviceDepartmentItem/HvacRepairAndServicesDepartment/HvacRepairAndServicesDepartment";
 import Cart from "../pages/Cart/AddToCart";
+import SingleProduct from "../pages/productCategory/SingleProduct";
 
 export const navigation = [
     { path: "*", name: "Default", element: <p> There`s nothing here: 404!</p>, isPrivate: false },
@@ -63,7 +64,10 @@ export const navigation = [
     { path: "/login", name: "Login", element: <Login />, isPrivate: false },
     { path: "/create-account", name: "Create Account", element: <CreateAccount />, isPrivate: false },
     { path: "/helping-hand/:id", name: "Helping Hand", element: <HelpingHand />, isPrivate: false },
-    { path: "/product/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
+    
+    // shopping center 
+    { path: "/product/:name", name: "Product Category", element: <ProductCategory />, isPrivate: false },
+    { path: "/single-product/:parent/:childe", name: "Single Product", element: <SingleProduct/>, isPrivate: false },
 
     { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard/>, isPrivate: true },
     { path: "/user-complaint-list", name: "User Compalint List", element: <ComplaintList/>, isPrivate: true },
@@ -96,7 +100,6 @@ export const navigation = [
     { path: "/service-department/Hvac Repair and Services Department", name: "Hvac Repair and Services Department", element: <HvacRepairAndServicesDepartment />, isPrivate: false },
 
     // End of Service Departments Data 
-
     
     { path: "/forget-password", name: "Forget Passwordme", element: <Forget />, isPrivate: false },
     { path: "/reset-password", name: "Reset Password", element: <ResetPassword />, isPrivate: false },

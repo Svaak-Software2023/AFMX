@@ -8,10 +8,16 @@ import { useDispatch } from "react-redux"
 import { getAllCategory, getProduct } from "../../redux/featurs/productSlice"
 
 function SingleProduct() {
-    const { productId } = useParams()
+    const { parent,childe } = useParams()
 
     const dispatch=useDispatch()
-    const data = productData.find((item) => item.id == 7);
+    const parentData = productData.find((item) => item.name === parent);
+    const data = parentData?.data.find((item) => item.Pro_id === childe);
+    console.log("parent",parent);
+    console.log("childe",childe);
+    console.log("parentData",parentData);
+    console.log("data",data);
+
     useEffect(()=>{
         dispatch(getAllCategory())
         // dispatch(getProduct(1))
@@ -23,19 +29,19 @@ function SingleProduct() {
                     <div className="col-lg-5 col-md-3 col-12 p-0 mb-3 bg-white">
                         <Carousel showArrows={true} >
                             <div className="single-product-img">
-                                <img src="./images/product-image/p1.jpg"/>
+                                <img src={data?.Pro_Img}/>
                             </div>
                             <div className="single-product-img">
-                                <img src="./images/product-image/p2.jpg" />
+                                <img src={data?.Pro_Img} />
                             </div>
                             <div className="single-product-img">
-                                <img src="./images/product-image/p3.jpg" />
+                                <img src={data?.Pro_Img} />
                             </div>
                             <div className="single-product-img">
-                                <img src="./images/product-image/p4.jpg" />
+                                <img src={data?.Pro_Img} />
                             </div>
                             <div className="single-product-img">
-                                <img src="./images/product-image/p5.jpg" />
+                                <img src={data?.Pro_Img} />
                             </div>
                         </Carousel>
 
@@ -44,17 +50,19 @@ function SingleProduct() {
                                 <button className="add-to-cart-button">ADD TO Cart</button>
                             </div>
                             <div className="single-product-button">
+                                <Link to="/cart">
                                 <button className="buy-now-button">Buy Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-7 col-md-9 col-12 p-0 m-0 ">
                         <div className="px-lg-3" style={{ marginLeft: "10px" }}>
                             <div className="">
-                                <h3 className="single-product-name">ENVIROCIDE</h3>
+                                <h3 className="single-product-name">{data?.Pro_Name}</h3>
                             </div>
                             <div className="single-product-price">
-                                <h3>$81.00</h3>
+                                <h3>{data?.Pro_Price}</h3>
                                 <del className="single-producrt-MRP">$100.00</del>
                                 <span className="discount">10% Off</span>
                             </div>
@@ -63,7 +71,7 @@ function SingleProduct() {
 
                             <div className="single-product-description">
                                 <h3>Description</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas totam asperiores fugiat neque dolore ipsum amet architecto aspernatur officiis, ducimus et enim in excepturi sit natus placeat explicabo officia.</p>
+                                <p>{data?.Pro_Description}</p>
                             </div>
 
                             <div className="single-product-specifications mb-3">
@@ -76,7 +84,7 @@ function SingleProduct() {
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Product Name</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Envirocide</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Category</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">EPA Approved</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{parentData?.name}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Container Type</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Jug</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Container Size</span></div>
@@ -109,8 +117,8 @@ function SingleProduct() {
                 <div className="similar-product px-2"><h3>Similar Products</h3><button>View All</button></div>
                 <div className="product-item-list bg-white m-0">
                     {
-                        data?.data.map((item) => (
-                            <ProductCard key={item.Pro_id} data={item} />
+                        parentData?.data.map((item) => (
+                            <ProductCard key={item.Pro_id} data={item} parent={parentData?.name}/>
                         ))
                     }
                 </div>

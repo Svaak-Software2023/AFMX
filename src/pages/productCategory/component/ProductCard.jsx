@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import "./card.css"
 
-function ProductCard({ data }) {
+function ProductCard({ data,parent }) {
     const product = data;
     return (
         <>
             {
                 product ?
-                <Link to={`/single-product/${product.Pro_id}`}>
+                <Link to={`/single-product/${parent}/${product.Pro_id}`}>
                 <div className="product-card card" key={product.Pro_id} >
                 <div className="img_container">
                   <img

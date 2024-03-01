@@ -5,8 +5,8 @@ import productData from "../../assets/data/Productdata.json"
 import "./product.css"
 
 function ProductCategory() {
-    const { id } = useParams();
-    const data = productData.find((item) => item.id === id);
+    const { name } = useParams();
+    const data = productData.find((item) => item.name === name);
     return (
         <>
             <div className="container p-0 my-3">
@@ -19,7 +19,7 @@ function ProductCategory() {
                         <div className="product-item-list">
                             {
                                 data?.data.map((item) => (
-                                    <ProductCard key={item.Pro_id} data={item}  />
+                                    <ProductCard key={item.Pro_id} data={item}  parent={data.name}/>
                                 ))
                             }
                         </div>

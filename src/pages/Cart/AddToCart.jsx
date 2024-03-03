@@ -5,7 +5,6 @@ import productData from "../../assets/data/Productdata.json"
 const AddToCart = () => {
   const [{data}] = productData;
   const [{Pro_Name,Pro_Img,Pro_Price}] = data;
-  console.log('...........',data);
   return (
     <>
       <div className="container my-3 mx-auto">

@@ -57,6 +57,7 @@ import RestroomClinicRXDepartment from "../pages/serviceDepartment/serviceDepart
 import HvacRepairAndServicesDepartment from "../pages/serviceDepartment/serviceDepartmentItem/HvacRepairAndServicesDepartment/HvacRepairAndServicesDepartment";
 import Cart from "../pages/Cart/AddToCart";
 import SingleProduct from "../pages/productCategory/SingleProduct";
+import DeliveryAddress from "../pages/Cart/DeliveryAddress";
 
 export const navigation = [
     { path: "*", name: "Default", element: <p> There`s nothing here: 404!</p>, isPrivate: false },
@@ -130,6 +131,7 @@ export const navigation = [
     { path: "/new", name: "Comming Soon", element: <CommingSoon />, isPrivate: false },
 
     // start Cart add to cart delivery address checkout order place route
-     {path:"/cart" , name : "Cart" ,element:<Cart />,isPrivate: false } 
+     {path:"/cart" , name : "Cart" ,element:<Cart />,isPrivate: false },
+     {path:"/delivery_address" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
     // End Cart add to cart delivery address checkout order place route
 ]

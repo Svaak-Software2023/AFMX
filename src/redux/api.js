@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = axios.create({ baseURL: "http://afmx-env-1.eba-umbmnrdz.us-east-1.elasticbeanstalk.com/api" });
+const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 export const signin = (formData) => API.post("/signin", formData);
 export const signup = (formData) => API.post("/signup", formData);
@@ -14,7 +14,11 @@ export const createRemarks = ({formData,complaintId}) => API.put(`/update-compla
 
 // Product 
 export const allProductCategory = () => API.get("/all-product-category");
-export const getProduct = (categoryId) => API.get( `/all-product/${categoryId}`);
+export const getProduct = (productCategoryId) => API.get( `/all-product`,productCategoryId);
+
+
+// career and employment 
+export const submitCreerForm=(formData)=>API.post('/create-career',formData) 
 
 
 

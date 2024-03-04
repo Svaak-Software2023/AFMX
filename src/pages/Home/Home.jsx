@@ -7,10 +7,19 @@ import productData from "../../assets/data/Productdata.json";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import WatchWhether from "./WatchWhether";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getAllCategory } from "../../redux/featurs/productSlice";
 
 function Home() {
-  const productData1 = productData.filter((item) => item.id < 8);
-  const productData2 = productData.filter((item) => item.id > 7);
+  const dispatch=useDispatch()
+  useEffect(()=>{
+    dispatch(getAllCategory())
+  },[])
+  const categoryData=useSelector((state)=>state.products?.allCategory?.data)
+  const productData1 = categoryData.filter((item,index) => index < 8);
+  const productData2 = categoryData.filter((item,index) => index > 7);
+  // console.log("allCategory",productData2);
   const serviceData1 = serviceData.filter((item) => item.id < 18);
   const serviceData2 = serviceData.filter((item) => item.id > 17);
   return (
@@ -173,14 +182,14 @@ function Home() {
                     <ul className>
                       {productData1.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/product/${item.name}`}>{item.name}</Link>
+                          <Link to={`/product/${item._id}`}>{item.productCategoryName}</Link>
                         </li>
                       ))}
                     </ul>
                     <ul className>
                       {productData2.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/product/${item.name}`}>{item.name}</Link>
+                          <Link to={`/product/${item._id}`}>{item.productCategoryName}</Link>
                         </li>
                       ))}
                     </ul>

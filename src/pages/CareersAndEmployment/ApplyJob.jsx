@@ -2,6 +2,8 @@ import { useState } from "react"
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
 import "./applyJob.css"
 import { useForm } from "react-hook-form"
+import { useDispatch } from "react-redux"
+import { submitForm } from "../../redux/featurs/careerSlice"
 
 function ApplyJob() {
     const [option, setOption] = useState(false)
@@ -19,8 +21,25 @@ function ApplyJob() {
         formState: { errors },
     } = useForm();
 
+    const[files,setFiles]=useState([])
 
-    const onSubmit=(data)=>{
+    const handleChange=(e)=>{
+        setFiles([...e.target.files]);
+        console.log(e.target.files);
+    }
+
+    const dispatch=useDispatch()
+    const onSubmit=(data)=>{ 
+        const formData = new FormData();
+        for (var key in data) {
+            if (data.hasOwnProperty(key)) {
+                formData.append(key, data[key]);
+            }
+        }
+        files.forEach((file) => {
+            formData.append("resume", file); // Use [] to handle multiple files
+        });
+        dispatch(submitForm(formData));
         console.log("Form Data",data);
     }
     return (
@@ -215,50 +234,53 @@ function ApplyJob() {
 
                                                                 <div className="col-lg-12 col-12 mb-3">
                                                                     <label className="career-label" htmlFor="Summary">Summary (Optional) :</label>
-                                                                    <textarea rows={4} type="text" className="form-control my-1" id="Summary" name="Summary" />
+                                                                    <textarea rows={4} type="text" className="form-control my-1" id="Summary"  {...register('summary')} />
                                                                 </div>
 
                                                                 <div className="col-lg-12 col-12 mb-3">
                                                                     <label className="career-label" htmlFor="Resume">Resume :</label>
-                                                                    <input type="file" className="form-control my-1" id="Resume" name="Resume" {...register('Resume', { required: true })} />
-                                                                    {errors.Resume && <p className="text-danger">This field is required.</p>}
+                                                                    <input type="file" className="form-control my-1" id="Resume" name="Resume" 
+                                                                    
+                                                                    onChange={handleChange}
+                                                                    />
+                                                                    {/* {errors.Resume && <p className="text-danger">This field is required.</p>} */}
                                                                 </div>
 
                                                                 <p className="mb-3"><b>Details</b></p>
 
                                                                 <div className="col-lg-12 col-12 mb-3">
                                                                     <label className="career-label" htmlFor="Cover letter">Cover letter (Optional) :</label>
-                                                                    <textarea rows={4} type="text" className="form-control my-1" id="Cover letter" name="Cover letter" />
+                                                                    <textarea rows={4} type="text" className="form-control my-1" id="Cover letter" {...register('coverLatter')}/>
                                                                 </div>
 
                                                                 <div className="col-lg-12 col-12 mb-3">
                                                                     <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Can you provide proof that you are legally eligible for employment in the US?</p>
                                                                     <div className="job-option-tongle d-flex">
                                                                         <div className="d-flex mx-3">
-                                                                            <input type="radio" name="usEmployee" id="usEmployee" {...register('usEmploye', { required: true })} />
+                                                                            <input type="radio" name="usEmployee" id="usEmployee" {...register('eligibleForEmployment', { required: true })} />
                                                                             <span className="mx-1">Yes</span>
                                                                         </div>
                                                                         <div className="d-flex mx-3">
-                                                                            <input type="radio" name="usEmployee" id="usEmployee" {...register('usEmploye', { required: true })} />
+                                                                            <input type="radio" name="usEmployee" id="usEmployee" {...register('eligibleForEmployment', { required: true })} />
                                                                             <span className="mx-1">No</span>
                                                                         </div>
 
                                                                     </div>
-                                                                    {errors.usEmploye && <p className="text-danger">This field is required.</p>}
+                                                                    {errors.eligibleForEmployment && <p className="text-danger">This field is required.</p>}
                                                                 </div>
                                                                 <div className="col-lg-12 col-12 mb-3">
-                                                                    <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by City Wide?</p>
+                                                                    <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by AFMX ?</p>
                                                                     <div className="job-option-tongle d-flex">
                                                                         <div className="d-flex mx-3">
-                                                                            <input type="radio" name="usCity" id="usCity" {...register('usCity', { required: true })} />
+                                                                            <input type="radio" name="usCity" id="usCity" {...register('employedByCityWide', { required: true })} />
                                                                             <span className="mx-1">Yes</span>
                                                                         </div>
                                                                         <div className="d-flex mx-3">
-                                                                            <input type="radio" name="usCity" id="usCity" {...register('usCity', { required: true })} />
+                                                                            <input type="radio" name="usCity" id="usCity" {...register('employedByCityWide', { required: true })} />
                                                                             <span className="mx-1">No</span>
                                                                         </div>
                                                                     </div>
-                                                                    {errors.usCity && <p className="text-danger">This field is required.</p>}
+                                                                    {errors.employedByCityWide && <p className="text-danger">This field is required.</p>}
                                                                 </div>
                                                             </div>
                                                             <div className="apply-job-button pb-3 mt-3">

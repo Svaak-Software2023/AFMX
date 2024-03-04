@@ -58,6 +58,7 @@ import HvacRepairAndServicesDepartment from "../pages/serviceDepartment/serviceD
 import Cart from "../pages/Cart/AddToCart";
 import SingleProduct from "../pages/productCategory/SingleProduct";
 import DeliveryAddress from "../pages/Cart/DeliveryAddress";
+import ThankyouPage from "../pages/Cart/ThankyouPage";
 
 export const navigation = [
     { path: "*", name: "Default", element: <p> There`s nothing here: 404!</p>, isPrivate: false },
@@ -132,6 +133,7 @@ export const navigation = [
 
     // start Cart add to cart delivery address checkout order place route
      {path:"/cart" , name : "Cart" ,element:<Cart />,isPrivate: false },
-     {path:"/delivery_address" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
+     {path:"/buy_now" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
+     {path:"/thank_you" , name : "ThankYou" ,element:<ThankyouPage />,isPrivate: false },
     // End Cart add to cart delivery address checkout order place route
 ]

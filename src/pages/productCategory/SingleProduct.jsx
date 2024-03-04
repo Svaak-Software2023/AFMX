@@ -47,7 +47,9 @@ function SingleProduct() {
 
                         <div className="single-product-button-group">
                             <div className="single-product-button">
-                                <button className="add-to-cart-button">ADD TO Cart</button>
+                            <Link to="/cart">
+                            <button className="add-to-cart-button">ADD TO Cart</button>
+                            </Link>
                             </div>
                             <div className="single-product-button">
                                 <Link to="/cart">

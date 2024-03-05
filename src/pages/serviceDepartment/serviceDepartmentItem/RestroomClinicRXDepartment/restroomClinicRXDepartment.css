@@ -36,3 +36,424 @@
   font-size: .6rem;
   background-color: rgb(156, 34, 93);
 }
+
+
+
+/* /////////////////////////// */
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 767px) { 
+  .rx_Catastrophic​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #19B15E; 
+  }
+  .rx_Shield​​{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #63BC48; 
+  }
+  .rx_Preferred​​​{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #8BE3CB; 
+  }
+  .rx_Checkup​{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #248097; 
+  }
+  .title_card_shadow{
+    transform: rotate(-10deg);
+    transform: skew(15deg,-18deg);
+    margin: 100px 0px;
+  }
+  .rx_Layer_one​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 184px;
+    width: 188px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 5px 0 5px -5px #19B15E; 
+  }
+  .rx_Layer_two{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 153px;
+    width: 140px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #63BC48;
+  }
+  .rx_Layer_three{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 115px;
+      width: 92px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #8BE3CB;
+  }
+  .rx_Layer_four{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 60px;
+    width: 46px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #248097;
+  }
+  .rotate_position_relative{
+    position: relative;
+  }
+  .rotate_position_relative h6{
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .rx_Layer_one​_absolute{
+    left: 1%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .rx_Layer_two_absolute{
+    left: 8%;
+    position: absolute;
+    top: 34px;
+    z-index: -1;
+  }
+  .rx_Layer_three_absolute{
+    left: 13%;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+  }
+  .rx_Layer_four_absolute{
+    left: 18%;
+    top: 103px;
+    z-index: -1;
+    position: absolute;
+  }
+ }
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+  .rx_Catastrophic​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #19B15E; 
+  }
+  .rx_Shield​​{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #63BC48; 
+  }
+  .rx_Preferred​​​{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #8BE3CB; 
+  }
+  .rx_Checkup​{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #248097; 
+  }
+  .title_card_shadow{
+    transform: rotate(-10deg);
+    transform: skew(15deg,-18deg);
+    margin: 100px 0px;
+  }
+  .rx_Layer_one​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 224px;
+    width: 188px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 5px 0 5px -5px #19B15E; 
+  }
+  .rx_Layer_two{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 179px;
+    width: 140px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #63BC48;
+  }
+  .rx_Layer_three{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 127px;
+      width: 92px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #8BE3CB;
+  }
+  .rx_Layer_four{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 80px;
+    width: 46px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #248097;
+  }
+  .rotate_position_relative{
+    position: relative;
+  }
+  .rotate_position_relative h6{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .rx_Layer_one​_absolute{
+    left: 12%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .rx_Layer_two_absolute{
+    left: 17%;
+    position: absolute;
+    top: 34px;
+    z-index: -1;
+  }
+  .rx_Layer_three_absolute{
+    left: 21%;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+  }
+  .rx_Layer_four_absolute{
+    left: 26%;
+    top: 103px;
+    z-index: -1;
+    position: absolute;
+  }
+ }
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  .rx_Catastrophic​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #19B15E; 
+  }
+  .rx_Shield​​{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #63BC48; 
+  }
+  .rx_Preferred​​​{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #8BE3CB; 
+  }
+  .rx_Checkup​{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #248097; 
+  }
+  .title_card_shadow{
+    transform: rotate(-10deg);
+    transform: skew(15deg,-18deg);
+    margin: 100px 0px;
+  }
+  .rx_Layer_one​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 224px;
+    width: 188px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 5px 0 5px -5px #19B15E; 
+  }
+  .rx_Layer_two{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 179px;
+    width: 140px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #63BC48;
+  }
+  .rx_Layer_three{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 127px;
+      width: 92px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #8BE3CB;
+  }
+  .rx_Layer_four{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 80px;
+    width: 46px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #248097;
+  }
+  .rotate_position_relative{
+    position: relative;
+  }
+  .rotate_position_relative h6{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .rx_Layer_one​_absolute{
+    left: 12%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .rx_Layer_two_absolute{
+    left: 17%;
+    position: absolute;
+    top: 34px;
+    z-index: -1;
+  }
+  .rx_Layer_three_absolute{
+    left: 21%;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+  }
+  .rx_Layer_four_absolute{
+    left: 25%;
+    top: 103px;
+    z-index: -1;
+    position: absolute;
+  }
+ }
+
+ @media only screen and (min-width: 1201px) { 
+  .rx_Catastrophic​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #19B15E; 
+  }
+  .rx_Shield​​{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #63BC48; 
+  }
+  .rx_Preferred​​​{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #8BE3CB; 
+  }
+  .rx_Checkup​{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    box-shadow: -9px 0px 4px 0px #248097; 
+  }
+  .title_card_shadow{
+    transform: rotate(-10deg);
+    transform: skew(15deg,-18deg);
+    margin: 100px 0px;
+  }
+  .rx_Layer_one​{
+    background-color: #19B15E;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 224px;
+    width: 188px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 5px 0 5px -5px #19B15E; 
+  }
+  .rx_Layer_two{
+    background-color: #63BC48;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 179px;
+    width: 140px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #63BC48;
+  }
+  .rx_Layer_three{
+    background-color: #8BE3CB;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 127px;
+      width: 92px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #8BE3CB;
+  }
+  .rx_Layer_four{
+    background-color: #248097;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    height: 80px;
+    width: 46px;
+    border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      box-shadow: 5px 0 5px -5px #248097;
+  }
+  .rotate_position_relative{
+    position: relative;
+  }
+  .rotate_position_relative h6{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .rx_Layer_one​_absolute{
+    left: 15%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .rx_Layer_two_absolute{
+    left: 18%;
+    position: absolute;
+    top: 34px;
+    z-index: -1;
+  }
+  .rx_Layer_three_absolute{
+    left: 22%;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+  }
+  .rx_Layer_four_absolute{
+    left: 26%;
+    top: 103px;
+    z-index: -1;
+    position: absolute;
+  }
+ }
+

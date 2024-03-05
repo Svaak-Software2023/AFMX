@@ -182,14 +182,14 @@ function Home() {
                     <ul className>
                       {productData1.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/product/${item._id}`}>{item.productCategoryName}</Link>
+                          <Link to={`/product/${item.productCategoryName}/${item.productCategoryId}`}>{item.productCategoryName}</Link>
                         </li>
                       ))}
                     </ul>
                     <ul className>
                       {productData2.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/product/${item._id}`}>{item.productCategoryName}</Link>
+                          <Link to={`/product/${item.productCategoryName}/${item.productCategoryId}`}>{item.productCategoryName}</Link>
                         </li>
                       ))}
                     </ul>

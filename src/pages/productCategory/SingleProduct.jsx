@@ -1,59 +1,52 @@
-import { Link, useParams } from "react-router-dom"
+import { Link, useLocation, useParams } from "react-router-dom"
 import "./singleProduct.css"
 import React, { useEffect } from 'react'
 import { Carousel } from "react-responsive-carousel"
 import ProductCard from "./component/ProductCard"
 import productData from "../../assets/data/Productdata.json"
-import { useDispatch } from "react-redux"
-import { getAllCategory, getProduct } from "../../redux/featurs/productSlice"
+import { useDispatch, useSelector } from "react-redux"
+import { getAllCategory, getProduct, getSingleProduct } from "../../redux/featurs/productSlice"
 
 function SingleProduct() {
-    const { parent,childe } = useParams()
+    const { parent, childe } = useParams()
+    const {pathname}=useLocation()
 
-    const dispatch=useDispatch()
-    const parentData = productData.find((item) => item.name === parent);
-    const data = parentData?.data.find((item) => item.Pro_id === childe);
-    console.log("parent",parent);
-    console.log("childe",childe);
-    console.log("parentData",parentData);
-    console.log("data",data);
+    const dispatch = useDispatch()
+    // const parentData = productData.find((item) => item.name === parent);
+    // const data = parentData?.data.find((item) => item.Pro_id === childe);
 
-    useEffect(()=>{
-        dispatch(getAllCategory())
+    const allProducts = useSelector((state) => state.products?.allProducts)
+    const allCategorey = useSelector((state) => state.products?.allCategorey)
+    
+
+    const singleProductData = useSelector((state) => state.products?.singleProduct)
+    // console.log("singleProductData", singleProductData);
+    useEffect(() => {
+        dispatch(getSingleProduct(childe))
+        allCategorey?.data&&dispatch()
         // dispatch(getProduct(1))
-    },[])
+    }, [pathname])
     return (
         <>
             <div className="container p-0 my-3">
                 <div className="row  m-0 bg-white   p-3">
                     <div className="col-lg-5 col-md-3 col-12 p-0 mb-3 bg-white">
                         <Carousel showArrows={true} >
-                            <div className="single-product-img">
-                                <img src={data?.Pro_Img}/>
+                            {singleProductData.productImage?.map((item,i) => <div key={i} className="single-product-img">
+                                <img src={item} />
                             </div>
-                            <div className="single-product-img">
-                                <img src={data?.Pro_Img} />
-                            </div>
-                            <div className="single-product-img">
-                                <img src={data?.Pro_Img} />
-                            </div>
-                            <div className="single-product-img">
-                                <img src={data?.Pro_Img} />
-                            </div>
-                            <div className="single-product-img">
-                                <img src={data?.Pro_Img} />
-                            </div>
+                            )}
                         </Carousel>
 
                         <div className="single-product-button-group">
                             <div className="single-product-button">
-                            <Link to="/cart">
-                            <button className="add-to-cart-button">ADD TO Cart</button>
-                            </Link>
+                                <Link to="/cart">
+                                    <button className="add-to-cart-button">ADD TO Cart</button>
+                                </Link>
                             </div>
                             <div className="single-product-button">
                                 <Link to="/cart">
-                                <button className="buy-now-button">Buy Now</button>
+                                    <button className="buy-now-button">Buy Now</button>
                                 </Link>
                             </div>
                         </div>
@@ -61,19 +54,19 @@ function SingleProduct() {
                     <div className="col-lg-7 col-md-9 col-12 p-0 m-0 ">
                         <div className="px-lg-3" style={{ marginLeft: "10px" }}>
                             <div className="">
-                                <h3 className="single-product-name">{data?.Pro_Name}</h3>
+                                <h3 className="single-product-name">{singleProductData.productName}</h3>
                             </div>
                             <div className="single-product-price">
-                                <h3>{data?.Pro_Price}</h3>
-                                <del className="single-producrt-MRP">$100.00</del>
-                                <span className="discount">10% Off</span>
+                                <h3>{singleProductData.productMRP}</h3>
+                                <del className="single-producrt-MRP">{singleProductData.productPrice}</del>
+                                <span className="discount">{singleProductData.discount} Off</span>
                             </div>
 
                             <p className="alert-product-left">Hurry, Only 8 left!</p>
 
                             <div className="single-product-description">
                                 <h3>Description</h3>
-                                <p>{data?.Pro_Description}</p>
+                                <p>{singleProductData.productDescription}</p>
                             </div>
 
                             <div className="single-product-specifications mb-3">
@@ -82,11 +75,11 @@ function SingleProduct() {
                                 <div className="row p-3">
                                     <b>General</b>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Brand</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Citrus III</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProductData.productBrand}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Product Name</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Envirocide</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProductData.productName}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Category</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{parentData?.name}</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{parent}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Container Type</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Jug</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Container Size</span></div>
@@ -100,7 +93,7 @@ function SingleProduct() {
                                     <div className="col-lg-6 col-6"><span className="product-details-text">UPC Code(Universal Product Code)</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">12345</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">SKU Code(Stock Keeping Unit)</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">22332</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProductData.skuCode}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">MRP</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">$91.3</span></div>
                                 </div>
@@ -119,8 +112,8 @@ function SingleProduct() {
                 <div className="similar-product px-2"><h3>Similar Products</h3><button>View All</button></div>
                 <div className="product-item-list bg-white m-0">
                     {
-                        parentData?.data.map((item) => (
-                            <ProductCard key={item.Pro_id} data={item} parent={parentData?.name}/>
+                        allProducts.map((item) => (
+                            <ProductCard key={item.Pro_id} data={item} parent={parent} />
                         ))
                     }
                 </div>

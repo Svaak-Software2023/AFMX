@@ -14,7 +14,8 @@ export const createRemarks = ({formData,complaintId}) => API.put(`/update-compla
 
 // Product 
 export const allProductCategory = () => API.get("/all-product-category");
-export const getProduct = (productCategoryId) => API.get( `/all-product`,productCategoryId);
+export const getSingleProduct = (id) => API.get( `/products/${id}`);
+export const getProduct = (id) => API.get( `/all-product/${id}`);
 
 
 // career and employment 

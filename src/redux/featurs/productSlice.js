@@ -5,6 +5,17 @@ export const getProduct = createAsyncThunk("/product", async (id) => {
     try {
         console.log("id",id)
         const response = await api.getProduct(id)
+        // console.log(response.data);
+        return response.data
+    } catch (err) {
+        // console.log(err);
+        return err.response.data
+    }
+});
+
+export const getSingleProduct = createAsyncThunk("/single-product", async (id) => {
+    try {
+        const response = await api.getSingleProduct(id)
         console.log(response.data);
         return response.data
     } catch (err) {
@@ -39,9 +50,20 @@ const productSlice = createSlice({
         },
         [getProduct.fulfilled]:(state,action)=>{
             state.loading=false
-            state.allProducts=action.payload
+            state.allProducts=action.payload?.productResponse
         },
         [getProduct.rejected]:(state,action)=>{
+            state.loading=false
+            state.error=action.payload
+        },
+        [getSingleProduct.pending]:(state,action)=>{
+            state.loading=true
+        },
+        [getSingleProduct.fulfilled]:(state,action)=>{
+            state.loading=false
+            state.singleProduct=action.payload?.productSingleResponse
+        },
+        [getSingleProduct.rejected]:(state,action)=>{
             state.loading=false
             state.error=action.payload
         },

@@ -68,7 +68,7 @@ export const navigation = [
     { path: "/helping-hand/:id", name: "Helping Hand", element: <HelpingHand />, isPrivate: false },
     
     // shopping center 
-    { path: "/product/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
+    { path: "/product/:name/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
     { path: "/single-product/:parent/:childe", name: "Single Product", element: <SingleProduct/>, isPrivate: false },
 
     { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard/>, isPrivate: true },

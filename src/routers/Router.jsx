@@ -55,9 +55,12 @@ import AssemblyDepartmentList from "../pages/serviceDepartment/serviceDepartment
 import AssamblyDepartmentItem from "../pages/serviceDepartment/serviceDepartmentItem/AssemblyDepartment/AssamblyDepartmentItem";
 import RestroomClinicRXDepartment from "../pages/serviceDepartment/serviceDepartmentItem/RestroomClinicRXDepartment/RestroomClinicRXDepartment";
 import HvacRepairAndServicesDepartment from "../pages/serviceDepartment/serviceDepartmentItem/HvacRepairAndServicesDepartment/HvacRepairAndServicesDepartment";
-import Cart from "../pages/Cart/AddToCart";
+import Cart from "../pages/Cart/Cart";
 import SingleProduct from "../pages/productCategory/SingleProduct";
 import DeliveryAddress from "../pages/Cart/DeliveryAddress";
+import ThankyouPage from "../pages/Cart/ThankyouPage";
+import RestroomRXMemberships from "../pages/serviceDepartment/serviceDepartmentItem/RestroomClinicRXDepartment/RestroomRXMemberships";
+import AddToCart from "../pages/Cart/AddToCart";
 
 export const navigation = [
     { path: "*", name: "Default", element: <p> There`s nothing here: 404!</p>, isPrivate: false },
@@ -67,7 +70,7 @@ export const navigation = [
     { path: "/helping-hand/:id", name: "Helping Hand", element: <HelpingHand />, isPrivate: false },
     
     // shopping center 
-    { path: "/product/:name", name: "Product Category", element: <ProductCategory />, isPrivate: false },
+    { path: "/product/:name/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
     { path: "/single-product/:parent/:childe", name: "Single Product", element: <SingleProduct/>, isPrivate: false },
 
     { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard/>, isPrivate: true },
@@ -132,6 +135,10 @@ export const navigation = [
 
     // start Cart add to cart delivery address checkout order place route
      {path:"/cart" , name : "Cart" ,element:<Cart />,isPrivate: false },
-     {path:"/delivery_address" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
-    // End Cart add to cart delivery address checkout order place route
+     {path:"/check-out" , name : "Check Out" ,element:<AddToCart />,isPrivate: false },
+     {path:"/buy_now" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
+     {path:"/thank_you" , name : "ThankYou" ,element:<ThankyouPage />,isPrivate: false },
+     // End Cart add to cart delivery address checkout order place route
+     
+     {path:"/restroom_RXMemberships" , name : "Membership" ,element:<RestroomRXMemberships />,isPrivate: false },
 ]

@@ -178,6 +178,12 @@ hr{
     padding: 10px 30px;
     background: transparent;
   }
+  .delivery_address_padding{
+    line-height: 24px;
+    padding: 15px 8px;
+    background-color: #ffff;
+    border: 1px solid #0000;
+  }
   .delivery_address_bg{
     background-color: #3F63B9;
     color: #ffff;
@@ -198,6 +204,29 @@ hr{
   .order_or_payment_title{
     font-weight: 600;
     font-size: 20px;
+  }
+  .content_center_grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .congrats_content{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.73px;
+  }
+  .back_to_home_btn{
+    padding: 15px 50px;
+  }
+  .accordion-header{
+    cursor: pointer;
+  }
+  .payment_type_list{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .card_input{
+    padding: 15px 8px !important;
   }
   /* delivery address */
 

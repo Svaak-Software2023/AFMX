@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 import productData from "../../assets/data/Productdata.json"
 
 const AddToCart = () => {
@@ -77,7 +78,9 @@ const AddToCart = () => {
                       </div>
                     </div>
                     <hr />
+                    <Link to="/buy_now">
                     <button className="place_order_btn">PLACE ORDER</button>
+                    </Link>
                   </div>
                 </div>
               </div>

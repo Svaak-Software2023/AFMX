@@ -11,8 +11,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function Home() {
   const productData1 = productData.filter((item) => item.id < 8);
   const productData2 = productData.filter((item) => item.id > 7);
-  const serviceData1 = serviceData.filter((item) => item.id < 18);
-  const serviceData2 = serviceData.filter((item) => item.id > 17);
+  const serviceData1 = serviceData.filter((item) => item.id < 19);
+  const serviceData2 = serviceData.filter((item) => item.id > 18);
   return (
     <>
       <Carousel />

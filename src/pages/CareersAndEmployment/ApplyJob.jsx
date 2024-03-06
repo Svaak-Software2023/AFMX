@@ -45,7 +45,7 @@ function ApplyJob() {
                                             <div className="content mt-3">
                                                 <p><b>Description</b></p>
                                                 <p className="font-14">America Finest Maintenance provides janitorial services to commercial properties and is seeking a manager to oversee buildings in a territory, manage service providers, and work with the account manager on resolving customer issues.</p>
-                                                <p className="font-14">As a City-Wide Night Manager, you will develop and maintain productive working relationships with service providers, communicate with the account manager any issues that need immediate attention, make recommendations of service providers for work assignments, and inspect buildings. In the buildings you oversee, you will be responsible for inspecting, organizing, managing, and maintaining records and inventories.</p>
+                                                <p className="font-14">As a AFMX Night Manager, you will develop and maintain productive working relationships with service providers, communicate with the account manager any issues that need immediate attention, make recommendations of service providers for work assignments, and inspect buildings. In the buildings you oversee, you will be responsible for inspecting, organizing, managing, and maintaining records and inventories.</p>
                                                 <p className="font-14">America Finest Maintenance is a privately held company that emphasizes a dedication to serving others with excellence in all we do. Here you will find a high-energy work environment that balances high expectations with collaboration, group support, and fun.</p>
                                                 <p><b>Requirements</b></p>
                                                 <ul className="apply-job-list">
@@ -247,7 +247,7 @@ function ApplyJob() {
                                                                     {errors.usEmploye && <p className="text-danger">This field is required.</p>}
                                                                 </div>
                                                                 <div className="col-lg-12 col-12 mb-3">
-                                                                    <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by City Wide?</p>
+                                                                    <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by AFMX?</p>
                                                                     <div className="job-option-tongle d-flex">
                                                                         <div className="d-flex mx-3">
                                                                             <input type="radio" name="usCity" id="usCity" {...register('usCity', { required: true })} />

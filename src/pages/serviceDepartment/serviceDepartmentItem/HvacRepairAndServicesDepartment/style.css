@@ -1,4 +1,4 @@
-.creative {
+/* .creative {
     transform: perspective(2000px) rotateX(-20deg) rotateY(-20deg);
     transition: transform 0.5s ease;
   }
@@ -35,4 +35,86 @@
   color: white;
   font-size: .6rem;
   background-color: rgb(16,74,142);
+} */
+
+.HvacMain{
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  transform: perspective(2000px) rotateX(0deg) rotateY(25deg);
+}
+
+.HvacDiv1{
+  display: flex;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+}
+.Hvac_Triangle {
+  display: flex;
+  justify-content: flex-start;
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 400px solid #7AA334;
+}
+.Hvac_Triangle p{
+  font-size: 1rem;
+  margin-top: 220px;
+  margin-left: -120px;
+}
+
+.HvacDiv2{
+  position: absolute  ;
+  top: 30px;
+  left: 60%;
+  z-index: 10;
+}
+.HvacDiv2_Box{
+  color: white;
+  padding: 0px 5px;
+  font-size: 10px;
+  margin: 1px;
+  border: 2px solid gray;
+  background-color: #199EBD;
+}
+.HvacDiv2_Box p{
+  margin-bottom: 0px;
+}
+.hvac-heading1{
+  color: rgb(16,74,142);
+  font-weight: 800;
+  justify-content: left;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  border-bottom: .2rem solid gray;
+}
+@media screen and (max-width: 995px) {
+  .Hvac_Triangle {
+    display: flex;
+    justify-content: flex-start;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 400px solid #7AA334;
+  }
+  .HvacDiv2_Box{
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .Hvac_Triangle p{
+    font-weight: bold;
+    font-size: .8rem;
+    margin-top: 220px;
+    margin-left: -100px;
+  }
+}
+.HvacMain p{
+  color: white;
 }

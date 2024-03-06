@@ -1,7 +1,7 @@
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
-import { Link } from "react-router-dom";
 import "./style.css";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
+import { Link } from "react-router-dom";
 
 const HvacRepairAndServicesDepartment = () => {
   const HvacRepairAndServicesDepartments = departmentData.find((item) => item.name === "Hvac Repair And Services Department");
@@ -14,15 +14,22 @@ const HvacRepairAndServicesDepartment = () => {
         </div>
         <div className="col d-flex flex-column justify-content-center align-items-center">
           <h1 className="hvac-heading1"> Hvac Repair And Services Department</h1>
-          <div className="d-flex flex-wrap text-center justify-content-center creative">
-            {mainData && mainData.map((item) => (
-              <Link to={item.name} key={item.id}  target="_blank">
-                <ul className="hvac-ulCss text-[5rem] p-1 m-2 bg-sky-200 text-fit text-center d-flex flex-column justify-content-center list-unstyled pe-auto hvac-height-indicator">
-                  <li> {item.name} </li>
-                </ul>
-              </Link>
-            ))}
-          </div>
+          <div className='HvacMain'>
+            <div className='HvacDiv1'>
+                <div className="Hvac_Triangle">
+                    <p>Hvac Repair And Services Department</p>
+                </div>
+            </div>
+            <div className='HvacDiv2'>
+                {mainData.map((item, index) =>(
+                  <Link  key={index} to={item.name}>
+                    <div className='HvacDiv2_Box'> 
+                        <p>{item.name}</p>
+                    </div>
+                    </Link>
+                ))}
+            </div>
+        </div>
         </div>
       </div>
     </div>

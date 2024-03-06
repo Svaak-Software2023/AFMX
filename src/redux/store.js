@@ -4,6 +4,7 @@ import ContactReducer from "./featurs/contactUsSlice";
 import ComplainReducer from "./featurs/complainSlice";
 import ProductReducer from "./featurs/productSlice";
 import careerReducer from "./featurs/careerSlice";
+import cartSlice from "./featurs/cartSlice";
 
 export default configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export default configureStore({
     contact: ContactReducer,
     complain: ComplainReducer,
     products: ProductReducer,
-    career: careerReducer,
+    
+    cart:cartSlice
   },
 });

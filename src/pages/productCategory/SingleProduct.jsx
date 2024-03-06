@@ -1,4 +1,4 @@
-import { Link, useLocation, useParams } from "react-router-dom"
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom"
 import "./singleProduct.css"
 import React, { useEffect } from 'react'
 import { Carousel } from "react-responsive-carousel"
@@ -6,10 +6,11 @@ import ProductCard from "./component/ProductCard"
 import productData from "../../assets/data/Productdata.json"
 import { useDispatch, useSelector } from "react-redux"
 import { getAllCategory, getProduct, getSingleProduct } from "../../redux/featurs/productSlice"
+import { addCart, getCart } from "../../redux/featurs/cartSlice"
 
 function SingleProduct() {
     const { parent, childe } = useParams()
-    const {pathname}=useLocation()
+    const { pathname } = useLocation()
 
     const dispatch = useDispatch()
     // const parentData = productData.find((item) => item.name === parent);
@@ -17,22 +18,39 @@ function SingleProduct() {
 
     const allProducts = useSelector((state) => state.products?.allProducts)
     const allCategorey = useSelector((state) => state.products?.allCategorey)
-    
+
 
     const singleProductData = useSelector((state) => state.products?.singleProduct)
     // console.log("singleProductData", singleProductData);
     useEffect(() => {
         dispatch(getSingleProduct(childe))
-        allCategorey?.data&&dispatch()
+        allCategorey?.data && dispatch()
         // dispatch(getProduct(1))
     }, [pathname])
+
+    const navigate = useNavigate()
+    const logedInUser = useSelector((state) => state.auth.user)
+    const addToCartHandler = () => {
+        if (logedInUser) {
+            let formData = {
+                clientId:logedInUser?.clientId,
+                token: logedInUser?.token,
+                deliveryCharges:30,
+                discountPrice:25
+            }
+            dispatch(addCart(formData)).then(()=>{
+                dispatch(getCart(formData))
+            })
+        }
+        else { navigate("login") }
+    }
     return (
         <>
             <div className="container p-0 my-3">
                 <div className="row  m-0 bg-white   p-3">
                     <div className="col-lg-5 col-md-3 col-12 p-0 mb-3 bg-white">
                         <Carousel showArrows={true} >
-                            {singleProductData.productImage?.map((item,i) => <div key={i} className="single-product-img">
+                            {singleProductData.productImage?.map((item, i) => <div key={i} className="single-product-img">
                                 <img src={item} />
                             </div>
                             )}
@@ -41,7 +59,7 @@ function SingleProduct() {
                         <div className="single-product-button-group">
                             <div className="single-product-button">
                                 <Link to="/cart">
-                                    <button className="add-to-cart-button">ADD TO Cart</button>
+                                    <button className="add-to-cart-button" onClick={addToCartHandler}>ADD TO Cart</button>
                                 </Link>
                             </div>
                             <div className="single-product-button">

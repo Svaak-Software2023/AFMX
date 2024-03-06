@@ -61,6 +61,9 @@ import DeliveryAddress from "../pages/Cart/DeliveryAddress";
 import ThankyouPage from "../pages/Cart/ThankyouPage";
 import RestroomRXMemberships from "../pages/serviceDepartment/serviceDepartmentItem/RestroomClinicRXDepartment/RestroomRXMemberships";
 import AddToCart from "../pages/Cart/AddToCart";
+import RestroomRxService from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXServices/RestroomRXServices";
+import RestroomRxServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXServices/RestroomRXServices";
+import RestroomRXIndustriesWeServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXIndustriesWeServices/RestroomRXIndustriesWeServices";
 
 export const navigation = [
     { path: "*", name: "Default", element: <p> There`s nothing here: 404!</p>, isPrivate: false },
@@ -87,6 +90,9 @@ export const navigation = [
     { path: "/service-department/Attic Installation And Repair Department", name: "Attic Installation And Repair Department", element: <AtticInstallationAndRepairDepartment />, isPrivate: false },
     { path: "/service-department/Remodeling department", name: "Remodeling department", element: <RemodlingDepartment />, isPrivate: false },
     { path: "/service-department/Restroom Clinic RX", name: "Restroom Clinic RX", element: <RestroomClinicRXDepartment />, isPrivate: false },    
+    { path: "/service-department/Restroom RX Memberships", name: "Restroom RX Memberships", element: <RestroomRXMemberships />, isPrivate: false },    
+    { path: "/service-department/Restroom RX Services", name: "Restroom RX Services", element: <RestroomRxServices />, isPrivate: false },    
+    { path: "/service-department/Restroom RX Industries We Services", name: "Restroom RX Industries We Services", element: <RestroomRXIndustriesWeServices />, isPrivate: false },    
     { path: "/service-department/Floor installation and repair department", name: "Floor installation and repair department", element: <FloorInstallation />, isPrivate: false },
     { path: "/service-department/Junk removal and hauling department", name: "Junk removal and hauling department", element: <JunkRemovalandHaulingDepartment />, isPrivate: false },
     { path: "/service-department/Handyman department", name: "Handyman department", element: <HandymanDepartment />, isPrivate: false },

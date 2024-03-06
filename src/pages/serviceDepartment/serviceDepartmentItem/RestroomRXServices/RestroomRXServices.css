@@ -1,0 +1,58 @@
+.RestroomRxMain{
+    transition: transform 0.5s ease;
+    transform: perspective(1000px) rotateX(3deg) rotateY(-13deg);
+  }
+
+  .RestroomRxDiv{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #64BCA4;
+    width: 90%;
+  }
+  
+  .RestroomRxUnder {
+    width: 300px;
+    border: 2px solid #ddd; 
+    border-style: outset; 
+    margin: 5px 5px 0 5px;
+    background-color: yellow;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+  }
+    
+  .RestroomRxMain a:nth-child(1) .RestroomRxUnder {
+    background-color: #FEFE46;
+  }
+  .RestroomRxMain a:nth-child(2) .RestroomRxUnder {
+    background-color: #DBFE99;
+  }
+  .RestroomRxMain a:nth-child(3) .RestroomRxUnder {
+    background-color: #FEFE4A;
+  }
+  .RestroomRxMain a:nth-child(4) .RestroomRxUnder {
+    background-color: #FEDA65;
+  }
+  .RestroomRxMain a:nth-child(5) .RestroomRxUnder {
+    background-color: #6DB0E1;
+  }
+  .RestroomRxMain div:nth-child(6) .RestroomRxUnder {
+    background-color: #FED36E;
+  }
+  .RestroomRxMain a:nth-child(7) .RestroomRxUnder {
+    background-color: #FEFE62;
+  }
+  .RestroomRxMain a:nth-child(8) .RestroomRxUnder {
+    background-color: #CAF49F;
+  }
+  .RestroomRxMain a:nth-child(9) .RestroomRxUnder {
+    background-color: #FEFE71;
+  }
+  .RestroomRxMain a:nth-child(10) .RestroomRxUnder {
+    background-color: #CEF1A7;
+  }
+  .RestroomRxMain a:nth-child(11) .RestroomRxUnder {
+    background-color: #FFFF82;
+  }

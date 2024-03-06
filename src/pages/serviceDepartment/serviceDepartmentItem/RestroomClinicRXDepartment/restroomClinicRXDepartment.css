@@ -44,25 +44,25 @@
 
 
 @media only screen and (min-width: 100px) and (max-width: 767px) { 
-  .rx_Catastrophic​{
+  .rx_Catastrophic{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #19B15E; 
   }
-  .rx_Shield​​{
+  .rx_Shield{
     background-color: #63BC48;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #63BC48; 
   }
-  .rx_Preferred​​​{
+  .rx_Preferred{
     background-color: #8BE3CB;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #8BE3CB; 
   }
-  .rx_Checkup​{
+  .rx_Checkup{
     background-color: #248097;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -72,7 +72,7 @@
     transform: rotate(2deg) skew(30deg, -16deg);
     margin: 100px 0px;
   }
-  .rx_Layer_one​{
+  .rx_Layer_one{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -120,7 +120,7 @@
     font-size: 12px;
     font-weight: 600;
   }
-  .rx_Layer_one​_absolute{
+  .rx_Layer_one_absolute{
     left: 1%;
     position: absolute;
     top: 0;
@@ -146,25 +146,25 @@
   }
  }
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
-  .rx_Catastrophic​{
+  .rx_Catastrophic{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #19B15E; 
   }
-  .rx_Shield​​{
+  .rx_Shield{
     background-color: #63BC48;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #63BC48; 
   }
-  .rx_Preferred​​​{
+  .rx_Preferred{
     background-color: #8BE3CB;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #8BE3CB; 
   }
-  .rx_Checkup​{
+  .rx_Checkup{
     background-color: #248097;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -174,7 +174,7 @@
     transform: rotate(2deg) skew(30deg, -16deg);
     margin: 100px 0px;
   }
-  .rx_Layer_one​{
+  .rx_Layer_one{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -222,7 +222,7 @@
     font-size: 20px;
     font-weight: 600;
   }
-  .rx_Layer_one​_absolute{
+  .rx_Layer_one_absolute{
     left: 12%;
     position: absolute;
     top: 0;
@@ -248,25 +248,25 @@
   }
  }
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-  .rx_Catastrophic​{
+  .rx_Catastrophic{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #19B15E; 
   }
-  .rx_Shield​​{
+  .rx_Shield{
     background-color: #63BC48;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #63BC48; 
   }
-  .rx_Preferred​​​{
+  .rx_Preferred{
     background-color: #8BE3CB;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #8BE3CB; 
   }
-  .rx_Checkup​{
+  .rx_Checkup{
     background-color: #248097;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -276,7 +276,7 @@
     transform: rotate(2deg) skew(30deg, -16deg);
     margin: 100px 0px;
   }
-  .rx_Layer_one​{
+  .rx_Layer_one{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -324,7 +324,7 @@
     font-size: 20px;
     font-weight: 600;
   }
-  .rx_Layer_one​_absolute{
+  .rx_Layer_one_absolute{
     left: 12%;
     position: absolute;
     top: 0;
@@ -351,25 +351,25 @@
  }
 
  @media only screen and (min-width: 1201px) { 
-  .rx_Catastrophic​{
+  .rx_Catastrophic{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #19B15E; 
   }
-  .rx_Shield​​{
+  .rx_Shield{
     background-color: #63BC48;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #63BC48; 
   }
-  .rx_Preferred​​​{
+  .rx_Preferred{
     background-color: #8BE3CB;
     padding: 1rem 2rem;
     margin-bottom: 0;
     box-shadow: -9px 0px 4px 0px #8BE3CB; 
   }
-  .rx_Checkup​{
+  .rx_Checkup{
     background-color: #248097;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -379,7 +379,7 @@
     transform: rotate(2deg) skew(30deg, -16deg);
     margin: 100px 0px;
   }
-  .rx_Layer_one​{
+  .rx_Layer_one{
     background-color: #19B15E;
     padding: 1rem 2rem;
     margin-bottom: 0;
@@ -427,7 +427,7 @@
     font-size: 20px;
     font-weight: 600;
   }
-  .rx_Layer_one​_absolute{
+  .rx_Layer_one_absolute{
     left: 15%;
     position: absolute;
     top: 0;

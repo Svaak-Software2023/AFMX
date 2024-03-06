@@ -269,11 +269,7 @@ function ApplyJob() {
                                                                     {errors.eligibleForEmployment && <p className="text-danger">This field is required.</p>}
                                                                 </div>
                                                                 <div className="col-lg-12 col-12 mb-3">
-<<<<<<< HEAD
-                                                                    <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by AFMX?</p>
-=======
                                                                     <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by AFMX ?</p>
->>>>>>> 643471ccd8f7a05a9dee46d81feb9c892c9726c4
                                                                     <div className="job-option-tongle d-flex">
                                                                         <div className="d-flex mx-3">
                                                                             <input type="radio" name="usCity" id="usCity" {...register('employedByCityWide', { required: true })} />

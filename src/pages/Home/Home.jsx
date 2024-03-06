@@ -12,12 +12,6 @@ import { useEffect } from "react";
 import { getAllCategory } from "../../redux/featurs/productSlice";
 
 function Home() {
-<<<<<<< HEAD
-  const productData1 = productData.filter((item) => item.id < 8);
-  const productData2 = productData.filter((item) => item.id > 7);
-  const serviceData1 = serviceData.filter((item) => item.id < 19);
-  const serviceData2 = serviceData.filter((item) => item.id > 18);
-=======
   const dispatch=useDispatch()
   useEffect(()=>{
     dispatch(getAllCategory())
@@ -26,9 +20,8 @@ function Home() {
   const productData1 = categoryData.filter((item,index) => index < 8);
   const productData2 = categoryData.filter((item,index) => index > 7);
   // console.log("allCategory",productData2);
-  const serviceData1 = serviceData.filter((item) => item.id < 18);
-  const serviceData2 = serviceData.filter((item) => item.id > 17);
->>>>>>> 643471ccd8f7a05a9dee46d81feb9c892c9726c4
+  const serviceData1 = serviceData.filter((item) => item.id < 19);
+  const serviceData2 = serviceData.filter((item) => item.id > 18);
   return (
     <>
       <Carousel />

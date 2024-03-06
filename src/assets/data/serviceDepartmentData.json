@@ -15987,7 +15987,7 @@
       {
         "id": "3",
         "name": "Restroom Clinic, Odor control",
-        "image": "./images/serviceDepartments/restroomCleaningRx/restroomClinicOdorControl/restroomClinicOdorControll.jpg",
+        "image": "./images/serviceDepartments/restroomCleaningRx/restroomClinicOdorControl/restroomClinicOdorControl1.jpg",
         "imgData": [          
           {
             "url": "./images/serviceDepartments/restroomCleaningRx/restroomClinicOdorControl/restroomClinicOdorControl1.jpg"
@@ -17029,7 +17029,7 @@
   {
     "id": "34",
     "url": "restroom-rx-industries-we-services",
-    "name": "Restroom Rx Industries We Services",
+    "name": "Restroom RX Industries We Services",
     "submenu": [
       {
         "id": "1",

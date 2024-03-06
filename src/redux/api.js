@@ -1,6 +1,19 @@
 import axios from "axios";
+<<<<<<< Updated upstream
 const API = axios.create({ baseURL: "http://52.204.131.213/api" });
 // const API = axios.create({ baseURL: "http://localhost:5000/api" });
+=======
+const API = axios.create({ baseURL: "http://localhost:5000/api" });
+API.interceptors.request.use(
+    config => {
+      config.headers['x-access-token'] = `${JSON.parse(localStorage.getItem('user')).token}`;
+          return config;
+      },
+      error => {
+          return Promise.reject(error);
+      }
+  );
+>>>>>>> Stashed changes
 
 
 export const signin = (formData) => API.post("/signin", formData);
@@ -26,7 +39,16 @@ export const getCart = (formData) => API.get(`/carts/get-cart?token=${formData.t
 
 
 // career and employment 
+<<<<<<< Updated upstream
 export const submitCreerForm = (formData) => API.post('/create-career', formData)
+=======
+export const submitCreerForm=(formData)=>API.post('/create-career',formData)
+
+// address
+export const getSingleAddress=()=>API.get('/address/single-address/3');
+export const addAddress = (formData) => API.post("/address/create-address", formData);
+
+>>>>>>> Stashed changes
 
 
 

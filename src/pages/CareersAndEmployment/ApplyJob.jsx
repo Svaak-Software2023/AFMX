@@ -270,9 +270,13 @@ function ApplyJob() {
                                                                 </div>
                                                                 <div className="col-lg-12 col-12 mb-3">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                                                     <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by AFMX ?</p>
 =======
                                                                     <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by AFMX?</p>
+>>>>>>> Stashed changes
+=======
+                                                                    <p className="d-flex aliign-items-center"><span className="text-danger fs-4 mx-1">*</span>Have you previously been employed by AFMX ?</p>
 >>>>>>> Stashed changes
                                                                     <div className="job-option-tongle d-flex">
                                                                         <div className="d-flex mx-3">

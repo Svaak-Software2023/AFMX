@@ -13,6 +13,7 @@ import { getAllCategory } from "../../redux/featurs/productSlice";
 
 function Home() {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
   const productCategoryData=useSelector((state)=>state.products.allCategory.data)
   console.log("productCategoryData",productCategoryData);
@@ -21,6 +22,8 @@ function Home() {
   const serviceData1 = serviceData.filter((item) => item.id < 19);
   const serviceData2 = serviceData.filter((item) => item.id > 18);
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   const dispatch=useDispatch()
   useEffect(()=>{
@@ -31,9 +34,14 @@ function Home() {
   const productData1 = categoryData.filter((item,index) => index < 8);
   const productData2 = categoryData.filter((item,index) => index > 7);
   // console.log("allCategory",productData2);
+<<<<<<< Updated upstream
   const serviceData1 = serviceData.filter((item) => item.id < 19);
   const serviceData2 = serviceData.filter((item) => item.id > 18);
 =======
+>>>>>>> Stashed changes
+=======
+  const serviceData1 = serviceData.filter((item) => item.id < 18);
+  const serviceData2 = serviceData.filter((item) => item.id > 17);
 >>>>>>> Stashed changes
   return (
     <>

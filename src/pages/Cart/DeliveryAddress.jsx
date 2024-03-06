@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import productData from "../../assets/data/Productdata.json";
 import { Link } from "react-router-dom";
+import { getSingleAddress, addAddress } from "../../redux/featurs/addressSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
+import { TextField } from "@mui/material";
 
 const DeliveryAddress = () => {
+  const  [{clientFirstName, clientLastName, clientCity, clientPostalCode, clientPhone, clientAddress}, setUser] = useState({});
+  const dispatch = useDispatch();
+  const [formData, setFormData] = useState({
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  });
+  const [edit, setEdit] = useState(false);
+  
   const [{ data }] = productData;
   const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
 
@@ -42,6 +58,39 @@ const DeliveryAddress = () => {
         .classList.add("delivery_address_bg");
     }
   };
+
+  const singleAddress = useSelector((state) => {
+    console.log("././state////", state);
+  });
+
+  useEffect(() => {
+    dispatch(getSingleAddress({ toast }));
+    setUser(JSON.parse(localStorage.getItem("user")));
+  }, []);
+
+  function changehandler({ target }) {
+    const { name, value } = target;
+    setFormData({ ...formData, [name]: value });
+  }
+
+  function submithandler(event, isEdit) {
+    event.preventDefault();
+    console.log("...........", isEdit);
+    if(isEdit){
+      setEdit(true);
+    }else{
+      dispatch(addAddress({formData, toast}));
+      setFormData({
+        clientPhone: "",
+        clientAddress: "",
+        clientCity: "",
+        clientState: "",
+        clientCountry: "",
+        clientPostalCode: "",
+      })
+    }
+  }
+
   return (
     <>
       <div className="container my-3 ">
@@ -75,32 +124,110 @@ const DeliveryAddress = () => {
                   <h6>DELIVERY ADDRESS</h6>
                 </div>
                 <div className="card">
-                  <div className="card-body px-md-5">
-                    <div className="row ">
-                      <div className="col-md-3 col-6">
-                        <p className="delivery_address_key">User name</p>
+                  <form onSubmit={(event) => submithandler(event, true)}>
+                    <div className="card-body px-md-5">
+                      <div className="row ">
+                        <div className="col-md-3 col-6">
+                          <p className="delivery_address_key">User name</p>
+                        </div>
+                        <div className="col-md-8 col-6">
+                          <p className="delivery_address_value">{clientFirstName} {clientLastName}</p>
+                        </div>
+                        <div className="col-md-3 col-6">
+                          <p className="delivery_address_key">Phone No</p>
+                        </div>
+                        <div className="col-md-8 col-6">
+                          {edit ? <TextField
+                            className="form-control"
+                            type="text"
+                            label="Phone Number"
+                            onChange={changehandler}
+                            value={formData.clientPhone}
+                            name="clientPhone"
+                          /> : <p className="delivery_address_value">{clientPhone}</p>}
+                        </div>
+                        <div className="col-md-3 col-6">
+                          <p className="delivery_address_key">Pin code</p>
+                        </div>
+                        <div className="col-md-8 col-6">
+                          <p className="delivery_address_value">{clientPostalCode}</p>
+                          <TextField
+                            className="form-control"
+                            type="text"
+                            label="Pin Code"
+                            onChange={changehandler}
+                            value={formData.clientPostalCode}
+                            name="clientPostalCode"
+                          />
+                        </div>
+                        <div className="col-md-3 col-6">
+                          <p className="delivery_address_key">City</p>
+                        </div>
+                        <div className="col-md-8 col-6">
+                          <p className="delivery_address_value">{clientCity}</p>
+                          <TextField
+                            className="form-control"
+                            type="text"
+                            label="City"
+                            onChange={changehandler}
+                            value={formData.clientCity}
+                            name="clientCity"
+                          />
+                        </div>
+                        <div className="col-md-3 col-6">
+                          <p className="delivery_address_key">State</p>
+                        </div>
+                        <div className="col-md-8 col-6">
+                          <p className="delivery_address_value">U.P</p>
+                          <TextField
+                            className="form-control"
+                            type="text"
+                            label="State"
+                            onChange={changehandler}
+                            value={formData.clientState}
+                            name="clientState"
+                          />
+                        </div>
+                        <div className="col-md-3 col-6">
+                          <p className="delivery_address_key">Country</p>
+                        </div>
+                        <div className="col-md-8 col-6">
+                          <p className="delivery_address_value">India</p>
+                          <TextField
+                            className="form-control"
+                            type="text"
+                            label="Country"
+                            onChange={changehandler}
+                            value={formData.clientCountry}
+                            name="clientCountry"
+                          />
+                        </div>
+                        <div className="col-md-3 col-6">
+                          <p className="delivery_address_key">Address</p>
+                        </div>
+                        <div className="col-md-8 col-6">
+                          <p className="delivery_address_value">
+                            {" "}
+                            {clientAddress}
+                          </p>
+                          <TextField
+                            className="form-control"
+                            type="text"
+                            label="Address"
+                            onChange={changehandler}
+                            value={formData.clientAddress}
+                            name="clientAddress"
+                          />
+                        </div>
                       </div>
-                      <div className="col-md-8 col-6">
-                        <p className="delivery_address_value">+91 76876762</p>
-                      </div>
-                      <div className="col-md-3 col-6">
-                        <p className="delivery_address_key">Pin code</p>
-                      </div>
-                      <div className="col-md-8 col-6">
-                        <p className="delivery_address_value">242221</p>
-                      </div>
-                      <div className="col-md-3 col-6">
-                        <p className="delivery_address_key">Address</p>
-                      </div>
-                      <div className="col-md-8 col-6">
-                        <p className="delivery_address_value">
-                          delivery address
-                          .................................................
-                        </p>
-                      </div>
+                      <button type="button" onClick={()=> setEdit(true)} className="btn btn-light">
+                        EDIT
+                      </button>
+                      <button type="submit" className="btn btn-light">
+                        Save
+                      </button>
                     </div>
-                    <button className="btn btn-light">EDIT</button>
-                  </div>
+                  </form>
                 </div>
               </div>
               <div className="col-12">
@@ -131,64 +258,83 @@ const DeliveryAddress = () => {
                       <div className="accordion-body">
                         <div className="card">
                           <div className="card-body px-md-5">
-                            <form>
+                            <form onSubmit={(event) => submithandler(event, false)}>
                               <div className="row">
                                 <div className="col-md-6">
                                   <div className="mb-3">
-                                    <label
-                                      htmlFor="user-name"
-                                      className="form-label"
-                                    >
-                                      <p className="delivery_address_key">
-                                        User name
-                                      </p>
-                                    </label>
-                                    <input
-                                      type="text"
+                                    <TextField
                                       className="form-control"
-                                      id="user-name"
-                                      placeholder="Enter your name"
+                                      type="text"
+                                      label="Phone No"
+                                      onChange={changehandler}
+                                      value={formData.clientPhone}
+                                      name="clientPhone"
                                     />
                                   </div>
                                 </div>
                                 <div className="col-md-6">
                                   <div className="mb-3">
-                                    <label
-                                      htmlFor="pin_code"
-                                      className="form-label"
-                                    >
-                                      <p className="delivery_address_key">
-                                        Pin code
-                                      </p>
-                                    </label>
-                                    <input
-                                      type="number"
+                                    <TextField
                                       className="form-control"
-                                      id="pin_code"
-                                      placeholder="Enter your pincode"
-                                    />
-                                  </div>
-                                </div>
-                                <div className="col-md-12">
-                                  <div className="mb-3">
-                                    <label
-                                      htmlFor="address"
-                                      className="form-label"
-                                    >
-                                      <p className="delivery_address_key">
-                                        Address
-                                      </p>
-                                    </label>
-                                    <input
                                       type="text"
-                                      className="form-control"
-                                      id="address"
-                                      placeholder="Enter your address"
+                                      label="Pin Code"
+                                      onChange={changehandler}
+                                      value={formData.clientPostalCode}
+                                      name="clientPostalCode"
                                     />
                                   </div>
                                 </div>
+                                <div className="col-md-6">
+                                  <div className="mb-3">
+                                    <TextField
+                                      className="form-control"
+                                      type="text"
+                                      label="City"
+                                      onChange={changehandler}
+                                      value={formData.clientCity}
+                                      name="clientCity"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-6">
+                                  <div className="mb-3">
+                                    <TextField
+                                      className="form-control"
+                                      type="text"
+                                      label="State"
+                                      onChange={changehandler}
+                                      value={formData.clientState}
+                                      name="clientState"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-6">
+                                  <div className="mb-3">
+                                    <TextField
+                                      className="form-control"
+                                      type="text"
+                                      label="Country"
+                                      onChange={changehandler}
+                                      value={formData.clientCountry}
+                                      name="clientCountry"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-6">
+                                  <div className="mb-3">
+                                    <TextField
+                                      className="form-control"
+                                      type="text"
+                                      label="Address"
+                                      onChange={changehandler}
+                                      value={formData.clientAddress}
+                                      name="clientAddress"
+                                    />
+                                  </div>
+                                </div>
+
                                 <div className="col-md-12 d-flex justify-content-center">
-                                  <button className="btn btn-light">
+                                  <button type="submit" className="btn btn-light">
                                     Save
                                   </button>
                                 </div>
@@ -337,7 +483,12 @@ const DeliveryAddress = () => {
                                   >
                                     Pay By Wallet
                                   </label>
-                                  <img src="/paymentIcon/wallet-removebg.jpg" width="50" className="ms-3" alt=""/>
+                                  <img
+                                    src="/paymentIcon/wallet-removebg.jpg"
+                                    width="50"
+                                    className="ms-3"
+                                    alt=""
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -360,44 +511,54 @@ const DeliveryAddress = () => {
                                   >
                                     Credit/Debit/ ATM Card
                                   </label>
-                                  <img src="/paymentIcon/atm_card_debit_card.jpg" width="50" className="ms-3" alt=""/>
+                                  <img
+                                    src="/paymentIcon/atm_card_debit_card.jpg"
+                                    width="50"
+                                    className="ms-3"
+                                    alt=""
+                                  />
                                 </div>
                               </div>
                             </div>
                             <div className="row mx-3 my-3 gap-3">
-                            <div className="col-sm-12 col-md-7 col-lg-7 col-12">
-                                  <input
-                                    type="number"
-                                    className="form-control card_input"
-                                    placeholder="Enter card number"
-                                  />
-                                </div>
-                                <div className="col-sm-12 col-md-7 col-lg-7 col-12">
-                                  <div className="row">
-                                    <div className="col-8">
+                              <div className="col-sm-12 col-md-7 col-lg-7 col-12">
+                                <input
+                                  type="number"
+                                  className="form-control card_input"
+                                  placeholder="Enter card number"
+                                />
+                              </div>
+                              <div className="col-sm-12 col-md-7 col-lg-7 col-12">
+                                <div className="row">
+                                  <div className="col-8">
                                     <input
-                                    type="month"
-                                    className="form-control card_input"
-                                    placeholder="name@example.com"
-                                    alt="kjhj"
-                                  />
-                                    </div>
-                                    <div className="col-4">
+                                      type="month"
+                                      className="form-control card_input"
+                                      placeholder="name@example.com"
+                                      alt="kjhj"
+                                    />
+                                  </div>
+                                  <div className="col-4">
                                     <input
-                                    type="text"
-                                    className="form-control card_input"
-                                    placeholder="CVV"
-                                  />
-                                    </div>
+                                      type="text"
+                                      className="form-control card_input"
+                                      placeholder="CVV"
+                                    />
                                   </div>
                                 </div>
-                                <div className="col-sm-12 col-md-7 col-lg-7 col-12">
-                                  <div className="row">
-                                    <div className="col-12 d-flex">
-                                    <Link to="/thank_you" className="btn btn-danger w-100">PAY NOW</Link>
-                                    </div>
+                              </div>
+                              <div className="col-sm-12 col-md-7 col-lg-7 col-12">
+                                <div className="row">
+                                  <div className="col-12 d-flex">
+                                    <Link
+                                      to="/thank_you"
+                                      className="btn btn-danger w-100"
+                                    >
+                                      PAY NOW
+                                    </Link>
                                   </div>
                                 </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -418,7 +579,12 @@ const DeliveryAddress = () => {
                                   >
                                     Pay By Stripe
                                   </label>
-                                  <img src="/paymentIcon/stripe_pic.jpg" width="50" className="ms-3" alt=""/>
+                                  <img
+                                    src="/paymentIcon/stripe_pic.jpg"
+                                    width="50"
+                                    className="ms-3"
+                                    alt=""
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -441,7 +607,12 @@ const DeliveryAddress = () => {
                                   >
                                     Pay By American Express
                                   </label>
-                                  <img src="/paymentIcon/american_card.jpg" width="50" className="ms-3" alt=""/>
+                                  <img
+                                    src="/paymentIcon/american_card.jpg"
+                                    width="50"
+                                    className="ms-3"
+                                    alt=""
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -464,7 +635,12 @@ const DeliveryAddress = () => {
                                   >
                                     Pay By Wire Transfer
                                   </label>
-                                  <img src="/paymentIcon/wire-transfer-logo.jpg" width="50" className="ms-3" alt=""/>
+                                  <img
+                                    src="/paymentIcon/wire-transfer-logo.jpg"
+                                    width="50"
+                                    className="ms-3"
+                                    alt=""
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -487,7 +663,12 @@ const DeliveryAddress = () => {
                                   >
                                     Pay By Pay Pal
                                   </label>
-                                  <img src="/paymentIcon/paypal-logo.jpg" width="50" className="ms-3"  alt=""/>
+                                  <img
+                                    src="/paymentIcon/paypal-logo.jpg"
+                                    width="50"
+                                    className="ms-3"
+                                    alt=""
+                                  />
                                 </div>
                               </div>
                             </div>

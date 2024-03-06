@@ -11,7 +11,6 @@ function Contact() {
     function changehandler(e) {
         const name = e.target.name
         setFormData({ ...formData, [name]: e.target.value })
-
     }
     function submithandler(e) {
         e.preventDefault()

@@ -2,6 +2,16 @@ import axios from "axios";
 const API = axios.create({ baseURL: "http://52.204.131.213/api" });
 // const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
+API.interceptors.request.use(
+    config => {
+      config.headers['x-access-token'] = `${JSON.parse(localStorage.getItem('user')).token}`;
+          return config;
+      },
+      error => {
+          return Promise.reject(error);
+      }
+  );
+
 
 export const signin = (formData) => API.post("/signin", formData);
 export const signup = (formData) => API.post("/signup", formData);

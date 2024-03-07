@@ -5,6 +5,7 @@ import * as api from "../api"
 export const signin=createAsyncThunk("api/sigin", async({formData,navigate,toast})=>{
     try{
         const response=await api.signin(formData)
+        console.log('response..',response);
         toast.success(response.data.message)
         navigate("/user-dashboard")
         console.log(response,"this is responce");

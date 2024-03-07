@@ -2,15 +2,40 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import productData from "../../assets/data/Productdata.json";
 import { Link } from "react-router-dom";
-import { getSingleAddress, addAddress } from "../../redux/featurs/addressSlice";
+import { getSingleAddress, addAddress, getAllAddress, deleteAddress } from "../../redux/featurs/addressSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
 
 const DeliveryAddress = () => {
-  const  [{clientFirstName, clientLastName, clientCity, clientPostalCode, clientPhone, clientAddress}, setUser] = useState({});
   const dispatch = useDispatch();
-  const [formData, setFormData] = useState({
+
+  const  [user, setUser] = useState({
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  });
+  const  [addNewForm, setaddNewForm] = useState({
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  });
+  
+  const [formData, setFormData] = useState([{
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  }]);
+  const [updateFormData, setUpdateFormData] = useState({
     clientPhone: "",
     clientAddress: "",
     clientCity: "",
@@ -19,6 +44,7 @@ const DeliveryAddress = () => {
     clientPostalCode: "",
   });
   const [edit, setEdit] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
   
   const [{ data }] = productData;
   const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
@@ -59,28 +85,30 @@ const DeliveryAddress = () => {
     }
   };
 
-  const singleAddress = useSelector((state) => {
-    console.log("././state////", state);
-  });
+ 
+  
 
   useEffect(() => {
+    dispatch(getAllAddress({ toast }));
     dispatch(getSingleAddress({ toast }));
     setUser(JSON.parse(localStorage.getItem("user")));
+    setFormData(address);
   }, []);
 
-  function changehandler({ target }) {
+  const address = useSelector((state) => state.address.data);
+
+  const changehandler = ({ target }) => {
     const { name, value } = target;
     setFormData({ ...formData, [name]: value });
   }
 
-  function submithandler(event, isEdit) {
+  const submithandler = (event, isEdit) => {
     event.preventDefault();
-    console.log("...........", isEdit);
     if(isEdit){
-      setEdit(true);
+
     }else{
-      dispatch(addAddress({formData, toast}));
-      setFormData({
+      dispatch(addAddress({addNewForm, toast}));
+      setaddNewForm({
         clientPhone: "",
         clientAddress: "",
         clientCity: "",
@@ -90,6 +118,45 @@ const DeliveryAddress = () => {
       })
     }
   }
+
+  const toggleEdit = (isTrue) => {
+    if(isTrue){
+      setEdit(isTrue);
+      setUpdateFormData((preValue) => ({...preValue,...user}))
+    } else {
+      setEdit(isTrue)
+    }
+  };
+
+  const handleFormChange = (index, event) => {
+    let data = [...formData];
+    data[index][event.target.name] = event.target.value;
+    setFormData(data);
+    setaddNewForm({ ...addNewForm, [event.target.name] : event.target.value })    
+  }
+console.log('//////>>>',formData);
+  const addMoreForm = () => {
+
+    let newfield = {
+      clientPhone: "",
+      clientAddress: "",
+      clientCity: "",
+      clientState: "",
+      clientCountry: "",
+      clientPostalCode: "",
+    };
+    setFormData([...formData, newfield]);
+  }
+
+  const removeFields = (deliveryAddressId,index) => {
+    let data = [...formData];
+    if(data.length > 0) {
+      data.splice(index, 1)
+    setFormData(data);
+    dispatch(deleteAddress({deliveryAddressId, toast }));
+    console.log('deliveryAddressId',deliveryAddressId);
+    }
+}
 
   return (
     <>
@@ -131,7 +198,7 @@ const DeliveryAddress = () => {
                           <p className="delivery_address_key">User name</p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">{clientFirstName} {clientLastName}</p>
+                          <p className="delivery_address_value">{user.clientFirstName} {user.clientLastName}</p>
                         </div>
                         <div className="col-md-3 col-6">
                           <p className="delivery_address_key">Phone No</p>
@@ -140,92 +207,80 @@ const DeliveryAddress = () => {
                           {edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Phone Number"
                             onChange={changehandler}
-                            value={formData.clientPhone}
+                            value={updateFormData.clientPhone}
                             name="clientPhone"
-                          /> : <p className="delivery_address_value">{clientPhone}</p>}
+                          /> : <p className="delivery_address_value">{user.clientPhone}</p>}
                         </div>
                         <div className="col-md-3 col-6">
                           <p className="delivery_address_key">Pin code</p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">{clientPostalCode}</p>
-                          <TextField
+                          {edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Pin Code"
                             onChange={changehandler}
-                            value={formData.clientPostalCode}
+                            value={updateFormData.clientPostalCode}
                             name="clientPostalCode"
-                          />
+                          /> : <p className="delivery_address_value">{user.clientPostalCode}</p> }
                         </div>
                         <div className="col-md-3 col-6">
                           <p className="delivery_address_key">City</p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">{clientCity}</p>
-                          <TextField
+                          { edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="City"
                             onChange={changehandler}
-                            value={formData.clientCity}
+                            value={updateFormData.clientCity}
                             name="clientCity"
-                          />
+                          /> : <p className="delivery_address_value">{user.clientCity}</p> }
                         </div>
                         <div className="col-md-3 col-6">
                           <p className="delivery_address_key">State</p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">U.P</p>
-                          <TextField
+                          
+                         { edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="State"
                             onChange={changehandler}
-                            value={formData.clientState}
+                            value={updateFormData.clientState}
                             name="clientState"
-                          />
+                          /> : <p className="delivery_address_value">U.P</p>}
                         </div>
                         <div className="col-md-3 col-6">
                           <p className="delivery_address_key">Country</p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">India</p>
-                          <TextField
+                          { edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Country"
                             onChange={changehandler}
-                            value={formData.clientCountry}
+                            value={updateFormData.clientCountry}
                             name="clientCountry"
-                          />
+                          /> : <p className="delivery_address_value">India</p> }
                         </div>
                         <div className="col-md-3 col-6">
                           <p className="delivery_address_key">Address</p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">
-                            {" "}
-                            {clientAddress}
-                          </p>
-                          <TextField
+                          {edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Address"
                             onChange={changehandler}
-                            value={formData.clientAddress}
+                            value={updateFormData.clientAddress}
                             name="clientAddress"
-                          />
+                          /> :  <p className="delivery_address_value">{user.clientAddress}</p> }
                         </div>
                       </div>
-                      <button type="button" onClick={()=> setEdit(true)} className="btn btn-light">
+                      { !edit ?<button type="button" onClick={()=> toggleEdit(true)} className="btn btn-light">
                         EDIT
-                      </button>
-                      <button type="submit" className="btn btn-light">
+                      </button> 
+                      : <button type="submit" onClick={()=> toggleEdit(false)} className="btn btn-light">
                         Save
-                      </button>
+                      </button>}
+                      
                     </div>
                   </form>
                 </div>
@@ -256,7 +311,11 @@ const DeliveryAddress = () => {
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div className="accordion-body">
-                        <div className="card">
+                        {(formData || [])?.map((key,index) =>( 
+                        <span key={index}>
+                          
+                        <input type="radio" value={index} checked={selectedOption === index} onChange={() => setSelectedOption(index)}/>
+                        <div className="card" >
                           <div className="card-body px-md-5">
                             <form onSubmit={(event) => submithandler(event, false)}>
                               <div className="row">
@@ -266,8 +325,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Phone No"
-                                      onChange={changehandler}
-                                      value={formData.clientPhone}
+                                      onChange={event => handleFormChange(index, event)}
+                                      value={key.clientPhone}
                                       name="clientPhone"
                                     />
                                   </div>
@@ -278,8 +337,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Pin Code"
-                                      onChange={changehandler}
-                                      value={formData.clientPostalCode}
+                                      onChange={event => handleFormChange(index, event)}
+                                      value={key.clientPostalCode}
                                       name="clientPostalCode"
                                     />
                                   </div>
@@ -290,8 +349,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="City"
-                                      onChange={changehandler}
-                                      value={formData.clientCity}
+                                      onChange={event => handleFormChange(index, event)}
+                                      value={key.clientCity}
                                       name="clientCity"
                                     />
                                   </div>
@@ -302,8 +361,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="State"
-                                      onChange={changehandler}
-                                      value={formData.clientState}
+                                      onChange={event => handleFormChange(index, event)}
+                                      value={key.clientState}
                                       name="clientState"
                                     />
                                   </div>
@@ -314,8 +373,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Country"
-                                      onChange={changehandler}
-                                      value={formData.clientCountry}
+                                      onChange={event => handleFormChange(index, event)}
+                                      value={key.clientCountry}
                                       name="clientCountry"
                                     />
                                   </div>
@@ -326,21 +385,29 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Address"
-                                      onChange={changehandler}
-                                      value={formData.clientAddress}
+                                      onChange={event => handleFormChange(index, event)}
+                                      value={key.clientAddress}
                                       name="clientAddress"
                                     />
                                   </div>
                                 </div>
 
-                                <div className="col-md-12 d-flex justify-content-center">
+                                <div className="col-md-12 d-flex justify-content-center gap-4">
                                   <button type="submit" className="btn btn-light">
                                     Save
                                   </button>
+                                  <button type="button" className="btn btn-danger" onClick={() => removeFields(key.deliveryAddressId,index)}>Remove</button>
                                 </div>
                               </div>
                             </form>
                           </div>
+                        </div>
+                        </span>
+                        ) ) }
+                        <div className="col-md-12 d-flex justify-content-center">
+                          <button type="button" onClick={addMoreForm} className="btn btn-light">
+                                 Add More
+                          </button>
                         </div>
                       </div>
                     </div>

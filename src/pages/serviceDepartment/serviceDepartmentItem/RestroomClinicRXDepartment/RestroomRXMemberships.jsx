@@ -1,61 +1,134 @@
-import React from "react";
-import "./restroomClinicRXDepartment.css";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
+import "./RestroomRXMemberships.css";
 import { Link } from "react-router-dom";
+
+const data = [
+  {
+    name: "Rx Checkup",
+    img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx1.jpg",
+    cost: "Cost : $89.99",
+    color: "#D1E6B5",
+    tasks: [
+      "toilet bowl",
+      "sink",
+      "Accessible Bar wipe down ",
+      "Urinal bowl",
+      "Sweep Floors",
+      "Baby Station wipe down ",
+      "Clean Mirror",
+      "Free Walkthrough ",
+      "One time cleaning Frequency",
+    ],
+  },
+  {
+    name: "Rx Preferred",
+    img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx2.jpg",
+    cost: "Cost : $189.99",
+    color: "#00B050",
+    tasks: [
+      "Free Walkthrough",
+      "Bi-weekly Bathroom Cleaning",
+      "Mirror Cleaning",
+      "Floor Cleaning",
+      "Toilet Cleaning",
+      "Trash Removal",
+      "Priority Scheduling",
+      "Discounts on Additional Services",
+      "Dedicated Customer Support",
+    ],
+  },
+  {
+    name: "Rx Shield",
+    img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx3.jpg",
+    cost: "Cost : $350",
+    color: "#893713",
+    tasks: [
+      "For clients with high traffic",
+      "Sink Polishing ",
+      "Sinks & Countertops ",
+      "Glass & Mirrors",
+      "Shower/Tub. ",
+      "Cabinet Exteriors ",
+      "Toilets Cleaned ",
+      "Door-Frames, Doorknobs, & Baseboards ",
+      "Chrome Fixtures ",
+      "ClearBlu Services ",
+      "Bathroom stalls and walls ",
+      "XShield disinfection ",
+    ],
+  },
+  {
+    name: "Rx Catastrophic",
+    img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx4.jpg",
+    cost: "Call us for a quote today",
+    color: "#FFB7B7",
+    tasks: [
+      "Sink Polishing ",
+      "Sinks & Countertops ",
+      "Glass & Mirrors ",
+      "Shower/Tub ",
+      "Cabinet Exteriors ",
+      "Toilets Cleaned ",
+      "ClearBlu ",
+      "Door-Frames, Doorknobs, & Baseboards ",
+      "Chrome Fixtures and Shine ",
+      "Emerncy On call cleaning",
+      "Catastrophic bathroom cleaning ",
+      "Virus and  Bacteria Disinfection ",
+      "XShield disinfection",
+      "Proper Waste Disposal",
+    ],
+  },
+];
+
 const RestroomRXMemberships = () => {
+
   return (
-    <>
-      <div className="container p-0">
-        <div className="row m-0 p-0 flex">
-          <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
-            <ImportantLinks />
-          </div>
-          <div className="col d-flex flex-column justify-content-center align-items-center">
-            <h1 className="heading1"> Restroom RXMemberships </h1>
-            <div className="container p-0">
-              <div className="row p-0 title_card_shadow justify-content-center">
-                <div className="col-3 p-0 rx_Layer_one_absolute rx_Layer_one"></div>
-                <div className="col-3 p-0 rx_Layer_two_absolute rx_Layer_two"></div>
-                <div className="col-3 p-0 rx_Layer_three_absolute rx_Layer_three"></div>
-                <div className="col-3 p-0 rx_Layer_four_absolute rx_Layer_four"></div>
-                <div className="col-6 col-sm-6 col-md-4 col-lg-5 col-xl-5 col-xxl-5 p-0 rotate_position_relative">
-                  <Link to="Rx Catastrophic" target="_blank">
-                    <h6 className="rx_Catastrophic">Rx Catastrophic</h6>
-                  </Link>
-                  <Link to="Rx Shield" target="_blank">
-                    <h6 className="rx_Shield">Rx Shield</h6>
-                  </Link>
-                  <Link to="Rx Preferred" target="_blank">
-                    <h6 className="rx_Preferred">Rx Preferred</h6>
-                  </Link>
-                  <Link to="Rx Checkup" target="_blank">
-                    <h6 className="rx_Checkup">Rx Checkup</h6>
-                  </Link>
+    <div className="container p-0 my-3">
+      <div className="row m-0 p-0 flex">
+        <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
+          <ImportantLinks />
+        </div>
+        <div className="col d-flex flex-column justify-content-center align-items-center">
+          <h1 className="rcx-heading1"> Restroom RX Memberships</h1>
+          <div className="RestroomRxMembershipMain">
+            {data.map((item, index) => (
+              <div key={index} >
+                <div className="RxMembershipHeading">
+                  <img src={item.img} alt={item} />
+                  <h3> {item.name} </h3>
+                </div>
+                <div
+                  style={{
+                    border: `2px solid ${item.color}`,
+                    padding: "5px 10px",
+                  }}
+                >
+                  {index === 1 || index === 3 ? (
+                    <ol>
+                      {item.tasks.map((task, index) => (
+                        <li key={index}>{task}</li>
+                      ))}
+                    </ol>
+                  ) : (
+                    <ul>
+                      {item.tasks.map((task, index) => (
+                        <li key={index}>{task}</li>
+                      ))}
+                    </ul>
+                  )}
+                  <div className="RxMembershipCostDiv">
+                    <p> {item.cost} </p>
+                    <Link to={item.name} target="_blank"><button> More... </button></Link>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default RestroomRXMemberships;
-
-{
-  /* <div className="container p-0 my-5">
-        <div className="row p-0 title_card_shadow justify-content-center">
-          <div className="col-3 p-0 rx_Layer_one_absolute rx_Layer_one"></div>
-          <div className="col-3 p-0 rx_Layer_two_absolute rx_Layer_two"></div>
-          <div className="col-3 p-0 rx_Layer_three_absolute rx_Layer_three"></div>
-          <div className="col-3 p-0 rx_Layer_four_absolute rx_Layer_four"></div>
-          <div className="col-6 col-sm-6 col-md-4 col-lg-5 col-xl-5 col-xxl-5 p-0 rotate_position_relative">
-            <h6 className="rx_Catastrophic">Rx Catastrophic</h6>
-            <h6 className="rx_Shield">Rx Shield</h6>
-            <h6 className="rx_Preferred">Rx Preferred</h6>
-            <h6 className="rx_Checkup">Rx Checkup</h6>
-          </div>
-        </div>
-      </div> */
-}

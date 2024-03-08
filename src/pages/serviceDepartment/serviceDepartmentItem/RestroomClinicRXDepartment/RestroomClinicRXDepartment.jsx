@@ -3,6 +3,86 @@ import { Link } from "react-router-dom";
 import "./restroomClinicRXDepartment.css";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
 
+
+const data = [
+  {
+    name: "RxCheckup",
+    img: "/rx1.jpg",
+    cost: "Cost : $89.99",
+    color: "#D1E6B5",
+    tasks: [
+      "toilet bowl",
+      "sink",
+      "Accessible Bar wipe down ",
+      "Urinal bowl",
+      "Sweep Floors",
+      "Baby Station wipe down ",
+      "Clean Mirror",
+      "Free Walkthrough ",
+      "One time cleaning Frequency",
+    ],
+  },
+  {
+    name: "RxPreferred",
+    img: "/rx2.jpg",
+    cost: "Cost : $189.99",
+    color: "#00B050",
+    tasks: [
+      "Free Walkthrough",
+      "Bi-weekly Bathroom Cleaning",
+      "Mirror Cleaning",
+      "Floor Cleaning",
+      "Toilet Cleaning",
+      "Trash Removal",
+      "Priority Scheduling",
+      "Discounts on Additional Services",
+      "Dedicated Customer Support",
+    ],
+  },
+  {
+    name: "RxSheild",
+    img: "/rx3.jpg",
+    cost: "Cost : $350",
+    color: "#893713",
+    tasks: [
+      "For clients with high traffic",
+      "Sink Polishing ",
+      "Sinks & Countertops ",
+      "Glass & Mirrors",
+      "Shower/Tub. ",
+      "Cabinet Exteriors ",
+      "Toilets Cleaned ",
+      "Door-Frames, Doorknobs, & Baseboards ",
+      "Chrome Fixtures ",
+      "ClearBlu Services ",
+      "Bathroom stalls and walls ",
+      "XShield disinfection ",
+    ],
+  },
+  {
+    name: "RxCatastrophic",
+    img: "/rx4.jpg",
+    cost: "Call us for a quote today",
+    color: "#FFB7B7",
+    tasks: [
+      "Sink Polishing ",
+      "Sinks & Countertops ",
+      "Glass & Mirrors ",
+      "Shower/Tub ",
+      "Cabinet Exteriors ",
+      "Toilets Cleaned ",
+      "ClearBlu ",
+      "Door-Frames, Doorknobs, & Baseboards ",
+      "Chrome Fixtures and Shine ",
+      "Emerncy On call cleaning",
+      "Catastrophic bathroom cleaning ",
+      "Virus and  Bacteria Disinfection ",
+      "XShield disinfection",
+      "Proper Waste Disposal",
+    ],
+  },
+];
+
 const RestroomClinicRXDepartment = () => {
   const RestroomClinicRXDepartments = departmentData.find((item) => item.name === "Restroom Clinic RX");
   const mainData = RestroomClinicRXDepartments.submenu;
@@ -30,3 +110,6 @@ const RestroomClinicRXDepartment = () => {
 };
 
 export default RestroomClinicRXDepartment;
+
+
+

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import productData from "../../assets/data/Productdata.json";
 import { Link } from "react-router-dom";
 import { getSingleAddress, addAddress, getAllAddress, deleteAddress,patchAddress } from "../../redux/featurs/addressSlice";
+import { getCart } from "../../redux/featurs/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
@@ -55,8 +55,7 @@ const DeliveryAddress = () => {
   const [edit, setEdit] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   
-  const [{ data }] = productData;
-  const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
+
 
   const activeBgClass = (event) => {
     setFormData(address);
@@ -100,12 +99,15 @@ const DeliveryAddress = () => {
 
   useEffect(() => {
     dispatch(getAllAddress({ toast }));
-    dispatch(getSingleAddress({ toast }));
+    // dispatch(getSingleAddress({ toast }));
     setUser(JSON.parse(localStorage.getItem("user")));
+    dispatch(getCart())
   }, []);
 
   const address = useSelector((state) => state.address.data);
   console.log('addressaddress',address)
+  const cartData = useSelector((state) => state.cart.data)
+  console.log('getCart',cartData)
 
   const changehandler = ({ target }) => {
     const { name, value } = target;
@@ -450,15 +452,18 @@ const DeliveryAddress = () => {
                       <div className="accordion-body">
                         <div className="card">
                           <div className="card-body">
-                            <div className="row mb-5">
+                            {cartData&&(cartData?.Products || [])?.map((item,i)=>(
+                              <div className="row mb-5" key={i+1}>
                               <div className="col-12 col-md-8 col-lg-8 col-sm-8 items">
                                 <div className="row ">
-                                  <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2">
-                                    <img
-                                      className="w-100"
-                                      src={Pro_Img}
-                                      alt="art image"
-                                    />
+                                  <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2"
+                                  >
+                                  <img
+                                      className=" img-fluid"
+                                      src={item?.productImage?.[0]}
+                                      alt={item?.productName}
+                                      style={{height:"100%",objectFit:"contain"}}
+                            />
                                     <div className="increase_decrease_btn">
                                       <div
                                         className="value-button"
@@ -480,16 +485,16 @@ const DeliveryAddress = () => {
                                     </div>
                                   </div>
                                   <div className="col-12 col-md-8 col-lg-8 col-sm-12">
-                                    <h6 className="product_item">{Pro_Name}</h6>
+                                    <h6 className="product_item">{item?.productName}</h6>
                                     <div
                                       className="discounted__list"
                                       style={{ display: "flex" }}
                                     >
                                       <p className="discounted_price">
-                                        {Pro_Price}
+                                      {item?.productPrice}
                                       </p>
                                       <p className="discount_price px-2">
-                                        $91.3
+                                      {item?.productMRP}
                                       </p>
                                       <p className="percent px-4">10% off</p>
                                       <p className="percent">1 offer applied</p>
@@ -507,6 +512,7 @@ const DeliveryAddress = () => {
                                 </p>
                               </div>
                             </div>
+                            ))}
                             <hr />
                             <button className="place_order_btn">
                               CHECKOUT

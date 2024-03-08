@@ -12,10 +12,9 @@ export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
     }
 });
 
-export const getCart = createAsyncThunk("cart/get-cart", async (formData) => {
-    console.log(formData,"formData");
+export const getCart = createAsyncThunk("cart/get-cart", async () => {
     try {
-        const response = await api.getCart(formData);
+        const response = await api.getCart();
         return response.data;
     } catch (error) {
         throw error;

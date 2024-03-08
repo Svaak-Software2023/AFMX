@@ -29,7 +29,7 @@ export const allProductCategory = () => API.get("/all-product-category");
 export const getSingleProduct = (id) => API.get(`/products/${id}`);
 export const getProduct = (id) => API.get(`/all-product/${id}`);
 export const createCart = (formData) => API.post(`/add-cart`, formData);
-export const getCart = (formData) => API.get(`/carts/get-cart?token=${formData.token}`, formData);
+export const getCart = () => API.get(`/carts/get-cart`);
 
 
 

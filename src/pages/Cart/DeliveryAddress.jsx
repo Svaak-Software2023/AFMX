@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import productData from "../../assets/data/Productdata.json";
 import { Link } from "react-router-dom";
-import { getSingleAddress, addAddress, getAllAddress, deleteAddress } from "../../redux/featurs/addressSlice";
+import { getSingleAddress, addAddress, getAllAddress, deleteAddress,patchAddress } from "../../redux/featurs/addressSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
@@ -18,7 +18,16 @@ const DeliveryAddress = () => {
     clientCountry: "",
     clientPostalCode: "",
   });
-  const  [addNewForm, setaddNewForm] = useState({
+  const [addNewForm, setaddNewForm] = useState({
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  });
+  const [updateNewForm, setUpdateNewForm] = useState({
+    deliveryAddressId:null,
     clientPhone: "",
     clientAddress: "",
     clientCity: "",
@@ -50,6 +59,7 @@ const DeliveryAddress = () => {
   const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
 
   const activeBgClass = (event) => {
+    setFormData(address);
     if (event.target.id == "add_new_address") {
       document
         .getElementById("order_summery")
@@ -92,10 +102,10 @@ const DeliveryAddress = () => {
     dispatch(getAllAddress({ toast }));
     dispatch(getSingleAddress({ toast }));
     setUser(JSON.parse(localStorage.getItem("user")));
-    setFormData(address);
   }, []);
 
   const address = useSelector((state) => state.address.data);
+  console.log('addressaddress',address)
 
   const changehandler = ({ target }) => {
     const { name, value } = target;
@@ -105,17 +115,15 @@ const DeliveryAddress = () => {
   const submithandler = (event, isEdit) => {
     event.preventDefault();
     if(isEdit){
-
+      console.log('isEdit isEditIF',isEdit);
     }else{
-      dispatch(addAddress({addNewForm, toast}));
-      setaddNewForm({
-        clientPhone: "",
-        clientAddress: "",
-        clientCity: "",
-        clientState: "",
-        clientCountry: "",
-        clientPostalCode: "",
-      })
+      if(updateNewForm.deliveryAddressId){
+        console.log('updateNewForm11IF',updateNewForm);
+        dispatch(patchAddress({updateNewForm, toast}));
+      }else{
+        console.log('updateNewForm11Else',updateNewForm);
+        dispatch(addAddress({addNewForm, toast}));
+      }  
     }
   }
 
@@ -128,15 +136,16 @@ const DeliveryAddress = () => {
     }
   };
 
-  const handleFormChange = (index, event) => {
+  const handleFormChange = (index, event,{clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId}) => {
     let data = [...formData];
-    data[index][event.target.name] = event.target.value;
+    // data[index][event.target.name] = event.target.value;
+    data[index] = {...data[index],[event.target.name]: event.target.value};
     setFormData(data);
-    setaddNewForm({ ...addNewForm, [event.target.name] : event.target.value })    
-  }
-console.log('//////>>>',formData);
-  const addMoreForm = () => {
+    setaddNewForm({ ...addNewForm, [event.target.name] : event.target.value });
+    setUpdateNewForm({ ...updateNewForm, clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId, [event.target.name] : event.target.value });
+  };
 
+  const addMoreForm = () => {
     let newfield = {
       clientPhone: "",
       clientAddress: "",
@@ -313,8 +322,7 @@ console.log('//////>>>',formData);
                       <div className="accordion-body">
                         {(formData || [])?.map((key,index) =>( 
                         <span key={index}>
-                          
-                        <input type="radio" value={index} checked={selectedOption === index} onChange={() => setSelectedOption(index)}/>
+                        <input type="radio" value={key.deliveryAddressId} checked={selectedOption === key.deliveryAddressId} onChange={() => setSelectedOption(key.deliveryAddressId)}/>
                         <div className="card" >
                           <div className="card-body px-md-5">
                             <form onSubmit={(event) => submithandler(event, false)}>
@@ -325,7 +333,7 @@ console.log('//////>>>',formData);
                                       className="form-control"
                                       type="text"
                                       label="Phone No"
-                                      onChange={event => handleFormChange(index, event)}
+                                      onChange={event => handleFormChange(index, event,key)}
                                       value={key.clientPhone}
                                       name="clientPhone"
                                     />
@@ -337,7 +345,7 @@ console.log('//////>>>',formData);
                                       className="form-control"
                                       type="text"
                                       label="Pin Code"
-                                      onChange={event => handleFormChange(index, event)}
+                                      onChange={event => handleFormChange(index, event,key)}
                                       value={key.clientPostalCode}
                                       name="clientPostalCode"
                                     />
@@ -349,7 +357,7 @@ console.log('//////>>>',formData);
                                       className="form-control"
                                       type="text"
                                       label="City"
-                                      onChange={event => handleFormChange(index, event)}
+                                      onChange={event => handleFormChange(index, event,key)}
                                       value={key.clientCity}
                                       name="clientCity"
                                     />
@@ -361,7 +369,7 @@ console.log('//////>>>',formData);
                                       className="form-control"
                                       type="text"
                                       label="State"
-                                      onChange={event => handleFormChange(index, event)}
+                                      onChange={event => handleFormChange(index, event,key)}
                                       value={key.clientState}
                                       name="clientState"
                                     />
@@ -373,7 +381,7 @@ console.log('//////>>>',formData);
                                       className="form-control"
                                       type="text"
                                       label="Country"
-                                      onChange={event => handleFormChange(index, event)}
+                                      onChange={event => handleFormChange(index, event,key)}
                                       value={key.clientCountry}
                                       name="clientCountry"
                                     />
@@ -385,7 +393,7 @@ console.log('//////>>>',formData);
                                       className="form-control"
                                       type="text"
                                       label="Address"
-                                      onChange={event => handleFormChange(index, event)}
+                                      onChange={event => handleFormChange(index, event,key)}
                                       value={key.clientAddress}
                                       name="clientAddress"
                                     />

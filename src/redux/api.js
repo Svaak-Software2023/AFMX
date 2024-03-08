@@ -1,6 +1,6 @@
 import axios from "axios";
-const API = axios.create({ baseURL: "http://52.204.131.213/api" });
-// const API = axios.create({ baseURL: "http://localhost:5000/api" });
+// const API = axios.create({ baseURL: "http://52.204.131.213/api" });
+const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 API.interceptors.request.use(
     config => {
@@ -42,7 +42,7 @@ export const submitCreerForm = (formData) => API.post('/create-career', formData
 export const addAddress = (formData) => API.post('/address/create-address', formData);
 export const getSingleAddress = (deliveryAddressId = 8) => API.get(`/address/single-address/${deliveryAddressId}`);
 export const getAllAddress = () => API.get('/address/all-address');
-export const patchAddress = (deliveryAddressId) => API.patch(`/address/update-address/${deliveryAddressId}`);
+export const patchAddress = (formData) => API.patch(`/address/update-address/${formData.deliveryAddressId}`,formData);
 export const deleteAddress = (deliveryAddressId) => API.delete(`/address/delete-address/${deliveryAddressId}`);
 
 

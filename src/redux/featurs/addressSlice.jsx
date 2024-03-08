@@ -52,6 +52,18 @@ export const deleteAddress=createAsyncThunk("deleteAddress",async({deliveryAddre
         toast.error(response.data.error)
     }
     });
+export const patchAddress=createAsyncThunk("patchAddress",async({updateNewForm,toast})=>{
+    try{
+        console.log('updateNewForm updateNewForm',updateNewForm);
+    const response= await api.patchAddress(updateNewForm)
+    if(response.data){
+        toast.success(response.data.message)
+    }
+    return response.data    
+    }catch(err){
+        toast.error(response.data.error)
+    }
+    });
 
 
 const addressSlice=createSlice({
@@ -107,8 +119,8 @@ const addressSlice=createSlice({
                 state.loading = true;
             })
             .addCase(getSingleAddress.fulfilled, (state, action) => {
-                state.singleAddress=action.payload.getSingleDeliveryAddressResponse
-                state.message = action.payload.message;
+                state.singleAddress=action.payload?.getSingleDeliveryAddressResponse
+                state.message = action.payload?.message;
                 state.error = "";
                 state.loading = false;
             })
@@ -131,6 +143,23 @@ const addressSlice=createSlice({
                 state.loading = false;
             })
             .addCase(deleteAddress.rejected, (state, action) => {
+                state.message = "";
+                state.error = action.error.message;
+                state.loading = false;
+            })
+            .addCase(patchAddress.pending, (state, action) => {
+                state.message = "";
+                state.error = "";
+                state.loading = true;
+            })
+            .addCase(patchAddress.fulfilled, (state, action) => {
+                state.data=action.payload.deleteDeliveryAddressResponse
+                state.data=state.data.filter(({deliveryAddressId}) => deliveryAddressId !== action.payload.updateDeliveryAddressResponse.deliveryAddressId)
+                state.message = action.payload.message;
+                state.error = "";
+                state.loading = false;
+            })
+            .addCase(patchAddress.rejected, (state, action) => {
                 state.message = "";
                 state.error = action.error.message;
                 state.loading = false;

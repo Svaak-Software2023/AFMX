@@ -114,8 +114,14 @@ const DeliveryAddress = () => {
     setFormData({ ...formData, [name]: value });
   }
 
-  const submithandler = (event, isEdit) => {
+  const setFormValue = (key) =>{
+    let {clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId} = key;
+    setUpdateNewForm({ ...updateNewForm, clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId });
+  }
+
+  const submithandler = (event, isEdit, key) => {
     event.preventDefault();
+    setFormValue(key);
     if(isEdit){
       console.log('isEdit isEditIF',isEdit);
     }else{
@@ -175,7 +181,7 @@ const DeliveryAddress = () => {
         <div className="row px-0">
           <div className="col-8 px-0">
             <div className="row px-0 gap-3">
-              <div className="col-12">
+              {/* <div className="col-12">
                 <div className="card">
                   <div className="card-body">
                     <div className="row px-md-5">
@@ -196,7 +202,7 @@ const DeliveryAddress = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-12">
                 <div className="container-fluid delivery_address_bg px-md-5">
                   <h6>DELIVERY ADDRESS</h6>
@@ -206,13 +212,13 @@ const DeliveryAddress = () => {
                     <div className="card-body px-md-5">
                       <div className="row ">
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">User name</p>
+                          <p className="delivery_address_key"><b>User name</b> </p>
                         </div>
                         <div className="col-md-8 col-6">
                           <p className="delivery_address_value">{user.clientFirstName} {user.clientLastName}</p>
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Phone No</p>
+                          <p className="delivery_address_key"><b>Phone No</b></p>
                         </div>
                         <div className="col-md-8 col-6">
                           {edit ? <TextField
@@ -224,7 +230,7 @@ const DeliveryAddress = () => {
                           /> : <p className="delivery_address_value">{user.clientPhone}</p>}
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Pin code</p>
+                          <p className="delivery_address_key"><b>Pin code</b></p>
                         </div>
                         <div className="col-md-8 col-6">
                           {edit ? <TextField
@@ -236,7 +242,7 @@ const DeliveryAddress = () => {
                           /> : <p className="delivery_address_value">{user.clientPostalCode}</p> }
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">City</p>
+                          <p className="delivery_address_key"><b>City</b></p>
                         </div>
                         <div className="col-md-8 col-6">
                           { edit ? <TextField
@@ -248,7 +254,7 @@ const DeliveryAddress = () => {
                           /> : <p className="delivery_address_value">{user.clientCity}</p> }
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">State</p>
+                          <p className="delivery_address_key"><b>State</b></p>
                         </div>
                         <div className="col-md-8 col-6">
                           
@@ -261,7 +267,7 @@ const DeliveryAddress = () => {
                           /> : <p className="delivery_address_value">U.P</p>}
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Country</p>
+                          <p className="delivery_address_key"><b>Country</b></p>
                         </div>
                         <div className="col-md-8 col-6">
                           { edit ? <TextField
@@ -273,7 +279,7 @@ const DeliveryAddress = () => {
                           /> : <p className="delivery_address_value">India</p> }
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Address</p>
+                          <p className="delivery_address_key"><b>Address</b></p>
                         </div>
                         <div className="col-md-8 col-6">
                           {edit ? <TextField
@@ -297,7 +303,7 @@ const DeliveryAddress = () => {
                 </div>
               </div>
               <div className="col-12">
-                <h2 className="accordion-header" id="flush-headingOne">
+                <h6 className="accordion-header" id="flush-headingOne">
                   <p
                     className="collapsed order_or_payment_title delivery_address_padding"
                     data-bs-toggle="collapse"
@@ -309,7 +315,7 @@ const DeliveryAddress = () => {
                   >
                     + ADD NEW ADDRESS
                   </p>
-                </h2>
+                </h6>
                 <div
                   className="accordion accordion-flush"
                   id="accordionFlushExample"
@@ -327,7 +333,7 @@ const DeliveryAddress = () => {
                         <input type="radio" value={key.deliveryAddressId} checked={selectedOption === key.deliveryAddressId} onChange={() => setSelectedOption(key.deliveryAddressId)}/>
                         <div className="card" >
                           <div className="card-body px-md-5">
-                            <form onSubmit={(event) => submithandler(event, false)}>
+                            <form onSubmit={(event) => submithandler(event, false,key)}>
                               <div className="row">
                                 <div className="col-md-6">
                                   <div className="mb-3">
@@ -425,7 +431,7 @@ const DeliveryAddress = () => {
                 </div>
               </div>
               <div className="col-12">
-                <h2 className="accordion-header" id="order_summary">
+                <h6 className="accordion-header" id="order_summary">
                   <p
                     className="collapsed order_or_payment_title delivery_address_padding"
                     data-bs-toggle="collapse"
@@ -437,7 +443,7 @@ const DeliveryAddress = () => {
                   >
                     ORDER SUMMARY
                   </p>
-                </h2>
+                </h6>
                 <div
                   className="accordion accordion-flush"
                   id="order_summaryExample"
@@ -525,7 +531,7 @@ const DeliveryAddress = () => {
                 </div>
               </div>
               <div className="col-12">
-                <h2 className="accordion-header" id="payment_headingOne">
+                <h6 className="accordion-header" id="payment_headingOne">
                   <p
                     className=" collapsed order_or_payment_title delivery_address_padding"
                     data-bs-toggle="collapse"
@@ -537,7 +543,7 @@ const DeliveryAddress = () => {
                   >
                     PAYMENT OPTIONS
                   </p>
-                </h2>
+                </h6>
                 <div className="accordion accordion-flush" id="payment_Example">
                   <div className="accordion-item">
                     <div
@@ -771,7 +777,7 @@ const DeliveryAddress = () => {
                 <hr />
                 <div className="row m-0">
                   <div className="col-sm-8 col-6 p-0">
-                    <h6 className="price_title">Price (1 item)</h6>
+                    <p className="price_title"><b>Price (1 item)</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p id="subtotal">$81.12</p>
@@ -779,7 +785,7 @@ const DeliveryAddress = () => {
                 </div>
                 <div className="row m-0">
                   <div className="col-sm-8 col-6 p-0 ">
-                    <h6 className="price_title">Discount</h6>
+                    <p className="price_title"><b>Discount</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p id="price_title_tax">-$91.4</p>
@@ -787,7 +793,7 @@ const DeliveryAddress = () => {
                 </div>
                 <div className="row m-0">
                   <div className="col-sm-8 col-6 p-0 ">
-                    <h6 className="price_title">Delivery Charges</h6>
+                    <p className="price_title"><b>Delivery Charges</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p id="price_title_tax">Free</p>
@@ -796,7 +802,7 @@ const DeliveryAddress = () => {
                 <hr />
                 <div className="row mx-0 mb-2">
                   <div className="col-sm-8 col-6 p-0 d-inline">
-                    <h5 className="total_amount">Total Amount</h5>
+                    <p className="total_amount"><b>Total Amount</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p className="total_amount">$81.12</p>

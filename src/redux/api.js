@@ -30,6 +30,7 @@ export const getSingleProduct = (id) => API.get(`/products/${id}`);
 export const getProduct = (id) => API.get(`/all-product/${id}`);
 export const createCart = (formData) => API.post(`/add-cart`, formData);
 export const getCart = () => API.get(`/carts/get-cart`);
+export const deleteCartItem = (cartItemId) => API.delete(`/carts/cartItems/${cartItemId}`);
 
 
 
@@ -44,6 +45,7 @@ export const getSingleAddress = (deliveryAddressId = 8) => API.get(`/address/sin
 export const getAllAddress = () => API.get('/address/all-address');
 export const patchAddress = (formData) => API.patch(`/address/update-address/${formData.deliveryAddressId}`,formData);
 export const deleteAddress = (deliveryAddressId) => API.delete(`/address/delete-address/${deliveryAddressId}`);
+
 
 
 

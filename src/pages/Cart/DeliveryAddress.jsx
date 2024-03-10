@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { getSingleAddress, addAddress, getAllAddress, deleteAddress,patchAddress } from "../../redux/featurs/addressSlice";
-import { getCart } from "../../redux/featurs/cartSlice";
+import { getCart, deleteCartItem } from "../../redux/featurs/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
@@ -173,7 +173,15 @@ const DeliveryAddress = () => {
     dispatch(deleteAddress({deliveryAddressId, toast }));
     console.log('deliveryAddressId',deliveryAddressId);
     }
-}
+};
+
+const removeCartItem = (productId) => {
+  const cartItemId =  cartData.Items.filter(item=> item.productId === productId )[0].cartItemId;
+  dispatch(deleteCartItem({cartItemId,toast}));
+  setTimeout(() => {
+    dispatch(getCart());
+  }, 1000);
+};
 
   return (
     <>
@@ -507,7 +515,7 @@ const DeliveryAddress = () => {
                                     </div>
                                     <div className="save_or_remove_btn">
                                       <a href="#">SAVE FOR LATER</a>
-                                      <a href="#">REMOVE</a>
+                                      <a href="javascript:void(0)" onClick={()=>removeCartItem(item.productId)}>REMOVE</a>
                                     </div>
                                   </div>
                                 </div>

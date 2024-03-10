@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import * as api from "../api";
+import { useDispatch } from "react-redux";
 
 export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
     try {
@@ -20,6 +21,19 @@ export const getCart = createAsyncThunk("cart/get-cart", async () => {
         throw error;
     }
 });
+
+export const deleteCartItem=createAsyncThunk("delete/CartItem",async({cartItemId,toast})=>{
+    try{
+        console.log('..deleteCartItem',cartItemId);
+    const response= await api.deleteCartItem(cartItemId);
+    if(response.data){
+        toast.success(response.data.message)
+    }
+    return response.data    
+    }catch(err){
+        toast.error(response.data.error)
+    }
+    });
 
 const cartSlice = createSlice({
     name: "cart",
@@ -64,7 +78,22 @@ const cartSlice = createSlice({
                 state.message = "";
                 state.error = action.error.message; // Assuming error object has a 'message' property
                 state.loading = false;
-            });
+            })
+            .addCase(deleteCartItem.pending, (state, action) => {
+                state.message = "";
+                state.error = "";
+                state.loading = true;
+            })
+            .addCase(deleteCartItem.fulfilled, (state, action) => {
+                state.message = action.payload.message;
+                state.error = "";
+                state.loading = false;
+            })
+            .addCase(deleteCartItem.rejected, (state, action) => {
+                state.message = "";
+                state.error = action.error.message;
+                state.loading = false;
+            })
     }
 });
 

@@ -6,11 +6,12 @@ const data = [
   {
     name: "Rx Checkup",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx1.jpg",
-    cost: "Cost : $89.99",
+    cost1 : "Reoccurring: $49.65 / month",
+    cost2: "One time service: $89.98",
     color: "#D1E6B5",
     tasks: [
-      "toilet bowl",
-      "sink",
+      "(1) toilet bowl ",
+      "(1) sink",
       "Accessible Bar wipe down ",
       "Urinal bowl",
       "Sweep Floors",
@@ -18,12 +19,14 @@ const data = [
       "Clean Mirror",
       "Free Walkthrough ",
       "One time cleaning Frequency",
+
     ],
   },
   {
     name: "Rx Preferred",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx2.jpg",
-    cost: "Cost : $189.99",
+    cost1: "Reoccurring $139.78 / month",
+    cost2: "One time service: $189.99",
     color: "#00B050",
     tasks: [
       "Free Walkthrough",
@@ -40,7 +43,8 @@ const data = [
   {
     name: "Rx Shield",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx3.jpg",
-    cost: "Cost : $350",
+    cost1: "Reoccurring:$ 220.54 / month",
+    cost2: "One time service: $350.00",
     color: "#893713",
     tasks: [
       "For clients with high traffic",
@@ -60,7 +64,7 @@ const data = [
   {
     name: "Rx Catastrophic",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx4.jpg",
-    cost: "Call us for a quote today",
+    cost1: "Call us for a quote today",
     color: "#FFB7B7",
     tasks: [
       "Sink Polishing ",
@@ -89,7 +93,7 @@ const RestroomRXMemberships = () => {
         <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
           <ImportantLinks />
         </div>
-        <div className="col d-flex flex-column justify-content-center align-items-center">
+        <div className="col d-flex flex-column justify-content-center align-items-center bg-white">
           <h1 className="rcx-heading1"> Restroom RX Memberships</h1>
           <div className="RestroomRxMembershipMain">
             {data.map((item, index) => (
@@ -118,8 +122,11 @@ const RestroomRXMemberships = () => {
                     </ul>
                   )}
                   <div className="RxMembershipCostDiv">
-                    <p> {item.cost} </p>
-                    <Link to={item.name} target="_blank"><button> More... </button></Link>
+                    <div>
+                      <p> {item?.cost1} </p>
+                      <p> {item?.cost2} </p>
+                    </div>
+                    <Link to={item.name} target="_blank" className="d-flex align-items-end"><button> More... </button></Link>
                   </div>
                 </div>
               </div>

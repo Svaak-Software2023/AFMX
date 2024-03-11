@@ -12,7 +12,7 @@ const HvacRepairAndServicesDepartment = () => {
         <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
           <ImportantLinks />
         </div>
-        <div className="col d-flex flex-column justify-content-center align-items-center">
+        <div className="col d-flex flex-column justify-content-center align-items-center bg-white">
           <h1 className="hvac-heading1"> Hvac Repair And Services Department</h1>
           <div className='HvacMain'>
             <div className='HvacDiv1'>

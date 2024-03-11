@@ -5,22 +5,27 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
+    font-size: 12px;
+    width: 100%;
   }
   .RestroomRxMembershipMain img{
     width: 55px;
   }
   .RxMembershipCostDiv{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 15px 0;
+    font-weight:bold;
+    position: relative;
   }
   .RxMembershipCostDiv button{
-    padding: 5px 10px;
+    position: absolute;
+    padding: 0 6px;
     color: black;
-    font-weight: bold;
+    font-weight: normal;
     border-radius: 20px;
     background-color: palegreen;
+    right: 12px;
+    bottom: 5px;
   }
   .RestroomRxMembershipMain ol{
     display: flex;
@@ -35,7 +40,7 @@
     padding-left: 20px;
   }
   .RestroomRxMembershipMain ol li,  .RestroomRxMembershipMain ul li{
-    width: 150px;
+    width: 120px;
     line-height: 20px;
   }
   .RxMembershipHeading{

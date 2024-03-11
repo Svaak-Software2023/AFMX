@@ -1,5 +1,6 @@
 .carpentry-container{
     display: flex;
+    width: 100%;
 }
 .box1{
     background-color: lightblue;
@@ -22,24 +23,22 @@
 }
 
 #octa{
-    width: 60px;
+    width: 59px;
     height: 320px;
     background-color: red;
     position: relative;
     display: flex;
-    font-size: .5rem;
-    font-weight: 700;
-    padding: 0 10px;
+    font-size: .63rem;
+    font-weight: 600;
     margin-bottom: 50px;
     text-align: center;
     align-items: center;
-    transform: perspective(2500px) rotateY(10deg);
+    /* transform: perspective(1000px) rotateY(2deg); */
     transition: transform 0.5s ease;
   }
   #octa:hover{
     background-color: rgb(141, 61, 61);
   }
- 
   #octa::after{
     content: '';
     width: 40px;
@@ -62,3 +61,47 @@
     border-right: 60px solid white;
   }
 
+@media screen and (min-width:1380px) {
+  
+#octa{
+  width: 66px;
+  height: 320px;
+  background-color: red;
+  position: relative;
+  display: flex;
+  font-size: .63rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  /* transform: perspective(1000px) rotateY(2deg); */
+  transition: transform 0.5s ease;
+  line-height: 16px;
+}
+#octa:hover{
+  background-color: rgb(141, 61, 61);
+}
+#octa::after{
+  content: '';
+  width: 40px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 49px solid red;
+  border-right: 68px solid white;
+}
+
+#octa::before{
+  content: '';
+  width: 40px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 49px solid red;
+  border-right: 68px solid white;
+}
+
+
+}

@@ -42,6 +42,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  padding: 10px 0;
   align-items: center;
   transition: transform 0.5s ease;
   transform: perspective(2000px) rotateX(0deg) rotateY(25deg);
@@ -63,9 +64,9 @@
   border-bottom: 400px solid #7AA334;
 }
 .Hvac_Triangle p{
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 220px;
-  margin-left: -120px;
+  margin-left: -150px;
 }
 
 .HvacDiv2{
@@ -73,13 +74,14 @@
   top: 30px;
   left: 60%;
   z-index: 10;
+  width: fit-content;
 }
 .HvacDiv2_Box{
   color: white;
   padding: 0px 5px;
-  font-size: 10px;
+  font-size: 13px;
   margin: 1px;
-  border: 2px solid gray;
+  border: 1px solid gray;
   background-color: #199EBD;
 }
 .HvacDiv2_Box p{

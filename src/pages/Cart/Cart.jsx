@@ -2,7 +2,8 @@ import { Link, useNavigate } from "react-router-dom"
 import productData from "../../assets/data/Productdata.json"
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getCart } from "../../redux/featurs/cartSlice";
+import { getCart, cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
+import { toast } from "react-toastify";
 
 const Cart = () => {
     const [{data}] = productData;
@@ -15,8 +16,16 @@ const Cart = () => {
 
     },[])
     const cartData = useSelector((state) => state.cart.data)
+  
+  const updateQuantity = (productId,isIncrement) => {
+    let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
+    if(isIncrement){
+     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+    } else{
+      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+    }
+  };
 
-console.log("cartData",cartData);
     return (
         <>
         <div className="container my-3" >
@@ -53,13 +62,15 @@ console.log("cartData",cartData);
                               <div
                                 className="value-button"
                                 id="decrease"
+                                onClick={()=>updateQuantity(item.productId,false)}
                               >
                                 -
                               </div>
-                              <input type="number" id="number" defaultValue="0" />
+                              <h6 className="px-3 py-2" style={{background: '#eeeeee'}}>{item?.noOfProducts}</h6>
                               <div
                                 className="value-button"
                                 id="increase"
+                                onClick={()=>updateQuantity(item.productId,true)}
                               >
                                 +
                               </div>

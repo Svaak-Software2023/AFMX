@@ -35,6 +35,16 @@ export const deleteCartItem=createAsyncThunk("delete/CartItem",async({cartItemId
     }
     });
 
+export const cartItemUpdateQuantity=createAsyncThunk("/cartItems/cartItemUpdateQuantity",async({cartItemId,isIncrement,toast})=>{
+    try{
+    const response= await api.cartUpdateQuantity({cartItemId,positiveAndNegativeValue:isIncrement});
+        toast.error(response.data.error)
+        return response.data
+    }catch(err){
+    toast.error(err.response.data.error)
+    }
+    });
+
 const cartSlice = createSlice({
     name: "cart",
     initialState: {
@@ -90,6 +100,28 @@ const cartSlice = createSlice({
                 state.loading = false;
             })
             .addCase(deleteCartItem.rejected, (state, action) => {
+                state.message = "";
+                state.error = action.error.message;
+                state.loading = false;
+            })
+            .addCase(cartItemUpdateQuantity.pending, (state, action) => {
+                state.message = "";
+                state.error = "";
+                state.loading = true;
+            })
+            .addCase(cartItemUpdateQuantity.fulfilled, (state, action) => {
+               if(action.payload){
+                state.data.Products.map((item)=> {
+                    if(item.productId == action.payload?.cartItemsResponse?.productId){
+                       return {...item.noOfProducts = action.payload?.cartItemsResponse?.noOfProducts} 
+                    }
+                })
+               }
+                state.message = action.payload?.message;
+                state.error = "";
+                state.loading = false;
+            })
+            .addCase(cartItemUpdateQuantity.rejected, (state, action) => {
                 state.message = "";
                 state.error = action.error.message;
                 state.loading = false;

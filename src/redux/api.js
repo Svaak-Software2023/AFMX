@@ -1,5 +1,6 @@
 import axios from "axios";
 // const API = axios.create({ baseURL: "http://52.204.131.213/api" });
+// const API = axios.create({ baseURL: "https://www.mcue.net/api" });
 const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 API.interceptors.request.use(
@@ -31,6 +32,7 @@ export const getProduct = (id) => API.get(`/all-product/${id}`);
 export const createCart = (formData) => API.post(`/add-cart`, formData);
 export const getCart = () => API.get(`/carts/get-cart`);
 export const deleteCartItem = (cartItemId) => API.delete(`/carts/cartItems/${cartItemId}`);
+export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue}) => API.patch(`/cartItems/update-quantity/${cartItemId}`,{positiveAndNegativeValue});
 
 
 

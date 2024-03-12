@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { getSingleAddress, addAddress, getAllAddress, deleteAddress,patchAddress } from "../../redux/featurs/addressSlice";
-import { getCart, deleteCartItem } from "../../redux/featurs/cartSlice";
+import { getCart, deleteCartItem,cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
@@ -58,7 +58,7 @@ const DeliveryAddress = () => {
 
 
   const activeBgClass = (event) => {
-    setFormData(address);
+    setFormData(address ? address : []);
     if (event.target.id == "add_new_address") {
       document
         .getElementById("order_summery")
@@ -181,6 +181,15 @@ const removeCartItem = (productId) => {
   setTimeout(() => {
     dispatch(getCart());
   }, 1000);
+};
+
+const updateQuantity = (productId,isIncrement) => {
+  let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
+  if(isIncrement){
+   dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+  } else{
+    dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+  }
 };
 
   return (
@@ -482,17 +491,15 @@ const removeCartItem = (productId) => {
                                       <div
                                         className="value-button"
                                         id="decrease"
+                                        onClick={()=>updateQuantity(item.productId,false)}
                                       >
                                         -
                                       </div>
-                                      <input
-                                        type="number"
-                                        id="number"
-                                        defaultValue="0"
-                                      />
+                                      <h6 className="px-3 py-2" style={{background: '#eeeeee'}}>{item?.noOfProducts}</h6>
                                       <div
                                         className="value-button"
                                         id="increase"
+                                        onClick={()=>updateQuantity(item.productId,true)}
                                       >
                                         +
                                       </div>

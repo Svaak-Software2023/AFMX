@@ -76,7 +76,7 @@ p{color: #504D4D;}
     margin-left: auto;
     background-color: #D00808;
     color: #fff;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 20.57px;
     font-weight: 600;
     padding: 15px 40px;
@@ -89,29 +89,24 @@ hr{
 
 .total_saving{
     color: #039B12;
-    font-size: 16px;
     line-height: 19.36px;
     font-weight: 500;
 }
 .price_details{
-    font-size: 20px;
     line-height: 24.2px;
     font-weight: 500;
     color: #504D4D;
 }
 .price_title{
-    font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
 }
 .price_title_tax{
-    font-size: 15px;
     font-weight: 400;
     line-height: 18.15px;
     color: #504D4D;
 }
 .total_amount{
-    font-size: 20px;
     font-weight: 500;
     line-height: 24.2px;
     color: #000000
@@ -191,19 +186,16 @@ hr{
     padding: 15px 8px;
   }
   .delivery_address_key{
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
     color: #000000;
     
   }
   .delivery_address_value{
     font-weight: 400;
-    font-size: 20px;
-
+    text-transform: capitalize;
   }
   .order_or_payment_title{
     font-weight: 600;
-    font-size: 20px;
   }
   .content_center_grid{
     display: grid;
@@ -222,7 +214,7 @@ hr{
     cursor: pointer;
   }
   .payment_type_list{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
   }
   .card_input{
@@ -263,7 +255,7 @@ hr{
     }
     .place_order_btn {
         padding: 12px 20px;
-        font-size: 15px;
+        font-size: 14px;
     }
   }
   @media screen and (max-width: 1200px) {

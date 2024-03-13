@@ -1,16 +1,50 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import productData from "../../assets/data/Productdata.json";
 import { Link } from "react-router-dom";
-import { getSingleAddress, addAddress } from "../../redux/featurs/addressSlice";
+import { getSingleAddress, addAddress, getAllAddress, deleteAddress,patchAddress } from "../../redux/featurs/addressSlice";
+import { getCart, deleteCartItem,cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
 
 const DeliveryAddress = () => {
-  const  [{clientFirstName, clientLastName, clientCity, clientPostalCode, clientPhone, clientAddress}, setUser] = useState({});
   const dispatch = useDispatch();
-  const [formData, setFormData] = useState({
+
+  const  [user, setUser] = useState({
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  });
+  const [addNewForm, setaddNewForm] = useState({
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  });
+  const [updateNewForm, setUpdateNewForm] = useState({
+    deliveryAddressId:null,
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  });
+  
+  const [formData, setFormData] = useState([{
+    clientPhone: "",
+    clientAddress: "",
+    clientCity: "",
+    clientState: "",
+    clientCountry: "",
+    clientPostalCode: "",
+  }]);
+  const [updateFormData, setUpdateFormData] = useState({
     clientPhone: "",
     clientAddress: "",
     clientCity: "",
@@ -19,11 +53,12 @@ const DeliveryAddress = () => {
     clientPostalCode: "",
   });
   const [edit, setEdit] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
   
-  const [{ data }] = productData;
-  const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
+
 
   const activeBgClass = (event) => {
+    setFormData(address ? address : []);
     if (event.target.id == "add_new_address") {
       document
         .getElementById("order_summery")
@@ -59,37 +94,103 @@ const DeliveryAddress = () => {
     }
   };
 
-  const singleAddress = useSelector((state) => {
-    console.log("././state////", state);
-  });
+ 
+  
 
   useEffect(() => {
-    dispatch(getSingleAddress({ toast }));
+    dispatch(getAllAddress({ toast }));
+    // dispatch(getSingleAddress({ toast }));
     setUser(JSON.parse(localStorage.getItem("user")));
+    dispatch(getCart())
   }, []);
 
-  function changehandler({ target }) {
+  const address = useSelector((state) => state.address.data);
+  console.log('addressaddress',address)
+  const cartData = useSelector((state) => state.cart.data)
+  console.log('getCart',cartData)
+
+  const changehandler = ({ target }) => {
     const { name, value } = target;
     setFormData({ ...formData, [name]: value });
   }
 
-  function submithandler(event, isEdit) {
+  const setFormValue = (key) =>{
+    let {clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId} = key;
+    setUpdateNewForm({ ...updateNewForm, clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId });
+  }
+
+  const submithandler = (event, isEdit, key) => {
     event.preventDefault();
-    console.log("...........", isEdit);
+    setFormValue(key);
     if(isEdit){
-      setEdit(true);
+      console.log('isEdit isEditIF',isEdit);
     }else{
-      dispatch(addAddress({formData, toast}));
-      setFormData({
-        clientPhone: "",
-        clientAddress: "",
-        clientCity: "",
-        clientState: "",
-        clientCountry: "",
-        clientPostalCode: "",
-      })
+      if(updateNewForm.deliveryAddressId){
+        console.log('updateNewForm11IF',updateNewForm);
+        dispatch(patchAddress({updateNewForm, toast}));
+      }else{
+        console.log('updateNewForm11Else',updateNewForm);
+        dispatch(addAddress({addNewForm, toast}));
+      }  
     }
   }
+
+  const toggleEdit = (isTrue) => {
+    if(isTrue){
+      setEdit(isTrue);
+      setUpdateFormData((preValue) => ({...preValue,...user}))
+    } else {
+      setEdit(isTrue)
+    }
+  };
+
+  const handleFormChange = (index, event,{clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId}) => {
+    let data = [...formData];
+    // data[index][event.target.name] = event.target.value;
+    data[index] = {...data[index],[event.target.name]: event.target.value};
+    setFormData(data);
+    setaddNewForm({ ...addNewForm, [event.target.name] : event.target.value });
+    setUpdateNewForm({ ...updateNewForm, clientPhone,clientAddress,clientCity,clientState,clientCountry,clientPostalCode,deliveryAddressId, [event.target.name] : event.target.value });
+  };
+
+  const addMoreForm = () => {
+    let newfield = {
+      clientPhone: "",
+      clientAddress: "",
+      clientCity: "",
+      clientState: "",
+      clientCountry: "",
+      clientPostalCode: "",
+    };
+    setFormData([...formData, newfield]);
+  }
+
+  const removeFields = (deliveryAddressId,index) => {
+    let data = [...formData];
+    if(data.length > 0) {
+      data.splice(index, 1)
+    setFormData(data);
+    dispatch(deleteAddress({deliveryAddressId, toast }));
+    console.log('deliveryAddressId',deliveryAddressId);
+    }
+};
+
+const removeCartItem = (productId) => {
+  const cartItemId =  cartData.Items.filter(item=> item.productId === productId )[0].cartItemId;
+  dispatch(deleteCartItem({cartItemId,toast}));
+  setTimeout(() => {
+    dispatch(getCart());
+  }, 1000);
+};
+
+const updateQuantity = (productId,isIncrement) => {
+  let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
+  if(isIncrement){
+   dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+  } else{
+    dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+  }
+};
 
   return (
     <>
@@ -97,7 +198,7 @@ const DeliveryAddress = () => {
         <div className="row px-0">
           <div className="col-8 px-0">
             <div className="row px-0 gap-3">
-              <div className="col-12">
+              {/* <div className="col-12">
                 <div className="card">
                   <div className="card-body">
                     <div className="row px-md-5">
@@ -118,7 +219,7 @@ const DeliveryAddress = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-12">
                 <div className="container-fluid delivery_address_bg px-md-5">
                   <h6>DELIVERY ADDRESS</h6>
@@ -128,110 +229,98 @@ const DeliveryAddress = () => {
                     <div className="card-body px-md-5">
                       <div className="row ">
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">User name</p>
+                          <p className="delivery_address_key"><b>User name</b> </p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">{clientFirstName} {clientLastName}</p>
+                          <p className="delivery_address_value">{user.clientFirstName} {user.clientLastName}</p>
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Phone No</p>
+                          <p className="delivery_address_key"><b>Phone No</b></p>
                         </div>
                         <div className="col-md-8 col-6">
                           {edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Phone Number"
                             onChange={changehandler}
-                            value={formData.clientPhone}
+                            value={updateFormData.clientPhone}
                             name="clientPhone"
-                          /> : <p className="delivery_address_value">{clientPhone}</p>}
+                          /> : <p className="delivery_address_value">{user.clientPhone}</p>}
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Pin code</p>
+                          <p className="delivery_address_key"><b>Pin code</b></p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">{clientPostalCode}</p>
-                          <TextField
+                          {edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Pin Code"
                             onChange={changehandler}
-                            value={formData.clientPostalCode}
+                            value={updateFormData.clientPostalCode}
                             name="clientPostalCode"
-                          />
+                          /> : <p className="delivery_address_value">{user.clientPostalCode}</p> }
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">City</p>
+                          <p className="delivery_address_key"><b>City</b></p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">{clientCity}</p>
-                          <TextField
+                          { edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="City"
                             onChange={changehandler}
-                            value={formData.clientCity}
+                            value={updateFormData.clientCity}
                             name="clientCity"
-                          />
+                          /> : <p className="delivery_address_value">{user.clientCity}</p> }
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">State</p>
+                          <p className="delivery_address_key"><b>State</b></p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">U.P</p>
-                          <TextField
+                          
+                         { edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="State"
                             onChange={changehandler}
-                            value={formData.clientState}
+                            value={updateFormData.clientState}
                             name="clientState"
-                          />
+                          /> : <p className="delivery_address_value">U.P</p>}
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Country</p>
+                          <p className="delivery_address_key"><b>Country</b></p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">India</p>
-                          <TextField
+                          { edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Country"
                             onChange={changehandler}
-                            value={formData.clientCountry}
+                            value={updateFormData.clientCountry}
                             name="clientCountry"
-                          />
+                          /> : <p className="delivery_address_value">India</p> }
                         </div>
                         <div className="col-md-3 col-6">
-                          <p className="delivery_address_key">Address</p>
+                          <p className="delivery_address_key"><b>Address</b></p>
                         </div>
                         <div className="col-md-8 col-6">
-                          <p className="delivery_address_value">
-                            {" "}
-                            {clientAddress}
-                          </p>
-                          <TextField
+                          {edit ? <TextField
                             className="form-control"
                             type="text"
-                            label="Address"
                             onChange={changehandler}
-                            value={formData.clientAddress}
+                            value={updateFormData.clientAddress}
                             name="clientAddress"
-                          />
+                          /> :  <p className="delivery_address_value">{user.clientAddress}</p> }
                         </div>
                       </div>
-                      <button type="button" onClick={()=> setEdit(true)} className="btn btn-light">
+                      { !edit ?<button type="button" onClick={()=> toggleEdit(true)} className="btn btn-light">
                         EDIT
-                      </button>
-                      <button type="submit" className="btn btn-light">
+                      </button> 
+                      : <button type="submit" onClick={()=> toggleEdit(false)} className="btn btn-light">
                         Save
-                      </button>
+                      </button>}
+                      
                     </div>
                   </form>
                 </div>
               </div>
               <div className="col-12">
-                <h2 className="accordion-header" id="flush-headingOne">
+                <h6 className="accordion-header" id="flush-headingOne">
                   <p
                     className="collapsed order_or_payment_title delivery_address_padding"
                     data-bs-toggle="collapse"
@@ -243,7 +332,7 @@ const DeliveryAddress = () => {
                   >
                     + ADD NEW ADDRESS
                   </p>
-                </h2>
+                </h6>
                 <div
                   className="accordion accordion-flush"
                   id="accordionFlushExample"
@@ -256,9 +345,12 @@ const DeliveryAddress = () => {
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div className="accordion-body">
-                        <div className="card">
+                        {(formData || [])?.map((key,index) =>( 
+                        <span key={index}>
+                        <input type="radio" value={key.deliveryAddressId} checked={selectedOption === key.deliveryAddressId} onChange={() => setSelectedOption(key.deliveryAddressId)}/>
+                        <div className="card" >
                           <div className="card-body px-md-5">
-                            <form onSubmit={(event) => submithandler(event, false)}>
+                            <form onSubmit={(event) => submithandler(event, false,key)}>
                               <div className="row">
                                 <div className="col-md-6">
                                   <div className="mb-3">
@@ -266,8 +358,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Phone No"
-                                      onChange={changehandler}
-                                      value={formData.clientPhone}
+                                      onChange={event => handleFormChange(index, event,key)}
+                                      value={key.clientPhone}
                                       name="clientPhone"
                                     />
                                   </div>
@@ -278,8 +370,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Pin Code"
-                                      onChange={changehandler}
-                                      value={formData.clientPostalCode}
+                                      onChange={event => handleFormChange(index, event,key)}
+                                      value={key.clientPostalCode}
                                       name="clientPostalCode"
                                     />
                                   </div>
@@ -290,8 +382,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="City"
-                                      onChange={changehandler}
-                                      value={formData.clientCity}
+                                      onChange={event => handleFormChange(index, event,key)}
+                                      value={key.clientCity}
                                       name="clientCity"
                                     />
                                   </div>
@@ -302,8 +394,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="State"
-                                      onChange={changehandler}
-                                      value={formData.clientState}
+                                      onChange={event => handleFormChange(index, event,key)}
+                                      value={key.clientState}
                                       name="clientState"
                                     />
                                   </div>
@@ -314,8 +406,8 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Country"
-                                      onChange={changehandler}
-                                      value={formData.clientCountry}
+                                      onChange={event => handleFormChange(index, event,key)}
+                                      value={key.clientCountry}
                                       name="clientCountry"
                                     />
                                   </div>
@@ -326,21 +418,29 @@ const DeliveryAddress = () => {
                                       className="form-control"
                                       type="text"
                                       label="Address"
-                                      onChange={changehandler}
-                                      value={formData.clientAddress}
+                                      onChange={event => handleFormChange(index, event,key)}
+                                      value={key.clientAddress}
                                       name="clientAddress"
                                     />
                                   </div>
                                 </div>
 
-                                <div className="col-md-12 d-flex justify-content-center">
+                                <div className="col-md-12 d-flex justify-content-center gap-4">
                                   <button type="submit" className="btn btn-light">
                                     Save
                                   </button>
+                                  <button type="button" className="btn btn-danger" onClick={() => removeFields(key.deliveryAddressId,index)}>Remove</button>
                                 </div>
                               </div>
                             </form>
                           </div>
+                        </div>
+                        </span>
+                        ) ) }
+                        <div className="col-md-12 d-flex justify-content-center">
+                          <button type="button" onClick={addMoreForm} className="btn btn-light">
+                                 Add More
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -348,7 +448,7 @@ const DeliveryAddress = () => {
                 </div>
               </div>
               <div className="col-12">
-                <h2 className="accordion-header" id="order_summary">
+                <h6 className="accordion-header" id="order_summary">
                   <p
                     className="collapsed order_or_payment_title delivery_address_padding"
                     data-bs-toggle="collapse"
@@ -360,7 +460,7 @@ const DeliveryAddress = () => {
                   >
                     ORDER SUMMARY
                   </p>
-                </h2>
+                </h6>
                 <div
                   className="accordion accordion-flush"
                   id="order_summaryExample"
@@ -375,53 +475,54 @@ const DeliveryAddress = () => {
                       <div className="accordion-body">
                         <div className="card">
                           <div className="card-body">
-                            <div className="row mb-5">
+                            {cartData&&(cartData?.Products || [])?.map((item,i)=>(
+                              <div className="row mb-5" key={i+1}>
                               <div className="col-12 col-md-8 col-lg-8 col-sm-8 items">
                                 <div className="row ">
-                                  <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2">
-                                    <img
-                                      className="w-100"
-                                      src={Pro_Img}
-                                      alt="art image"
-                                    />
+                                  <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2"
+                                  >
+                                  <img
+                                      className=" img-fluid"
+                                      src={item?.productImage?.[0]}
+                                      alt={item?.productName}
+                                      style={{height:"100%",objectFit:"contain"}}
+                            />
                                     <div className="increase_decrease_btn">
                                       <div
                                         className="value-button"
                                         id="decrease"
+                                        onClick={()=>updateQuantity(item.productId,false)}
                                       >
                                         -
                                       </div>
-                                      <input
-                                        type="number"
-                                        id="number"
-                                        defaultValue="0"
-                                      />
+                                      <h6 className="px-3 py-2" style={{background: '#eeeeee'}}>{item?.noOfProducts}</h6>
                                       <div
                                         className="value-button"
                                         id="increase"
+                                        onClick={()=>updateQuantity(item.productId,true)}
                                       >
                                         +
                                       </div>
                                     </div>
                                   </div>
                                   <div className="col-12 col-md-8 col-lg-8 col-sm-12">
-                                    <h6 className="product_item">{Pro_Name}</h6>
+                                    <h6 className="product_item">{item?.productName}</h6>
                                     <div
                                       className="discounted__list"
                                       style={{ display: "flex" }}
                                     >
                                       <p className="discounted_price">
-                                        {Pro_Price}
+                                      {item?.productPrice}
                                       </p>
                                       <p className="discount_price px-2">
-                                        $91.3
+                                      {item?.productMRP}
                                       </p>
                                       <p className="percent px-4">10% off</p>
                                       <p className="percent">1 offer applied</p>
                                     </div>
                                     <div className="save_or_remove_btn">
                                       <a href="#">SAVE FOR LATER</a>
-                                      <a href="#">REMOVE</a>
+                                      <a href="javascript:void(0)" onClick={()=>removeCartItem(item.productId)}>REMOVE</a>
                                     </div>
                                   </div>
                                 </div>
@@ -432,6 +533,7 @@ const DeliveryAddress = () => {
                                 </p>
                               </div>
                             </div>
+                            ))}
                             <hr />
                             <button className="place_order_btn">
                               CHECKOUT
@@ -444,7 +546,7 @@ const DeliveryAddress = () => {
                 </div>
               </div>
               <div className="col-12">
-                <h2 className="accordion-header" id="payment_headingOne">
+                <h6 className="accordion-header" id="payment_headingOne">
                   <p
                     className=" collapsed order_or_payment_title delivery_address_padding"
                     data-bs-toggle="collapse"
@@ -456,7 +558,7 @@ const DeliveryAddress = () => {
                   >
                     PAYMENT OPTIONS
                   </p>
-                </h2>
+                </h6>
                 <div className="accordion accordion-flush" id="payment_Example">
                   <div className="accordion-item">
                     <div
@@ -690,7 +792,7 @@ const DeliveryAddress = () => {
                 <hr />
                 <div className="row m-0">
                   <div className="col-sm-8 col-6 p-0">
-                    <h6 className="price_title">Price (1 item)</h6>
+                    <p className="price_title"><b>Price (1 item)</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p id="subtotal">$81.12</p>
@@ -698,7 +800,7 @@ const DeliveryAddress = () => {
                 </div>
                 <div className="row m-0">
                   <div className="col-sm-8 col-6 p-0 ">
-                    <h6 className="price_title">Discount</h6>
+                    <p className="price_title"><b>Discount</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p id="price_title_tax">-$91.4</p>
@@ -706,7 +808,7 @@ const DeliveryAddress = () => {
                 </div>
                 <div className="row m-0">
                   <div className="col-sm-8 col-6 p-0 ">
-                    <h6 className="price_title">Delivery Charges</h6>
+                    <p className="price_title"><b>Delivery Charges</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p id="price_title_tax">Free</p>
@@ -715,7 +817,7 @@ const DeliveryAddress = () => {
                 <hr />
                 <div className="row mx-0 mb-2">
                   <div className="col-sm-8 col-6 p-0 d-inline">
-                    <h5 className="total_amount">Total Amount</h5>
+                    <p className="total_amount"><b>Total Amount</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
                     <p className="total_amount">$81.12</p>

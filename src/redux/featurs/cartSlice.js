@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import * as api from "../api";
+import { useDispatch } from "react-redux";
 
 export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
     try {
@@ -12,15 +13,37 @@ export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
     }
 });
 
-export const getCart = createAsyncThunk("cart/get-cart", async (formData) => {
-    console.log(formData,"formData");
+export const getCart = createAsyncThunk("cart/get-cart", async () => {
     try {
-        const response = await api.getCart(formData);
+        const response = await api.getCart();
         return response.data;
     } catch (error) {
         throw error;
     }
 });
+
+export const deleteCartItem=createAsyncThunk("delete/CartItem",async({cartItemId,toast})=>{
+    try{
+        console.log('..deleteCartItem',cartItemId);
+    const response= await api.deleteCartItem(cartItemId);
+    if(response.data){
+        toast.success(response.data.message)
+    }
+    return response.data    
+    }catch(err){
+        toast.error(response.data.error)
+    }
+    });
+
+export const cartItemUpdateQuantity=createAsyncThunk("/cartItems/cartItemUpdateQuantity",async({cartItemId,isIncrement,toast})=>{
+    try{
+    const response= await api.cartUpdateQuantity({cartItemId,positiveAndNegativeValue:isIncrement});
+        toast.error(response.data.error)
+        return response.data
+    }catch(err){
+    toast.error(err.response.data.error)
+    }
+    });
 
 const cartSlice = createSlice({
     name: "cart",
@@ -65,7 +88,44 @@ const cartSlice = createSlice({
                 state.message = "";
                 state.error = action.error.message; // Assuming error object has a 'message' property
                 state.loading = false;
-            });
+            })
+            .addCase(deleteCartItem.pending, (state, action) => {
+                state.message = "";
+                state.error = "";
+                state.loading = true;
+            })
+            .addCase(deleteCartItem.fulfilled, (state, action) => {
+                state.message = action.payload.message;
+                state.error = "";
+                state.loading = false;
+            })
+            .addCase(deleteCartItem.rejected, (state, action) => {
+                state.message = "";
+                state.error = action.error.message;
+                state.loading = false;
+            })
+            .addCase(cartItemUpdateQuantity.pending, (state, action) => {
+                state.message = "";
+                state.error = "";
+                state.loading = true;
+            })
+            .addCase(cartItemUpdateQuantity.fulfilled, (state, action) => {
+               if(action.payload){
+                state.data.Products.map((item)=> {
+                    if(item.productId == action.payload?.cartItemsResponse?.productId){
+                       return {...item.noOfProducts = action.payload?.cartItemsResponse?.noOfProducts} 
+                    }
+                })
+               }
+                state.message = action.payload?.message;
+                state.error = "";
+                state.loading = false;
+            })
+            .addCase(cartItemUpdateQuantity.rejected, (state, action) => {
+                state.message = "";
+                state.error = action.error.message;
+                state.loading = false;
+            })
     }
 });
 

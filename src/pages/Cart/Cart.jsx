@@ -1,13 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
 // import productData from "../../assets/data/Productdata.json";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getCart, cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
 import { toast } from "react-toastify";
+import Loader from "../../components/Loader/Loader";
 
 const Cart = () => {
-    const [{data}] = productData;
-    const [{Pro_Name,Pro_Img,Pro_Price}] = data;
+
     const dispatch=useDispatch()
     const navigate=useNavigate()
 
@@ -68,7 +68,7 @@ const Cart = () => {
   }
 
  
-  if (cartLoading) return <Loader />
+  if (cartLoading) return <Loader/>
   if(cartData?.Items?.length>0){
 
 

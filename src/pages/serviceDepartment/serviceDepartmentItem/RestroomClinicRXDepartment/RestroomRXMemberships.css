@@ -1,0 +1,57 @@
+.RestroomRxMembershipMain{
+    display: flex;
+    align-items: end;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    font-size: 12px;
+    width: 100%;
+  }
+  .RestroomRxMembershipMain img{
+    width: 55px;
+  }
+  .RxMembershipCostDiv{
+    display: flex;
+    padding: 15px 0;
+    font-weight:bold;
+    position: relative;
+  }
+  .RxMembershipCostDiv button{
+    position: absolute;
+    padding: 0 6px;
+    color: black;
+    font-weight: normal;
+    border-radius: 20px;
+    background-color: palegreen;
+    right: 12px;
+    bottom: 5px;
+  }
+  .RestroomRxMembershipMain ol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+  }
+  .RestroomRxMembershipMain ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+  }
+  .RestroomRxMembershipMain ol li,  .RestroomRxMembershipMain ul li{
+    width: 120px;
+    line-height: 20px;
+  }
+  .RxMembershipHeading{
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 769px ) {
+    .RxMembershipHeading{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }

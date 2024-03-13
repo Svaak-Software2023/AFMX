@@ -2,12 +2,22 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import productData from "../../assets/data/Productdata.json"
+import { getCart, cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
 import { useSelector } from "react-redux";
 
 const AddToCart = () => {
   const [{ data }] = productData;
   const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
   const { data: cartData, loading: cartLoading } = useSelector((state) => state.cart)
+
+  const updateQuantity = (productId,isIncrement) => {
+    let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
+    if(isIncrement){
+     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+    } else{
+      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+    }
+  };
 
   return (
     <>
@@ -65,14 +75,17 @@ const AddToCart = () => {
                                 <div
                                   className="value-button"
                                   id="decrease"
+                                  onClick={()=> updateQuantity(item?.productId,false) }
                                 >
                                   -
                                   
                                 </div>
-                                <input type="number" id="number" defaultValue="1" />
+                                {/* <input type="number" id="number" defaultValue="1" /> */}
+                                <span className="pt-1 px-2  border">{item?.noOfProducts}</span>
                                 <div
                                   className="value-button"
                                   id="increase"
+                                  onClick={()=> updateQuantity(item?.productId,true) }
                                 >
                                   +
                                 </div>

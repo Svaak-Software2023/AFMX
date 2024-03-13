@@ -29,7 +29,7 @@ const Cart = () => {
   const logedInUser = useSelector((state) => state.auth.user)
   const { data: cartData, loading: cartLoading } = useSelector((state) => state.cart)
 
-  const[quantity,setQuantity]=useState(1)
+
 
   useEffect(() => {
     if (logedInUser) {
@@ -49,7 +49,8 @@ const Cart = () => {
     if(cartData.Products){
     let sum = 0
      for (let i = 0; i < cartData.Products.length; i++) {
-      sum += cartData.Products[i].productPrice;
+      const {productPrice, noOfProducts} = cartData.Products[i];
+      sum += +productPrice * +noOfProducts
       setTotalSum(sum)
     }
   }
@@ -68,7 +69,7 @@ const Cart = () => {
   }
 
  
-  if (cartLoading) return <Loader/>
+  // if (cartLoading) return <Loader/>
   if(cartData?.Items?.length>0){
 
 
@@ -115,7 +116,7 @@ const Cart = () => {
                             <div className="col-12 col-md-8 col-lg-8 col-sm-12">
                               <h6 className="product_item">{item.productName}</h6>
                               <div className="discounted__list" style={{ display: "flex" }}>
-                                <p className="discounted_price">{item.productPrice}</p>
+                                <p className="discounted_price">{((item.productPrice) * (item?.noOfProducts)).toFixed(2)}</p>
                                 <p className="discount_price px-2">{item.productMRP}</p>
                                 <p className="percent px-4">{item.discount}</p>
                                 <p className="percent">1 offer applied</p>
@@ -128,17 +129,17 @@ const Cart = () => {
                                 <div
                                   className="value-button"
                                   id="decrease"
-                                  onClick={()=>setQuantity(quantity-1)}
+                                  onClick={()=> updateQuantity(item?.productId,false) }
                                 >
                                   -
 
                                 </div>
                                 {/* <input type="number" id="number" defaultValue={quantity} /> */}
-                                <span className="pt-1 px-2  border">{quantity}</span>
+                                <span className="pt-1 px-2  border">{item?.noOfProducts}</span>
                                 <div
                                   className="value-button"
                                   id="increase"
-                                  onClick={()=>setQuantity(quantity+1)}
+                                  onClick={()=> updateQuantity(item?.productId,true) }
                                 >
                                   +
                                 </div>
@@ -203,7 +204,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          <Link to={`/buy_now/${totalSum.toFixed(2)}`}>
+          <Link to={`/buy_now/${totalAmount.toFixed(2)}`}>
             <button className="place_order_btn my-3">PLACE ORDER</button>
           </Link>
         </div>

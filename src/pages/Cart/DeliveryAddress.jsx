@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { getSingleAddress, addAddress, getAllAddress, deleteAddress, patchAddress } from "../../redux/featurs/addressSlice";
-import { deleteCartItems, getCart } from "../../redux/featurs/cartSlice";
+import { deleteCartItems, getCart,cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
@@ -11,10 +11,11 @@ import PaymentPage from "../paymentPage/PaymentPage";
 const DeliveryAddress = () => {
   const dispatch = useDispatch();
 
-  const { totalAmount } = useParams()
+  let { totalAmount } = useParams();
 
   const[quantity,setQuantity]=useState(1)
 
+  
   const [user, setUser] = useState({
     clientPhone: "",
     clientAddress: "",
@@ -64,35 +65,35 @@ const DeliveryAddress = () => {
     setFormData(address ? address : []);
     if (event.target.id == "add_new_address") {
       document
-        .getElementById("order_summery")
+        ?.getElementById("order_summery")
         .classList?.remove("delivery_address_bg");
       document
-        .getElementById("payment_options")
+        ?.getElementById("payment_options")
         .classList?.remove("delivery_address_bg");
       document
-        .getElementById("add_new_address")
+        ?.getElementById("add_new_address")
         .classList.add("delivery_address_bg");
     }
     if (event.target.id == "order_summery") {
       document
-        .getElementById("payment_options")
+        ?.getElementById("payment_options")
         .classList?.remove("delivery_address_bg");
       document
-        .getElementById("add_new_address")
+        ?.getElementById("add_new_address")
         .classList.remove("delivery_address_bg");
       document
-        .getElementById("order_summery")
+        ?.getElementById("order_summery")
         .classList.add("delivery_address_bg");
     }
     if (event.target.id == "payment_options") {
       document
-        .getElementById("order_summery")
+        ?.getElementById("order_summery")
         .classList?.remove("delivery_address_bg");
       document
-        .getElementById("add_new_address")
+        ?.getElementById("add_new_address")
         .classList?.remove("delivery_address_bg");
       document
-        .getElementById("payment_options")
+        ?.getElementById("payment_options")
         .classList.add("delivery_address_bg");
     }
   };
@@ -194,6 +195,29 @@ const DeliveryAddress = () => {
     })
 
   };
+
+  const updateQuantity = (productId,isIncrement) => {
+    let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
+    if(isIncrement){
+     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+    } else{
+      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+    }
+  };
+
+  // totalPriceHandler
+  const [totalSum,setTotalSum]=useState(0)
+   useEffect(() => {
+    if(cartData.Products){
+    let sum = 0
+     for (let i = 0; i < cartData.Products.length; i++) {
+      const {productPrice, noOfProducts} = cartData.Products[i];
+      sum += +productPrice * +noOfProducts
+      setTotalSum(sum)
+    }
+  }
+  }, [cartData.Products])
+
 
   return (
     <>
@@ -446,17 +470,17 @@ const DeliveryAddress = () => {
                                 <div
                                   className="value-button"
                                   id="decrease"
-                                  onClick={()=>setQuantity(quantity-1)}
+                                  onClick={()=> updateQuantity(item?.productId,false) }
                                 >
                                   -
 
                                 </div>
                                 {/* <input type="number" id="number" defaultValue={quantity} /> */}
-                                <span className="pt-1 px-2  border">{quantity}</span>
+                                <span className="pt-1 px-2  border">{item?.noOfProducts}</span>
                                 <div
                                   className="value-button"
                                   id="increase"
-                                  onClick={()=>setQuantity(quantity+1)}
+                                  onClick={()=> updateQuantity(item?.productId,true) }
                                 >
                                   +
                                 </div>
@@ -746,10 +770,10 @@ const DeliveryAddress = () => {
                 <hr />
                 <div className="row m-0">
                   <div className="col-sm-8 col-6 p-0">
-                    <p className="price_title"><b>Price (1 item)</b></p>
+                    <p className="price_title"><b>Price ({cartData.Products&&cartData.Products.length} item)</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
-                    <p id="subtotal">${totalAmount}</p>
+                    <p id="subtotal">${totalSum.toFixed(2)}</p>
                   </div>
                 </div>
                 <div className="row m-0">
@@ -757,7 +781,7 @@ const DeliveryAddress = () => {
                     <p className="price_title"><b>Discount</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
-                    <p id="price_title_tax">-$25</p>
+                    <p id="price_title_tax">-${cartData.discountPrice}</p>
                   </div>
                 </div>
                 <div className="row m-0">
@@ -765,7 +789,7 @@ const DeliveryAddress = () => {
                     <p className="price_title"><b>Delivery Charges</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
-                    <p id="price_title_tax">$30</p>
+                    <p id="price_title_tax">${cartData.deliveryCharges}</p>
                   </div>
                 </div>
                 <hr />
@@ -774,19 +798,19 @@ const DeliveryAddress = () => {
                     <p className="total_amount"><b>Total Amount</b></p>
                   </div>
                   <div className="col-sm-4 col-6 p-0">
-                    <p className="total_amount">${totalAmount - 25 + 30}</p>
+                    <p className="total_amount">${Number(totalSum-25+cartData.deliveryCharges).toFixed(2)}</p>
                   </div>
                 </div>
                 <hr />
                 <a href="#" className="total_saving">
-                  You total Saving on this order $25
+                  You total Saving on this order ${cartData.discountPrice}
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <PaymentPage totalAmount={totalAmount} />
-      </div>
+        <PaymentPage totalAmount={Number(totalSum-25+cartData.deliveryCharges).toFixed(2)} />
+    </div>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://www.mcue.net/api" });
-// const API = axios.create({ baseURL: "http://localhost:5000/api" });
+// const API = axios.create({ baseURL: "https://www.mcue.net/api" });
+const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;
 accessToken&&API.interceptors.request.use(

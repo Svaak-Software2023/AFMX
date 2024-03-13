@@ -2,13 +2,14 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import * as api from "../api";
 import { useDispatch } from "react-redux";
 
+
 export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
     try {
         const response = await api.createCart(formData);
         console.log(response.data);
         return response.data;
     } catch (error) {
-        console.log("error",error);
+        console.log("error", error);
         throw error;
     }
 });
@@ -18,6 +19,7 @@ export const getCart = createAsyncThunk("cart/get-cart", async () => {
         const response = await api.getCart();
         return response.data;
     } catch (error) {
+        console.log("getcart",error);
         throw error;
     }
 });
@@ -45,10 +47,32 @@ export const cartItemUpdateQuantity=createAsyncThunk("/cartItems/cartItemUpdateQ
     }
     });
 
+export const addCartItems = createAsyncThunk("cart/add-item", async (formData) => {
+    try {
+        const response = await api.addCartItems(formData);
+        console.log("response", response);
+        return response.data;
+    } catch (error) {
+        console.log("error", error);
+        throw error;
+    }
+})
+
+export const deleteCartItems = createAsyncThunk("cart/delete-item", async ({ cartItemId, formData }) => {
+    try {
+        const response = await api.deleteCartItems({ cartItemId, formData });
+        console.log("response", response);
+        return response.data;
+    } catch (error) {
+        console.log("error", error);
+        throw error;
+    }
+})
+
 const cartSlice = createSlice({
     name: "cart",
     initialState: {
-        data:[],
+        data: [],
         message: "",
         error: "",
         loading: false
@@ -72,24 +96,26 @@ const cartSlice = createSlice({
                 state.loading = false;
             })
             .addCase(getCart.pending, (state, action) => {
-                state.data=[]
+                state.data = []
                 state.message = "";
                 state.error = "";
                 state.loading = true;
             })
             .addCase(getCart.fulfilled, (state, action) => {
-                state.data=action.payload.cartResponse
+                state.data = action.payload.cartResponse
                 state.message = action.payload.message;
                 state.error = "";
                 state.loading = false;
             })
             .addCase(getCart.rejected, (state, action) => {
-                state.data=[]
+                state.data = []
                 state.message = "";
-                state.error = action.error.message; // Assuming error object has a 'message' property
+                state.error = action.error; // Assuming error object has a 'message' property
                 state.loading = false;
             })
+           
             .addCase(deleteCartItem.pending, (state, action) => {
+                state.data = []
                 state.message = "";
                 state.error = "";
                 state.loading = true;
@@ -102,6 +128,24 @@ const cartSlice = createSlice({
             .addCase(deleteCartItem.rejected, (state, action) => {
                 state.message = "";
                 state.error = action.error.message;
+                state.loading = false;
+            })
+            .addCase(addCartItems.pending, (state, action) => {
+                state.data = []
+                state.message = "";
+                state.error = "";
+                state.loading = true;
+            })
+          
+            .addCase(addCartItems.fulfilled, (state, action) => {
+                state.message = action.payload;
+                state.error = "";
+                state.loading = false;
+            })
+            .addCase(addCartItems.rejected, (state, action) => {
+                state.data = []
+                state.message = "";
+                state.error = action.error; // Assuming error object has a 'message' property
                 state.loading = false;
             })
             .addCase(cartItemUpdateQuantity.pending, (state, action) => {
@@ -126,6 +170,7 @@ const cartSlice = createSlice({
                 state.error = action.error.message;
                 state.loading = false;
             })
+           
     }
 });
 

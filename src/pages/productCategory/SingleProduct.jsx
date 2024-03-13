@@ -6,51 +6,61 @@ import ProductCard from "./component/ProductCard"
 import productData from "../../assets/data/Productdata.json"
 import { useDispatch, useSelector } from "react-redux"
 import { getAllCategory, getProduct, getSingleProduct } from "../../redux/featurs/productSlice"
-import { addCart, getCart } from "../../redux/featurs/cartSlice"
+import { addCart, addCartItems, getCart } from "../../redux/featurs/cartSlice"
+import Loader from "../../components/Loader/Loader"
 
+ 
 function SingleProduct() {
     const { parent, childe } = useParams()
     const { pathname } = useLocation()
 
     const dispatch = useDispatch()
-    // const parentData = productData.find((item) => item.name === parent);
-    // const data = parentData?.data.find((item) => item.Pro_id === childe);
 
     const allProducts = useSelector((state) => state.products?.allProducts)
     const allCategorey = useSelector((state) => state.products?.allCategorey)
 
-
-    const singleProductData = useSelector((state) => state.products?.singleProduct)
-    // console.log("singleProductData", singleProductData);
-    useEffect(() => {
-        dispatch(getSingleProduct(childe))
-        allCategorey?.data && dispatch()
-        // dispatch(getProduct(1))
-    }, [pathname])
-
     const navigate = useNavigate()
     const logedInUser = useSelector((state) => state.auth.user)
-    const addToCartHandler = () => {
-        if (logedInUser) {
-            let formData = {
-                clientId:logedInUser?.clientId,
-                token: logedInUser?.token,
-                deliveryCharges:30,
-                discountPrice:25
-            }
-            dispatch(addCart(formData)).then(()=>{
+
+    const { singleProduct, loading: productLoading } = useSelector((state) => state.products)
+    const { data:cartData, loading: cartLoading } = useSelector((state) => state.cart)
+
+    useEffect(() => {
+        dispatch(getSingleProduct(childe)).then(() => {
+            if (logedInUser) {
+                let formData = {
+                    token: logedInUser?.token
+                }
                 dispatch(getCart(formData))
+            }
+        })
+    }, [pathname])
+
+
+    const addToCartHandler = () => {
+        if (logedInUser && singleProduct) {
+            let formData = {
+                cartId: cartData.cartId,
+                token: logedInUser?.token,
+                productId: singleProduct.productId,
+                noOfProducts: 1,
+                productPrice: singleProduct.productPrice
+            }
+            dispatch(addCartItems(formData)).then(() => {
+                navigate("/cart")
             })
         }
-        else { navigate("login") }
+        else { navigate("/login") }
     }
+
+    if (productLoading) return <Loader />
     return (
         <>
             <div className="container p-0 my-3">
                 <div className="row  m-0 bg-white   p-3">
                     <div className="col-lg-5 col-md-3 col-12 p-0 mb-3 bg-white">
                         <Carousel showArrows={true} >
-                            {singleProductData.productImage?.map((item, i) => <div key={i} className="single-product-img">
+                            {singleProduct.productImage?.map((item, i) => <div key={i} className="single-product-img">
                                 <img src={item} />
                             </div>
                             )}
@@ -58,9 +68,9 @@ function SingleProduct() {
 
                         <div className="single-product-button-group">
                             <div className="single-product-button">
-                                <Link to="/cart">
-                                    <button className="add-to-cart-button" onClick={addToCartHandler}>ADD TO Cart</button>
-                                </Link>
+
+                                <button className="add-to-cart-button" onClick={addToCartHandler}>ADD TO Cart</button>
+
                             </div>
                             <div className="single-product-button">
                                 <Link to="/cart">
@@ -72,19 +82,19 @@ function SingleProduct() {
                     <div className="col-lg-7 col-md-9 col-12 p-0 m-0 ">
                         <div className="px-lg-3" style={{ marginLeft: "10px" }}>
                             <div className="">
-                                <h3 className="single-product-name">{singleProductData.productName}</h3>
+                                <h3 className="single-product-name">{singleProduct.productName}</h3>
                             </div>
                             <div className="single-product-price">
-                                <h3>{singleProductData.productMRP}</h3>
-                                <del className="single-producrt-MRP">{singleProductData.productPrice}</del>
-                                <span className="discount">{singleProductData.discount} Off</span>
+                                <h3>{singleProduct.productMRP}</h3>
+                                <del className="single-producrt-MRP">{singleProduct.productPrice}</del>
+                                <span className="discount">{singleProduct.discount} Off</span>
                             </div>
 
-                            <p className="alert-product-left">Hurry, Only 8 left!</p>
+                            <p className="alert-product-left">Hurry, Only {singleProduct.quantity} left!</p>
 
                             <div className="single-product-description">
                                 <h3>Description</h3>
-                                <p>{singleProductData.productDescription}</p>
+                                <p>{singleProduct.productDescription}</p>
                             </div>
 
                             <div className="single-product-specifications mb-3">
@@ -93,27 +103,27 @@ function SingleProduct() {
                                 <div className="row p-3">
                                     <b>General</b>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Brand</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProductData.productBrand}</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.productBrand}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Product Name</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProductData.productName}</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.productName}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Category</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">{parent}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Container Type</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Jug</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.containerType}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Container Size</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">5gm</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.containerSize}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Cleaner Form</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Liquid</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.cleanerForm}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Ready to Use / Consentrate</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Ready-to-use</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Fragrances</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.readyToUseOrConcentrate?"Yes":"No"}</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.fragrances}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">Lemon</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">UPC Code(Universal Product Code)</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">12345</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.upcCode}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">SKU Code(Stock Keeping Unit)</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProductData.skuCode}</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.skuCode}</span></div>
                                     <div className="col-lg-6 col-6"><span className="product-details-text">MRP</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">$91.3</span></div>
+                                    <div className="col-lg-6 col-6"><span className="product-details-text">${singleProduct.productMRP}</span></div>
                                 </div>
                             </div>
                             <div className="delivery-check mb-3">
@@ -130,8 +140,8 @@ function SingleProduct() {
                 <div className="similar-product px-2"><h3>Similar Products</h3><button>View All</button></div>
                 <div className="product-item-list bg-white m-0">
                     {
-                        allProducts.map((item) => (
-                            <ProductCard key={item.Pro_id} data={item} parent={parent} />
+                        allProducts.map((item, i) => (
+                            <ProductCard key={i} data={item} parent={parent} />
                         ))
                     }
                 </div>

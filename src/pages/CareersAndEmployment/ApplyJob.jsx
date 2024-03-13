@@ -132,22 +132,16 @@ function ApplyJob() {
                                                                     {errors.phone && <p className="text-danger">Phone number is required.</p>}
                                                                 </div>
 
-                                                                <p className="mb-3"><b>Profile</b></p>
+                                                                
 
                                                                 <div className="d-flex justify-content-between mb-3">
                                                                     <div>
-                                                                        <p>Education (Optional)</p>
+                                                                        <p className="mb-3"><b>Education</b></p>
                                                                     </div>
-                                                                    <div>
-                                                                        {!educationAdd ? <p className="career-add-btn" onClick={() => setEducationAdd(!educationAdd)}>+ Add</p>
-                                                                            :
-                                                                            <p className="career-add-btn" onClick={() => setEducationAdd(!educationAdd)}>Clear</p>
-                                                                        }
-                                                                    </div>
+                                                                   
                                                                 </div>
 
-                                                                {
-                                                                    educationAdd && <> <div className="row m-0 py-3 mb-3" style={{ backgroundColor: "#e5e5e5" }}>
+                                                                <div className="row m-0 py-3 mb-3" style={{ backgroundColor: "#e5e5e5" }}>
                                                                         <div className="col-lg-12 col-12 mb-3">
                                                                             <label className="career-label" htmlFor="School">School :</label>
                                                                             <input type="text" className="form-control my-1" id="School" name="School" {...register('school', { required: true })} />
@@ -155,46 +149,39 @@ function ApplyJob() {
                                                                         </div>
 
                                                                         <div className="col-lg-12 col-12 mb-3">
-                                                                            <label className="career-label" htmlFor="fieldOfStudy">Field of study (Optional) :</label>
-                                                                            <input type="text" className="form-control my-1" id="fieldOfStudy" name="fieldOfStudy" {...register('fieldOfStudy')} />
-                                                                            {/* {errors.fieldOfStudy && <p className="text-danger">This field is required.</p>} */}
+                                                                            <label className="career-label" htmlFor="fieldOfStudy">Field of study :</label>
+                                                                            <input type="text" className="form-control my-1" id="fieldOfStudy" name="fieldOfStudy" {...register('fieldOfStudy', { required: true })} />
+                                                                            {errors.fieldOfStudy && <p className="text-danger">This field is required.</p>}
                                                                         </div>
 
                                                                         <div className="col-lg-12 col-12 mb-3">
-                                                                            <label className="career-label" htmlFor="Degree">Degree (Optional) :</label>
-                                                                            <input type="text" className="form-control my-1" id="Degree" name="Degree" {...register('degree')} />
-                                                                            {/* {errors.degree && <p className="text-danger">This field is required.</p>} */}
+                                                                            <label className="career-label" htmlFor="Degree">Degree :</label>
+                                                                            <input type="text" className="form-control my-1" id="Degree" name="Degree" {...register('degree', { required: true })} />
+                                                                            {errors.degree && <p className="text-danger">This field is required.</p>}
                                                                         </div>
 
                                                                         <div className="col-lg-6 col-12 mb-3">
-                                                                            <label className="career-label" htmlFor="Start date">Start date (Optional) :</label>
-                                                                            <input type="date" className="form-control my-1" id="Start date"  {...register('startDate')} />
-                                                                            {/* {errors.startDate && <p className="text-danger">This field is required.</p>} */}
+                                                                            <label className="career-label" htmlFor="Start date">Start date :</label>
+                                                                            <input type="date" className="form-control my-1" id="Start date"  {...register('startDate', { required: true })} />
+                                                                            {errors.startDate && <p className="text-danger">This field is required.</p>}
                                                                         </div>
 
                                                                         <div className="col-lg-6 col-12 mb-3">
-                                                                            <label className="career-label" htmlFor="End date">End date (Optional) :</label>
-                                                                            <input type="date" className="form-control my-1" id="End date" name="End date" {...register('endDate')} />
-                                                                            {/* {errors.endDate && <p className="text-danger">This field is required.</p>} */}
+                                                                            <label className="career-label" htmlFor="End date">End date :</label>
+                                                                            <input type="date" className="form-control my-1" id="End date" name="End date" {...register('endDate',{required:true})} />
+                                                                            {errors.endDate && <p className="text-danger">This field is required.</p>}
                                                                         </div>
                                                                     </div>
-                                                                    </>
-                                                                }
+                                                                    
 
                                                                 <div className="d-flex justify-content-between mb-3">
                                                                     <div>
-                                                                        <p>Experience (Optional)</p>
+                                                                    <p className="mb-3"><b>Experience</b></p>
                                                                     </div>
-                                                                    <div>
-                                                                        {!careerAdd ? <p className="career-add-btn" onClick={() => setCareerAdd(!careerAdd)}>+ Add</p>
-                                                                            : <p className="career-add-btn" onClick={() => setCareerAdd(!careerAdd)}>Clear</p>
-
-                                                                        }
-                                                                    </div>
+                                                                    
                                                                 </div>
 
-                                                                {
-                                                                    careerAdd && <>
+                                                                
                                                                         <div className="row m-0 py-3 mb-3" style={{ backgroundColor: "#e5e5e5" }}>
                                                                             <div className="col-lg-12 col-12 mb-3">
                                                                                 <label className="career-label" htmlFor="title">Title :</label>
@@ -203,35 +190,37 @@ function ApplyJob() {
                                                                             </div>
 
                                                                             <div className="col-lg-12 col-12 mb-3">
-                                                                                <label className="career-label" htmlFor="company">Company (Optional) :</label>
-                                                                                <input type="text" className="form-control my-1" id="company" {...register('company')} />
-                                                                                {/* {errors.company && <p className="text-danger">This field is required.</p>} */}
+                                                                                <label className="career-label" htmlFor="company">Company :</label>
+                                                                                <input type="text" className="form-control my-1" id="company" {...register('company', { required: true })} />
+                                                                                {errors.company && <p className="text-danger">This field is required.</p>}
                                                                             </div>
 
                                                                             <div className="col-lg-12 col-12 mb-3">
-                                                                                <label className="career-label" htmlFor="Industry">Industry (Optional) :</label>
-                                                                                <input type="text" className="form-control my-1" id="Industry" name="Industry" />
+                                                                                <label className="career-label" htmlFor="Industry">Industry :</label>
+                                                                                <input type="text" className="form-control my-1" id="Industry" {...register('Industry', { required: true })}/>
+                                                                                {errors.Industry && <p className="text-danger">This field is required.</p>}
                                                                             </div>
 
                                                                             <div className="col-lg-12 col-12 mb-3">
-                                                                                <label className="career-label" htmlFor="Summary">Summary (Optional) :</label>
-                                                                                <textarea rows={4} type="text" className="form-control my-1" id="Summary" name="Summary" />
+                                                                                <label className="career-label" htmlFor="Summary">Summary :</label>
+                                                                                <textarea rows={4} type="text" className="form-control my-1" id="Summary" {...register('Summary', { required: true })} />
+                                                                                {errors.Summary && <p className="text-danger">This field is required.</p>}
                                                                             </div>
 
                                                                             <div className="col-lg-6 col-12 mb-3">
-                                                                                <label className="career-label" htmlFor="Start date">Start date (Optional) :</label>
-                                                                                <input type="date" className="form-control my-1" id="Start date" name="Start date" />
+                                                                                <label className="career-label" htmlFor="Start date">Start date :</label>
+                                                                                <input type="date" className="form-control my-1" id="Start date" name="Start date" {...register('startDate', { required: true })} />
+                                                                                {errors.startDate && <p className="text-danger">This field is required.</p>}
+
                                                                             </div>
 
                                                                             <div className="col-lg-6 col-12 mb-3">
                                                                                 <label className="career-label" htmlFor="End date">End date (Optional) :</label>
-                                                                                <input type="date" className="form-control my-1" id="End date" name="End date" />
+                                                                                <input type="date" className="form-control my-1" id="End date" name="endDate" {...register('endDate', { required: true })} />
+                                                                                {errors.endDate && <p className="text-danger">This field is required.</p>}
                                                                             </div>
                                                                         </div>
-                                                                    </>
-                                                                }
-
-
+                                                                    
                                                                 <div className="col-lg-12 col-12 mb-3">
                                                                     <label className="career-label" htmlFor="Summary">Summary (Optional) :</label>
                                                                     <textarea rows={4} type="text" className="form-control my-1" id="Summary"  {...register('summary')} />

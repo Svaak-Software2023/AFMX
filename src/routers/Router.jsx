@@ -64,6 +64,7 @@ import AddToCart from "../pages/Cart/AddToCart";
 import RestroomRxService from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXServices/RestroomRXServices";
 import RestroomRxServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXServices/RestroomRXServices";
 import RestroomRXIndustriesWeServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXIndustriesWeServices/RestroomRXIndustriesWeServices";
+import PaymentPage from "../pages/paymentPage/PaymentPage";
 
 export const navigation = [
     { path: "*", name: "Default", element: <p> There`s nothing here: 404!</p>, isPrivate: false },
@@ -75,6 +76,8 @@ export const navigation = [
     // shopping center 
     { path: "/product/:name/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
     { path: "/single-product/:parent/:childe", name: "Single Product", element: <SingleProduct/>, isPrivate: false },
+
+
 
     { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard/>, isPrivate: true },
     { path: "/user-complaint-list", name: "User Compalint List", element: <ComplaintList/>, isPrivate: true },
@@ -141,8 +144,8 @@ export const navigation = [
 
     // start Cart add to cart delivery address checkout order place route
      {path:"/cart" , name : "Cart" ,element:<Cart />,isPrivate: false },
-     {path:"/check-out" , name : "Check Out" ,element:<AddToCart />,isPrivate: false },
-     {path:"/buy_now" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
+     {path:"/check-out" , name : "Check Out" ,element:<PaymentPage />,isPrivate: false },
+     {path:"/buy_now/:totalAmount" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
      {path:"/thank_you" , name : "ThankYou" ,element:<ThankyouPage />,isPrivate: false },
      // End Cart add to cart delivery address checkout order place route
      

@@ -5,6 +5,7 @@ export const getSingleAddress=createAsyncThunk("single-address",async({toast})=>
 try{
 const response= await api.getSingleAddress();
 if(response.data){
+    
     toast.success(response.data.message)
     return response.data
 }

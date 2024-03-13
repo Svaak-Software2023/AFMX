@@ -1,12 +1,12 @@
 .single-product-img {
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 
 .single-product-img img {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
+    width: auto;
+    height: 100%;
+    object-fit:contain;
 }
 
 .single-product-button-group {

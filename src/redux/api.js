@@ -1,11 +1,12 @@
 import axios from "axios";
-// const API = axios.create({ baseURL: "http://52.204.131.213/api" });
-// const API = axios.create({ baseURL: "https://www.mcue.net/api" });
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
-API.interceptors.request.use(
+const API = axios.create({ baseURL: "https://www.mcue.net/api" });
+// const API = axios.create({ baseURL: "http://localhost:5000/api" });
+
+let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;
+accessToken&&API.interceptors.request.use(
     config => {
-      config.headers['x-access-token'] = `${JSON.parse(localStorage.getItem('user'))?.token}`;
+      config.headers['x-access-token'] = accessToken;
           return config;
       },
       error => {
@@ -34,12 +35,13 @@ export const getCart = () => API.get(`/carts/get-cart`);
 export const deleteCartItem = (cartItemId) => API.delete(`/carts/cartItems/${cartItemId}`);
 export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue}) => API.patch(`/cartItems/update-quantity/${cartItemId}`,{positiveAndNegativeValue});
 
-
-
+export const addCartItems =(formData)=>API.post(`/add-cart-items`,formData)
+export const deleteCartItems =({cartItemId,formData})=>API.delete(`/carts/cartItems/${cartItemId}`,formData)
 
 
 // career and employment 
 export const submitCreerForm = (formData) => API.post('/create-career', formData)
+
 
 // Address
 export const addAddress = (formData) => API.post('/address/create-address', formData);
@@ -47,8 +49,6 @@ export const getSingleAddress = (deliveryAddressId = 8) => API.get(`/address/sin
 export const getAllAddress = () => API.get('/address/all-address');
 export const patchAddress = (formData) => API.patch(`/address/update-address/${formData.deliveryAddressId}`,formData);
 export const deleteAddress = (deliveryAddressId) => API.delete(`/address/delete-address/${deliveryAddressId}`);
-
-
 
 
 

@@ -9,7 +9,7 @@ function ProductCard({ data, parent }) {
       {
         product ?
           <Link to={`/single-product/${parent}/${product.productId}`}>
-            <div className="product-card card" key={product.productId} >
+            <div className="product-card card" style={{width:"19.5rem",height:"19rem"}} key={product.productId} >
                <div className="img_container">
                   <img
                     src={product.productImage&&product?.productImage[0]}

@@ -6,18 +6,20 @@ import "./product.css"
 import { useEffect } from "react";
 import { getProduct } from "../../redux/featurs/productSlice";
 import { useDispatch, useSelector } from "react-redux";
+import Loader from "../../components/Loader/Loader";
 
 function ProductCategory() {
     const { id,name } = useParams();
     // console.log("id",id);
 
     const dispatch=useDispatch()
-    const categoryData=useSelector((state)=>state.products.allProducts)
+    const {allProducts:categoryData,loading}=useSelector((state)=>state.products)
     // console.log("categoryData",categoryData);
     useEffect(()=>{
        dispatch(getProduct(id))
     },[])
    
+    if(loading) return <Loader/>
     return (
         <>
             <div className="container p-0 my-3">

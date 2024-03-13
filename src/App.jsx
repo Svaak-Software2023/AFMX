@@ -40,6 +40,7 @@ function App() {
       behavior: "smooth",
     });
   }
+  
 
   const dispatch=useDispatch()
   useEffect(()=>{

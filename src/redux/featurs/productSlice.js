@@ -27,10 +27,11 @@ export const getSingleProduct = createAsyncThunk("/single-product", async (id) =
 export const getAllCategory = createAsyncThunk("/allCategory", async () => {
     try {
         const response = await api.allProductCategory()
-        console.log(response.data);
+        console.log(response);
         return response.data
     } catch (err) {
-       return err.response.data
+        console.log("Error",err);
+       return err
     }
 });
 
@@ -77,7 +78,7 @@ const productSlice = createSlice({
         },
         [getAllCategory.rejected]:(state,action)=>{
             state.loading=false
-            state.error=action.payload
+            state.error=action.error
         },
 
     }

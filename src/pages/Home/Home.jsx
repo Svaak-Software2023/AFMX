@@ -13,7 +13,7 @@ import { getAllCategory } from "../../redux/featurs/productSlice";
 
 function Home() {
   const productCategoryData=useSelector((state)=>state.products.allCategory.data)
-  console.log("productCategoryData",productCategoryData);
+  // console.log("productCategoryData",productCategoryData);
   const productData1 = productCategoryData.filter((item,i) => i < 8);
   const productData2 = productCategoryData.filter((item,i) =>i > 7);
   const serviceData1 = serviceData.filter((item) => item.id < 19);
@@ -182,15 +182,15 @@ function Home() {
                   </h2>
                   <div className="single-row">
                     <ul className>
-                      {productData1.map((item) => (
-                        <li key={item.id}>
+                      {productData1.map((item,i) => (
+                        <li key={i}>
                           <Link to={`/product/${item.productCategoryName}/${item.productCategoryId}`}>{item.productCategoryName}</Link>
                         </li>
                       ))}
                     </ul>
                     <ul className>
-                      {productData2.map((item) => (
-                        <li key={item.id}>
+                      {productData2.map((item,i) => (
+                        <li key={i}>
                           <Link to={`/product/${item.productCategoryName}/${item.productCategoryId}`}>{item.productCategoryName}</Link>
                         </li>
                       ))}

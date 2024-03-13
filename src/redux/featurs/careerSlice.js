@@ -15,6 +15,7 @@ export const submitForm = createAsyncThunk("/submit/carrer/form", async (formDat
         throw error.response
     }
 })
+
 const careerSlice = createReducer({
     name: "careerSlice",
     initialState: {
@@ -22,7 +23,7 @@ const careerSlice = createReducer({
         error: "",
         loading: false
     },
-    reducers:{},
+    reducers: {},
     extrareducer: (builder) => {
         builder
             .addcase(submitForm.pending, (state, action) => {
@@ -43,4 +44,4 @@ const careerSlice = createReducer({
     }
 })
 
-export default careerSlice.reducers
+export default careerSlice.reducer;

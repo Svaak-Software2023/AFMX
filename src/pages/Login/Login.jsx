@@ -7,6 +7,7 @@ import { signin } from "../../redux/featurs/authSlice";
 import { useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
 function Login() {
 
     const [formData, setFormData] = useState({ clientEmail: "", clientPassword: "" });
@@ -28,7 +29,7 @@ function Login() {
 
     useEffect(() => {
         let user = JSON.parse(localStorage.getItem('user'))
-        user && navigate("/user-dashboard")
+        user && navigate(-1)
     }, [])
     return (
         <>

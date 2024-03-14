@@ -15,7 +15,7 @@
 
 .job-post .job li .small {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #636277;
 }
 
@@ -37,6 +37,7 @@
 }
 
 .job-post .job li h2 span {
+    font-size: 18px;
     vertical-align: middle;
     color: #1155a0;
 
@@ -47,9 +48,9 @@
     flex-basis: 20%;
     box-sizing: border-box;
     color: #636277;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 22px;
 }
 
 .job-post .job li > div {

@@ -81,7 +81,6 @@ function Navbar() {
                     </a>
                   </div>
                 </div>
-
                 <div className="col-lg-6 col-2">
                 </div>
 

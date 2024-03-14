@@ -14,10 +14,10 @@ import { getAllCategory } from "../../redux/featurs/productSlice";
 function Home() {
   const productCategoryData=useSelector((state)=>state.products.allCategory.data)
   // console.log("productCategoryData",productCategoryData);
-  const productData1 = productCategoryData.filter((item,i) => i < 8);
-  const productData2 = productCategoryData.filter((item,i) =>i > 7);
-  const serviceData1 = serviceData.filter((item) => item.id < 19);
-  const serviceData2 = serviceData.filter((item) => item.id > 18);
+  const productData1 = productCategoryData?.filter((item,i) => i < 8);
+  const productData2 = productCategoryData?.filter((item,i) =>i > 7);
+  const serviceData1 = serviceData?.filter((item) => item.id < 19);
+  const serviceData2 = serviceData?.filter((item) => item.id > 18);
 
   const dispatch=useDispatch()
   useEffect(()=>{

@@ -4,6 +4,8 @@ import "./applyJob.css"
 import { useForm } from "react-hook-form"
 import { useDispatch } from "react-redux"
 import { submitForm } from "../../redux/featurs/careerSlice"
+import JobDescription from "./JobDescription"
+import { useParams } from "react-router-dom"
 
 function ApplyJob() {
     const [option, setOption] = useState(false)
@@ -12,9 +14,7 @@ function ApplyJob() {
         window.scrollTo(0, 0)
     }
 
-    const [careerAdd, setCareerAdd] = useState(false)
-    const [educationAdd, setEducationAdd] = useState(false)
-
+    const {title}=useParams()
     const {
         register,
         handleSubmit,
@@ -57,45 +57,7 @@ function ApplyJob() {
                         {
                             !option
                                 ?
-                                <div className="container bg-white my-2">
-
-                                    <div className="tab-pane show active  p-lg-5 p-2" >
-                                        <div className="row">
-                                            <div className="content mt-3">
-                                                <p><b>Description</b></p>
-                                                <p className="font-14">America Finest Maintenance provides janitorial services to commercial properties and is seeking a manager to oversee buildings in a territory, manage service providers, and work with the account manager on resolving customer issues.</p>
-                                                <p className="font-14">As a AFMX Night Manager, you will develop and maintain productive working relationships with service providers, communicate with the account manager any issues that need immediate attention, make recommendations of service providers for work assignments, and inspect buildings. In the buildings you oversee, you will be responsible for inspecting, organizing, managing, and maintaining records and inventories.</p>
-                                                <p className="font-14">America Finest Maintenance is a privately held company that emphasizes a dedication to serving others with excellence in all we do. Here you will find a high-energy work environment that balances high expectations with collaboration, group support, and fun.</p>
-                                                <p><b>Requirements</b></p>
-                                                <ul className="apply-job-list">
-                                                    <li>Respond to guest complaints, requests, and emergencies</li>
-                                                    <li>Oversee staff on a daily basis</li>
-                                                    <li>Demonstrated ability to work effectively in a team environment</li>
-                                                    <li>Excellent communication skills</li>
-                                                    <li>Energetic, hard-working, dependable, and detail-oriented</li>
-                                                    <li>Previous management experience</li>
-                                                    <li>Work experience as a Supervisor or similar role</li>
-                                                    <li>6 months of related experience and/or training</li>
-                                                    <li>High school diploma or equivalent (GED)</li>
-                                                    <li>Solid understanding of basic business math</li>
-                                                    <li>Strong MS Office experience</li>
-                                                    <li>Ability to read and interpret documents such as safety rules, operating and maintenance instructions, and procedure manuals</li>
-                                                    <li>Ability to write routine reports and correspondence</li>
-                                                    <li>Prompt, regular attendance</li>
-                                                </ul>
-                                                <p><b>Benefits</b></p>
-                                                <ul className="apply-job-list">
-                                                    <li>Comprehensive Benefits Package (Health, Dental, Vision, etc.)</li>
-                                                    <li>Paid Time Off</li>
-                                                    <li>Paid Holidays</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="apply-job-button pb-3">
-                                        <button onClick={tonglehandler}>Apply</button>
-                                    </div>
-                                </div>
+                              <JobDescription tonglehandler={tonglehandler} title={title}/>
                                 :
                                 <div className="container bg-white my-2">
                                     <div className="tab-pane show active  p-lg-5 p-2" >

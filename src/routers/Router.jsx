@@ -65,9 +65,10 @@ import RestroomRxService from "../pages/serviceDepartment/serviceDepartmentItem/
 import RestroomRxServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXServices/RestroomRXServices";
 import RestroomRXIndustriesWeServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXIndustriesWeServices/RestroomRXIndustriesWeServices";
 import PaymentPage from "../pages/paymentPage/PaymentPage";
+import NotFound from "../assets/404/NotFound";
 
 export const navigation = [
-    { path: "*", name: "Default", element: <p> There`s nothing here: 404!</p>, isPrivate: false },
+    { path: "*", name: "Default", element: <NotFound/>, isPrivate: false },
     { path: "/", name: "Home", element: <Home />, isPrivate: false },
     { path: "/login", name: "Login", element: <Login />, isPrivate: false },
     { path: "/create-account", name: "Create Account", element: <CreateAccount />, isPrivate: false },
@@ -121,7 +122,7 @@ export const navigation = [
     { path: "/service-list", name: "Services", element: <Services />, isPrivate: false },
     { path: "/service-list-item/:name", name: "Service List Item", element: <ServiceItem />, isPrivate: false },
     { path: "/careers-employment", name: "Careers And Employment", element: <CareersAndEmployment />, isPrivate: false },
-    { path: "/apply-job", name: "Apply Job", element: <ApplyJob />, isPrivate: false },
+    { path: "/apply-job/:title", name: "Apply Job", element: <ApplyJob />, isPrivate: false },
     { path: "/join-AFMX", name: "Join Afmx", element: <JoinAfmx />, isPrivate: false },
     { path: "/industries-list", name: "Industries We Serve", element: <IndustriesWeServe />, isPrivate: false },
     { path: "/industries-list/:name", name: "Industries List", element: <SubList />, isPrivate: false },

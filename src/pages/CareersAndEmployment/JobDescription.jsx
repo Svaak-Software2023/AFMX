@@ -17,13 +17,14 @@ function JobDescription({ tonglehandler, title }) {
                         {(JobData.responsibility.length > 0) && <><p><b>Role and responsibility</b></p>
                             <ul className="apply-job-list">
                                 {JobData.responsibility.map((item, index) =>
-                                    <li key={index}>{item.text}</li>
+                                    item.text ? <><p className='mt-3'><b>{item?.bold}</b></p><li key={index}>{item.text}</li></>
+                                        : <p className='my-3'><b>{item.heading}</b></p>
                                 )}
                             </ul></>}
                         {(JobData.requirment.length > 0) && <> <p><b>Requirment</b></p>
                             <ul className="apply-job-list">
                                 {JobData.requirment.map((item, index) =>
-                                    item.text ? <li key={index}><b>{item?.bold}</b> {item.text}</li>
+                                    item.text ? <><p className='mt-3'><b>{item?.bold}</b></p><li key={index}>{item.text}</li></>
                                         : <p className='my-3'><b>{item.heading}</b></p>
                                 )}
                             </ul>
@@ -31,7 +32,7 @@ function JobDescription({ tonglehandler, title }) {
                         {(JobData.qualifications.length > 0) && <> <p><b>Qualifications</b></p>
                             <ul className="apply-job-list">
                                 {JobData.qualifications.map((item, index) =>
-                                    item.text ? <li key={index}><b>{item?.bold}</b> {item.text}</li>
+                                    item.text ? <><p className='mt-3'><b>{item?.bold}</b></p><li key={index}>{item.text}</li></>
                                         : <p className='my-3'><b>{item.heading}</b></p>
 
                                 )}
@@ -51,7 +52,7 @@ function JobDescription({ tonglehandler, title }) {
                                 )}
                             </ul>
                         </>}
-
+                        {JobData.joinOurTeam&&<p><b>Join Our Team:</b> {JobData.joinOurTeam}</p>}
                         {JobData.jobType && <p><b>Job-Type :</b> {JobData.jobType}</p>}
                         {JobData.experience && <p><b>Experience :</b> {JobData.experience}</p>}
                         {JobData.location && <p><b>Work Location :</b> {JobData.location}</p>}

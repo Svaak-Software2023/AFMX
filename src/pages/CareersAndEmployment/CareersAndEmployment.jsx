@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 import "./Career.css"
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
 import { LazyLoadImage } from "react-lazy-load-image-component"
+import JobData from "../../assets/data/careerAndEmployment/carrerAndEmployment.json"
+
 
 function CareersAndEmployment() {
     return (
@@ -52,26 +54,26 @@ function CareersAndEmployment() {
                                 </div>
                                 <div className="col-lg-3 clo-12">
                                     <div className="creer-filter-input w-100 mb-3 ">
-                                    <select className=" p-2 w-100 rounded">
+                                        <select className=" p-2 w-100 rounded">
                                             <option value="">Workplace type</option>
                                             <option value="">Workplace type 1</option>
                                             <option value="">Workplace type 2</option>
                                             <option value="">Workplace type 3</option>
 
                                         </select>
-                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="col-lg-3 clo-12">
                                     <div className="creer-filter-input w-100 mb-3 ">
-                                    <select className=" p-2 w-100 rounded">
+                                        <select className=" p-2 w-100 rounded">
                                             <option value="">Location </option>
                                             <option value="">Location 1</option>
                                             <option value="">Location 2</option>
                                             <option value="">Location 3</option>
 
                                         </select>
-                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="col-lg-3 clo-12">
@@ -102,50 +104,20 @@ function CareersAndEmployment() {
                                 <div className="row">
                                     <div className="col-md-12">
                                         <ul className="job">
-                                            <li>
-                                                <div>
-                                                    <Link to="/apply-job">
-                                                        <h2 className="styles--3TJHk"><span>Night Manager</span></h2>
-                                                        <small className="small">Posted 1 day ago</small>
-                                                    </Link>
-                                                </div>
-                                                <span className="child">Burnsville, Minnesota, United States</span>
-                                                <span className>Locations</span>
-                                                <span>Full time</span>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <Link to="/apply-job">
-                                                        <h2 className="styles--3TJHk"><span>Service Technician</span></h2>
-                                                        <small className="small">Posted 1 day ago</small>
-                                                    </Link>
-                                                </div>
-                                                <span className="child">Burnsville, Minnesota, United States</span>
-                                                <span className>Locations</span>
-                                                <span>Full time</span>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <Link to="/apply-job">
-                                                        <h2 className="styles--3TJHk"><span>Commercial Compliance Manager</span></h2>
-                                                        <small className="small">Posted 1 day ago</small>
-                                                    </Link>
-                                                </div>
-                                                <span className="child">Burnsville, Minnesota, United States</span>
-                                                <span className>Locations</span>
-                                                <span>Full time</span>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <Link to="/apply-job">
-                                                        <h2 className="styles--3TJHk"><span>Facilities Account Manager</span></h2>
-                                                        <small className="small">Posted 1 day ago</small>
-                                                    </Link>
-                                                </div>
-                                                <span className="child">Burnsville, Minnesota, United States</span>
-                                                <span className>Locations</span>
-                                                <span>Full time</span>
-                                            </li>
+                                            {
+                                                JobData.map((item, index) =>
+                                                    <li key={index}>
+                                                        <div>
+                                                            <Link to={`/apply-job/${item?.title}`}>
+                                                                <h2 className="styles--3TJHk"><span>{item?.title}</span></h2>
+                                                                <small className="small">Posted 1 day ago</small>
+                                                            </Link>
+                                                        </div>
+                                                        <span className="child">{item?.location}</span>
+                                                        {/* <span className>Locations</span> */}
+                                                        <span>{item?.jobType}</span>
+                                                    </li>)
+                                            }
                                         </ul>
                                     </div>
                                 </div>

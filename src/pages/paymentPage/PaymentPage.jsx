@@ -5,9 +5,9 @@ import { useNavigate } from 'react-router-dom'
 
 
 export default function PaymentPage({ totalAmount }) {
+    console.log('payment.......',totalAmount);
 
     let totalSum = Number(totalAmount) * 100
-    const [money, setMoney] = useState(totalSum.toFixed(2))
     const navigate = useNavigate()
     const loadScript = (src) => {
         return new Promise((resolve, reject) => {
@@ -34,7 +34,7 @@ export default function PaymentPage({ totalAmount }) {
         const options = {
             key: "rzp_test_mFHSfCm2xbgQ3P",
             currency: "INR",
-            amount: money,
+            amount: totalSum,
             name: "America's Finest Maintenance Company LLC",
             image: "https://americasfinestmaintenance.com/images/top-logo.png",
             description: "Thanks for purchasing",
@@ -53,7 +53,7 @@ export default function PaymentPage({ totalAmount }) {
         <>
             <div className="d-flex justify-content-center">
                 <button className="place_order_btn my-3" onClick={() => displayRazorPay()}>
-                    Pay {(money !== 0) ? money / 100 : ""}
+                    Pay {(totalSum !== 0) ? totalSum / 100 : ""}
                 </button>
             </div>
 

@@ -69,13 +69,43 @@ export const deleteCartItems = createAsyncThunk("cart/delete-item", async ({ car
     }
 })
 
+export const getAllSaveForLater = createAsyncThunk("cart/getToSaveLater", async ({ toast }) => {
+    try {
+        const response = await api.getAllSaveForLater();
+        return response.data;
+    } catch (error) {
+        console.log("error", error);
+        throw error;
+    }
+});
+
+export const addAndMoveSaveLater = createAsyncThunk("cart/addAndMove/SaveLater", async ({cartItemId, isTrue,toast}) => {
+    try {
+        console.log('{cartItemId, isTrue,toast}',{cartItemId, isTrue});
+        const response = await api.addAndMoveSaveLater({cartItemId, saveForLater:isTrue});
+        if(response.data){
+            toast.success(response.data.message)
+        }
+        return response.data;
+    } catch (error) {
+        console.log("error", error);
+        throw error;
+    }
+})
+
 const cartSlice = createSlice({
     name: "cart",
     initialState: {
         data: [],
         message: "",
         error: "",
-        loading: false
+        loading: false,
+        saveForlaterData:{
+            saveForlaterList:[],
+            message: "",
+            error: "",
+            loading: false
+        }
     },
     reducers: {},
     extraReducers: (builder) => {
@@ -169,6 +199,47 @@ const cartSlice = createSlice({
                 state.message = "";
                 state.error = action.error.message;
                 state.loading = false;
+            })
+            .addCase(getAllSaveForLater.pending, (state, action) => {
+                state.saveForlaterData.saveForlaterList = []
+                state.saveForlaterData.message = "";
+                state.saveForlaterData.error = "";
+                state.saveForlaterData.loading = true;
+            })
+            .addCase(getAllSaveForLater.fulfilled, (state, action) => {
+                state.saveForlaterData.saveForlaterList = action.payload.cartResponse
+                state.saveForlaterData.message = action.payload.message;
+                state.saveForlaterData.error = "";
+                state.saveForlaterData.loading = false;
+            })
+            .addCase(getAllSaveForLater.rejected, (state, action) => {
+                state.saveForlaterData.saveForlaterList = []
+                state.saveForlaterData.message = "";
+                state.saveForlaterData.error = action.error;
+                state.saveForlaterData.loading = false;
+            })
+            .addCase(addAndMoveSaveLater.pending, (state, action) => {
+                state.saveForlaterData.saveForlaterList = []
+                state.saveForlaterData.message = "";
+                state.saveForlaterData.error = "";
+                state.saveForlaterData.loading = true;
+            })
+            .addCase(addAndMoveSaveLater.fulfilled, (state, action) => {
+                if(action.payload?.addToSaveForLaterResponse?.saveForLater){
+                    const index = state.data?.Products.findIndex((x)=> x?.productId === action.payload?.addToSaveForLaterResponse?.productId);
+                    state.data.Products.splice(index,1);
+                }
+                
+                state.saveForlaterData.saveForlaterList = action.payload.addToSaveForLaterResponse
+                state.saveForlaterData.message = action.payload.message;
+                state.saveForlaterData.error = "";
+                state.saveForlaterData.loading = false;
+            })
+            .addCase(addAndMoveSaveLater.rejected, (state, action) => {
+                state.saveForlaterData.saveForlaterList = []
+                state.saveForlaterData.message = "";
+                state.saveForlaterData.error = action.error;
+                state.saveForlaterData.loading = false;
             })
            
     }

@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 // import productData from "../../assets/data/Productdata.json";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { getCart, cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
+import { getCart, cartItemUpdateQuantity,getAllSaveForLater, addAndMoveSaveLater } from "../../redux/featurs/cartSlice";
 import { toast } from "react-toastify";
 import Loader from "../../components/Loader/Loader";
 
@@ -13,12 +13,13 @@ const Cart = () => {
 
     useEffect(()=>{
         dispatch(getCart())
+        dispatch(getAllSaveForLater({toast}))
 
     },[])
 
   
   const updateQuantity = (productId,isIncrement) => {
-    let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
+    let {cartItemId} =  cartData.Items?.filter(item=> item.productId === productId )[0];
     if(isIncrement){
      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
     } else{
@@ -27,8 +28,7 @@ const Cart = () => {
   };
   
   const logedInUser = useSelector((state) => state.auth.user)
-  const { data: cartData, loading: cartLoading } = useSelector((state) => state.cart)
-
+  const { data: cartData, saveForlaterData:{saveForlaterList}, loading: cartLoading } = useSelector((state) => state.cart)
 
 
   useEffect(() => {
@@ -61,16 +61,28 @@ const Cart = () => {
 
   // delete cart items 
   const deleteHandler=(productId)=>{
-    const cartItemId =  cartData.Items.filter(item=> item.productId === productId )[0].cartItemId;
+    const cartItemId =  cartData.Items?.filter(item=> item.productId === productId )[0].cartItemId;
     // alert(cartItemId)
     dispatch(deleteCartItems({cartItemId})).then(()=>{
       dispatch(getCart());
     })
   }
 
+  // save for later or move to cart this cart item
+  const saveForLaterOrMoveToCartHandler=(cartItemId,isTrue)=>{
+    // const cartItemId =  cartData.Items?.filter(item=> item.productId === productId )[0].cartItemId;
+    dispatch(addAndMoveSaveLater({cartItemId, isTrue,toast})).then(()=>{
+      if(isTrue){
+        dispatch(getAllSaveForLater({toast}));
+      }else {
+        dispatch(getCart());
+        dispatch(getAllSaveForLater({toast}));
+      }
+    })
+  };
  
   // if (cartLoading) return <Loader/>
-  if(cartData?.Items?.length>0){
+  if((cartData?.Items?.length) || (saveForlaterList?.Products?.length)){
 
 
     return (
@@ -96,7 +108,7 @@ const Cart = () => {
                 </div>
               </div> */}
               <div className="m-0" >
-                {cartData && cartData?.Products?.map((item, i) =>
+                {cartData?.Products?.map((item, i) =>
                   <div className="card mb-2 m-0 " key={i}>
                     <div className="card-body">
                       <div className="row mb-5">
@@ -118,11 +130,11 @@ const Cart = () => {
                               <div className="discounted__list" style={{ display: "flex" }}>
                                 <p className="discounted_price">{((item.productPrice) * (item?.noOfProducts)).toFixed(2)}</p>
                                 <p className="discount_price px-2">{item.productMRP}</p>
-                                <p className="percent px-4">{item.discount}</p>
+                                <p className="percent px-4">{item.discount}%</p>
                                 <p className="percent">1 offer applied</p>
                               </div>
                               <div className="save_or_remove_btn">
-                                <Link>SAVE FOR LATER</Link>
+                                <Link onClick={()=>saveForLaterOrMoveToCartHandler(item?.cartItemId, true)}>SAVE FOR LATER</Link>
                                 <Link onClick={()=>deleteHandler(item?.productId)}>REMOVE</Link>
                               </div>
                               <div className="increase_decrease_btn mt-3">
@@ -157,6 +169,65 @@ const Cart = () => {
                   </div>)}
 
               </div>
+
+              {/* save for later */}
+             {(saveForlaterList?.Products?.length > 0)  && <div className="m-0" >
+                  <div className="card mb-2 m-0 ">
+                  <h6 className="price_details px-3 pt-3">Saved For Later ({saveForlaterList?.Products?.length})</h6>
+                <hr />
+                {saveForlaterList && saveForlaterList?.Products?.map((item, i) =>
+                    <div className="card-body" key={i}>
+                      <div className="row mb-5">
+                        <div className="col-12 col-md-8 col-lg-8 col-sm-8 items">
+                          <div className="row ">
+                            <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2"
+                              style={{ display: "flex", justifyContent: "center" }}>
+                              <img
+                                className="img-fluid"
+                                src={item.productImage[0]}
+                                alt={item.productName}
+                                style={{ height: "100%", objectFit: "contain" }}
+                              />
+                            </div>
+                            <div className="col-12 col-md-8 col-lg-8 col-sm-12">
+                              <h6 className="product_item">{item.productName}</h6>
+                              <div className="discounted__list" style={{ display: "flex" }}>
+                                <p className="discounted_price">{((item.productPrice) * (item?.noOfProducts)).toFixed(2)}</p>
+                                <p className="discount_price px-2">{item.productMRP}</p>
+                                <p className="percent px-4">{item.discount}%</p>
+                              </div>
+                              <div className="save_or_remove_btn">
+                              <Link onClick={()=>saveForLaterOrMoveToCartHandler(item?.cartItemId, false)}>MOVE TO CART</Link>
+                                <Link onClick={()=>deleteHandler(item?.productId)}>REMOVE</Link>
+                              </div>
+                              <div className="increase_decrease_btn mt-3">
+                                <div
+                                  className="value-button"
+                                  id="decrease"
+                                  style={{cursor:"default"}}
+                                >
+                                  -
+
+                                </div>
+                                <span className="pt-1 px-2  border">{item?.noOfProducts}</span>
+                                <div
+                                  className="value-button"
+                                  id="increase"
+                                  style={{cursor:"default"}}
+                                >
+                                  +
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                    </div>
+                     )}
+                  </div>
+
+              </div>}
             </div>
           </div>
           <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 margin_top">

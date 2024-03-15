@@ -52,6 +52,16 @@ function JobDescription({ tonglehandler, title }) {
                                 )}
                             </ul>
                         </>}
+                        {(JobData?.jobDescription?.EssentialFunctions?.list?.length > 0) && <> <p><b>{JobData?.jobDescription?.title}</b></p>
+                        <p>{JobData?.jobDescription?.description}</p>
+                        <p><b>{JobData?.jobDescription?.EssentialFunctions?.title}</b></p>
+                            <ul className="apply-job-list">
+                                {JobData?.jobDescription?.EssentialFunctions?.list.map((item, index) =>
+                                    item?.text ? <><p className='mt-3'><b>{item?.bold}</b></p><li key={index}>{item?.text}</li></>
+                                        : <p className='my-3' ><b>{item?.heading}</b></p>
+                                )}
+                            </ul>
+                        </>}
                         {JobData.joinOurTeam&&<p><b>Join Our Team:</b> {JobData.joinOurTeam}</p>}
                         {JobData.jobType && <p><b>Job-Type :</b> {JobData.jobType}</p>}
                         {JobData.experience && <p><b>Experience :</b> {JobData.experience}</p>}

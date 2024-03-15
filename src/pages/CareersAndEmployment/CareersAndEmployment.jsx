@@ -55,7 +55,7 @@ function CareersAndEmployment() {
                                 <div className="col-lg-3 clo-12">
                                     <div className="creer-filter-input w-100 mb-3 ">
                                         <select className=" p-2 w-100 rounded">
-                                            <option value="">Workplace type</option>
+                                            <option value="" disabled>Workplace type</option>
                                             <option value="">Workplace type 1</option>
                                             <option value="">Workplace type 2</option>
                                             <option value="">Workplace type 3</option>
@@ -67,10 +67,35 @@ function CareersAndEmployment() {
                                 <div className="col-lg-3 clo-12">
                                     <div className="creer-filter-input w-100 mb-3 ">
                                         <select className=" p-2 w-100 rounded">
-                                            <option value="">Location </option>
-                                            <option value="">Location 1</option>
-                                            <option value="">Location 2</option>
-                                            <option value="">Location 3</option>
+                                            <option value="" disabled>Location </option>
+                                            <option value="Tampa">Tampa</option>
+                                            <option value="Largo">Largo</option>
+                                            <option value="Clearwater">Clearwater</option>
+                                            <option value="Traveling Superintendent">Traveling Superintendent</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-3 clo-12">
+                                    <div className="creer-filter-input w-100 mb-3 ">
+                                        <select className=" p-2 w-100 rounded">
+                                            <option value="" disabled>Department</option>
+                                            <option value="">Handyman</option>
+                                            <option value="">Janitorial</option>
+                                            <option value="">Hvac</option>
+                                            <option value="">Carpentry</option>
+                                            <option value="">Valet Taxi Trash</option>
+                                            <option value="">Restroom Rx</option>
+                                            <option value="">Office</option>
+                                            <option value="">Lawn care</option>
+                                            <option value="">Landscape</option>
+                                            <option value="">Window cleaning</option>
+                                            <option value="">Disaster</option>
+                                            <option value="">Polish</option>
+                                            <option value="">Parking lot</option>
+                                            <option value="">Trash busters</option>
+                                            <option value="">Porter and Matron</option>
+                                            <option value="">Junk Removal</option>
 
                                         </select>
                                     </div>
@@ -79,22 +104,13 @@ function CareersAndEmployment() {
                                 <div className="col-lg-3 clo-12">
                                     <div className="creer-filter-input w-100 mb-3 ">
                                         <select className=" p-2 w-100 rounded">
-                                            <option value="">Department</option>
-                                            <option value="">Department 1</option>
-                                            <option value="">Department 2</option>
-                                            <option value="">Department 3</option>
-
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-3 clo-12">
-                                    <div className="creer-filter-input w-100 mb-3 ">
-                                        <select className=" p-2 w-100 rounded">
-                                            <option value="">Work type</option>
-                                            <option value="">Work type 1</option>
-                                            <option value="">Work type 2</option>
-                                            <option value="">Work type 3</option>
+                                            <option value="" disabled>Work type</option>
+                                            <option value="Remote">Remote</option>
+                                            <option value="Emergency">Emergency</option>
+                                            <option value="Full-Time">Full-Time</option>
+                                            <option value="Part Time">Part Time</option>
+                                            <option value="Temporary">Temporary</option>
+                                            <option value="On-Call">On-Call</option>
                                         </select>
                                     </div>
                                 </div>

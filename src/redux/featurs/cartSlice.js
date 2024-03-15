@@ -50,7 +50,7 @@ export const cartItemUpdateQuantity=createAsyncThunk("/cartItems/cartItemUpdateQ
 export const addCartItems = createAsyncThunk("cart/add-item", async (formData) => {
     try {
         const response = await api.addCartItems(formData);
-        console.log("response", response);
+        console.log("response-addCartItems", response);
         return response.data;
     } catch (error) {
         console.log("error", error);

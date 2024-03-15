@@ -6,8 +6,8 @@ const data = [
   {
     name: "Rx Checkup",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx1.jpg",
-    cost1 : "Reoccurring: $49.65 / month",
-    cost2: "One time service: $89.98",
+    cost1 : "",
+    cost2: "Cost: $89.99",
     color: "#D1E6B5",
     tasks: [
       "(1) toilet bowl ",
@@ -25,8 +25,8 @@ const data = [
   {
     name: "Rx Preferred",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx2.jpg",
-    cost1: "Reoccurring $139.78 / month",
-    cost2: "One time service: $189.99",
+    cost1: "",
+    cost2: "Cost: $189.99",
     color: "#00B050",
     tasks: [
       "Free Walkthrough",
@@ -43,8 +43,8 @@ const data = [
   {
     name: "Rx Shield",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx3.jpg",
-    cost1: "Reoccurring:$ 220.54 / month",
-    cost2: "One time service: $350.00",
+    cost1: "",
+    cost2: "Cost: $350.00",
     color: "#893713",
     tasks: [
       "For clients with high traffic",

@@ -53,7 +53,15 @@
       "communityAmbesdor": "",
       "qualifications": [],
       "additionalResponsibility": "",
-      "joinOurTeam": ""
+      "joinOurTeam": "",
+      "jobDescription":{
+         "title":"",
+         "description":"",
+         "EssentialFunctions":{
+            "title":"",
+            "list":[]
+         }
+      }
    },
    {
       "id": "2",
@@ -125,7 +133,15 @@
          }
       ],
       "additionalResponsibility": "",
-      "joinOurTeam": ""
+      "joinOurTeam": "",
+      "jobDescription":{
+         "title":"",
+         "description":"",
+         "EssentialFunctions":{
+            "title":"",
+            "list":[]
+         }
+      }
    },
    {
       "id": "3",
@@ -215,7 +231,15 @@
       "joinOurTeam": "",
       "benefits": [],
       "jobType": "Full Time",
-      "experience": "Experienced/ Expert"
+      "experience": "Experienced/ Expert",
+      "jobDescription":{
+         "title":"",
+         "description":"",
+         "EssentialFunctions":{
+            "title":"",
+            "list":[]
+         }
+      }
    },
    {
       "id": "4",
@@ -316,7 +340,15 @@
       "joinOurTeam": "",
       "benefits": [],
       "jobType": "Full Time",
-      "experience": "Minimum of 3 years of industry experience"
+      "experience": "Minimum of 3 years of industry experience",
+      "jobDescription":{
+         "title":"",
+         "description":"",
+         "EssentialFunctions":{
+            "title":"",
+            "list":[]
+         }
+      }
    },
    {
       "id": "5",
@@ -375,7 +407,15 @@
          }
       ],
       "jobType": "Full Time",
-      "experience": ""
+      "experience": "",
+      "jobDescription":{
+         "title":"",
+         "description":"",
+         "EssentialFunctions":{
+            "title":"",
+            "list":[]
+         }
+      }
    },
    {
       "id": "6",
@@ -484,7 +524,15 @@
       "joinOurTeam": "",
       "benefits": [],
       "jobType": "Full Time",
-      "experience": "Experienced/ Expert"
+      "experience": "Experienced/ Expert",
+      "jobDescription":{
+         "title":"",
+         "description":"",
+         "EssentialFunctions":{
+            "title":"",
+            "list":[]
+         }
+      }
    },
    {
       "id": "7",
@@ -578,6 +626,117 @@
       "joinOurTeam": "America's Finest Maintenance offers a stimulating work environment and ample opportunities for career growth and development. If you are a highly motivated individual with a passion for sales and customer service, we invite you to apply and be part of our dedicated team. Become an integral part of our mission to provide top-quality window cleaning and maintenance services to our valued customers.America's Finest Maintenance is an equal opportunity employer, and we look forward to welcoming talented individuals to our team.",
       "benefits": [],
       "jobType": "Full Time",
-      "experience": ""
+      "experience": "",
+      "jobDescription":{
+         "title":"",
+         "description":"",
+         "EssentialFunctions":{
+            "title":"",
+            "list":[]
+         }
+      }
+   },
+   {
+      "id": "8",
+      "title": "Sales Rep",
+      "location": "",
+      "description": "The ideal candidate must have at least 4-10 years experience in the commercial cleaning (janitorial) sales, within the past 5 years. We do not provide training.",
+      "responsibility": [],
+      "requirment": [
+         {
+            "text": "Efficient in government bidding contracts both state, city and federal"
+         },
+         {
+            "text": "B2B sales: 5 plus Years"
+         },
+         {
+            "text": "Sales: 5 plus Years"
+         },
+         {
+            "text": "Must be able to pass an extensive background check, and MVR"
+         },
+         {
+            "text": "Proven track record of success in outside sales and B2B sales"
+         },
+         {
+            "text": "Experience in Commercial Cleaning sales"
+         },
+         {
+            "text": "Expert in prospecting"
+         },
+         {
+            "text": "Using a consultative sales approach to educate, solve problems, and sell the services that fit the client's need"
+         },
+         {
+            "text": "Following up on sales leads"
+         },
+         {
+            "text": "Visiting prospects/clients' facilities and presenting our company and cleaning services"
+         },
+         {
+            "text": "Conducting Zoom meeting to sale the company's service's"
+         },
+         {
+            "text": "Computer knowledge"
+         },
+         {
+            "text": "Demonstrate a strong customer service orientation"
+         },
+         {
+            "text": "Be well-spoken, well-groomed, and professional"
+         },
+         {
+            "text": "Knowledge of the janitorial industry"
+         }
+      ],
+      "communityAmbesdor": "",
+      "qualifications": "",
+      "additionalResponsibility": "",
+      "joinOurTeam": "",
+      "benefits": [],
+      "jobType": "",
+      "experience": "",
+      "jobDescription":{
+         "title":"JOB DESCRIPTION",
+         "description":"The Outside Sales Rep. position will perform all business development activities necessary to increase Company footprint in designated territory. The primary purpose of this role will be to increase the volume of opportunities that result in a closed and won outcome.",
+         "EssentialFunctions":{
+            "title":"Essential Functions:",
+            "list":[
+               {
+                  "text": "Develop and maintain effective working relationships with all prospects."
+               },
+               {
+                  "text": "Play key role in increasing overall customer footprint in designated territory"
+               },
+               {
+                  "text": "Develop & maintain a robust qualified lead sales pipeline."
+               },
+               {
+                  "text": "Maintain list of upcoming RFPs company should be participating or considering participating in."
+               },
+               {
+                  "text": "Cold calling and prospecting"
+               },
+               {
+                  "text": "Efficient in government bidding contracts both state, city and federal"
+               },
+               {
+                  "text": "Email Marketing and Seo Marketing"
+               },
+               {
+                  "text": "Ability to create and/or modify sales approach to achieve results."
+               },
+               {
+                  "text": "Serve as Account Manager for converted opportunities to ensure service excellence is delivered."
+               },
+               {
+                  "text": "Play integral role in fulfilling Company strategic growth measures."
+               },
+               {
+                  "text": "Identify and execute on cross sell opportunities."
+               }
+            ]
+         }
+      }
    }
 ]

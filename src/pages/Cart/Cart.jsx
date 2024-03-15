@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 // import productData from "../../assets/data/Productdata.json";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { getCart, cartItemUpdateQuantity,getAllSaveForLater, addAndMoveSaveLater } from "../../redux/featurs/cartSlice";
+import { getCart, cartItemUpdateQuantity,getAllSaveForLater, addAndMoveSaveLater,deleteCartItems } from "../../redux/featurs/cartSlice";
 import { toast } from "react-toastify";
 import Loader from "../../components/Loader/Loader";
 
@@ -10,12 +10,6 @@ const Cart = () => {
 
     const dispatch=useDispatch()
     const navigate=useNavigate()
-
-    useEffect(()=>{
-        dispatch(getCart())
-        dispatch(getAllSaveForLater({toast}))
-
-    },[])
 
   
   const updateQuantity = (productId,isIncrement) => {
@@ -29,7 +23,8 @@ const Cart = () => {
   
   const logedInUser = useSelector((state) => state.auth.user)
   const { data: cartData, saveForlaterData:{saveForlaterList}, loading: cartLoading } = useSelector((state) => state.cart)
-
+const {length} = cartData
+  console.log('--------cartData-----',cartData);
 
   useEffect(() => {
     if (logedInUser) {
@@ -38,6 +33,7 @@ const Cart = () => {
       }
       // console.log("formData",formData);
       dispatch(getCart(formData))
+      dispatch(getAllSaveForLater({toast}))
     } else {
       navigate("/login")
     }
@@ -60,17 +56,15 @@ const Cart = () => {
 
 
   // delete cart items 
-  const deleteHandler=(productId)=>{
-    const cartItemId =  cartData.Items?.filter(item=> item.productId === productId )[0].cartItemId;
-    // alert(cartItemId)
+  const deleteHandler=(cartItemId)=>{
     dispatch(deleteCartItems({cartItemId})).then(()=>{
       dispatch(getCart());
+      dispatch(getAllSaveForLater({toast}));
     })
   }
 
   // save for later or move to cart this cart item
   const saveForLaterOrMoveToCartHandler=(cartItemId,isTrue)=>{
-    // const cartItemId =  cartData.Items?.filter(item=> item.productId === productId )[0].cartItemId;
     dispatch(addAndMoveSaveLater({cartItemId, isTrue,toast})).then(()=>{
       if(isTrue){
         dispatch(getAllSaveForLater({toast}));
@@ -135,7 +129,7 @@ const Cart = () => {
                               </div>
                               <div className="save_or_remove_btn">
                                 <Link onClick={()=>saveForLaterOrMoveToCartHandler(item?.cartItemId, true)}>SAVE FOR LATER</Link>
-                                <Link onClick={()=>deleteHandler(item?.productId)}>REMOVE</Link>
+                                <Link onClick={()=>deleteHandler(item?.cartItemId)}>REMOVE</Link>
                               </div>
                               <div className="increase_decrease_btn mt-3">
                                 <div
@@ -198,7 +192,7 @@ const Cart = () => {
                               </div>
                               <div className="save_or_remove_btn">
                               <Link onClick={()=>saveForLaterOrMoveToCartHandler(item?.cartItemId, false)}>MOVE TO CART</Link>
-                                <Link onClick={()=>deleteHandler(item?.productId)}>REMOVE</Link>
+                                <Link onClick={()=>deleteHandler(item?.cartItemId)}>REMOVE</Link>
                               </div>
                               <div className="increase_decrease_btn mt-3">
                                 <div

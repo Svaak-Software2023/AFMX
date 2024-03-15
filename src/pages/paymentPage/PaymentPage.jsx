@@ -41,7 +41,6 @@ export default function PaymentPage({ totalAmount }) {
             handler: (response) => {
                 if (response.razorpay_payment_id) {
                     navigate("/")
-                    console.log(response);
                 }
             }
         }

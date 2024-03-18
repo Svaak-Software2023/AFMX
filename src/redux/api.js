@@ -30,9 +30,9 @@ export const createRemarks = ({ formData, complaintId }) => API.put(`/update-com
 export const allProductCategory = () => API.get("/all-product-category");
 export const getSingleProduct = (id) => API.get(`/products/${id}`);
 export const getProduct = (id) => API.get(`/all-product/${id}`);
-export const createCart = (formData) => API.post(`/add-cart`, formData);
+export const createCart = (formData,token = "") => API.post(`/add-cart?token=${token}`, formData);
 export const getCart = () => API.get(`/carts/get-cart`);
-export const getAllSaveForLater = () => API.get(`/carts/getToSaveLater`);
+export const getAllSaveForLater = () => API.get(`/carts/getAllSaveLater`);
 export const deleteCartItem = (cartItemId) => API.delete(`/carts/cartItems/${cartItemId}`);
 export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue}) => API.patch(`/cartItems/update-quantity/${cartItemId}`,{positiveAndNegativeValue});
 export const addAndMoveSaveLater = (formData) => API.patch(`/cartItems/addAndMoveSaveLater`,formData);

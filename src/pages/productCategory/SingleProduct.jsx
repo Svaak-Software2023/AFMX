@@ -1,153 +1,249 @@
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom"
-import "./singleProduct.css"
-import React, { useEffect } from 'react'
-import { Carousel } from "react-responsive-carousel"
-import ProductCard from "./component/ProductCard"
-import productData from "../../assets/data/Productdata.json"
-import { useDispatch, useSelector } from "react-redux"
-import { getAllCategory, getProduct, getSingleProduct } from "../../redux/featurs/productSlice"
-import { addCart, addCartItems, getCart } from "../../redux/featurs/cartSlice"
-import Loader from "../../components/Loader/Loader"
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import "./singleProduct.css";
+import React, { useEffect } from "react";
+import { Carousel } from "react-responsive-carousel";
+import ProductCard from "./component/ProductCard";
+import productData from "../../assets/data/Productdata.json";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  getAllCategory,
+  getProduct,
+  getSingleProduct,
+} from "../../redux/featurs/productSlice";
+import { addCart, addCartItems, getCart } from "../../redux/featurs/cartSlice";
+import Loader from "../../components/Loader/Loader";
+import { createCart } from "../../redux/api";
 
- 
 function SingleProduct() {
-    const { parent, childe } = useParams()
-    const { pathname } = useLocation()
+  const { parent, childe } = useParams();
+  const { pathname } = useLocation();
 
-    const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-    const allProducts = useSelector((state) => state.products?.allProducts)
-    const allCategorey = useSelector((state) => state.products?.allCategorey)
+  const allProducts = useSelector((state) => state.products?.allProducts);
+  const allCategorey = useSelector((state) => state.products?.allCategorey);
 
-    const navigate = useNavigate()
-    const logedInUser = useSelector((state) => state.auth.user)
+  const navigate = useNavigate();
+  const logedInUser = useSelector((state) => state.auth.user);
 
-    const { singleProduct, loading: productLoading } = useSelector((state) => state.products)
-    const { data:cartData, loading: cartLoading } = useSelector((state) => state.cart)
+  const { singleProduct, loading: productLoading } = useSelector(
+    (state) => state.products
+  );
+  const { data: cartData, loading: cartLoading } = useSelector(
+    (state) => state.cart
+  );
 
-    useEffect(() => {
-        dispatch(getSingleProduct(childe)).then(() => {
-            if (logedInUser) {
-                let formData = {
-                    token: logedInUser?.token
-                }
-                dispatch(getCart(formData))
-            }
-        })
-    }, [pathname])
+  useEffect(() => {
+    dispatch(getSingleProduct(childe)).then(() => {
+      if (logedInUser) {
+        let formData = {
+          token: logedInUser?.token,
+        };
+        dispatch(getCart(formData));
+      }
+    });
+  }, [pathname]);
 
+  const addToCartHandler = async () => {
+    if (logedInUser && singleProduct) {
+      const createCard = {
+        deliveryCharges: 10,
+        discountPrice: 50,
+        clientId: +logedInUser.clientId,
+      };
+      const { data } = await createCart(createCard, logedInUser?.token);
 
-    const addToCartHandler = () => {
-        if (logedInUser && singleProduct) {
-            let formData = {
-                cartId: cartData.cartId,
-                token: logedInUser?.token,
-                productId: singleProduct.productId,
-                noOfProducts: 1,
-                productPrice: singleProduct.productPrice
-            }
-            dispatch(addCartItems(formData)).then(() => {
-                navigate("/cart")
-            })
-        }
-        else { navigate("/login") }
+      if (data.cartResponse && data.cartResponse.cartId) {
+        let formData = {
+          cartId: data.cartResponse.cartId,
+          token: logedInUser?.token,
+          productId: singleProduct.productId,
+          noOfProducts: 1,
+          productPrice: singleProduct.productPrice,
+        };
+        dispatch(addCartItems(formData)).then(() => {
+          navigate("/cart");
+        });
+      }
+    } else {
+      navigate("/login");
     }
+  };
 
-    if (productLoading) return <Loader />
-    return (
-        <>
-            <div className="container p-0 my-3">
-                <div className="row  m-0 bg-white   p-3">
-                    <div className="col-lg-5 col-md-3 col-12 p-0 mb-3 bg-white">
-                        <Carousel showArrows={true} >
-                            {singleProduct.productImage?.map((item, i) => <div key={i} className="single-product-img">
-                                <img src={item} />
-                            </div>
-                            )}
-                        </Carousel>
-
-                        <div className="single-product-button-group">
-                            <div className="single-product-button">
-
-                                <button className="add-to-cart-button" onClick={addToCartHandler}>ADD TO Cart</button>
-
-                            </div>
-                            <div className="single-product-button">
-                                <Link to="/cart">
-                                    <button className="buy-now-button">Buy Now</button>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-7 col-md-9 col-12 p-0 m-0 ">
-                        <div className="px-lg-3" style={{ marginLeft: "10px" }}>
-                            <div className="">
-                                <h3 className="single-product-name">{singleProduct.productName}</h3>
-                            </div>
-                            <div className="single-product-price">
-                                <h3>{singleProduct.productMRP}</h3>
-                                <del className="single-producrt-MRP">{singleProduct.productPrice}</del>
-                                <span className="discount">{singleProduct.discount} Off</span>
-                            </div>
-
-                            <p className="alert-product-left">Hurry, Only {singleProduct.quantity} left!</p>
-
-                            <div className="single-product-description">
-                                <h3>Description</h3>
-                                <p>{singleProduct.productDescription}</p>
-                            </div>
-
-                            <div className="single-product-specifications mb-3">
-                                <h3>Specifications</h3>
-
-                                <div className="row p-3">
-                                    <b>General</b>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Brand</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.productBrand}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Product Name</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.productName}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Category</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{parent}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Container Type</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.containerType}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Container Size</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.containerSize}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Cleaner Form</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.cleanerForm}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Ready to Use / Consentrate</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.readyToUseOrConcentrate?"Yes":"No"}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.fragrances}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">Lemon</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">UPC Code(Universal Product Code)</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.upcCode}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">SKU Code(Stock Keeping Unit)</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">{singleProduct.skuCode}</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">MRP</span></div>
-                                    <div className="col-lg-6 col-6"><span className="product-details-text">${singleProduct.productMRP}</span></div>
-                                </div>
-                            </div>
-                            <div className="delivery-check mb-3">
-                                <h3>Delivery</h3>
-                                <input type="text" placeholder="Enter delivery ZipCode" />
-                                <Link>Check</Link>
-                            </div>
-                        </div>
-                    </div>
-
-
+  if (productLoading) return <Loader />;
+  return (
+    <>
+      <div className="container p-0 my-3">
+        <div className="row  m-0 bg-white   p-3">
+          <div className="col-lg-5 col-md-3 col-12 p-0 mb-3 bg-white">
+            <Carousel showArrows={true}>
+              {singleProduct.productImage?.map((item, i) => (
+                <div key={i} className="single-product-img">
+                  <img src={item} />
                 </div>
+              ))}
+            </Carousel>
 
-                <div className="similar-product px-2"><h3>Similar Products</h3><button>View All</button></div>
-                <div className="product-item-list bg-white m-0">
-                    {
-                        allProducts.map((item, i) => (
-                            <ProductCard key={i} data={item} parent={parent} />
-                        ))
-                    }
-                </div>
+            <div className="single-product-button-group">
+              <div className="single-product-button">
+                <button
+                  className="add-to-cart-button"
+                  onClick={addToCartHandler}
+                >
+                  ADD TO Cart
+                </button>
+              </div>
+              <div className="single-product-button">
+                <Link to="/cart">
+                  <button className="buy-now-button">Buy Now</button>
+                </Link>
+              </div>
             </div>
-        </>
-    )
+          </div>
+          <div className="col-lg-7 col-md-9 col-12 p-0 m-0 ">
+            <div className="px-lg-3" style={{ marginLeft: "10px" }}>
+              <div className="">
+                <h3 className="single-product-name">
+                  {singleProduct.productName}
+                </h3>
+              </div>
+              <div className="single-product-price">
+                <h3>{singleProduct.productMRP}</h3>
+                <del className="single-producrt-MRP">
+                  {singleProduct.productPrice}
+                </del>
+                <span className="discount">{singleProduct.discount} Off</span>
+              </div>
+
+              <p className="alert-product-left">
+                Hurry, Only {singleProduct.quantity} left!
+              </p>
+
+              <div className="single-product-description">
+                <h3>Description</h3>
+                <p>{singleProduct.productDescription}</p>
+              </div>
+
+              <div className="single-product-specifications mb-3">
+                <h3>Specifications</h3>
+
+                <div className="row p-3">
+                  <b>General</b>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">Brand</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.productBrand}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">Product Name</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.productName}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">Category</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">{parent}</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">Container Type</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.containerType}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">Container Size</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.containerSize}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">Cleaner Form</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.cleanerForm}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      Ready to Use / Consentrate
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.readyToUseOrConcentrate ? "Yes" : "No"}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.fragrances}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">Lemon</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      UPC Code(Universal Product Code)
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.upcCode}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      SKU Code(Stock Keeping Unit)
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      {singleProduct.skuCode}
+                    </span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">MRP</span>
+                  </div>
+                  <div className="col-lg-6 col-6">
+                    <span className="product-details-text">
+                      ${singleProduct.productMRP}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="delivery-check mb-3">
+                <h3>Delivery</h3>
+                <input type="text" placeholder="Enter delivery ZipCode" />
+                <Link>Check</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="similar-product px-2">
+          <h3>Similar Products</h3>
+          <button>View All</button>
+        </div>
+        <div className="product-item-list bg-white m-0">
+          {allProducts.map((item, i) => (
+            <ProductCard key={i} data={item} parent={parent} />
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default SingleProduct
+export default SingleProduct;

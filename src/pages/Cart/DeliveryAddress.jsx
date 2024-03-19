@@ -131,6 +131,7 @@ const DeliveryAddress = () => {
     } else {
       navigate("/login");
     }
+
   }, []);
 
   const { data: address, loading } = useSelector((state) => state.address);
@@ -241,12 +242,8 @@ const DeliveryAddress = () => {
     }
   };
 
-  const removeCartItem = (productId) => {
-    const cartItemId = cartData.Items?.filter(
-      (item) => item.productId === productId
-    )[0].cartItemId;
-    alert(cartItemId);
-    dispatch(deleteCartItems({ cartItemId, toast })).then(() => {
+  const removeCartItem = (cartItemId) => {
+    dispatch(deleteCartItems(cartItemId)).then(() => {
       dispatch(getCart());
     });
   };
@@ -296,28 +293,6 @@ const DeliveryAddress = () => {
         <div className="row px-0">
           <div className="col-lg-8 col-12 px-0">
             <div className="row px-0 gap-3">
-              {/* <div className="col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <div className="row px-md-5">
-                      <div className="col-sm-9 col-md-8 col-lg-6 col-12">
-                        <div className="d-flex justify-content-between">
-                          <a className="fs-5 color_black font_weight_500">
-                            Login
-                          </a>
-                          <p className="fs-5">User name</p>
-                          <p className="fs-5">+91 76876762</p>
-                        </div>
-                      </div>
-                      <div className="col-sm-3 col-md-4 col-lg-6 col-3">
-                        <button className="btn btn-light d-flex ms-auto change_btn">
-                          Change
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
               <div className="col-12">
                 <h6 className="accordion-header" id="flush-headingOne">
                   <p
@@ -572,7 +547,7 @@ const DeliveryAddress = () => {
                       aria-labelledby="order_summary"
                       data-bs-parent="#order_summaryExample"
                     >
-                      <div className="accordion-body">
+                      <div className="accordion-body mb-3">
                         {(cartData?.Products?.length > 0) && <div className="card">
                           <div className="card-body">
                             {cartData &&
@@ -590,7 +565,7 @@ const DeliveryAddress = () => {
                                             objectFit: "contain",
                                           }}
                                         />
-                                        <div className="increase_decrease_btn mt-3">
+                                        <div className="increase_decrease_btn mt-2">
                                           <div
                                             className="value-button"
                                             id="decrease"
@@ -621,7 +596,8 @@ const DeliveryAddress = () => {
                                           </div>
                                         </div>
                                       </div>
-                                      <div className="col-12 col-md-8 col-lg-8 col-sm-12">
+
+                                      <div className="col-12 col-md-8 col-lg-8 col-sm-12 mt-5">
                                         <h6 className="product_item">
                                           {item?.productName}
                                         </h6>
@@ -636,7 +612,7 @@ const DeliveryAddress = () => {
                                             {item?.productMRP}
                                           </p>
                                           <p className="percent px-4">
-                                            10% off
+                                            {item.discount}% off
                                           </p>
                                           <p className="percent">
                                             1 offer applied
@@ -655,7 +631,7 @@ const DeliveryAddress = () => {
                                           </Link>
                                           <Link
                                             onClick={() =>
-                                              removeCartItem(item.productId)
+                                              removeCartItem(item.cartItemId)
                                             }
                                           >
                                             REMOVE
@@ -664,16 +640,12 @@ const DeliveryAddress = () => {
                                       </div>
                                     </div>
                                   </div>
-                                  {/* <div className="col-12 col-md-4 col-lg-4 col-sm-12 p-3">
-                                <p className="delivery_time">
-                                  Delivery by Thu Nov $81.12 Free
-                                </p>
-                              </div> */}
+
                                 </div>
                               ))}
                           </div>
                         </div>}
-                        {(saveForlaterList?.Products?.length > 0) && (
+                        {/* {(saveForlaterList?.Products?.length > 0) && (
                             <div className="m-0 pt-3">
                               <div className="card mb-2 m-0 ">
                                 <h6 className="price_details px-3 pt-3">
@@ -774,248 +746,12 @@ const DeliveryAddress = () => {
                                   ))}
                               </div>
                             </div>
-                          )}
+                          )} */}
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <div className="col-12">
-                <h6 className="accordion-header" id="payment_headingOne">
-                  <p
-                    className=" collapsed order_or_payment_title delivery_address_padding"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#payment_collapseOne"
-                    aria-expanded="false"
-                    aria-controls="payment_collapseOne"
-                    id="payment_options"
-                    onClick={(event) => activeBgClass(event)}
-                  >
-                    PAYMENT OPTIONS
-                  </p>
-                </h6>
-                <div className="accordion accordion-flush" id="payment_Example">
-                  <div className="accordion-item">
-                    <div
-                      id="payment_collapseOne"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="payment_headingOne"
-                      data-bs-parent="#payment_Example"
-                    >
-                      <div className="accordion-body">
-                        <div className="card">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-sm-12 col-md-12 col-lg-12 col-12">
-                                <div className="form-check">
-                                  <input
-                                    className="form-check-input"
-                                    type="radio"
-                                    name="flexRadioDisabled"
-                                    id="flexRadioDisabled"
-                                  />
-                                  <label
-                                    className="form-check-label payment_type_list"
-                                    htmlFor="flexRadioDisabled"
-                                  >
-                                    Pay By Wallet
-                                  </label>
-                                  <img
-                                    src="/paymentIcon/wallet-removebg.jpg"
-                                    width="50"
-                                    className="ms-3"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-sm-12 col-md-12 col-lg-12 col-12">
-                                <div className="form-check">
-                                  <input
-                                    className="form-check-input"
-                                    type="radio"
-                                    name="flexRadioDisabled"
-                                    id="flexRadioDisabled"
-                                  />
-                                  <label
-                                    className="form-check-label payment_type_list"
-                                    htmlFor="flexRadioDisabled"
-                                  >
-                                    Credit/Debit/ ATM Card
-                                  </label>
-                                  <img
-                                    src="/paymentIcon/atm_card_debit_card.jpg"
-                                    width="50"
-                                    className="ms-3"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div className="row mx-3 my-3 gap-3">
-                              <div className="col-sm-12 col-md-7 col-lg-7 col-12">
-                                <input
-                                  type="number"
-                                  className="form-control card_input"
-                                  placeholder="Enter card number"
-                                />
-                              </div>
-                              <div className="col-sm-12 col-md-7 col-lg-7 col-12">
-                                <div className="row">
-                                  <div className="col-8">
-                                    <input
-                                      type="month"
-                                      className="form-control card_input"
-                                      placeholder="name@example.com"
-                                      alt="kjhj"
-                                    />
-                                  </div>
-                                  <div className="col-4">
-                                    <input
-                                      type="text"
-                                      className="form-control card_input"
-                                      placeholder="CVV"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-sm-12 col-md-7 col-lg-7 col-12">
-                                <div className="row">
-                                  <div className="col-12 d-flex">
-                                    <Link
-                                      to="/thank_you"
-                                      className="btn btn-danger w-100"
-                                    >
-                                      PAY NOW
-                                    </Link>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-sm-12 col-md-12 col-lg-12 col-12">
-                                <div className="form-check">
-                                  <input
-                                    className="form-check-input"
-                                    type="radio"
-                                    name="flexRadioDisabled"
-                                    id="flexRadioDisabled"
-                                  />
-                                  <label
-                                    className="form-check-label payment_type_list"
-                                    htmlFor="flexRadioDisabled"
-                                  >
-                                    Pay By Stripe
-                                  </label>
-                                  <img
-                                    src="/paymentIcon/stripe_pic.jpg"
-                                    width="50"
-                                    className="ms-3"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-sm-12 col-md-12 col-lg-12 col-12">
-                                <div className="form-check">
-                                  <input
-                                    className="form-check-input"
-                                    type="radio"
-                                    name="flexRadioDisabled"
-                                    id="flexRadioDisabled"
-                                  />
-                                  <label
-                                    className="form-check-label payment_type_list"
-                                    htmlFor="flexRadioDisabled"
-                                  >
-                                    Pay By American Express
-                                  </label>
-                                  <img
-                                    src="/paymentIcon/american_card.jpg"
-                                    width="50"
-                                    className="ms-3"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-sm-12 col-md-12 col-lg-12 col-12">
-                                <div className="form-check">
-                                  <input
-                                    className="form-check-input"
-                                    type="radio"
-                                    name="flexRadioDisabled"
-                                    id="flexRadioDisabled"
-                                  />
-                                  <label
-                                    className="form-check-label payment_type_list"
-                                    htmlFor="flexRadioDisabled"
-                                  >
-                                    Pay By Wire Transfer
-                                  </label>
-                                  <img
-                                    src="/paymentIcon/wire-transfer-logo.jpg"
-                                    width="50"
-                                    className="ms-3"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-body">
-                            <div className="row">
-                              <div className="col-sm-12 col-md-12 col-lg-12 col-12">
-                                <div className="form-check">
-                                  <input
-                                    className="form-check-input"
-                                    type="radio"
-                                    name="flexRadioDisabled"
-                                    id="flexRadioDisabled"
-                                  />
-                                  <label
-                                    className="form-check-label payment_type_list"
-                                    htmlFor="flexRadioDisabled"
-                                  >
-                                    Pay By Pay Pal
-                                  </label>
-                                  <img
-                                    src="/paymentIcon/paypal-logo.jpg"
-                                    width="50"
-                                    className="ms-3"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
 
@@ -1068,7 +804,7 @@ const DeliveryAddress = () => {
                   <div className="col-sm-4 col-6 p-0">
                     <p className="total_amount">
                       $
-                      {Number(totalSum - 25 + cartData.deliveryCharges).toFixed(
+                      {Number(totalSum - 50 + cartData.deliveryCharges).toFixed(
                         2
                       )}
                     </p>
@@ -1082,10 +818,8 @@ const DeliveryAddress = () => {
             </div>
           </div>}
         </div>
-       {(cartData?.Products?.length > 0) && <PaymentPage
-          totalAmount={Number(totalSum - 25 + cartData.deliveryCharges).toFixed(
-            2
-          )}
+        {(cartData?.Products?.length > 0) && <PaymentPage
+          totalAmount={Number(totalAmount).toFixed(2)}
         />}
       </div>
     </>

@@ -6,10 +6,10 @@ import { useDispatch } from "react-redux";
 export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
     try {
         const response = await api.createCart(formData);
-        console.log(response.data);
+        // console.log(response.data);
         return response.data;
     } catch (error) {
-        console.log("error", error);
+        // console.log("error", error);
         throw error;
     }
 });
@@ -17,51 +17,50 @@ export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
 export const getCart = createAsyncThunk("cart/get-cart", async () => {
     try {
         const response = await api.getCart();
+        // console.log("getcart result",response);
         return response.data;
     } catch (error) {
-        console.log("getcart",error);
+        // console.log("getcart",error);
         throw error;
     }
 });
 
-export const deleteCartItem=createAsyncThunk("delete/CartItem",async({cartItemId,toast})=>{
-    try{
-        console.log('..deleteCartItem',cartItemId);
-    const response= await api.deleteCartItem(cartItemId);
-    if(response.data){
-        toast.success(response.data.message)
-    }
-    return response.data    
-    }catch(err){
+export const deleteCartItem = createAsyncThunk("delete/CartItem", async ({ cartItemId, toast }) => {
+    try {
+        // console.log('..deleteCartItem',cartItemId);
+        const response = await api.deleteCartItem(cartItemId);
+        if (response.data) {
+            toast.success(response.data.message)
+        }
+        return response.data
+    } catch (err) {
         toast.error(response.data.error)
     }
-    });
+});
 
-export const cartItemUpdateQuantity=createAsyncThunk("/cartItems/cartItemUpdateQuantity",async({cartItemId,isIncrement,toast})=>{
-    try{
-    const response= await api.cartUpdateQuantity({cartItemId,positiveAndNegativeValue:isIncrement});
+export const cartItemUpdateQuantity = createAsyncThunk("/cartItems/cartItemUpdateQuantity", async ({ cartItemId, isIncrement, toast }) => {
+    try {
+        const response = await api.cartUpdateQuantity({ cartItemId, positiveAndNegativeValue: isIncrement });
         toast.error(response.data.error)
         return response.data
-    }catch(err){
-    toast.error(err.response.data.error)
+    } catch (err) {
+        toast.error(err.response.data.error)
     }
-    });
+});
 
 export const addCartItems = createAsyncThunk("cart/add-item", async (formData) => {
     try {
         const response = await api.addCartItems(formData);
-        console.log("response-addCartItems", response);
         return response.data;
     } catch (error) {
-        console.log("error", error);
+        // console.log("error", error);
         throw error;
     }
 })
 
-export const deleteCartItems = createAsyncThunk("cart/delete-item", async ({ cartItemId, formData }) => {
+export const deleteCartItems = createAsyncThunk("cart/delete-item", async (cartItemId) => {
     try {
-        const response = await api.deleteCartItems({ cartItemId, formData });
-        console.log("response", response);
+        const response = await api.deleteCartItems(cartItemId);
         return response.data;
     } catch (error) {
         console.log("error", error);
@@ -74,21 +73,21 @@ export const getAllSaveForLater = createAsyncThunk("cart/getToSaveLater", async 
         const response = await api.getAllSaveForLater();
         return response.data;
     } catch (error) {
-        console.log("error", error);
+        // console.log("error", error);
         throw error;
     }
 });
 
-export const addAndMoveSaveLater = createAsyncThunk("cart/addAndMove/SaveLater", async ({cartItemId, isTrue,toast}) => {
+export const addAndMoveSaveLater = createAsyncThunk("cart/addAndMove/SaveLater", async ({ cartItemId, isTrue, toast }) => {
     try {
-        console.log('{cartItemId, isTrue,toast}',{cartItemId, isTrue});
-        const response = await api.addAndMoveSaveLater({cartItemId, saveForLater:isTrue});
-        if(response.data){
+        // console.log('{cartItemId, isTrue,toast}',{cartItemId, isTrue});
+        const response = await api.addAndMoveSaveLater({ cartItemId, saveForLater: isTrue });
+        if (response.data) {
             toast.success(response.data.message)
         }
         return response.data;
     } catch (error) {
-        console.log("error", error);
+        // console.log("error", error);
         throw error;
     }
 })
@@ -100,8 +99,8 @@ const cartSlice = createSlice({
         message: "",
         error: "",
         loading: false,
-        saveForlaterData:{
-            saveForlaterList:[],
+        saveForlaterData: {
+            saveForlaterList: [],
             message: "",
             error: "",
             loading: false
@@ -143,7 +142,7 @@ const cartSlice = createSlice({
                 state.error = action.error; // Assuming error object has a 'message' property
                 state.loading = false;
             })
-           
+
             .addCase(deleteCartItem.pending, (state, action) => {
                 state.data = []
                 state.message = "";
@@ -166,7 +165,7 @@ const cartSlice = createSlice({
                 state.error = "";
                 state.loading = true;
             })
-          
+
             .addCase(addCartItems.fulfilled, (state, action) => {
                 state.message = action.payload;
                 state.error = "";
@@ -178,19 +177,37 @@ const cartSlice = createSlice({
                 state.error = action.error; // Assuming error object has a 'message' property
                 state.loading = false;
             })
+
+            .addCase(deleteCartItems.pending, (state, action) => {
+                state.message = "";
+                state.error = "";
+                state.loading = true;
+            })
+
+            .addCase(deleteCartItems.fulfilled, (state, action) => {
+                state.message = action.payload;
+                state.error = "";
+                state.loading = false;
+            })
+            .addCase(deleteCartItems.rejected, (state, action) => {
+                state.message = "";
+                state.error = action.error; // Assuming error object has a 'message' property
+                state.loading = false;
+            })
+
             .addCase(cartItemUpdateQuantity.pending, (state, action) => {
                 state.message = "";
                 state.error = "";
                 state.loading = true;
             })
             .addCase(cartItemUpdateQuantity.fulfilled, (state, action) => {
-               if(action.payload){
-                state.data.Products.map((item)=> {
-                    if(item.productId == action.payload?.cartItemsResponse?.productId){
-                       return {...item.noOfProducts = action.payload?.cartItemsResponse?.noOfProducts} 
-                    }
-                })
-               }
+                if (action.payload) {
+                    state.data.Products.map((item) => {
+                        if (item.productId == action.payload?.cartItemsResponse?.productId) {
+                            return { ...item.noOfProducts = action.payload?.cartItemsResponse?.noOfProducts }
+                        }
+                    })
+                }
                 state.message = action.payload?.message;
                 state.error = "";
                 state.loading = false;
@@ -225,11 +242,11 @@ const cartSlice = createSlice({
                 state.saveForlaterData.loading = true;
             })
             .addCase(addAndMoveSaveLater.fulfilled, (state, action) => {
-                if(action.payload?.addToSaveForLaterResponse?.saveForLater){
-                    const index = state.data?.Products.findIndex((x)=> x?.productId === action.payload?.addToSaveForLaterResponse?.productId);
-                    state.data.Products.splice(index,1);
+                if (action.payload?.addToSaveForLaterResponse?.saveForLater) {
+                    const index = state.data?.Products.findIndex((x) => x?.productId === action.payload?.addToSaveForLaterResponse?.productId);
+                    state.data.Products.splice(index, 1);
                 }
-                
+
                 state.saveForlaterData.saveForlaterList = action.payload.addToSaveForLaterResponse
                 state.saveForlaterData.message = action.payload.message;
                 state.saveForlaterData.error = "";
@@ -241,7 +258,7 @@ const cartSlice = createSlice({
                 state.saveForlaterData.error = action.error;
                 state.saveForlaterData.loading = false;
             })
-           
+
     }
 });
 

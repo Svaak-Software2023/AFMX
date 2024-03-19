@@ -38,7 +38,7 @@ export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue}) => API
 export const addAndMoveSaveLater = (formData) => API.patch(`/cartItems/addAndMoveSaveLater`,formData);
 
 export const addCartItems =(formData)=>API.post(`/add-cart-items`,formData)
-export const deleteCartItems =({cartItemId,formData})=>API.delete(`/carts/cartItems/${cartItemId}`,formData)
+export const deleteCartItems =(cartItemId)=>API.delete(`/carts/cartItems/${cartItemId}`)
 
 
 // career and employment 

@@ -14,6 +14,7 @@ import { addCart, addCartItems, getCart } from "../../redux/featurs/cartSlice";
 import Loader from "../../components/Loader/Loader";
 import { createCart } from "../../redux/api";
 
+
 function SingleProduct() {
   const { parent, childe } = useParams();
   const { pathname } = useLocation();
@@ -70,6 +71,19 @@ function SingleProduct() {
     }
   };
 
+  const modal = document.getElementById("myModal");
+  const openImagePopup = (item) => {
+    const modalImg = document.getElementById("img01");
+    modal.style.display = "block";
+    modalImg.src = item;
+  }
+
+  const closeImageModel = () =>{
+    modal.style.display = "none";
+  }
+
+  
+
   if (productLoading) return <Loader />;
   return (
     <>
@@ -78,7 +92,7 @@ function SingleProduct() {
           <div className="col-lg-5 col-md-3 col-12 p-0 mb-3 bg-white">
             <Carousel showArrows={true}>
               {singleProduct.productImage?.map((item, i) => (
-                <div key={i} className="single-product-img">
+                <div key={i} className="single-product-img" onClick={() =>openImagePopup(item)}>
                   <img src={item} />
                 </div>
               ))}
@@ -242,6 +256,11 @@ function SingleProduct() {
           ))}
         </div>
       </div>
+
+      <div id="myModal" class="image_modal">
+  <span onClick={closeImageModel} class="close">&times;</span>
+  <img class="modal-content" id="img01" />
+</div>
     </>
   );
 }

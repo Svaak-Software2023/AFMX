@@ -75,7 +75,10 @@ const {length} = cartData
     })
   };
  
-  // if (cartLoading) return <Loader/>
+  const show_updateQuantityError = ()=>{
+    toast.error("Cannot increase quantity. Maximum quantity reached.")
+  }
+  if (cartLoading) return <Loader/>
   if((cartData?.Items?.length) || (saveForlaterList?.Products?.length)){
 
 
@@ -132,7 +135,7 @@ const {length} = cartData
                                 <Link onClick={()=>deleteHandler(item?.cartItemId)}>REMOVE</Link>
                               </div>
                               <div className="increase_decrease_btn mt-3">
-                                <div
+                               {(item?.noOfProducts > 1) ? <div
                                   className="value-button"
                                   id="decrease"
                                   onClick={()=> updateQuantity(item?.productId,false) }
@@ -140,15 +143,27 @@ const {length} = cartData
                                   -
 
                                 </div>
-                                {/* <input type="number" id="number" defaultValue={quantity} /> */}
+                                : <div
+                                  className="value-button"
+                                >
+                                  -
+
+                                </div>}
                                 <span className="pt-1 px-2  border">{item?.noOfProducts}</span>
-                                <div
+                               { (item?.quantity > item?.noOfProducts ) ? <div
                                   className="value-button"
                                   id="increase"
                                   onClick={()=> updateQuantity(item?.productId,true) }
                                 >
                                   +
                                 </div>
+                                : <div
+                                  className="value-button"
+                                  id="increase"
+                                  onClick={show_updateQuantityError}
+                                >
+                                  +
+                                </div>}
                               </div>
                             </div>
                           </div>

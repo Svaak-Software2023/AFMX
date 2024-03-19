@@ -197,7 +197,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 99999; /* Sit on top */
-    padding: 100px 0px;
+    padding: 20px 0px;
     left: 0;
     top: 0px;
     width: 100%; /* Full width */
@@ -212,8 +212,8 @@
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
-    height: fit-content;
+    max-width: 710px;
+    height: inherit;
   }
   
   
@@ -260,10 +260,14 @@
     }
     .image_modal {
         left: 0;
-        top: 40px;
+        top: 0px;
+        padding: 0px;
       }
       .close {
         top: 45px;
         left: 10px;
+        z-index: 1;
+        color: black;
+        width: 25px;
       }
   }

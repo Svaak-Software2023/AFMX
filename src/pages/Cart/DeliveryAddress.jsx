@@ -120,7 +120,6 @@ const DeliveryAddress = () => {
 
   useEffect(() => {
     dispatch(getAllAddress({ toast }));
-    // dispatch(getSingleAddress({ toast }));
     setUser(JSON.parse(localStorage.getItem("user")));
     if (logedInUser) {
       let formData = {
@@ -203,7 +202,6 @@ const DeliveryAddress = () => {
     }
   ) => {
     let data = [...formData];
-    // data[index][event.target.name] = event.target.value;
     data[index] = { ...data[index], [event.target.name]: event.target.value };
     setFormData(data);
     setaddNewForm({ ...addNewForm, [event.target.name]: event.target.value });
@@ -274,9 +272,6 @@ const DeliveryAddress = () => {
 
   // save for later or move to cart this cart item
   const saveForLaterOrMoveToCartHandler = (cartItemId, isTrue) => {
-    // const cartItemId = cartData.Items?.filter(
-    //   (item) => item.productId == productId
-    // )[0].cartItemId;
     dispatch(addAndMoveSaveLater({ cartItemId, isTrue, toast })).then(() => {
       if (isTrue) {
         dispatch(getAllSaveForLater({ toast }));
@@ -286,6 +281,10 @@ const DeliveryAddress = () => {
       }
     });
   };
+
+  const show_updateQuantityError = ()=>{
+    toast.error("Cannot increase quantity. Maximum quantity reached.")
+  }
 
   return (
     <>
@@ -566,7 +565,7 @@ const DeliveryAddress = () => {
                                           }}
                                         />
                                         <div className="increase_decrease_btn mt-2">
-                                          <div
+                                        { (item?.noOfProducts > 1) ? <div
                                             className="value-button"
                                             id="decrease"
                                             onClick={() =>
@@ -578,11 +577,16 @@ const DeliveryAddress = () => {
                                           >
                                             -
                                           </div>
-                                          {/* <input type="number" id="number" defaultValue={quantity} /> */}
+                                          :<div
+                                  className="value-button"
+                                >
+                                  -
+
+                                </div>}
                                           <span className="pt-1 px-2  border">
                                             {item?.noOfProducts}
                                           </span>
-                                          <div
+                                         {(item?.quantity > item?.noOfProducts ) ? <div
                                             className="value-button"
                                             id="increase"
                                             onClick={() =>
@@ -594,6 +598,13 @@ const DeliveryAddress = () => {
                                           >
                                             +
                                           </div>
+                                          :<div
+                                  className="value-button"
+                                  id="increase"
+                                  onClick={show_updateQuantityError}
+                                >
+                                  +
+                                </div>}
                                         </div>
                                       </div>
 

@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-// import productData from "../../assets/data/Productdata.json";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { getCart, cartItemUpdateQuantity,getAllSaveForLater, addAndMoveSaveLater,deleteCartItems } from "../../redux/featurs/cartSlice";
@@ -24,7 +23,6 @@ const Cart = () => {
   const logedInUser = useSelector((state) => state.auth.user)
   const { data: cartData, saveForlaterData:{saveForlaterList}, loading: cartLoading } = useSelector((state) => state.cart)
 const {length} = cartData
-  console.log('--------cartData-----',cartData);
 
   useEffect(() => {
     if (logedInUser) {
@@ -52,7 +50,7 @@ const {length} = cartData
   }
   }, [cartData.Products])
 
-  let totalAmount=totalSum-25+cartData.deliveryCharges
+  let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
 
 
   // delete cart items 
@@ -78,6 +76,7 @@ const {length} = cartData
   const show_updateQuantityError = ()=>{
     toast.error("Cannot increase quantity. Maximum quantity reached.")
   }
+
   if (cartLoading) return <Loader/>
   if((cartData?.Items?.length) || (saveForlaterList?.Products?.length)){
 

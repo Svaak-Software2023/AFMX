@@ -22,7 +22,6 @@ function Home() {
 
   
   const { data: cartData } = useSelector((state) => state.cart);
-  console.log('cartDatacartData',cartData);
 
   const dispatch=useDispatch()
 
@@ -185,10 +184,10 @@ function Home() {
                 <div className="memebership-list">
                   <h2>
                     CHEMICAL SHOPPING CENTER{" "}
-                    <a href className="position-relative">
+                    <Link to="/cart" className="position-relative">
                       <LazyLoadImage src="assets/img/cart.png" />
-                      {(cartData?.Products?.length) ? <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartData?.Products?.length}</span> : ""}
-                    </a>{" "}
+                      {(cartData)&&(cartData?.Products?.length) ? <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartData?.Products?.length}</span> : ""}
+                    </Link>{" "}
                     <a href>
                       <LazyLoadImage src="assets/img/bag.png" />
                     </a>

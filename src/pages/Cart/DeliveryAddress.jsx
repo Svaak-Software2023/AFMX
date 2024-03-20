@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import {loadStripe} from '@stripe/stripe-js';
+import {fetchCart,createCheckout} from "../../redux/api";
 import {
   getSingleAddress,
   addAddress,
@@ -23,7 +25,7 @@ import PaymentPage from "../paymentPage/PaymentPage";
 const DeliveryAddress = () => {
   const dispatch = useDispatch();
 
-  let { totalAmount } = useParams();
+  // let { totalAmount } = useParams();
 
   const [quantity, setQuantity] = useState(1);
 
@@ -285,6 +287,34 @@ const DeliveryAddress = () => {
   const show_updateQuantityError = ()=>{
     toast.error("Cannot increase quantity. Maximum quantity reached.")
   }
+
+  console.log('cartData---------------',cartData.cartId);
+  const makePayment = async() =>{
+    // const stripe = await loadStripe('pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL');
+    const {data} = await fetchCart();
+    console.log('cartResponse------------------',data.cartResponse);
+    const products = data.cartResponse.Products.map(({productId,productPrice,productName,noOfProducts:noofProducts})=>{
+      return {productId,noofProducts,productPrice,productName}
+    });
+    console.log('products------products',{products});
+   
+    const headers = {"Content-Type":"application/json"}
+    const {data:{productCheckout}}  = await createCheckout(cartData.cartId,{products});
+    window.location.href = productCheckout
+
+
+    // const session = await response.json();
+    // const result = stripe.redirectToCheckout({
+    //   sessionId:session.id
+    // });
+
+  //   if(result.error){
+  //     console.log(result.error)
+  // }
+
+}
+
+let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
 
   return (
     <>
@@ -815,7 +845,7 @@ const DeliveryAddress = () => {
                   <div className="col-sm-4 col-6 p-0">
                     <p className="total_amount">
                       $
-                      {Number(totalSum - 50 + cartData.deliveryCharges).toFixed(
+                      {Number(totalAmount).toFixed(
                         2
                       )}
                     </p>
@@ -829,9 +859,15 @@ const DeliveryAddress = () => {
             </div>
           </div>}
         </div>
-        {(cartData?.Products?.length > 0) && <PaymentPage
+        {(cartData?.Products?.length > 0) &&  (<div className="d-flex justify-content-center" onClick={makePayment}>
+                <button className="place_order_btn my-3">
+                    Pay $ {Number(totalAmount).toFixed(2)}
+                </button>
+        </div>)}
+
+        {/* {(cartData?.Products?.length > 0) && <PaymentPage
           totalAmount={Number(totalAmount).toFixed(2)}
-        />}
+        />} */}
       </div>
     </>
   );

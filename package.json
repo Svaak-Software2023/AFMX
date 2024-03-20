@@ -16,6 +16,7 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.1",
     "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^1.9.7",
+    "@stripe/stripe-js": "^3.0.10",
     "axios": "^1.5.1",
     "global": "^4.4.0",
     "moment": "^2.29.4",

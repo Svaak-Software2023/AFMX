@@ -7,6 +7,7 @@ import productData from "../../assets/data/Productdata.json";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import WatchWhether from "./WatchWhether";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import {getCart} from "../../redux/featurs/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getAllCategory } from "../../redux/featurs/productSlice";
@@ -19,10 +20,21 @@ function Home() {
   const serviceData1 = serviceData?.filter((item) => item.id < 19);
   const serviceData2 = serviceData?.filter((item) => item.id > 18);
 
+  
+  const { data: cartData } = useSelector((state) => state.cart);
+  console.log('cartDatacartData',cartData);
+
   const dispatch=useDispatch()
+
   useEffect(()=>{
+    let token=`${JSON.parse(localStorage.getItem('user'))?.token}`;
+    if (token) {
+      dispatch(getCart({token}))
+    }
     dispatch(getAllCategory())
   },[])
+
+ 
 
   return (
     <>
@@ -173,8 +185,9 @@ function Home() {
                 <div className="memebership-list">
                   <h2>
                     CHEMICAL SHOPPING CENTER{" "}
-                    <a href>
+                    <a href className="position-relative">
                       <LazyLoadImage src="assets/img/cart.png" />
+                      {(cartData?.Products?.length) ? <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartData?.Products?.length}</span> : ""}
                     </a>{" "}
                     <a href>
                       <LazyLoadImage src="assets/img/bag.png" />

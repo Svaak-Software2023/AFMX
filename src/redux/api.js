@@ -1,8 +1,7 @@
 import axios from "axios";
-// const baseURL = "https://api.americasfinestmaintenance.com/api";
-export const baseURL = "http://localhost:5000/api";
-// const API = axios.create({ baseURL });
-const API = axios.create({ baseURL });
+
+const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
+//const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;
 accessToken&&API.interceptors.request.use(

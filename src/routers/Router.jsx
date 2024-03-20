@@ -66,8 +66,8 @@ import RestroomRxServices from "../pages/serviceDepartment/serviceDepartmentItem
 import RestroomRXIndustriesWeServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXIndustriesWeServices/RestroomRXIndustriesWeServices";
 import PaymentPage from "../pages/paymentPage/PaymentPage";
 import NotFound from "../assets/404/NotFound";
-import Sussess from "../components/paymentSussess/Sussess";
-import Failed from "../components/paymentSussess/Failed";
+import Success from "../components/paymentSuccess/Success";
+import Failed from "../components/paymentSuccess/Failed";
 
 export const navigation = [
     { path: "*", name: "Default", element: <NotFound/>, isPrivate: false },
@@ -153,7 +153,7 @@ export const navigation = [
      // End Cart add to cart delivery address checkout order place route
      
      {path:"/restroom_RXMemberships" , name : "Membership" ,element:<RestroomRXMemberships />,isPrivate: false },
-     {path:"/success" , name : "Success" ,element:<Sussess />,isPrivate: false },
+     {path:"/success" , name : "Success" ,element:<Success />,isPrivate: false },
      {path:"/failed" , name : "Failed" ,element:<Failed />,isPrivate: false },
 
 ]

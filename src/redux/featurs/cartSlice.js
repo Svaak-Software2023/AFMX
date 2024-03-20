@@ -58,12 +58,16 @@ export const addCartItems = createAsyncThunk("cart/add-item", async (formData) =
     }
 })
 
-export const deleteCartItems = createAsyncThunk("cart/delete-item", async (cartItemId) => {
+export const deleteCartItems = createAsyncThunk("cart/delete-item", async ({cartItemId,toast}) => {
     try {
         const response = await api.deleteCartItems(cartItemId);
+        if (response.data) {
+            toast.success(response.data.message)
+        }
         return response.data;
     } catch (error) {
         console.log("error", error);
+        toast.error(error.response.data.error)
         throw error;
     }
 })

@@ -243,7 +243,7 @@ const DeliveryAddress = () => {
   };
 
   const removeCartItem = (cartItemId) => {
-    dispatch(deleteCartItems(cartItemId)).then(() => {
+    dispatch(deleteCartItems({cartItemId,toast})).then(() => {
       dispatch(getCart());
     });
   };
@@ -290,7 +290,7 @@ const DeliveryAddress = () => {
 
   console.log('cartData---------------',cartData.cartId);
   const makePayment = async() =>{
-    // const stripe = await loadStripe('pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL');
+    const stripe = await loadStripe('pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL');
     const {data} = await fetchCart();
     console.log('cartResponse------------------',data.cartResponse);
     const products = data.cartResponse.Products.map(({productId,productPrice,productName,noOfProducts:noofProducts})=>{
@@ -298,19 +298,15 @@ const DeliveryAddress = () => {
     });
     console.log('products------products',{products});
    
-    const headers = {"Content-Type":"application/json"}
     const {data:{productCheckout}}  = await createCheckout(cartData.cartId,{products});
-    window.location.href = productCheckout
+    // window.location.href = productCheckout
+console.log('productCheckoutproductCheckoutproductCheckout',productCheckout);
+    if(productCheckout){
+      return stripe.redirectToCheckout({
+        sessionId:productCheckout
+      });
+    }
 
-
-    // const session = await response.json();
-    // const result = stripe.redirectToCheckout({
-    //   sessionId:session.id
-    // });
-
-  //   if(result.error){
-  //     console.log(result.error)
-  // }
 
 }
 

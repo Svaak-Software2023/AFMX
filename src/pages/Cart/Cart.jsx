@@ -73,7 +73,11 @@ const {length} = cartData
     })
   };
  
-  // if (cartLoading) return <Loader/>
+  const show_updateQuantityError = ()=>{
+    toast.error("Cannot increase quantity. Maximum quantity reached.")
+  }
+
+  if (cartLoading) return <Loader/>
   if((cartData?.Items?.length) || (saveForlaterList?.Products?.length)){
 
 

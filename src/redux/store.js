@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import AuthReducer from "./featurs/authSlice";
-import ContactReducer from "./featurs/contactUsSlice";
-import ComplainReducer from "./featurs/complainSlice";
-import ProductReducer from "./featurs/productSlice";
-import careerReducer from "./featurs/careerSlice";
-import cartSlice from "./featurs/cartSlice";
-import addressReducer from "./featurs/addressSlice";
+import AuthReducer from "./features/authSlice";
+import ContactReducer from "./features/contactUsSlice";
+import ComplainReducer from "./features/complainSlice";
+import ProductReducer from "./features/productSlice";
+import careerReducer from "./features/careerSlice";
+import cartSlice from "./features/cartSlice";
+import addressReducer from "./features/addressSlice";
 
 export default configureStore({
   reducer: {

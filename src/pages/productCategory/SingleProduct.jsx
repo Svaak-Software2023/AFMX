@@ -9,8 +9,8 @@ import {
   getAllCategory,
   getProduct,
   getSingleProduct,
-} from "../../redux/featurs/productSlice";
-import { addCart, addCartItems, getCart } from "../../redux/featurs/cartSlice";
+} from "../../redux/features/productSlice";
+import { addCart, addCartItems, getCart } from "../../redux/features/cartSlice";
 import Loader from "../../components/Loader/Loader";
 import { createCart } from "../../redux/api";
 

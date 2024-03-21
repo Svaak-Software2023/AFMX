@@ -7,10 +7,10 @@ import productData from "../../assets/data/Productdata.json";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import WatchWhether from "./WatchWhether";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {getCart} from "../../redux/featurs/cartSlice";
+import {getCart} from "../../redux/features/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getAllCategory } from "../../redux/featurs/productSlice";
+import { getAllCategory } from "../../redux/features/productSlice";
 
 function Home() {
   const productCategoryData=useSelector((state)=>state.products.allCategory.data)

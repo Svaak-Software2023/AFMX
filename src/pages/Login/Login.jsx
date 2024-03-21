@@ -3,7 +3,7 @@ import "./login.css"
 import { toast } from 'react-toastify';
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { signin } from "../../redux/featurs/authSlice";
+import { signin } from "../../redux/features/authSlice";
 import { useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

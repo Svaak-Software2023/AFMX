@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { createExistingComplain } from '../../redux/featurs/complainSlice';
+import { createExistingComplain } from '../../redux/features/complainSlice';
 
 
 function ExistingClients() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./contact.css"
 import { useDispatch } from 'react-redux'
-import { contactForm } from '../../redux/featurs/contactUsSlice'
+import { contactForm } from '../../redux/features/contactUsSlice'
 import { toast } from 'react-toastify'
 import { TextField } from '@mui/material'
 

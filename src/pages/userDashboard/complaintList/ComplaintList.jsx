@@ -3,7 +3,7 @@ import LeftMenue from "../../../components/leftmenu/LeftMenu";
 import "./style.css"
 import DataTable from 'react-data-table-component';
 import { useEffect, useRef, useState } from "react";
-import { getComplaint } from "../../../redux/featurs/complainSlice";
+import { getComplaint } from "../../../redux/features/complainSlice";
 
 import { IoDocumentText, IoLogOut, IoMail, IoPerson, IoSettingsSharp } from "react-icons/io5";
 import { FaCamera, FaExclamationCircle, FaFolderPlus, FaIdCardAlt, FaPhoneAlt, FaVideo } from "react-icons/fa";

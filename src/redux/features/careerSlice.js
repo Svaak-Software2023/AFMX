@@ -4,7 +4,7 @@ import {toast} from "react-toastify"
 
 export const submitForm = createAsyncThunk("/submit/carrer/form", async (formData) => {
     try {
-        const response = await api.submitCreerForm(formData)
+        const response = await api.submitCareerForm(formData)
         console.log("response",response);
         toast.success(response?.data?.message)
         return response.data

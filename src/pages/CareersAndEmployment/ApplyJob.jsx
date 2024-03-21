@@ -3,7 +3,7 @@ import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
 import "./applyJob.css"
 import { useForm } from "react-hook-form"
 import { useDispatch } from "react-redux"
-import { submitForm } from "../../redux/featurs/careerSlice"
+import { submitForm } from "../../redux/features/careerSlice"
 import JobDescription from "./JobDescription"
 import { useParams } from "react-router-dom"
 

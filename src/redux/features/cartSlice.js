@@ -103,7 +103,7 @@ const cartSlice = createSlice({
         message: "",
         error: "",
         loading: false,
-        saveForlaterData: {
+        saveForLaterData: {
             saveForlaterList: [],
             message: "",
             error: "",
@@ -222,28 +222,28 @@ const cartSlice = createSlice({
                 state.loading = false;
             })
             .addCase(getAllSaveForLater.pending, (state, action) => {
-                state.saveForlaterData.saveForlaterList = []
-                state.saveForlaterData.message = "";
-                state.saveForlaterData.error = "";
-                state.saveForlaterData.loading = true;
+                state.saveForLaterData.saveForlaterList = []
+                state.saveForLaterData.message = "";
+                state.saveForLaterData.error = "";
+                state.saveForLaterData.loading = true;
             })
             .addCase(getAllSaveForLater.fulfilled, (state, action) => {
-                state.saveForlaterData.saveForlaterList = action.payload.cartResponse
-                state.saveForlaterData.message = action.payload.message;
-                state.saveForlaterData.error = "";
-                state.saveForlaterData.loading = false;
+                state.saveForLaterData.saveForlaterList = action.payload.cartResponse
+                state.saveForLaterData.message = action.payload.message;
+                state.saveForLaterData.error = "";
+                state.saveForLaterData.loading = false;
             })
             .addCase(getAllSaveForLater.rejected, (state, action) => {
-                state.saveForlaterData.saveForlaterList = []
-                state.saveForlaterData.message = "";
-                state.saveForlaterData.error = action.error;
-                state.saveForlaterData.loading = false;
+                state.saveForLaterData.saveForlaterList = []
+                state.saveForLaterData.message = "";
+                state.saveForLaterData.error = action.error;
+                state.saveForLaterData.loading = false;
             })
             .addCase(addAndMoveSaveLater.pending, (state, action) => {
-                state.saveForlaterData.saveForlaterList = []
-                state.saveForlaterData.message = "";
-                state.saveForlaterData.error = "";
-                state.saveForlaterData.loading = true;
+                state.saveForLaterData.saveForlaterList = []
+                state.saveForLaterData.message = "";
+                state.saveForLaterData.error = "";
+                state.saveForLaterData.loading = true;
             })
             .addCase(addAndMoveSaveLater.fulfilled, (state, action) => {
                 if (action.payload?.addToSaveForLaterResponse?.saveForLater) {
@@ -251,16 +251,16 @@ const cartSlice = createSlice({
                     state.data.Products.splice(index, 1);
                 }
 
-                state.saveForlaterData.saveForlaterList = action.payload.addToSaveForLaterResponse
-                state.saveForlaterData.message = action.payload.message;
-                state.saveForlaterData.error = "";
-                state.saveForlaterData.loading = false;
+                state.saveForLaterData.saveForlaterList = action.payload.addToSaveForLaterResponse
+                state.saveForLaterData.message = action.payload.message;
+                state.saveForLaterData.error = "";
+                state.saveForLaterData.loading = false;
             })
             .addCase(addAndMoveSaveLater.rejected, (state, action) => {
-                state.saveForlaterData.saveForlaterList = []
-                state.saveForlaterData.message = "";
-                state.saveForlaterData.error = action.error;
-                state.saveForlaterData.loading = false;
+                state.saveForLaterData.saveForlaterList = []
+                state.saveForLaterData.message = "";
+                state.saveForLaterData.error = action.error;
+                state.saveForLaterData.loading = false;
             })
 
     }

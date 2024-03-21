@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 import "./create_acoount.css"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { signup } from "../../redux/featurs/authSlice";
+import { signup } from "../../redux/features/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

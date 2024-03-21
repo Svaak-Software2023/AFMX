@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import productData from "../../assets/data/Productdata.json"
-import { getCart, cartItemUpdateQuantity } from "../../redux/featurs/cartSlice";
+import { getCart, cartItemUpdateQuantity } from "../../redux/features/cartSlice";
 import { useSelector } from "react-redux";
 
 const AddToCart = () => {

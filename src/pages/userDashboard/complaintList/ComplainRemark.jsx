@@ -3,7 +3,7 @@ import { IoSend } from "react-icons/io5";
 import React, { useEffect, useState } from 'react'
 import moment from "moment";
 import { useDispatch, useSelector } from "react-redux";
-import { createRemarks, getComplaint } from "../../../redux/featurs/complainSlice";
+import { createRemarks, getComplaint } from "../../../redux/features/complainSlice";
 
 function ComplainRemark({ data }) {
     function formateDate(date) {

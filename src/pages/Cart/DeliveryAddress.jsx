@@ -9,14 +9,14 @@ import {
   getAllAddress,
   deleteAddress,
   patchAddress,
-} from "../../redux/featurs/addressSlice";
+} from "../../redux/features/addressSlice";
 import {
   deleteCartItems,
   getCart,
   cartItemUpdateQuantity,
   getAllSaveForLater,
   addAndMoveSaveLater,
-} from "../../redux/featurs/cartSlice";
+} from "../../redux/features/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
@@ -116,7 +116,7 @@ const DeliveryAddress = () => {
   const logedInUser = useSelector((state) => state.auth.user);
   const {
     data: cartData,
-    saveForlaterData: { saveForlaterList },
+    saveForLaterData: { saveForLaterList },
     loading: cartLoading,
   } = useSelector((state) => state.cart);
 
@@ -682,16 +682,16 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
                               ))}
                           </div>
                         </div>}
-                        {/* {(saveForlaterList?.Products?.length > 0) && (
+                        {/* {(saveForLaterList?.Products?.length > 0) && (
                             <div className="m-0 pt-3">
                               <div className="card mb-2 m-0 ">
                                 <h6 className="price_details px-3 pt-3">
                                   Saved For Later (
-                                  {saveForlaterList?.Products?.length})
+                                  {saveForLaterList?.Products?.length})
                                 </h6>
                                 <hr />
-                                {saveForlaterList &&
-                                  saveForlaterList?.Products?.map((item, i) => (
+                                {saveForLaterList &&
+                                  saveForLaterList?.Products?.map((item, i) => (
                                     <div className="card-body" key={i}>
                                       <div className="row mb-5">
                                         <div className="col-12 col-md-8 col-lg-8 col-sm-8 items">

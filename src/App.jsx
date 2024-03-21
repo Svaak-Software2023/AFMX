@@ -8,7 +8,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./App.css"
 import { navigation } from "./routers/Router";
 import Authentication from "./authentication/Authentication";
-import { setUser } from "./redux/featurs/authSlice";
+import { setUser } from "./redux/features/authSlice";
 import { useDispatch } from "react-redux";
 
 function App() {

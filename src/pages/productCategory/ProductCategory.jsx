@@ -4,7 +4,7 @@ import ProductCard from "./component/ProductCard"
 // import productData from "../../assets/data/Productdata.json"
 import "./product.css"
 import { useEffect } from "react";
-import { getProduct } from "../../redux/featurs/productSlice";
+import { getProduct } from "../../redux/features/productSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../../components/Loader/Loader";
 

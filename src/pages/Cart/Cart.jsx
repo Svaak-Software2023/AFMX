@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { getCart, cartItemUpdateQuantity,getAllSaveForLater, addAndMoveSaveLater,deleteCartItems } from "../../redux/featurs/cartSlice";
+import { getCart, cartItemUpdateQuantity,getAllSaveForLater, addAndMoveSaveLater,deleteCartItems } from "../../redux/features/cartSlice";
 import { toast } from "react-toastify";
 import Loader from "../../components/Loader/Loader";
 
@@ -20,14 +20,14 @@ const Cart = () => {
     }
   };
   
-  const logedInUser = useSelector((state) => state.auth.user)
-  const { data: cartData, saveForlaterData:{saveForlaterList}, loading: cartLoading } = useSelector((state) => state.cart)
+  const loggedInUser = useSelector((state) => state.auth.user)
+  const { data: cartData, saveForLaterData:{saveForLaterList}, loading: cartLoading } = useSelector((state) => state.cart)
 const {length} = cartData
 
   useEffect(() => {
-    if (logedInUser) {
+    if (loggedInUser) {
       let formData = {
-        token: logedInUser?.token
+        token: loggedInUser?.token
       }
       // console.log("formData",formData);
       dispatch(getCart(formData))
@@ -78,7 +78,7 @@ const {length} = cartData
   }
 
   if (cartLoading) return <Loader/>
-  if((cartData?.Items?.length) || (saveForlaterList?.Products?.length)){
+  if((cartData?.Items?.length) || (saveForLaterList?.Products?.length)){
 
 
     return (
@@ -91,7 +91,7 @@ const {length} = cartData
                 <div className="card">
                   <div className="card-body">
                     <div
-                      className="delivery_address_list_buttton">
+                      className="delivery_address_list_button">
                       <div className="delivery_address_list">
                         <h4>Deliver to:</h4>
                         <p>Address to deliver place</p>
@@ -179,11 +179,11 @@ const {length} = cartData
               </div>
 
               {/* save for later */}
-             {(saveForlaterList?.Products?.length > 0)  && <div className="m-0" >
+             {(saveForLaterList?.Products?.length > 0)  && <div className="m-0" >
                   <div className="card mb-2 m-0 ">
-                  <h6 className="price_details px-3 pt-3">Saved For Later ({saveForlaterList?.Products?.length})</h6>
+                  <h6 className="price_details px-3 pt-3">Saved For Later ({saveForLaterList?.Products?.length})</h6>
                 <hr />
-                {saveForlaterList && saveForlaterList?.Products?.map((item, i) =>
+                {saveForLaterList && saveForLaterList?.Products?.map((item, i) =>
                     <div className="card-body" key={i}>
                       <div className="row mb-5">
                         <div className="col-12 col-md-8 col-lg-8 col-sm-8 items">

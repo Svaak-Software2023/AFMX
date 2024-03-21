@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
-//const API = axios.create({ baseURL: "http://localhost:5000/api" });
+//const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
+const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;
 accessToken&&API.interceptors.request.use(
@@ -42,7 +42,7 @@ export const deleteCartItems =(cartItemId)=>API.delete(`/carts/cartItems/${cartI
 
 
 // career and employment 
-export const submitCreerForm = (formData) => API.post('/create-career', formData)
+export const submitCareerForm = (formData) => API.post('/create-career', formData)
 
 
 // Address

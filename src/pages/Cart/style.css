@@ -73,13 +73,11 @@ p{color: #504D4D;}
 }
 .place_order_btn{
     display: block;
-    margin-left: auto;
     background-color: #D00808;
     color: #fff;
-    font-size: 14px;
-    line-height: 20.57px;
+    font-size: 12px;
     font-weight: 600;
-    padding: 15px 40px;
+    padding: 4px 40px;
     border: none;
 }
 
@@ -254,8 +252,8 @@ hr{
         width: 70%;
     }
     .place_order_btn {
-        padding: 12px 20px;
-        font-size: 14px;
+        padding: 4px 20px;
+        font-size: 12px;
     }
   }
   @media screen and (max-width: 1200px) {

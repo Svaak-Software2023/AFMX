@@ -1,4 +1,5 @@
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
+import PaymentPage from "../../../paymentPage/PaymentPage";
 import "./RestroomRXMemberships.css";
 import { Link } from "react-router-dom";
 
@@ -126,8 +127,9 @@ const RestroomRXMemberships = () => {
                       <p> {item?.cost1} </p>
                       <p> {item?.cost2} </p>
                     </div>
-                    <Link to={item.name} target="_blank" className="d-flex align-items-end"><button> More... </button></Link>
+                    {/* <Link to={item.name} target="_blank" className="d-flex align-items-end"><button> More... </button></Link> */}
                   </div>
+                    {(index < 3) && <PaymentPage totalAmount={Number(item?.cost2.split("$")[1])} goToUrl={item.name} />}
                 </div>
               </div>
             ))}

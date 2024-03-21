@@ -2,7 +2,8 @@
 import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 // import Razorpay from 'razorpay';
-export default function PaymentPage({ totalAmount }) {
+export default function PaymentPage({ totalAmount,goToUrl }) {
+    console.log('///////////totalAmount..',totalAmount,goToUrl);
     // Convert totalAmount to a number and then multiply by 100
     let totalSum = Math.round(Number(totalAmount) * 100);
 
@@ -38,7 +39,7 @@ export default function PaymentPage({ totalAmount }) {
             description: "Thanks for purchasing",
             handler: (response) => {
                 if (response.razorpay_payment_id) {
-                    navigate("/thank_you");
+                    navigate(goToUrl);
                 }
             }
         };
@@ -51,7 +52,7 @@ export default function PaymentPage({ totalAmount }) {
         <>
             <div className="d-flex justify-content-center">
                 <button className="place_order_btn my-3" onClick={() => displayRazorPay()}>
-                    Pay $ {(totalSum !== 0) ? totalSum / 100 : ""}
+                Subscribe
                 </button>
             </div>
         </>

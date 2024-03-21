@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import "./singleProduct.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import ProductCard from "./component/ProductCard";
 import productData from "../../assets/data/Productdata.json";
@@ -18,6 +18,7 @@ import { createCart } from "../../redux/api";
 function SingleProduct() {
   const { parent, childe } = useParams();
   const { pathname } = useLocation();
+  const [isLoading, setIsloading] = useState(true)
 
   const dispatch = useDispatch();
 
@@ -108,9 +109,7 @@ function SingleProduct() {
                 </button>
               </div>
               <div className="single-product-button">
-                <Link to="/cart">
-                  <button className="buy-now-button">Buy Now</button>
-                </Link>
+                  <button className="buy-now-button" onClick={addToCartHandler}>Buy Now</button>
               </div>
             </div>
           </div>

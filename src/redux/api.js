@@ -1,6 +1,10 @@
 import axios from "axios";
 
+<<<<<<< Updated upstream
 //const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
+=======
+// const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
+>>>>>>> Stashed changes
 const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;

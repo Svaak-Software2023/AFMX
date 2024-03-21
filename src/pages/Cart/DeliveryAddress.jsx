@@ -303,7 +303,7 @@ const DeliveryAddress = () => {
 console.log('productCheckoutproductCheckoutproductCheckout',productCheckout);
     if(productCheckout){
       return stripe.redirectToCheckout({
-        sessionId:productCheckout
+        sessionId:productCheckout.sessionId
       });
     }
 

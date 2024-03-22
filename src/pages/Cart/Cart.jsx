@@ -6,17 +6,19 @@ import { toast } from "react-toastify";
 import Loader from "../../components/Loader/Loader";
 
 const Cart = () => {
-
+  const token=`${JSON.parse(localStorage.getItem('user')).token}`;
     const dispatch=useDispatch()
     const navigate=useNavigate()
+
+    console.log('tttttttttttt',token);
 
   
   const updateQuantity = (productId,isIncrement) => {
     let {cartItemId} =  cartData.Items?.filter(item=> item.productId === productId )[0];
     if(isIncrement){
-     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast,token}))
     } else{
-      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast,token}))
     }
   };
   
@@ -30,8 +32,8 @@ const {length} = cartData
         token: loggedInUser?.token
       }
       // console.log("formData",formData);
-      dispatch(getCart(formData))
-      dispatch(getAllSaveForLater({toast}))
+      dispatch(getCart({formData,token}))
+      dispatch(getAllSaveForLater({token,toast}))
     } else {
       navigate("/login")
     }
@@ -55,20 +57,20 @@ const {length} = cartData
 
   // delete cart items 
   const deleteHandler=(cartItemId)=>{
-    dispatch(deleteCartItems({cartItemId})).then(()=>{
-      dispatch(getCart());
-      dispatch(getAllSaveForLater({toast}));
+    dispatch(deleteCartItems({cartItemId,token})).then(()=>{
+      dispatch(getCart({token}));
+      dispatch(getAllSaveForLater({token,toast}));
     })
   }
 
   // save for later or move to cart this cart item
   const saveForLaterOrMoveToCartHandler=(cartItemId,isTrue)=>{
-    dispatch(addAndMoveSaveLater({cartItemId, isTrue,toast})).then(()=>{
+    dispatch(addAndMoveSaveLater({cartItemId, isTrue,toast,token})).then(()=>{
       if(isTrue){
-        dispatch(getAllSaveForLater({toast}));
+        dispatch(getAllSaveForLater({token,toast}));
       }else {
-        dispatch(getCart());
-        dispatch(getAllSaveForLater({toast}));
+        dispatch(getCart({token}));
+        dispatch(getAllSaveForLater({token,toast}));
       }
     })
   };

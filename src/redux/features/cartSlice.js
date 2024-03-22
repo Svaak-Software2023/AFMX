@@ -14,9 +14,9 @@ export const addCart = createAsyncThunk("cart/add-cart", async (formData) => {
     }
 });
 
-export const getCart = createAsyncThunk("cart/get-cart", async () => {
+export const getCart = createAsyncThunk("cart/get-cart", async ({token}) => {
     try {
-        const response = await api.fetchCart();
+        const response = await api.fetchCart(token);
         // console.log("getcart result",response);
         return response.data;
     } catch (error) {
@@ -38,9 +38,9 @@ export const deleteCartItem = createAsyncThunk("delete/CartItem", async ({ cartI
     }
 });
 
-export const cartItemUpdateQuantity = createAsyncThunk("/cartItems/cartItemUpdateQuantity", async ({ cartItemId, isIncrement, toast }) => {
+export const cartItemUpdateQuantity = createAsyncThunk("/cartItems/cartItemUpdateQuantity", async ({ cartItemId, isIncrement, toast,token }) => {
     try {
-        const response = await api.cartUpdateQuantity({ cartItemId, positiveAndNegativeValue: isIncrement });
+        const response = await api.cartUpdateQuantity({ cartItemId, positiveAndNegativeValue: isIncrement,token });
         toast.error(response.data.error)
         return response.data
     } catch (err) {
@@ -58,9 +58,9 @@ export const addCartItems = createAsyncThunk("cart/add-item", async (formData) =
     }
 })
 
-export const deleteCartItems = createAsyncThunk("cart/delete-item", async ({cartItemId,toast}) => {
+export const deleteCartItems = createAsyncThunk("cart/delete-item", async ({cartItemId,toast,token}) => {
     try {
-        const response = await api.deleteCartItems(cartItemId);
+        const response = await api.deleteCartItems(cartItemId,token);
         if (response.data) {
             toast.success(response.data.message)
         }
@@ -72,9 +72,9 @@ export const deleteCartItems = createAsyncThunk("cart/delete-item", async ({cart
     }
 })
 
-export const getAllSaveForLater = createAsyncThunk("cart/getToSaveLater", async ({ toast }) => {
+export const getAllSaveForLater = createAsyncThunk("cart/getToSaveLater", async ({token, toast }) => {
     try {
-        const response = await api.getAllSaveForLater();
+        const response = await api.getAllSaveForLater(token);
         return response.data;
     } catch (error) {
         // console.log("error", error);
@@ -82,10 +82,10 @@ export const getAllSaveForLater = createAsyncThunk("cart/getToSaveLater", async 
     }
 });
 
-export const addAndMoveSaveLater = createAsyncThunk("cart/addAndMove/SaveLater", async ({ cartItemId, isTrue, toast }) => {
+export const addAndMoveSaveLater = createAsyncThunk("cart/addAndMove/SaveLater", async ({ cartItemId, isTrue, toast ,token}) => {
     try {
         // console.log('{cartItemId, isTrue,toast}',{cartItemId, isTrue});
-        const response = await api.addAndMoveSaveLater({ cartItemId, saveForLater: isTrue });
+        const response = await api.addAndMoveSaveLater({ cartItemId, saveForLater: isTrue,token });
         if (response.data) {
             toast.success(response.data.message)
         }

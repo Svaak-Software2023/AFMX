@@ -24,6 +24,7 @@ import PaymentPage from "../paymentPage/PaymentPage";
 
 const DeliveryAddress = () => {
   const dispatch = useDispatch();
+  const token=`${JSON.parse(localStorage.getItem('user')).token}`;
 
   // let { totalAmount } = useParams();
 
@@ -127,8 +128,8 @@ const DeliveryAddress = () => {
       let formData = {
         token: logedInUser?.token,
       };
-      dispatch(getCart(formData));
-      dispatch(getAllSaveForLater({ toast }));
+      dispatch(getCart({formData,token}));
+      dispatch(getAllSaveForLater({ toast,token }));
     } else {
       navigate("/login");
     }
@@ -243,8 +244,8 @@ const DeliveryAddress = () => {
   };
 
   const removeCartItem = (cartItemId) => {
-    dispatch(deleteCartItems({cartItemId,toast})).then(() => {
-      dispatch(getCart());
+    dispatch(deleteCartItems({cartItemId,toast,token})).then(() => {
+      dispatch(getCart({token}));
     });
   };
 
@@ -253,9 +254,9 @@ const DeliveryAddress = () => {
       (item) => item.productId === productId
     )[0];
     if (isIncrement) {
-      dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast }));
+      dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast,token }));
     } else {
-      dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast }));
+      dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast,token }));
     }
   };
 
@@ -274,12 +275,12 @@ const DeliveryAddress = () => {
 
   // save for later or move to cart this cart item
   const saveForLaterOrMoveToCartHandler = (cartItemId, isTrue) => {
-    dispatch(addAndMoveSaveLater({ cartItemId, isTrue, toast })).then(() => {
+    dispatch(addAndMoveSaveLater({ cartItemId, isTrue, toast,token })).then(() => {
       if (isTrue) {
-        dispatch(getAllSaveForLater({ toast }));
+        dispatch(getAllSaveForLater({ toast,token }));
       } else {
-        dispatch(getCart());
-        dispatch(getAllSaveForLater({ toast }));
+        dispatch(getCart({token}));
+        dispatch(getAllSaveForLater({ toast,token }));
       }
     });
   };
@@ -291,14 +292,14 @@ const DeliveryAddress = () => {
   console.log('cartData---------------',cartData.cartId);
   const makePayment = async() =>{
     const stripe = await loadStripe('pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL');
-    const {data} = await fetchCart();
+    const {data} = await fetchCart(token);
     console.log('cartResponse------------------',data.cartResponse);
     const products = data.cartResponse.Products.map(({productId,productPrice,productName,noOfProducts:noofProducts})=>{
       return {productId,noofProducts,productPrice,productName}
     });
     console.log('products------products',{products});
    
-    const {data:{productCheckout}}  = await createCheckout(cartData.cartId,{products});
+    const {data:{productCheckout}}  = await createCheckout(cartData.cartId,{products},token);
     // window.location.href = productCheckout
 console.log('productCheckoutproductCheckoutproductCheckout',productCheckout);
     if(productCheckout){

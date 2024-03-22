@@ -47,18 +47,22 @@ function SingleProduct() {
   }, [pathname]);
 
   const addToCartHandler = async () => {
-    if (logedInUser && singleProduct) {
+    const token=`${JSON.parse(localStorage.getItem('user')).token}`;
+    const clientId=`${JSON.parse(localStorage.getItem('user')).clientId}`;
+
+
+    if ((token && clientId) && singleProduct) {
       const createCard = {
         deliveryCharges: 10,
         discountPrice: 50,
-        clientId: +logedInUser.clientId,
+        clientId: +clientId,
       };
-      const { data } = await createCart(createCard, logedInUser?.token);
+      const { data } = await createCart(createCard, token);
 
       if (data.cartResponse && data.cartResponse.cartId) {
         let formData = {
           cartId: data.cartResponse.cartId,
-          token: logedInUser?.token,
+          token: token,
           productId: singleProduct.productId,
           noOfProducts: 1,
           productPrice: singleProduct.productPrice,

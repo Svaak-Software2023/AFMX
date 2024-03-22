@@ -3,16 +3,16 @@ import axios from "axios";
 //const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
 const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
-let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;
-accessToken&&API.interceptors.request.use(
-    config => {
-      config.headers['x-access-token'] = accessToken;
-          return config;
-      },
-      error => {
-          return Promise.reject(error);
-      }
-  );
+// let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;
+// accessToken&&API.interceptors.request.use(
+//     config => {
+//       config.headers['x-access-token'] = accessToken;
+//           return config;
+//       },
+//       error => {
+//           return Promise.reject(error);
+//       }
+//   );
 
 
 export const signin = (formData) => API.post("/signin", formData);
@@ -31,14 +31,14 @@ export const allProductCategory = () => API.get("/all-product-category");
 export const getSingleProduct = (id) => API.get(`/products/${id}`);
 export const getProduct = (id) => API.get(`/all-product/${id}`);
 export const createCart = (formData,token = "") => API.post(`/add-cart?token=${token}`, formData);
-export const fetchCart = () => API.get(`/carts/get-cart`);
-export const getAllSaveForLater = () => API.get(`/carts/getAllSaveLater`);
+export const fetchCart = (token) => API.get(`/carts/get-cart?token=${token}`);
+export const getAllSaveForLater = (token) => API.get(`/carts/getAllSaveLater?token=${token}`);
 export const deleteCartItem = (cartItemId) => API.delete(`/carts/cartItems/${cartItemId}`);
-export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue}) => API.patch(`/cartItems/update-quantity/${cartItemId}`,{positiveAndNegativeValue});
-export const addAndMoveSaveLater = (formData) => API.patch(`/cartItems/addAndMoveSaveLater`,formData);
+export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue,token}) => API.patch(`/cartItems/update-quantity/${cartItemId}?token=${token}`,{positiveAndNegativeValue});
+export const addAndMoveSaveLater = (formData) => API.patch(`/cartItems/addAndMoveSaveLater?token=${formData.token}`,formData);
 
 export const addCartItems =(formData)=>API.post(`/add-cart-items`,formData)
-export const deleteCartItems =(cartItemId)=>API.delete(`/carts/cartItems/${cartItemId}`)
+export const deleteCartItems =(cartItemId,token)=>API.delete(`/carts/cartItems/${cartItemId}?token=${token}`)
 
 
 // career and employment 
@@ -51,7 +51,7 @@ export const getSingleAddress = (deliveryAddressId = 8) => API.get(`/address/sin
 export const getAllAddress = () => API.get('/address/all-address');
 export const patchAddress = (formData) => API.patch(`/address/update-address/${formData.deliveryAddressId}`,formData);
 export const deleteAddress = (deliveryAddressId) => API.delete(`/address/delete-address/${deliveryAddressId}`);
-export const createCheckout = (cartId,products) => API.post(`/checkout/create-checkout/${cartId}`,products);
+export const createCheckout = (cartId,products,token) => API.post(`/checkout/create-checkout/${cartId}?token=${token}`,products);
 
 
 

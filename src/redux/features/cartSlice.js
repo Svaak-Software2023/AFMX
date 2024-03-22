@@ -48,9 +48,9 @@ export const cartItemUpdateQuantity = createAsyncThunk("/cartItems/cartItemUpdat
     }
 });
 
-export const addCartItems = createAsyncThunk("cart/add-item", async (formData) => {
+export const addCartItems = createAsyncThunk("cart/add-item", async (formData,token) => {
     try {
-        const response = await api.addCartItems(formData);
+        const response = await api.addCartItems(formData,token);
         return response.data;
     } catch (error) {
         // console.log("error", error);

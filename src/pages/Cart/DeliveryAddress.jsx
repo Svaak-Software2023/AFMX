@@ -122,13 +122,10 @@ const DeliveryAddress = () => {
   } = useSelector((state) => state.cart);
 
   useEffect(() => {
-    dispatch(getAllAddress({ toast }));
+    dispatch(getAllAddress({ toast, token }));
     setUser(JSON.parse(localStorage.getItem("user")));
     if (logedInUser) {
-      let formData = {
-        token: logedInUser?.token,
-      };
-      dispatch(getCart({formData,token}));
+      dispatch(getCart({token}));
       dispatch(getAllSaveForLater({ toast,token }));
     } else {
       navigate("/login");
@@ -174,10 +171,10 @@ const DeliveryAddress = () => {
     } else {
       if (updateNewForm.deliveryAddressId) {
         console.log("updateNewForm11IF", updateNewForm);
-        dispatch(patchAddress({ updateNewForm, toast }));
+        dispatch(patchAddress({ updateNewForm, toast, token }));
       } else {
         console.log("updateNewForm11Else", updateNewForm);
-        dispatch(addAddress({ addNewForm, toast }));
+        dispatch(addAddress({ addNewForm, toast,token }));
       }
     }
   };
@@ -238,7 +235,7 @@ const DeliveryAddress = () => {
     if (data.length > 0) {
       data.splice(index, 1);
       setFormData(data);
-      dispatch(deleteAddress({ deliveryAddressId, toast }));
+      dispatch(deleteAddress({ deliveryAddressId, toast, token }));
       console.log("deliveryAddressId", deliveryAddressId);
     }
   };

@@ -9,9 +9,6 @@ const Cart = () => {
   const token=`${JSON.parse(localStorage.getItem('user')).token}`;
     const dispatch=useDispatch()
     const navigate=useNavigate()
-
-    console.log('tttttttttttt',token);
-
   
   const updateQuantity = (productId,isIncrement) => {
     let {cartItemId} =  cartData.Items?.filter(item=> item.productId === productId )[0];
@@ -28,11 +25,7 @@ const {length} = cartData
 
   useEffect(() => {
     if (loggedInUser) {
-      let formData = {
-        token: loggedInUser?.token
-      }
-      // console.log("formData",formData);
-      dispatch(getCart({formData,token}))
+      dispatch(getCart({token}))
       dispatch(getAllSaveForLater({token,toast}))
     } else {
       navigate("/login")

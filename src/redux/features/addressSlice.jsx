@@ -15,9 +15,9 @@ if(response.data){
 }
 });
 
-export const addAddress=createAsyncThunk("addAddress",async({addNewForm,toast})=>{
+export const addAddress=createAsyncThunk("addAddress",async({addNewForm,toast,token})=>{
     try{
-    const response= await api.addAddress(addNewForm)
+    const response= await api.addAddress(addNewForm,token)
     if(response.data){
         toast.success(response.data.message)
         return response.data
@@ -27,9 +27,9 @@ export const addAddress=createAsyncThunk("addAddress",async({addNewForm,toast})=
     }
     });
 
-export const getAllAddress=createAsyncThunk("allAddress",async({toast})=>{
+export const getAllAddress=createAsyncThunk("allAddress",async({toast,token})=>{
     try{
-    const response= await api.getAllAddress()
+    const response= await api.getAllAddress(token)
     if(response.data){
         toast.success(response.data.message)
     }
@@ -41,10 +41,10 @@ export const getAllAddress=createAsyncThunk("allAddress",async({toast})=>{
     }
     });
 
-export const deleteAddress=createAsyncThunk("deleteAddress",async({deliveryAddressId,toast})=>{
+export const deleteAddress=createAsyncThunk("deleteAddress",async({deliveryAddressId,toast,token})=>{
     try{
         console.log('..deliveryAddressId',deliveryAddressId);
-    const response= await api.deleteAddress(deliveryAddressId)
+    const response= await api.deleteAddress(deliveryAddressId,token)
     if(response.data){
         toast.success(response.data.message)
     }
@@ -53,10 +53,10 @@ export const deleteAddress=createAsyncThunk("deleteAddress",async({deliveryAddre
         toast.error(response.data.error)
     }
     });
-export const patchAddress=createAsyncThunk("patchAddress",async({updateNewForm,toast})=>{
+export const patchAddress=createAsyncThunk("patchAddress",async({updateNewForm,toast,token})=>{
     try{
         console.log('updateNewForm updateNewForm',updateNewForm);
-    const response= await api.patchAddress(updateNewForm)
+    const response= await api.patchAddress(updateNewForm,token)
     if(response.data){
         toast.success(response.data.message)
     }

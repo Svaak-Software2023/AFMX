@@ -50,7 +50,7 @@ function SingleProduct() {
     const token=`${JSON.parse(localStorage.getItem('user')).token}`;
     const clientId=`${JSON.parse(localStorage.getItem('user')).clientId}`;
 
-
+console.log('token------------------token',token);
     if ((token && clientId) && singleProduct) {
       const createCard = {
         deliveryCharges: 10,
@@ -67,7 +67,7 @@ function SingleProduct() {
           noOfProducts: 1,
           productPrice: singleProduct.productPrice,
         };
-        dispatch(addCartItems(formData)).then(() => {
+        dispatch(addCartItems(formData,token)).then(() => {
           navigate("/cart");
         });
       }

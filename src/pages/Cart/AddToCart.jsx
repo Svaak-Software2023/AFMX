@@ -6,6 +6,7 @@ import { getCart, cartItemUpdateQuantity } from "../../redux/features/cartSlice"
 import { useSelector } from "react-redux";
 
 const AddToCart = () => {
+  const token=`${JSON.parse(localStorage.getItem('user')).token}`;
   const [{ data }] = productData;
   const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
   const { data: cartData, loading: cartLoading } = useSelector((state) => state.cart)
@@ -13,9 +14,9 @@ const AddToCart = () => {
   const updateQuantity = (productId,isIncrement) => {
     let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
     if(isIncrement){
-     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast,token}))
     } else{
-      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast}))
+      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast,token}))
     }
   };
 

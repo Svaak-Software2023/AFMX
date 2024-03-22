@@ -3,17 +3,6 @@ import axios from "axios";
 //const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
 const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
-// let accessToken=`${JSON.parse(localStorage.getItem('user'))?.token}`;
-// accessToken&&API.interceptors.request.use(
-//     config => {
-//       config.headers['x-access-token'] = accessToken;
-//           return config;
-//       },
-//       error => {
-//           return Promise.reject(error);
-//       }
-//   );
-
 
 export const signin = (formData) => API.post("/signin", formData);
 export const signup = (formData) => API.post("/signup", formData);
@@ -37,7 +26,7 @@ export const deleteCartItem = (cartItemId) => API.delete(`/carts/cartItems/${car
 export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue,token}) => API.patch(`/cartItems/update-quantity/${cartItemId}?token=${token}`,{positiveAndNegativeValue});
 export const addAndMoveSaveLater = (formData) => API.patch(`/cartItems/addAndMoveSaveLater?token=${formData.token}`,formData);
 
-export const addCartItems =(formData)=>API.post(`/add-cart-items`,formData)
+export const addCartItems =(formData,token)=>API.post(`/add-cart-items?token=${formData.token}`,formData)
 export const deleteCartItems =(cartItemId,token)=>API.delete(`/carts/cartItems/${cartItemId}?token=${token}`)
 
 
@@ -46,11 +35,11 @@ export const submitCareerForm = (formData) => API.post('/create-career', formDat
 
 
 // Address
-export const addAddress = (formData) => API.post('/address/create-address', formData);
-export const getSingleAddress = (deliveryAddressId = 8) => API.get(`/address/single-address/${deliveryAddressId}`);
-export const getAllAddress = () => API.get('/address/all-address');
-export const patchAddress = (formData) => API.patch(`/address/update-address/${formData.deliveryAddressId}`,formData);
-export const deleteAddress = (deliveryAddressId) => API.delete(`/address/delete-address/${deliveryAddressId}`);
+export const addAddress = (formData,token) => API.post(`/address/create-address?token=${token}`, formData);
+export const getSingleAddress = (deliveryAddressId = 8) => API.get(`/address/single-address/${deliveryAddressId}?token=${token}`);
+export const getAllAddress = (token) => API.get(`/address/all-address?token=${token}`);
+export const patchAddress = (formData,token) => API.patch(`/address/update-address/${formData.deliveryAddressId}?token=${token}`,formData);
+export const deleteAddress = (deliveryAddressId,token) => API.delete(`/address/delete-address/${deliveryAddressId}?token=${token}`);
 export const createCheckout = (cartId,products,token) => API.post(`/checkout/create-checkout/${cartId}?token=${token}`,products);
 
 

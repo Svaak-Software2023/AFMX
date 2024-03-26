@@ -9,7 +9,7 @@ export const createExistingComplain = createAsyncThunk(
     try {
       const response = await api.existingComplainCreate(newData);
       toast.success(response.data.message);
-      response && navigate("/");
+      response && navigate("/user-complaint-list");
       return response.data;
     } catch (err) {
       if (!err.response) {

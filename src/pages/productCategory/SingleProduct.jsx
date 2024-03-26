@@ -280,7 +280,7 @@ function SingleProduct() {
 
       <div id="myModal" className="image_modal">
   <span onClick={closeImageModel} className="close">&times;</span>
-  <img className="modal-content" id="img01" />
+  <img className="single-product-modal-content" id="img01" />
 </div>
     </>
   );

@@ -31,7 +31,7 @@ export const getAllAddress=createAsyncThunk("allAddress",async({toast,token})=>{
     try{
     const response= await api.getAllAddress(token)
     if(response.data){
-        toast.success(response.data.message)
+        // toast.success(response.data.message)
     }
     return response.data    
 

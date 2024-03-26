@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const API = axios.create({ baseURL: "https://api.americasfinestmaintenance.com/api" });
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+const API = axios.create({ baseURL: "https://afmx.madextube700.com/api" });
 
 
 export const signin = (formData) => API.post("/signin", formData);

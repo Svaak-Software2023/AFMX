@@ -696,7 +696,7 @@ font-size: 1.2em;
 @media (min-width: 1200px) and (max-width: 1400px) {
   .navbar>ul>li {
     white-space: nowrap;
-    padding: 10px 7px;
+    padding: 10px 3px;
     border-right: 1px solid #ccc;
   }
 }
@@ -711,7 +711,7 @@ font-size: 1.2em;
   .navbar a,
   .navbar a:focus {
     padding: 0 2px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
 }

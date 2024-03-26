@@ -134,7 +134,7 @@ const DeliveryAddress = () => {
   }, []);
 
   const { data: address, loading } = useSelector((state) => state.address);
-  console.log("addressaddress", address);
+  // console.log("addressaddress", address);
 
   const changehandler = ({ target }) => {
     const { name, value } = target;
@@ -167,13 +167,13 @@ const DeliveryAddress = () => {
     event.preventDefault();
     setFormValue(key);
     if (isEdit) {
-      console.log("isEdit isEditIF", isEdit);
+      // console.log("isEdit isEditIF", isEdit);
     } else {
       if (updateNewForm.deliveryAddressId) {
-        console.log("updateNewForm11IF", updateNewForm);
+        // console.log("updateNewForm11IF", updateNewForm);
         dispatch(patchAddress({ updateNewForm, toast, token }));
       } else {
-        console.log("updateNewForm11Else", updateNewForm);
+        // console.log("updateNewForm11Else", updateNewForm);
         dispatch(addAddress({ addNewForm, toast,token }));
       }
     }
@@ -236,7 +236,7 @@ const DeliveryAddress = () => {
       data.splice(index, 1);
       setFormData(data);
       dispatch(deleteAddress({ deliveryAddressId, toast, token }));
-      console.log("deliveryAddressId", deliveryAddressId);
+      // console.log("deliveryAddressId", deliveryAddressId);
     }
   };
 

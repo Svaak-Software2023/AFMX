@@ -171,8 +171,8 @@ function Navbar() {
                     )}
                   </li>
                   <li>
-                    <Link target="_blank" to="/service-list" className="nav-link ">
-                      Services
+                    <Link target="_blank" to="/service-department-list" className="nav-link ">
+                      Service Department
                     </Link>
                   </li>
                   <li>
@@ -189,7 +189,7 @@ function Navbar() {
                     {/* <Link target="_blank" to="/media/1" className="nav-link ">
                       Media
                     </Link> */}
-                    <Link target="_blank" to="https://golden-starburst-475b60.netlify.app/" className="nav-link ">
+                    <Link target="_blank" to="https://madextube.com/" className="nav-link ">
                       Media
                     </Link>
                   </li>

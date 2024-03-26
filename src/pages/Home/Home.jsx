@@ -4,21 +4,20 @@ import Circle from "./Circle";
 import { Link } from "react-router-dom";
 import helpingHand from "../../assets/data/helpingHand.json";
 import productData from "../../assets/data/Productdata.json";
-import serviceData from "../../assets/data/serviceDepartmentData.json";
 import WatchWhether from "./WatchWhether";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import {getCart} from "../../redux/features/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getAllCategory } from "../../redux/features/productSlice";
+import ServiceDepartment from "./ServiceDepartment";
 
 function Home() {
   const productCategoryData=useSelector((state)=>state.products.allCategory.data)
   // console.log("productCategoryData",productCategoryData);
   const productData1 = productCategoryData?.filter((item,i) => i < 8);
   const productData2 = productCategoryData?.filter((item,i) =>i > 7);
-  const serviceData1 = serviceData?.filter((item) => item.id < 19);
-  const serviceData2 = serviceData?.filter((item) => item.id > 18);
+ 
 
   
   const { data: cartData } = useSelector((state) => state.cart);
@@ -147,34 +146,7 @@ function Home() {
 
         {/* our Service Department  */}
 
-        <div className="services-memebership mb-3">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="memebership-list">
-                  <h2>Our Service Department</h2>
-                  <div className="single-row">
-                    <ul className>
-                      {serviceData1?.map((item) => (
-                        <li key={item.id}>
-                          <Link to={`/service-department/${item.name.toString()}`}>{item.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <ul className>
-                      {serviceData2?.map((item) => (
-                        <li key={item.id}>
-                          <Link to={`/service-department/${item.name}`}>{item.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  {/* <div className="load-more"><Link to="/new" >Load More</Link></div> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ServiceDepartment/>
 
         {/* chemical shopping center  */}
         <div className="services-memebership mb-3">

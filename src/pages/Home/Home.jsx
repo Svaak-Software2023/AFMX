@@ -10,7 +10,7 @@ import {getCart} from "../../redux/features/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getAllCategory } from "../../redux/features/productSlice";
-import ServiceDepartment from "./ServiceDepartment";
+import ServiceDepartmentList from "./ServiceDepartmentList";
 
 function Home() {
   const productCategoryData=useSelector((state)=>state.products.allCategory.data)
@@ -146,7 +146,7 @@ function Home() {
 
         {/* our Service Department  */}
 
-        <ServiceDepartment/>
+        <ServiceDepartmentList/>
 
         {/* chemical shopping center  */}
         <div className="services-memebership mb-3">

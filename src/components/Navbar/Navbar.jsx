@@ -171,7 +171,7 @@ function Navbar() {
                     )}
                   </li>
                   <li>
-                    <Link target="_blank" to="/service-department-list" className="nav-link ">
+                    <Link  to="/service-department-list" className="nav-link ">
                       Service Department
                     </Link>
                   </li>

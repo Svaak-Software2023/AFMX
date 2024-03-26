@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 
 
-function ServiceDepartment() {
+function ServiceDepartmentList() {
     const serviceData1 = serviceData?.filter((item) => item.id < 19);
     const serviceData2 = serviceData?.filter((item) => item.id > 18);
     return (
         <>
-            <div className="services-memebership mb-3">
+            <div className="services-memebership my-3">
                 <div className="container p-0">
                     <div className="row">
                         <div className="col-lg-12">
@@ -40,4 +40,4 @@ function ServiceDepartment() {
     )
 }
 
-export default ServiceDepartment
+export default ServiceDepartmentList

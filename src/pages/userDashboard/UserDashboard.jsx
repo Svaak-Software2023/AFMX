@@ -55,7 +55,7 @@ function UserDashboard() {
                                     </div>
                                     <div className="col-lg-6 col-12">
                                         <div className="user-complain">
-                                            <h3>Benifits</h3>
+                                            <h3>Benefits</h3>
                                             <FaUser className='user-complain-icon' />
                                         </div>
                                     </div>

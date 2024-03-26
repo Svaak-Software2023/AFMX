@@ -46,35 +46,14 @@ function App() {
 
   const dispatch=useDispatch()
   const navigate=useNavigate()
-  const [isOnline, setIsOnline] = useState(navigator.onLine);
-
-  useEffect(() => {
-    const handleOnline = () => {
-      setIsOnline(true);
-    };
-
-    const handleOffline = () => {
-      setIsOnline(false);
-    };
-
-    window.addEventListener('online', handleOnline);
-    window.addEventListener('offline', handleOffline);
-
-    // Cleanup function to remove event listeners when component unmounts
-    return () => {
-      window.removeEventListener('online', handleOnline);
-      window.removeEventListener('offline', handleOffline);
-    };
-  }, []);
-
+ 
   useEffect(()=>{
     const logdInUser=JSON.parse(localStorage.getItem('user'))
     dispatch(setUser(logdInUser))
-    if(!isOnline){
-    navigate("/offline")
-    }
-
   })
+
+  if(!navigator.onLine) return <InternetConnectionStatus/>
+
   return (
     <>
       <ToastContainer />

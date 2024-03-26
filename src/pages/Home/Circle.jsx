@@ -29,7 +29,7 @@ const Circle = () => {
                   <ul className="sc-fsYfxw fAFqhE circle-menu-image">
                     <li className=" circle-item  circle-image-box12">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(29)} onMouseLeave={resetAngle} ><img onClick={()=>navigate("/service-list-item/1")} src="images/2.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(29)} onMouseLeave={resetAngle} ><img onClick={()=>navigate("/service-department/Janitorial%20department")} src="images/2.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box1">
@@ -39,12 +39,12 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item  circle-image-box2">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(80)} onMouseLeave={resetAngle} ><img onClick={()=>navigate("/client-login")} src="images/7.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(80)} onMouseLeave={resetAngle} ><img onClick={()=>navigate("/login")} src="images/7.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box3">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(115)} onMouseLeave={resetAngle} ><img src="images/6.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(115)} onMouseLeave={resetAngle} ><img onClick={()=>navigate("/complain-portal")} src="images/6.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box4">
@@ -69,7 +69,7 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item  circle-image-box8">
                       <div className="inner-circle-item">
-                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(270)} onMouseLeave={resetAngle} ><img onClick={()=>navigate("/service-list-item/19")} src="images/1.png" alt="" className="img-fluid" /></button>
+                        <button className=" circle-item-img" onMouseMove={() => calculateAngle(270)} onMouseLeave={resetAngle} ><img onClick={()=>navigate("/service-department/Handyman%20department")} src="images/1.png" alt="" className="img-fluid" /></button>
                       </div>
                     </li>
                     <li className=" circle-item  circle-image-box9">
@@ -108,7 +108,7 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item-text circle-item2">
                       <div className="inner-circle-item">
-                        <span onClick={()=>navigate("/service-list-item/1")} >Janitorial Service</span>
+                        <span onClick={()=>navigate("/service-department/Janitorial%20department")} >Janitorial Service</span>
                       </div>
                     </li>
                     <li className=" circle-item-text circle-item3 ">
@@ -119,12 +119,12 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item-text circle-item4 ">
                       <div className="inner-circle-item">
-                        <span onClick={()=>navigate("/client-login")}>Login</span>
+                        <span onClick={()=>navigate("/login")}>Login</span>
                       </div>
                     </li>
                     <li className=" circle-item-text circle-item5 ">
                       <div className="inner-circle-item">
-                        <span>Complaint</span>
+                        <span onClick={()=>navigate("/complain-portal")}>Complaint</span>
                       </div>
                     </li>
                     <li className=" circle-item-text circle-item6 ">
@@ -150,7 +150,7 @@ const Circle = () => {
                     </li>
                     <li className=" circle-item-text circle-item10  ">
                       <div className="inner-circle-item">
-                        <span onClick={()=>navigate("/service-list-item/19")}>Handyman</span>
+                        <span onClick={()=>navigate("/service-department/Handyman%20department")}>Handyman</span>
                       </div>
                     </li>
                     <li className=" circle-item-text circle-circle-image-box10">

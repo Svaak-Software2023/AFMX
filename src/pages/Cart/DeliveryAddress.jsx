@@ -277,7 +277,7 @@ const DeliveryAddress = () => {
         dispatch(getAllSaveForLater({ toast,token }));
       } else {
         dispatch(getCart({token}));
-        dispatch(getAllSaveForLater({ toast,token }));
+         dispatch(getAllSaveForLater({ toast,token }));
       }
     });
   };

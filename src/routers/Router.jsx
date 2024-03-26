@@ -69,6 +69,7 @@ import NotFound from "../assets/404/NotFound";
 import Success from "../components/paymentSuccess/Success";
 import Failed from "../components/paymentSuccess/Failed";
 import InternetConnectionStatus from "../assets/connection/InternetConnectionStatus";
+import ServiceDepartmentList from "../pages/Home/ServiceDepartmentList";
 
 export const navigation = [
     { path: "*", name: "Default", element: <NotFound/>, isPrivate: false },
@@ -91,6 +92,8 @@ export const navigation = [
     { path: "/service-department/:name", name: "Service Department", element: <ServiceDepartment />, isPrivate: false },
     { path: "/service-department/:parentName/:childName", name: "Service Department Item", element: <ServiceDepartmentItem />, isPrivate: false },
     // Service Departments 
+    { path: "/service-department-list", name: "Service Department List", element: <ServiceDepartmentList/>, isPrivate: false },
+
     { path: "/service-department/handyman-solutions-department", name: "Handyman solutions department", element: <HandymanSolutionDepartment />, isPrivate: false },
     { path: "/service-department/Assembly department", name: "Assembly Department", element: <AssemblyDepartment />, isPrivate: false },
 

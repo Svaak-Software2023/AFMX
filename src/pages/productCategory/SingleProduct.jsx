@@ -49,16 +49,18 @@ function SingleProduct() {
   }, [pathname]);
 
   const addToCartHandler = async (type) => {
-    if(type === 'ADD'){
-      setIsCartloading(true);
-    }
-    if(type === 'BUY'){
-      setIsBuyloading(true);
-    }
-    const token=`${JSON.parse(localStorage.getItem('user')).token}`;
-    const clientId=`${JSON.parse(localStorage.getItem('user')).clientId}`;
+   
+    const token=`${JSON.parse(localStorage.getItem('user'))?.token}` || null;
+    const clientId=`${JSON.parse(localStorage.getItem('user'))?.clientId}` || null;
 
-    if ((token && clientId) && singleProduct) {
+    if (((token !== 'undefined') && (clientId !== 'undefined')) && singleProduct) {
+      console.log('wwwww',token);
+      if(type === 'ADD'){
+        setIsCartloading(true);
+      }
+      if(type === 'BUY'){
+        setIsBuyloading(true);
+      }
       const createCard = {
         deliveryCharges: 10,
         discountPrice: 50,

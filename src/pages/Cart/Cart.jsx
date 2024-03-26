@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import Loader from "../../components/Loader/Loader";
 
 const Cart = () => {
-  const token = `${JSON.parse(localStorage.getItem('user')).token}`;
+  const token = `${JSON.parse(localStorage.getItem('user'))?.token}`;
   const dispatch = useDispatch()
   const navigate = useNavigate()
 

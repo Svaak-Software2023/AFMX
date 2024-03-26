@@ -19,6 +19,8 @@ function SingleProduct() {
   const { parent, childe } = useParams();
   const { pathname } = useLocation();
   const [isLoading, setIsloading] = useState(true)
+  const [isCartLoading, setIsCartloading] = useState(false)
+  const [isBuyLoading, setIsBuyloading] = useState(false)
 
   const dispatch = useDispatch();
 
@@ -46,7 +48,13 @@ function SingleProduct() {
     });
   }, [pathname]);
 
-  const addToCartHandler = async () => {
+  const addToCartHandler = async (type) => {
+    if(type === 'ADD'){
+      setIsCartloading(true);
+    }
+    if(type === 'BUY'){
+      setIsBuyloading(true);
+    }
     const token=`${JSON.parse(localStorage.getItem('user')).token}`;
     const clientId=`${JSON.parse(localStorage.getItem('user')).clientId}`;
 
@@ -67,6 +75,12 @@ function SingleProduct() {
           productPrice: singleProduct.productPrice,
         };
         dispatch(addCartItems(formData,token)).then(() => {
+          if(type === 'ADD'){
+            setIsCartloading(false);
+          }
+          if(type === 'BUY'){
+            setIsBuyloading(false);
+          }
           navigate("/cart");
         });
       }
@@ -106,13 +120,16 @@ function SingleProduct() {
               <div className="single-product-button">
                 <button
                   className="add-to-cart-button"
-                  onClick={addToCartHandler}
+                  onClick={() => addToCartHandler("ADD")}
                 >
                   ADD TO Cart
+                  { isCartLoading && <span className="spinner-border spinner-border-sm mx-1" role="status" aria-hidden="true"></span>}
                 </button>
               </div>
               <div className="single-product-button">
-                  <button className="buy-now-button" onClick={addToCartHandler}>Buy Now</button>
+                  <button className="buy-now-button" onClick={() => addToCartHandler("BUY")}>Buy Now
+                  { isBuyLoading && <span className="spinner-border spinner-border-sm mx-1" role="status" aria-hidden="true"></span>}
+                  </button>
               </div>
             </div>
           </div>
@@ -259,9 +276,9 @@ function SingleProduct() {
         </div>
       </div>
 
-      <div id="myModal" class="image_modal">
-  <span onClick={closeImageModel} class="close">&times;</span>
-  <img class="modal-content" id="img01" />
+      <div id="myModal" className="image_modal">
+  <span onClick={closeImageModel} className="close">&times;</span>
+  <img className="modal-content" id="img01" />
 </div>
     </>
   );

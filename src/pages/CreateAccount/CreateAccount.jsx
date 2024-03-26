@@ -18,14 +18,21 @@ function CreateAccount() {
         clientPassword: "",
         clientSSN: "",
         clientAddress: "",
+        clientPostalCode:"",
+        clientCity:"",
+        clientProfileImage:""
     });
+
+    const [clientProfileImage, setClientProfileImage] = useState(null)
 
     const[tonggle,setTonggle]=useState("ssn")
     const dispatch = useDispatch();
 
     const changehandller = (e) => {
         const name = e.target.name;
-        setFormData({ ...formData, [name]: e.target.value })
+       
+        console.log('wwer',{ ...formData, [name]: e.target.value,...clientProfileImage });
+        setFormData({ ...formData, [name]: e.target.value, ...clientProfileImage })
     }
     const submithandler = async (e) => {
         e.preventDefault()
@@ -137,6 +144,43 @@ function CreateAccount() {
                                                disabled= {formData.clientSSN?true:false}
                                             />
                                         </div>}
+
+                                        <div className="col-lg-6 col-12">
+                                            <label htmlFor="clientPhone" className="label">Phone <span>*</span></label>
+                                            <input id='clientPhone'
+                                                type="number"
+                                                className='form-control mb-3'
+                                                name='clientPhone'
+                                                onChange={changehandller}
+                                            />
+                                        </div>
+                                        <div className="col-lg-6 col-12">
+                                            <label htmlFor="clientCity" className="label">City <span>*</span></label>
+                                            <input id='clientCity'
+                                                type="text"
+                                                className='form-control mb-3'
+                                                name='clientCity'
+                                                onChange={changehandller}
+                                            />
+                                        </div>
+                                        <div className="col-lg-6 col-12">
+                                            <label htmlFor="clientPostalCode" className="label">Postal Code <span>*</span></label>
+                                            <input id='clientPostalCode'
+                                                type="number"
+                                                className='form-control mb-3'
+                                                name='clientPostalCode'
+                                                onChange={changehandller}
+                                            />
+                                        </div>
+                                        <div className="col-lg-6 col-12">
+                                            <label htmlFor="clientProfileImage" className="label">Profile Image <span>*</span></label>
+                                            <input id='clientProfileImage'
+                                                type="file"
+                                                className='form-control mb-3'
+                                                name='clientProfileImage'
+                                                onChange={(e) => setClientProfileImage({clientProfileImage: e.target.files[0]})}
+                                            />
+                                        </div>
 
                                         <div className="col-lg-12 col-12">
                                             <label htmlFor="bradstreet-number" className="label">Address<span>*</span></label>

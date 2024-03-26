@@ -18,7 +18,11 @@ export const signin=createAsyncThunk("api/sigin", async({formData,navigate,toast
 
 export const signup=createAsyncThunk("api/signup", async({formData,navigate,toast})=>{
     try{
-        const response=await api.signup(formData)
+        const addFormData = new FormData();
+        for (const [key, val] of Object.entries(formData)){
+            addFormData.append(key, val);
+        }
+        const response=await api.signup(addFormData)
         if(response){
         toast.success(response.data.message)
         navigate("/login")

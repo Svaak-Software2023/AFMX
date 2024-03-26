@@ -286,19 +286,17 @@ const DeliveryAddress = () => {
     toast.error("Cannot increase quantity. Maximum quantity reached.")
   }
 
-  console.log('cartData---------------',cartData.cartId);
   const makePayment = async() =>{
     const stripe = await loadStripe('pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL');
     const {data} = await fetchCart(token);
-    console.log('cartResponse------------------',data.cartResponse);
     const products = data.cartResponse.Products.map(({productId,productPrice,productName,noOfProducts:noofProducts})=>{
       return {productId,noofProducts,productPrice,productName}
     });
-    console.log('products------products',{products});
+
    
     const {data:{productCheckout}}  = await createCheckout(cartData.cartId,{products},token);
     // window.location.href = productCheckout
-console.log('productCheckoutproductCheckoutproductCheckout',productCheckout);
+
     if(productCheckout){
       return stripe.redirectToCheckout({
         sessionId:productCheckout.sessionId
@@ -851,13 +849,13 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
                 </a>
               </div>
             </div>
-          </div>}
-        </div>
         {(cartData?.Products?.length > 0) &&  (<div className="d-flex justify-content-center" onClick={makePayment}>
-                <button className="place_order_btn my-3">
+                <button className="place_order_btn my-3 w-100">
                     Pay $ {Number(totalAmount).toFixed(2)}
                 </button>
         </div>)}
+          </div>}
+        </div>
 
         {/* {(cartData?.Products?.length > 0) && <PaymentPage
           totalAmount={Number(totalAmount).toFixed(2)}

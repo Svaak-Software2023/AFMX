@@ -155,14 +155,14 @@ function Home() {
                   <h2>Our Service Department</h2>
                   <div className="single-row">
                     <ul className>
-                      {serviceData1.map((item) => (
+                      {serviceData1?.map((item) => (
                         <li key={item.id}>
-                          <Link to={`/service-department/${item.name}`}>{item.name}</Link>
+                          <Link to={`/service-department/${item.name.toString()}`}>{item.name}</Link>
                         </li>
                       ))}
                     </ul>
                     <ul className>
-                      {serviceData2.map((item) => (
+                      {serviceData2?.map((item) => (
                         <li key={item.id}>
                           <Link to={`/service-department/${item.name}`}>{item.name}</Link>
                         </li>
@@ -194,16 +194,16 @@ function Home() {
                   </h2>
                   <div className="single-row">
                     <ul className>
-                      {productData1.map((item,i) => (
-                        <li key={i}>
+                      {productData1?.map((item,i) => (
+                        <li key={i.toString()}>
                           <Link to={`/product/${item.productCategoryName}/${item.productCategoryId}`}>{item.productCategoryName}</Link>
                         </li>
                       ))}
                     </ul>
                     <ul className>
-                      {productData2.map((item,i) => (
+                      {productData2?.map((item,i) => (
                         <li key={i}>
-                          <Link to={`/product/${item.productCategoryName}/${item.productCategoryId}`}>{item.productCategoryName}</Link>
+                          <Link to={`/product/${item.productCategoryName.toString()}/${item.productCategoryId}`}>{item.productCategoryName.toString()}</Link>
                         </li>
                       ))}
                     </ul>
@@ -659,7 +659,7 @@ function Home() {
                 <div className="memebership-list partner-with-us">
                   <h2>AFM HELPING HAND AND DONATIONS</h2>
                   <ul className>
-                    {helpingHand.map((item) => (
+                    {helpingHand?.map((item) => (
                       <li key={item?.id}>
                         <Link
                           to={`/helping-hand/${item?.id}`}

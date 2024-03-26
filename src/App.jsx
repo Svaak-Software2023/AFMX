@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Route, Routes, useLocation } from "react-router-dom"
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom"
 import { FaArrowUp } from "react-icons/fa";
 import { ToastContainer } from 'react-toastify';
 import Navbar from "./components/Navbar/Navbar"
@@ -10,6 +10,7 @@ import { navigation } from "./routers/Router";
 import Authentication from "./authentication/Authentication";
 import { setUser } from "./redux/features/authSlice";
 import { useDispatch } from "react-redux";
+import InternetConnectionStatus from "./assets/connection/InternetConnectionStatus";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -18,15 +19,16 @@ function App() {
     window.scrollTo(0, 0)
   }, [pathname])
 
+  // function to hide and show scrollToTop button 
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight / 2) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
   useEffect(() => {
-    // function to hide and show scrollToTop button 
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight / 2) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -43,9 +45,35 @@ function App() {
   
 
   const dispatch=useDispatch()
+  const navigate=useNavigate()
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+
+  useEffect(() => {
+    const handleOnline = () => {
+      setIsOnline(true);
+    };
+
+    const handleOffline = () => {
+      setIsOnline(false);
+    };
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    // Cleanup function to remove event listeners when component unmounts
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
+
   useEffect(()=>{
     const logdInUser=JSON.parse(localStorage.getItem('user'))
     dispatch(setUser(logdInUser))
+    if(!isOnline){
+    navigate("/offline")
+    }
+
   })
   return (
     <>

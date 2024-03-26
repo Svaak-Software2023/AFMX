@@ -24,10 +24,10 @@ function ProductCategory() {
         <>
             <div className="container p-0 my-3">
                 <div className="row m-0 p-0 ">
-                    <div className="col-lg-3 col-md-3 col-12 p-0">
+                    {/* <div className="col-lg-3 col-md-3 col-12 p-0">
                         <LeftMenu type="shopping center" data={categoryData} url="/product" />
-                    </div>
-                    <div className="col-lg-9 col-md-9 col-12 bg-white  p-3">
+                    </div> */}
+                    <div className="col-lg-12 col-md-9 col-12 bg-white  p-3">
                         <h3 className="product-category-heading">{name}</h3>
                         <div className="product-item-list">
                             {

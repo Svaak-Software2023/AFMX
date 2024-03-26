@@ -68,9 +68,12 @@ import PaymentPage from "../pages/paymentPage/PaymentPage";
 import NotFound from "../assets/404/NotFound";
 import Success from "../components/paymentSuccess/Success";
 import Failed from "../components/paymentSuccess/Failed";
+import InternetConnectionStatus from "../assets/connection/InternetConnectionStatus";
 
 export const navigation = [
     { path: "*", name: "Default", element: <NotFound/>, isPrivate: false },
+    { path: "/offline", name: "Offline", element: <InternetConnectionStatus />, isPrivate: false },
+
     { path: "/", name: "Home", element: <Home />, isPrivate: false },
     { path: "/login", name: "Login", element: <Login />, isPrivate: false },
     { path: "/create-account", name: "Create Account", element: <CreateAccount />, isPrivate: false },

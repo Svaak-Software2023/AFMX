@@ -44,7 +44,12 @@
 
 .user-dashboard-details h3 {
     font-size: 1.28rem;
-    margin: 15px 10px;
+    margin: 7px 10px;
+
+}
+.user-dashboard-details h6 {
+    font-size: 1.02rem;
+    margin: 7px 10px;
 
 }
 

@@ -22,7 +22,8 @@ function UserDashboard() {
                                             <div className="user-dashboard-details">
                                                 <h3>Welcome {user.clientFirstName} {user.clientLastName}</h3>
                                                 <p>Company/Member ID : 123456</p>
-                                                <h3>Member Status : Non Member</h3>
+                                                <h6>Membership Status : Non Member</h6>
+                                                <h6>Restroom RX Membership : Non Member</h6>
                                                 {/* <FaUser className='user-complain-icon' /> */}
                                             </div>
                                         </Link>

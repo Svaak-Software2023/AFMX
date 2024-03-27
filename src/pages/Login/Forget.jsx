@@ -15,7 +15,7 @@ function Forget() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/auth//forget-request', { email })
+            const response = await axios.post('https://afmx.madextube700.com/auth/forget-request', { email })
                 .then((response) => {
                     toast.success(response.data.message);
                     console.log(response)

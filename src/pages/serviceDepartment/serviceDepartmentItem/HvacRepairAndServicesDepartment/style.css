@@ -53,6 +53,7 @@
   justify-content: center;
   color: white;
   z-index: 1;
+  padding-bottom: 30px;
 }
 .Hvac_Triangle {
   display: flex;
@@ -74,12 +75,12 @@
   top: 30px;
   left: 60%;
   z-index: 10;
-  width: fit-content;
+  width: max-content;
 }
 .HvacDiv2_Box{
   color: white;
   padding: 0px 5px;
-  font-size: 13px;
+  font-size: 15px;
   margin: 1px;
   border: 1px solid gray;
   background-color: #199EBD;
@@ -107,7 +108,7 @@
     border-bottom: 400px solid #7AA334;
   }
   .HvacDiv2_Box{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
   }
   .Hvac_Triangle p{

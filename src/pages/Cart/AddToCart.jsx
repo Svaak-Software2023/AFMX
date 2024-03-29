@@ -4,19 +4,20 @@ import { Link } from "react-router-dom";
 import productData from "../../assets/data/Productdata.json"
 import { getCart, cartItemUpdateQuantity } from "../../redux/features/cartSlice";
 import { useSelector } from "react-redux";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AddToCart = () => {
-  const token=`${JSON.parse(localStorage.getItem('user')).token}`;
+  const token = `${JSON.parse(localStorage.getItem('user')).token}`;
   const [{ data }] = productData;
   const [{ Pro_Name, Pro_Img, Pro_Price }] = data;
   const { data: cartData, loading: cartLoading } = useSelector((state) => state.cart)
 
-  const updateQuantity = (productId,isIncrement) => {
-    let {cartItemId} =  cartData.Items.filter(item=> item.productId === productId )[0];
-    if(isIncrement){
-     dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast,token}))
-    } else{
-      dispatch(cartItemUpdateQuantity({cartItemId,isIncrement,toast,token}))
+  const updateQuantity = (productId, isIncrement) => {
+    let { cartItemId } = cartData.Items.filter(item => item.productId === productId)[0];
+    if (isIncrement) {
+      dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast, token }))
+    } else {
+      dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast, token }))
     }
   };
 
@@ -51,7 +52,8 @@ const AddToCart = () => {
                           <div className="row ">
                             <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2"
                               style={{ height: "200px", display: "flex", justifyContent: "center" }}>
-                              <img
+                              <LazyLoadImage
+                                effect="blur"
                                 className=" img-fluid"
                                 src={item.productImage[0]}
                                 alt={item.productName}
@@ -76,17 +78,17 @@ const AddToCart = () => {
                                 <div
                                   className="value-button"
                                   id="decrease"
-                                  onClick={()=> updateQuantity(item?.productId,false) }
+                                  onClick={() => updateQuantity(item?.productId, false)}
                                 >
                                   -
-                                  
+
                                 </div>
                                 {/* <input type="number" id="number" defaultValue="1" /> */}
                                 <span className="pt-1 px-2  border">{item?.noOfProducts}</span>
                                 <div
                                   className="value-button"
                                   id="increase"
-                                  onClick={()=> updateQuantity(item?.productId,true) }
+                                  onClick={() => updateQuantity(item?.productId, true)}
                                 >
                                   +
                                 </div>

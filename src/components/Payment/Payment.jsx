@@ -9,6 +9,7 @@ function Payment({ memberShipName, memberShipType, memberShipPlan }) {
     const navigate = useNavigate()
     const [loading, setLoading] = useState(false)
     const token = JSON.parse(localStorage.getItem("user"));
+    console.log("process.env.",import.meta.env);
     const handleSubmit = async () => {
         if (token) {
             const body = {
@@ -19,10 +20,10 @@ function Payment({ memberShipName, memberShipType, memberShipPlan }) {
             };
 
             setLoading(true)
-            const stripe = await loadStripe("pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL");
+            const stripe = await loadStripe(import.meta.env.VITE_STRIPE_KEY);
             await axios
                 .post(
-                    "https://afmx.madextube700.com/api/subscription/create-membership-subscription",
+                    `${import.meta.env.VITE_DB_URL}/api/subscription/create-membership-subscription`,
                     body
                 )
                 .then((res) => {

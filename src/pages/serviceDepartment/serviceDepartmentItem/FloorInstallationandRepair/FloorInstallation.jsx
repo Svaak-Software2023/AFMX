@@ -19,7 +19,7 @@ const FloorInstallation = () => {
                 <div key={index} className="col-lg-4 mb-4 d-flex justify-content-center text-center rounded-4" >
                   <div className="image-gallery margin-image-servicedepartment-item ">
                     <Link to={item.name}>
-                      <img src={item.image} className="img-fluid image-cont rounded-4" effect="blur" />
+                      <LazyLoadImage src={item.image} className="img-fluid image-cont rounded-4" effect="blur" />
                       
                         <h4 className="item-name">{item.name}</h4>
                     </Link>

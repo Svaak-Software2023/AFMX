@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./card.css"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function ProductCard({ data, parent }) {
   const product = data;
@@ -9,9 +10,9 @@ function ProductCard({ data, parent }) {
       {
         product ?
           <Link to={`/single-product/${parent}/${product.productId}`}>
-            <div className="product-card card" style={{width:"19.5rem",height:"19rem"}} key={product.productId} >
+            <div className="product-card card" style={{width:"19.5rem",height:"21rem"}} key={product.productId} >
                <div className="img_container">
-                  <img
+                  <LazyLoadImage effect="blur"
                     src={product.productImage&&product?.productImage[0]}
                     alt={product.productImage&&product?.productImage[0]}
                     className="product-card-image"
@@ -20,7 +21,7 @@ function ProductCard({ data, parent }) {
               <div className="product-card-content">
                 <h3 className="product-card-title">{product.productName}</h3>
                 <p className="product-card-description">
-                  {product?.productDescription&&product.productDescription.slice(0, 80)}....
+                  {product?.productDescription&&product.productDescription.slice(0, 40)}....
                 </p>
                 <h3 className="product_price">{product.productPrice}</h3>
                 {/* <button

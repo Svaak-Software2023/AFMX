@@ -2,6 +2,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function AssemblyDepartment() {
   const AssemblyData = departmentData.find((item) => item.name === "Assembly department");
@@ -34,7 +35,7 @@ function AssemblyDepartment() {
                         <div key={index} className="col-lg-5 mb-1 d-flex justify-content-center text-center ">
                           <div className="image-gallery margin-image-servicedepartment-item">
                             <Link to={`/service-department/assembly-department-list/${item.id}`}>
-                              <img src={item.image} className="img-fluid" effect="blur"/>
+                              <LazyLoadImage  src={item.image} className="img-fluid" effect="blur"/>
                               <div className="service-name">
                                 <h3>{item.name}</h3>
                               </div>

@@ -2,6 +2,7 @@ import LeftMenu from "../../components/leftmenu/LeftMenu";
 import serviceData from "../../assets/data/servicesData.json";
 import "./services.css";
 import { useParams } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Services() {
     const { id } = useParams();
@@ -36,7 +37,7 @@ function Services() {
               {/* <h4 className="service_heading">{data?.data[0].heading}</h4> */}
             </div>
             <div className="col-lg-6 col-md-6 col-12">
-              <img
+              <LazyLoadImage effect="blur"
               src={data?.serviceImage
 }
                 alt={data?.name}

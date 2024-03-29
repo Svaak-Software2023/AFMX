@@ -2,6 +2,10 @@ import { useParams } from "react-router-dom";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import Payment from "../../../../components/Payment/Payment";
 import "./RestroomRXMemberships.css";
+import ListItemWithImage from "../../../../components/list of item with image/ListItemWithImage";
+import departmentData from "../../../../assets/data/serviceDepartmentData.json";
+import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const data = [
@@ -89,9 +93,12 @@ const data = [
 
 ];
 
-const RestroomRXMemberships = () => {
+// console.log(JSON.parse(localStorage.getItem('user')));
 
+const RestroomRXMemberships = () => {
+const user=JSON.parse(localStorage.getItem('user'))
   return (
+    user&&user.isRxRestRoomMember==="Non-Member"?
     <div className="container p-0 my-3">
       <div className="row m-0 p-0 flex">
         <div className="col-lg-3 col-md-3 col-12 p-0 service_menu">
@@ -103,7 +110,7 @@ const RestroomRXMemberships = () => {
             {data.map((item, index) => (
               <div key={index} >
                 <div className="RxMembershipHeading">
-                  <img src={item.img} alt={item} />
+                  <LazyLoadImage effect="blur" src={item.img} alt={item} />
                   <h3> {item.name} </h3>
                 </div>
                 <div
@@ -145,6 +152,9 @@ const RestroomRXMemberships = () => {
         </div>
       </div>
     </div>
+    :
+    <ListItemWithImage name={departmentData[31].name} propData={departmentData[31].submenu}/>
+
   );
 };
 

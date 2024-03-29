@@ -19,6 +19,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const DeliveryAddress = () => {
   const dispatch = useDispatch();
@@ -285,7 +286,7 @@ const DeliveryAddress = () => {
   }
 
   const makePayment = async() =>{
-    const stripe = await loadStripe("pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL");
+    const stripe = await loadStripe(import.meta.env.VITE_STRIPE_KEY);
     const {data} = await fetchCart(token);
     const products = data.cartResponse.Products.map(({productId,productPrice,productName,noOfProducts:noofProducts})=>{
       return {productId,noofProducts,productPrice,productName}
@@ -573,7 +574,7 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
                                   <div className="col-12 col-md-8 col-lg-8 col-sm-8 items">
                                     <div className="row ">
                                       <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2">
-                                        <img
+                                        <LazyLoadImage effect="blur"
                                           className=" img-fluid"
                                           src={item?.productImage?.[0]}
                                           alt={item?.productName}
@@ -695,7 +696,7 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
                                                 justifyContent: "center",
                                               }}
                                             >
-                                              <img
+                                              <LazyLoadImage effect="blur"
                                                 className="img-fluid"
                                                 src={item.productImage[0]}
                                                 alt={item.productName}

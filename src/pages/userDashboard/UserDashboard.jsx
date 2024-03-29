@@ -23,7 +23,7 @@ function UserDashboard() {
                                                 <h3>Welcome {user.clientFirstName} {user.clientLastName}</h3>
                                                 <p>Company/Member ID : 123456</p>
                                                 <h6>Membership Status : Non Member</h6>
-                                                <h6>Restroom RX Membership : Non Member</h6>
+                                                <h6>Restroom RX Membership : {user.isRxRestRoomMember}</h6>
                                                 {/* <FaUser className='user-complain-icon' /> */}
                                             </div>
                                         </Link>

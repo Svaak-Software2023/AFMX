@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const FertilizationWeedandPestDepartment = () => {
   const fertilizeData = departmentData.find((item) => item.name === "Fertilization, weed and pest department");
@@ -19,7 +20,7 @@ const FertilizationWeedandPestDepartment = () => {
               <Link to={item.name} key={index}>
                 <div className="fertilize-main">
                   <div className="fertilize-main2">
-                    <img src={item.image} alt="img" className="fertilize-img"/>
+                    <LazyLoadImage effect="blur" src={item.image} alt="img" className="fertilize-img"/>
                   </div>
                   <div className="fertilize-text"> {item.name} </div>
                 </div>

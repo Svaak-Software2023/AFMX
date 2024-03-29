@@ -1,16 +1,16 @@
+import React, { Suspense, useEffect } from "react";
 import "./home.css";
-import Carousel from "../../components/Carousel/Carousel";
-import Circle from "./Circle";
+const Carousel = React.lazy(() => import("../../components/Carousel/Carousel"));
+const Circle = React.lazy(() => import("./Circle"));
 import { Link } from "react-router-dom";
 import helpingHand from "../../assets/data/helpingHand.json";
-// import productData from "../../assets/data/Productdata.json";
-// import WatchWhether from "./WatchWhether";
 import { getCart } from "../../redux/features/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
 import { getAllCategory } from "../../redux/features/productSlice";
-import ServiceDepartmentList from "./ServiceDepartmentList";
+const ServiceDepartmentList = React.lazy(() => import("./ServiceDepartmentList"));
 import { Skeleton } from "@mui/material";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Home() {
   const productCategoryData = useSelector((state) => state.products.allCategory.data)
@@ -33,9 +33,14 @@ function Home() {
 
   return (
     <>
-      <Carousel />
+      <Suspense
+        fallback={<div className="container bg-white my-3"><Skeleton variant="rectangular" height={218} /></div>}>
+        <Carousel />
+      </Suspense>
       <div className="main">
-        <Circle />
+        <Suspense fallback={<div className="container bg-white p-3 d-flex justify-content-center"><Skeleton variant="circular" width={250} height={250} /></div>}>
+          <Circle />
+        </Suspense>
         {/* service menu  */}
         <div className="services-memebership mb-3">
           <div className="container p-0">
@@ -142,8 +147,13 @@ function Home() {
         </div>
 
         {/* our Service Department  */}
-
-        <ServiceDepartmentList />
+        <Suspense fallback={<div className="bg-white p-3">
+          <Skeleton height={50} />
+          <Skeleton height={50} animation="wave" />
+          <Skeleton height={50} animation={false} />
+        </div>}>
+          <ServiceDepartmentList />
+        </Suspense>
 
         {/* chemical shopping center  */}
         <div className="services-memebership mb-3">
@@ -161,7 +171,7 @@ function Home() {
                       <img src="assets/img/bag.png" />
                     </a>
                   </h2>
-                  {productCategoryData?.length>0
+                  {productCategoryData?.length > 0
                     ? <div className="single-row">
                       <ul className>
                         {productData1?.map((item, i) => (
@@ -393,7 +403,7 @@ function Home() {
                       </li>
                     </ul>
                     <ul>
-                      <img src="assets/img/shildX.png" className="img-fluid" />
+                      <LazyLoadImage src="assets/img/shildX.png" className="img-fluid" />
                       <li>
                         <b>Luxurious Excellence Awaits:</b>Don&apos;t miss the
                         chance to indulge in the epitome of luxury cleaning
@@ -429,8 +439,8 @@ function Home() {
                 <div className="memebership-list">
                   <h2>MY FLORIDA HURRICANE WATCH WEATHER</h2>
                   <div className="membership-lis-image">
-                    {/* <img src="assets/img/service/map.jpg" />
-                    <img src="assets/img/service/calender.jpg" /> */}
+                    {/* <LazyLoadImage src="assets/img/service/map.jpg" />
+                    <LazyLoadImage src="assets/img/service/calender.jpg" /> */}
                     {/* <WatchWhether /> */}
                   </div>
                 </div>
@@ -513,8 +523,8 @@ function Home() {
                     </li>
                   </ul>
                   <div className="img-box">
-                    <img src="assets/img/partner-w-u1.png" />
-                    <img src="assets/img/partner-w-u2.png" />
+                    <LazyLoadImage src="assets/img/partner-w-u1.png" />
+                    <LazyLoadImage src="assets/img/partner-w-u2.png" />
                   </div>
                 </div>
               </div>
@@ -541,27 +551,27 @@ function Home() {
                     <div className="double-img">
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-1.png" />
+                          <LazyLoadImage src="assets/img/afmx-1.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-2.png" />
+                          <LazyLoadImage src="assets/img/afmx-2.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-3.png" />
+                          <LazyLoadImage src="assets/img/afmx-3.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-4.png" />
+                          <LazyLoadImage src="assets/img/afmx-4.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <img src="assets/img/afmx-5.png" />
+                          <LazyLoadImage src="assets/img/afmx-5.png" />
                         </a>
                       </div>
                     </div>

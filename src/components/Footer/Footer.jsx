@@ -4,6 +4,7 @@ import "./footer.css"
 import data from "../../assets/data/terms&Conditions.json"
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaTwitch } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Footer() {
   const termsAndCData1 = data.filter((item) => item.id <= data.length / 2 + 2);
@@ -163,7 +164,7 @@ function Footer() {
         <div className="col-lg-4 col-12">
           <div className="footer-logo">
             <Link to="/">
-              <img src="images/top-logo.png" className="p-0 m-0" />
+              <LazyLoadImage src="images/top-logo.png" className="p-0 m-0" />
             </Link>
           </div>
         </div>

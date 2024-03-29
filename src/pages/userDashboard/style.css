@@ -97,4 +97,9 @@
         font-size: .89rem;
         margin: 15px 10px;
     }
+    .user-dashboard-details h6 {
+        font-size: .89rem;
+        margin: 7px 10px;
+    
+    }
 }

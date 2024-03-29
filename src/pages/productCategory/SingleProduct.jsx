@@ -13,6 +13,7 @@ import {
 import { addCart, addCartItems, getCart } from "../../redux/features/cartSlice";
 import Loader from "../../components/Loader/Loader";
 import { createCart } from "../../redux/api";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 function SingleProduct() {
@@ -113,7 +114,7 @@ function SingleProduct() {
             <Carousel showArrows={true}>
               {singleProduct.productImage?.map((item, i) => (
                 <div key={i} className="single-product-img" onClick={() =>openImagePopup(item)}>
-                  <img src={item} />
+                  <LazyLoadImage effect="blur" src={item} />
                 </div>
               ))}
             </Carousel>
@@ -280,7 +281,7 @@ function SingleProduct() {
 
       <div id="myModal" className="image_modal">
   <span onClick={closeImageModel} className="close">&times;</span>
-  <img className="single-product-modal-content" id="img01" />
+  <LazyLoadImage effect="blur" className="single-product-modal-content" id="img01" />
 </div>
     </>
   );

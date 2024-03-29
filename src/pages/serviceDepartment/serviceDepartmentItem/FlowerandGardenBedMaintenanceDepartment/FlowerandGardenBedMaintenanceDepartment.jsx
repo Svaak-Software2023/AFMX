@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const FlowerandGardenBedMaintenanceDepartment = () => {
   const flowerData = departmentData.find((item) => item.name === "Flower and garden bed maintenance department");
@@ -19,7 +20,7 @@ const FlowerandGardenBedMaintenanceDepartment = () => {
               {maindata.map((item, index) => (
                 <Link to={item.name} key={index}>
                   <div className="b-btn" style={{ backgroundColor: "#48DBC5"}}>
-                    <img src={item.image} className="w-50 rounded-2" alt="Icon 1" style={{ height:"100%" }}/> 
+                    <LazyLoadImage effect="blur" src={item.image} className="w-50 rounded-2" alt="Icon 1" style={{ height:"100%" }}/> 
                     <p className="divP">{item.name}</p>
                   </div>
                 </Link>

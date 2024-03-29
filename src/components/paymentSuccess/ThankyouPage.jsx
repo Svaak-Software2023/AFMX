@@ -1,26 +1,27 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./style.css"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const ThankyouPage = ({ message }) => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    // setTimeout(()=>{
-    //   navigate("/")
-    // },10000)
+    setTimeout(()=>{
+      navigate("/")
+    },10000)
   }, [])
   return (
     <>
-      <div className="container my-3 ">
+      <div className="container my-xl-3 ">
         <div className="row px-0 justify-content-center">
-          <div className="col-8 px-0">
+          <div className="col-8 px-0 col-12">
             <div className="card">
               <div className="card-body">
                 <div className="row justify-content-md-center">
                   <div className="col-12 content_center_grid">
                     <div className="w-100">
                       <div className="d-flex justify-content-center mb-2">
-                        <img src="assets/thankyou.jpg" className="img-fluid d-block" />
+                        <LazyLoadImage effect="blur" src="assets/thankyou.jpg" className="img-fluid d-block" />
                       </div>
                     </div>
                     <h6 className="congrats_content text-center">{message}</h6>

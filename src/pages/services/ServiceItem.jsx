@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import serviceData from "../../assets/data/servicesData.json"
 import { Carousel } from "react-responsive-carousel";
 import LeftMenue from "../../components/leftmenu/LeftMenu";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function ServiceItem() {
     const { name } = useParams()
@@ -31,16 +32,16 @@ function ServiceItem() {
                                                     <div className="seervicedepartment-crausel">
                                                         <Carousel showThumbs={false}>
                                                             <div className="service-department-item-img">
-                                                                <img src={data?.serviceImage
+                                                                <LazyLoadImage effect="blur" src={data?.serviceImage
                                                                 } />
 
                                                             </div>
                                                             <div className="service-department-item-img">
-                                                                <img src={data?.serviceImage
+                                                                <LazyLoadImage effect="blur" src={data?.serviceImage
                                                                 } />
                                                             </div>
                                                             <div className="service-department-item-img">
-                                                                <img src={data?.serviceImage
+                                                                <LazyLoadImage effect="blur" src={data?.serviceImage
                                                                 } />
                                                             </div>
                                                         </Carousel>

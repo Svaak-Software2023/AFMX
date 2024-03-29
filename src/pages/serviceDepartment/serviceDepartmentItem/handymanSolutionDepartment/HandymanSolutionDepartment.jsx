@@ -2,6 +2,7 @@ import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks
 import "./handyman.css";
 import { Link } from "react-router-dom";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function HandymanSolutionDepartment() {
   const handyData = departmentData.find((item) => item.name === "handyman-solutions-department");
@@ -36,7 +37,7 @@ function HandymanSolutionDepartment() {
                         <div key={index} className="col-lg-4 mb-1 d-flex justify-content-center text-center ">
                           <div className="image-gallery margin-image-servicedepartment-item">
                             <Link to={item.name}>
-                              <img src={item.image} className="img-fluid" effect="blur"/>
+                              <LazyLoadImage src={item.image} className="img-fluid" effect="blur"/>
                               <div className="service-name">
                                 <h3>{item.name}</h3>
                               </div>
@@ -50,7 +51,7 @@ function HandymanSolutionDepartment() {
                         <div key={index} className="col-lg-4 mb-1 d-flex justify-content-center text-center ">
                           <div className="image-gallery margin-image-servicedepartment-item">
                             <Link to={item.name}>
-                              <img src={item.image} className="img-fluid" effect="blur"/>
+                              <LazyLoadImage src={item.image} className="img-fluid" effect="blur"/>
                               <div className="service-name">
                                 <h3>{item.name}</h3>
                               </div>

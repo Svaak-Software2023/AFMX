@@ -114,7 +114,7 @@ function SingleProduct() {
             <Carousel showArrows={true}>
               {singleProduct.productImage?.map((item, i) => (
                 <div key={i} className="single-product-img" onClick={() =>openImagePopup(item)}>
-                  <LazyLoadImage effect="blur" src={item} />
+                  <img effect="blur" src={item} />
                 </div>
               ))}
             </Carousel>
@@ -144,9 +144,9 @@ function SingleProduct() {
                 </h3>
               </div>
               <div className="single-product-price">
-                <h3>{singleProduct.productMRP}</h3>
+                <h3>${singleProduct.productMRP}</h3>
                 <del className="single-producrt-MRP">
-                  {singleProduct.productPrice}
+                  ${singleProduct.productPrice}
                 </del>
                 <span className="discount">{singleProduct.discount} Off</span>
               </div>
@@ -281,7 +281,7 @@ function SingleProduct() {
 
       <div id="myModal" className="image_modal">
   <span onClick={closeImageModel} className="close">&times;</span>
-  <LazyLoadImage effect="blur" className="single-product-modal-content" id="img01" />
+  <img effect="blur" className="single-product-modal-content" id="img01" />
 </div>
     </>
   );

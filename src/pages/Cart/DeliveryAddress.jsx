@@ -636,10 +636,10 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
                                           style={{ display: "flex" }}
                                         >
                                           <p className="discounted_price">
-                                            {item?.productPrice}
+                                            ${item?.productPrice}
                                           </p>
                                           <p className="discount_price px-2">
-                                            {item?.productMRP}
+                                            ${item?.productMRP}
                                           </p>
                                           <p className="percent px-4">
                                             {item.discount}% off

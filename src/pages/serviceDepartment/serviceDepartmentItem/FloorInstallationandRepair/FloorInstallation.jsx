@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
 import "./style.css"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const FloorInstallation = () => {
   const AssemblyData = departmentData.find((item) => item.name === "Floor installation and repair department");
   const maindata = AssemblyData.submenu;

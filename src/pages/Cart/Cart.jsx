@@ -120,8 +120,8 @@ const Cart = () => {
                               <div className="col-12 col-md-8 col-lg-8 col-sm-12">
                                 <h6 className="product_item">{item.productName}</h6>
                                 <div className="discounted__list" style={{ display: "flex" }}>
-                                  <p className="discounted_price">{((item.productPrice) * (item?.noOfProducts)).toFixed(2)}</p>
-                                  <p className="discount_price px-2">{item.productMRP}</p>
+                                  <p className="discounted_price">${((item.productPrice) * (item?.noOfProducts)).toFixed(2)}</p>
+                                  <p className="discount_price px-2">${item.productMRP}</p>
                                   <p className="percent px-4">{item.discount}%</p>
                                   <p className="percent">1 offer applied</p>
                                 </div>

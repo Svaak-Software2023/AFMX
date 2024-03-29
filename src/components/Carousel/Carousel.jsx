@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Carousel.css";
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 const Slider = () => {
   const [user, setUser] = useState("");
   const isLogin =JSON.parse(localStorage.getItem('user'))

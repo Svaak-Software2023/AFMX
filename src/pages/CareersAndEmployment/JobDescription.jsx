@@ -2,7 +2,7 @@ import React from 'react'
 import data from "../../assets/data/careerAndEmployment/carrerAndEmployment.json"
 function JobDescription({ tonglehandler, title }) {
     const JobData = data.find((item) => item.title === title)
-    console.log("JobData", JobData);
+    // console.log("JobData", JobData);
     return (
 
         <div className="container bg-white my-2">

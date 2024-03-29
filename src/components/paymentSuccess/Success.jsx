@@ -1,12 +1,13 @@
 import React from 'react';
-import ThankyouPage from '../../pages/Cart/ThankyouPage';
+import ThankyouPage from './ThankyouPage';
+import { useParams } from 'react-router-dom';
 
 
 const Success = () => {
-
+  const message = "Congrats! Your transaction has been successfully done..."
   return (
     <>
-      <ThankyouPage />
+      <ThankyouPage message={message} />
     </>
   )
 }

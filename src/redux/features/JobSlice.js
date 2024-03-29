@@ -1,42 +1,43 @@
-import { createReducer, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import * as api from "../api"
-import {toast} from "react-toastify"
+import { toast } from "react-toastify"
 
-export const submitForm = createAsyncThunk("/submit/carrer/form", async (formData) => {
+export const submitJobForm = createAsyncThunk('/Apply/job', async ({formData,navigate}) => {
     try {
         const response = await api.submitCareerForm(formData)
-        console.log("response",response);
+        console.log("response", response);
         toast.success(response?.data?.message)
+        navigate("/careers-employment")
         return response.data
-
-    } catch (error) {
-        console.log("Error",error);
+    }
+    catch (error) {
+        console.log("Error", error);
         toast.error(error?.response?.data?.error)
         throw error.response
     }
 })
 
-const careerSlice = createReducer({
-    name: "careerSlice",
+
+const JobSlice = createSlice({
+    name: "JobSlice",
     initialState: {
-        message: "",
-        error: "",
+        message: null,
+        error: null,
         loading: false
     },
-    reducers: {},
-    extrareducer: (builder) => {
+    extraReducers: (builder) => {
         builder
-            .addcase(submitForm.pending, (state, action) => {
+            .addCase(submitJobForm.pending, (state, action) => {
                 state.message = ""
                 state.error = ""
                 state.loading = true
             })
-            .addcase(submitForm.pending, (state, action) => {
+            .addCase(submitJobForm.fulfilled, (state, action) => {
                 state.message = action.message
                 state.error = ""
                 state.loading = false
             })
-            .addcase(submitForm.pending, (state, action) => {
+            .addCase(submitJobForm.rejected, (state, action) => {
                 state.message = ""
                 state.error = action.error
                 state.loading = false
@@ -44,4 +45,4 @@ const careerSlice = createReducer({
     }
 })
 
-export default careerSlice.reducer;
+export default JobSlice.reducer

@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./style.css";
 import { Link } from "react-router-dom";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
@@ -35,7 +34,7 @@ function AssemblyDepartment() {
                         <div key={index} className="col-lg-5 mb-1 d-flex justify-content-center text-center ">
                           <div className="image-gallery margin-image-servicedepartment-item">
                             <Link to={`/service-department/assembly-department-list/${item.id}`}>
-                              <LazyLoadImage src={item.image} className="img-fluid" effect="blur"/>
+                              <img src={item.image} className="img-fluid" effect="blur"/>
                               <div className="service-name">
                                 <h3>{item.name}</h3>
                               </div>

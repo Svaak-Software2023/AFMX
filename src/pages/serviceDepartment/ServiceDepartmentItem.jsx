@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import { Carousel } from "react-responsive-carousel";
 import "./serviceDepartmentItem.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks";
 import CommingSoon from "../CommingSoon";
 
@@ -32,7 +31,7 @@ function ServiceDepartmentItem() {
                           {!!itemData.imgData &&
                             itemData?.imgData?.map((item, index) => (
                               <div className="industries-slider-item-img" key={index}>
-                                <LazyLoadImage src={item.url} className="img-fluid"/>
+                                <img src={item.url} className="img-fluid"/>
                               </div>
                             ))}
                         </Carousel>

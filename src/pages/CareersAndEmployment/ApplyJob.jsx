@@ -2,10 +2,11 @@ import { useState } from "react"
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
 import "./applyJob.css"
 import { useForm } from "react-hook-form"
-import { useDispatch } from "react-redux"
-import { submitForm } from "../../redux/features/careerSlice"
+import { useDispatch, useSelector } from "react-redux"
+import { submitJobForm } from "../../redux/features/JobSlice"
 import JobDescription from "./JobDescription"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
+import Loader from "../../components/Loader/Loader"
 
 function ApplyJob() {
     const [option, setOption] = useState(false)
@@ -14,6 +15,7 @@ function ApplyJob() {
         window.scrollTo(0, 0)
     }
 
+    const {loading}=useSelector((state)=>state.JobSlice)
     const {title}=useParams()
     const {
         register,
@@ -29,6 +31,7 @@ function ApplyJob() {
     }
 
     const dispatch=useDispatch()
+    const navigate=useNavigate()
     const onSubmit=(data)=>{ 
         const formData = new FormData();
         for (var key in data) {
@@ -39,9 +42,11 @@ function ApplyJob() {
         files.forEach((file) => {
             formData.append("resume", file); // Use [] to handle multiple files
         });
-        dispatch(submitForm(formData));
+        dispatch(submitJobForm({formData,navigate}))
         console.log("Form Data",data);
     }
+
+    if(loading) return <Loader/>
     return (
         <>
             <div className="container p-0 my-3">
@@ -190,8 +195,11 @@ function ApplyJob() {
 
                                                                 <div className="col-lg-12 col-12 mb-3">
                                                                     <label className="career-label" htmlFor="Resume">Resume :</label>
-                                                                    <input type="file" className="form-control my-1" id="Resume" name="Resume" 
-                                                                    
+                                                                    <input type="file"
+                                                                     className="form-control my-1" 
+                                                                     id="Resume" 
+                                                                     name="Resume" 
+                                                                     accept=".pdf,.doc,.docx"
                                                                     onChange={handleChange}
                                                                     />
                                                                     {/* {errors.Resume && <p className="text-danger">This field is required.</p>} */}

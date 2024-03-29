@@ -58,13 +58,12 @@ import HvacRepairAndServicesDepartment from "../pages/serviceDepartment/serviceD
 import Cart from "../pages/Cart/Cart";
 import SingleProduct from "../pages/productCategory/SingleProduct";
 import DeliveryAddress from "../pages/Cart/DeliveryAddress";
-import ThankyouPage from "../pages/Cart/ThankyouPage";
+import ThankyouPage from "../components/paymentSuccess/ThankyouPage";
 import RestroomRXMemberships from "../pages/serviceDepartment/serviceDepartmentItem/RestroomClinicRXDepartment/RestroomRXMemberships";
 import AddToCart from "../pages/Cart/AddToCart";
 import RestroomRxService from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXServices/RestroomRXServices";
 import RestroomRxServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXServices/RestroomRXServices";
 import RestroomRXIndustriesWeServices from "../pages/serviceDepartment/serviceDepartmentItem/RestroomRXIndustriesWeServices/RestroomRXIndustriesWeServices";
-import PaymentPage from "../pages/paymentPage/PaymentPage";
 import NotFound from "../assets/404/NotFound";
 import Success from "../components/paymentSuccess/Success";
 import Failed from "../components/paymentSuccess/Failed";
@@ -72,39 +71,39 @@ import InternetConnectionStatus from "../assets/connection/InternetConnectionSta
 import ServiceDepartmentList from "../pages/Home/ServiceDepartmentList";
 
 export const navigation = [
-    { path: "*", name: "Default", element: <NotFound/>, isPrivate: false },
+    { path: "*", name: "Default", element: <NotFound />, isPrivate: false },
     { path: "/offline", name: "Offline", element: <InternetConnectionStatus />, isPrivate: false },
 
     { path: "/", name: "Home", element: <Home />, isPrivate: false },
     { path: "/login", name: "Login", element: <Login />, isPrivate: false },
     { path: "/create-account", name: "Create Account", element: <CreateAccount />, isPrivate: false },
     { path: "/helping-hand/:id", name: "Helping Hand", element: <HelpingHand />, isPrivate: false },
-    
+
     // shopping center 
     { path: "/product/:name/:id", name: "Product Category", element: <ProductCategory />, isPrivate: false },
-    { path: "/single-product/:parent/:childe", name: "Single Product", element: <SingleProduct/>, isPrivate: false },
+    { path: "/single-product/:parent/:childe", name: "Single Product", element: <SingleProduct />, isPrivate: false },
 
 
 
-    { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard/>, isPrivate: true },
-    { path: "/user-complaint-list", name: "User Compalint List", element: <ComplaintList/>, isPrivate: true },
+    { path: "/user-dashboard", name: "User Dashboard", element: <UserDashboard />, isPrivate: true },
+    { path: "/user-complaint-list", name: "User Compalint List", element: <ComplaintList />, isPrivate: true },
 
     { path: "/service-department/:name", name: "Service Department", element: <ServiceDepartment />, isPrivate: false },
     { path: "/service-department/:parentName/:childName", name: "Service Department Item", element: <ServiceDepartmentItem />, isPrivate: false },
     // Service Departments 
-    { path: "/service-department-list", name: "Service Department List", element: <ServiceDepartmentList/>, isPrivate: false },
+    { path: "/service-department-list", name: "Service Department List", element: <ServiceDepartmentList />, isPrivate: false },
 
     { path: "/service-department/handyman-solutions-department", name: "Handyman solutions department", element: <HandymanSolutionDepartment />, isPrivate: false },
     { path: "/service-department/Assembly department", name: "Assembly Department", element: <AssemblyDepartment />, isPrivate: false },
 
     { path: "/service-department/assembly-department-list/:id", name: "Assembly Department List", element: <AssemblyDepartmentList />, isPrivate: false },
-    { path: "/service-department/assembly-department-list/:id/:name", name: "Assembly Department List", element: <AssamblyDepartmentItem/>, isPrivate: false },
+    { path: "/service-department/assembly-department-list/:id/:name", name: "Assembly Department List", element: <AssamblyDepartmentItem />, isPrivate: false },
     { path: "/service-department/Attic Installation And Repair Department", name: "Attic Installation And Repair Department", element: <AtticInstallationAndRepairDepartment />, isPrivate: false },
     { path: "/service-department/Remodeling department", name: "Remodeling department", element: <RemodlingDepartment />, isPrivate: false },
-    { path: "/service-department/Restroom Clinic RX", name: "Restroom Clinic RX", element: <RestroomClinicRXDepartment />, isPrivate: false },    
-    { path: "/service-department/Restroom RX Memberships", name: "Restroom RX Memberships", element: <RestroomRXMemberships />, isPrivate: false },    
-    { path: "/service-department/Restroom RX Services", name: "Restroom RX Services", element: <RestroomRxServices />, isPrivate: false },    
-    { path: "/service-department/Restroom RX Industries We Services", name: "Restroom RX Industries We Services", element: <RestroomRXIndustriesWeServices />, isPrivate: false },    
+    { path: "/service-department/Restroom Clinic RX", name: "Restroom Clinic RX", element: <RestroomClinicRXDepartment />, isPrivate: false },
+    { path: "/service-department/Restroom RX Memberships", name: "Restroom RX Memberships", element: <RestroomRXMemberships />, isPrivate: false },
+    { path: "/service-department/Restroom RX Services", name: "Restroom RX Services", element: <RestroomRxServices />, isPrivate: false },
+    { path: "/service-department/Restroom RX Industries We Services", name: "Restroom RX Industries We Services", element: <RestroomRXIndustriesWeServices />, isPrivate: false },
     { path: "/service-department/Floor installation and repair department", name: "Floor installation and repair department", element: <FloorInstallation />, isPrivate: false },
     { path: "/service-department/Junk removal and hauling department", name: "Junk removal and hauling department", element: <JunkRemovalandHaulingDepartment />, isPrivate: false },
     { path: "/service-department/Handyman department", name: "Handyman department", element: <HandymanDepartment />, isPrivate: false },
@@ -122,7 +121,7 @@ export const navigation = [
     { path: "/service-department/Hvac Repair and Services Department", name: "Hvac Repair and Services Department", element: <HvacRepairAndServicesDepartment />, isPrivate: false },
 
     // End of Service Departments Data 
-    
+
     { path: "/forget-password", name: "Forget Passwordme", element: <Forget />, isPrivate: false },
     { path: "/reset-password", name: "Reset Password", element: <ResetPassword />, isPrivate: false },
     { path: "/terms-condition/:id", name: "Terms Conditions", element: <TermsConditions />, isPrivate: false },
@@ -152,14 +151,13 @@ export const navigation = [
     { path: "/new", name: "Comming Soon", element: <CommingSoon />, isPrivate: false },
 
     // start Cart add to cart delivery address checkout order place route
-     {path:"/cart" , name : "Cart" ,element:<Cart />,isPrivate: false },
-     {path:"/check-out" , name : "Check Out" ,element:<PaymentPage />,isPrivate: false },
-     {path:"/buy_now/:totalAmount" , name : "DeliveryAddress" ,element:<DeliveryAddress />,isPrivate: false },
-     {path:"/thank_you" , name : "ThankYou" ,element:<ThankyouPage />,isPrivate: false },
-     // End Cart add to cart delivery address checkout order place route
-     
-     {path:"/restroom_RXMemberships" , name : "Membership" ,element:<RestroomRXMemberships />,isPrivate: false },
-     {path:"/success" , name : "Success" ,element:<Success />,isPrivate: false },
-     {path:"/failed" , name : "Failed" ,element:<Failed />,isPrivate: false },
+    { path: "/cart", name: "Cart", element: <Cart />, isPrivate: false },
+    { path: "/buy_now/:totalAmount", name: "DeliveryAddress", element: <DeliveryAddress />, isPrivate: false },
+    { path: "/thank_you", name: "ThankYou", element: <ThankyouPage />, isPrivate: false },
+    // End Cart add to cart delivery address checkout order place route
+
+    { path: "/restroom_RXMemberships", name: "Membership", element: <RestroomRXMemberships />, isPrivate: false },
+    { path: "/success", name: "Success", element: <Success />, isPrivate: false },
+    { path: "/failed", name: "Failed", element: <Failed />, isPrivate: false },
 
 ]

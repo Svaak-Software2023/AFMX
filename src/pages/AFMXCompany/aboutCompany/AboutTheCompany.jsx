@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component"
 import ImportantLinks from "../../../components/ImportantLinks/ImportantLinks"
 import "./about.css"
 
@@ -25,7 +24,7 @@ function AboutTheCompany() {
                         </div>
                         <div className="row m-0 p-0">
                             <div className="col-lg-5 col-12">
-                            <LazyLoadImage src="./images/about/clean-science.webp" alt="" className="img-fluid" />
+                            <img src="./images/about/clean-science.webp" alt="" className="img-fluid" />
                             </div>
                             <div className="col-lg-7 col-12">
                                 <div className="my-3" style={{ textAlign: "justify" }}>

@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom"
 import "./helpingHand.css"
 import helpingHand from "../../assets/data/helpingHand.json"
 import LeftMenue from "../../components/leftmenu/LeftMenu";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function HelpingHand() {
   const { id } = useParams();
@@ -24,17 +23,17 @@ function HelpingHand() {
             <div className="row m-0 p-0  p-lg-3 py-3">
               <div className="col-lg-6 col-md-6 col-12">
                 {data?.logo&&<div className="helpingHandLogo mb-3">
-                  <LazyLoadImage src={data?.logo} alt="" className="img-fluid" />
+                  <img src={data?.logo} alt="" className="img-fluid" />
                 </div>}
                 <p style={{ textAlign: "justify" }}>{data.text}</p>
               </div>
               <div className="col-lg-6 col-md-6 col-12">
               <div>
-                <LazyLoadImage src={data.image} alt="helpingHand" className="img-fl mb-3 helping-image" />
+                <img src={data.image} alt="helpingHand" className="img-fl mb-3 helping-image" />
               </div>
                 <div>
                 {data?.image2&& 
-                <LazyLoadImage src={data.image2} alt="helpingHand" className="img-fl helping-image" />
+                <img src={data.image2} alt="helpingHand" className="img-fl helping-image" />
                 }
                 </div>
               </div>

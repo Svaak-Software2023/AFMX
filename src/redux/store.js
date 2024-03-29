@@ -3,9 +3,11 @@ import AuthReducer from "./features/authSlice";
 import ContactReducer from "./features/contactUsSlice";
 import ComplainReducer from "./features/complainSlice";
 import ProductReducer from "./features/productSlice";
-import careerReducer from "./features/careerSlice";
 import cartSlice from "./features/cartSlice";
 import addressReducer from "./features/addressSlice";
+
+import JobSlice from "./features/JobSlice";
+
 
 export default configureStore({
   reducer: {
@@ -14,8 +16,9 @@ export default configureStore({
     complain: ComplainReducer,
     products: ProductReducer,
     cart:cartSlice,
-    career: careerReducer,
-    address:addressReducer
+    address:addressReducer,
+    JobSlice:JobSlice
+   
   },
 });
 

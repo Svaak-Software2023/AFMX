@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import serviceData from "../../assets/data/serviceDepartmentData.json";
 import "./serviceDepartment.css";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
 // import ImportantLinks from "../../components/ImportantLinks/ImportantLinks";
 import ListItemWithImage from "../../components/list of item with image/ListItemWithImage";
 //import { loadConfigFromFile } from "vite";

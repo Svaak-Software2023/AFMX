@@ -3,7 +3,6 @@ import * as api from "../api"
 
 export const getProduct = createAsyncThunk("/product", async (id) => {
     try {
-        console.log("id",id)
         const response = await api.getProduct(id)
         // console.log(response.data);
         return response.data
@@ -27,7 +26,7 @@ export const getSingleProduct = createAsyncThunk("/single-product", async (id) =
 export const getAllCategory = createAsyncThunk("/allCategory", async () => {
     try {
         const response = await api.allProductCategory()
-        console.log(response);
+        // console.log(response);
         return response.data
     } catch (err) {
         console.log("Error",err);

@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
@@ -24,7 +23,7 @@ const HandymanDepartment = () => {
                   >
                     <div className="image-gallery margin-image-servicedepartment-item">
                       <Link to={item.name}>
-                        <LazyLoadImage
+                        <img
                           src={item.image}
                           className="img-fluid"
                           effect="blur"

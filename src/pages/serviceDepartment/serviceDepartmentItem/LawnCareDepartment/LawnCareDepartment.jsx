@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import "./style.css"
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
@@ -23,7 +22,7 @@ const LawnCareDepartment = () => {
                     <div key={index} className="col-lg-3 mb-5 d-flex text-center ">
                       <div className="image-gallery margin-image-servicedepartment-item ">
                         <Link to={item.name}>
-                          <LazyLoadImage src={item.image} className="img-fluid"  effect="blur"/>
+                          <img src={item.image} className="img-fluid"  effect="blur"/>
                           <div className="service-name px-3">
                             <h3 className="border-3 border border-danger" style={{backgroundColor: "#F81894"}}>{item.name}</h3>
                           </div>

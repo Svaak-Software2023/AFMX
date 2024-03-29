@@ -4,7 +4,6 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import {loadStripe} from '@stripe/stripe-js';
 import {fetchCart,createCheckout} from "../../redux/api";
 import {
-  getSingleAddress,
   addAddress,
   getAllAddress,
   deleteAddress,
@@ -20,7 +19,6 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
-import PaymentPage from "../paymentPage/PaymentPage";
 
 const DeliveryAddress = () => {
   const dispatch = useDispatch();
@@ -287,7 +285,7 @@ const DeliveryAddress = () => {
   }
 
   const makePayment = async() =>{
-    const stripe = await loadStripe('pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL');
+    const stripe = await loadStripe("pk_test_51Ow4TtJKdTIDd26g32G3OKUjU9wQ1VhVAiW0NTygza4L5OsBda2oMQioEfrMy2aMVIFP7Nq31wAgHUslv0bvwj0R00PPAohriL");
     const {data} = await fetchCart(token);
     const products = data.cartResponse.Products.map(({productId,productPrice,productName,noOfProducts:noofProducts})=>{
       return {productId,noofProducts,productPrice,productName}
@@ -295,8 +293,6 @@ const DeliveryAddress = () => {
 
    
     const {data:{productCheckout}}  = await createCheckout(cartData.cartId,{products},token);
-    // window.location.href = productCheckout
-
     if(productCheckout){
       return stripe.redirectToCheckout({
         sessionId:productCheckout.sessionId
@@ -856,10 +852,6 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
         </div>)}
           </div>}
         </div>
-
-        {/* {(cartData?.Products?.length > 0) && <PaymentPage
-          totalAmount={Number(totalAmount).toFixed(2)}
-        />} */}
       </div>
     </>
   );

@@ -200,11 +200,7 @@ hr{
     justify-content: center;
     align-items: center;
   }
-  .congrats_content{
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 38.73px;
-  }
+  
   .back_to_home_btn{
     padding: 15px 50px;
   }

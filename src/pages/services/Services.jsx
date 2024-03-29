@@ -2,7 +2,6 @@ import serviceData from "../../assets/data/servicesData.json";
 import "./services.css";
 import {  Link, useParams } from "react-router-dom";
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 function Services() {
   const { id } = useParams();
   const data = serviceData.find((item) => item.id === id);
@@ -23,7 +22,7 @@ function Services() {
                       <div className="col-lg-4 mb-1 p-0 image-gallery" key={item.id}>
                         <div className="mx-1 position-relative">
                         <Link to={`/service-list-item/${item.name}`}>
-                          <LazyLoadImage
+                          <img
                             src={item?.serviceImage}
                             title={item?.name}
                             alt={data?.id}

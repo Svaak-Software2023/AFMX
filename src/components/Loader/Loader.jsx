@@ -3,7 +3,7 @@ export default function Loader(){
     return(
         <>
 <div className="loader-main">
-<svg className="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+<svg className="pl" viewBox="0 0 160 160" width="160px" height="160px" >
 			<defs>
 				<linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
 					<stop offset="0%" stopColor="#000"></stop>

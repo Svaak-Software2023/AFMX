@@ -1,13 +1,15 @@
+import { useParams } from "react-router-dom";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
-import PaymentPage from "../../../paymentPage/PaymentPage";
+import Payment from "../../../../components/Payment/Payment";
 import "./RestroomRXMemberships.css";
-import { Link } from "react-router-dom";
+
 
 const data = [
+
   {
     name: "Rx Checkup",
     img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx1.jpg",
-    cost1 : "",
+    cost1: "",
     cost2: "Cost: $89.99",
     color: "#D1E6B5",
     tasks: [
@@ -84,6 +86,7 @@ const data = [
       "Proper Waste Disposal",
     ],
   },
+
 ];
 
 const RestroomRXMemberships = () => {
@@ -129,7 +132,12 @@ const RestroomRXMemberships = () => {
                     </div>
                     {/* <Link to={item.name} target="_blank" className="d-flex align-items-end"><button> More... </button></Link> */}
                   </div>
-                    {(index < 3) && <PaymentPage totalAmount={Number(item?.cost2.split("$")[1])} goToUrl={item.name} />}
+                  {(index < 3) &&
+                    <Payment
+                      memberShipPlan={Number(item?.cost2.split("$")[1])}
+                      memberShipName={item.name}
+                      memberShipType="month" />
+                  }
                 </div>
               </div>
             ))}

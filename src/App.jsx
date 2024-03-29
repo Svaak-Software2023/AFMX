@@ -4,7 +4,6 @@ import { FaArrowUp } from "react-icons/fa";
 import { ToastContainer } from 'react-toastify';
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./App.css"
 import { navigation } from "./routers/Router";
 import Authentication from "./authentication/Authentication";

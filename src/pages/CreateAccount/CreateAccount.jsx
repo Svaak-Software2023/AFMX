@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { signup } from "../../redux/features/authSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function CreateAccount() {
     const navigate = useNavigate()
@@ -51,7 +50,7 @@ function CreateAccount() {
             <div className="container p-0 bg-white my-3">
                 <div className="row">
                     {/* <div className="col-lg-6 col-md-6 col-12">
-                        <LazyLoadImage src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="" className="img-fluid" />
+                        <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="" className="img-fluid" />
                     </div> */}
                     <div className="col-lg-12 col-md-12 col-12">
                         <div className="p-lg-5 p-3" >

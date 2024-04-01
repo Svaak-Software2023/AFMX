@@ -115,6 +115,14 @@ color: white;
   color: #fff;
 }
 
+.banner_ad_relative{
+  position: relative;
+}
+.tv_absolute{
+  position: absolute;
+  top: -10px;
+}
+
 
 @media only screen and (max-width:991px){
   .banner-img{

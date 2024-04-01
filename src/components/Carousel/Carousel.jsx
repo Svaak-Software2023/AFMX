@@ -129,12 +129,13 @@ const Slider = () => {
                   <Link to="/create-account">Create Account</Link>
                 </div>
               )}
-              <div className="banner-ad">
+              <div className="banner-ad banner_ad_relative">
                 <Link to="/create-account" >
                   <video width height autoPlay loop muted>
                     <source src="./video/AfmxJoin.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
+                  <img className="tv_absolute" src="/tvpng.png" />
                 </Link>
               </div>
             </div>

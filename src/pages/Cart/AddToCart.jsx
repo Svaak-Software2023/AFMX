@@ -18,6 +18,7 @@ const AddToCart = () => {
       dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast, token }))
     } else {
       dispatch(cartItemUpdateQuantity({ cartItemId, isIncrement, toast, token }))
+      console.log('test');
     }
   };
 

@@ -11,6 +11,7 @@ function ServiceDepartmentItem() {
   const data = serviceData.find((item) => item.name === parentName);
   const itemData = data?.submenu.find((item) => item.name == childName);
   
+  
   return (
     <>
       {itemData?.imgData?.length > 0 ? (

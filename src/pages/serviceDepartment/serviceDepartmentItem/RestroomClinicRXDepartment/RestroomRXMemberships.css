@@ -50,12 +50,12 @@
   }
 
   .rx-switch-button {
-    --secondary-container: #3a4b39;
+    --secondary-container: #898885;
     --primary: #84da89;
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 25px;
    }
    
@@ -76,8 +76,11 @@
     background-color: #d2d2d3;
     transition: .2s;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
    
    .rx-slider-btn:before {
@@ -105,7 +108,7 @@
    }
    
    input:checked + .rx-slider-btn:before {
-    transform: translateX(75px);
+    transform: translateX(95px);
    }
   
   @media screen and (max-width: 769px ) {

@@ -4,9 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 import { HiSpeakerphone } from "react-icons/hi";
 import { ImLocation } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
-import { AiOutlineClose,AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useDispatch, useSelector } from "react-redux";
+import { getCart } from "../../redux/features/cartSlice";
 
 function Navbar() {
   const [navbar, setNavbar] = useState("navbar");
@@ -41,6 +43,17 @@ function Navbar() {
     setmembershipdrop(!membershipdrop);
   };
 
+
+  const { data: cartData } = useSelector((state) => state.cart);
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    let token = `${JSON.parse(localStorage.getItem('user'))?.token}`;
+    if (token) {
+      dispatch(getCart({ token }))
+    }
+  }, [])
   return (
     <>
       <div className="navbar-container-wraper">
@@ -56,7 +69,7 @@ function Navbar() {
                   </div>
                   <div className="mobile-nav-toggle">
                     <AiOutlineMenu
-                      style={{fontSize:"2.2rem"}}
+                      style={{ fontSize: "2.2rem" }}
                       onClick={() =>
                         navbar === "navbar"
                           ? setNavbar("navbar-mobile")
@@ -93,9 +106,13 @@ function Navbar() {
                           <Link target="_blank" to="/complain-portal" className="complaint_btn">
                             Complaint Portal
                           </Link>
+                        <Link to="/cart" className="position-relative mx-2">
+                          <img src="assets/img/cart.png" />
+                          {(cartData) && (cartData?.Products?.length) ? <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartData?.Products?.length}</span> : ""}
+                        </Link>
                         </button>
                       </li>
-                     
+
                       <li>
                         {showInputSearch && (
                           <input type="text" placeholder="Search" />
@@ -106,14 +123,14 @@ function Navbar() {
                             onClick={handleShowSearch}
                           />
                         </button>
-                      </li> 
-                      
+                      </li>
+
                       {/* {/ location /} */}
-                      <li>               
-                          <Link target="_blank" to="/location">
-                            <ImLocation className="search_location" />
-                          </Link>
-                        </li>
+                      <li>
+                        <Link target="_blank" to="/location">
+                          <ImLocation className="search_location" />
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -126,31 +143,31 @@ function Navbar() {
             <div className="container d-flex align-items-center justify-content-center">
               <nav id="navbar" className={navbar.toString()}>
                 <ul>
-                <li className="dropdown" onClick={priceCalculator} style={{border:"none"}}>
-                      <a >
-                        <span>Price Calculator<RiArrowDropDownLine className="fs-4"/></span>
-                      </a>
-                      {price && (
-                        <ul className="dropdown-active">
-                          {/* <li>
+                  <li className="dropdown" onClick={priceCalculator} style={{ border: "none" }}>
+                    <a >
+                      <span>Price Calculator<RiArrowDropDownLine className="fs-4" /></span>
+                    </a>
+                    {price && (
+                      <ul className="dropdown-active">
+                        {/* <li>
                             <Link target="_blank" to="/price-calculator">Price Calculator</Link>
                           </li> */}
-                          <li>
-                            <Link target="_blank" to="">Budget Buddy </Link>
-                          </li>
-                          <li>
-                            <Link target="_blank" to="">Start A Project</Link>
-                          </li>
-                          <li>
-                            <Link target="_blank" to="">Pay As You Go</Link>
-                          </li>
-                        </ul>
-                      )}
-                    </li>
-                
+                        <li>
+                          <Link target="_blank" to="">Budget Buddy </Link>
+                        </li>
+                        <li>
+                          <Link target="_blank" to="">Start A Project</Link>
+                        </li>
+                        <li>
+                          <Link target="_blank" to="">Pay As You Go</Link>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+
                   <li className="dropdown" onClick={membershipdropdown}>
                     <Link>
-                      <span>Membership<RiArrowDropDownLine className="fs-4"/></span>
+                      <span>Membership<RiArrowDropDownLine className="fs-4" /></span>
                     </Link>
                     {membershipdrop && (
                       <ul className="dropdown-active">
@@ -172,7 +189,7 @@ function Navbar() {
                     )}
                   </li>
                   <li>
-                    <Link  to="/service-department-list" className="nav-link ">
+                    <Link to="/service-department-list" className="nav-link ">
                       Service Department
                     </Link>
                   </li>
@@ -206,15 +223,15 @@ function Navbar() {
                   </li>
 
                   {data ?
-                    <li style={{border:"none !important"}}>
+                    <li style={{ border: "none !important" }}>
                       <Link target="_blank" to="/" className="nav-link " onClick={() => localStorage.clear()}>
                         Logout
                       </Link>
                     </li>
                     :
-                    <li className="dropdown" onClick={logindropdown} style={{border:"none !important"}}>
+                    <li className="dropdown" onClick={logindropdown} style={{ border: "none !important" }}>
                       <a >
-                        <span>Login<RiArrowDropDownLine className="fs-4"/></span>
+                        <span>Login<RiArrowDropDownLine className="fs-4" /></span>
                       </a>
                       {logindrop && (
                         <ul className="dropdown-active">

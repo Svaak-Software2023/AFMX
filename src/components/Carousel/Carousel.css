@@ -11,7 +11,7 @@
 
 .banner-ad video{
   width: 100%;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .banner{
@@ -60,7 +60,7 @@ color: white;
 
 
 .login-button {
-  padding: 10px 20px;
+  padding: 5px 20px;
   background-color: white;
   display: grid;
   place-items: center;
@@ -71,16 +71,16 @@ color: white;
   font-size: 14px;
   display: block;
   text-align: center;
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 .login-button .profile_pic {
   border-radius: 50%;
   background: var(--blue);
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   display: grid;
   place-items: center;
-  font-size: 45px;
+  font-size: 25px;
   color: white;
 }
 .login-button .profile_name {

@@ -110,26 +110,26 @@ const Slider = () => {
               </div>
             </div>
 
-            <div className="col-lg-3">
+            <div className="col-lg-3 m-0 p-0">
               {user&&user.token ? (
                 <div className="login-button">
                   <div className="profile_pic">
                     {user&&user?.clientFirstName?.charAt(0).toUpperCase()}
                   </div>
-                  <h3 className="profile_name">Welcome, {user?.clientFirstName}</h3>
+                  <h3 className="profile_name mb-2 p-0">Welcome, {user?.clientFirstName}</h3>
                   <Link to="/user-dashboard">View Profile</Link>
                   <button className="signout_btn" onClick={handleSignOut}>
                     Sign Out
                   </button>
                 </div>
               ) : (
-                <div className="login-button">
+                <div className="login-button py-4">
                   <Link to="/login">Login</Link>
                   <Link to="/forget-password">Forgot Password</Link>
                   <Link to="/create-account">Create Account</Link>
                 </div>
               )}
-              <div className="banner-ad banner_ad_relative">
+              <div className="banner-ad banner_ad_relative mb-5 mt-2">
                 <Link to="/create-account" >
                   <video width height autoPlay loop muted>
                     <source src="./video/AfmxJoin.mp4" type="video/mp4" />

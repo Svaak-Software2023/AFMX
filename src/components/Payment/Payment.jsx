@@ -9,7 +9,6 @@ function Payment({ memberShipName, memberShipType, memberShipPlan }) {
     const navigate = useNavigate()
     const [loading, setLoading] = useState(false)
     const token = JSON.parse(localStorage.getItem("user"));
-    console.log("process.env.",import.meta.env);
     const handleSubmit = async () => {
         if (token) {
             const body = {
@@ -28,18 +27,11 @@ function Payment({ memberShipName, memberShipType, memberShipPlan }) {
                 )
                 .then((res) => {
                     console.log(res.data, "res");
-                    return stripe.redirectToCheckout({
-                        sessionId: res.data.sessionId
-                    });
-                    // const { sessionUrl } = res.data.m;
-                    // if (sessionUrl) {
-                    //     const linkElement = document.createElement('a');
-                    //     linkElement.href = sessionUrl;
-                    //     // linkElement.target = "_blank"; // Open link in a new tab/window
-                    //     document.body.appendChild(linkElement);
-                    //     linkElement.click();
-                    //     document.body.removeChild(linkElement);
-                    // }
+                    localStorage.setItem("sub",JSON.stringify(res.data.savedUser))
+                    // return stripe.redirectToCheckout({
+                    //     sessionId: res.data.sessionId
+                    // });
+                 
                 })
                 .catch((error) => console.log(error))
                 .finally(() => {

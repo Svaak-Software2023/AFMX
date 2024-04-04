@@ -4,7 +4,7 @@ import industryData from "../../assets/data/industriesWeServeData.json";
 
 import { Carousel } from "react-responsive-carousel";
 import LeftMenue from "../../components/leftmenu/LeftMenu";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 
 function IndustryItem(){
@@ -33,13 +33,13 @@ function IndustryItem(){
                       <div className="seervicedepartment-crausel">
                         <Carousel showThumbs={false} autoPlay infiniteLoop>
                           <div className="service-department-item-img">
-                            <LazyLoadImage src="./images/industry/CommunityCollege/CommunityCollege1.png" alt="" className="img-fluid" />
+                            <img src="./images/industry/CommunityCollege/CommunityCollege1.png" alt="" className="img-fluid" />
                           </div>
                           <div className="service-department-item-img">
-                            <LazyLoadImage src="./images/industry/CommunityCollege/CommunityCollege2.png" alt="" className="img-fluid" />
+                            <img src="./images/industry/CommunityCollege/CommunityCollege2.png" alt="" className="img-fluid" />
                           </div>
                           <div className="service-department-item-img">
-                            <LazyLoadImage src="./images/industry/CommunityCollege/CommunityCollege3.png" alt="" className="img-fluid" />
+                            <img src="./images/industry/CommunityCollege/CommunityCollege3.png" alt="" className="img-fluid" />
                           </div>
                         </Carousel>
                       </div>

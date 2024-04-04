@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
 import "./style.css"
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const FloorInstallation = () => {
   const AssemblyData = departmentData.find((item) => item.name === "Floor installation and repair department");
   const maindata = AssemblyData.submenu;
@@ -20,7 +20,7 @@ const FloorInstallation = () => {
                 <div key={index} className="col-lg-4 mb-4 d-flex justify-content-center text-center rounded-4" >
                   <div className="image-gallery margin-image-servicedepartment-item ">
                     <Link to={item.name}>
-                      <LazyLoadImage src={item.image} className="img-fluid image-cont rounded-4" effect="blur" />
+                      <img src={item.image} className="img-fluid image-cont rounded-4" effect="blur" />
                       
                         <h4 className="item-name">{item.name}</h4>
                     </Link>

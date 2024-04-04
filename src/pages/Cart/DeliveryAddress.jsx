@@ -19,7 +19,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { TextField } from "@mui/material";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const DeliveryAddress = () => {
   const dispatch = useDispatch();
@@ -574,7 +574,7 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
                                   <div className="col-12 col-md-8 col-lg-8 col-sm-8 items">
                                     <div className="row ">
                                       <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2">
-                                        <LazyLoadImage effect="blur"
+                                        <img effect="blur"
                                           className=" img-fluid"
                                           src={item?.productImage?.[0]}
                                           alt={item?.productName}
@@ -696,7 +696,7 @@ let totalAmount=totalSum-cartData.discountPrice+cartData.deliveryCharges
                                                 justifyContent: "center",
                                               }}
                                             >
-                                              <LazyLoadImage effect="blur"
+                                              <img effect="blur"
                                                 className="img-fluid"
                                                 src={item.productImage[0]}
                                                 alt={item.productName}

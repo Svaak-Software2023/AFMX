@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import ImportantLinks from '../../../../components/ImportantLinks/ImportantLinks'
 import { Carousel } from 'react-responsive-carousel'
 import data from "../../../../assets/data/serviceDepartmentData.json";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { img } from 'react-lazy-load-image-component';
 
 function AssamblyDepartmentItem() {
     const {id, name}=useParams()
@@ -30,7 +30,7 @@ function AssamblyDepartmentItem() {
                           {!!itemData.imgData &&
                             itemData?.imgData?.map((item, index) => (
                               <div className="industries-slider-item-img" key={index}>
-                                <LazyLoadImage effect="blur" src={item.url} className="img-fluid"/>
+                                <img effect="blur" src={item.url} className="img-fluid"/>
                               </div>
                             ))}
                         </Carousel>

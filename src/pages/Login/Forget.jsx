@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 
@@ -39,7 +39,7 @@ function Forget() {
             <div className="container p-0 bg-white my-3">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
-                        <LazyLoadImage effect="blur" src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="" className="img-fluid" />
+                        <img effect="blur" src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="" className="img-fluid" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
 

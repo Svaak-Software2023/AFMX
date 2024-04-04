@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./membership.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const MembershipCard = (props) => {
   const data = props.data;
@@ -20,7 +20,7 @@ const MembershipCard = (props) => {
     <>
         <div className={`card${data.id} mb-3 card`}>
           <div className="plan_img">
-            <LazyLoadImage effect="blur" src={data.planImage} alt={data.planName} />
+            <img effect="blur" src={data.planImage} alt={data.planName} />
           </div>
           <h1>{data.planName}</h1>
           <div

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { getCart, cartItemUpdateQuantity, getAllSaveForLater, addAndMoveSaveLater, deleteCartItems } from "../../redux/features/cartSlice";
 import { toast } from "react-toastify";
 import Loader from "../../components/Loader/Loader";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const Cart = () => {
   const token = `${JSON.parse(localStorage.getItem('user'))?.token}`;
@@ -108,7 +108,7 @@ const Cart = () => {
                             <div className="row ">
                               <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2"
                                 style={{ display: "flex", justifyContent: "center" }}>
-                                <LazyLoadImage effect="blur"
+                                <img effect="blur"
                                   className="img-fluid"
                                   src={item.productImage[0]}
                                   alt={item.productName}
@@ -186,7 +186,7 @@ const Cart = () => {
                             <div className="row ">
                               <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2"
                                 style={{ display: "flex", justifyContent: "center" }}>
-                                <LazyLoadImage effect="blur"
+                                <img effect="blur"
                                   className="img-fluid"
                                   src={item.productImage[0]}
                                   alt={item.productName}

@@ -6,7 +6,7 @@ import { ImLocation } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import { useDispatch, useSelector } from "react-redux";
 import { getCart } from "../../redux/features/cartSlice";
 

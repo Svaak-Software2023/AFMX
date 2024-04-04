@@ -13,7 +13,7 @@ import {
 import { addCart, addCartItems, getCart } from "../../redux/features/cartSlice";
 import Loader from "../../components/Loader/Loader";
 import { createCart } from "../../redux/api";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 
 function SingleProduct() {

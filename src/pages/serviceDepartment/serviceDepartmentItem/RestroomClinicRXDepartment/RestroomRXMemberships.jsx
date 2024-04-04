@@ -5,7 +5,7 @@ import "./RestroomRXMemberships.css";
 import ListItemWithImage from "../../../../components/list of item with image/ListItemWithImage";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
 import { useEffect, useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 // console.log(JSON.parse(localStorage.getItem('user')));
 
@@ -140,7 +140,7 @@ const RestroomRXMemberships = () => {
               {data.length && data?.map((item, index) => (
                 <div key={index} >
                   <div className="RxMembershipHeading">
-                    <LazyLoadImage effect="blur" src={item.img} alt={item} />
+                    <img effect="blur" src={item.img} alt={item} />
                     <h3> {item.name} </h3>
                   </div>
                   <div

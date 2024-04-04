@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import productData from "../../assets/data/Productdata.json"
 import { getCart, cartItemUpdateQuantity } from "../../redux/features/cartSlice";
 import { useSelector } from "react-redux";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const AddToCart = () => {
   const token = `${JSON.parse(localStorage.getItem('user')).token}`;
@@ -53,7 +53,7 @@ const AddToCart = () => {
                           <div className="row ">
                             <div className="col-12 col-md-3 col-lg-3 col-sm-12 mb-2"
                               style={{ height: "200px", display: "flex", justifyContent: "center" }}>
-                              <LazyLoadImage
+                              <img
                                 effect="blur"
                                 className=" img-fluid"
                                 src={item.productImage[0]}

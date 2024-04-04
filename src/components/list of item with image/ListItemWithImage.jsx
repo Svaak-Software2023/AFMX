@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
 import "./style.css"
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function ListItemWithImage({ name, url, propData }) {
     console.log(name);
@@ -24,7 +24,7 @@ function ListItemWithImage({ name, url, propData }) {
                                         <div className="col-lg-4 mb-1 p-0 list-image-gallery" key={item?.id}>
                                             <div className="mx-1 position-relative">
                                                 <Link to={`${item.name}`} target="_blank">
-                                                    <LazyLoadImage
+                                                    <img
                                                         effect="blur"
                                                         src={item?.image}
                                                         title={item?.name}

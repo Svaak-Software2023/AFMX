@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./card.css"
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function ProductCard({ data, parent }) {
   const product = data;
@@ -12,7 +12,7 @@ function ProductCard({ data, parent }) {
           <Link to={`/single-product/${parent}/${product.productId}`}>
             <div className="product-card card" style={{width:"19.5rem",height:"21rem"}} key={product.productId} >
                <div className="img_container">
-                  <LazyLoadImage effect="blur"
+                  <img effect="blur"
                     src={product.productImage&&product?.productImage[0]}
                     alt={product.productImage&&product?.productImage[0]}
                     className="product-card-image"

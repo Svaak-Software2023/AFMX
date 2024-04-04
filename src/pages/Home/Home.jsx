@@ -10,7 +10,7 @@ import { getAllCategory } from "../../redux/features/productSlice";
 const ServiceDepartmentList = React.lazy(() => import("./ServiceDepartmentList"));
 import { Skeleton } from "@mui/material";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function Home() {
   const productCategoryData = useSelector((state) => state.products.allCategory.data)
@@ -403,7 +403,7 @@ function Home() {
                       </li>
                     </ul>
                     <ul>
-                      <LazyLoadImage src="assets/img/shildX.png" className="img-fluid" />
+                      <img src="assets/img/shildX.png" className="img-fluid" />
                       <li>
                         <b>Luxurious Excellence Awaits:</b>Don&apos;t miss the
                         chance to indulge in the epitome of luxury cleaning
@@ -439,8 +439,8 @@ function Home() {
                 <div className="memebership-list">
                   <h2>MY FLORIDA HURRICANE WATCH WEATHER</h2>
                   <div className="membership-lis-image">
-                    {/* <LazyLoadImage src="assets/img/service/map.jpg" />
-                    <LazyLoadImage src="assets/img/service/calender.jpg" /> */}
+                    {/* <img src="assets/img/service/map.jpg" />
+                    <img src="assets/img/service/calender.jpg" /> */}
                     {/* <WatchWhether /> */}
                   </div>
                 </div>
@@ -523,8 +523,8 @@ function Home() {
                     </li>
                   </ul>
                   <div className="img-box">
-                    <LazyLoadImage src="assets/img/partner-w-u1.png" />
-                    <LazyLoadImage src="assets/img/partner-w-u2.png" />
+                    <img src="assets/img/partner-w-u1.png" />
+                    <img src="assets/img/partner-w-u2.png" />
                   </div>
                 </div>
               </div>
@@ -551,27 +551,27 @@ function Home() {
                     <div className="double-img">
                       <div className="img--1">
                         <a href>
-                          <LazyLoadImage src="assets/img/afmx-1.png" />
+                          <img src="assets/img/afmx-1.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <LazyLoadImage src="assets/img/afmx-2.png" />
+                          <img src="assets/img/afmx-2.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <LazyLoadImage src="assets/img/afmx-3.png" />
+                          <img src="assets/img/afmx-3.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <LazyLoadImage src="assets/img/afmx-4.png" />
+                          <img src="assets/img/afmx-4.png" />
                         </a>
                       </div>
                       <div className="img--1">
                         <a href>
-                          <LazyLoadImage src="assets/img/afmx-5.png" />
+                          <img src="assets/img/afmx-5.png" />
                         </a>
                       </div>
                     </div>

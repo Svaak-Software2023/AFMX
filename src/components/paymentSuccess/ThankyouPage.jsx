@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./style.css"
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const ThankyouPage = ({ message }) => {
   const navigate = useNavigate()
 
@@ -21,7 +21,7 @@ const ThankyouPage = ({ message }) => {
                   <div className="col-12 content_center_grid">
                     <div className="w-100">
                       <div className="d-flex justify-content-center mb-2">
-                        <LazyLoadImage effect="blur" src="assets/thankyou.jpg" className="img-fluid d-block" />
+                        <img effect="blur" src="assets/thankyou.jpg" className="img-fluid d-block" />
                       </div>
                     </div>
                     <h6 className="congrats_content text-center">{message}</h6>

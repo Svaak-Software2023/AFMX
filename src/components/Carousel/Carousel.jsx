@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Carousel.css";
 import { useEffect, useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 const Slider = () => {
   const [user, setUser] = useState("");
   const isLogin =JSON.parse(localStorage.getItem('user'))
@@ -31,46 +30,46 @@ const Slider = () => {
                     </div>
                   </div>
                   <div className="carousel-item" data-bs-interval="2000">
-                    <LazyLoadImage src="images/Banner/Image1.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img src="images/Banner/Image1.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item" data-bs-interval="2000">
-                    <LazyLoadImage   src="images/Banner/NewEraNewTechnology.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/NewEraNewTechnology.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/HandymanServices.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/HandymanServices.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/RoboticCleaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/RoboticCleaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/GeoFencing.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/GeoFencing.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/ConstructionCleaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/ConstructionCleaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/MaidXPro.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/MaidXPro.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/PayAsYouGo.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/PayAsYouGo.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/Membership.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/Membership.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/ChemicalShop.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/ChemicalShop.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/PriceCalculator.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/PriceCalculator.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/Membership.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/Membership.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/JanitorialLeaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/JanitorialLeaning.jpg" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <LazyLoadImage   src="images/Banner/IsNowAvailable.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
+                    <img   src="images/Banner/IsNowAvailable.png" className="d-block w-100 banner-img" effect="blur" alt="..." />
                   </div>
                   
                   <div className="carousel-item " >

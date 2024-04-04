@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import ImportantLinks from "../../../../components/ImportantLinks/ImportantLinks";
 import departmentData from "../../../../assets/data/serviceDepartmentData.json";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF';
@@ -36,7 +36,7 @@ const LandscapeDesignandInstallation = () => {
                       <div className="mx-1 position-relative">
                         <Link to={`${item.name}`} target="_blank">
                           <div className="image-container" style={boxStyle}>
-                            <LazyLoadImage src={item?.image} title={item?.name} alt={item?.id} className="img-fluid" />
+                            <img src={item?.image} title={item?.name} alt={item?.id} className="img-fluid" />
                               {/* <h6 className="">{item?.name}</h6> */}
                               <div className="borderdiv"> <p>{item.name}</p> </div>
                           </div>

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import { contactForm } from '../../redux/features/contactUsSlice'
 import { toast } from 'react-toastify'
 import { TextField } from '@mui/material'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 
 function Contact() {
     const [formData, setFormData] = useState({ name: "", email: "", phoneNumber: "", subject: "", message: "" })
@@ -31,7 +31,7 @@ function Contact() {
                                 </div>
                                 <div className="row m-0 p-4">
                                     <div className="col-md-6 ">
-                                        <LazyLoadImage  src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=626&ext=jpg&ga=GA1.1.360853026.1666364970&semt=ais" alt="" className='img-fluid' />
+                                        <img  src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=626&ext=jpg&ga=GA1.1.360853026.1666364970&semt=ais" alt="" className='img-fluid' />
                                     </div>
                                     <div className="col-md-6">
                                         <h3 className='contact-info-heading'>Get in Touch</h3>

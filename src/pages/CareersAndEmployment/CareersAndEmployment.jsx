@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import "./Career.css"
 import ImportantLinks from "../../components/ImportantLinks/ImportantLinks"
 import JobData from "../../assets/data/careerAndEmployment/carrerAndEmployment.json"
-import { LazyLoadImage } from "react-lazy-load-image-component"
+import { img } from "react-lazy-load-image-component"
 
 
 function CareersAndEmployment() {
@@ -17,7 +17,7 @@ function CareersAndEmployment() {
                         <div className="container bg-white my-2 m-0">
                             <div className="row m-0 py-2">
                                 <div className="col-lg-12 col-12 overFlow m-0 p-0 career-employement-img">
-                                    <LazyLoadImage effect="blur" src="./images/career/career.png" alt="" className="img-fluid overFlow m-0 p-0 mb-3" />
+                                    <img effect="blur" src="./images/career/career.png" alt="" className="img-fluid overFlow m-0 p-0 mb-3" />
                                 </div>
                                 <div className="col-lg-12 col-12 ">
                                     <div className="">
@@ -39,7 +39,7 @@ function CareersAndEmployment() {
                                     </div>
                                 </div>
                                 <div className="col-lg-12 col-12 overFlow m-0 p-0 mb-3">
-                                    <LazyLoadImage src="./images/career/employmentAtAfmx.png" alt="" className="img-fluid overFlow career-employement-img" />
+                                    <img src="./images/career/employmentAtAfmx.png" alt="" className="img-fluid overFlow career-employement-img" />
                                 </div>
                                 <p className="career-text mb-3">Afmx Company stands at the forefront of the building maintenance industry, setting the standard
                                     for excellence in management services. Our extensive offerings encompass a wide spectrum of

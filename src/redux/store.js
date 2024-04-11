@@ -7,6 +7,7 @@ import cartSlice from "./features/cartSlice";
 import addressReducer from "./features/addressSlice";
 
 import JobSlice from "./features/JobSlice";
+import miniTvSlice from "./features/miniTvSlice";
 
 
 export default configureStore({
@@ -17,7 +18,8 @@ export default configureStore({
     products: ProductReducer,
     cart:cartSlice,
     address:addressReducer,
-    JobSlice:JobSlice
+    JobSlice:JobSlice,
+    miniTv:miniTvSlice
    
   },
 });

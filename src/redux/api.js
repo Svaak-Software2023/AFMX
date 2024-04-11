@@ -40,6 +40,9 @@ export const patchAddress = (formData,token) => API.patch(`/address/update-addre
 export const deleteAddress = (deliveryAddressId,token) => API.delete(`/address/delete-address/${deliveryAddressId}?token=${token}`);
 export const createCheckout = (cartId,products,token) => API.post(`/checkout/create-checkout/${cartId}?token=${token}`,products);
 
+// minitv 
+
+export const getAllMinitv = () => API.get(`/mini-tv/get-media`);
 
 
 

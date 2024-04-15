@@ -1,27 +1,37 @@
-import React from 'react'
-import ChatBot from '../ChatBot/ChatBot'
 
-function MapLocation() {
-    return (
-        <>
-        <div className="container p-0 my-3">
+import React, { useState, useEffect } from 'react';
+import GMap from './GMap';
 
-            <div style={{ width: '100%' }}>
-                <iframe
-                    width="100%"
-                    height={600}
-                    frameBorder={0}
-                    scrolling="no"
-                    marginHeight={0}
-                    marginWidth={0}
-                    src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
-                    &lt;a href="https://www.maps.ie/population/"&gt;Population mapping&lt;/a&gt;
-                </iframe>
-            </div>
-        </div>
-        {/* <ChatBot/> */}
-        </>
-    )
-}
 
-export default MapLocation
+// load google map script
+const loadGoogleMapScript = (callback) => {
+  if (
+    typeof window.google === 'object' &&
+    typeof window.google.maps === 'object'
+  ) {
+    callback();
+  } else {
+    const googleMapScript = document.createElement('script');
+    googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_MAP_API_KEY}`;
+    window.document.body.appendChild(googleMapScript);
+    googleMapScript.addEventListener('load', callback);
+  }
+};
+
+const MapLocation = () => {
+  const [loadMap, setLoadMap] = useState(false);
+
+  useEffect(() => {
+    loadGoogleMapScript(() => {
+      setLoadMap(true);
+    });
+  }, []);
+
+  return (
+    <>
+      {!loadMap ? <div>Loading...</div> : <GMap />}
+    </>
+  );
+};
+
+export default MapLocation;

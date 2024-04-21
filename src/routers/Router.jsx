@@ -70,6 +70,7 @@ import Failed from "../components/paymentSuccess/Failed";
 import InternetConnectionStatus from "../assets/connection/InternetConnectionStatus";
 import ServiceDepartmentList from "../pages/Home/ServiceDepartmentList";
 import ChatBot from "../pages/ChatBot/ChatBot";
+import GMap from "../pages/mapLocation/GMap";
 
 export const navigation = [
     { path: "*", name: "Default", element: <NotFound />, isPrivate: false },
@@ -159,6 +160,7 @@ export const navigation = [
 
     { path: "/restroom_RXMemberships", name: "Membership", element: <RestroomRXMemberships />, isPrivate: false },
     { path: "/success", name: "Success", element: <Success />, isPrivate: false },
-    { path: "/failed", name: "Failed", element: <Failed />, isPrivate: false }
+    { path: "/failed", name: "Failed", element: <Failed />, isPrivate: false },
+    { path: "/map", name: "map", element: <GMap />, isPrivate: false }
 
 ]

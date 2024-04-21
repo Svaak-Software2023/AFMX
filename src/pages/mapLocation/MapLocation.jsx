@@ -1,110 +1,3 @@
-// import { useEffect } from 'react';
-
-// //   const iconList = {
-// //     icon1: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Flag--Right-Chartreuse.png',
-// //     icon2: 'https://cdn2.iconfinder.com/data/icons/IconsLandVistaMapMarkersIconsDemo/256/MapMarker_Marker_Outside_Chartreuse.png',
-// //     icon3: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Ball-Right-Azure.png',
-// //     icon4: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Marker-Outside-Pink.png'
-// //   }
-
-// const icon = 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Flag--Right-Chartreuse.png';
-
-//   const markerList = [
-//     { lat: 33.44838, lng: -112.07404, icon: icon },
-//     { lat: 42.429752, lng: -71.071022, icon: icon },
-//     { lat: 40.785091, lng: -73.968285, icon: icon },
-//     { lat: 27.994402, lng:-81.760254, icon: icon },
-//     { lat: 37.773972, lng:-122.431297, icon: icon },
-//     { lat: 32.779167, lng:-96.808891, icon: icon },
-    
-//   ]
-
-
-// const loadGoogleMapScript = (callback) => {
-//   if (
-//     typeof window.google === 'object' &&
-//     typeof window.google.maps === 'object'
-//   ) {
-//     callback();
-//   } else {
-//     const googleMapScript = document.createElement('script');
-//     googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_MAP_API_KEY}`;
-//     window.document.body.appendChild(googleMapScript);
-//     googleMapScript.addEventListener('load', callback);
-//   }
-// };
-
-// const style={width: '100vw', height: '100vh'};
-
-// export const initMap = () => {
-//   const map = new window.google.maps.Map(document.getElementById('open_map_view'), {
-//     mapId: 'd34c272a99808261',
-//     streetViewControl: false,
-//     controlSize: 24,
-//     center: { lat: 39.80327, lng: -103.39787 },
-//     zoom: 5,
-//   });
-
-//   markerList.map(x => {
-//     new window.google.maps.Marker({
-//       map,
-//       icon: {
-//         url: x.icon,
-//         scaledSize: new window.google.maps.Size(80, 80),
-//         anchor: new window.google.maps.Point(18, 18),
-//         scale: 8.5,
-//         fillColor: "yellow",
-//         fillOpacity: 0.4,
-//         strokeWeight: 0.4
-//       },
-//       position: {
-//         lat:x.lat,
-//         lng: x.lng
-//       }
-//     });
-//     });
-
-//     const triangleCoords = [
-//     { lat: 28.6210, lng: 77.3812 },
-//     { lat: 28.6280, lng: 77.3649 },
-//     { lat: 28.5961, lng: 77.3683 },
-//     { lat: 28.6026, lng: 77.3770 }
-//     ];
-
-//     const bermudaTriangle = new google.maps.Polygon({
-//       paths: triangleCoords,
-//       strokeColor: '#FF0000',
-//       strokeOpacity: 0.8,
-//       strokeWeight: 2,
-//       fillColor: '#FF0000',
-//       fillOpacity: 0.35
-//     });
-//     bermudaTriangle.setMap(map);
-    
-
-// };
-
-
-
-
-// const MapLocation = () => {
-//   useEffect(() => {
-//    loadGoogleMapScript(() => {
-//     initMap();
-//         });
-//       }, []);
-//   return (
-//     <>
-//       <div style={style} id="open_map_view"></div>
-//     </>
-//   )
-// }
-
-// export default MapLocation
-
-
-
-
 import * as React from 'react';
 import * as L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -135,7 +28,7 @@ function makeStyle(feature) {
       opacity: 1,
       color: 'yellow',
       dashArray: '3',
-      fillOpacity: 0.09
+      fillOpacity: 0.3
   };
 };
 
@@ -252,7 +145,7 @@ function MapLocation() {
         weight: 4,
         color: '#666',
         dashArray: '',
-        fillOpacity: 0.07
+        fillOpacity: 0.1
     });
   
     layer.bringToFront();
@@ -263,7 +156,8 @@ function MapLocation() {
   };
   
   function zoomToFeature(e) {
-    mapRef.current.fitBounds(e.target.getBounds());
+    map.fitBounds(e.target.getBounds());
+    console.log('e.target.getBounds()',e.target.getBounds());
   };
   
   function onEachFeature(feature, layer) {
@@ -272,7 +166,6 @@ function MapLocation() {
         mouseout: resetHighlight,
         click: zoomToFeature
     });
-    console.log('feature feature',feature);
   };
 
   const mapParams = {
@@ -281,16 +174,19 @@ function MapLocation() {
     zoomControl: false,
     maxBounds: L.latLngBounds(L.latLng(-150, -240), L.latLng(150, 240)),
     layers: [MAP_TILE],
+    use3DGlobe:false,
+    
   };
 
   /**
    * Map Instance Creation
    */
+  let map;
   React.useEffect(() => {
-    mapRef.current = L.map('map', mapParams);
+     map = L.map('map', mapParams);
     return () => {
-      if (mapRef.current) {
-        mapRef.current.remove();
+      if (map) {
+        map.remove();
       }
     };
   }, []);
@@ -303,20 +199,20 @@ function MapLocation() {
       .layers({
         OpenStreetMap: MAP_TILE,
       })
-      .addTo(mapRef.current);
+      .addTo(map);
 
     L.control
       .zoom({
         position: 'topright',
       })
-      .addTo(mapRef.current);
+      .addTo(map);
   }, []);
 
   /**
    * Add event listeners
    */
   React.useEffect(() => {
-    mapRef.current.on('zoomstart', () => {
+    map.on('zoomstart', () => {
       console.log('ZOOM STARTED');
     });
   }, []);
@@ -327,7 +223,7 @@ function MapLocation() {
    * Add layer group
    */
   React.useEffect(() => {
-    layerRef.current = L.layerGroup().addTo(mapRef.current);
+    layerRef.current = L.layerGroup().addTo(map);
     controlRef.current?.addOverlay(layerRef.current, 'Circles');
   }, []);
 
@@ -336,6 +232,7 @@ function MapLocation() {
    */
   React.useEffect(() => {
     layerRef.current.clearLayers();
+    
 
     cityData.forEach((city) => {
       const [lat, lng] = city.latLng;
@@ -344,11 +241,10 @@ function MapLocation() {
       // }).addTo(layerRef.current);
       L.marker([lat, lng],{title:city?.name,icon: myIcon}).addTo(layerRef.current);
     
-      statesData.features.map((state)=>{
+    });
+     statesData.features.map((state)=>{
         geojson = L.geoJson(state, {style: makeStyle,onEachFeature: onEachFeature}).addTo(layerRef.current);
       });
-    });
-    
   }, [cityData]);
 
 

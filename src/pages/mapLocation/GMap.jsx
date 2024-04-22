@@ -4,6 +4,12 @@ import MapView from "@arcgis/core/views/MapView";
 import BasemapToggle from "@arcgis/core/widgets/BasemapToggle";
 import SceneView from "@arcgis/core/views/SceneView.js";
 import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer.js";
+import GraphicsLayer from "@arcgis/core/layers/GraphicsLayer";
+import SimpleMarkerSymbol from "@arcgis/core/symbols/SimpleMarkerSymbol";
+import PictureMarkerSymbol from "@arcgis/core/symbols/PictureMarkerSymbol";
+import TextSymbol from "@arcgis/core/symbols/TextSymbol";
+import Graphic from "@arcgis/core/Graphic";
+import Point from "@arcgis/core/geometry/Point";
 import "./MapLocation.css";
 
 // const geojson = {
@@ -87,6 +93,38 @@ var geojson = {"type":"FeatureCollection","features":[
   {"type":"Feature","id":"72","properties":{"name":"Puerto Rico","density":1082 },"geometry":{"type":"Polygon","coordinates":[[[-66.448338,17.984326],[-66.771478,18.006234],[-66.924832,17.929556],[-66.985078,17.973372],[-67.209633,17.956941],[-67.154863,18.19245],[-67.269879,18.362235],[-67.094617,18.515589],[-66.957694,18.488204],[-66.409999,18.488204],[-65.840398,18.433435],[-65.632274,18.367712],[-65.626797,18.203403],[-65.730859,18.186973],[-65.834921,18.017187],[-66.234737,17.929556],[-66.448338,17.984326]]]}}
   ]};
 
+ const cityData= [
+    {
+      name: 'Florida',
+      // LatLng array that represents a geographical point (the city):
+      latLng: [27.727900169801135, -81.89242692938271]
+    },
+    {
+      name: 'New York City, NY',
+      latLng: [40.7128, -74.006]
+    },
+    {
+      name: 'Baltimore, MD',
+      latLng: [39.2904, -76.6122]
+    },
+    {
+      name: 'Lincoln, NE',
+      latLng: [40.8136, -96.7026]
+    },
+    {
+      name: 'Los Angeles, CA',
+      latLng: [34.0522, -118.2437]
+    },
+  ];
+
+
+  
+
+
+
+
+
+
 const GMap = () => {
    
     let map;
@@ -100,20 +138,21 @@ const GMap = () => {
       container: "viewDiv",
       map: map,
       center: [-86.049, 38.485],
+      // center: [79.4578675088445,23.042984027709753],
       zoom: 3,
-      camera: {
-        position: {
-          spatialReference: {
-            latestWkid: 3857,
-            wkid: 102100
-          },
-          x: -11262192.883555487,
-          y: 2315246.351026253,
-          z: 18161244.728082635
-        },
-        heading: 0,
-        tilt: 0.49
-      }
+      // camera: {
+      //   position: {
+      //     spatialReference: {
+      //       latestWkid: 3857,
+      //       wkid: 102100
+      //     },
+      //     x: -11262192.883555487,
+      //     y: 2315246.351026253,
+      //     z: 18161244.728082635
+      //   },
+      //   heading: 0,
+      //   tilt: 0.49
+      // }
     });
 
     const toggle = new BasemapToggle({
@@ -135,9 +174,53 @@ const url = URL.createObjectURL(blob);
 const geoJSONLayer = new GeoJSONLayer({
   url,
 });
-map.add(geoJSONLayer)
+map.add(geoJSONLayer);
+
+ // Create a graphics layer
+ var graphicsLayer = new GraphicsLayer();
+
+ // Add the graphics layer to the map
+ map.add(graphicsLayer);
+
+
+  // Define the location for the marker
+  const point = new Point({
+    longitude: -74.006,
+    latitude: 40.7128
+  });
+
+   // Define the URL for the marker icon
+   const markerIconUrl = "https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Flag--Right-Chartreuse.png";
+
+   // Define a picture marker symbol with the URL
+   const markerSymbol = new PictureMarkerSymbol({
+     url: markerIconUrl,
+     width: "50px",
+     height: "50px"
+   });
+
+
+   cityData.forEach((city) => {
+    const [lat, lng] = city.latLng;
+    const point = new Point({
+      longitude: lng,
+      latitude: lat
+    });
+      // Create a graphic object
+   const graphic = new Graphic({
+    geometry: point,
+    symbol: markerSymbol
+  });
+
+  // Add the graphic to the graphics layer
+  graphicsLayer.add(graphic);
  
-   },[])
+  })
+ 
+   },[]);
+
+
+   
     
 
   return (

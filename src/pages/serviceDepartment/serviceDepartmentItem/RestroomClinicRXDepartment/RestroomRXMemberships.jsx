@@ -28,7 +28,7 @@ const RestroomRXMemberships = () => {
       type: "month",
       img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx1.jpg",
       cost1: 49.65,
-      cost2: 89.99,
+      cost2: 89.98,
       color: "#D1E6B5",
       tasks: [
         "(1) toilet bowl ",

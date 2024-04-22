@@ -10,33 +10,10 @@ import PictureMarkerSymbol from "@arcgis/core/symbols/PictureMarkerSymbol";
 import TextSymbol from "@arcgis/core/symbols/TextSymbol";
 import Graphic from "@arcgis/core/Graphic";
 import Point from "@arcgis/core/geometry/Point";
+import Locate from "@arcgis/core/widgets/Locate";
+import Search from "@arcgis/core/widgets/Search";
 import "./MapLocation.css";
 
-// const geojson = {
-//   type: "FeatureCollection",
-//   features: [
-//     {
-//       type: "Feature",
-//       id: 1,
-//       geometry: {
-//         type: "Polygon",
-//         coordinates: [
-//           [
-//             [100.0, 0.0],
-//             [101.0, 0.0],
-//             [101.0, 1.0],
-//             [100.0, 1.0],
-//             [100.0, 0.0]
-//           ]
-//         ]
-//       },
-//       properties: {
-//         type: "single",
-//         recordedDate: "2018-02-07T22:45:00-08:00"
-//       }
-//     }
-//   ]
-// };
 
 var geojson = {"type":"FeatureCollection","features":[
   {"type":"Feature","id":"01","properties":{"name":"Alabama","density":94.65},"geometry":{"type":"Polygon","coordinates":[[[-87.359296,35.00118],[-85.606675,34.984749],[-85.431413,34.124869],[-85.184951,32.859696],[-85.069935,32.580372],[-84.960397,32.421541],[-85.004212,32.322956],[-84.889196,32.262709],[-85.058981,32.13674],[-85.053504,32.01077],[-85.141136,31.840985],[-85.042551,31.539753],[-85.113751,31.27686],[-85.004212,31.003013],[-85.497137,30.997536],[-87.600282,30.997536],[-87.633143,30.86609],[-87.408589,30.674397],[-87.446927,30.510088],[-87.37025,30.427934],[-87.518128,30.280057],[-87.655051,30.247195],[-87.90699,30.411504],[-87.934375,30.657966],[-88.011052,30.685351],[-88.10416,30.499135],[-88.137022,30.318396],[-88.394438,30.367688],[-88.471115,31.895754],[-88.241084,33.796253],[-88.098683,34.891641],[-88.202745,34.995703],[-87.359296,35.00118]]]}},
@@ -96,7 +73,6 @@ var geojson = {"type":"FeatureCollection","features":[
  const cityData= [
     {
       name: 'Florida',
-      // LatLng array that represents a geographical point (the city):
       latLng: [27.727900169801135, -81.89242692938271]
     },
     {
@@ -117,6 +93,13 @@ var geojson = {"type":"FeatureCollection","features":[
     },
   ];
 
+ const nastedCityData= [
+    {
+      name: 'Orlando',
+      latLng: [28.599588416393285, -81.4364943300728]
+    }
+  ];
+
 
   
 
@@ -126,6 +109,17 @@ var geojson = {"type":"FeatureCollection","features":[
 
 
 const GMap = () => {
+
+
+   // Define a function to generate random colors
+   function getRandomColor() {
+    var letters = "0123456789ABCDEF";
+    var color = "#";
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
    
     let map;
    useEffect( ()=>{
@@ -138,7 +132,6 @@ const GMap = () => {
       container: "viewDiv",
       map: map,
       center: [-86.049, 38.485],
-      // center: [79.4578675088445,23.042984027709753],
       zoom: 3,
       // camera: {
       //   position: {
@@ -154,6 +147,17 @@ const GMap = () => {
       //   tilt: 0.49
       // }
     });
+    
+
+
+
+    const searchWidget = new Search({view: view});
+    view.ui.add(searchWidget, {position: "top-right"});
+
+    const locateBtn = new Locate({view: view});
+    view.ui.add(locateBtn, {position: "top-left"});
+    
+ 
 
     const toggle = new BasemapToggle({
       // 2 - Set properties
@@ -173,6 +177,18 @@ const url = URL.createObjectURL(blob);
 // create new geojson layer using the blob url
 const geoJSONLayer = new GeoJSONLayer({
   url,
+  renderer: {
+    type: "simple", // Use simple renderer
+    symbol: {
+      type: "simple-fill", // types simple-marker simple-line simple-fill simple
+      // color: "#F6D2B6", // Set color
+      size: 10, // Set size
+      outline: {
+        color: "#EEB0AC", // Set outline color
+        width: 4 // Set outline width
+      }
+    }
+  }
 });
 map.add(geoJSONLayer);
 
@@ -181,13 +197,6 @@ map.add(geoJSONLayer);
 
  // Add the graphics layer to the map
  map.add(graphicsLayer);
-
-
-  // Define the location for the marker
-  const point = new Point({
-    longitude: -74.006,
-    latitude: 40.7128
-  });
 
    // Define the URL for the marker icon
    const markerIconUrl = "https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Flag--Right-Chartreuse.png";
@@ -209,18 +218,57 @@ map.add(geoJSONLayer);
       // Create a graphic object
    const graphic = new Graphic({
     geometry: point,
-    symbol: markerSymbol
+    symbol: markerSymbol,
+    attributes: {
+      name: city.name
+    }
   });
+
+   // Optionally, add a text label on the marker
+  //  var textSymbol = new TextSymbol({
+  //   text: city.name,
+  //   font: {
+  //     size: 12,
+  //     weight: "bold"
+  //   },
+  //   color: [0, 0, 0],
+  //   haloColor: [255, 255, 255],
+  //   haloSize: 1,
+  //   xoffset: 0,
+  //   yoffset: -20,
+  //   horizontalAlignment: "middle"
+  // });
+  // graphic.symbol = textSymbol;
 
   // Add the graphic to the graphics layer
   graphicsLayer.add(graphic);
  
-  })
+  });
+
+   nastedCityData.forEach((city) => {
+    const [lat, lng] = city.latLng;
+    const point = new Point({
+      longitude: lng,
+      latitude: lat
+    });
+      // Create a graphic object
+   const graphic = new Graphic({
+    geometry: point,
+    symbol: markerSymbol,
+    attributes: {
+      name: city.name
+    }
+  });
+
+  graphicsLayer.add(graphic);
+ 
+  });
+
+ 
  
    },[]);
 
 
-   
     
 
   return (

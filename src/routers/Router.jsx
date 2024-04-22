@@ -139,7 +139,7 @@ export const navigation = [
     { path: "/price-calculator", name: "Price Calculator", element: <PriceCalculator />, isPrivate: false },
     { path: "/complain-portal", name: "Complain Portal", element: <ComplainPortal />, isPrivate: false },
     { path: "/contact", name: "contact", element: <Contact />, isPrivate: false },
-    { path: "/location", name: "Map Location", element: <MapLocation />, isPrivate: false },
+    // { path: "/location", name: "Map Location", element: <MapLocation />, isPrivate: false },
     { path: "/chemical-regulation", name: "Chemical Regulation", element: <ChemicalRegulation />, isPrivate: false },
     { path: "/about-the-company", name: "About The Company", element: <AboutTheCompany />, isPrivate: false },
     { path: "/afmx-learning/:id", name: "AFMX Learning", element: <AFMXLearning />, isPrivate: false },
@@ -161,6 +161,6 @@ export const navigation = [
     { path: "/restroom_RXMemberships", name: "Membership", element: <RestroomRXMemberships />, isPrivate: false },
     { path: "/success", name: "Success", element: <Success />, isPrivate: false },
     { path: "/failed", name: "Failed", element: <Failed />, isPrivate: false },
-    { path: "/map", name: "map", element: <GMap />, isPrivate: false }
+    { path: "/location", name: "Map", element: <GMap />, isPrivate: false }
 
 ]

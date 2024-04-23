@@ -4,6 +4,7 @@ import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import Avatar from "../../assets/bot.jpg";
 import "./style.css";
+import styled from "styled-components";
 
 const theme = {
   background: "#E3FEF7",
@@ -16,46 +17,52 @@ const theme = {
   userFontColor: "#344955f5",
 };
 
-const Review = ({ steps }) => {
-  const { name, gender, age } = steps;
+const HeaderContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: ${({ theme }) => theme.headerFontColor};
+  padding: 0.5rem 1rem;
+`;
 
-  return (
-    <div style={{ width: "100%" }}>
-      <h3>Summary</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td>Name</td>
-            <td>{name.value}</td>
-          </tr>
-          <tr>
-            <td>Gender</td>
-            <td>{gender.value}</td>
-          </tr>
-          <tr>
-            <td>Age</td>
-            <td>{age.value}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  );
+const CloseButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: ${({ theme }) => theme.headerFontColor};
+  font-size: 2rem;
+  cursor: pointer;
+`;
+
+const BotHearder = styled.p`
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+`;
+
+const CustomHeader = ({ handleClose, title }) => (
+  <HeaderContainer>
+    <BotHearder>{title}</BotHearder>
+    <CloseButton onClick={handleClose}>x</CloseButton>
+  </HeaderContainer>
+);
+
+CustomHeader.propTypes = {
+  handleClose: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
-Review.propTypes = {
-  steps: PropTypes.object,
-};
+const Intellichat = ({ openchat }) => {
+  const handleClose = () => {
+    openchat(false);
+  };
 
-Review.defaultProps = {
-  steps: undefined,
-};
-
-const Intellichat = () => {
   const [state, setState] = useState({
     userInfo: {
       name: "",
-      gender: "",
-      age: "",
+      email: "",
+      phone: "",
     },
     selectedOption: "",
     question: "",
@@ -63,11 +70,70 @@ const Intellichat = () => {
   });
 
   const handleEndStep = (data) => {
-    setState((prevState) => ({
-      ...prevState,
-      ...data,
-    }));
+    const { renderedSteps, steps, values } = data;
+
+    setState((prevState) => {
+      const currentStep = renderedSteps[renderedSteps.length - 1];
+      const { trigger, value } = currentStep;
+
+      // Update the state based on the trigger and value
+      switch (trigger) {
+        case "get-name":
+          return {
+            ...prevState,
+            userInfo: {
+              ...prevState.userInfo,
+              name: values[steps.indexOf(value)],
+            },
+          };
+        case "get-email-input":
+          return {
+            ...prevState,
+            userInfo: {
+              ...prevState.userInfo,
+              email: values[steps.indexOf(value)],
+            },
+          };
+        case "get-phone-input":
+          return {
+            ...prevState,
+            userInfo: {
+              ...prevState.userInfo,
+              phone: values[steps.indexOf(value)],
+            },
+          };
+        case "question-product-details":
+          return { ...prevState, question: values[steps.indexOf(value)] };
+        case "question-service-details":
+          return { ...prevState, question: values[steps.indexOf(value)] };
+        case "question-support-details":
+          return { ...prevState, question: values[steps.indexOf(value)] };
+        case "question-other-details":
+          return { ...prevState, question: values[steps.indexOf(value)] };
+        case "connect-to-sales-other-details":
+          return {
+            ...prevState,
+            selectedOption: "Connect to sales",
+            issueDetails: values[steps.indexOf(value)],
+          };
+        case "issue-detail":
+          return {
+            ...prevState,
+            selectedOption: "Report an issue",
+            issueDetails: values[steps.indexOf(value)],
+          };
+        default:
+          return prevState;
+      }
+    });
   };
+  // const handleEndStep = (data) => {
+  //   console.log("handleEndStep", data);
+  //   setState((prevState) => ({
+  //     ...prevState,
+  //     ...data,
+  //   }));
+  // };
 
   function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -82,7 +148,9 @@ const Intellichat = () => {
   return (
     <ThemeProvider theme={theme}>
       <ChatBot
-        headerTitle="IntelliChat"
+        headerTitle={
+          <CustomHeader handleClose={handleClose} title="Intellichat" />
+        }
         botAvatar={Avatar}
         avatarStyle={{
           height: "50px",

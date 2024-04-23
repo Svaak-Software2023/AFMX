@@ -15,7 +15,7 @@ import { TbMessageCircle2Filled } from "react-icons/tb";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
-  const [openchat, setOpenChat] = useState(true);
+  const [openchat, setOpenChat] = useState(false);
 
   const { pathname } = useLocation();
   useEffect(() => {
@@ -60,9 +60,14 @@ function App() {
     <>
       <div className=" d-flex align-items-center justify-content-center active">
         <div className="chat_container">
-          <div className={openchat ? "chat_box_hide" : "chat_box"}>
-            <Intellichat />
-          </div>
+          {/* <div className={openchat ? "chat_box_hide" : "chat_box"}>
+            <Intellichat openchat={setOpenChat} />
+          </div> */}
+          {openchat ? (
+            <div className="chat_box">
+              <Intellichat openchat={setOpenChat} />
+            </div>
+          ) : null}
           <div className="chat_icon" onClick={() => setOpenChat(!openchat)}>
             <TbMessageCircle2Filled />
           </div>

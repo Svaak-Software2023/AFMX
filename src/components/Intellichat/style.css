@@ -1,0 +1,51 @@
+.chatbot {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.chat_container {
+  position: fixed;
+  bottom: 65px;
+  right: 9px;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10001;
+}
+.chat_icon {
+  height: 50px;
+  width: 50px;
+  background: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat_icon svg {
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+.chat_box_hide {
+  display: none;
+}
+.gvVQWG {
+}
+.iCZiAS {
+  background-color: #344955f5 !important;
+  color: aliceblue !important;
+}
+.QbbBk {
+  background: #ffffff !important;
+  border: 0;
+  border-radius: 22px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  color: green !important;
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px;
+  border: 2px solid green !important;
+}

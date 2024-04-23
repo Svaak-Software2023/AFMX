@@ -2,7 +2,6 @@ import { img } from "react-lazy-load-image-component";
 import ImportantLinks from "../../../components/ImportantLinks/ImportantLinks";
 import "./about.css";
 
-// ABOUT THE COMPANTY DESCRIPTION
 function AboutTheCompany() {
   return (
     <>

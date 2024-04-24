@@ -45,8 +45,9 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
   color: green !important;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px !important;
   padding: 12px;
+  font-weight: 500;
   border: 2px solid green !important;
 }
 .kztkJi {

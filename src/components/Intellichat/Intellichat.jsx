@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components";
 import Avatar from "../../assets/bot.jpg";
 import "./style.css";
 import styled from "styled-components";
+import serviceData from "../../assets/data/serviceDepartmentData.json";
+import productData from "../../assets/data/Productdata.json";
 
 const theme = {
   background: "#E3FEF7",
@@ -199,7 +201,7 @@ const Intellichat = ({ openchat }) => {
             trigger: "ask-question-categories",
             options: [
               { value: "product", label: "Product" },
-              { value: "service", label: "Service" },
+              { value: "Service Department", label: "Service Department" },
               { value: "support", label: "Support" },
               { value: "other", label: "Other" },
             ],
@@ -210,12 +212,12 @@ const Intellichat = ({ openchat }) => {
               {
                 value: "product",
                 label: "Product",
-                trigger: "ask-question-product",
+                trigger: "select-product-category",
               },
               {
-                value: "service",
-                label: "Service",
-                trigger: "ask-question-service",
+                value: "Service Department",
+                label: "Service Department",
+                trigger: "Select Department",
               },
               {
                 value: "support",
@@ -224,6 +226,29 @@ const Intellichat = ({ openchat }) => {
               },
               { value: "other", label: "Other", trigger: "ask-question-other" },
             ],
+          },
+          {
+            id: "select-product-category",
+            message: "Select Product Category",
+            trigger: "show-selected-product-category",
+          },
+          {
+            id: "show-selected-product-category",
+            options: productData.map((item) => ({
+              value: item.name,
+              label: item.name,
+              trigger: "get-product-name",
+            })),
+          },
+          {
+            id: "get-product-name",
+            message: "Please provide the product name",
+            trigger: "product-name",
+          },
+          {
+            id: "product-name",
+            user: true,
+            trigger: "ask-question-product",
           },
           {
             id: "ask-question-product",
@@ -243,8 +268,33 @@ const Intellichat = ({ openchat }) => {
             trigger: "get-user-details",
           },
           {
+            id: "Select Department",
+            message: "Which department does your question belong to?",
+            trigger: "department-selection",
+          },
+          {
+            id: "department-selection",
+            options: serviceData.map((item) => ({
+              value: item.name,
+              label: item.name,
+              trigger: "service-selection",
+            })),
+          },
+
+          {
+            id: "service-selection",
+            message:
+              "Please Provide the name of the service you are looking for.",
+            trigger: "give-service-name",
+          },
+          {
+            id: "give-service-name",
+            user: true,
+            trigger: "ask-question-service",
+          },
+          {
             id: "ask-question-service",
-            message: "Please provide your question related to our services.",
+            message: `Please provide your question related to the service.`,
             trigger: "question-service-details",
           },
           {
@@ -380,6 +430,7 @@ const Intellichat = ({ openchat }) => {
               { value: "other", label: "Other", trigger: "ask-issue" },
             ],
           },
+
           {
             id: "ask-issue",
             message: "Please provide details about the issue you're facing.",

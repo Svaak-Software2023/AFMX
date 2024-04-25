@@ -19,6 +19,7 @@
     "@reduxjs/toolkit": "^1.9.7",
     "@stripe/stripe-js": "^3.0.10",
     "axios": "^1.5.1",
+    "esri-loader": "^3.7.0",
     "global": "^4.4.0",
     "leaflet": "^1.9.4",
     "moment": "^2.30.1",

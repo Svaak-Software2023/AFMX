@@ -8,6 +8,8 @@ import addressReducer from "./features/addressSlice";
 
 import JobSlice from "./features/JobSlice";
 import miniTvSlice from "./features/miniTvSlice";
+import countrySlice from "./features/countrySlice";
+import stateSlice from "./features/stateSlice";
 
 
 export default configureStore({
@@ -19,7 +21,9 @@ export default configureStore({
     cart:cartSlice,
     address:addressReducer,
     JobSlice:JobSlice,
-    miniTv:miniTvSlice
+    miniTv:miniTvSlice,
+    country:countrySlice,
+    state:stateSlice
    
   },
 });

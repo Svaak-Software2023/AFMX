@@ -38,6 +38,8 @@ export const createCheckout = (cartId,products,token) => API.post(`/checkout/cre
 
 // minitv 
 export const getAllMinitv = () => API.get(`/mini-tv/get-media`);
+export const getAllCountry = () => API.get(`/all-country`);
+export const getAllState = (countryId) => API.get(`/all-state?countryId=${countryId}`);
 
 
 

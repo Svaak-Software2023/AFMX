@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loader from "../Loader/Loader";
 import {loadStripe} from '@stripe/stripe-js';
+import { toast } from "react-toastify";
 
 
 function Payment({ memberShipName, memberShipType, memberShipPlan }) {
@@ -28,12 +29,14 @@ function Payment({ memberShipName, memberShipType, memberShipPlan }) {
                 .then((res) => {
                     console.log(res.data, "res");
                     localStorage.setItem("sub",JSON.stringify(res.data.savedUser))
-                    // return stripe.redirectToCheckout({
-                    //     sessionId: res.data.sessionId
-                    // });
+                    return stripe.redirectToCheckout({
+                        sessionId: res.data.sessionId
+                    });
                  
                 })
-                .catch((error) => console.log(error))
+                .catch((error) => 
+                    toast.error(error?.response?.data?.error)
+                    )
                 .finally(() => {
                     setLoading(false);
                 });

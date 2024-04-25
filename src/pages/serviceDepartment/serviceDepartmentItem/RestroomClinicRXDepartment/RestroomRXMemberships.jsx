@@ -11,8 +11,8 @@ import { useEffect, useState } from "react";
 
 const RestroomRXMemberships = () => {
   const user = JSON.parse(localStorage.getItem('user'))
-
   const sub = JSON.parse(localStorage.getItem('sub'))
+
   const [isMember, setIsMember] = useState(false)
   useEffect(() => {
     if (sub?.memberShipName || user?.isRxRestRoomMember !== "Non-Member" && user?.isRxRestRoomMember) {
@@ -27,7 +27,7 @@ const RestroomRXMemberships = () => {
       button: true,
       type: "month",
       img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx1.jpg",
-      cost1: 49.65,
+      cost1: 89.99,
       cost2: 89.98,
       color: "#D1E6B5",
       tasks: [
@@ -39,7 +39,7 @@ const RestroomRXMemberships = () => {
         "Baby Station wipe down ",
         "Clean Mirror",
         "Free Walkthrough ",
-        "One time cleaning Frequency",
+        "year cleaning Frequency",
 
       ],
     },
@@ -48,7 +48,7 @@ const RestroomRXMemberships = () => {
       button: true,
       type: "month",
       img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx2.jpg",
-      cost1: 139.78,
+      cost1: 189.99,
       cost2: 189.99,
       color: "#00B050",
       tasks: [
@@ -68,7 +68,7 @@ const RestroomRXMemberships = () => {
       button: true,
       type: "month",
       img: "./images/serviceDepartments/restroomCleaningRx/RestroomRXMemberships/rx3.jpg",
-      cost1: 220.54,
+      cost1: 350.00,
       cost2: 350.00,
       color: "#893713",
       tasks: [
@@ -117,7 +117,7 @@ const RestroomRXMemberships = () => {
     const newData = [...data]; // Create a copy of the state array
 
     // Toggle the type between "month" and "year" based on the current type
-    newData[index].type = type === "month" ? "oneTimeService" : "month";
+    newData[index].type = type === "month" ? "year" : "month";
 
     setData(newData); // Update the state with the modified array
   };
@@ -166,19 +166,19 @@ const RestroomRXMemberships = () => {
                       <div>
                         <label className="rx-switch-button">
                           <input type="checkbox" />
-                          <span className="rx-slider-btn text-center " onClick={() => clickHandler(item.type, index)}>{item.type === "month" ? "Month" : "One Time"}</span>
+                          <span className="rx-slider-btn text-center " onClick={() => clickHandler(item.type, index)}>{item.type === "month" ? "Month" : "year"}</span>
                         </label>
                       </div>
                     </div>}
                     <div className="RxMembershipCostDiv">
                       {<p>{item?.info}</p>}
 
-                      {item?.cost2 && <p> $ {item.type === 'month' ? `${item?.cost1} per month` : `${item?.cost2} one time`}</p>}
+                      {item?.cost2 && <p> $ {item.type === 'month' ? `${(item?.cost1).toFixed(2)} per month` : `${(item?.cost1 * 12).toFixed(2)} year`}</p>}
                       {/* <Link to={item.name} target="_blank" className="d-flex align-items-end"><button> More... </button></Link> */}
                     </div>
                     {(index < 3) &&
                       <Payment
-                        memberShipPlan={item.type === 'month' ? Number(item?.cost1) : Number(item?.cost2)}
+                        memberShipPlan={item.type === 'month' ? Number(item?.cost1) : Number((item?.cost1 * 12).toFixed(2))}
                         memberShipName={item.name}
                         memberShipType={item.type} />
                     }

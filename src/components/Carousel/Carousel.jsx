@@ -28,9 +28,9 @@ const Slider = () => {
   return (
     <>
       <div className="banner">
-        <div className="container p-0">
+        <div className="container">
           <div className="row">
-            <div className="col-lg-9">
+            <div className="col-lg-9 m-0 p-0">
               <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active" data-bs-interval="10000">
@@ -137,7 +137,7 @@ const Slider = () => {
                   <Link to="/create-account">Create Account</Link>
                 </div>
               )}
-              {miniTv.length ? <MiniTv data={miniTv} /> : <div className="d-flex justify-content-center w-100 py-5">
+              {miniTv.length ? <MiniTv data={miniTv} /> : <div className="d-flex justify-content-center w-100 py-5 mb-5">
                 <span className="spinner-border " role="status"></span>
               </div>}
             </div>

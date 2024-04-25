@@ -30,7 +30,7 @@ function CreateAccount() {
     const changehandller = (e) => {
         const name = e.target.name;
        
-        console.log('wwer',{ ...formData, [name]: e.target.value,...clientProfileImage });
+        // console.log('wwer',{ ...formData, [name]: e.target.value,...clientProfileImage });
         setFormData({ ...formData, [name]: e.target.value, ...clientProfileImage })
     }
     const submithandler = async (e) => {

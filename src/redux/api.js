@@ -1,10 +1,8 @@
 import axios from "axios";
 const API = axios.create({ baseURL: `${import.meta.env.VITE_DB_URL}/api` });
 
-
 export const signin = (formData) => API.post("/signin", formData);
 export const signup = (formData) => API.post("/signup", formData);
-
 export const contactUs = (formData) => API.post("/contact-page", formData);
 
 // complain API
@@ -23,14 +21,12 @@ export const getAllSaveForLater = (token) => API.get(`/carts/getAllSaveLater?tok
 export const deleteCartItem = (cartItemId) => API.delete(`/carts/cartItems/${cartItemId}`);
 export const cartUpdateQuantity = ({cartItemId,positiveAndNegativeValue,token}) => API.patch(`/cartItems/update-quantity/${cartItemId}?token=${token}`,{positiveAndNegativeValue});
 export const addAndMoveSaveLater = (formData) => API.patch(`/cartItems/addAndMoveSaveLater?token=${formData.token}`,formData);
-
 export const addCartItems =(formData,token)=>API.post(`/add-cart-items?token=${formData.token}`,formData)
 export const deleteCartItems =(cartItemId,token)=>API.delete(`/carts/cartItems/${cartItemId}?token=${token}`)
 
 
 // career and employment 
 export const submitCareerForm = (formData) => API.post('/create-career', formData)
-
 
 // Address
 export const addAddress = (formData,token) => API.post(`/address/create-address?token=${token}`, formData);
@@ -41,7 +37,6 @@ export const deleteAddress = (deliveryAddressId,token) => API.delete(`/address/d
 export const createCheckout = (cartId,products,token) => API.post(`/checkout/create-checkout/${cartId}?token=${token}`,products);
 
 // minitv 
-
 export const getAllMinitv = () => API.get(`/mini-tv/get-media`);
 
 

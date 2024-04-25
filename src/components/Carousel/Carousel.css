@@ -3,6 +3,9 @@
   width: 7% !important;
 }
 
+#carouselExampleInterval{
+  padding-right: 10px;
+}
 .banner-ad {
   height: 100% !important;
 }
@@ -152,8 +155,15 @@ color: white;
 }
 
 @media screen and (max-width: 768px) {
-  .tv_absolute{
+  
+.banner-ad img {
+    margin-top: 0px;
+}
+  /* .tv_absolute{
     padding: 0px 10px;
+  } */
+  #carouselExampleInterval{
+    padding-right: 0px;
   }
   .miniTv-img{
     height: 232px !important;

@@ -1,18 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { getMiniTv } from "../../redux/features/miniTvSlice"
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-function MiniTv({data}) {
+function MiniTv({ data }) {
     const dispatch = useDispatch()
     const { minitv: miniTvData, loading: miniTvLoading } = useSelector((state) => state.miniTv)
     const [miniTv, setMiniTv] = useState("")
 
     useEffect(() => {
-         dispatch(getMiniTv()).then((item)=>setMiniTv(item))
+        dispatch(getMiniTv()).then((item) => setMiniTv(item))
         if (!miniTvLoading) {
             setMiniTv(miniTvData)
         }
     }, [dispatch]);
+    const myref=useRef();
+
+    setInterval(() =>{
+        myref.current.click()
+    },3000)
     return (
         <>
             <div className="banner-ad banner_ad_relative mb-5 mt-2">
@@ -38,11 +43,11 @@ function MiniTv({data}) {
                     {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    </button> */}
+                    <button ref={myref} class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                    </button> */}
+                    </button>
                 </div>
                 <img className="tv_absolute" src="/tvpng.png" />
             </div>

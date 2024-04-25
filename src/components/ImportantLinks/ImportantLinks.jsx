@@ -25,7 +25,7 @@ function ImportantLinks() {
                         <div className="left-menue-list">
                             <ul>
                                 <li><Link to="" className="Links">Start a Project</Link></li>
-                                <li><Link to="/service-list" className="Links">Services we offer</Link></li>
+                                {/* <li><Link to="/service-list" className="Links">Services we offer</Link></li> */}
                                 <li><Link to="/industrirs-list" className="Links">Industries we serve</Link></li>
                                 <li><Link to="/join-AFMX" className="Links">Membership</Link></li>
                                 <li><Link to="/media/1" className="Links">Media</Link></li>
@@ -53,7 +53,7 @@ function ImportantLinks() {
                 <div className="left-menue-list">
                     <ul>
                         <li><Link to="" className="Links">Start a Project</Link></li>
-                        <li><Link to="/service-list" className="Links">Services we offer</Link></li>
+                        {/* <li><Link to="/service-list" className="Links">Services we offer</Link></li> */}
                         <li><Link to="/industrirs-list" className="Links">Industries we serve</Link></li>
                         <li><Link to="/join-AFMX" className="Links">Membership</Link></li>
                         <li><Link to="/media/1" className="Links">Media</Link></li>

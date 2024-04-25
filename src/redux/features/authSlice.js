@@ -29,7 +29,8 @@ export const signup=createAsyncThunk("api/signup", async({formData,navigate,toas
         return response.data
         }
     }catch(err){
-        return toast.error(err.response.data.message)
+        console.log("err",err)
+        return toast.error(err.response.data.error)
     }
 })
 

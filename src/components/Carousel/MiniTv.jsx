@@ -15,9 +15,12 @@ function MiniTv({ data }) {
     }, [dispatch]);
     const myref=useRef();
 
+   useEffect(()=>{
     setInterval(() =>{
         myref.current.click()
     },3000)
+   },[])
+   
     return (
         <>
             <div className="banner-ad banner_ad_relative mb-5 mt-2">

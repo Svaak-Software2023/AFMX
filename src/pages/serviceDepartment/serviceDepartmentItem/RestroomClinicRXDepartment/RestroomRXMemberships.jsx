@@ -178,7 +178,7 @@ const RestroomRXMemberships = () => {
                     </div>
                     {(index < 3) &&
                       <Payment
-                        memberShipPlan={item.type === 'month' ? Number(item?.cost1) : Number((item?.cost1 * 12).toFixed(2))}
+                        memberShipPlan={Number(item?.cost1)}
                         memberShipName={item.name}
                         memberShipType={item.type} />
                     }

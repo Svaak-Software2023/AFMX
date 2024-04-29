@@ -160,5 +160,5 @@ export const navigation = [
     { path: "/restroom_RXMemberships", name: "Membership", element: <RestroomRXMemberships />, isPrivate: false },
     { path: "/success", name: "Success", element: <Success />, isPrivate: false },
     { path: "/cancel", name: "Failed", element: <Failed />, isPrivate: false },
-    { path: "/location", name: "Map", element: <GMap />, isPrivate: false }
+    // { path: "/location", name: "Map", element: <GMap />, isPrivate: false }
 ]

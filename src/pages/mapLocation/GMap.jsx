@@ -87,7 +87,7 @@ const GMap = () => {
         container: "viewDiv",
         map: map,
         center: [-86.049, 38.485],
-        zoom: 3
+        zoom: 2.5
       });
       
   
@@ -225,7 +225,13 @@ const GMap = () => {
   
    
    
-     
+    return () => {
+      // Clean up resources
+      if (view) {
+        // destroy the map view
+        view.destroy();
+      }
+    };
     })
     },[]);
 

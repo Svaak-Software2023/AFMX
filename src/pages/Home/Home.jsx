@@ -10,6 +10,7 @@ import { getAllCategory } from "../../redux/features/productSlice";
 const ServiceDepartmentList = React.lazy(() => import("./ServiceDepartmentList"));
 import { Skeleton } from "@mui/material";
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import GMap from "../mapLocation/GMap";
 
 
 function Home() {
@@ -437,17 +438,19 @@ function Home() {
             <div className="row">
               <div className="col-lg-6">
                 <div className="memebership-list">
-                  <h2>MY FLORIDA HURRICANE WATCH WEATHER</h2>
-                  <div className="membership-lis-image">
-                    {/* <img src="assets/img/service/map.jpg" />
-                    <img src="assets/img/service/calender.jpg" /> */}
-                    {/* <WatchWhether /> */}
-                  </div>
+                  <h2 style={{marginBottom:"0"}}>SERVICES WE OFFER</h2>
+                  {/* <h2 style={{marginBottom:"0"}}>MY FLORIDA HURRICANE WATCH WEATHER</h2> */}
+                  {/* <div className="membership-lis-image">
+                    <img src="assets/img/service/map.jpg" />
+                    <img src="assets/img/service/calender.jpg" />
+                    <WatchWhether />
+                  </div> */}
+                  <div style={{height:"68vh"}}><GMap /></div>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="memebership-list">
-                  <h2>GLOSSARY</h2>
+                  <h2 style={{marginBottom:"0"}}>GLOSSARY</h2>
                   <div className="glossary">
                     <h3>AFM SHOW SOUTH AMERICA 2023</h3>
                     <div className="floww">
@@ -483,6 +486,53 @@ function Home() {
                       </div>
                       <div className="address-link">
                         <Link to="/new">More Information </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="services-memebership mb-3">
+          <div className="container p-0">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="memebership-list">
+                  <h2 style={{marginBottom:"0"}}>BULLETIN BOARD</h2>
+                  <div className="glossary">
+                    <h3>Useful bulletin boards</h3>
+                    <div className="floww">
+                      <div className="address">
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <h3>Sriratna 2 X 2 Feet Premium Material</h3>
+
+                    <div className="floww">
+                      <div className="address">
+                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="memebership-list">
+                  <h2 style={{marginBottom:"0"}}>TESTIMONIAL</h2>
+                  <div className="card mb-3" >
+                    <div className="row g-0">
+                      <div className="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=707b9c33066bf8808c934c8ab394dff6" className="img-fluid rounded-start" style={{width:"100%"}} alt="abc" />
+                      </div>
+                      <div className="col-md-8">
+                        <div className="card-body">
+                          <h5 className="card-title">Lorem</h5>
+                          <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                       </div>
                     </div>
                   </div>

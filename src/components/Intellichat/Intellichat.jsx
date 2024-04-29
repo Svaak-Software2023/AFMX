@@ -32,12 +32,12 @@ const CloseButton = styled.button`
   background-color: transparent;
   border: none;
   color: ${({ theme }) => theme.headerFontColor};
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 `;
 
 const BotHearder = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
   color: white;
@@ -77,6 +77,7 @@ const Intellichat = ({ openchat }) => {
     setState((prevState) => {
       const currentStep = renderedSteps[renderedSteps.length - 1];
       const { trigger, value } = currentStep;
+      console.log("Trigger", trigger);
 
       // Update the state based on the trigger and value
       switch (trigger) {
@@ -200,9 +201,10 @@ const Intellichat = ({ openchat }) => {
             message: "What is your question related to?",
             trigger: "ask-question-categories",
             options: [
-              { value: "product", label: "Product" },
+              { value: "Product", label: "Product" },
               { value: "Service Department", label: "Service Department" },
-              { value: "support", label: "Support" },
+              { value: "Support", label: "Support" },
+              // { value: "Payment", label: "Payment" },
               { value: "other", label: "Other" },
             ],
           },
@@ -219,6 +221,8 @@ const Intellichat = ({ openchat }) => {
                 label: "Service Department",
                 trigger: "Select Department",
               },
+              // { value: "Payment", label: "Payment", trigger: "Payment" },
+
               {
                 value: "support",
                 label: "Support",

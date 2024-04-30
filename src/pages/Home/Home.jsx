@@ -7,39 +7,52 @@ import helpingHand from "../../assets/data/helpingHand.json";
 import { getCart } from "../../redux/features/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCategory } from "../../redux/features/productSlice";
-const ServiceDepartmentList = React.lazy(() => import("./ServiceDepartmentList"));
+const ServiceDepartmentList = React.lazy(() =>
+  import("./ServiceDepartmentList")
+);
 import { Skeleton } from "@mui/material";
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import "react-lazy-load-image-component/src/effects/blur.css";
 import GMap from "../mapLocation/GMap";
 
-
 function Home() {
-  const productCategoryData = useSelector((state) => state.products.allCategory.data)
+  const productCategoryData = useSelector(
+    (state) => state.products.allCategory.data
+  );
   // console.log("productCategoryData",productCategoryData);
   const productData1 = productCategoryData?.filter((item, i) => i < 8);
   const productData2 = productCategoryData?.filter((item, i) => i > 7);
 
   const { data: cartData } = useSelector((state) => state.cart);
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    let token = `${JSON.parse(localStorage.getItem('user'))?.token}`;
+    let token = `${JSON.parse(localStorage.getItem("user"))?.token}`;
     if (token) {
-      dispatch(getCart({ token }))
+      dispatch(getCart({ token }));
     }
-    dispatch(getAllCategory())
-  }, [])
-
+    dispatch(getAllCategory());
+  }, []);
 
   return (
     <>
       <Suspense
-        fallback={<div className="container bg-white my-3"><Skeleton variant="rectangular" height={218} /></div>}>
+        fallback={
+          <div className="container bg-white my-3">
+            <Skeleton variant="rectangular" height={218} />
+          </div>
+        }
+      >
         <Carousel />
       </Suspense>
       <div className="main">
-        <Suspense fallback={<div className="container bg-white p-3 d-flex justify-content-center"><Skeleton variant="circular" width={250} height={250} /></div>}>
+        <Suspense
+          fallback={
+            <div className="container bg-white p-3 d-flex justify-content-center">
+              <Skeleton variant="circular" width={250} height={250} />
+            </div>
+          }
+        >
           <Circle />
         </Suspense>
         {/* service menu  */}
@@ -148,11 +161,15 @@ function Home() {
         </div>
 
         {/* our Service Department  */}
-        <Suspense fallback={<div className="bg-white p-3">
-          <Skeleton height={50} />
-          <Skeleton height={50} animation="wave" />
-          <Skeleton height={50} animation={false} />
-        </div>}>
+        <Suspense
+          fallback={
+            <div className="bg-white p-3">
+              <Skeleton height={50} />
+              <Skeleton height={50} animation="wave" />
+              <Skeleton height={50} animation={false} />
+            </div>
+          }
+        >
           <ServiceDepartmentList />
         </Suspense>
 
@@ -166,37 +183,53 @@ function Home() {
                     CHEMICAL SHOPPING CENTER{" "}
                     <Link to="/cart" className="position-relative">
                       <img src="assets/img/cart.png" />
-                      {(cartData) && (cartData?.Products?.length) ? <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartData?.Products?.length}</span> : ""}
+                      {cartData && cartData?.Products?.length ? (
+                        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          {cartData?.Products?.length}
+                        </span>
+                      ) : (
+                        ""
+                      )}
                     </Link>
                     <a href>
                       <img src="assets/img/bag.png" />
                     </a>
                   </h2>
-                  {productCategoryData?.length > 0
-                    ? <div className="single-row">
+                  {productCategoryData?.length > 0 ? (
+                    <div className="single-row">
                       <ul className>
                         {productData1?.map((item, i) => (
                           <li key={i.toString()}>
-                            <Link to={`/product/${item.productCategoryName}/${item.productCategoryId}`}>{item.productCategoryName}</Link>
+                            <Link
+                              to={`/product/${item.productCategoryName}/${item.productCategoryId}`}
+                            >
+                              {item.productCategoryName}
+                            </Link>
                           </li>
                         ))}
                       </ul>
                       <ul className>
                         {productData2?.map((item, i) => (
                           <li key={i}>
-                            <Link to={`/product/${item.productCategoryName.toString()}/${item.productCategoryId}`}>{item.productCategoryName.toString()}</Link>
+                            <Link
+                              to={`/product/${item.productCategoryName.toString()}/${
+                                item.productCategoryId
+                              }`}
+                            >
+                              {item.productCategoryName.toString()}
+                            </Link>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    :
+                  ) : (
                     <div className="bg-white p-3">
                       <Skeleton height={50} />
                       <Skeleton height={50} animation="wave" />
                       <Skeleton height={50} animation={false} />
-                    </div>}
+                    </div>
+                  )}
                 </div>
-
               </div>
             </div>
           </div>
@@ -249,23 +282,28 @@ function Home() {
                       <Link to={"/new"} className="Links">
                         Federal Wage
                       </Link>
-                    </li> <li>
+                    </li>{" "}
+                    <li>
                       <Link to={"/new"} className="Links">
                         W9, W2 Direct Deposit, Tax Documentation
                       </Link>
-                    </li> <li>
+                    </li>{" "}
+                    <li>
                       <Link to={"/new"} className="Links">
                         Insurance
                       </Link>
-                    </li> <li>
+                    </li>{" "}
+                    <li>
                       <Link to={"/new"} className="Links">
                         Employee Training
                       </Link>
-                    </li> <li>
+                    </li>{" "}
+                    <li>
                       <Link to={"/new"} className="Links">
                         Work Form
                       </Link>
-                    </li> <li>
+                    </li>{" "}
+                    <li>
                       <Link to={"/new"} className="Links">
                         Badges and Ids
                       </Link>
@@ -274,7 +312,8 @@ function Home() {
                       <Link to={"/new"} className="Links">
                         Dress Code
                       </Link>
-                    </li><li>
+                    </li>
+                    <li>
                       <Link to={"/new"} className="Links">
                         Subcontractor Portal
                       </Link>
@@ -330,15 +369,18 @@ function Home() {
                       <Link to={"/new"} className="Links">
                         Front Line Supervision
                       </Link>
-                    </li><li>
+                    </li>
+                    <li>
                       <Link to={"/new"} className="Links">
                         Work Loading
                       </Link>
-                    </li><li>
+                    </li>
+                    <li>
                       <Link to={"/new"} className="Links">
                         Work Directing
                       </Link>
-                    </li><li>
+                    </li>
+                    <li>
                       <Link to={"/new"} className="Links">
                         Background Check
                       </Link>
@@ -438,54 +480,126 @@ function Home() {
             <div className="row">
               <div className="col-lg-6">
                 <div className="memebership-list">
-                  <h2 style={{marginBottom:"0"}}>SERVICES WE OFFER</h2>
-                  {/* <h2 style={{marginBottom:"0"}}>MY FLORIDA HURRICANE WATCH WEATHER</h2> */}
-                  {/* <div className="membership-lis-image">
+                  {/* <h2 style={{marginBottom:"0"}}>SERVICES WE OFFER</h2> */}
+                  <h2 style={{ marginBottom: "0" }}>
+                    MY FLORIDA HURRICANE WATCH WEATHER
+                  </h2>
+                  <div className="membership-lis-image">
                     <img src="assets/img/service/map.jpg" />
                     <img src="assets/img/service/calender.jpg" />
-                    <WatchWhether />
-                  </div> */}
-                  <div style={{height:"68vh"}}><GMap /></div>
+                    {/* <WatchWhether /> */}
+                  </div>
+                  {/* <div style={{height:"68vh"}}><GMap /></div> */}
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="memebership-list">
-                  <h2 style={{marginBottom:"0"}}>GLOSSARY</h2>
-                  <div className="glossary">
-                    <h3>AFM SHOW SOUTH AMERICA 2023</h3>
-                    <div className="floww">
-                      <div className="address">
-                        <p>Chicago, 1L</p>
-                        <p>October 10-13 2023</p>
-                      </div>
-                      <div className="address-link">
-                        <Link to="/new">More Information </Link>
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="globeImage">
+                      <h2 style={{ marginBottom: "0" }}>SERVICES WE OFFER</h2>
+                      <Link to="/location">
+                        <img src="globe/globe.png" />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="memebership-list">
+                      <h2 style={{ marginBottom: "0" }}>GLOSSARY</h2>
+                      <div className="glossary">
+                        <h3>AFM SHOW SOUTH AMERICA 2023</h3>
+                        <div className="floww">
+                          <div className="address">
+                            <p>Chicago, 1L</p>
+                            <p>October 10-13 2023</p>
+                          </div>
+                          <div className="address-link">
+                            <Link to="/new">More Information </Link>
+                          </div>
+                        </div>
+                        <hr />
+
+                        <h3>AFM SHOW EAST AMERICA 2023</h3>
+
+                        <div className="floww">
+                          <div className="address">
+                            <p>Chicago, 1L</p>
+                            <p>October 10-13 2023</p>
+                          </div>
+                          <div className="address-link">
+                            <Link to="/new">More Information </Link>
+                          </div>
+                        </div>
+                        <hr />
+
+                        <h3>AFM SHOW WEST AMERICA 2023</h3>
+
+                        <div className="floww">
+                          <div className="address">
+                            <p>Chicago, 1L</p>
+                            <p>October 10-13 2023</p>
+                          </div>
+                          <div className="address-link">
+                            <Link to="/new">More Information </Link>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <hr />
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="memebership-list">
+                      <h2 style={{ marginBottom: "0" }}>BULLETIN BOARD</h2>
+                      <div className="glossary">
+                        <h3>Useful bulletin boards</h3>
+                        <div className="floww">
+                          <div className="address">
+                            <p>
+                              {" "}
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's{" "}
+                            </p>
+                          </div>
+                        </div>
+                        <hr />
 
-                    <h3>AFM SHOW EAST AMERICA 2023</h3>
+                        <h3>Sriratna 2 X 2 Feet Premium Material</h3>
 
-                    <div className="floww">
-                      <div className="address">
-                        <p>Chicago, 1L</p>
-                        <p>October 10-13 2023</p>
-                      </div>
-                      <div className="address-link">
-                        <Link to="/new">More Information </Link>
+                        <div className="floww">
+                          <div className="address">
+                            <p>
+                              {" "}
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's{" "}
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <hr />
-
-                    <h3>AFM SHOW WEST AMERICA 2023</h3>
-
-                    <div className="floww">
-                      <div className="address">
-                        <p>Chicago, 1L</p>
-                        <p>October 10-13 2023</p>
-                      </div>
-                      <div className="address-link">
-                        <Link to="/new">More Information </Link>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="memebership-list">
+                      <h2 style={{ marginBottom: "0" }}>TESTIMONIAL</h2>
+                      <div className="card mb-3">
+                        <div className="row g-0">
+                          <div className="col-md-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=707b9c33066bf8808c934c8ab394dff6"
+                              className="img-fluid rounded-start"
+                              style={{ width: "100%", height: "auto" }}
+                              alt="abc"
+                            />
+                          </div>
+                          <div className="col-md-8">
+                            <div className="card-body">
+                              <h5 className="card-title">Lorem</h5>
+                              <p className="card-text">
+                                This is a wider card with supporting text below
+                                as a natural lead-in to additional content.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -495,7 +609,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="services-memebership mb-3">
+        {/* <div className="services-memebership mb-3">
           <div className="container p-0">
             <div className="row">
               <div className="col-lg-6">
@@ -540,7 +654,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* partner With us  */}
         <div className="services-memebership mb-3">
@@ -709,7 +823,6 @@ function Home() {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
